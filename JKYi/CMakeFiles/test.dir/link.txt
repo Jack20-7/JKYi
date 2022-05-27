@@ -1,0 +1,1 @@
+/usr/bin/c++   -rdynamic -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations  -rdynamic CMakeFiles/test.dir/tests/test.cc.o  -o bin/test   -L/root/yaml-cpp-master/lib  -Wl,-rpath,/usr/local/lib64:/root/yaml-cpp-master/lib:/home/admin/workSpace/lib lib/libJKYi.so /usr/local/lib64/libyaml-cpp.so 

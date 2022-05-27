@@ -1,0 +1,11 @@
+1.日志系统和配置系统的整合
+对于配置系统，在log.yam作用的统一个格式是
+logs:
+   -name: root
+    level: (debug,error,info...)
+    formatter: '%d %T %t %T %F %T [%p] %T %f %T %l %T <%m> %n'
+    appender: 
+      -type: (StdoutAppender,FileAppender)
+       level: (debug,info,error...)
+       file: /home/admin/workSpace/log.txt
+       //以上是默认的格式，用户如果需要的话，可以在下面以上面那种方式进行添加

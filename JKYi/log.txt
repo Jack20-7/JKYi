@@ -1,0 +1,5 @@
+2022-05-21 13:50:58 69007 0 [DEBUG] /home/young/workSpace/tests/test.cc 20 <Hello,JKYI log!> 
+2022-05-21 13:50:58 69007 0 [INFO] /home/young/workSpace/tests/test.cc 21 <Hello,JKYI log!> 
+2022-05-21 13:50:58 69007 0 [ERROR] /home/young/workSpace/tests/test.cc 22 <Hello,JKYI log!> 
+2022-05-21 13:50:58 69007 0 [WARN] /home/young/workSpace/tests/test.cc 23 <Hello,JKYI log!> 
+2022-05-21 13:50:58 69007 0 [FATAL] /home/young/workSpace/tests/test.cc 24 <Hello,JKYI log!> 
