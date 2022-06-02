@@ -1,0 +1,105 @@
+2022-05-29 21:37:06	name=class.person description=class persontypename=6Person value= name: 巫成洋
+age: 18
+sex: 1
+2022-05-29 21:37:06	name=logs description=logs configtypename=St3setIN4JKYi9LogDefineESt4lessIS1_ESaIS1_EE value= - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appender:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appender:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%T%n"
+    - type: StdoutLogAppender
+2022-05-29 21:37:06	name=system.list_int description=system list_inttypename=St4listIiSaIiEE value= - 10
+- 20
+- 30
+2022-05-29 21:37:06	name=system.map_str_int description=system map_str_inttypename=St3mapISsiSt4lessISsESaISt4pairIKSsiEEE value= k: 6
+2022-05-29 21:37:06	name=system.port description=system porttypename=i value= 8080
+2022-05-29 21:37:06	name=system.set_int description=system set_inttypename=St3setIiSt4lessIiESaIiEE value= - 5
+- 6
+- 7
+2022-05-29 21:37:06	name=system.umap_str_int description=syetem umap_str_inttypename=St13unordered_mapISsiSt4hashISsESt8equal_toISsESaISt4pairIKSsiEEE value= k2: 8
+k: 9
+2022-05-29 21:37:06	name=system.uset_int description=system uset_inttypename=St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value= - 9
+- 8
+- 7
+2022-05-29 21:37:06	name=system.value description=system valuetypename=f value= 10.1999998
+2022-05-29 21:37:06	name=system.vec_int description=system vec_inttypename=St6vectorIiSaIiEE value= - 1
+- 2
+- 3
+2022-05-29 21:39:01	name=class.person description=class person typename=6Person value= name: 巫成洋
+age: 18
+sex: 1
+2022-05-29 21:39:01	name=logs description=logs config typename=St3setIN4JKYi9LogDefineESt4lessIS1_ESaIS1_EE value= - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appender:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appender:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%T%n"
+    - type: StdoutLogAppender
+2022-05-29 21:39:01	name=system.list_int description=system list_int typename=St4listIiSaIiEE value= - 10
+- 20
+- 30
+2022-05-29 21:39:01	name=system.map_str_int description=system map_str_int typename=St3mapISsiSt4lessISsESaISt4pairIKSsiEEE value= k: 6
+2022-05-29 21:39:01	name=system.port description=system port typename=i value= 8080
+2022-05-29 21:39:01	name=system.set_int description=system set_int typename=St3setIiSt4lessIiESaIiEE value= - 5
+- 6
+- 7
+2022-05-29 21:39:01	name=system.umap_str_int description=syetem umap_str_int typename=St13unordered_mapISsiSt4hashISsESt8equal_toISsESaISt4pairIKSsiEEE value= k2: 8
+k: 9
+2022-05-29 21:39:01	name=system.uset_int description=system uset_int typename=St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value= - 9
+- 8
+- 7
+2022-05-29 21:39:01	name=system.value description=system value typename=f value= 10.1999998
+2022-05-29 21:39:01	name=system.vec_int description=system vec_int typename=St6vectorIiSaIiEE value= - 1
+- 2
+- 3
+2022-05-30 12:39:40	name=class.person description=class person typename=6Person value= name: 巫成洋
+age: 18
+sex: 1
+2022-05-30 12:39:40	name=logs description=logs config typename=St3setIN4JKYi9LogDefineESt4lessIS1_ESaIS1_EE value= - name: root
+  level: INFO
+  formatter: "%d%T%m%n"
+  appender:
+    - type: FileLogAppender
+      file: root.txt
+    - type: StdoutLogAppender
+- name: system
+  level: DEBUG
+  formatter: "%d%T%m%n"
+  appender:
+    - type: FileLogAppender
+      file: system.txt
+      formatter: "%d%T[%p]%T%m%T%n"
+    - type: StdoutLogAppender
+2022-05-30 12:39:40	name=system.list_int description=system list_int typename=St4listIiSaIiEE value= - 10
+- 20
+- 30
+2022-05-30 12:39:40	name=system.map_str_int description=system map_str_int typename=St3mapISsiSt4lessISsESaISt4pairIKSsiEEE value= k: 6
+2022-05-30 12:39:40	name=system.port description=system port typename=i value= 8080
+2022-05-30 12:39:40	name=system.set_int description=system set_int typename=St3setIiSt4lessIiESaIiEE value= - 5
+- 6
+- 7
+2022-05-30 12:39:40	name=system.umap_str_int description=syetem umap_str_int typename=St13unordered_mapISsiSt4hashISsESt8equal_toISsESaISt4pairIKSsiEEE value= k2: 8
+k: 9
+2022-05-30 12:39:40	name=system.uset_int description=system uset_int typename=St13unordered_setIiSt4hashIiESt8equal_toIiESaIiEE value= - 9
+- 8
+- 7
+2022-05-30 12:39:40	name=system.value description=system value typename=f value= 10.1999998
+2022-05-30 12:39:40	name=system.vec_int description=system vec_int typename=St6vectorIiSaIiEE value= - 1
+- 2
+- 3

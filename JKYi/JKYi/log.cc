@@ -1,9 +1,10 @@
 #include "log.h"
 #include <map>
 #include <iostream>
+#include <fstream>
 #include <functional>
 #include <time.h>
-#include <string.h>
+#include <string>
 #include "config.h"
 #include "util.h"
 
@@ -192,8 +193,24 @@ public:
 private:
    std::string m_string;
 };
+//打印出线程的名称
+class ThreadNameFormatItem: public LogFormatter::FormatItem {
+public:
+    ThreadNameFormatItem(const std::string& str = "") {}
+    void format(std::ostream& os, Logger::ptr logger, LogLevel::Level level, LogEvent::ptr event) override {
+        os << event->getThreadName();
+    }
+};
 
-LogEvent::LogEvent(std::shared_ptr<Logger>logger,JKYi::LogLevel::Level level ,const char*file,int32_t line,uint32_t elapse,uint32_t thread_id,uint32_t fiber_id,uint32_t time)
+LogEvent::LogEvent(std::shared_ptr<Logger>logger
+                   ,JKYi::LogLevel::Level level 
+				   ,const char*file
+				   ,int32_t line
+				   ,uint32_t elapse
+				   ,uint32_t thread_id
+				   ,uint32_t fiber_id
+				   ,uint32_t time
+				   ,const std::string& threadName)
   :m_file(file)
   ,m_line(line)
   ,m_elapse(elapse)
@@ -201,16 +218,19 @@ LogEvent::LogEvent(std::shared_ptr<Logger>logger,JKYi::LogLevel::Level level ,co
   ,m_fiberId(fiber_id)
   ,m_time(time)
   ,m_logger(logger)
-  ,m_level(level){}
+  ,m_level(level)
+  ,m_threadName(threadName){}
 //------------------------------------------------------------Logger-------------------------------------------------------------------
 Logger::Logger(const std::string&name)
     :m_name(name)
     ,m_level(LogLevel::DEBUG){       //%d表示时间   %p表示级别  %f表示文件名   %l表示行号  %m表示消息  %n表示换行
-        m_formatter.reset(new LogFormatter("%d %T %t %T %F %T [%p] %T %f %T %l %T <%m> %n"));
+        m_formatter.reset(new LogFormatter("%d{%Y-%m-%d %H:%M:%S}%T%t%T%N%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"));
     }
 
 void Logger::addAppender(LogAppender::ptr appender){
+	MutexType::Lock lock(m_mutex);
     if(!appender->getFormatter()){
+		MutexType::Lock lock(appender->m_mutex);
         //这里直接给这个appender设置formatter，不使用setFormtter。这样相当于一个appedner如果在使用所在的logger的formmater的话，那么他的m_hasFormatter=false
         appender->m_formatter=m_formatter;
     }
@@ -218,6 +238,8 @@ void Logger::addAppender(LogAppender::ptr appender){
 }
 
 void Logger::delAppender(LogAppender::ptr appender){
+	//
+	MutexType::Lock lock(m_mutex);
     for(auto it=m_appenders.begin();it!=m_appenders.end();++it){
         if((*it)==appender){
             m_appenders.erase(it);
@@ -226,12 +248,14 @@ void Logger::delAppender(LogAppender::ptr appender){
     }
 }
 void Logger::clearAppender(){
+	MutexType::Lock lock(m_mutex);
      m_appenders.clear();
 }
 //该函数就是用来向集合中的所有的地址输出日志
 void Logger::log(LogLevel::Level level,LogEvent::ptr event){
     if(level>=m_level){
         auto self=shared_from_this();//返回一个执行自己的shared_ptr
+		MutexType::Lock lock(m_mutex);
         if(!m_appenders.empty()){
             for(auto&i:m_appenders){
             i->log(self,level,event);//实际调用的是Appender的接口来输出的日志
@@ -244,9 +268,12 @@ void Logger::log(LogLevel::Level level,LogEvent::ptr event){
 }
 //
 void Logger::setFormatter(LogFormatter::ptr formatter){
+   MutexType::Lock lock(m_mutex);
    m_formatter=formatter;
    //这里的logger还需要对在addAppender时使用它的formatter的下游appender负责
    for(auto&i:m_appenders){
+	   //这里还需要加appender的锁
+	   MutexType::Lock lock(i->m_mutex);
        if(!i->m_hasFormatter){
            i->m_formatter=formatter;
        }
@@ -270,6 +297,7 @@ void Logger::setFormatter(const std::string&str){
 //
 std::string Logger::toYamlString(){
    //转换的一个思想就是先转化为node，在通过流的方式返回string
+   MutexType::Lock lock(m_mutex);
    YAML::Node node;
    node["name"]=m_name;
    if(m_level!=LogLevel::UNKNOW){
@@ -286,7 +314,8 @@ std::string Logger::toYamlString(){
    return ss.str();
 
 }
-LogFormatter::ptr Logger::getFormatter()const{
+LogFormatter::ptr Logger::getFormatter(){
+	MutexType::Lock lock(m_mutex);
     return m_formatter;
 }
 
@@ -308,6 +337,8 @@ void Logger::fatal(LogEvent::ptr event){
 
 //
 void LogAppender::setFormatter(LogFormatter::ptr formatter){
+	//
+	MutexType::Lock lock(m_mutex);
    m_formatter=formatter;
    if(m_formatter){
        m_hasFormatter=true;
@@ -316,12 +347,18 @@ void LogAppender::setFormatter(LogFormatter::ptr formatter){
    }
    return ;
 }
+LogFormatter::ptr LogAppender::getFormatter(){
+  MutexType::Lock lock(m_mutex);
+  return m_formatter;
+}
 void StdoutLogAppender::log(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event){
     if(level>=m_level){
+		MutexType::Lock lock(m_mutex);
         std::cout<<m_formatter->format(logger,level,event);
     }
 }
 std::string StdoutLogAppender::toYamlString(){
+	MutexType::Lock lock(m_mutex);
     YAML::Node node;
     node["type"]="StdoutLogAppender";
     if(m_level!=LogLevel::UNKNOW){
@@ -343,18 +380,28 @@ FileLogAppender::FileLogAppender(const std::string&filename)
      }
      //
 bool FileLogAppender::reopen(){
+	MutexType::Lock lock(m_mutex);
     if(m_filestream){
         m_filestream.close();
     }
-    m_filestream.open(m_filename);
-    return !!m_filestream;
+	//每一次打开时如果没文件就创建新文件，如果文件存在就以追加的方式写入
+	m_filestream.open(m_filename,std::ios::app|std::ios::out);
+    return !!m_filestream; 
 }
 void FileLogAppender::log(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event){
    if(level>=m_level){
+	   //这里我们要实现的功能是每隔3s打开一次，方式文件在中途被删除
+	   uint64_t now=event->getTime();
+	   if(now>=(m_lastTime+3)){
+		   reopen();
+		   m_lastTime=now;
+	   }
+	   MutexType::Lock lock(m_mutex);
        m_filestream<<m_formatter->format(logger,level,event);
    }
 }
 std::string FileLogAppender::toYamlString(){
+	MutexType::Lock lock(m_mutex);
     YAML::Node node;
     node["type"]="FileLogAppender";
     node["file"]=m_filename;
@@ -482,7 +529,7 @@ void LogFormatter::init(){
         XX(l, LineFormatItem),              //l:行号
         XX(T, TabFormatItem),               //T:Tab
         XX(F, FiberIdFormatItem),           //F:协程id
-        //XX(N, ThreadNameFormatItem),        //N:线程名称
+        XX(N, ThreadNameFormatItem),        //N:线程名称
 #undef XX
     };
 
@@ -513,6 +560,7 @@ LoggerManager::LoggerManager(){
     init();
 }
 Logger::ptr LoggerManager::getLogger(const std::string&name){
+	MutexType::Lock lock(m_mutex);
     auto it=m_loggers.find(name);
     if(it!=m_loggers.end()){
         return it->second;
@@ -648,9 +696,10 @@ public:
 };
 JKYi::ConfigVar<std::set<LogDefine>>::ptr g_log_defines=JKYi::Config::Lookup("logs",std::set<LogDefine>(),"logs config");
 //然后这里的话，通过全局对象在main函数执行之前进行初始化的特性，在它的构造函数中进行回调函数的注册
+//通过下面这个函数，就是实现了在配置文件中修改日志输出
 struct LogIniter{
     LogIniter(){
-       g_log_defines->addListener(0xF1E231,[](const std::set<LogDefine>&old_value,const std::set<LogDefine>&new_value){
+       g_log_defines->addListener([](const std::set<LogDefine>&old_value,const std::set<LogDefine>&new_value){
             //三种事件  新增、删除、修改
             JKYI_LOG_INFO(JKYI_LOG_ROOT())<<"on_logger_conf_changed";
             for(auto &i:new_value){
@@ -716,6 +765,7 @@ void LoggerManager::init(){
 
 }
 std::string LoggerManager::toYamlString(){
+	MutexType::Lock lock(m_mutex);
     YAML::Node node;
     for(auto&i :m_loggers){
         node.push_back(YAML::Load(i.second->toYamlString()));

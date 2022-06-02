@@ -3,7 +3,10 @@
 
 CMakeFiles/test.dir/tests/test.cc.o
  /home/admin/workSpace/JKYi/log.h
+ /home/admin/workSpace/JKYi/mutex.h
+ /home/admin/workSpace/JKYi/noncopyable.h
  /home/admin/workSpace/JKYi/singleton.h
+ /home/admin/workSpace/JKYi/thread.h
  /home/admin/workSpace/JKYi/util.h
  /home/admin/workSpace/tests/test.cc
  /root/yaml-cpp-master/include/yaml-cpp/binary.h

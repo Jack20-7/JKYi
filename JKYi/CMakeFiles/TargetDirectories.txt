@@ -1,5 +1,8 @@
 /home/admin/workSpace/CMakeFiles/rebuild_cache.dir
 /home/admin/workSpace/CMakeFiles/edit_cache.dir
+/home/admin/workSpace/CMakeFiles/test_fiber.dir
+/home/admin/workSpace/CMakeFiles/test_util.dir
 /home/admin/workSpace/CMakeFiles/test_config.dir
+/home/admin/workSpace/CMakeFiles/test_thread.dir
 /home/admin/workSpace/CMakeFiles/test.dir
 /home/admin/workSpace/CMakeFiles/JKYi.dir

@@ -219,6 +219,9 @@ JKYi_BINARY_DIR:STATIC=/home/admin/workSpace
 JKYi_SOURCE_DIR:STATIC=/home/admin/workSpace
 
 //Path to a library.
+PTHREAD:FILEPATH=/usr/lib64/libpthread.so
+
+//Path to a library.
 YAMLCPP:FILEPATH=/usr/local/lib64/libyaml-cpp.so
 
 

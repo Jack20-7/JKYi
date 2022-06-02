@@ -6,6 +6,7 @@
 namespace JKYi{
 //查找config的map中是否存在name这个名称的
 ConfigVarBase::ptr Config::LookupBase(const std::string&name){
+	RWMutexType::ReadLock lock(getMutex());
   auto it=getDatas().find(name);
   return it==getDatas().end()?nullptr:it->second;
 }
@@ -30,7 +31,7 @@ static void ListAllMember(const std::string&prefix,const YAML::Node&node,std::li
     }
 }
 
- void Config::LoadFromYaml(const YAML::Node&node){
+void Config::LoadFromYaml(const YAML::Node&node){
     std::list<std::pair<std::string,const YAML::Node>>all_nodes;
     ListAllMember("",node,all_nodes);
     for(auto&i:all_nodes){
@@ -56,4 +57,14 @@ static void ListAllMember(const std::string&prefix,const YAML::Node&node,std::li
 
     }
 }
+void Config::Visit(std::function<void (ConfigVarBase::ptr)>cb){
+   RWMutexType::ReadLock lock(getMutex());
+   ConfigVarMap&m=getDatas();
+   for(auto it=m.begin();it!=m.end();++it){
+	   cb(it->second);
+   }
+
+}
+
+
 }

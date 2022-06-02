@@ -13,9 +13,11 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <functional>
+#include <typeinfo>
+
+#include"thread.h"
 #include "log.h"
 #include "util.h"
-#include <typeinfo>
 
 namespace JKYi{
 //基类
@@ -249,6 +251,7 @@ class ConfigVar:public ConfigVarBase{
 public:
    typedef std::shared_ptr<ConfigVar<T>> ptr;
    typedef std::function<void (const  T&oldValue,const T&newValue)> on_change_cb;
+   typedef RWMutex RWMutexType;
 
    ConfigVar(const std::string&name,const T&default_value,const std::string&description="")
    :ConfigVarBase(name,description),m_val(default_value){}
@@ -256,6 +259,7 @@ public:
    std::string toString()override{
        try{
          //return boost::lexical_cast<std::string>(m_val);
+		 RWMutex::ReadLock lock(m_mutex);
          return ToStr()(m_val);
        }catch(std::exception&e){
          JKYI_LOG_ERROR(JKYI_LOG_ROOT())<<"ConfigVar::toString exception"
@@ -276,8 +280,13 @@ public:
       return false;
    }
    //
-   const T getValue()const {return m_val;}
+   const T getValue(){
+         RWMutexType::ReadLock lock(m_mutex);
+         return m_val;
+   }
    void setValue(const T&t){
+	{
+      RWMutex::ReadLock lock(m_mutex);	
       if(m_val==t){
          return ;
       }
@@ -285,21 +294,30 @@ public:
       for(auto&i : m_cbs){
          i.second(m_val,t);
       }
+	}
+	  RWMutexType::WriteLock lock(m_mutex);
       m_val=t;
    }
    std::string getType()const override {return typeid(T).name();}
    //回调函数相关
-   void addListener(uint64_t key,on_change_cb cb){
-      m_cbs[key]=cb;
+   uint64_t addListener(on_change_cb cb){
+	  static uint64_t s_fun_id=0;
+	  RWMutexType::WriteLock lock(m_mutex);
+	  ++s_fun_id;
+      m_cbs[s_fun_id]=cb;
+	  return s_fun_id;
    }
    void delListener(uint64_t key){
+	  RWMutexType::WriteLock lock(m_mutex);
       m_cbs.erase(key);
    }
    on_change_cb getListener(uint64_t key){
+	   RWMutexType::ReadLock lock(m_mutex);
       auto it=m_cbs.find(key);
       return it==m_cbs.end()?nullptr:it->second;
    }
    void clearListener(){
+	  RWMutexType::WriteLock lock(m_mutex);
       m_cbs.clear();
       return ;
    }
@@ -307,16 +325,20 @@ private:
    T m_val;
    //用来实现事件检测机制，也就是当发生了变更时需要调度的回调函数
    std::unordered_map<uint64_t,on_change_cb>m_cbs;
+   //用读写锁效率会比较高一点
+   RWMutexType m_mutex;
 };
 //管理类
 class Config{
 public:
     typedef std::map<std::string,ConfigVarBase::ptr> ConfigVarMap;
+	typedef RWMutex RWMutexType;
     //查找，不存在就创建新的
     template<class T>
     static typename ConfigVar<T>::ptr Lookup(const std::string&name,
     const T&default_value,const std::string&description=""){
         //这里需要特别处理那些名称相同但是类型不同的configvar
+		RWMutexType::WriteLock lock(getMutex());
         auto it=getDatas().find(name);
         if(it!=getDatas().end()){
            //如果存在的话，需要判断是否是类型相同的
@@ -345,6 +367,7 @@ public:
     //
     template<class T>
     static typename ConfigVar<T>::ptr Lookup(const std::string&name){
+		RWMutexType::ReadLock lock(getMutex());
         auto it=getDatas().find(name);
         if(it==getDatas().end()){
            return nullptr;
@@ -353,12 +376,19 @@ public:
     }
     static void LoadFromYaml(const YAML::Node&node);
     static ConfigVarBase::ptr LookupBase(const std::string&name);
+	//该函数提供给用户用于获取当前系统中的配置信息
+	static void Visit(std::function<void (ConfigVarBase::ptr)>cb); 
 private: 
     //这里为了解决全局变量初始化顺序不可预知的问题，这里将成员放到static成员函数里面去
     static ConfigVarMap& getDatas(){
        static ConfigVarMap m_datas;
         return m_datas;
     }
+	//这里还是为了避免全局全局变量和静态变量初始化顺序的问题，将锁变成static局部变量
+	static RWMutexType& getMutex(){
+	   static  RWMutexType m_mutex;
+	   return m_mutex;
+	}
 };
 }
 #endif

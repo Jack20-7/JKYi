@@ -142,7 +142,7 @@ void test_class(){
     //就拿person类型举例
     JKYI_LOG_INFO(JKYI_LOG_ROOT())<<"before: "<<g_person_config->getValue().toString()<<" - "<<g_person_config->toString();
     //测试事件修改机制
-    g_person_config->addListener(10,[](const Person&lhv,const Person&rhv){
+    g_person_config->addListener([](const Person&lhv,const Person&rhv){
         JKYI_LOG_INFO(JKYI_LOG_ROOT())<<"old value:"<<lhv.toString()<<" new value:"<<rhv.toString();
     });
     const YAML::Node& root=YAML::LoadFile("/home/admin/workSpace/bin/conf/test.yam");
@@ -158,6 +158,9 @@ void test_log(){
     std::cout<<"----------------------------------------------"<<std::endl;
     std::cout<<JKYi::LoggerMgr::GetInstance()->toYamlString()<<std::endl;
     JKYI_LOG_INFO(system_log)<<"hello,JKYI log";
+    JKYI_LOG_INFO(system_log)<<"hello,JKYI log";
+    JKYI_LOG_INFO(system_log)<<"hello,JKYI log";
+    JKYI_LOG_INFO(system_log)<<"hello,JKYI log";
 }
 int main(int argc,char **argv){
    
@@ -165,5 +168,11 @@ int main(int argc,char **argv){
     //test_config();
     //test_class();
     test_log();
+	JKYi::Config::Visit([](JKYi::ConfigVarBase::ptr p){
+         JKYI_LOG_INFO(JKYI_LOG_ROOT())<<"name="<<p->getName()
+		                              <<" description="<<p->getDescription()
+									  <<" typename="<<p->getType()
+									  <<" value= "<<p->toString();
+	});
     return 0;
 }

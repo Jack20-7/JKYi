@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_fiber
+
+# Build rule for target.
+test_fiber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_fiber
+.PHONY : test_fiber
+
+# fast build rule for target.
+test_fiber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/build
+.PHONY : test_fiber/fast
+
+#=============================================================================
+# Target rules for targets named test_util
+
+# Build rule for target.
+test_util: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_util
+.PHONY : test_util
+
+# fast build rule for target.
+test_util/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/build
+.PHONY : test_util/fast
+
+#=============================================================================
 # Target rules for targets named test_config
 
 # Build rule for target.
@@ -128,6 +154,19 @@ test_config: cmake_check_build_system
 test_config/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
 .PHONY : test_config/fast
+
+#=============================================================================
+# Target rules for targets named test_thread
+
+# Build rule for target.
+test_thread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_thread
+.PHONY : test_thread
+
+# fast build rule for target.
+test_thread/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -182,6 +221,33 @@ JKYi/config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/config.cc.s
 .PHONY : JKYi/config.cc.s
 
+JKYi/fiber.o: JKYi/fiber.cc.o
+
+.PHONY : JKYi/fiber.o
+
+# target to build an object file
+JKYi/fiber.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/fiber.cc.o
+.PHONY : JKYi/fiber.cc.o
+
+JKYi/fiber.i: JKYi/fiber.cc.i
+
+.PHONY : JKYi/fiber.i
+
+# target to preprocess a source file
+JKYi/fiber.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/fiber.cc.i
+.PHONY : JKYi/fiber.cc.i
+
+JKYi/fiber.s: JKYi/fiber.cc.s
+
+.PHONY : JKYi/fiber.s
+
+# target to generate assembly for a file
+JKYi/fiber.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/fiber.cc.s
+.PHONY : JKYi/fiber.cc.s
+
 JKYi/log.o: JKYi/log.cc.o
 
 .PHONY : JKYi/log.o
@@ -208,6 +274,60 @@ JKYi/log.s: JKYi/log.cc.s
 JKYi/log.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/log.cc.s
 .PHONY : JKYi/log.cc.s
+
+JKYi/mutex.o: JKYi/mutex.cc.o
+
+.PHONY : JKYi/mutex.o
+
+# target to build an object file
+JKYi/mutex.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/mutex.cc.o
+.PHONY : JKYi/mutex.cc.o
+
+JKYi/mutex.i: JKYi/mutex.cc.i
+
+.PHONY : JKYi/mutex.i
+
+# target to preprocess a source file
+JKYi/mutex.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/mutex.cc.i
+.PHONY : JKYi/mutex.cc.i
+
+JKYi/mutex.s: JKYi/mutex.cc.s
+
+.PHONY : JKYi/mutex.s
+
+# target to generate assembly for a file
+JKYi/mutex.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/mutex.cc.s
+.PHONY : JKYi/mutex.cc.s
+
+JKYi/thread.o: JKYi/thread.cc.o
+
+.PHONY : JKYi/thread.o
+
+# target to build an object file
+JKYi/thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/thread.cc.o
+.PHONY : JKYi/thread.cc.o
+
+JKYi/thread.i: JKYi/thread.cc.i
+
+.PHONY : JKYi/thread.i
+
+# target to preprocess a source file
+JKYi/thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/thread.cc.i
+.PHONY : JKYi/thread.cc.i
+
+JKYi/thread.s: JKYi/thread.cc.s
+
+.PHONY : JKYi/thread.s
+
+# target to generate assembly for a file
+JKYi/thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/thread.cc.s
+.PHONY : JKYi/thread.cc.s
 
 JKYi/util.o: JKYi/util.cc.o
 
@@ -290,6 +410,87 @@ tests/test_config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cc.s
 .PHONY : tests/test_config.cc.s
 
+tests/test_fiber.o: tests/test_fiber.cc.o
+
+.PHONY : tests/test_fiber.o
+
+# target to build an object file
+tests/test_fiber.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o
+.PHONY : tests/test_fiber.cc.o
+
+tests/test_fiber.i: tests/test_fiber.cc.i
+
+.PHONY : tests/test_fiber.i
+
+# target to preprocess a source file
+tests/test_fiber.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.i
+.PHONY : tests/test_fiber.cc.i
+
+tests/test_fiber.s: tests/test_fiber.cc.s
+
+.PHONY : tests/test_fiber.s
+
+# target to generate assembly for a file
+tests/test_fiber.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.s
+.PHONY : tests/test_fiber.cc.s
+
+tests/test_thread.o: tests/test_thread.cc.o
+
+.PHONY : tests/test_thread.o
+
+# target to build an object file
+tests/test_thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.o
+.PHONY : tests/test_thread.cc.o
+
+tests/test_thread.i: tests/test_thread.cc.i
+
+.PHONY : tests/test_thread.i
+
+# target to preprocess a source file
+tests/test_thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.i
+.PHONY : tests/test_thread.cc.i
+
+tests/test_thread.s: tests/test_thread.cc.s
+
+.PHONY : tests/test_thread.s
+
+# target to generate assembly for a file
+tests/test_thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.s
+.PHONY : tests/test_thread.cc.s
+
+tests/test_util.o: tests/test_util.cc.o
+
+.PHONY : tests/test_util.o
+
+# target to build an object file
+tests/test_util.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cc.o
+.PHONY : tests/test_util.cc.o
+
+tests/test_util.i: tests/test_util.cc.i
+
+.PHONY : tests/test_util.i
+
+# target to preprocess a source file
+tests/test_util.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cc.i
+.PHONY : tests/test_util.cc.i
+
+tests/test_util.s: tests/test_util.cc.s
+
+.PHONY : tests/test_util.s
+
+# target to generate assembly for a file
+tests/test_util.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cc.s
+.PHONY : tests/test_util.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -298,15 +499,27 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_fiber"
+	@echo "... test_util"
 	@echo "... test_config"
+	@echo "... test_thread"
 	@echo "... test"
 	@echo "... JKYi"
 	@echo "... JKYi/config.o"
 	@echo "... JKYi/config.i"
 	@echo "... JKYi/config.s"
+	@echo "... JKYi/fiber.o"
+	@echo "... JKYi/fiber.i"
+	@echo "... JKYi/fiber.s"
 	@echo "... JKYi/log.o"
 	@echo "... JKYi/log.i"
 	@echo "... JKYi/log.s"
+	@echo "... JKYi/mutex.o"
+	@echo "... JKYi/mutex.i"
+	@echo "... JKYi/mutex.s"
+	@echo "... JKYi/thread.o"
+	@echo "... JKYi/thread.i"
+	@echo "... JKYi/thread.s"
 	@echo "... JKYi/util.o"
 	@echo "... JKYi/util.i"
 	@echo "... JKYi/util.s"
@@ -316,6 +529,15 @@ help:
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_fiber.o"
+	@echo "... tests/test_fiber.i"
+	@echo "... tests/test_fiber.s"
+	@echo "... tests/test_thread.o"
+	@echo "... tests/test_thread.i"
+	@echo "... tests/test_thread.s"
+	@echo "... tests/test_util.o"
+	@echo "... tests/test_util.i"
+	@echo "... tests/test_util.s"
 .PHONY : help
 
 

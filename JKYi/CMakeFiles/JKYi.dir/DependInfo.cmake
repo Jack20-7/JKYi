@@ -5,7 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/admin/workSpace/JKYi/config.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/config.cc.o"
+  "/home/admin/workSpace/JKYi/fiber.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/fiber.cc.o"
   "/home/admin/workSpace/JKYi/log.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/log.cc.o"
+  "/home/admin/workSpace/JKYi/mutex.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/mutex.cc.o"
+  "/home/admin/workSpace/JKYi/thread.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/thread.cc.o"
   "/home/admin/workSpace/JKYi/util.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/util.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -3,7 +3,10 @@
 
 CMakeFiles/test_config.dir/tests/test_config.cc.o: JKYi/config.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: JKYi/log.h
+CMakeFiles/test_config.dir/tests/test_config.cc.o: JKYi/mutex.h
+CMakeFiles/test_config.dir/tests/test_config.cc.o: JKYi/noncopyable.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: JKYi/singleton.h
+CMakeFiles/test_config.dir/tests/test_config.cc.o: JKYi/thread.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: JKYi/util.h
 CMakeFiles/test_config.dir/tests/test_config.cc.o: tests/test_config.cc
 CMakeFiles/test_config.dir/tests/test_config.cc.o: /root/yaml-cpp-master/include/yaml-cpp/binary.h
