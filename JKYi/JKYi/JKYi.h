@@ -8,4 +8,7 @@
 #include"mutex.h"
 #include"macro.h"
 #include"fiber.h"
+#include"scheduler.h"
+#include"timer.h"
+#include"iomanager.h"
 #endif

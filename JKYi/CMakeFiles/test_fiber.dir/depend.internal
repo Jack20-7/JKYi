@@ -5,12 +5,15 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o
  /home/admin/workSpace/JKYi/JKYi.h
  /home/admin/workSpace/JKYi/config.h
  /home/admin/workSpace/JKYi/fiber.h
+ /home/admin/workSpace/JKYi/iomanager.h
  /home/admin/workSpace/JKYi/log.h
  /home/admin/workSpace/JKYi/macro.h
  /home/admin/workSpace/JKYi/mutex.h
  /home/admin/workSpace/JKYi/noncopyable.h
+ /home/admin/workSpace/JKYi/scheduler.h
  /home/admin/workSpace/JKYi/singleton.h
  /home/admin/workSpace/JKYi/thread.h
+ /home/admin/workSpace/JKYi/timer.h
  /home/admin/workSpace/JKYi/util.h
  /home/admin/workSpace/tests/test_fiber.cc
  /root/yaml-cpp-master/include/yaml-cpp/binary.h

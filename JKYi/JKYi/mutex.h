@@ -75,8 +75,7 @@ public:
   }
   //析构函数
   ~ReadScopedLockImpl(){
-    m_mutex.unlock();
-	m_locked=false;
+	  unlock();
   }
   //加锁的函数
   void lock(){
@@ -111,8 +110,7 @@ public:
   }
   //析构函数
   ~WriteScopedLockImpl(){
-    m_mutex.unlock();
-	m_locked=false;
+	  unlock();
   }
   //加锁的函数
   void lock(){

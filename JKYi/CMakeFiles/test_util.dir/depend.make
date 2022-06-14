@@ -4,12 +4,15 @@
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/JKYi.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/config.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/fiber.h
+CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/iomanager.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/log.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/macro.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/mutex.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/noncopyable.h
+CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/scheduler.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/singleton.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/thread.h
+CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/timer.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/util.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: tests/test_util.cc
 CMakeFiles/test_util.dir/tests/test_util.cc.o: /root/yaml-cpp-master/include/yaml-cpp/binary.h

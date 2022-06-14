@@ -62,17 +62,6 @@ CMAKE_BINARY_DIR = /home/admin/workSpace
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -83,6 +72,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -115,6 +115,32 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named test_iomanager
+
+# Build rule for target.
+test_iomanager: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_iomanager
+.PHONY : test_iomanager
+
+# fast build rule for target.
+test_iomanager/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/build
+.PHONY : test_iomanager/fast
+
+#=============================================================================
+# Target rules for targets named test_scheduler
+
+# Build rule for target.
+test_scheduler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_scheduler
+.PHONY : test_scheduler
+
+# fast build rule for target.
+test_scheduler/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/build
+.PHONY : test_scheduler/fast
 
 #=============================================================================
 # Target rules for targets named test_fiber
@@ -248,6 +274,33 @@ JKYi/fiber.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/fiber.cc.s
 .PHONY : JKYi/fiber.cc.s
 
+JKYi/iomanager.o: JKYi/iomanager.cc.o
+
+.PHONY : JKYi/iomanager.o
+
+# target to build an object file
+JKYi/iomanager.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o
+.PHONY : JKYi/iomanager.cc.o
+
+JKYi/iomanager.i: JKYi/iomanager.cc.i
+
+.PHONY : JKYi/iomanager.i
+
+# target to preprocess a source file
+JKYi/iomanager.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/iomanager.cc.i
+.PHONY : JKYi/iomanager.cc.i
+
+JKYi/iomanager.s: JKYi/iomanager.cc.s
+
+.PHONY : JKYi/iomanager.s
+
+# target to generate assembly for a file
+JKYi/iomanager.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/iomanager.cc.s
+.PHONY : JKYi/iomanager.cc.s
+
 JKYi/log.o: JKYi/log.cc.o
 
 .PHONY : JKYi/log.o
@@ -302,6 +355,33 @@ JKYi/mutex.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/mutex.cc.s
 .PHONY : JKYi/mutex.cc.s
 
+JKYi/scheduler.o: JKYi/scheduler.cc.o
+
+.PHONY : JKYi/scheduler.o
+
+# target to build an object file
+JKYi/scheduler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o
+.PHONY : JKYi/scheduler.cc.o
+
+JKYi/scheduler.i: JKYi/scheduler.cc.i
+
+.PHONY : JKYi/scheduler.i
+
+# target to preprocess a source file
+JKYi/scheduler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/scheduler.cc.i
+.PHONY : JKYi/scheduler.cc.i
+
+JKYi/scheduler.s: JKYi/scheduler.cc.s
+
+.PHONY : JKYi/scheduler.s
+
+# target to generate assembly for a file
+JKYi/scheduler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/scheduler.cc.s
+.PHONY : JKYi/scheduler.cc.s
+
 JKYi/thread.o: JKYi/thread.cc.o
 
 .PHONY : JKYi/thread.o
@@ -328,6 +408,33 @@ JKYi/thread.s: JKYi/thread.cc.s
 JKYi/thread.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/thread.cc.s
 .PHONY : JKYi/thread.cc.s
+
+JKYi/timer.o: JKYi/timer.cc.o
+
+.PHONY : JKYi/timer.o
+
+# target to build an object file
+JKYi/timer.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/timer.cc.o
+.PHONY : JKYi/timer.cc.o
+
+JKYi/timer.i: JKYi/timer.cc.i
+
+.PHONY : JKYi/timer.i
+
+# target to preprocess a source file
+JKYi/timer.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/timer.cc.i
+.PHONY : JKYi/timer.cc.i
+
+JKYi/timer.s: JKYi/timer.cc.s
+
+.PHONY : JKYi/timer.s
+
+# target to generate assembly for a file
+JKYi/timer.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/timer.cc.s
+.PHONY : JKYi/timer.cc.s
 
 JKYi/util.o: JKYi/util.cc.o
 
@@ -437,6 +544,60 @@ tests/test_fiber.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.s
 .PHONY : tests/test_fiber.cc.s
 
+tests/test_iomanager.o: tests/test_iomanager.cc.o
+
+.PHONY : tests/test_iomanager.o
+
+# target to build an object file
+tests/test_iomanager.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o
+.PHONY : tests/test_iomanager.cc.o
+
+tests/test_iomanager.i: tests/test_iomanager.cc.i
+
+.PHONY : tests/test_iomanager.i
+
+# target to preprocess a source file
+tests/test_iomanager.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.i
+.PHONY : tests/test_iomanager.cc.i
+
+tests/test_iomanager.s: tests/test_iomanager.cc.s
+
+.PHONY : tests/test_iomanager.s
+
+# target to generate assembly for a file
+tests/test_iomanager.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.s
+.PHONY : tests/test_iomanager.cc.s
+
+tests/test_scheduler.o: tests/test_scheduler.cc.o
+
+.PHONY : tests/test_scheduler.o
+
+# target to build an object file
+tests/test_scheduler.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o
+.PHONY : tests/test_scheduler.cc.o
+
+tests/test_scheduler.i: tests/test_scheduler.cc.i
+
+.PHONY : tests/test_scheduler.i
+
+# target to preprocess a source file
+tests/test_scheduler.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.i
+.PHONY : tests/test_scheduler.cc.i
+
+tests/test_scheduler.s: tests/test_scheduler.cc.s
+
+.PHONY : tests/test_scheduler.s
+
+# target to generate assembly for a file
+tests/test_scheduler.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.s
+.PHONY : tests/test_scheduler.cc.s
+
 tests/test_thread.o: tests/test_thread.cc.o
 
 .PHONY : tests/test_thread.o
@@ -497,8 +658,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_iomanager"
+	@echo "... rebuild_cache"
+	@echo "... test_scheduler"
 	@echo "... test_fiber"
 	@echo "... test_util"
 	@echo "... test_config"
@@ -511,15 +674,24 @@ help:
 	@echo "... JKYi/fiber.o"
 	@echo "... JKYi/fiber.i"
 	@echo "... JKYi/fiber.s"
+	@echo "... JKYi/iomanager.o"
+	@echo "... JKYi/iomanager.i"
+	@echo "... JKYi/iomanager.s"
 	@echo "... JKYi/log.o"
 	@echo "... JKYi/log.i"
 	@echo "... JKYi/log.s"
 	@echo "... JKYi/mutex.o"
 	@echo "... JKYi/mutex.i"
 	@echo "... JKYi/mutex.s"
+	@echo "... JKYi/scheduler.o"
+	@echo "... JKYi/scheduler.i"
+	@echo "... JKYi/scheduler.s"
 	@echo "... JKYi/thread.o"
 	@echo "... JKYi/thread.i"
 	@echo "... JKYi/thread.s"
+	@echo "... JKYi/timer.o"
+	@echo "... JKYi/timer.i"
+	@echo "... JKYi/timer.s"
 	@echo "... JKYi/util.o"
 	@echo "... JKYi/util.i"
 	@echo "... JKYi/util.s"
@@ -532,6 +704,12 @@ help:
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"
+	@echo "... tests/test_iomanager.o"
+	@echo "... tests/test_iomanager.i"
+	@echo "... tests/test_iomanager.s"
+	@echo "... tests/test_scheduler.o"
+	@echo "... tests/test_scheduler.i"
+	@echo "... tests/test_scheduler.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"

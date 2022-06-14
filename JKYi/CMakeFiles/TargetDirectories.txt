@@ -1,5 +1,7 @@
-/home/admin/workSpace/CMakeFiles/rebuild_cache.dir
 /home/admin/workSpace/CMakeFiles/edit_cache.dir
+/home/admin/workSpace/CMakeFiles/test_iomanager.dir
+/home/admin/workSpace/CMakeFiles/rebuild_cache.dir
+/home/admin/workSpace/CMakeFiles/test_scheduler.dir
 /home/admin/workSpace/CMakeFiles/test_fiber.dir
 /home/admin/workSpace/CMakeFiles/test_util.dir
 /home/admin/workSpace/CMakeFiles/test_config.dir

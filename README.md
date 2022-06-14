@@ -71,7 +71,6 @@ JKYI_LOG_INFO(g_system_log)<<"xxx"
 //这样的话，输出到屏幕的日志格式就是'%d%T%m%n'，写入到system.txt的日志格式为'%d%T[%p]%T%m%T%n'
 ```
 
-<<<<<<< HEAD
 ## 2.线程模块
 
 该服务器框架内的主要的工作是基于协程来完成的，线程模块的话封装的比较简单，因为线程仅仅是作为协程的容器而存在的.
@@ -142,8 +141,116 @@ int main(int argc,char**argv){
 	return 0;
 }
 ```
-//上面这个程序，主协程最后一次swapIn到子协程之后，子协程执行完毕，然后就会返回到主协程，然后程序结束。最终主协程和子协程都能够被销毁
-=======
+上面这个程序，主协程最后一次swapIn到子协程之后，子协程执行完毕，然后就会返回到主协程，然后程序结束。最终主协程和子协程都能够被销毁
+
+## 协程调度模块
+
+协程调度模主要是由scheduler这个类来实现的，实现的模型就是scheduler中多个线程，每一个线程中有多个协程.然后scheduler中还含有一个任务队列，我们在使用的时候就只需要将要处理的任务放到任务队列中去就可以让调度器中的线程里面的协程来对该任务进行处理.任务的类型的话可以是回调函数，也可以是协程.例如
+
+```cpp
+void tese_fiber(){
+	static int s_count=5;
+	
+	if(--s_count>=0){
+		JKYi::Scheduler::GetThis()->schedule(&test_fiber,JKYi::GetThreadId());
+	}
+	return ;
+}
+int main(void){
+
+	//第一个参数表示调度器中管理的线程的数目
+	//第二个参数表示是否将当前线程作为调度器中的调度线程来使用
+	//第三个参数表示的就是线程的名称
+	JKYi::Scheduler sc(3,true,"test");
+
+	//对调度器中的线程进行创建
+	sc.start();
+
+	//向调度器中添加任务来处理
+	//该函数就是用来向调度器中添加任务的，添加的任务可以是回调函数，也可以是
+	//协程并且可以通过在第二个参数来让该任务在特定的线程中来执行
+	sc.schedule(&test_fiber);
+
+	sc.stop();
+
+	return 0;
+}
+
+```
+
+## 定时器模块
+
+通过定时器来对需要在特定时间进行处理的任务进行处理.添加的定时器可以是普通的定时器，也可以是条件定时器,支持一次性触发、循环触发等.这个定时器一般不会单独来实现，他需要配合io协程调度一起使用.定时器的精度是毫秒级别的，这样做是为了配合epoll.
+
+## IO协程调度模块
+
+io协程调度模块其实就是基于上面的定时器模块和协程调度模块来实现的，我们平时使用就是直接使用io协程调度器就行了.io协程调度模块中通过对epoll的封装来对协程进行最大限度的复用，减少了资源的开销，极大的提高了程序执行的效率.支持对socket的的读写事件处理
+
+示例如下:
+
+``` cpp
+
+//下面测试对socket的支持
+void test_socket(){
+
+	sock=socket(AF_INET,SOCK_STREAM,0);
+	fcntl(sock,F_SETFL,O_NONBLOCK);
+	//
+	struct sockaddr_in addr;
+	memset(&addr,0,sizeof(addr));
+	addr.sin_family=AF_INET;
+	addr.sin_port=htons(80);
+	inet_pton(AF_INET, "220.181.38.148", &addr.sin_addr.s_addr);
+	if(!connect(sock,(sockaddr*)&addr,sizeof(addr))){
+
+	}else if(errno==EINPROGRESS){
+	   JKYI_LOG_INFO(g_logger)<<"add event errno="<<errno<<"  "<<strerror(errno);
+	   //田间对socket写事件的关注并注册对应的回调函数
+	   //第一个参数是socket
+	   //第二个参数是关注的事件
+	   //第三个参数是触发事件时的回调函数
+	   JKYi::IOManager::GetThis()->addEvent(sock,JKYi::IOManager::READ,[](){
+		   JKYI_LOG_INFO(g_logger)<<"read callback";
+	   });
+
+	   JKYi::IOManager::GetThis()->addEvent(sock,JKYi::IOManager::WRITE,[](){
+		   JKYI_LOG_INFO(g_logger)<<"write callback";
+		   //
+		   //取消对该事件的关注并且强制触发对应的回调函数
+		   JKYi::IOManager::GetThis()->cancelEvent(sock,JKYi::IOManager::READ);
+		   close(sock);
+	   });
+	  }else{
+		JKYI_LOG_INFO(g_logger)<<"connectiong is establish";
+	}
 
 
->>>>>>> 6453cc41e320725db5323225b69672304779da9b
+}
+
+//下面是对定时器的测试
+JKYi::Timer::ptr s_timer;
+void test_timer(){
+  //在调度器中开两个线程
+  JKYi::IOManager iom(2);
+
+  //添加定时器
+  //第一个参数是定时器的超时时间，毫秒级别的
+  //第二个参数就是回调函数，如果未指定的话就默认使用当前的协程来处理
+  //第三个参数是是否需要循环触发
+  iom.addTimer(1000,[](){
+   static int i=0;
+   if(++i==3){
+     //取消定时器
+     s_timer->cancel();
+   }
+  },true);
+}
+int main(void){
+	test_timer();
+	test_socket();
+	return 0;
+}
+
+```
+
+

@@ -8,7 +8,9 @@
 namespace JKYi{
 //封装的一个协程类
 //我们的这个协程模型比较简单，他只允许主协程来切换协程执行，子协程不允许进行切换.子协程在执行完了之后都会返回到主协程去执行
+class Scheduler;
 class Fiber:public std::enable_shared_from_this<Fiber>{
+friend class Scheduler;
 public:
    typedef std::shared_ptr<Fiber> ptr;
    //协程的状态
@@ -26,7 +28,8 @@ public:
 	//析构函数
 	~Fiber();
 	//有参构造，执行的协程就是通过有参构造来进行创建
-	Fiber(std::function<void ()>cb,size_t stacksize=0);
+	//这里的use_caller表示的是为调度器的主调度协程
+	Fiber(std::function<void ()>cb,size_t stacksize=0,bool use_caller=false);
 	//当一个协程执行完成后，可以通过调用该函数来让他去执行别的函数，重复利用他的资源
 	void reset(std::function<void ()>cb);
 	//令主协程挂起，去执行当前这个协程
@@ -56,6 +59,8 @@ public:
    static uint64_t TotalFibers();
    //
    static void MainFunc();
+   //
+   static void CallerMainFunc();
    //返回当前协程的id
    static uint64_t GetFiberId();
 private:

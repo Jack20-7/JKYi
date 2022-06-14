@@ -4,12 +4,15 @@
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/JKYi.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/config.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/fiber.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/iomanager.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/log.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/macro.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/mutex.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/noncopyable.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/scheduler.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/singleton.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/thread.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/timer.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/util.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: tests/test_fiber.cc
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: /root/yaml-cpp-master/include/yaml-cpp/binary.h

@@ -9,6 +9,9 @@
 #include<stdint.h>
 #include<vector>
 #include<string>
+#include<iomanip>
+#include<sys/time.h>
+
 //该文件中定义的是一些常用的函数
 namespace JKYi{
     //获取线程id的函数
@@ -22,6 +25,10 @@ namespace JKYi{
    void Backtrace(std::vector<std::string>&bt,int size=64,int skip=1);
    //该函数可作为用户调用的接口
    std::string BacktraceToString(int size=64,int skip=2,const std::string&prefix="  ");
+   //获得当前时间对应的毫秒数
+   uint64_t GetCurrentMS();
+   //获得当前时间对应的微妙数
+   uint64_t GetCurrentUS();
 
 }
 

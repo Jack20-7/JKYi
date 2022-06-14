@@ -1,0 +1,519 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Alloc	fiber.cc	/^   static void* Alloc(size_t size){$/;"	f	class:JKYi::MallocStackAllocator
+Backtrace	util.cc	/^void Backtrace(std::vector<std::string>&bt,int size,int skip){$/;"	f	namespace:JKYi
+BacktraceToString	util.cc	/^std::string BacktraceToString(int size,int skip,const std::string&prefix){$/;"	f	namespace:JKYi
+CASLock	mutex.h	/^   CASLock(){$/;"	f	class:JKYi::CASLock
+CASLock	mutex.h	/^class CASLock:Noncopyable{$/;"	c	namespace:JKYi
+CallerMainFunc	fiber.cc	/^void Fiber::CallerMainFunc(){$/;"	f	class:JKYi::Fiber
+Comparator	timer.h	/^   struct Comparator{$/;"	s	class:JKYi::Timer
+Config	config.h	/^class Config{$/;"	c	namespace:JKYi
+ConfigVar	config.h	/^   ConfigVar(const std::string&name,const T&default_value,const std::string&description="")$/;"	f	class:JKYi::ConfigVar
+ConfigVar	config.h	/^class ConfigVar:public ConfigVarBase{$/;"	c	namespace:JKYi
+ConfigVarBase	config.h	/^   ConfigVarBase(const std::string&name,const std::string&description="")$/;"	f	class:JKYi::ConfigVarBase
+ConfigVarBase	config.h	/^class ConfigVarBase{$/;"	c	namespace:JKYi
+ConfigVarMap	config.h	/^    typedef std::map<std::string,ConfigVarBase::ptr> ConfigVarMap;$/;"	t	class:JKYi::Config
+DEBUG	log.h	/^     DEBUG=1,$/;"	e	enum:JKYi::LogLevel::Level
+DateTimeFormatItem	log.cc	/^    DateTimeFormatItem(const std::string& format = "%Y-%m-%d %H:%M:%S")$/;"	f	class:JKYi::DateTimeFormatItem
+DateTimeFormatItem	log.cc	/^class DateTimeFormatItem : public LogFormatter::FormatItem {$/;"	c	namespace:JKYi	file:
+Dealloc	fiber.cc	/^   static void Dealloc(void *ptr,size_t size){$/;"	f	class:JKYi::MallocStackAllocator
+ERROR	log.h	/^     ERROR=4,$/;"	e	enum:JKYi::LogLevel::Level
+EXCEPT	fiber.h	/^	  EXCEPT\/\/异常态$/;"	e	enum:JKYi::Fiber::State
+EXEC	fiber.h	/^	  EXEC,  \/\/运行态$/;"	e	enum:JKYi::Fiber::State
+ElapseFormatItem	log.cc	/^    ElapseFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::ElapseFormatItem
+ElapseFormatItem	log.cc	/^class ElapseFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:
+Event	iomanager.h	/^   enum Event{$/;"	g	class:JKYi::IOManager
+EventContext	iomanager.h	/^	 struct EventContext{$/;"	s	struct:JKYi::IOManager::FdContext
+FATAL	log.h	/^     FATAL=5$/;"	e	enum:JKYi::LogLevel::Level
+FdContext	iomanager.h	/^   struct FdContext{$/;"	s	class:JKYi::IOManager
+Fiber	fiber.cc	/^Fiber::Fiber(){$/;"	f	class:JKYi::Fiber
+Fiber	fiber.cc	/^Fiber::Fiber(std::function<void ()>cb,size_t stacksize,bool use_caller)$/;"	f	class:JKYi::Fiber
+Fiber	fiber.h	/^class Fiber:public std::enable_shared_from_this<Fiber>{$/;"	c	namespace:JKYi
+FiberAndThread	scheduler.h	/^	 FiberAndThread()$/;"	f	struct:JKYi::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^	 FiberAndThread(Fiber::ptr * f,int thr)$/;"	f	struct:JKYi::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^	 FiberAndThread(Fiber::ptr f,int thr)$/;"	f	struct:JKYi::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^	 FiberAndThread(std::function<void ()>*f,int thr)$/;"	f	struct:JKYi::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^	 FiberAndThread(std::function<void ()>f,int thr)$/;"	f	struct:JKYi::Scheduler::FiberAndThread
+FiberAndThread	scheduler.h	/^  struct FiberAndThread{$/;"	s	class:JKYi::Scheduler
+FiberIdFormatItem	log.cc	/^    FiberIdFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::FiberIdFormatItem
+FiberIdFormatItem	log.cc	/^class FiberIdFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:
+FileLogAppender	log.cc	/^FileLogAppender::FileLogAppender(const std::string&filename)$/;"	f	class:JKYi::FileLogAppender
+FileLogAppender	log.h	/^class FileLogAppender:public LogAppender{$/;"	c	namespace:JKYi
+FilenameFormatItem	log.cc	/^    FilenameFormatItem(const std::string& str = "") {}$/;"	f	class:JKYi::FilenameFormatItem
+FilenameFormatItem	log.cc	/^class FilenameFormatItem : public LogFormatter::FormatItem {$/;"	c	namespace:JKYi	file:
+FormatItem	log.h	/^    class FormatItem{$/;"	c	class:JKYi::LogFormatter
+FromString	log.cc	/^ LogLevel::Level LogLevel::FromString(const std::string&str){$/;"	f	class:JKYi::LogLevel
+GetCurrentMS	util.cc	/^uint64_t GetCurrentMS(){$/;"	f	namespace:JKYi
+GetCurrentUS	util.cc	/^uint64_t GetCurrentUS(){$/;"	f	namespace:JKYi
+GetFiberId	fiber.cc	/^uint64_t Fiber::GetFiberId(){$/;"	f	class:JKYi::Fiber
+GetFiberId	util.cc	/^u_int32_t GetFiberId(){$/;"	f	namespace:JKYi
+GetInstance	singleton.h	/^   static T* GetInstance(){$/;"	f	class:JKYi::Singleton
+GetMainFiber	scheduler.cc	/^Fiber* Scheduler::GetMainFiber(){$/;"	f	class:JKYi::Scheduler
+GetName	thread.cc	/^const std::string& Thread::GetName(){$/;"	f	class:JKYi::Thread
+GetThis	fiber.cc	/^Fiber::ptr Fiber::GetThis(){$/;"	f	class:JKYi::Fiber
+GetThis	scheduler.cc	/^Scheduler* Scheduler::GetThis(){$/;"	f	class:JKYi::Scheduler
+GetThis	thread.cc	/^Thread* Thread::GetThis(){$/;"	f	class:JKYi::Thread
+GetThreadId	util.cc	/^pid_t GetThreadId(){$/;"	f	namespace:JKYi
+HOLD	fiber.h	/^	  HOLD,  \/\/挂起态$/;"	e	enum:JKYi::Fiber::State
+INFO	log.h	/^     INFO=2,$/;"	e	enum:JKYi::LogLevel::Level
+INIT	fiber.h	/^      INIT,   \/\/创建态  $/;"	e	enum:JKYi::Fiber::State
+IOManager	iomanager.cc	/^IOManager::IOManager(size_t threads,bool use_caller,const std::string&name)$/;"	f	class:JKYi::IOManager
+IOManager	iomanager.h	/^class IOManager:public Scheduler,public TimerManager{$/;"	c	namespace:JKYi
+JKYI_ASSERT	macro.h	12;"	d
+JKYI_ASSERT2	macro.h	22;"	d
+JKYI_LOG_DEBUG	log.h	27;"	d
+JKYI_LOG_ERROR	log.h	33;"	d
+JKYI_LOG_FATAL	log.h	35;"	d
+JKYI_LOG_INFO	log.h	29;"	d
+JKYI_LOG_LEVEL	log.h	20;"	d
+JKYI_LOG_NAME	log.h	39;"	d
+JKYI_LOG_ROOT	log.h	37;"	d
+JKYI_LOG_WARN	log.h	31;"	d
+JKYi	config.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	config.h	/^namespace JKYi{$/;"	n
+JKYi	fiber.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	fiber.h	/^namespace JKYi{$/;"	n
+JKYi	iomanager.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	iomanager.h	/^namespace JKYi{$/;"	n
+JKYi	log.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	log.h	/^namespace JKYi{$/;"	n
+JKYi	mutex.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	mutex.h	/^namespace JKYi{$/;"	n
+JKYi	noncopyable.h	/^namespace JKYi{$/;"	n
+JKYi	scheduler.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	scheduler.h	/^namespace JKYi{$/;"	n
+JKYi	singleton.h	/^namespace JKYi{$/;"	n
+JKYi	thread.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	thread.h	/^namespace JKYi{$/;"	n
+JKYi	timer.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	timer.h	/^namespace JKYi{$/;"	n
+JKYi	util.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	util.h	/^namespace JKYi{$/;"	n
+Level	log.h	/^   enum Level{$/;"	g	class:JKYi::LogLevel
+LevelFormatItem	log.cc	/^    LevelFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::LevelFormatItem
+LevelFormatItem	log.cc	/^class LevelFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:
+LexicalCast	config.h	/^class LexicalCast<std::list<T>,std::string>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::map<std::string, T>, std::string> {$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::set<T>,std::string>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::string,std::list<T>>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::string,std::map<std::string,T>>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::string,std::set<T>>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::string,std::unordered_map<std::string,T>>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::string,std::unordered_set<T>>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::string,std::vector<T>>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::unordered_map<std::string, T>, std::string> {$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::unordered_set<T>,std::string>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast<std::vector<T>,std::string>{$/;"	c	namespace:JKYi
+LexicalCast	config.h	/^class LexicalCast{$/;"	c	namespace:JKYi
+LexicalCast	log.cc	/^class LexicalCast<LogDefine,std::string>{$/;"	c	namespace:JKYi	file:
+LexicalCast	log.cc	/^class LexicalCast<std::string,LogDefine>{$/;"	c	namespace:JKYi	file:
+LineFormatItem	log.cc	/^    LineFormatItem(const std::string& str = "") {}$/;"	f	class:JKYi::LineFormatItem
+LineFormatItem	log.cc	/^class LineFormatItem : public LogFormatter::FormatItem {$/;"	c	namespace:JKYi	file:
+ListAllMember	config.cc	/^static void ListAllMember(const std::string&prefix,const YAML::Node&node,std::list<std::pair<std::string,const YAML::Node>>&output){$/;"	f	namespace:JKYi
+LoadFromYaml	config.cc	/^void Config::LoadFromYaml(const YAML::Node&node){$/;"	f	class:JKYi::Config
+Lock	mutex.h	/^    typedef ScopedLockImpl<Mutex>  Lock;$/;"	t	class:JKYi::Mutex
+Lock	mutex.h	/^   typedef ScopedLockImpl<SpinLock>   Lock;$/;"	t	class:JKYi::SpinLock
+LogAppender	log.h	/^class LogAppender{$/;"	c	namespace:JKYi
+LogAppenderDefine	log.cc	/^struct LogAppenderDefine{$/;"	s	namespace:JKYi	file:
+LogDefine	log.cc	/^struct LogDefine{$/;"	s	namespace:JKYi	file:
+LogEvent	log.cc	/^LogEvent::LogEvent(std::shared_ptr<Logger>logger$/;"	f	class:JKYi::LogEvent
+LogEvent	log.h	/^class LogEvent{$/;"	c	namespace:JKYi
+LogEventWrap	log.cc	/^LogEventWrap::LogEventWrap(LogEvent::ptr event)$/;"	f	class:JKYi::LogEventWrap
+LogEventWrap	log.h	/^class LogEventWrap{$/;"	c	namespace:JKYi
+LogFormatter	log.cc	/^LogFormatter::LogFormatter(const std::string&pattern)$/;"	f	class:JKYi::LogFormatter
+LogFormatter	log.h	/^class LogFormatter{$/;"	c	namespace:JKYi
+LogIniter	log.cc	/^    LogIniter(){$/;"	f	struct:JKYi::LogIniter
+LogIniter	log.cc	/^struct LogIniter{$/;"	s	namespace:JKYi	file:
+LogLevel	log.h	/^class LogLevel{$/;"	c	namespace:JKYi
+Logger	log.cc	/^Logger::Logger(const std::string&name)$/;"	f	class:JKYi::Logger
+Logger	log.h	/^class Logger:public std::enable_shared_from_this<Logger>{$/;"	c	namespace:JKYi
+LoggerManager	log.cc	/^LoggerManager::LoggerManager(){$/;"	f	class:JKYi::LoggerManager
+LoggerManager	log.h	/^class LoggerManager{$/;"	c	namespace:JKYi
+LoggerMgr	log.h	/^typedef JKYi::Singleton<LoggerManager> LoggerMgr;$/;"	t	namespace:JKYi
+Lookup	config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string&name){$/;"	f	class:JKYi::Config
+Lookup	config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string&name,$/;"	f	class:JKYi::Config
+LookupBase	config.cc	/^ConfigVarBase::ptr Config::LookupBase(const std::string&name){$/;"	f	class:JKYi::Config
+MainFunc	fiber.cc	/^void Fiber::MainFunc(){$/;"	f	class:JKYi::Fiber
+MallocStackAllocator	fiber.cc	/^class MallocStackAllocator{$/;"	c	namespace:JKYi	file:
+MessageFormatItem	log.cc	/^   MessageFormatItem(const std::string& str=""){}$/;"	f	class:JKYi::MessageFormatItem
+MessageFormatItem	log.cc	/^class MessageFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:
+Mutex	mutex.h	/^   Mutex(){$/;"	f	class:JKYi::Mutex
+Mutex	mutex.h	/^class Mutex: Noncopyable{$/;"	c	namespace:JKYi
+MutexType	iomanager.h	/^     typedef Mutex MutexType;$/;"	t	struct:JKYi::IOManager::FdContext
+MutexType	log.h	/^	typedef SpinLock MutexType;$/;"	t	class:JKYi::LogAppender
+MutexType	log.h	/^	typedef SpinLock MutexType;$/;"	t	class:JKYi::Logger
+MutexType	log.h	/^     typedef SpinLock MutexType;$/;"	t	class:JKYi::LoggerManager
+MutexType	scheduler.h	/^   typedef Mutex MutexType;$/;"	t	class:JKYi::Scheduler
+NONE	iomanager.h	/^	   NONE  =  0x0,$/;"	e	enum:JKYi::IOManager::Event
+NameFormatItem	log.cc	/^    NameFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::NameFormatItem
+NameFormatItem	log.cc	/^class NameFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:
+NewLineFormatItem	log.cc	/^    NewLineFormatItem(const std::string& str = "") {}$/;"	f	class:JKYi::NewLineFormatItem
+NewLineFormatItem	log.cc	/^class NewLineFormatItem : public LogFormatter::FormatItem {$/;"	c	namespace:JKYi	file:
+Noncopyable	noncopyable.h	/^class Noncopyable{$/;"	c	namespace:JKYi
+OnTimer	timer.cc	/^static void OnTimer(std::weak_ptr<void>weak_cond,std::function<void()>cb){$/;"	f	namespace:JKYi
+READ	iomanager.h	/^	   READ  =  0x1,$/;"	e	enum:JKYi::IOManager::Event
+READY	fiber.h	/^	  READY, \/\/就绪态$/;"	e	enum:JKYi::Fiber::State
+RWMutex	mutex.h	/^    RWMutex(){$/;"	f	class:JKYi::RWMutex
+RWMutex	mutex.h	/^class RWMutex:Noncopyable{$/;"	c	namespace:JKYi
+RWMutexType	config.h	/^	typedef RWMutex RWMutexType;$/;"	t	class:JKYi::Config
+RWMutexType	config.h	/^   typedef RWMutex RWMutexType;$/;"	t	class:JKYi::ConfigVar
+RWMutexType	iomanager.h	/^   typedef RWMutex RWMutexType;$/;"	t	class:JKYi::IOManager
+RWMutexType	timer.h	/^   typedef RWMutex RWMutexType;$/;"	t	class:JKYi::TimerManager
+ReadLock	mutex.h	/^    typedef ReadScopedLockImpl<RWMutex> ReadLock;$/;"	t	class:JKYi::RWMutex
+ReadScopedLockImpl	mutex.h	/^  ReadScopedLockImpl(T&mutex)$/;"	f	class:JKYi::ReadScopedLockImpl
+ReadScopedLockImpl	mutex.h	/^class ReadScopedLockImpl{$/;"	c	namespace:JKYi
+Scheduler	scheduler.cc	/^Scheduler::Scheduler(size_t threads,bool use_caller,const std::string&name)$/;"	f	class:JKYi::Scheduler
+Scheduler	scheduler.h	/^class Scheduler{$/;"	c	namespace:JKYi
+ScopedLockImpl	mutex.h	/^  ScopedLockImpl(T&mutex)$/;"	f	class:JKYi::ScopedLockImpl
+ScopedLockImpl	mutex.h	/^class ScopedLockImpl{$/;"	c	namespace:JKYi
+Semaphore	mutex.cc	/^Semaphore::Semaphore(uint32_t count){$/;"	f	class:JKYi::Semaphore
+Semaphore	mutex.h	/^class Semaphore:Noncopyable{$/;"	c	namespace:JKYi
+SetThis	fiber.cc	/^void Fiber::SetThis(Fiber*f){$/;"	f	class:JKYi::Fiber
+Singleton	singleton.h	/^class Singleton{$/;"	c	namespace:JKYi
+SingletonPtr	singleton.h	/^class SingletonPtr{$/;"	c	namespace:JKYi
+SpinLock	mutex.h	/^   SpinLock(){$/;"	f	class:JKYi::SpinLock
+SpinLock	mutex.h	/^class SpinLock:Noncopyable{$/;"	c	namespace:JKYi
+State	fiber.h	/^   enum State{$/;"	g	class:JKYi::Fiber
+StdoutLogAppender	log.h	/^class StdoutLogAppender:public LogAppender{$/;"	c	namespace:JKYi
+StringFormatItem	log.cc	/^   StringFormatItem(const std::string&str)$/;"	f	class:JKYi::StringFormatItem
+StringFormatItem	log.cc	/^class StringFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:
+TERM	fiber.h	/^	  TERM,  \/\/结束态$/;"	e	enum:JKYi::Fiber::State
+TabFormatItem	log.cc	/^   TabFormatItem(const std::string str=""){}$/;"	f	class:JKYi::TabFormatItem
+TabFormatItem	log.cc	/^class TabFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:
+Thread	thread.cc	/^Thread::Thread(std::function<void()> cb,const std::string &name)$/;"	f	class:JKYi::Thread
+Thread	thread.h	/^class Thread:Noncopyable {$/;"	c	namespace:JKYi
+ThreadIdFormatItem	log.cc	/^    ThreadIdFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::ThreadIdFormatItem
+ThreadIdFormatItem	log.cc	/^class ThreadIdFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:
+ThreadNameFormatItem	log.cc	/^    ThreadNameFormatItem(const std::string& str = "") {}$/;"	f	class:JKYi::ThreadNameFormatItem
+ThreadNameFormatItem	log.cc	/^class ThreadNameFormatItem: public LogFormatter::FormatItem {$/;"	c	namespace:JKYi	file:
+Timer	timer.cc	/^Timer::Timer(uint64_t ms,std::function<void ()>cb,bool recurring,TimerManager*manager)$/;"	f	class:JKYi::Timer
+Timer	timer.cc	/^Timer::Timer(uint64_t next)$/;"	f	class:JKYi::Timer
+Timer	timer.h	/^class Timer:public std::enable_shared_from_this<Timer>{$/;"	c	namespace:JKYi
+TimerManager	timer.cc	/^TimerManager::TimerManager(){$/;"	f	class:JKYi::TimerManager
+TimerManager	timer.h	/^class TimerManager{$/;"	c	namespace:JKYi
+ToString	log.cc	/^ const char* LogLevel::ToString(LogLevel::Level level){$/;"	f	class:JKYi::LogLevel
+TotalFibers	fiber.cc	/^uint64_t Fiber::TotalFibers(){$/;"	f	class:JKYi::Fiber
+UNKNOW	log.h	/^     UNKNOW=0,$/;"	e	enum:JKYi::LogLevel::Level
+Visit	config.cc	/^void Config::Visit(std::function<void (ConfigVarBase::ptr)>cb){$/;"	f	class:JKYi::Config
+WARN	log.h	/^     WARN=3,$/;"	e	enum:JKYi::LogLevel::Level
+WRITE	iomanager.h	/^	   WRITE =  0x4$/;"	e	enum:JKYi::IOManager::Event
+WriteLock	mutex.h	/^	typedef WriteScopedLockImpl<RWMutex> WriteLock;$/;"	t	class:JKYi::RWMutex
+WriteScopedLockImpl	mutex.h	/^  WriteScopedLockImpl(T&mutex)$/;"	f	class:JKYi::WriteScopedLockImpl
+WriteScopedLockImpl	mutex.h	/^class WriteScopedLockImpl{$/;"	c	namespace:JKYi
+XX	log.cc	17;"	d	file:
+XX	log.cc	27;"	d	file:
+XX	log.cc	34;"	d	file:
+XX	log.cc	517;"	d	file:
+XX	log.cc	52;"	d	file:
+XX	log.cc	533;"	d	file:
+YieldToHold	fiber.cc	/^void Fiber::YieldToHold(){$/;"	f	class:JKYi::Fiber
+YieldToReady	fiber.cc	/^void Fiber::YieldToReady(){$/;"	f	class:JKYi::Fiber
+_JKAI_LOG_H_	log.h	2;"	d
+_JKYI_CONFIG_H_	config.h	2;"	d
+_JKYI_FIBER_H_	fiber.h	2;"	d
+_JKYI_IOMANAGER_H_	iomanager.h	2;"	d
+_JKYI_JKYI_H_	JKYi.h	2;"	d
+_JKYI_MACRO_H_	macro.h	2;"	d
+_JKYI_MUTEX_H_	mutex.h	2;"	d
+_JKYI_NONCOPYABLE_H_	noncopyable.h	2;"	d
+_JKYI_SCHEDULER_H_	scheduler.h	2;"	d
+_JKYI_SINGLETON_H_	singleton.h	2;"	d
+_JKYI_THREAD_H_	thread.h	2;"	d
+_JKYI_TIMER_H_	timer.h	2;"	d
+_JKYI_UTIL_H_	util.h	2;"	d
+_log_init	log.cc	/^static LogIniter _log_init;\/\/全局对象$/;"	m	namespace:JKYi	file:
+addAppender	log.cc	/^void Logger::addAppender(LogAppender::ptr appender){$/;"	f	class:JKYi::Logger
+addConditionTimer	timer.cc	/^Timer::ptr TimerManager::addConditionTimer(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring){$/;"	f	class:JKYi::TimerManager
+addEvent	iomanager.cc	/^int IOManager::addEvent(int fd,Event event,std::function<void()>cb){$/;"	f	class:JKYi::IOManager
+addListener	config.h	/^   uint64_t addListener(on_change_cb cb){$/;"	f	class:JKYi::ConfigVar
+addTimer	timer.cc	/^Timer::ptr TimerManager::addTimer(uint64_t ms,std::function<void ()>cb,bool recurring){$/;"	f	class:JKYi::TimerManager
+addTimer	timer.cc	/^void TimerManager::addTimer(Timer::ptr val,RWMutexType::WriteLock &lock){$/;"	f	class:JKYi::TimerManager
+appenders	log.cc	/^   std::vector<LogAppenderDefine>appenders;$/;"	m	struct:JKYi::LogDefine	file:
+back	fiber.cc	/^void Fiber::back(){$/;"	f	class:JKYi::Fiber
+call	fiber.cc	/^void Fiber::call(){$/;"	f	class:JKYi::Fiber
+cancel	timer.cc	/^bool Timer::cancel(){$/;"	f	class:JKYi::Timer
+cb	iomanager.h	/^	   std::function<void ()>cb;$/;"	m	struct:JKYi::IOManager::FdContext::EventContext
+cb	scheduler.h	/^	 std::function<void ()> cb;$/;"	m	struct:JKYi::Scheduler::FiberAndThread
+clearAppender	log.cc	/^void Logger::clearAppender(){$/;"	f	class:JKYi::Logger
+clearListener	config.h	/^   void clearListener(){$/;"	f	class:JKYi::ConfigVar
+contextResize	iomanager.cc	/^void IOManager::contextResize(size_t size){$/;"	f	class:JKYi::IOManager
+debug	log.cc	/^void Logger::debug(LogEvent::ptr event){$/;"	f	class:JKYi::Logger
+delAppender	log.cc	/^void Logger::delAppender(LogAppender::ptr appender){$/;"	f	class:JKYi::Logger
+delListener	config.h	/^   void delListener(uint64_t key){$/;"	f	class:JKYi::ConfigVar
+deleteClockRollover	timer.cc	/^bool TimerManager::deleteClockRollover(uint64_t now_ms){$/;"	f	class:JKYi::TimerManager
+error	log.cc	/^void Logger::error(LogEvent::ptr event){$/;"	f	class:JKYi::Logger
+events	iomanager.h	/^	 Event events=NONE;$/;"	m	struct:JKYi::IOManager::FdContext
+fatal	log.cc	/^void Logger::fatal(LogEvent::ptr event){$/;"	f	class:JKYi::Logger
+fd	iomanager.h	/^	 int fd=0;$/;"	m	struct:JKYi::IOManager::FdContext
+fiber	iomanager.h	/^	   Fiber::ptr fiber;$/;"	m	struct:JKYi::IOManager::FdContext::EventContext
+fiber	scheduler.h	/^     Fiber::ptr fiber; $/;"	m	struct:JKYi::Scheduler::FiberAndThread
+file	log.cc	/^    std::string file;$/;"	m	struct:JKYi::LogAppenderDefine	file:
+format	log.cc	/^std::string LogFormatter::format(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event){$/;"	f	class:JKYi::LogFormatter
+formatter	log.cc	/^    std::string formatter;$/;"	m	struct:JKYi::LogAppenderDefine	file:
+formatter	log.cc	/^   std::string formatter;$/;"	m	struct:JKYi::LogDefine	file:
+g_fiber_stack_size	fiber.cc	/^ static ConfigVar<uint32_t>::ptr g_fiber_stack_size=JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");$/;"	m	namespace:JKYi	file:
+g_log_defines	log.cc	/^JKYi::ConfigVar<std::set<LogDefine>>::ptr g_log_defines=JKYi::Config::Lookup("logs",std::set<LogDefine>(),"logs config");$/;"	m	namespace:JKYi	file:
+g_logger	fiber.cc	/^ static JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
+g_logger	iomanager.cc	/^static Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
+g_logger	scheduler.cc	/^static Logger::ptr g_logger=JKYI_LOG_NAME("system"); $/;"	m	namespace:JKYi	file:
+g_logger	thread.cc	/^static JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
+g_logger	util.cc	/^static JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
+getContent	log.h	/^   std::string getContent() const{return m_ss.str();}$/;"	f	class:JKYi::LogEvent
+getContext	iomanager.cc	/^IMManager::FdContext::EventContext& getContext(Event event){$/;"	f	namespace:JKYi
+getDatas	config.h	/^    static ConfigVarMap& getDatas(){$/;"	f	class:JKYi::Config
+getDescription	config.h	/^   const std::string& getDescription()const {return m_description;}$/;"	f	class:JKYi::ConfigVarBase
+getElapse	log.h	/^   uint32_t getElapse()const {return m_elapse;}$/;"	f	class:JKYi::LogEvent
+getEvent	log.h	/^   LogEvent::ptr getEvent()const {return m_event;}$/;"	f	class:JKYi::LogEventWrap
+getFiberId	log.h	/^   uint32_t getFiberId()const {return m_fiberId;}$/;"	f	class:JKYi::LogEvent
+getFile	log.h	/^   const char* getFile()const {return m_file;}$/;"	f	class:JKYi::LogEvent
+getFormatter	log.cc	/^LogFormatter::ptr LogAppender::getFormatter(){$/;"	f	class:JKYi::LogAppender
+getFormatter	log.cc	/^LogFormatter::ptr Logger::getFormatter(){$/;"	f	class:JKYi::Logger
+getId	fiber.h	/^	uint64_t getId()const {return m_id;}$/;"	f	class:JKYi::Fiber
+getId	thread.h	/^   pid_t getId()const{return m_id;}$/;"	f	class:JKYi::Thread
+getInstance	singleton.h	/^    static std::shared_ptr<T> getInstance(){$/;"	f	class:JKYi::SingletonPtr
+getLevel	log.h	/^    LogLevel::Level getLevel()const {return m_level;}$/;"	f	class:JKYi::Logger
+getLevel	log.h	/^    LogLevel::Level getLevel(LogLevel::Level level){return m_level;}$/;"	f	class:JKYi::LogAppender
+getLevel	log.h	/^   LogLevel::Level getLevel() const {return m_level;}$/;"	f	class:JKYi::LogEvent
+getLine	log.h	/^   int32_t getLine()const {return m_line;}$/;"	f	class:JKYi::LogEvent
+getListener	config.h	/^   on_change_cb getListener(uint64_t key){$/;"	f	class:JKYi::ConfigVar
+getLogger	log.cc	/^Logger::ptr LoggerManager::getLogger(const std::string&name){$/;"	f	class:JKYi::LoggerManager
+getLogger	log.h	/^   std::shared_ptr<Logger> getLogger()const {return m_logger;}$/;"	f	class:JKYi::LogEvent
+getMutex	config.h	/^	static RWMutexType& getMutex(){$/;"	f	class:JKYi::Config
+getName	config.h	/^   const std::string& getName()const {return m_name;}$/;"	f	class:JKYi::ConfigVarBase
+getName	log.h	/^    std::string getName()const {return m_name;}$/;"	f	class:JKYi::Logger
+getName	scheduler.h	/^   const std::string& getName()const {return m_name;}$/;"	f	class:JKYi::Scheduler
+getName	thread.h	/^   const std::string& getName()const{return m_name;} $/;"	f	class:JKYi::Thread
+getNextTimer	timer.cc	/^uint64_t TimerManager::getNextTimer(){$/;"	f	class:JKYi::TimerManager
+getPattern	log.h	/^    const std::string& getPattern()const{$/;"	f	class:JKYi::LogFormatter
+getRoot	log.h	/^     Logger::ptr getRoot()const {return m_root;}$/;"	f	class:JKYi::LoggerManager
+getSS	log.cc	/^std::stringstream& LogEventWrap::getSS(){$/;"	f	class:JKYi::LogEventWrap
+getSS	log.h	/^   std::stringstream& getSS() { return m_ss;}$/;"	f	class:JKYi::LogEvent
+getState	fiber.h	/^	State getState()const{return m_state;}$/;"	f	class:JKYi::Fiber
+getThreadId	log.h	/^   uint32_t getThreadId()const {return m_threadId;}$/;"	f	class:JKYi::LogEvent
+getThreadName	log.h	/^   const std::string& getThreadName()const {return m_threadName;}$/;"	f	class:JKYi::LogEvent
+getTime	log.h	/^   uint32_t getTime()const{return m_time;}$/;"	f	class:JKYi::LogEvent
+getValue	config.h	/^   const T getValue(){$/;"	f	class:JKYi::ConfigVar
+hasIdleThreads	scheduler.h	/^   bool hasIdleThreads(){return m_idleThreadCount>0;}$/;"	f	class:JKYi::Scheduler
+hasTimer	timer.cc	/^bool TimerManager::hasTimer(){$/;"	f	class:JKYi::TimerManager
+idle	scheduler.cc	/^void Scheduler::idle(){$/;"	f	class:JKYi::Scheduler
+info	log.cc	/^void Logger::info(LogEvent::ptr event){$/;"	f	class:JKYi::Logger
+init	log.cc	/^void LogFormatter::init(){$/;"	f	class:JKYi::LogFormatter
+init	log.cc	/^void LoggerManager::init(){$/;"	f	class:JKYi::LoggerManager
+isError	log.h	/^    bool isError()const{return m_error;}$/;"	f	class:JKYi::LogFormatter
+join	thread.cc	/^void Thread::join(){$/;"	f	class:JKYi::Thread
+level	log.cc	/^    LogLevel::Level level=LogLevel::UNKNOW;$/;"	m	struct:JKYi::LogAppenderDefine	file:
+level	log.cc	/^   LogLevel::Level level=LogLevel::UNKNOW;$/;"	m	struct:JKYi::LogDefine	file:
+listExpiredCb	timer.cc	/^void TimerManager::listExpiredCb(std::vector<std::function<void ()>>&cbs){$/;"	f	class:JKYi::TimerManager
+lock	mutex.h	/^   void lock(){$/;"	f	class:JKYi::CASLock
+lock	mutex.h	/^   void lock(){$/;"	f	class:JKYi::Mutex
+lock	mutex.h	/^   void lock(){$/;"	f	class:JKYi::SpinLock
+lock	mutex.h	/^  void lock(){$/;"	f	class:JKYi::ReadScopedLockImpl
+lock	mutex.h	/^  void lock(){$/;"	f	class:JKYi::ScopedLockImpl
+lock	mutex.h	/^  void lock(){$/;"	f	class:JKYi::WriteScopedLockImpl
+log	log.cc	/^void FileLogAppender::log(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event){$/;"	f	class:JKYi::FileLogAppender
+log	log.cc	/^void Logger::log(LogLevel::Level level,LogEvent::ptr event){$/;"	f	class:JKYi::Logger
+log	log.cc	/^void StdoutLogAppender::log(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event){$/;"	f	class:JKYi::StdoutLogAppender
+m_activeThreadCount	scheduler.h	/^   std::atomic<size_t> m_activeThreadCount={0};$/;"	m	class:JKYi::Scheduler
+m_appenders	log.h	/^    std::list<LogAppender::ptr>m_appenders;\/\/Appender集合$/;"	m	class:JKYi::Logger
+m_autoStop	scheduler.h	/^   bool m_autoStop=false;$/;"	m	class:JKYi::Scheduler
+m_cb	fiber.h	/^   std::function<void ()>m_cb;$/;"	m	class:JKYi::Fiber
+m_cb	thread.h	/^   std::function<void()>m_cb;$/;"	m	class:JKYi::Thread
+m_cb	timer.h	/^   std::function<void()>m_cb;$/;"	m	class:JKYi::Timer
+m_cbs	config.h	/^   std::unordered_map<uint64_t,on_change_cb>m_cbs;$/;"	m	class:JKYi::ConfigVar
+m_ctx	fiber.h	/^   ucontext_t m_ctx;$/;"	m	class:JKYi::Fiber
+m_description	config.h	/^   std::string m_description;$/;"	m	class:JKYi::ConfigVarBase
+m_elapse	log.h	/^   uint32_t m_elapse=0;\/\/程序启动开始到现在的毫秒数$/;"	m	class:JKYi::LogEvent
+m_epfd	iomanager.h	/^   int m_epfd=0;$/;"	m	class:JKYi::IOManager
+m_error	log.h	/^    bool m_error=false;$/;"	m	class:JKYi::LogFormatter
+m_event	log.h	/^   LogEvent::ptr m_event;$/;"	m	class:JKYi::LogEventWrap
+m_fdContexts	iomanager.h	/^   std::vector<FdContext*>m_fdContexts;$/;"	m	class:JKYi::IOManager
+m_fiberId	log.h	/^   uint32_t m_fiberId=0;\/\/协程ID$/;"	m	class:JKYi::LogEvent
+m_fibers	scheduler.h	/^  std::list<FiberAndThread> m_fibers;$/;"	m	class:JKYi::Scheduler
+m_file	log.h	/^   const char* m_file=nullptr;\/\/目标日志文件的名称$/;"	m	class:JKYi::LogEvent
+m_filename	log.h	/^     std::string m_filename;\/\/文件名$/;"	m	class:JKYi::FileLogAppender
+m_filestream	log.h	/^     std::ofstream m_filestream;$/;"	m	class:JKYi::FileLogAppender
+m_format	log.cc	/^    std::string m_format;$/;"	m	class:JKYi::DateTimeFormatItem	file:
+m_formatter	log.h	/^    LogFormatter::ptr m_formatter;\/\/定义日志输出的格式$/;"	m	class:JKYi::LogAppender
+m_formatter	log.h	/^    LogFormatter::ptr m_formatter;\/\/日志的输出格式$/;"	m	class:JKYi::Logger
+m_hasFormatter	log.h	/^    bool m_hasFormatter=false;$/;"	m	class:JKYi::LogAppender
+m_id	fiber.h	/^   uint64_t m_id=0;$/;"	m	class:JKYi::Fiber
+m_id	thread.h	/^   pid_t m_id=-1;$/;"	m	class:JKYi::Thread
+m_idleThreadCount	scheduler.h	/^   std::atomic<size_t> m_idleThreadCount={0};$/;"	m	class:JKYi::Scheduler
+m_items	log.h	/^    std::vector<FormatItem::ptr>m_items;$/;"	m	class:JKYi::LogFormatter
+m_lastTime	log.h	/^	 uint64_t m_lastTime=0;\/\/记录上一次打开的时间$/;"	m	class:JKYi::FileLogAppender
+m_level	log.h	/^    LogLevel::Level m_level;  \/\/日志的级别，只有满足级别的日志才会被输出workSpace\/JKYi\/log.h$/;"	m	class:JKYi::Logger
+m_level	log.h	/^    LogLevel::Level m_level=LogLevel::DEBUG;\/\/默认为debug模式$/;"	m	class:JKYi::LogAppender
+m_level	log.h	/^   LogLevel::Level m_level;$/;"	m	class:JKYi::LogEvent
+m_line	log.h	/^   int32_t m_line=0;\/\/行号$/;"	m	class:JKYi::LogEvent
+m_lock	mutex.h	/^   pthread_rwlock_t m_lock;$/;"	m	class:JKYi::RWMutex
+m_locked	mutex.h	/^  bool m_locked;$/;"	m	class:JKYi::ReadScopedLockImpl
+m_locked	mutex.h	/^  bool m_locked;$/;"	m	class:JKYi::ScopedLockImpl
+m_locked	mutex.h	/^  bool m_locked;$/;"	m	class:JKYi::WriteScopedLockImpl
+m_logger	log.h	/^   std::shared_ptr<Logger>m_logger;$/;"	m	class:JKYi::LogEvent
+m_loggers	log.h	/^    std::map<std::string,Logger::ptr>m_loggers;$/;"	m	class:JKYi::LoggerManager
+m_manager	timer.h	/^   TimerManager* m_manager=nullptr;$/;"	m	class:JKYi::Timer
+m_ms	timer.h	/^   uint64_t m_ms=0;$/;"	m	class:JKYi::Timer
+m_mutex	config.h	/^   RWMutexType m_mutex;$/;"	m	class:JKYi::ConfigVar
+m_mutex	iomanager.h	/^   RWMutexType m_mutex;$/;"	m	class:JKYi::IOManager
+m_mutex	log.h	/^	MutexType m_mutex;$/;"	m	class:JKYi::LogAppender
+m_mutex	log.h	/^	MutexType m_mutex;$/;"	m	class:JKYi::Logger
+m_mutex	log.h	/^	MutexType m_mutex;$/;"	m	class:JKYi::LoggerManager
+m_mutex	mutex.h	/^   pthread_mutex_t m_mutex;$/;"	m	class:JKYi::Mutex
+m_mutex	mutex.h	/^   pthread_spinlock_t m_mutex;$/;"	m	class:JKYi::SpinLock
+m_mutex	mutex.h	/^   volatile std::atomic_flag m_mutex;$/;"	m	class:JKYi::CASLock
+m_mutex	mutex.h	/^  T& m_mutex;$/;"	m	class:JKYi::ReadScopedLockImpl
+m_mutex	mutex.h	/^  T& m_mutex;$/;"	m	class:JKYi::ScopedLockImpl
+m_mutex	mutex.h	/^  T& m_mutex;$/;"	m	class:JKYi::WriteScopedLockImpl
+m_mutex	scheduler.h	/^   MutexType m_mutex;$/;"	m	class:JKYi::Scheduler
+m_mutex	timer.h	/^   RWMutexType m_mutex;$/;"	m	class:JKYi::TimerManager
+m_name	config.h	/^   std::string m_name;$/;"	m	class:JKYi::ConfigVarBase
+m_name	log.h	/^    std::string m_name;       \/\/日志的名称$/;"	m	class:JKYi::Logger
+m_name	scheduler.h	/^  std::string m_name;$/;"	m	class:JKYi::Scheduler
+m_name	thread.h	/^   std::string m_name;$/;"	m	class:JKYi::Thread
+m_next	timer.h	/^   uint64_t m_next=0;$/;"	m	class:JKYi::Timer
+m_pattern	log.h	/^    std::string m_pattern;$/;"	m	class:JKYi::LogFormatter
+m_pendingEventCount	iomanager.h	/^   std::atomic<size_t>m_pendingEventCount={0};$/;"	m	class:JKYi::IOManager
+m_previouseTime	timer.h	/^   uint64_t m_previouseTime=0;$/;"	m	class:JKYi::TimerManager
+m_recurring	timer.h	/^   bool m_recurring=false;$/;"	m	class:JKYi::Timer
+m_root	log.h	/^    Logger::ptr m_root;$/;"	m	class:JKYi::Logger
+m_root	log.h	/^    Logger::ptr m_root;$/;"	m	class:JKYi::LoggerManager
+m_rootFiber	scheduler.h	/^  Fiber::ptr m_rootFiber;$/;"	m	class:JKYi::Scheduler
+m_rootThread	scheduler.h	/^   int m_rootThread=0;$/;"	m	class:JKYi::Scheduler
+m_semaphore	mutex.h	/^   sem_t m_semaphore; $/;"	m	class:JKYi::Semaphore
+m_semaphore	thread.h	/^   Semaphore m_semaphore;$/;"	m	class:JKYi::Thread
+m_ss	log.h	/^   std::stringstream m_ss;\/\/流，用来存储要输出的日志$/;"	m	class:JKYi::LogEvent
+m_stack	fiber.h	/^   void *m_stack=nullptr;$/;"	m	class:JKYi::Fiber
+m_stacksize	fiber.h	/^   uint32_t m_stacksize=0;$/;"	m	class:JKYi::Fiber
+m_state	fiber.h	/^   State m_state=INIT;$/;"	m	class:JKYi::Fiber
+m_stopping	scheduler.h	/^   bool m_stopping=true;$/;"	m	class:JKYi::Scheduler
+m_string	log.cc	/^   std::string m_string;$/;"	m	class:JKYi::StringFormatItem	file:
+m_string	log.cc	/^   std::string m_string;$/;"	m	class:JKYi::TabFormatItem	file:
+m_thread	thread.h	/^   pthread_t m_thread=0;$/;"	m	class:JKYi::Thread
+m_threadCount	scheduler.h	/^   size_t m_threadCount=0;$/;"	m	class:JKYi::Scheduler
+m_threadId	log.h	/^   uint32_t m_threadId=0;\/\/线程ID$/;"	m	class:JKYi::LogEvent
+m_threadIds	scheduler.h	/^   std::vector<int> m_threadIds;$/;"	m	class:JKYi::Scheduler
+m_threadName	log.h	/^   std::string m_threadName;$/;"	m	class:JKYi::LogEvent
+m_threads	scheduler.h	/^  std::vector<Thread::ptr> m_threads;$/;"	m	class:JKYi::Scheduler
+m_tickleFds	iomanager.h	/^   int m_tickleFds[2];$/;"	m	class:JKYi::IOManager
+m_tickled	timer.h	/^   bool m_tickled=false;$/;"	m	class:JKYi::TimerManager
+m_time	log.h	/^   uint32_t m_time=0;\/\/时间戳$/;"	m	class:JKYi::LogEvent
+m_timers	timer.h	/^   std::set<Timer::ptr,Timer::Comparator>m_timers;$/;"	m	class:JKYi::TimerManager
+m_val	config.h	/^   T m_val;$/;"	m	class:JKYi::ConfigVar
+mutex	iomanager.h	/^	 MutexType mutex;$/;"	m	struct:JKYi::IOManager::FdContext
+name	log.cc	/^   std::string name;$/;"	m	struct:JKYi::LogDefine	file:
+notify	mutex.cc	/^void Semaphore::notify(){$/;"	f	class:JKYi::Semaphore
+on_change_cb	config.h	/^   typedef std::function<void (const  T&oldValue,const T&newValue)> on_change_cb;$/;"	t	class:JKYi::ConfigVar
+operator ()	config.h	/^    std::string operator()(const std::map<std::string, T>& v) {$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^    std::string operator()(const std::unordered_map<std::string, T>& v) {$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   T operator()(const F&f){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::list<T> operator()(const std::string&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::map<std::string,T> operator()(const std::string&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::set<T> operator()(const std::string&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::string operator()(std::list<T>&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::string operator()(std::set<T>&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::string operator()(std::unordered_set<T>&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::string operator()(std::vector<T>&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::unordered_map<std::string,T> operator()(const std::string&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::unordered_set<T> operator()(const std::string&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	config.h	/^   std::vector<T> operator()(const std::string&v){$/;"	f	class:JKYi::LexicalCast
+operator ()	log.cc	/^      LogDefine operator()(const std::string&str){$/;"	f	class:JKYi::LexicalCast
+operator ()	log.cc	/^     std::string operator()(const LogDefine&ld){$/;"	f	class:JKYi::LexicalCast
+operator ()	timer.cc	/^bool Timer::Comparator::operator()(const Timer::ptr &lhv,$/;"	f	class:JKYi::Timer::Comparator
+operator <	log.cc	/^   bool operator< (const LogDefine&rhv)const{$/;"	f	struct:JKYi::LogDefine
+operator ==	log.cc	/^    bool operator== (const LogAppenderDefine&rhv)const {$/;"	f	struct:JKYi::LogAppenderDefine
+operator ==	log.cc	/^   bool operator== (const LogDefine&rhv)const {$/;"	f	struct:JKYi::LogDefine
+override	iomanager.h	/^   bool stopping()override;$/;"	m	class:JKYi::IOManager
+override	iomanager.h	/^   void idle()override;$/;"	m	class:JKYi::IOManager
+override	iomanager.h	/^   void onTimerInsertedAtFront()override;$/;"	m	class:JKYi::IOManager
+override	iomanager.h	/^   void tickle()override;$/;"	m	class:JKYi::IOManager
+override	log.h	/^     std::string toYamlString()override;$/;"	m	class:JKYi::FileLogAppender
+override	log.h	/^     void log(Logger::ptr logger, LogLevel::Level level, LogEvent::ptr event) override;$/;"	m	class:JKYi::FileLogAppender
+override	log.h	/^    std::string toYamlString()override;$/;"	m	class:JKYi::StdoutLogAppender
+override	log.h	/^    void log(Logger::ptr logger, LogLevel::Level level, LogEvent::ptr event) override;$/;"	m	class:JKYi::StdoutLogAppender
+ptr	config.h	/^   typedef std::shared_ptr<ConfigVar<T>> ptr;$/;"	t	class:JKYi::ConfigVar
+ptr	config.h	/^   typedef std::shared_ptr<ConfigVarBase> ptr;$/;"	t	class:JKYi::ConfigVarBase
+ptr	fiber.h	/^   typedef std::shared_ptr<Fiber> ptr;$/;"	t	class:JKYi::Fiber
+ptr	iomanager.h	/^   typedef std::shared_ptr<IOMamaner> ptr;$/;"	t	class:JKYi::IOManager
+ptr	log.h	/^       typedef std::shared_ptr<FormatItem> ptr;$/;"	t	class:JKYi::LogFormatter::FormatItem
+ptr	log.h	/^     typedef std::shared_ptr<FileLogAppender> ptr;$/;"	t	class:JKYi::FileLogAppender
+ptr	log.h	/^    typedef std::shared_ptr<LogAppender> ptr;$/;"	t	class:JKYi::LogAppender
+ptr	log.h	/^    typedef std::shared_ptr<LogFormatter> ptr;$/;"	t	class:JKYi::LogFormatter
+ptr	log.h	/^    typedef std::shared_ptr<Logger> ptr;$/;"	t	class:JKYi::Logger
+ptr	log.h	/^    typedef std::shared_ptr<StdoutLogAppender> ptr;$/;"	t	class:JKYi::StdoutLogAppender
+ptr	log.h	/^   typedef std::shared_ptr<LogEvent> ptr; $/;"	t	class:JKYi::LogEvent
+ptr	scheduler.h	/^   typedef std::shared_ptr<Scheduler> ptr;$/;"	t	class:JKYi::Scheduler
+ptr	thread.h	/^   typedef std::shared_ptr<Thread> ptr;$/;"	t	class:JKYi::Thread
+ptr	timer.h	/^   typedef std::shared_ptr<Timer> ptr;$/;"	t	class:JKYi::Timer
+rdlock	mutex.h	/^	void rdlock(){$/;"	f	class:JKYi::RWMutex
+read	iomanager.h	/^	 EventContext read;$/;"	m	struct:JKYi::IOManager::FdContext
+refresh	timer.cc	/^bool Timer::refresh(){$/;"	f	class:JKYi::Timer
+reopen	log.cc	/^bool FileLogAppender::reopen(){$/;"	f	class:JKYi::FileLogAppender
+reset	fiber.cc	/^void Fiber::reset(std::function<void()>cb){$/;"	f	class:JKYi::Fiber
+reset	scheduler.h	/^	 void reset(){$/;"	f	struct:JKYi::Scheduler::FiberAndThread
+reset	timer.cc	/^bool Timer::reset(uint64_t ms,bool from_now){$/;"	f	class:JKYi::Timer
+resetContext	iomanager.cc	/^void IOManager::FdContext::resetContext(EventContext&ctx){$/;"	f	class:JKYi::IOManager::FdContext
+run	scheduler.cc	/^void Scheduler::run(){$/;"	f	class:JKYi::Scheduler
+run	thread.cc	/^ void * Thread::run(void*arg){$/;"	f	class:JKYi::Thread
+schedule	scheduler.h	/^   void schedule(FiberOrCb fc,int thread=-1){$/;"	f	class:JKYi::Scheduler
+schedule	scheduler.h	/^   void schedule(InputIterator begin,InputIterator end){$/;"	f	class:JKYi::Scheduler
+scheduleNoLock	scheduler.h	/^   bool scheduleNoLock(FiberOrCb fc,int thread){$/;"	f	class:JKYi::Scheduler
+scheduler	iomanager.h	/^       Scheduler* scheduler=nullptr;$/;"	m	struct:JKYi::IOManager::FdContext::EventContext
+setFormatter	log.cc	/^void LogAppender::setFormatter(LogFormatter::ptr formatter){$/;"	f	class:JKYi::LogAppender
+setFormatter	log.cc	/^void Logger::setFormatter(LogFormatter::ptr formatter){$/;"	f	class:JKYi::Logger
+setFormatter	log.cc	/^void Logger::setFormatter(const std::string&str){$/;"	f	class:JKYi::Logger
+setLevel	log.h	/^    void setLevel(LogLevel::Level level){m_level=level;}$/;"	f	class:JKYi::LogAppender
+setLevel	log.h	/^    void setLevel(LogLevel::Level level){m_level=level;}$/;"	f	class:JKYi::Logger
+setName	thread.cc	/^void Thread::setName(const std::string&name){$/;"	f	class:JKYi::Thread
+setThis	scheduler.cc	/^void Scheduler::setThis(){$/;"	f	class:JKYi::Scheduler
+setValue	config.h	/^   void setValue(const T&t){$/;"	f	class:JKYi::ConfigVar
+start	scheduler.cc	/^void Scheduler::start(){$/;"	f	class:JKYi::Scheduler
+stop	scheduler.cc	/^void Scheduler::stop(){$/;"	f	class:JKYi::Scheduler
+stopping	scheduler.cc	/^bool Scheduler::stopping(){$/;"	f	class:JKYi::Scheduler
+swapIn	fiber.cc	/^void Fiber::swapIn(){$/;"	f	class:JKYi::Fiber
+swapOut	fiber.cc	/^void Fiber::swapOut(){$/;"	f	class:JKYi::Fiber
+t_fiber	fiber.cc	/^ static thread_local Fiber* t_fiber=nullptr;$/;"	m	namespace:JKYi	file:
+t_scheduler	scheduler.cc	/^static thread_local Scheduler* t_scheduler=nullptr;$/;"	m	namespace:JKYi	file:
+t_scheduler_fiber	scheduler.cc	/^static thread_local Fiber* t_scheduler_fiber=nullptr;$/;"	m	namespace:JKYi	file:
+t_thread	thread.cc	/^static thread_local Thread* t_thread=nullptr;$/;"	m	namespace:JKYi	file:
+t_threadFiber	fiber.cc	/^ static thread_local Fiber::ptr t_threadFiber=nullptr;$/;"	m	namespace:JKYi	file:
+t_thread_name	thread.cc	/^static thread_local std::string t_thread_name="UNKNOW";$/;"	m	namespace:JKYi	file:
+thread	scheduler.h	/^	 int thread;$/;"	m	struct:JKYi::Scheduler::FiberAndThread
+tickle	scheduler.cc	/^void Scheduler::tickle(){$/;"	f	class:JKYi::Scheduler
+toYamlString	log.cc	/^std::string FileLogAppender::toYamlString(){$/;"	f	class:JKYi::FileLogAppender
+toYamlString	log.cc	/^std::string Logger::toYamlString(){$/;"	f	class:JKYi::Logger
+toYamlString	log.cc	/^std::string LoggerManager::toYamlString(){$/;"	f	class:JKYi::LoggerManager
+toYamlString	log.cc	/^std::string StdoutLogAppender::toYamlString(){$/;"	f	class:JKYi::StdoutLogAppender
+triggerEvent	iomanager.cc	/^void IOManager::FdContext::triggerEvent(IOManager::Event event){$/;"	f	class:JKYi::IOManager::FdContext
+type	log.cc	/^    int type=0;\/\/2表示Stdout，1表示file$/;"	m	struct:JKYi::LogAppenderDefine	file:
+unlock	mutex.h	/^	void unlock(){$/;"	f	class:JKYi::RWMutex
+unlock	mutex.h	/^   void unlock(){$/;"	f	class:JKYi::CASLock
+unlock	mutex.h	/^   void unlock(){$/;"	f	class:JKYi::Mutex
+unlock	mutex.h	/^   void unlock(){$/;"	f	class:JKYi::SpinLock
+unlock	mutex.h	/^  void unlock(){$/;"	f	class:JKYi::ReadScopedLockImpl
+unlock	mutex.h	/^  void unlock(){$/;"	f	class:JKYi::ScopedLockImpl
+unlock	mutex.h	/^  void unlock(){$/;"	f	class:JKYi::WriteScopedLockImpl
+wait	mutex.cc	/^void Semaphore::wait(){$/;"	f	class:JKYi::Semaphore
+warn	log.cc	/^void Logger::warn(LogEvent::ptr event){$/;"	f	class:JKYi::Logger
+write	iomanager.h	/^	 EventContext write;$/;"	m	struct:JKYi::IOManager::FdContext
+wrlock	mutex.h	/^	void wrlock(){$/;"	f	class:JKYi::RWMutex
+~CASLock	mutex.h	/^   ~CASLock(){$/;"	f	class:JKYi::CASLock
+~ConfigVarBase	config.h	/^   virtual ~ConfigVarBase(){};\/\/因为要作为基类$/;"	f	class:JKYi::ConfigVarBase
+~Fiber	fiber.cc	/^Fiber::~Fiber(){$/;"	f	class:JKYi::Fiber
+~FormatItem	log.h	/^       virtual ~FormatItem(){}$/;"	f	class:JKYi::LogFormatter::FormatItem
+~IOManager	iomanager.cc	/^IOManager::~IOManager(){$/;"	f	class:JKYi::IOManager
+~LogAppender	log.h	/^    virtual ~LogAppender(){};\/\/由于该类需要作为基类，所以这里的话就析构函数申明为虚函数，避免内存泄漏$/;"	f	class:JKYi::LogAppender
+~LogEventWrap	log.cc	/^LogEventWrap::~LogEventWrap(){$/;"	f	class:JKYi::LogEventWrap
+~Mutex	mutex.h	/^   ~Mutex(){$/;"	f	class:JKYi::Mutex
+~RWMutex	mutex.h	/^	~RWMutex(){$/;"	f	class:JKYi::RWMutex
+~ReadScopedLockImpl	mutex.h	/^  ~ReadScopedLockImpl(){$/;"	f	class:JKYi::ReadScopedLockImpl
+~Scheduler	scheduler.cc	/^Scheduler::~Scheduler(){$/;"	f	class:JKYi::Scheduler
+~ScopedLockImpl	mutex.h	/^  ~ScopedLockImpl(){$/;"	f	class:JKYi::ScopedLockImpl
+~Semaphore	mutex.cc	/^Semaphore::~Semaphore(){$/;"	f	class:JKYi::Semaphore
+~SpinLock	mutex.h	/^   ~SpinLock(){$/;"	f	class:JKYi::SpinLock
+~Thread	thread.cc	/^Thread::~Thread(){$/;"	f	class:JKYi::Thread
+~TimerManager	timer.cc	/^TimerManager::~TimerManager(){$/;"	f	class:JKYi::TimerManager
+~WriteScopedLockImpl	mutex.h	/^  ~WriteScopedLockImpl(){$/;"	f	class:JKYi::WriteScopedLockImpl

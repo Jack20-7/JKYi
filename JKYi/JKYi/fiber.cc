@@ -2,6 +2,7 @@
 #include"config.h"
 #include"macro.h"
 #include"log.h"
+#include"scheduler.h"
 #include<atomic>
 
 namespace JKYi{
@@ -48,7 +49,7 @@ Fiber::Fiber(){
    JKYI_LOG_DEBUG(g_logger)<<"main fiber is created";
 }
 //
-Fiber::Fiber(std::function<void ()>cb,size_t stacksize)
+Fiber::Fiber(std::function<void ()>cb,size_t stacksize,bool use_caller)
     :m_id(++s_fiber_id),m_cb(cb){
 	++s_fiber_count;
 	//如果用户传入了栈大小，就用用户指定的栈大小，如果没有的话，默认使用配置
@@ -64,7 +65,12 @@ Fiber::Fiber(std::function<void ()>cb,size_t stacksize)
 	m_ctx.uc_stack.ss_sp=m_stack;
 	m_ctx.uc_stack.ss_size=m_stacksize;
    //
-    makecontext(&m_ctx,&Fiber::MainFunc,0);
+   if(!use_caller){
+      makecontext(&m_ctx,&Fiber::MainFunc,0);
+   }else{
+	   //如果是跑在调度器中的主调度协程的话
+	   makecontext(&m_ctx,&Fiber::CallerMainFunc,0);
+   }
 	//
 	JKYI_LOG_DEBUG(g_logger)<<"subFiber is created,fiber_id="<<m_id;
 }
@@ -118,28 +124,27 @@ void Fiber::call(){
 void Fiber::back(){
 	SetThis(t_threadFiber.get());
 	//
-	m_state=HOLD;
 	if(swapcontext(&m_ctx,&t_threadFiber->m_ctx)){
 		JKYI_ASSERT2(false,"swapcontext");
 	}
 }
-//
+//同调度器的主调度协程进行切换
 void Fiber::swapIn(){
     SetThis(this);
 	JKYI_ASSERT(m_state != EXEC);
 	//
 	m_state=EXEC;
-	if(swapcontext(&t_threadFiber->m_ctx,&m_ctx)){
+	if(swapcontext(&Scheduler::GetMainFiber()->m_ctx,&m_ctx)){
 		JKYI_ASSERT2(false,"swapcontext");
 	}
 }
 //
 void Fiber::swapOut(){
-	SetThis(t_threadFiber.get());
+	SetThis(Scheduler::GetMainFiber());
 	//这里还是不要把状态设置为hold，因为在子协程执行完之后可能会出问题
 	//m_state=HOLD;
 	//
-	if(swapcontext(&m_ctx,&t_threadFiber->m_ctx)){
+	if(swapcontext(&m_ctx,&Scheduler::GetMainFiber()->m_ctx)){
 		JKYI_ASSERT2(false,"swapcontext");
 	}
 }
@@ -213,27 +218,40 @@ uint64_t Fiber::GetFiberId(){
 	}
 	return 0;
 }
+void Fiber::CallerMainFunc(){
+	Fiber::ptr cur=GetThis();
+	JKYI_ASSERT(cur);
+	//
+	try{
+	  cur->m_cb();
+	  cur->m_cb=nullptr;
+	  cur->m_state=TERM;
+	}catch(std::exception&ex){
+      cur->m_state=EXCEPT;
+	  JKYI_LOG_ERROR(g_logger)<<"Fiber except:"<<ex.what()
+	                          <<"fiber_id="<<cur->getId()
+							  <<std::endl
+							  <<JKYi::BacktraceToString();
+	}catch(...){
+       cur->m_state=EXCEPT;
+	   JKYI_LOG_ERROR(g_logger)<<"Fiber except"
+	                           <<"fiber_id="<<cur->getId()
+							   <<std::endl
+							   <<JKYi::BacktraceToString();
+	}
+	//如果是正常执行完的话，那么就切切换到主协程去执行
+	auto raw_ptr=cur.get();
+	cur.reset();
+	//
+	raw_ptr->back();
+	//
+	JKYI_ASSERT2(false,"never reach fiber_id"+std::to_string(raw_ptr->getId()));
+
 
 //
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

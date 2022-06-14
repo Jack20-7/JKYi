@@ -141,6 +141,45 @@ CMakeFiles/JKYi.dir/JKYi/fiber.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JKYi.dir/JKYi/fiber.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/workSpace/JKYi/fiber.cc -o CMakeFiles/JKYi.dir/JKYi/fiber.cc.s
 
+CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o: CMakeFiles/JKYi.dir/flags.make
+CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o: JKYi/scheduler.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o -c /home/admin/workSpace/JKYi/scheduler.cc
+
+CMakeFiles/JKYi.dir/JKYi/scheduler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JKYi.dir/JKYi/scheduler.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/workSpace/JKYi/scheduler.cc > CMakeFiles/JKYi.dir/JKYi/scheduler.cc.i
+
+CMakeFiles/JKYi.dir/JKYi/scheduler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JKYi.dir/JKYi/scheduler.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/workSpace/JKYi/scheduler.cc -o CMakeFiles/JKYi.dir/JKYi/scheduler.cc.s
+
+CMakeFiles/JKYi.dir/JKYi/timer.cc.o: CMakeFiles/JKYi.dir/flags.make
+CMakeFiles/JKYi.dir/JKYi/timer.cc.o: JKYi/timer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/JKYi.dir/JKYi/timer.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/timer.cc.o -c /home/admin/workSpace/JKYi/timer.cc
+
+CMakeFiles/JKYi.dir/JKYi/timer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JKYi.dir/JKYi/timer.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/workSpace/JKYi/timer.cc > CMakeFiles/JKYi.dir/JKYi/timer.cc.i
+
+CMakeFiles/JKYi.dir/JKYi/timer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JKYi.dir/JKYi/timer.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/workSpace/JKYi/timer.cc -o CMakeFiles/JKYi.dir/JKYi/timer.cc.s
+
+CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o: CMakeFiles/JKYi.dir/flags.make
+CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o: JKYi/iomanager.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o -c /home/admin/workSpace/JKYi/iomanager.cc
+
+CMakeFiles/JKYi.dir/JKYi/iomanager.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JKYi.dir/JKYi/iomanager.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/workSpace/JKYi/iomanager.cc > CMakeFiles/JKYi.dir/JKYi/iomanager.cc.i
+
+CMakeFiles/JKYi.dir/JKYi/iomanager.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JKYi.dir/JKYi/iomanager.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/workSpace/JKYi/iomanager.cc -o CMakeFiles/JKYi.dir/JKYi/iomanager.cc.s
+
 # Object files for target JKYi
 JKYi_OBJECTS = \
 "CMakeFiles/JKYi.dir/JKYi/log.cc.o" \
@@ -148,7 +187,10 @@ JKYi_OBJECTS = \
 "CMakeFiles/JKYi.dir/JKYi/config.cc.o" \
 "CMakeFiles/JKYi.dir/JKYi/thread.cc.o" \
 "CMakeFiles/JKYi.dir/JKYi/mutex.cc.o" \
-"CMakeFiles/JKYi.dir/JKYi/fiber.cc.o"
+"CMakeFiles/JKYi.dir/JKYi/fiber.cc.o" \
+"CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o" \
+"CMakeFiles/JKYi.dir/JKYi/timer.cc.o" \
+"CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o"
 
 # External object files for target JKYi
 JKYi_EXTERNAL_OBJECTS =
@@ -159,9 +201,12 @@ lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/config.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/thread.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/mutex.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/fiber.cc.o
+lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o
+lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/timer.cc.o
+lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/build.make
 lib/libJKYi.so: CMakeFiles/JKYi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library lib/libJKYi.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library lib/libJKYi.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/JKYi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

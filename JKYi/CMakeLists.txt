@@ -22,6 +22,9 @@ set (LIB_SRC
     JKYi/thread.cc
 	JKYi/mutex.cc
 	JKYi/fiber.cc
+	JKYi/scheduler.cc
+	JKYi/timer.cc
+	JKYi/iomanager.cc
     )
 #生成库文件，这里就是通过LIB_SRC生成共享库libJKYI.SO
 add_library(JKYi SHARED ${LIB_SRC})
@@ -54,6 +57,14 @@ target_link_libraries(test_util ${LIBS})
 add_executable(test_fiber tests/test_fiber.cc)
 add_dependencies(test_fiber JKYi)
 target_link_libraries(test_fiber ${LIBS})
+
+add_executable(test_scheduler tests/test_scheduler.cc)
+add_dependencies(test_scheduler JKYi)
+target_link_libraries(test_scheduler ${LIBS})
+
+add_executable(test_iomanager tests/test_iomanager.cc)
+add_dependencies(test_iomanager JKYi)
+target_link_libraries(test_iomanager ${LIBS})
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
