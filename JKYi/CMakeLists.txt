@@ -25,6 +25,8 @@ set (LIB_SRC
 	JKYi/scheduler.cc
 	JKYi/timer.cc
 	JKYi/iomanager.cc
+	JKYi/fdmanager.cc
+	JKYi/hook.cc
     )
 #生成库文件，这里就是通过LIB_SRC生成共享库libJKYI.SO
 add_library(JKYi SHARED ${LIB_SRC})
@@ -35,6 +37,7 @@ set(LIBS
       JKYi
       pthread
       yaml-cpp  
+	  dl
 )
 
 add_executable(test tests/test.cc)
@@ -65,6 +68,10 @@ target_link_libraries(test_scheduler ${LIBS})
 add_executable(test_iomanager tests/test_iomanager.cc)
 add_dependencies(test_iomanager JKYi)
 target_link_libraries(test_iomanager ${LIBS})
+
+add_executable(test_hook tests/test_hook.cc)
+add_dependencies(test_hook JKYi)
+target_link_libraries(test_hook ${LIBS})
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

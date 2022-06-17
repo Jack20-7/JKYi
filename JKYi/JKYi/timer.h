@@ -55,7 +55,7 @@ public:
    virtual ~TimerManager(); 
    //添加定时器
    Timer::ptr addTimer(uint64_t ms,std::function<void ()>cb,bool recurring=false);
-   //添加定时器，条件定时器和普通定时器之间的区别在于条件定时器在触发时还会判断条件是否有效，如果有效才会执行回调函数，如果无效是不会调用回调函数的
+   //添加添加定时器，条件定时器和普通定时器之间的区别在于条件定时器在触发时还会判断条件是否有效，如果有效才会执行回调函数，如果无效是不会调用回调函数的
    //而这个条件是否有效是由weak_ptr的get函数来实现
    Timer::ptr addConditionTimer(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring=false);
    //返回当前set容器中下一个要触发的定时器距离当前的时间

@@ -3,7 +3,9 @@
 
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/JKYi.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/config.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/fdmanager.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/fiber.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/hook.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/iomanager.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/log.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/macro.h

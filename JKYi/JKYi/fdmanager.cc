@@ -1,4 +1,5 @@
 #include"fdmanager.h"
+#include"hook.h"
 
 #include<sys/types.h>
 #include<sys/stat.h>
@@ -11,7 +12,7 @@ FdCtx::FdCtx(int fd)
   ,m_isSocket(false)
   ,m_sysNonblock(false)
   ,m_userNonblock(false)
-  ,m_isClosed(false),
+  ,m_isClosed(false)
   ,m_fd(fd)
   ,m_recvTimeout(-1)
   ,m_sendTimeout(-1){
@@ -42,7 +43,7 @@ bool FdCtx::init(){
 
 	if(m_isSocket){
       int flags=fcntl_f(m_fd,F_GETFL,0);		
-	  if(!(flag&O_NONBLOCK)){
+	  if(!(flags&O_NONBLOCK)){
 	      fcntl_f(m_fd,F_SETFL,flags|O_NONBLOCK);  
 		}
 	   m_sysNonblock=true;
@@ -86,7 +87,7 @@ FdCtx::ptr FdManager::get(int fd,bool auto_create){
      return nullptr;	   
 	}
 	RWMutexType::ReadLock lock(m_mutex);
-	if((int)m_datas.size()=<fd){
+	if((int)m_datas.size()<=fd){
        if(!auto_create){
 	      return nullptr;	   
 		}
@@ -97,7 +98,7 @@ FdCtx::ptr FdManager::get(int fd,bool auto_create){
 	}
 	//
 	lock.unlock();
-	RWMutexLock::WriteLock lock2(m_mutex);
+	RWMutexType::WriteLock lock2(m_mutex);
 	FdCtx::ptr fd_ctx(new FdCtx(fd));
 	if(fd>=(int)m_datas.size()){
        m_datas.resize(1.5*fd);

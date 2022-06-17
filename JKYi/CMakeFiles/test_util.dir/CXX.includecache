@@ -27,6 +27,10 @@ timer.h
 /home/admin/workSpace/JKYi/timer.h
 iomanager.h
 /home/admin/workSpace/JKYi/iomanager.h
+hook.h
+/home/admin/workSpace/JKYi/hook.h
+fdmanager.h
+/home/admin/workSpace/JKYi/fdmanager.h
 
 /home/admin/workSpace/JKYi/config.h
 memory
@@ -62,12 +66,38 @@ log.h
 util.h
 /home/admin/workSpace/JKYi/util.h
 
+/home/admin/workSpace/JKYi/fdmanager.h
+memory
+-
+vector
+-
+thread.h
+/home/admin/workSpace/JKYi/thread.h
+singleton.h
+/home/admin/workSpace/JKYi/singleton.h
+
 /home/admin/workSpace/JKYi/fiber.h
 memory
 -
 functional
 -
 ucontext.h
+-
+
+/home/admin/workSpace/JKYi/hook.h
+fcntl.h
+-
+sys/ioctl.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+stdint.h
+-
+time.h
+-
+unistd.h
 -
 
 /home/admin/workSpace/JKYi/iomanager.h

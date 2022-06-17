@@ -1,6 +1,7 @@
 #include"scheduler.h"
 #include"log.h"
 #include"macro.h"
+#include"hook.h"
 
 namespace JKYi{
 //系统的日志全是用system来打
@@ -124,6 +125,9 @@ void Scheduler::setThis(){
 }
 //
 void Scheduler::run(){
+	//自己创建的线程都需要hook
+	set_hook_enable(true);
+
 	setThis();
 	//如果当前线程不是use_caller线程，那么他的主调度协程就是它的主协程
 	if(JKYi::GetThreadId()!=m_rootThread){
@@ -144,7 +148,7 @@ void Scheduler::run(){
 			MutexType::Lock lock(m_mutex);
             auto it=m_fibers.begin();
 			while(it!=m_fibers.end()){
-				if(it->thread!=-1&&it->thread!=JKYi::GetThreadId()){
+				if(it->thread!=-1 &&i t->thread!=JKYi::GetThreadId()){
 					++it;
 					tickle_me=true;
 					continue;

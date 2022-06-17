@@ -4,7 +4,9 @@
 CMakeFiles/test_util.dir/tests/test_util.cc.o
  /home/admin/workSpace/JKYi/JKYi.h
  /home/admin/workSpace/JKYi/config.h
+ /home/admin/workSpace/JKYi/fdmanager.h
  /home/admin/workSpace/JKYi/fiber.h
+ /home/admin/workSpace/JKYi/hook.h
  /home/admin/workSpace/JKYi/iomanager.h
  /home/admin/workSpace/JKYi/log.h
  /home/admin/workSpace/JKYi/macro.h

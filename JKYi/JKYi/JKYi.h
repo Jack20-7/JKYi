@@ -11,4 +11,6 @@
 #include"scheduler.h"
 #include"timer.h"
 #include"iomanager.h"
+#include"hook.h"
+#include"fdmanager.h"
 #endif

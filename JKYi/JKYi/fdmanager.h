@@ -25,13 +25,13 @@ public:
 
    bool isClose()const {return m_isClosed;}
 
-   bool setUserNonblock(bool flag){m_userNonblock=flag;}
+   void setUserNonblock(bool flag){m_userNonblock=flag;}
 
-   bool getUserNonblock()const {return m_uesNonblock;}
+   bool getUserNonblock()const {return m_userNonblock;}
 
    void setSysNonblock(bool flag) {m_sysNonblock=flag;}
 
-   void getSysNonblock()const {return m_sysNonblock;}
+   bool getSysNonblock()const {return m_sysNonblock;}
 
    void setTimeout(int type,uint64_t v);
 

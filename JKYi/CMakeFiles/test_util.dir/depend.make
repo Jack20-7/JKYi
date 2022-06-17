@@ -3,7 +3,9 @@
 
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/JKYi.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/config.h
+CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/fdmanager.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/fiber.h
+CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/hook.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/iomanager.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/log.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/macro.h

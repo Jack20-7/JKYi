@@ -3,7 +3,9 @@
 
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/JKYi.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/config.h
+CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/fdmanager.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/fiber.h
+CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/hook.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/iomanager.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/log.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/macro.h

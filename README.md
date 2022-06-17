@@ -252,5 +252,8 @@ int main(void){
 }
 
 ```
+## hook模块
+
+hook模块主要是对socket的一些函数进行hook，比如socket、connect、accept等。通过对他们进行hook的方式将他们从同步操作转化为异步操作，可以极大的提高程序执行的效率并且可以简化之后网络模块的编写
 
 
