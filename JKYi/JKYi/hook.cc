@@ -95,8 +95,7 @@ static ssize_t do_io(int fd,OriginFun&fun,const char * hook_fun_name,uint32_t ev
     if(!JKYi::t_hook_enable){
 		return fun(fd,std::forward<Args>(args)...);
 	}
-	JKYI_LOG_DEBUG(g_logger)<<hook_fun_name<<"  do_io";
-		
+	//JKYI_LOG_DEBUG(g_logger)<<hook_fun_name<<"  do_io";
 
 	JKYi::FdCtx::ptr fd_ctx=JKYi::FdMgr::GetInstance()->get(fd);
 	if(!fd_ctx){
@@ -124,6 +123,7 @@ retry:
 	}
 
 	if(n==-1&&errno==EAGAIN){
+	    //JKYI_LOG_DEBUG(g_logger)<<hook_fun_name<<"  again";
 		JKYi::IOManager * iom=JKYi::IOManager::GetThis();
 		JKYi::Timer::ptr timer;
 		std::weak_ptr<timer_info>winfo(tinfo);
@@ -277,6 +277,7 @@ int connect_with_timeout(int socketfd,const struct sockaddr*addr,socklen_t addrl
 			 iom->cancelEvent(socketfd,JKYi::IOManager::WRITE);
 		 },winfo);
 	   }
+     //JKYI_LOG_DEBUG(g_logger)<<"connect_with_timeout 写事件的添加";
      int rt=iom->addEvent(socketfd,JKYi::IOManager::WRITE);
 	 if(rt==0){
 		 //添加成功

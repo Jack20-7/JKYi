@@ -256,4 +256,26 @@ int main(void){
 
 hook模块主要是对socket的一些函数进行hook，比如socket、connect、accept等。通过对他们进行hook的方式将他们从同步操作转化为异步操作，可以极大的提高程序执行的效率并且可以简化之后网络模块的编写
 
+## 地址模块的添加
+
+JKYi中分别对IPv4、IPv6、Uniux它们对应的socekt地址进行的封装，这样我们使用起来更加的方面，方便了接下来网络模块的一个编写，该模块的结构是
+
+
+```
+     ------Address------
+		 -        -
+		-          -
+	   -            -
+	 IPAddress    UnixAddress
+	  -     -
+	 -       -
+	-         -
+ IPv4Address   IPv6Address
+
+
+```
+
+然后具体的功能的话支持根据域名返回地址，查询当前机器的网卡,查子网掩码、广播地址等
+
+
 

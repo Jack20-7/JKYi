@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/JKYi.dir/JKYi/address.cc.o"
   "CMakeFiles/JKYi.dir/JKYi/config.cc.o"
   "CMakeFiles/JKYi.dir/JKYi/fdmanager.cc.o"
   "CMakeFiles/JKYi.dir/JKYi/fiber.cc.o"

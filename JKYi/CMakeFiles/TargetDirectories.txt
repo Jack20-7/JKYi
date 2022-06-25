@@ -1,3 +1,4 @@
+/home/admin/workSpace/CMakeFiles/edit_cache.dir
 /home/admin/workSpace/CMakeFiles/test.dir
 /home/admin/workSpace/CMakeFiles/rebuild_cache.dir
 /home/admin/workSpace/CMakeFiles/test_thread.dir
@@ -8,4 +9,4 @@
 /home/admin/workSpace/CMakeFiles/JKYi.dir
 /home/admin/workSpace/CMakeFiles/test_scheduler.dir
 /home/admin/workSpace/CMakeFiles/test_iomanager.dir
-/home/admin/workSpace/CMakeFiles/edit_cache.dir
+/home/admin/workSpace/CMakeFiles/test_address.dir

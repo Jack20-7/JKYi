@@ -13,4 +13,6 @@
 #include"iomanager.h"
 #include"hook.h"
 #include"fdmanager.h"
+#include"endian.h"
+#include"address.h"
 #endif

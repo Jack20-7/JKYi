@@ -31,6 +31,32 @@ hook.h
 /home/admin/workSpace/JKYi/hook.h
 fdmanager.h
 /home/admin/workSpace/JKYi/fdmanager.h
+endian.h
+/home/admin/workSpace/JKYi/endian.h
+address.h
+/home/admin/workSpace/JKYi/address.h
+
+/home/admin/workSpace/JKYi/address.h
+memory
+-
+string
+-
+sys/types.h
+-
+sys/socket.h
+-
+sys/un.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+iostream
+-
+vector
+-
+map
+-
 
 /home/admin/workSpace/JKYi/config.h
 memory
@@ -65,6 +91,12 @@ log.h
 /home/admin/workSpace/JKYi/log.h
 util.h
 /home/admin/workSpace/JKYi/util.h
+
+/home/admin/workSpace/JKYi/endian.h
+byteswap.h
+-
+stdint.h
+-
 
 /home/admin/workSpace/JKYi/fdmanager.h
 memory

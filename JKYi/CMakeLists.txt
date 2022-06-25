@@ -13,7 +13,7 @@ link_directories(/root/yaml-cpp-master/lib)
 
 #find_library(YAMLCPP yaml-cpp)
 #message("***",${YAMLCPP})
-find_library(PTHREAD pthread)
+#find_library(PTHREAD pthread)
 
 set (LIB_SRC 
     JKYi/log.cc
@@ -27,6 +27,7 @@ set (LIB_SRC
 	JKYi/iomanager.cc
 	JKYi/fdmanager.cc
 	JKYi/hook.cc
+    JKYi/address.cc
     )
 #生成库文件，这里就是通过LIB_SRC生成共享库libJKYI.SO
 add_library(JKYi SHARED ${LIB_SRC})
@@ -72,6 +73,12 @@ target_link_libraries(test_iomanager ${LIBS})
 add_executable(test_hook tests/test_hook.cc)
 add_dependencies(test_hook JKYi)
 target_link_libraries(test_hook ${LIBS})
+
+add_executable(test_address tests/test_address.cc)
+add_dependencies(test_address JKYi)
+target_link_libraries(test_address ${LIBS})
+
+
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

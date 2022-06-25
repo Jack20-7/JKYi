@@ -261,7 +261,7 @@ void IOManager::tickle(){
 	}
 	//先管道内写入一个字节的数据，主要是用来将epoll_wait给唤醒
 	int rt=write(m_tickleFds[1],"T",1);
-	JKYI_LOG_INFO(g_logger)<<"tickle";
+	//JKYI_LOG_INFO(g_logger)<<"tickle";
 	JKYI_ASSERT(rt==1);
 }
 

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/admin/workSpace/JKYi/address.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/address.cc.o"
   "/home/admin/workSpace/JKYi/config.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/config.cc.o"
   "/home/admin/workSpace/JKYi/fdmanager.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/fdmanager.cc.o"
   "/home/admin/workSpace/JKYi/fiber.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/fiber.cc.o"

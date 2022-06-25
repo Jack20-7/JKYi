@@ -54,4 +54,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/JKYi.dir/DependInfo.cmake"
   "CMakeFiles/test_scheduler.dir/DependInfo.cmake"
   "CMakeFiles/test_iomanager.dir/DependInfo.cmake"
+  "CMakeFiles/test_address.dir/DependInfo.cmake"
   )

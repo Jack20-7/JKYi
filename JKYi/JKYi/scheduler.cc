@@ -148,7 +148,7 @@ void Scheduler::run(){
 			MutexType::Lock lock(m_mutex);
             auto it=m_fibers.begin();
 			while(it!=m_fibers.end()){
-				if(it->thread!=-1 &&i t->thread!=JKYi::GetThreadId()){
+				if(it->thread!=-1 && it->thread!=JKYi::GetThreadId()){
 					++it;
 					tickle_me=true;
 					continue;

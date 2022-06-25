@@ -62,17 +62,6 @@ CMAKE_BINARY_DIR = /home/admin/workSpace
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -83,6 +72,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/cmake/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -232,6 +232,46 @@ test_iomanager: cmake_check_build_system
 test_iomanager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/build
 .PHONY : test_iomanager/fast
+
+#=============================================================================
+# Target rules for targets named test_address
+
+# Build rule for target.
+test_address: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_address
+.PHONY : test_address
+
+# fast build rule for target.
+test_address/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
+.PHONY : test_address/fast
+
+JKYi/address.o: JKYi/address.cc.o
+
+.PHONY : JKYi/address.o
+
+# target to build an object file
+JKYi/address.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/address.cc.o
+.PHONY : JKYi/address.cc.o
+
+JKYi/address.i: JKYi/address.cc.i
+
+.PHONY : JKYi/address.i
+
+# target to preprocess a source file
+JKYi/address.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/address.cc.i
+.PHONY : JKYi/address.cc.i
+
+JKYi/address.s: JKYi/address.cc.s
+
+.PHONY : JKYi/address.s
+
+# target to generate assembly for a file
+JKYi/address.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/address.cc.s
+.PHONY : JKYi/address.cc.s
 
 JKYi/config.o: JKYi/config.cc.o
 
@@ -557,6 +597,33 @@ tests/test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cc.s
 .PHONY : tests/test.cc.s
 
+tests/test_address.o: tests/test_address.cc.o
+
+.PHONY : tests/test_address.o
+
+# target to build an object file
+tests/test_address.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.o
+.PHONY : tests/test_address.cc.o
+
+tests/test_address.i: tests/test_address.cc.i
+
+.PHONY : tests/test_address.i
+
+# target to preprocess a source file
+tests/test_address.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.i
+.PHONY : tests/test_address.cc.i
+
+tests/test_address.s: tests/test_address.cc.s
+
+.PHONY : tests/test_address.s
+
+# target to generate assembly for a file
+tests/test_address.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.s
+.PHONY : tests/test_address.cc.s
+
 tests/test_config.o: tests/test_config.cc.o
 
 .PHONY : tests/test_config.o
@@ -752,6 +819,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... test_thread"
@@ -762,7 +830,10 @@ help:
 	@echo "... JKYi"
 	@echo "... test_scheduler"
 	@echo "... test_iomanager"
-	@echo "... edit_cache"
+	@echo "... test_address"
+	@echo "... JKYi/address.o"
+	@echo "... JKYi/address.i"
+	@echo "... JKYi/address.s"
 	@echo "... JKYi/config.o"
 	@echo "... JKYi/config.i"
 	@echo "... JKYi/config.s"
@@ -799,6 +870,9 @@ help:
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"
+	@echo "... tests/test_address.o"
+	@echo "... tests/test_address.i"
+	@echo "... tests/test_address.s"
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
