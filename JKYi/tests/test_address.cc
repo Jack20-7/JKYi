@@ -41,16 +41,20 @@ void test_iface(){
 }
 void test_ipv4(){
     auto addr=JKYi::IPAddress::Create("127.0.0.1");
+    JKYi::IPAddress::ptr network=addr->networkAddress(16);
+    //JKYi::IPAddress::ptr subnetmask=addr->subnetMaskAddress(16);
     //auto addr=JKYi::IPAddress::Create("www.baidu.com");
     if(addr){
         JKYI_LOG_INFO(g_logger)<<addr->toString();
+        JKYI_LOG_INFO(g_logger)<<network->toString();
+        //JKYI_LOG_INFO(g_logger)<<subnetmask->toString();
     }
     return ;
 }
 int main(int argc,char**argv){
-    //test_ipv4();
+    test_ipv4();
     //test_iface();
-    test();
+    //test();
     return 0;
 }
 

@@ -28,6 +28,7 @@ set (LIB_SRC
 	JKYi/fdmanager.cc
 	JKYi/hook.cc
     JKYi/address.cc
+    JKYi/socket.cc
     )
 #生成库文件，这里就是通过LIB_SRC生成共享库libJKYI.SO
 add_library(JKYi SHARED ${LIB_SRC})
@@ -77,6 +78,10 @@ target_link_libraries(test_hook ${LIBS})
 add_executable(test_address tests/test_address.cc)
 add_dependencies(test_address JKYi)
 target_link_libraries(test_address ${LIBS})
+
+add_executable(test_socket tests/test_socket.cc)
+add_dependencies(test_socket JKYi)
+target_link_libraries(test_socket ${LIBS})
 
 
 

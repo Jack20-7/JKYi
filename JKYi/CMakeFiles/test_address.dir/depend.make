@@ -15,6 +15,7 @@ CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/mutex.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/noncopyable.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/scheduler.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/singleton.h
+CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/socket.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/thread.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/timer.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/util.h

@@ -15,6 +15,7 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/mutex.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/noncopyable.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/scheduler.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/singleton.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/socket.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/thread.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/timer.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/util.h

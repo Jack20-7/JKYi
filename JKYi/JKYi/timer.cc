@@ -4,7 +4,7 @@
 
 namespace JKYi{
 
-Logger::ptr g_logger=JKYI_LOG_NAME("system");
+static Logger::ptr g_logger=JKYI_LOG_NAME("system");
 
 bool Timer::Comparator::operator()(const Timer::ptr &lhv,
                                         const Timer::ptr&rhv)const{

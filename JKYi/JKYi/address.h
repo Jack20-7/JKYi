@@ -81,13 +81,13 @@ public:
     //根据子网掩码的位数获取对应的广播地址
 	virtual IPAddress::ptr broadcastAddress(uint32_t prefix_len)=0;
      
-	//根据子网掩码的中1的个数返回IP对应的主机号
+	//根据子网掩码的中1的个数返回IP对应的网段
 	virtual IPAddress::ptr networkAddress(uint32_t prefix_len)=0;
 
 	//根据子网掩码的位数返回对应的子网掩码
 	virtual IPAddress::ptr subnetMaskAddress(uint32_t prefix_len)=0;
 
-	virtual uint32_t getPort()const =0;
+	virtual uint16_t getPort()const =0;
 
 	//设置端口号
 	virtual void  setPort(uint16_t v)=0;
@@ -119,7 +119,7 @@ public:
 	IPAddress::ptr networkAddress(uint32_t prefix_len)override;
 	IPAddress::ptr subnetMaskAddress(uint32_t prefix_len)override;
 
-	uint32_t getPort()const override;
+	uint16_t getPort()const override;
 	void setPort(uint16_t v)override;
 
 private:
@@ -151,7 +151,7 @@ public:
 	IPAddress::ptr broadcastAddress(uint32_t prefix_len)override;
 	IPAddress::ptr networkAddress(uint32_t prefix_len)override;
 	IPAddress::ptr subnetMaskAddress(uint32_t predix_len)override;
-    uint32_t getPort()const override;
+    uint16_t getPort()const override;
 	void setPort(uint16_t v)override;
 private:
 	sockaddr_in6 m_addr;

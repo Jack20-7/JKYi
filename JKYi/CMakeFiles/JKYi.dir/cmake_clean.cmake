@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/JKYi.dir/JKYi/log.cc.o"
   "CMakeFiles/JKYi.dir/JKYi/mutex.cc.o"
   "CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o"
+  "CMakeFiles/JKYi.dir/JKYi/socket.cc.o"
   "CMakeFiles/JKYi.dir/JKYi/thread.cc.o"
   "CMakeFiles/JKYi.dir/JKYi/timer.cc.o"
   "CMakeFiles/JKYi.dir/JKYi/util.cc.o"

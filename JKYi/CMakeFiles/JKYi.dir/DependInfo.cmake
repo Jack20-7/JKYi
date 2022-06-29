@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/admin/workSpace/JKYi/log.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/log.cc.o"
   "/home/admin/workSpace/JKYi/mutex.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/mutex.cc.o"
   "/home/admin/workSpace/JKYi/scheduler.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/scheduler.cc.o"
+  "/home/admin/workSpace/JKYi/socket.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/socket.cc.o"
   "/home/admin/workSpace/JKYi/thread.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/thread.cc.o"
   "/home/admin/workSpace/JKYi/timer.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/timer.cc.o"
   "/home/admin/workSpace/JKYi/util.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/util.cc.o"

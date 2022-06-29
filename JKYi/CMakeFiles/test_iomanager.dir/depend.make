@@ -15,6 +15,7 @@ CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/mutex.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/noncopyable.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/scheduler.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/singleton.h
+CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/socket.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/thread.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/timer.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/util.h

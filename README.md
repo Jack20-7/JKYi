@@ -252,11 +252,15 @@ int main(void){
 }
 
 ```
+
 ## hook模块
 
 hook模块主要是对socket的一些函数进行hook，比如socket、connect、accept等。通过对他们进行hook的方式将他们从同步操作转化为异步操作，可以极大的提高程序执行的效率并且可以简化之后网络模块的编写
 
-## 地址模块的添加
+
+## 网络模块的添加
+
+# 地址模块
 
 JKYi中分别对IPv4、IPv6、Uniux它们对应的socekt地址进行的封装，这样我们使用起来更加的方面，方便了接下来网络模块的一个编写，该模块的结构是
 
@@ -277,5 +281,60 @@ JKYi中分别对IPv4、IPv6、Uniux它们对应的socekt地址进行的封装，
 
 然后具体的功能的话支持根据域名返回地址，查询当前机器的网卡,查子网掩码、广播地址等
 
+# socket模块的封装 
+
+socket模块在封装的过程中就利用到了之前hook模块hook的那些网络编程相关的函数.通过对socket的封装可以让我们在进行网络编程的时候更加的方便,更加的高效.并且支持域名解析的功能,示例如下:
+
+
+```
+
+void test(){
+
+    //根据域名获取IP
+    JKYi::IPAddress::ptr addr=JKYi::Address::LookupAnyIPAddress("www.baidu.com");
+    if(addr){
+      //成功
+    }else{
+        //失败
+    }
+
+    //根据连接方的地址族地址创建TCPsocket
+    JKYi::Socket::ptr sock=JKYi::Socket::CreateTCP(addr);
+    addr->setPort(80);
+    if(sock){
+        //成功
+    }else{
+        //创建失败
+    }
+
+    if(!sock->connect(addr)){
+        //建立连接失败
+    }else{
+        //建立连接成功
+    }
+    
+    const char msg[]="GET / HTTP1.0\r\n\r\n";
+    //向连接方发送消息
+    int rt=sock->send(msg,sizeof(msg));
+    if(rt<=0){
+        //失败
+    }
+    std::string buff;
+    buff.resize(4096);
+    //接收连接方返回的信息
+    rt=sock->recv(&buff[0],buff.size());
+    if(rt<=0){
+       //接收失败
+    }else{
+        //接收成功
+    }
+
+    buff.resize(rt);
+
+    //将收到的消息打印出来
+    std::cout<<buff<<std::endl;
+}
+
+```
 
 

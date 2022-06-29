@@ -343,7 +343,7 @@ IPAddress::ptr IPv4Address::networkAddress(uint32_t prefix_len){
     }
     //
     sockaddr_in baddr(m_addr);
-    baddr.sin_addr.s_addr &= toNetEndian(CreateMask<uint32_t>(prefix_len));
+    baddr.sin_addr.s_addr &= ~toNetEndian(CreateMask<uint32_t>(prefix_len));
     return IPv4Address::ptr (new IPv4Address(baddr));
 }
 
@@ -360,7 +360,7 @@ IPAddress::ptr IPv4Address::subnetMaskAddress(uint32_t prefix_len){
    return IPv4Address::ptr (new IPv4Address(subnet));
 }
 
-uint32_t IPv4Address::getPort()const{
+uint16_t IPv4Address::getPort()const{
     return toNetEndian(m_addr.sin_port);
 }
 
@@ -447,7 +447,7 @@ IPAddress::ptr IPv6Address::broadcastAddress(uint32_t prefix_len){
 
 IPAddress::ptr IPv6Address::networkAddress(uint32_t prefix_len){
     sockaddr_in6 baddr(m_addr); 
-    baddr.sin6_addr.s6_addr[prefix_len/8] &= CreateMask<uint8_t>(prefix_len%8);
+    baddr.sin6_addr.s6_addr[prefix_len/8] &= ~CreateMask<uint8_t>(prefix_len%8);
     for(int i=prefix_len/8+1;i<16;++i){
         baddr.sin6_addr.s6_addr[i]=0x00;
     }
@@ -466,7 +466,7 @@ IPAddress::ptr IPv6Address::subnetMaskAddress(uint32_t prefix_len){
 
 }
 
-uint32_t IPv6Address::getPort()const{
+uint16_t IPv6Address::getPort()const{
     return toNetEndian(m_addr.sin6_port);
 }
 

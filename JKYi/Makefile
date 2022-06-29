@@ -130,6 +130,19 @@ test/fast:
 .PHONY : test/fast
 
 #=============================================================================
+# Target rules for targets named test_socket
+
+# Build rule for target.
+test_socket: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_socket
+.PHONY : test_socket
+
+# fast build rule for target.
+test_socket/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
+.PHONY : test_socket/fast
+
+#=============================================================================
 # Target rules for targets named test_thread
 
 # Build rule for target.
@@ -489,6 +502,33 @@ JKYi/scheduler.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/scheduler.cc.s
 .PHONY : JKYi/scheduler.cc.s
 
+JKYi/socket.o: JKYi/socket.cc.o
+
+.PHONY : JKYi/socket.o
+
+# target to build an object file
+JKYi/socket.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/socket.cc.o
+.PHONY : JKYi/socket.cc.o
+
+JKYi/socket.i: JKYi/socket.cc.i
+
+.PHONY : JKYi/socket.i
+
+# target to preprocess a source file
+JKYi/socket.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/socket.cc.i
+.PHONY : JKYi/socket.cc.i
+
+JKYi/socket.s: JKYi/socket.cc.s
+
+.PHONY : JKYi/socket.s
+
+# target to generate assembly for a file
+JKYi/socket.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/socket.cc.s
+.PHONY : JKYi/socket.cc.s
+
 JKYi/thread.o: JKYi/thread.cc.o
 
 .PHONY : JKYi/thread.o
@@ -759,6 +799,33 @@ tests/test_scheduler.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.s
 .PHONY : tests/test_scheduler.cc.s
 
+tests/test_socket.o: tests/test_socket.cc.o
+
+.PHONY : tests/test_socket.o
+
+# target to build an object file
+tests/test_socket.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.o
+.PHONY : tests/test_socket.cc.o
+
+tests/test_socket.i: tests/test_socket.cc.i
+
+.PHONY : tests/test_socket.i
+
+# target to preprocess a source file
+tests/test_socket.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.i
+.PHONY : tests/test_socket.cc.i
+
+tests/test_socket.s: tests/test_socket.cc.s
+
+.PHONY : tests/test_socket.s
+
+# target to generate assembly for a file
+tests/test_socket.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cc.s
+.PHONY : tests/test_socket.cc.s
+
 tests/test_thread.o: tests/test_thread.cc.o
 
 .PHONY : tests/test_thread.o
@@ -822,6 +889,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... rebuild_cache"
+	@echo "... test_socket"
 	@echo "... test_thread"
 	@echo "... test_util"
 	@echo "... test_config"
@@ -858,6 +926,9 @@ help:
 	@echo "... JKYi/scheduler.o"
 	@echo "... JKYi/scheduler.i"
 	@echo "... JKYi/scheduler.s"
+	@echo "... JKYi/socket.o"
+	@echo "... JKYi/socket.i"
+	@echo "... JKYi/socket.s"
 	@echo "... JKYi/thread.o"
 	@echo "... JKYi/thread.i"
 	@echo "... JKYi/thread.s"
@@ -888,6 +959,9 @@ help:
 	@echo "... tests/test_scheduler.o"
 	@echo "... tests/test_scheduler.i"
 	@echo "... tests/test_scheduler.s"
+	@echo "... tests/test_socket.o"
+	@echo "... tests/test_socket.i"
+	@echo "... tests/test_socket.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"

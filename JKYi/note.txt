@@ -45,3 +45,12 @@ template<typename T> struct enable_if<true, T> { typedef T type; }
 
 2022.6.24
 C++中成员函数的const属性会影响到重载
+判断当前主机字节序的方式就是
+  int i=1;
+  if((*(char*)&i) == 1){
+      //小端序
+  }else{
+      //大端序
+  }
+
+在宏定义里面，如果我们需要查看某一个宏是否存在的话，使用的是defined，如defined.而如果我们要定义宏，使用的是define

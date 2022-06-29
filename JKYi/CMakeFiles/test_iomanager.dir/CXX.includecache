@@ -35,6 +35,8 @@ endian.h
 /home/admin/workSpace/JKYi/endian.h
 address.h
 /home/admin/workSpace/JKYi/address.h
+socket.h
+/home/admin/workSpace/JKYi/socket.h
 
 /home/admin/workSpace/JKYi/address.h
 memory
@@ -219,6 +221,24 @@ thread.h
 /home/admin/workSpace/JKYi/singleton.h
 memory
 -
+
+/home/admin/workSpace/JKYi/socket.h
+memory
+-
+netinet/tcp.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+openssl/err.h
+-
+openssl/ssl.h
+-
+address.h
+/home/admin/workSpace/JKYi/address.h
+noncopyable.h
+/home/admin/workSpace/JKYi/noncopyable.h
 
 /home/admin/workSpace/JKYi/thread.h
 mutex.h

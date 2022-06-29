@@ -15,6 +15,7 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/mutex.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/noncopyable.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/scheduler.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/singleton.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/socket.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/thread.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/timer.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/util.h
