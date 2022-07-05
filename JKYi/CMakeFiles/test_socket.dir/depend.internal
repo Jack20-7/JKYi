@@ -4,6 +4,7 @@
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o
  /home/admin/workSpace/JKYi/JKYi.h
  /home/admin/workSpace/JKYi/address.h
+ /home/admin/workSpace/JKYi/bytearray.h
  /home/admin/workSpace/JKYi/config.h
  /home/admin/workSpace/JKYi/endian.h
  /home/admin/workSpace/JKYi/fdmanager.h

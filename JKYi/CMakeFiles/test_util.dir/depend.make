@@ -3,6 +3,7 @@
 
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/JKYi.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/address.h
+CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/bytearray.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/config.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/endian.h
 CMakeFiles/test_util.dir/tests/test_util.cc.o: JKYi/fdmanager.h

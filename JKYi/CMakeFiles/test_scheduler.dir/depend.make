@@ -3,6 +3,7 @@
 
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/JKYi.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/address.h
+CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/bytearray.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/config.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/endian.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/fdmanager.h

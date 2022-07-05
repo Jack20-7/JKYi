@@ -3,6 +3,7 @@
 
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/JKYi.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/address.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/bytearray.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/config.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/endian.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/fdmanager.h

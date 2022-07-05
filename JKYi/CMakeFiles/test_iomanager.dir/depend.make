@@ -3,6 +3,7 @@
 
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/JKYi.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/address.h
+CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/bytearray.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/config.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/endian.h
 CMakeFiles/test_iomanager.dir/tests/test_iomanager.cc.o: JKYi/fdmanager.h

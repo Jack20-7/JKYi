@@ -337,4 +337,7 @@ void test(){
 
 ```
 
+## Bytearray模块
+
+Bytearray(二进制序列化模块),用作网络编程中数据的载体，支持int8、uint8、int16、uint16、int32、uint32、int64、uint64等，并且还支持对int32、int64进行压缩，使用的压缩算法是protobuf的varint算法.支持对string的读写操作、字节序的转化、以及将序列化数据写入文件以及将数据从文件中读出进行反序列化
 

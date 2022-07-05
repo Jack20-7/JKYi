@@ -3,6 +3,7 @@
 
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/JKYi.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/address.h
+CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/bytearray.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/config.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/endian.h
 CMakeFiles/test_address.dir/tests/test_address.cc.o: JKYi/fdmanager.h

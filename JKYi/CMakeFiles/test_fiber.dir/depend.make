@@ -3,6 +3,7 @@
 
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/JKYi.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/address.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/bytearray.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/config.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/endian.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o: JKYi/fdmanager.h

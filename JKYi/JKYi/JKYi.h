@@ -16,4 +16,5 @@
 #include"endian.h"
 #include"address.h"
 #include"socket.h"
+#include"bytearray.h"
 #endif

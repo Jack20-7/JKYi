@@ -29,6 +29,7 @@ set (LIB_SRC
 	JKYi/hook.cc
     JKYi/address.cc
     JKYi/socket.cc
+    JKYi/bytearray.cc
     )
 #生成库文件，这里就是通过LIB_SRC生成共享库libJKYI.SO
 add_library(JKYi SHARED ${LIB_SRC})
@@ -82,6 +83,10 @@ target_link_libraries(test_address ${LIBS})
 add_executable(test_socket tests/test_socket.cc)
 add_dependencies(test_socket JKYi)
 target_link_libraries(test_socket ${LIBS})
+
+add_executable(test_bytearray tests/test_bytearray.cc)
+add_dependencies(test_bytearray JKYi)
+target_link_libraries(test_bytearray ${LIBS})
 
 
 

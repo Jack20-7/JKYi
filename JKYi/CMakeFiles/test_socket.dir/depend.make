@@ -3,6 +3,7 @@
 
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/JKYi.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/address.h
+CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/bytearray.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/config.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/endian.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/fdmanager.h

@@ -37,6 +37,8 @@ address.h
 /home/admin/workSpace/JKYi/address.h
 socket.h
 /home/admin/workSpace/JKYi/socket.h
+bytearray.h
+/home/admin/workSpace/JKYi/bytearray.h
 
 /home/admin/workSpace/JKYi/address.h
 memory
@@ -58,6 +60,20 @@ iostream
 vector
 -
 map
+-
+
+/home/admin/workSpace/JKYi/bytearray.h
+memory
+-
+string
+-
+stdint.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+vector
 -
 
 /home/admin/workSpace/JKYi/config.h
