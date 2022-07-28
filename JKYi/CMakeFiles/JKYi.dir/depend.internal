@@ -42,6 +42,70 @@ CMakeFiles/JKYi.dir/JKYi/address.cc.o
  /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
  /root/yaml-cpp-master/include/yaml-cpp/traits.h
  /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o
+ /home/admin/workSpace/JKYi/address.h
+ /home/admin/workSpace/JKYi/application.cc
+ /home/admin/workSpace/JKYi/application.h
+ /home/admin/workSpace/JKYi/config.h
+ /home/admin/workSpace/JKYi/daemon.h
+ /home/admin/workSpace/JKYi/env.h
+ /home/admin/workSpace/JKYi/fiber.h
+ /home/admin/workSpace/JKYi/http/http.h
+ /home/admin/workSpace/JKYi/http/http_server.h
+ /home/admin/workSpace/JKYi/http/http_session.h
+ /home/admin/workSpace/JKYi/http/servlet.h
+ /home/admin/workSpace/JKYi/iomanager.h
+ /home/admin/workSpace/JKYi/log.h
+ /home/admin/workSpace/JKYi/mutex.h
+ /home/admin/workSpace/JKYi/noncopyable.h
+ /home/admin/workSpace/JKYi/scheduler.h
+ /home/admin/workSpace/JKYi/singleton.h
+ /home/admin/workSpace/JKYi/socket.h
+ /home/admin/workSpace/JKYi/tcp_server.h
+ /home/admin/workSpace/JKYi/thread.h
+ /home/admin/workSpace/JKYi/timer.h
+ /home/admin/workSpace/JKYi/util.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/bytearray.h
+ JKYi/http/http_server.h
+ JKYi/iomanager.h
+ JKYi/mutex.h
+ JKYi/singleton.h
+ JKYi/socket.h
+ JKYi/stream.h
+ JKYi/stream/socket_stream.h
+ JKYi/tcp_server.h
+ JKYi/util.h
 CMakeFiles/JKYi.dir/JKYi/bytearray.cc.o
  /home/admin/workSpace/JKYi/bytearray.cc
  /home/admin/workSpace/JKYi/bytearray.h
@@ -86,6 +150,7 @@ CMakeFiles/JKYi.dir/JKYi/bytearray.cc.o
 CMakeFiles/JKYi.dir/JKYi/config.cc.o
  /home/admin/workSpace/JKYi/config.cc
  /home/admin/workSpace/JKYi/config.h
+ /home/admin/workSpace/JKYi/env.h
  /home/admin/workSpace/JKYi/log.h
  /home/admin/workSpace/JKYi/mutex.h
  /home/admin/workSpace/JKYi/noncopyable.h
@@ -123,6 +188,92 @@ CMakeFiles/JKYi.dir/JKYi/config.cc.o
  /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
  /root/yaml-cpp-master/include/yaml-cpp/traits.h
  /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/mutex.h
+ JKYi/singleton.h
+CMakeFiles/JKYi.dir/JKYi/daemon.cc.o
+ /home/admin/workSpace/JKYi/daemon.cc
+ /home/admin/workSpace/JKYi/daemon.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/config.h
+ JKYi/log.h
+ JKYi/mutex.h
+ JKYi/noncopyable.h
+ JKYi/singleton.h
+ JKYi/thread.h
+ JKYi/util.h
+CMakeFiles/JKYi.dir/JKYi/env.cc.o
+ /home/admin/workSpace/JKYi/config.h
+ /home/admin/workSpace/JKYi/env.cc
+ /home/admin/workSpace/JKYi/env.h
+ /home/admin/workSpace/JKYi/log.h
+ /home/admin/workSpace/JKYi/mutex.h
+ /home/admin/workSpace/JKYi/singleton.h
+ /home/admin/workSpace/JKYi/thread.h
+ /home/admin/workSpace/JKYi/util.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/mutex.h
+ JKYi/noncopyable.h
+ JKYi/singleton.h
 CMakeFiles/JKYi.dir/JKYi/fdmanager.cc.o
  /home/admin/workSpace/JKYi/fdmanager.cc
  /home/admin/workSpace/JKYi/fdmanager.h
@@ -221,6 +372,277 @@ CMakeFiles/JKYi.dir/JKYi/hook.cc.o
  /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
  /root/yaml-cpp-master/include/yaml-cpp/traits.h
  /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/JKYi.dir/JKYi/http/http.cc.o
+ /home/admin/workSpace/JKYi/http/http.cc
+ /home/admin/workSpace/JKYi/http/http.h
+ JKYi/util.h
+CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o
+ /home/admin/workSpace/JKYi/http/http11_common.h
+ /home/admin/workSpace/JKYi/http/http11_parser.h
+ /home/admin/workSpace/JKYi/http/http11_parser.rl.cc
+CMakeFiles/JKYi.dir/JKYi/http/http_connection.cc.o
+ /home/admin/workSpace/JKYi/http/http.h
+ /home/admin/workSpace/JKYi/http/http11_common.h
+ /home/admin/workSpace/JKYi/http/http11_parser.h
+ /home/admin/workSpace/JKYi/http/http_connection.cc
+ /home/admin/workSpace/JKYi/http/http_connection.h
+ /home/admin/workSpace/JKYi/http/http_parser.h
+ /home/admin/workSpace/JKYi/http/httpclient_parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/address.h
+ JKYi/bytearray.h
+ JKYi/fiber.h
+ JKYi/iomanager.h
+ JKYi/log.h
+ JKYi/mutex.h
+ JKYi/noncopyable.h
+ JKYi/scheduler.h
+ JKYi/singleton.h
+ JKYi/socket.h
+ JKYi/stream.h
+ JKYi/stream/socket_stream.h
+ JKYi/thread.h
+ JKYi/timer.h
+ JKYi/uri.h
+ JKYi/util.h
+CMakeFiles/JKYi.dir/JKYi/http/http_parser.cc.o
+ /home/admin/workSpace/JKYi/http/http.h
+ /home/admin/workSpace/JKYi/http/http11_common.h
+ /home/admin/workSpace/JKYi/http/http11_parser.h
+ /home/admin/workSpace/JKYi/http/http_parser.cc
+ /home/admin/workSpace/JKYi/http/http_parser.h
+ /home/admin/workSpace/JKYi/http/httpclient_parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/config.h
+ JKYi/log.h
+ JKYi/mutex.h
+ JKYi/noncopyable.h
+ JKYi/singleton.h
+ JKYi/thread.h
+ JKYi/util.h
+CMakeFiles/JKYi.dir/JKYi/http/http_server.cc.o
+ /home/admin/workSpace/JKYi/http/http.h
+ /home/admin/workSpace/JKYi/http/http_server.cc
+ /home/admin/workSpace/JKYi/http/http_server.h
+ /home/admin/workSpace/JKYi/http/http_session.h
+ /home/admin/workSpace/JKYi/http/servlet.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/address.h
+ JKYi/bytearray.h
+ JKYi/config.h
+ JKYi/fiber.h
+ JKYi/iomanager.h
+ JKYi/log.h
+ JKYi/mutex.h
+ JKYi/noncopyable.h
+ JKYi/scheduler.h
+ JKYi/singleton.h
+ JKYi/socket.h
+ JKYi/stream.h
+ JKYi/stream/socket_stream.h
+ JKYi/tcp_server.h
+ JKYi/thread.h
+ JKYi/timer.h
+ JKYi/util.h
+CMakeFiles/JKYi.dir/JKYi/http/http_session.cc.o
+ /home/admin/workSpace/JKYi/http/http.h
+ /home/admin/workSpace/JKYi/http/http11_common.h
+ /home/admin/workSpace/JKYi/http/http11_parser.h
+ /home/admin/workSpace/JKYi/http/http_parser.h
+ /home/admin/workSpace/JKYi/http/http_session.cc
+ /home/admin/workSpace/JKYi/http/http_session.h
+ /home/admin/workSpace/JKYi/http/httpclient_parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/address.h
+ JKYi/bytearray.h
+ JKYi/fiber.h
+ JKYi/iomanager.h
+ JKYi/log.h
+ JKYi/mutex.h
+ JKYi/noncopyable.h
+ JKYi/scheduler.h
+ JKYi/singleton.h
+ JKYi/socket.h
+ JKYi/stream.h
+ JKYi/stream/socket_stream.h
+ JKYi/thread.h
+ JKYi/timer.h
+ JKYi/util.h
+CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o
+ /home/admin/workSpace/JKYi/http/http11_common.h
+ /home/admin/workSpace/JKYi/http/httpclient_parser.h
+ /home/admin/workSpace/JKYi/http/httpclient_parser.rl.cc
+CMakeFiles/JKYi.dir/JKYi/http/servlet.cc.o
+ /home/admin/workSpace/JKYi/http/http.h
+ /home/admin/workSpace/JKYi/http/http_session.h
+ /home/admin/workSpace/JKYi/http/servlet.cc
+ /home/admin/workSpace/JKYi/http/servlet.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/address.h
+ JKYi/bytearray.h
+ JKYi/fiber.h
+ JKYi/iomanager.h
+ JKYi/log.h
+ JKYi/mutex.h
+ JKYi/noncopyable.h
+ JKYi/scheduler.h
+ JKYi/singleton.h
+ JKYi/socket.h
+ JKYi/stream.h
+ JKYi/stream/socket_stream.h
+ JKYi/thread.h
+ JKYi/timer.h
+ JKYi/util.h
 CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o
  /home/admin/workSpace/JKYi/fiber.h
  /home/admin/workSpace/JKYi/iomanager.cc
@@ -400,6 +822,105 @@ CMakeFiles/JKYi.dir/JKYi/socket.cc.o
  /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
  /root/yaml-cpp-master/include/yaml-cpp/traits.h
  /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/JKYi.dir/JKYi/stream.cc.o
+ /home/admin/workSpace/JKYi/bytearray.h
+ /home/admin/workSpace/JKYi/stream.cc
+ /home/admin/workSpace/JKYi/stream.h
+CMakeFiles/JKYi.dir/JKYi/stream/socket_stream.cc.o
+ /home/admin/workSpace/JKYi/stream/socket_stream.cc
+ /home/admin/workSpace/JKYi/stream/socket_stream.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+ JKYi/address.h
+ JKYi/bytearray.h
+ JKYi/fiber.h
+ JKYi/iomanager.h
+ JKYi/log.h
+ JKYi/mutex.h
+ JKYi/noncopyable.h
+ JKYi/scheduler.h
+ JKYi/singleton.h
+ JKYi/socket.h
+ JKYi/stream.h
+ JKYi/thread.h
+ JKYi/timer.h
+ JKYi/util.h
+CMakeFiles/JKYi.dir/JKYi/tcp_server.cc.o
+ /home/admin/workSpace/JKYi/address.h
+ /home/admin/workSpace/JKYi/config.h
+ /home/admin/workSpace/JKYi/fiber.h
+ /home/admin/workSpace/JKYi/iomanager.h
+ /home/admin/workSpace/JKYi/log.h
+ /home/admin/workSpace/JKYi/mutex.h
+ /home/admin/workSpace/JKYi/noncopyable.h
+ /home/admin/workSpace/JKYi/scheduler.h
+ /home/admin/workSpace/JKYi/singleton.h
+ /home/admin/workSpace/JKYi/socket.h
+ /home/admin/workSpace/JKYi/tcp_server.cc
+ /home/admin/workSpace/JKYi/tcp_server.h
+ /home/admin/workSpace/JKYi/thread.h
+ /home/admin/workSpace/JKYi/timer.h
+ /home/admin/workSpace/JKYi/util.h
+ /root/yaml-cpp-master/include/yaml-cpp/binary.h
+ /root/yaml-cpp-master/include/yaml-cpp/dll.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterdef.h
+ /root/yaml-cpp-master/include/yaml-cpp/emittermanip.h
+ /root/yaml-cpp-master/include/yaml-cpp/emitterstyle.h
+ /root/yaml-cpp-master/include/yaml-cpp/exceptions.h
+ /root/yaml-cpp-master/include/yaml-cpp/mark.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/convert.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/iterator_fwd.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/memory.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_data.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/detail/node_ref.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/emit.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/impl.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/iterator.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/node.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/parse.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/ptr.h
+ /root/yaml-cpp-master/include/yaml-cpp/node/type.h
+ /root/yaml-cpp-master/include/yaml-cpp/noexcept.h
+ /root/yaml-cpp-master/include/yaml-cpp/null.h
+ /root/yaml-cpp-master/include/yaml-cpp/ostream_wrapper.h
+ /root/yaml-cpp-master/include/yaml-cpp/parser.h
+ /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
+ /root/yaml-cpp-master/include/yaml-cpp/traits.h
+ /root/yaml-cpp-master/include/yaml-cpp/yaml.h
 CMakeFiles/JKYi.dir/JKYi/thread.cc.o
  /home/admin/workSpace/JKYi/log.h
  /home/admin/workSpace/JKYi/mutex.h
@@ -479,7 +1000,12 @@ CMakeFiles/JKYi.dir/JKYi/timer.cc.o
  /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
  /root/yaml-cpp-master/include/yaml-cpp/traits.h
  /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o
+ /home/admin/workSpace/JKYi/address.h
+ /home/admin/workSpace/JKYi/uri.h
+ /home/admin/workSpace/JKYi/uri.rl.cc
 CMakeFiles/JKYi.dir/JKYi/util.cc.o
+ /home/admin/workSpace/JKYi/fiber.h
  /home/admin/workSpace/JKYi/log.h
  /home/admin/workSpace/JKYi/mutex.h
  /home/admin/workSpace/JKYi/noncopyable.h

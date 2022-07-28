@@ -694,7 +694,8 @@ public:
          return ss.str();
      }
 };
-JKYi::ConfigVar<std::set<LogDefine>>::ptr g_log_defines=JKYi::Config::Lookup("logs",std::set<LogDefine>(),"logs config");
+JKYi::ConfigVar<std::set<LogDefine>>::ptr g_log_defines = JKYi::Config::Lookup("logs",std::set<LogDefine>(),"logs config");
+
 //然后这里的话，通过全局对象在main函数执行之前进行初始化的特性，在它的构造函数中进行回调函数的注册
 //通过下面这个函数，就是实现了在配置文件中修改日志输出
 struct LogIniter{

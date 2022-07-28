@@ -255,6 +255,7 @@ private:
 	//
 	MutexType m_mutex;
 };
+
 //通过单例模式来对LoggerManager进行管理
 typedef JKYi::Singleton<LoggerManager> LoggerMgr;
 

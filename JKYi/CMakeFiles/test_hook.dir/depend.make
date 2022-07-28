@@ -5,10 +5,19 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/JKYi.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/address.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/bytearray.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/config.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/daemon.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/endian.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/fdmanager.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/fiber.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/hook.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/http.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/http11_common.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/http11_parser.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/http_parser.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/http_server.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/http_session.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/httpclient_parser.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/servlet.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/iomanager.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/log.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/macro.h
@@ -17,6 +26,7 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/noncopyable.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/scheduler.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/singleton.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/socket.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/tcp_server.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/thread.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/timer.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/util.h
@@ -52,4 +62,12 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/yaml-cpp-master/include/yam
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/yaml-cpp-master/include/yaml-cpp/traits.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/iomanager.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/mutex.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/singleton.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/socket.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/stream.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/stream/socket_stream.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/tcp_server.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/util.h
 

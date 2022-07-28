@@ -1,5 +1,6 @@
-#include"../JKYi/log.h"
-#include"../JKYi/config.h"
+#include"JKYi/log.h"
+#include"JKYi/config.h"
+#include"JKYi/env.h"
 #include<iostream>
 #include<yaml-cpp/yaml.h>
 
@@ -162,12 +163,21 @@ void test_log(){
     JKYI_LOG_INFO(system_log)<<"hello,JKYI log";
     JKYI_LOG_INFO(system_log)<<"hello,JKYI log";
 }
+
+void test_loadconf(){
+    JKYi::Config::LoadFromConfDir("conf");
+}
 int main(int argc,char **argv){
    
     //test_yaml();
     //test_config();
     //test_class();
-    test_log();
+    //test_log();
+    JKYi::EnvMgr::GetInstance()->init(argc,argv);
+    test_loadconf();
+    sleep(10);
+    test_loadconf();
+
 	JKYi::Config::Visit([](JKYi::ConfigVarBase::ptr p){
          JKYI_LOG_INFO(JKYI_LOG_ROOT())<<"name="<<p->getName()
 		                              <<" description="<<p->getDescription()

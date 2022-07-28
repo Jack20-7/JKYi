@@ -62,9 +62,10 @@ void test_sock(){
    buff.resize(rt);
    JKYI_LOG_INFO(g_logger)<<buff;
 }
+
 int main(int argc,char**argv){
-	//test_sleep();
-	JKYi::IOManager iom;
-	iom.schedule(test_sock);
+	test_sleep();
+	//JKYi::IOManager iom;
+	//iom.schedule(test_sock);
 	return 0;
 }

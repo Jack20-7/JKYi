@@ -18,3 +18,147 @@
 2022-05-30 12:39:40	[INFO]	hello,JKYI log	
 2022-05-30 12:39:40	[INFO]	hello,JKYI log	
 2022-05-30 12:39:40	[INFO]	hello,JKYI log	
+2022-07-28 11:03:35	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 11:03:35	[DEBUG]		
+2022-07-28 11:03:35	[DEBUG]	servers	
+2022-07-28 11:03:35	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 11:03:35	[DEBUG]		
+2022-07-28 11:03:35	[DEBUG]	logs	
+2022-07-28 11:03:35	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 11:03:35	[DEBUG]		
+2022-07-28 11:03:35	[DEBUG]	servers	
+2022-07-28 11:03:35	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 11:03:35	[DEBUG]		
+2022-07-28 11:03:35	[DEBUG]	logs	
+2022-07-28 13:37:46	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 13:37:46	[DEBUG]		
+2022-07-28 13:37:46	[DEBUG]	servers	
+2022-07-28 13:37:46	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 13:37:46	[DEBUG]		
+2022-07-28 13:37:46	[DEBUG]	logs	
+2022-07-28 13:37:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 13:37:49	[DEBUG]		
+2022-07-28 13:37:49	[DEBUG]	servers	
+2022-07-28 13:37:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 13:37:49	[DEBUG]		
+2022-07-28 13:37:49	[DEBUG]	logs	
+2022-07-28 13:37:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 13:37:49	[DEBUG]		
+2022-07-28 13:37:49	[DEBUG]	servers	
+2022-07-28 13:37:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 13:37:49	[DEBUG]		
+2022-07-28 13:37:49	[DEBUG]	logs	
+2022-07-28 13:53:43	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 13:53:43	[DEBUG]		
+2022-07-28 13:53:43	[DEBUG]	servers	
+2022-07-28 13:53:43	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 13:53:43	[DEBUG]		
+2022-07-28 13:53:43	[DEBUG]	logs	
+2022-07-28 14:03:47	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 14:03:47	[DEBUG]		
+2022-07-28 14:03:47	[DEBUG]	servers	
+2022-07-28 14:03:47	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 14:03:47	[DEBUG]		
+2022-07-28 14:03:47	[DEBUG]	logs	
+2022-07-28 14:03:47	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 14:03:47	[DEBUG]		
+2022-07-28 14:03:47	[DEBUG]	servers	
+2022-07-28 14:03:47	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 14:03:47	[DEBUG]		
+2022-07-28 14:03:47	[DEBUG]	logs	
+2022-07-28 14:07:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 14:07:49	[DEBUG]		
+2022-07-28 14:07:49	[DEBUG]	servers	
+2022-07-28 14:07:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 14:07:49	[DEBUG]		
+2022-07-28 14:07:49	[DEBUG]	logs	
+2022-07-28 14:07:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 14:07:49	[DEBUG]		
+2022-07-28 14:07:49	[DEBUG]	servers	
+2022-07-28 14:07:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 14:07:49	[DEBUG]		
+2022-07-28 14:07:49	[DEBUG]	logs	
+2022-07-28 14:11:17	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 14:11:17	[DEBUG]		
+2022-07-28 14:11:17	[DEBUG]	servers	
+2022-07-28 14:11:17	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 14:11:17	[DEBUG]		
+2022-07-28 14:11:17	[DEBUG]	logs	
+2022-07-28 14:11:17	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 14:11:17	[DEBUG]		
+2022-07-28 14:11:17	[DEBUG]	servers	
+2022-07-28 14:11:17	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 14:11:17	[DEBUG]		
+2022-07-28 14:11:17	[DEBUG]	logs	
+2022-07-28 14:19:35	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 14:19:35	[DEBUG]		
+2022-07-28 14:19:35	[DEBUG]	servers	
+2022-07-28 14:19:35	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 14:19:35	[DEBUG]		
+2022-07-28 14:19:35	[DEBUG]	logs	
+2022-07-28 14:19:35	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 14:19:35	[DEBUG]		
+2022-07-28 14:19:35	[DEBUG]	servers	
+2022-07-28 14:19:35	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 14:19:35	[DEBUG]		
+2022-07-28 14:19:35	[DEBUG]	logs	
+2022-07-28 15:32:21	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 15:32:21	[DEBUG]		
+2022-07-28 15:32:21	[DEBUG]	servers	
+2022-07-28 15:32:21	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 15:32:21	[INFO]	main	
+2022-07-28 15:32:21	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-28 15:32:21	[DEBUG]		
+2022-07-28 15:32:21	[DEBUG]	logs	
+2022-07-28 15:32:21	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-28 15:32:21	[DEBUG]		
+2022-07-28 15:32:21	[DEBUG]	servers	
+2022-07-28 15:32:21	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-28 15:32:21	[DEBUG]	main fiber is created	
+2022-07-28 15:32:21	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-28 15:32:21	[DEBUG]	stop	
+2022-07-28 15:32:21	[INFO]	Scheduer mian stop	
+2022-07-28 15:32:21	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-28 15:32:21	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-28 15:32:21	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-28 15:32:21	[INFO]	type=http name=JKYi/1.0.0 server bind success:[Socket sock=8 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-28 15:32:21	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-28 15:32:21	[INFO]	type=http name=JKYi/1.0.0 server bind success:[Socket sock=9 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-28 15:32:21	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-28 15:34:19	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-28 15:34:19	[DEBUG]	Fiber::~Fiber id=5 total=5	
+2022-07-28 15:34:19	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-28 15:34:28	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-28 15:34:28	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-28 15:35:31	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8020 remoteAddress=182.150.59.221:58498] keepalive = 1	
+2022-07-28 15:35:31	[DEBUG]	Fiber::~Fiber id=8 total=7	
+2022-07-28 15:35:31	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8090 remoteAddress=182.150.59.221:58496] keepalive = 0	
+2022-07-28 15:35:31	[DEBUG]	Fiber::~Fiber id=6 total=6	

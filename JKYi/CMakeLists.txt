@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
-
 project(JKYi)
+
+#include一般用于语句的复用，对于那些会在CMakeLists中多次用到的宏/函数，可以将它们写入到.cmake文件中去，然后使用include对它们进行加载，这样在编译时就可以使用
+include(cmake/utils.cmake)
+
 #set用来设置变量
 set(CMAKE_VERBOSE_MAKEFILE ON)
 #添加g++ 的编译选项
@@ -12,7 +15,6 @@ include_directories(/root/yaml-cpp-master/include)
 link_directories(/root/yaml-cpp-master/lib)
 
 #find_library(YAMLCPP yaml-cpp)
-#message("***",${YAMLCPP})
 #find_library(PTHREAD pthread)
 
 set (LIB_SRC 
@@ -29,8 +31,25 @@ set (LIB_SRC
 	JKYi/hook.cc
     JKYi/address.cc
     JKYi/socket.cc
+    JKYi/daemon.cc
+    JKYi/env.cc
     JKYi/bytearray.cc
+    JKYi/http/http.cc
+    JKYi/http/http_parser.cc
+    JKYi/http/http_session.cc
+    JKYi/http/http_server.cc
+    JKYi/http/servlet.cc
+    JKYi/http/http_connection.cc
+    JKYi/stream.cc
+    JKYi/stream/socket_stream.cc
+    JKYi/tcp_server.cc
+    JKYi/application.cc
     )
+
+ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
+ragelmaker(JKYi/http/httpclient_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
+ragelmaker(JKYi/uri.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi)
+
 #生成库文件，这里就是通过LIB_SRC生成共享库libJKYI.SO
 add_library(JKYi SHARED ${LIB_SRC})
 #add_library(JKYi_static ${LIB_SRC})
@@ -41,54 +60,46 @@ set(LIBS
       pthread
       yaml-cpp  
 	  dl
-)
+   )
 
-add_executable(test tests/test.cc)
-add_dependencies(test JKYi)
-target_link_libraries(test ${LIBS})
+# utils.cmake文件中添加了一个function(生成的可执行文件名称 源文件名称 依赖名称 需要的库的名称)
+JKYi_add_executable(test "tests/test.cc" JKYi "${LIBS}")
 #
-add_executable(test_config tests/test_config.cc)
-add_dependencies(test_config JKYi)
-#设置要连接的库的名称
-target_link_libraries(test_config ${LIBS})
+JKYi_add_executable(test_config "tests/test_config.cc" JKYi "${LIBS}")
 
-add_executable(test_thread tests/test_thread.cc)
-add_dependencies(test_thread JKYi)
-target_link_libraries(test_thread ${LIBS})
+JKYi_add_executable(test_thread "tests/test_thread.cc" JKYi "${LIBS}")
 
-add_executable(test_util tests/test_util.cc)
-add_dependencies(test_util JKYi)
-target_link_libraries(test_util ${LIBS})
+JKYi_add_executable(test_util "tests/test_util.cc" JKYi "${LIBS}")
 
-add_executable(test_fiber tests/test_fiber.cc)
-add_dependencies(test_fiber JKYi)
-target_link_libraries(test_fiber ${LIBS})
+JKYi_add_executable(test_fiber "tests/test_fiber.cc" JKYi "${LIBS}")
 
-add_executable(test_scheduler tests/test_scheduler.cc)
-add_dependencies(test_scheduler JKYi)
-target_link_libraries(test_scheduler ${LIBS})
+JKYi_add_executable(test_scheduler "tests/test_scheduler.cc" JKYi "${LIBS}")
 
-add_executable(test_iomanager tests/test_iomanager.cc)
-add_dependencies(test_iomanager JKYi)
-target_link_libraries(test_iomanager ${LIBS})
+JKYi_add_executable(test_iomanager "tests/test_iomanager.cc" JKYi "${LIBS}")
 
-add_executable(test_hook tests/test_hook.cc)
-add_dependencies(test_hook JKYi)
-target_link_libraries(test_hook ${LIBS})
+JKYi_add_executable(test_hook "tests/test_hook.cc" JKYi "${LIBS}")
 
-add_executable(test_address tests/test_address.cc)
-add_dependencies(test_address JKYi)
-target_link_libraries(test_address ${LIBS})
+JKYi_add_executable(test_address "tests/test_address.cc" JKYi "${LIBS}")
 
-add_executable(test_socket tests/test_socket.cc)
-add_dependencies(test_socket JKYi)
-target_link_libraries(test_socket ${LIBS})
+JKYi_add_executable(test_socket "tests/test_socket.cc" JKYi "${LIBS}")
 
-add_executable(test_bytearray tests/test_bytearray.cc)
-add_dependencies(test_bytearray JKYi)
-target_link_libraries(test_bytearray ${LIBS})
+JKYi_add_executable(test_bytearray "tests/test_bytearray.cc" JKYi "${LIBS}")
 
+JKYi_add_executable(test_http "tests/test_http.cc" JKYi "${LIBS}")
 
+JKYi_add_executable(test_http_parser "tests/test_http_parser.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_http_server "tests/test_http_server.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_http_connection "tests/test_http_connection.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(my_http_server "sample/my_http_server.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_daemon "tests/test_daemon.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_env "tests/test_env.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_application "tests/test_application.cc" JKYi "${LIBS}")
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

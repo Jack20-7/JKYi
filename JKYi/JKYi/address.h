@@ -87,10 +87,10 @@ public:
 	//根据子网掩码的位数返回对应的子网掩码
 	virtual IPAddress::ptr subnetMaskAddress(uint32_t prefix_len)=0;
 
-	virtual uint16_t getPort()const =0;
+	virtual uint16_t getPort()const = 0;
 
 	//设置端口号
-	virtual void  setPort(uint16_t v)=0;
+	virtual void setPort(uint16_t v) = 0;
 
 private:
 

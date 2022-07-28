@@ -92,6 +92,7 @@ void test(){
   return ;
 }
 int main(int argc,char ** argv){
-    test();
+    JKYi::IOManager iom;
+    iom.schedule(test);
     return 0;
 }

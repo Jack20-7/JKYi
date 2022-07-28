@@ -107,9 +107,8 @@ TimerManager::~TimerManager(){
 
 }
 //
-Timer::ptr TimerManager::addTimer(uint64_t ms,std::function<void ()>cb,bool recurring){
+Timer::ptr TimerManager::addTimer(uint64_t ms,std::function<void ()> cb,bool recurring){
    Timer::ptr timer(new Timer(ms,cb,recurring,this));
-   //
    RWMutexType::WriteLock lock(m_mutex);
    addTimer(timer,lock);
    return timer;
@@ -189,14 +188,13 @@ void TimerManager::listExpiredCb(std::vector<std::function<void ()>>&cbs){
   //JKYI_LOG_DEBUG(g_logger)<<"listExpiredCb解写锁";
 }
 //
-void TimerManager::addTimer(Timer::ptr val,RWMutexType::WriteLock &lock){
+void TimerManager::addTimer(Timer::ptr val,RWMutexType::WriteLock& lock){
    auto it=m_timers.insert(val).first;
-   bool at_front=(it==m_timers.begin())&&!m_tickled;
+   bool at_front = (it == m_timers.begin()) && !m_tickled;
    if(at_front){
-	   m_tickled=true;
+	   m_tickled = true;
    }
    lock.unlock();
-   //
    if(at_front){
 	   onTimerInsertedAtFront();
    }

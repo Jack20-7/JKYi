@@ -20,6 +20,7 @@
 #include "util.h"
 
 namespace JKYi{
+
 //基类
 class ConfigVarBase{
 public:
@@ -273,8 +274,8 @@ public:
       try{
          //m_val=boost::lexical_cast<T>(val);
          setValue(FromStr()(val));
-      }catch(std::exception&e){
-         JKYI_LOG_ERROR(JKYI_LOG_ROOT())<<"ConfigVar::toString exception "
+      }catch(std::exception& e){
+         JKYI_LOG_ERROR(JKYI_LOG_ROOT())<<"ConfigVar::FromString exception "
          <<e.what()<<" convert: string to "<<typeid(m_val).name();
       }
       return false;
@@ -298,7 +299,7 @@ public:
 	  RWMutexType::WriteLock lock(m_mutex);
       m_val=t;
    }
-   std::string getType()const override {return typeid(T).name();}
+   std::string getType()const override { return typeid(T).name();}
    //回调函数相关
    uint64_t addListener(on_change_cb cb){
 	  static uint64_t s_fun_id=0;
@@ -374,7 +375,13 @@ public:
         }
         return std::dynamic_pointer_cast<ConfigVar<T>>(it->second);
     }
+
+    //
     static void LoadFromYaml(const YAML::Node&node);
+
+    //将path目录下的配置文件进行加载  
+    static void LoadFromConfDir(const std::string& path,bool force = false);
+
     static ConfigVarBase::ptr LookupBase(const std::string&name);
 	//该函数提供给用户用于获取当前系统中的配置信息
 	static void Visit(std::function<void (ConfigVarBase::ptr)>cb); 

@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.6/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "cmake/utils.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/CMakeCInformation.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -45,16 +46,24 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/test_daemon.dir/DependInfo.cmake"
+  "CMakeFiles/test_http_parser.dir/DependInfo.cmake"
   "CMakeFiles/test_bytearray.dir/DependInfo.cmake"
+  "CMakeFiles/test_http.dir/DependInfo.cmake"
   "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/test_socket.dir/DependInfo.cmake"
   "CMakeFiles/test_thread.dir/DependInfo.cmake"
+  "CMakeFiles/test_http_server.dir/DependInfo.cmake"
   "CMakeFiles/test_util.dir/DependInfo.cmake"
   "CMakeFiles/test_config.dir/DependInfo.cmake"
   "CMakeFiles/test_hook.dir/DependInfo.cmake"
   "CMakeFiles/test_fiber.dir/DependInfo.cmake"
+  "CMakeFiles/test_env.dir/DependInfo.cmake"
+  "CMakeFiles/my_http_server.dir/DependInfo.cmake"
+  "CMakeFiles/test_http_connection.dir/DependInfo.cmake"
   "CMakeFiles/JKYi.dir/DependInfo.cmake"
   "CMakeFiles/test_scheduler.dir/DependInfo.cmake"
   "CMakeFiles/test_iomanager.dir/DependInfo.cmake"
+  "CMakeFiles/test_application.dir/DependInfo.cmake"
   "CMakeFiles/test_address.dir/DependInfo.cmake"
   )

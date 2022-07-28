@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_daemon
+
+# Build rule for target.
+test_daemon: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_daemon
+.PHONY : test_daemon
+
+# fast build rule for target.
+test_daemon/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
+.PHONY : test_daemon/fast
+
+#=============================================================================
+# Target rules for targets named test_http_parser
+
+# Build rule for target.
+test_http_parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_parser
+.PHONY : test_http_parser
+
+# fast build rule for target.
+test_http_parser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
+.PHONY : test_http_parser/fast
+
+#=============================================================================
 # Target rules for targets named test_bytearray
 
 # Build rule for target.
@@ -128,6 +154,19 @@ test_bytearray: cmake_check_build_system
 test_bytearray/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/build
 .PHONY : test_bytearray/fast
+
+#=============================================================================
+# Target rules for targets named test_http
+
+# Build rule for target.
+test_http: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http
+.PHONY : test_http
+
+# fast build rule for target.
+test_http/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/build
+.PHONY : test_http/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -167,6 +206,19 @@ test_thread: cmake_check_build_system
 test_thread/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
 .PHONY : test_thread/fast
+
+#=============================================================================
+# Target rules for targets named test_http_server
+
+# Build rule for target.
+test_http_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_server
+.PHONY : test_http_server
+
+# fast build rule for target.
+test_http_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/build
+.PHONY : test_http_server/fast
 
 #=============================================================================
 # Target rules for targets named test_util
@@ -221,6 +273,45 @@ test_fiber/fast:
 .PHONY : test_fiber/fast
 
 #=============================================================================
+# Target rules for targets named test_env
+
+# Build rule for target.
+test_env: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_env
+.PHONY : test_env
+
+# fast build rule for target.
+test_env/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
+.PHONY : test_env/fast
+
+#=============================================================================
+# Target rules for targets named my_http_server
+
+# Build rule for target.
+my_http_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_http_server
+.PHONY : my_http_server
+
+# fast build rule for target.
+my_http_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/build
+.PHONY : my_http_server/fast
+
+#=============================================================================
+# Target rules for targets named test_http_connection
+
+# Build rule for target.
+test_http_connection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_connection
+.PHONY : test_http_connection
+
+# fast build rule for target.
+test_http_connection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
+.PHONY : test_http_connection/fast
+
+#=============================================================================
 # Target rules for targets named JKYi
 
 # Build rule for target.
@@ -258,6 +349,19 @@ test_iomanager: cmake_check_build_system
 test_iomanager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_iomanager.dir/build.make CMakeFiles/test_iomanager.dir/build
 .PHONY : test_iomanager/fast
+
+#=============================================================================
+# Target rules for targets named test_application
+
+# Build rule for target.
+test_application: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_application
+.PHONY : test_application
+
+# fast build rule for target.
+test_application/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/build
+.PHONY : test_application/fast
 
 #=============================================================================
 # Target rules for targets named test_address
@@ -298,6 +402,33 @@ JKYi/address.s: JKYi/address.cc.s
 JKYi/address.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/address.cc.s
 .PHONY : JKYi/address.cc.s
+
+JKYi/application.o: JKYi/application.cc.o
+
+.PHONY : JKYi/application.o
+
+# target to build an object file
+JKYi/application.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/application.cc.o
+.PHONY : JKYi/application.cc.o
+
+JKYi/application.i: JKYi/application.cc.i
+
+.PHONY : JKYi/application.i
+
+# target to preprocess a source file
+JKYi/application.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/application.cc.i
+.PHONY : JKYi/application.cc.i
+
+JKYi/application.s: JKYi/application.cc.s
+
+.PHONY : JKYi/application.s
+
+# target to generate assembly for a file
+JKYi/application.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/application.cc.s
+.PHONY : JKYi/application.cc.s
 
 JKYi/bytearray.o: JKYi/bytearray.cc.o
 
@@ -352,6 +483,60 @@ JKYi/config.s: JKYi/config.cc.s
 JKYi/config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/config.cc.s
 .PHONY : JKYi/config.cc.s
+
+JKYi/daemon.o: JKYi/daemon.cc.o
+
+.PHONY : JKYi/daemon.o
+
+# target to build an object file
+JKYi/daemon.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/daemon.cc.o
+.PHONY : JKYi/daemon.cc.o
+
+JKYi/daemon.i: JKYi/daemon.cc.i
+
+.PHONY : JKYi/daemon.i
+
+# target to preprocess a source file
+JKYi/daemon.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/daemon.cc.i
+.PHONY : JKYi/daemon.cc.i
+
+JKYi/daemon.s: JKYi/daemon.cc.s
+
+.PHONY : JKYi/daemon.s
+
+# target to generate assembly for a file
+JKYi/daemon.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/daemon.cc.s
+.PHONY : JKYi/daemon.cc.s
+
+JKYi/env.o: JKYi/env.cc.o
+
+.PHONY : JKYi/env.o
+
+# target to build an object file
+JKYi/env.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/env.cc.o
+.PHONY : JKYi/env.cc.o
+
+JKYi/env.i: JKYi/env.cc.i
+
+.PHONY : JKYi/env.i
+
+# target to preprocess a source file
+JKYi/env.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/env.cc.i
+.PHONY : JKYi/env.cc.i
+
+JKYi/env.s: JKYi/env.cc.s
+
+.PHONY : JKYi/env.s
+
+# target to generate assembly for a file
+JKYi/env.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/env.cc.s
+.PHONY : JKYi/env.cc.s
 
 JKYi/fdmanager.o: JKYi/fdmanager.cc.o
 
@@ -433,6 +618,222 @@ JKYi/hook.s: JKYi/hook.cc.s
 JKYi/hook.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/hook.cc.s
 .PHONY : JKYi/hook.cc.s
+
+JKYi/http/http.o: JKYi/http/http.cc.o
+
+.PHONY : JKYi/http/http.o
+
+# target to build an object file
+JKYi/http/http.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http.cc.o
+.PHONY : JKYi/http/http.cc.o
+
+JKYi/http/http.i: JKYi/http/http.cc.i
+
+.PHONY : JKYi/http/http.i
+
+# target to preprocess a source file
+JKYi/http/http.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http.cc.i
+.PHONY : JKYi/http/http.cc.i
+
+JKYi/http/http.s: JKYi/http/http.cc.s
+
+.PHONY : JKYi/http/http.s
+
+# target to generate assembly for a file
+JKYi/http/http.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http.cc.s
+.PHONY : JKYi/http/http.cc.s
+
+JKYi/http/http11_parser.rl.o: JKYi/http/http11_parser.rl.cc.o
+
+.PHONY : JKYi/http/http11_parser.rl.o
+
+# target to build an object file
+JKYi/http/http11_parser.rl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o
+.PHONY : JKYi/http/http11_parser.rl.cc.o
+
+JKYi/http/http11_parser.rl.i: JKYi/http/http11_parser.rl.cc.i
+
+.PHONY : JKYi/http/http11_parser.rl.i
+
+# target to preprocess a source file
+JKYi/http/http11_parser.rl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.i
+.PHONY : JKYi/http/http11_parser.rl.cc.i
+
+JKYi/http/http11_parser.rl.s: JKYi/http/http11_parser.rl.cc.s
+
+.PHONY : JKYi/http/http11_parser.rl.s
+
+# target to generate assembly for a file
+JKYi/http/http11_parser.rl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.s
+.PHONY : JKYi/http/http11_parser.rl.cc.s
+
+JKYi/http/http_connection.o: JKYi/http/http_connection.cc.o
+
+.PHONY : JKYi/http/http_connection.o
+
+# target to build an object file
+JKYi/http/http_connection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_connection.cc.o
+.PHONY : JKYi/http/http_connection.cc.o
+
+JKYi/http/http_connection.i: JKYi/http/http_connection.cc.i
+
+.PHONY : JKYi/http/http_connection.i
+
+# target to preprocess a source file
+JKYi/http/http_connection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_connection.cc.i
+.PHONY : JKYi/http/http_connection.cc.i
+
+JKYi/http/http_connection.s: JKYi/http/http_connection.cc.s
+
+.PHONY : JKYi/http/http_connection.s
+
+# target to generate assembly for a file
+JKYi/http/http_connection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_connection.cc.s
+.PHONY : JKYi/http/http_connection.cc.s
+
+JKYi/http/http_parser.o: JKYi/http/http_parser.cc.o
+
+.PHONY : JKYi/http/http_parser.o
+
+# target to build an object file
+JKYi/http/http_parser.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_parser.cc.o
+.PHONY : JKYi/http/http_parser.cc.o
+
+JKYi/http/http_parser.i: JKYi/http/http_parser.cc.i
+
+.PHONY : JKYi/http/http_parser.i
+
+# target to preprocess a source file
+JKYi/http/http_parser.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_parser.cc.i
+.PHONY : JKYi/http/http_parser.cc.i
+
+JKYi/http/http_parser.s: JKYi/http/http_parser.cc.s
+
+.PHONY : JKYi/http/http_parser.s
+
+# target to generate assembly for a file
+JKYi/http/http_parser.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_parser.cc.s
+.PHONY : JKYi/http/http_parser.cc.s
+
+JKYi/http/http_server.o: JKYi/http/http_server.cc.o
+
+.PHONY : JKYi/http/http_server.o
+
+# target to build an object file
+JKYi/http/http_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_server.cc.o
+.PHONY : JKYi/http/http_server.cc.o
+
+JKYi/http/http_server.i: JKYi/http/http_server.cc.i
+
+.PHONY : JKYi/http/http_server.i
+
+# target to preprocess a source file
+JKYi/http/http_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_server.cc.i
+.PHONY : JKYi/http/http_server.cc.i
+
+JKYi/http/http_server.s: JKYi/http/http_server.cc.s
+
+.PHONY : JKYi/http/http_server.s
+
+# target to generate assembly for a file
+JKYi/http/http_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_server.cc.s
+.PHONY : JKYi/http/http_server.cc.s
+
+JKYi/http/http_session.o: JKYi/http/http_session.cc.o
+
+.PHONY : JKYi/http/http_session.o
+
+# target to build an object file
+JKYi/http/http_session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_session.cc.o
+.PHONY : JKYi/http/http_session.cc.o
+
+JKYi/http/http_session.i: JKYi/http/http_session.cc.i
+
+.PHONY : JKYi/http/http_session.i
+
+# target to preprocess a source file
+JKYi/http/http_session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_session.cc.i
+.PHONY : JKYi/http/http_session.cc.i
+
+JKYi/http/http_session.s: JKYi/http/http_session.cc.s
+
+.PHONY : JKYi/http/http_session.s
+
+# target to generate assembly for a file
+JKYi/http/http_session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/http_session.cc.s
+.PHONY : JKYi/http/http_session.cc.s
+
+JKYi/http/httpclient_parser.rl.o: JKYi/http/httpclient_parser.rl.cc.o
+
+.PHONY : JKYi/http/httpclient_parser.rl.o
+
+# target to build an object file
+JKYi/http/httpclient_parser.rl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o
+.PHONY : JKYi/http/httpclient_parser.rl.cc.o
+
+JKYi/http/httpclient_parser.rl.i: JKYi/http/httpclient_parser.rl.cc.i
+
+.PHONY : JKYi/http/httpclient_parser.rl.i
+
+# target to preprocess a source file
+JKYi/http/httpclient_parser.rl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.i
+.PHONY : JKYi/http/httpclient_parser.rl.cc.i
+
+JKYi/http/httpclient_parser.rl.s: JKYi/http/httpclient_parser.rl.cc.s
+
+.PHONY : JKYi/http/httpclient_parser.rl.s
+
+# target to generate assembly for a file
+JKYi/http/httpclient_parser.rl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.s
+.PHONY : JKYi/http/httpclient_parser.rl.cc.s
+
+JKYi/http/servlet.o: JKYi/http/servlet.cc.o
+
+.PHONY : JKYi/http/servlet.o
+
+# target to build an object file
+JKYi/http/servlet.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/servlet.cc.o
+.PHONY : JKYi/http/servlet.cc.o
+
+JKYi/http/servlet.i: JKYi/http/servlet.cc.i
+
+.PHONY : JKYi/http/servlet.i
+
+# target to preprocess a source file
+JKYi/http/servlet.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/servlet.cc.i
+.PHONY : JKYi/http/servlet.cc.i
+
+JKYi/http/servlet.s: JKYi/http/servlet.cc.s
+
+.PHONY : JKYi/http/servlet.s
+
+# target to generate assembly for a file
+JKYi/http/servlet.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/servlet.cc.s
+.PHONY : JKYi/http/servlet.cc.s
 
 JKYi/iomanager.o: JKYi/iomanager.cc.o
 
@@ -569,6 +970,87 @@ JKYi/socket.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/socket.cc.s
 .PHONY : JKYi/socket.cc.s
 
+JKYi/stream.o: JKYi/stream.cc.o
+
+.PHONY : JKYi/stream.o
+
+# target to build an object file
+JKYi/stream.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/stream.cc.o
+.PHONY : JKYi/stream.cc.o
+
+JKYi/stream.i: JKYi/stream.cc.i
+
+.PHONY : JKYi/stream.i
+
+# target to preprocess a source file
+JKYi/stream.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/stream.cc.i
+.PHONY : JKYi/stream.cc.i
+
+JKYi/stream.s: JKYi/stream.cc.s
+
+.PHONY : JKYi/stream.s
+
+# target to generate assembly for a file
+JKYi/stream.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/stream.cc.s
+.PHONY : JKYi/stream.cc.s
+
+JKYi/stream/socket_stream.o: JKYi/stream/socket_stream.cc.o
+
+.PHONY : JKYi/stream/socket_stream.o
+
+# target to build an object file
+JKYi/stream/socket_stream.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/stream/socket_stream.cc.o
+.PHONY : JKYi/stream/socket_stream.cc.o
+
+JKYi/stream/socket_stream.i: JKYi/stream/socket_stream.cc.i
+
+.PHONY : JKYi/stream/socket_stream.i
+
+# target to preprocess a source file
+JKYi/stream/socket_stream.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/stream/socket_stream.cc.i
+.PHONY : JKYi/stream/socket_stream.cc.i
+
+JKYi/stream/socket_stream.s: JKYi/stream/socket_stream.cc.s
+
+.PHONY : JKYi/stream/socket_stream.s
+
+# target to generate assembly for a file
+JKYi/stream/socket_stream.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/stream/socket_stream.cc.s
+.PHONY : JKYi/stream/socket_stream.cc.s
+
+JKYi/tcp_server.o: JKYi/tcp_server.cc.o
+
+.PHONY : JKYi/tcp_server.o
+
+# target to build an object file
+JKYi/tcp_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/tcp_server.cc.o
+.PHONY : JKYi/tcp_server.cc.o
+
+JKYi/tcp_server.i: JKYi/tcp_server.cc.i
+
+.PHONY : JKYi/tcp_server.i
+
+# target to preprocess a source file
+JKYi/tcp_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/tcp_server.cc.i
+.PHONY : JKYi/tcp_server.cc.i
+
+JKYi/tcp_server.s: JKYi/tcp_server.cc.s
+
+.PHONY : JKYi/tcp_server.s
+
+# target to generate assembly for a file
+JKYi/tcp_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/tcp_server.cc.s
+.PHONY : JKYi/tcp_server.cc.s
+
 JKYi/thread.o: JKYi/thread.cc.o
 
 .PHONY : JKYi/thread.o
@@ -623,6 +1105,33 @@ JKYi/timer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/timer.cc.s
 .PHONY : JKYi/timer.cc.s
 
+JKYi/uri.rl.o: JKYi/uri.rl.cc.o
+
+.PHONY : JKYi/uri.rl.o
+
+# target to build an object file
+JKYi/uri.rl.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o
+.PHONY : JKYi/uri.rl.cc.o
+
+JKYi/uri.rl.i: JKYi/uri.rl.cc.i
+
+.PHONY : JKYi/uri.rl.i
+
+# target to preprocess a source file
+JKYi/uri.rl.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.i
+.PHONY : JKYi/uri.rl.cc.i
+
+JKYi/uri.rl.s: JKYi/uri.rl.cc.s
+
+.PHONY : JKYi/uri.rl.s
+
+# target to generate assembly for a file
+JKYi/uri.rl.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.s
+.PHONY : JKYi/uri.rl.cc.s
+
 JKYi/util.o: JKYi/util.cc.o
 
 .PHONY : JKYi/util.o
@@ -649,6 +1158,33 @@ JKYi/util.s: JKYi/util.cc.s
 JKYi/util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/util.cc.s
 .PHONY : JKYi/util.cc.s
+
+sample/my_http_server.o: sample/my_http_server.cc.o
+
+.PHONY : sample/my_http_server.o
+
+# target to build an object file
+sample/my_http_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o
+.PHONY : sample/my_http_server.cc.o
+
+sample/my_http_server.i: sample/my_http_server.cc.i
+
+.PHONY : sample/my_http_server.i
+
+# target to preprocess a source file
+sample/my_http_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/sample/my_http_server.cc.i
+.PHONY : sample/my_http_server.cc.i
+
+sample/my_http_server.s: sample/my_http_server.cc.s
+
+.PHONY : sample/my_http_server.s
+
+# target to generate assembly for a file
+sample/my_http_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/sample/my_http_server.cc.s
+.PHONY : sample/my_http_server.cc.s
 
 tests/test.o: tests/test.cc.o
 
@@ -704,6 +1240,33 @@ tests/test_address.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/tests/test_address.cc.s
 .PHONY : tests/test_address.cc.s
 
+tests/test_application.o: tests/test_application.cc.o
+
+.PHONY : tests/test_application.o
+
+# target to build an object file
+tests/test_application.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.o
+.PHONY : tests/test_application.cc.o
+
+tests/test_application.i: tests/test_application.cc.i
+
+.PHONY : tests/test_application.i
+
+# target to preprocess a source file
+tests/test_application.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.i
+.PHONY : tests/test_application.cc.i
+
+tests/test_application.s: tests/test_application.cc.s
+
+.PHONY : tests/test_application.s
+
+# target to generate assembly for a file
+tests/test_application.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_application.dir/build.make CMakeFiles/test_application.dir/tests/test_application.cc.s
+.PHONY : tests/test_application.cc.s
+
 tests/test_bytearray.o: tests/test_bytearray.cc.o
 
 .PHONY : tests/test_bytearray.o
@@ -758,6 +1321,60 @@ tests/test_config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cc.s
 .PHONY : tests/test_config.cc.s
 
+tests/test_daemon.o: tests/test_daemon.cc.o
+
+.PHONY : tests/test_daemon.o
+
+# target to build an object file
+tests/test_daemon.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o
+.PHONY : tests/test_daemon.cc.o
+
+tests/test_daemon.i: tests/test_daemon.cc.i
+
+.PHONY : tests/test_daemon.i
+
+# target to preprocess a source file
+tests/test_daemon.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.i
+.PHONY : tests/test_daemon.cc.i
+
+tests/test_daemon.s: tests/test_daemon.cc.s
+
+.PHONY : tests/test_daemon.s
+
+# target to generate assembly for a file
+tests/test_daemon.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/tests/test_daemon.cc.s
+.PHONY : tests/test_daemon.cc.s
+
+tests/test_env.o: tests/test_env.cc.o
+
+.PHONY : tests/test_env.o
+
+# target to build an object file
+tests/test_env.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.o
+.PHONY : tests/test_env.cc.o
+
+tests/test_env.i: tests/test_env.cc.i
+
+.PHONY : tests/test_env.i
+
+# target to preprocess a source file
+tests/test_env.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.i
+.PHONY : tests/test_env.cc.i
+
+tests/test_env.s: tests/test_env.cc.s
+
+.PHONY : tests/test_env.s
+
+# target to generate assembly for a file
+tests/test_env.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/tests/test_env.cc.s
+.PHONY : tests/test_env.cc.s
+
 tests/test_fiber.o: tests/test_fiber.cc.o
 
 .PHONY : tests/test_fiber.o
@@ -811,6 +1428,114 @@ tests/test_hook.s: tests/test_hook.cc.s
 tests/test_hook.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cc.s
 .PHONY : tests/test_hook.cc.s
+
+tests/test_http.o: tests/test_http.cc.o
+
+.PHONY : tests/test_http.o
+
+# target to build an object file
+tests/test_http.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cc.o
+.PHONY : tests/test_http.cc.o
+
+tests/test_http.i: tests/test_http.cc.i
+
+.PHONY : tests/test_http.i
+
+# target to preprocess a source file
+tests/test_http.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cc.i
+.PHONY : tests/test_http.cc.i
+
+tests/test_http.s: tests/test_http.cc.s
+
+.PHONY : tests/test_http.s
+
+# target to generate assembly for a file
+tests/test_http.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cc.s
+.PHONY : tests/test_http.cc.s
+
+tests/test_http_connection.o: tests/test_http_connection.cc.o
+
+.PHONY : tests/test_http_connection.o
+
+# target to build an object file
+tests/test_http_connection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.o
+.PHONY : tests/test_http_connection.cc.o
+
+tests/test_http_connection.i: tests/test_http_connection.cc.i
+
+.PHONY : tests/test_http_connection.i
+
+# target to preprocess a source file
+tests/test_http_connection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.i
+.PHONY : tests/test_http_connection.cc.i
+
+tests/test_http_connection.s: tests/test_http_connection.cc.s
+
+.PHONY : tests/test_http_connection.s
+
+# target to generate assembly for a file
+tests/test_http_connection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/tests/test_http_connection.cc.s
+.PHONY : tests/test_http_connection.cc.s
+
+tests/test_http_parser.o: tests/test_http_parser.cc.o
+
+.PHONY : tests/test_http_parser.o
+
+# target to build an object file
+tests/test_http_parser.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o
+.PHONY : tests/test_http_parser.cc.o
+
+tests/test_http_parser.i: tests/test_http_parser.cc.i
+
+.PHONY : tests/test_http_parser.i
+
+# target to preprocess a source file
+tests/test_http_parser.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.i
+.PHONY : tests/test_http_parser.cc.i
+
+tests/test_http_parser.s: tests/test_http_parser.cc.s
+
+.PHONY : tests/test_http_parser.s
+
+# target to generate assembly for a file
+tests/test_http_parser.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.s
+.PHONY : tests/test_http_parser.cc.s
+
+tests/test_http_server.o: tests/test_http_server.cc.o
+
+.PHONY : tests/test_http_server.o
+
+# target to build an object file
+tests/test_http_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.o
+.PHONY : tests/test_http_server.cc.o
+
+tests/test_http_server.i: tests/test_http_server.cc.i
+
+.PHONY : tests/test_http_server.i
+
+# target to preprocess a source file
+tests/test_http_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.i
+.PHONY : tests/test_http_server.cc.i
+
+tests/test_http_server.s: tests/test_http_server.cc.s
+
+.PHONY : tests/test_http_server.s
+
+# target to generate assembly for a file
+tests/test_http_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/tests/test_http_server.cc.s
+.PHONY : tests/test_http_server.cc.s
 
 tests/test_iomanager.o: tests/test_iomanager.cc.o
 
@@ -953,29 +1678,46 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test_daemon"
 	@echo "... edit_cache"
+	@echo "... test_http_parser"
 	@echo "... test_bytearray"
+	@echo "... test_http"
 	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... test_socket"
 	@echo "... test_thread"
+	@echo "... test_http_server"
 	@echo "... test_util"
 	@echo "... test_config"
 	@echo "... test_hook"
 	@echo "... test_fiber"
+	@echo "... test_env"
+	@echo "... my_http_server"
+	@echo "... test_http_connection"
 	@echo "... JKYi"
 	@echo "... test_scheduler"
 	@echo "... test_iomanager"
+	@echo "... test_application"
 	@echo "... test_address"
 	@echo "... JKYi/address.o"
 	@echo "... JKYi/address.i"
 	@echo "... JKYi/address.s"
+	@echo "... JKYi/application.o"
+	@echo "... JKYi/application.i"
+	@echo "... JKYi/application.s"
 	@echo "... JKYi/bytearray.o"
 	@echo "... JKYi/bytearray.i"
 	@echo "... JKYi/bytearray.s"
 	@echo "... JKYi/config.o"
 	@echo "... JKYi/config.i"
 	@echo "... JKYi/config.s"
+	@echo "... JKYi/daemon.o"
+	@echo "... JKYi/daemon.i"
+	@echo "... JKYi/daemon.s"
+	@echo "... JKYi/env.o"
+	@echo "... JKYi/env.i"
+	@echo "... JKYi/env.s"
 	@echo "... JKYi/fdmanager.o"
 	@echo "... JKYi/fdmanager.i"
 	@echo "... JKYi/fdmanager.s"
@@ -985,6 +1727,30 @@ help:
 	@echo "... JKYi/hook.o"
 	@echo "... JKYi/hook.i"
 	@echo "... JKYi/hook.s"
+	@echo "... JKYi/http/http.o"
+	@echo "... JKYi/http/http.i"
+	@echo "... JKYi/http/http.s"
+	@echo "... JKYi/http/http11_parser.rl.o"
+	@echo "... JKYi/http/http11_parser.rl.i"
+	@echo "... JKYi/http/http11_parser.rl.s"
+	@echo "... JKYi/http/http_connection.o"
+	@echo "... JKYi/http/http_connection.i"
+	@echo "... JKYi/http/http_connection.s"
+	@echo "... JKYi/http/http_parser.o"
+	@echo "... JKYi/http/http_parser.i"
+	@echo "... JKYi/http/http_parser.s"
+	@echo "... JKYi/http/http_server.o"
+	@echo "... JKYi/http/http_server.i"
+	@echo "... JKYi/http/http_server.s"
+	@echo "... JKYi/http/http_session.o"
+	@echo "... JKYi/http/http_session.i"
+	@echo "... JKYi/http/http_session.s"
+	@echo "... JKYi/http/httpclient_parser.rl.o"
+	@echo "... JKYi/http/httpclient_parser.rl.i"
+	@echo "... JKYi/http/httpclient_parser.rl.s"
+	@echo "... JKYi/http/servlet.o"
+	@echo "... JKYi/http/servlet.i"
+	@echo "... JKYi/http/servlet.s"
 	@echo "... JKYi/iomanager.o"
 	@echo "... JKYi/iomanager.i"
 	@echo "... JKYi/iomanager.s"
@@ -1000,33 +1766,69 @@ help:
 	@echo "... JKYi/socket.o"
 	@echo "... JKYi/socket.i"
 	@echo "... JKYi/socket.s"
+	@echo "... JKYi/stream.o"
+	@echo "... JKYi/stream.i"
+	@echo "... JKYi/stream.s"
+	@echo "... JKYi/stream/socket_stream.o"
+	@echo "... JKYi/stream/socket_stream.i"
+	@echo "... JKYi/stream/socket_stream.s"
+	@echo "... JKYi/tcp_server.o"
+	@echo "... JKYi/tcp_server.i"
+	@echo "... JKYi/tcp_server.s"
 	@echo "... JKYi/thread.o"
 	@echo "... JKYi/thread.i"
 	@echo "... JKYi/thread.s"
 	@echo "... JKYi/timer.o"
 	@echo "... JKYi/timer.i"
 	@echo "... JKYi/timer.s"
+	@echo "... JKYi/uri.rl.o"
+	@echo "... JKYi/uri.rl.i"
+	@echo "... JKYi/uri.rl.s"
 	@echo "... JKYi/util.o"
 	@echo "... JKYi/util.i"
 	@echo "... JKYi/util.s"
+	@echo "... sample/my_http_server.o"
+	@echo "... sample/my_http_server.i"
+	@echo "... sample/my_http_server.s"
 	@echo "... tests/test.o"
 	@echo "... tests/test.i"
 	@echo "... tests/test.s"
 	@echo "... tests/test_address.o"
 	@echo "... tests/test_address.i"
 	@echo "... tests/test_address.s"
+	@echo "... tests/test_application.o"
+	@echo "... tests/test_application.i"
+	@echo "... tests/test_application.s"
 	@echo "... tests/test_bytearray.o"
 	@echo "... tests/test_bytearray.i"
 	@echo "... tests/test_bytearray.s"
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_daemon.o"
+	@echo "... tests/test_daemon.i"
+	@echo "... tests/test_daemon.s"
+	@echo "... tests/test_env.o"
+	@echo "... tests/test_env.i"
+	@echo "... tests/test_env.s"
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"
 	@echo "... tests/test_hook.o"
 	@echo "... tests/test_hook.i"
 	@echo "... tests/test_hook.s"
+	@echo "... tests/test_http.o"
+	@echo "... tests/test_http.i"
+	@echo "... tests/test_http.s"
+	@echo "... tests/test_http_connection.o"
+	@echo "... tests/test_http_connection.i"
+	@echo "... tests/test_http_connection.s"
+	@echo "... tests/test_http_parser.o"
+	@echo "... tests/test_http_parser.i"
+	@echo "... tests/test_http_parser.s"
+	@echo "... tests/test_http_server.o"
+	@echo "... tests/test_http_server.i"
+	@echo "... tests/test_http_server.s"
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"

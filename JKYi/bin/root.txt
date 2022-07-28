@@ -103,3 +103,27 @@ k: 9
 2022-05-30 12:39:40	name=system.vec_int description=system vec_int typename=St6vectorIiSaIiEE value= - 1
 - 2
 - 3
+2022-07-28 11:03:35	ConfigVar::toString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 11:03:35	on_logger_conf_changed
+2022-07-28 11:03:35	ConfigVar::toString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 11:03:35	on_logger_conf_changed
+2022-07-28 13:37:46	ConfigVar::toString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 13:37:46	on_logger_conf_changed
+2022-07-28 13:37:49	ConfigVar::toString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 13:37:49	on_logger_conf_changed
+2022-07-28 13:37:49	ConfigVar::toString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 13:37:49	on_logger_conf_changed
+2022-07-28 13:53:43	ConfigVar::FromString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 13:53:43	on_logger_conf_changed
+2022-07-28 14:03:47	ConfigVar::FromString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 14:03:47	on_logger_conf_changed
+2022-07-28 14:03:47	ConfigVar::FromString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 14:03:47	on_logger_conf_changed
+2022-07-28 14:07:49	ConfigVar::FromString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 14:07:49	on_logger_conf_changed
+2022-07-28 14:07:49	ConfigVar::FromString exception basic_string::_S_construct null not valid convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-07-28 14:07:49	on_logger_conf_changed
+2022-07-28 14:11:17	on_logger_conf_changed
+2022-07-28 14:11:17	on_logger_conf_changed
+2022-07-28 14:19:35	on_logger_conf_changed
+2022-07-28 14:19:35	on_logger_conf_changed

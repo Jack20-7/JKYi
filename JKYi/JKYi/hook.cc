@@ -181,7 +181,7 @@ extern "C"{
 
 unsigned sleep(unsigned int second){
     if(!JKYi::t_hook_enable){
-		sleep_f(second);
+		return sleep_f(second);
 	}
 
 	JKYi::Fiber::ptr fiber=JKYi::Fiber::GetThis();
