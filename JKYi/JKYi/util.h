@@ -11,6 +11,7 @@
 #include<string>
 #include<iomanip>
 #include<sys/time.h>
+#include<boost/lexical_cast.hpp>
 
 //该文件中定义的是一些常用的函数
 namespace JKYi{
@@ -53,6 +54,19 @@ public:
     static bool IsRunningPidfile(const std::string& pidfile);
 
 };
+
+template<class Map ,class K,class V>
+V GetParamValue(const Map& m,const K& k,const V& def = V()){
+    auto it = m.find(k);
+    if(it == m.end()){
+        return def;
+    }
+    try{
+        return boost::lexical_cast<V>(it->second);
+    }catch(...){
+    }
+    return def;
+}
 
 
 }

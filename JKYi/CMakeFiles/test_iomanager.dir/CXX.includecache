@@ -305,6 +305,8 @@ list
 -
 noncopyable.h
 /home/admin/workSpace/JKYi/noncopyable.h
+fiber.h
+/home/admin/workSpace/JKYi/fiber.h
 
 /home/admin/workSpace/JKYi/noncopyable.h
 
@@ -400,6 +402,8 @@ string
 iomanip
 -
 sys/time.h
+-
+boost/lexical_cast.hpp
 -
 
 /home/admin/workSpace/tests/test_iomanager.cc
@@ -795,6 +799,8 @@ list
 -
 noncopyable.h
 JKYi/noncopyable.h
+fiber.h
+JKYi/fiber.h
 
 JKYi/singleton.h
 memory
@@ -872,5 +878,7 @@ string
 iomanip
 -
 sys/time.h
+-
+boost/lexical_cast.hpp
 -
 

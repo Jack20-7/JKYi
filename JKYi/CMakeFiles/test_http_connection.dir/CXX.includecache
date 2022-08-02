@@ -517,6 +517,8 @@ list
 -
 noncopyable.h
 JKYi/noncopyable.h
+fiber.h
+JKYi/fiber.h
 
 JKYi/noncopyable.h
 
@@ -620,5 +622,7 @@ string
 iomanip
 -
 sys/time.h
+-
+boost/lexical_cast.hpp
 -
 

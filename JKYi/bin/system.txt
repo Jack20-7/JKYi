@@ -162,3 +162,2485 @@ address:
 2022-07-28 15:35:31	[DEBUG]	Fiber::~Fiber id=8 total=7	
 2022-07-28 15:35:31	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8090 remoteAddress=182.150.59.221:58496] keepalive = 0	
 2022-07-28 15:35:31	[DEBUG]	Fiber::~Fiber id=6 total=6	
+2022-07-29 10:19:50	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 10:19:50	[DEBUG]		
+2022-07-29 10:19:50	[DEBUG]	servers	
+2022-07-29 10:19:50	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 10:19:50	[DEBUG]		
+2022-07-29 10:19:50	[DEBUG]	workers	
+2022-07-29 10:19:50	[DEBUG]	workers.io	
+2022-07-29 10:19:50	[DEBUG]	workers.io.thread_num	
+2022-07-29 10:19:50	[DEBUG]	workers.http_io	
+2022-07-29 10:19:50	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 10:19:50	[DEBUG]	workers.accept	
+2022-07-29 10:19:50	[DEBUG]	workers.accept.thread_num	
+2022-07-29 10:19:50	[DEBUG]	workers.worker	
+2022-07-29 10:19:50	[DEBUG]	workers.worker.thread_num	
+2022-07-29 10:19:50	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 10:19:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 10:19:55	[DEBUG]		
+2022-07-29 10:19:55	[DEBUG]	servers	
+2022-07-29 10:19:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 10:19:55	[DEBUG]		
+2022-07-29 10:19:55	[DEBUG]	workers	
+2022-07-29 10:19:55	[DEBUG]	workers.io	
+2022-07-29 10:19:55	[DEBUG]	workers.io.thread_num	
+2022-07-29 10:19:55	[DEBUG]	workers.http_io	
+2022-07-29 10:19:55	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 10:19:55	[DEBUG]	workers.accept	
+2022-07-29 10:19:55	[DEBUG]	workers.accept.thread_num	
+2022-07-29 10:19:55	[DEBUG]	workers.worker	
+2022-07-29 10:19:55	[DEBUG]	workers.worker.thread_num	
+2022-07-29 10:19:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 10:19:55	[INFO]	main	
+2022-07-29 10:19:55	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 10:19:55	[DEBUG]		
+2022-07-29 10:19:55	[DEBUG]	logs	
+2022-07-29 10:19:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 10:19:55	[DEBUG]		
+2022-07-29 10:19:55	[DEBUG]	servers	
+2022-07-29 10:19:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 10:19:55	[DEBUG]		
+2022-07-29 10:19:55	[DEBUG]	workers	
+2022-07-29 10:19:55	[DEBUG]	workers.io	
+2022-07-29 10:19:55	[DEBUG]	workers.io.thread_num	
+2022-07-29 10:19:55	[DEBUG]	workers.http_io	
+2022-07-29 10:19:55	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 10:19:55	[DEBUG]	workers.accept	
+2022-07-29 10:19:55	[DEBUG]	workers.accept.thread_num	
+2022-07-29 10:19:55	[DEBUG]	workers.worker	
+2022-07-29 10:19:55	[DEBUG]	workers.worker.thread_num	
+2022-07-29 10:19:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 10:19:55	[DEBUG]	stop	
+2022-07-29 10:19:55	[INFO]	Scheduer mian stop	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 10:19:55	[DEBUG]	main fiber is created	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 10:19:55	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 10:19:55	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 10:19:55	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 10:19:55	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 10:19:55	[INFO]	name=mian idle stopping exit	
+2022-07-29 10:19:55	[INFO]	idle fiber term	
+2022-07-29 10:19:55	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 10:19:55	[DEBUG]	Fiber::~Fiber id=2 total=42	
+2022-07-29 10:19:55	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 10:19:55	[DEBUG]	stop	
+2022-07-29 10:19:55	[INFO]	Scheduer mian stop	
+2022-07-29 10:19:55	[DEBUG]	~IOManager	
+2022-07-29 10:19:55	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 10:19:55	[DEBUG]	stop	
+2022-07-29 10:19:55	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:19:55	[INFO]	idle fiber term	
+2022-07-29 10:19:55	[DEBUG]	Fiber::~Fiber id=20 total=40	
+2022-07-29 10:19:55	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 10:19:58	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:19:58	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:19:58	[INFO]	idle fiber term	
+2022-07-29 10:19:58	[INFO]	idle fiber term	
+2022-07-29 10:19:58	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=15 total=37	
+2022-07-29 10:19:58	[INFO]	idle fiber term	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=16 total=35	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 10:19:58	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=17 total=34	
+2022-07-29 10:19:58	[INFO]	idle fiber term	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 10:19:58	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:19:58	[INFO]	idle fiber term	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=21 total=31	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=0 total=30	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=22 total=30	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 10:19:58	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:19:58	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:19:58	[INFO]	idle fiber term	
+2022-07-29 10:19:58	[INFO]	idle fiber term	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=19 total=27	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=18 total=27	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=0 total=26	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 10:19:58	[DEBUG]	~IOManager	
+2022-07-29 10:19:58	[DEBUG]	stop	
+2022-07-29 10:19:58	[INFO]	name=io idle stopping exit	
+2022-07-29 10:19:58	[INFO]	idle fiber term	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=13 total=24	
+2022-07-29 10:19:58	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 10:20:01	[INFO]	name=io idle stopping exit	
+2022-07-29 10:20:01	[INFO]	name=io idle stopping exit	
+2022-07-29 10:20:01	[INFO]	idle fiber term	
+2022-07-29 10:20:01	[INFO]	idle fiber term	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=7 total=21	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=8 total=21	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=0 total=20	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=0 total=19	
+2022-07-29 10:20:01	[INFO]	name=io idle stopping exit	
+2022-07-29 10:20:01	[INFO]	idle fiber term	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=10 total=18	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=0 total=17	
+2022-07-29 10:20:01	[INFO]	name=io idle stopping exit	
+2022-07-29 10:20:01	[INFO]	idle fiber term	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=11 total=16	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=0 total=15	
+2022-07-29 10:20:01	[INFO]	name=io idle stopping exit	
+2022-07-29 10:20:01	[INFO]	idle fiber term	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=12 total=14	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=0 total=13	
+2022-07-29 10:20:01	[INFO]	name=io idle stopping exit	
+2022-07-29 10:20:01	[INFO]	idle fiber term	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=9 total=12	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=0 total=11	
+2022-07-29 10:20:01	[INFO]	name=io idle stopping exit	
+2022-07-29 10:20:01	[INFO]	idle fiber term	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=14 total=10	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=0 total=9	
+2022-07-29 10:20:01	[DEBUG]	~IOManager	
+2022-07-29 10:20:01	[DEBUG]	stop	
+2022-07-29 10:20:01	[INFO]	name=http_io idle stopping exit	
+2022-07-29 10:20:01	[INFO]	idle fiber term	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=6 total=8	
+2022-07-29 10:20:01	[DEBUG]	Fiber::~Fiber id=0 total=7	
+2022-07-29 10:20:01	[DEBUG]	~IOManager	
+2022-07-29 10:20:01	[DEBUG]	stop	
+2022-07-29 10:20:34	[INFO]	tickle	
+2022-07-29 10:22:07	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 10:22:07	[DEBUG]		
+2022-07-29 10:22:07	[DEBUG]	servers	
+2022-07-29 10:22:07	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 10:22:07	[DEBUG]		
+2022-07-29 10:22:07	[DEBUG]	workers	
+2022-07-29 10:22:07	[DEBUG]	workers.io	
+2022-07-29 10:22:07	[DEBUG]	workers.io.thread_num	
+2022-07-29 10:22:07	[DEBUG]	workers.http_io	
+2022-07-29 10:22:07	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 10:22:07	[DEBUG]	workers.accept	
+2022-07-29 10:22:07	[DEBUG]	workers.accept.thread_num	
+2022-07-29 10:22:07	[DEBUG]	workers.worker	
+2022-07-29 10:22:07	[DEBUG]	workers.worker.thread_num	
+2022-07-29 10:22:07	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 10:22:07	[INFO]	main	
+2022-07-29 10:22:07	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 10:22:07	[DEBUG]		
+2022-07-29 10:22:07	[DEBUG]	logs	
+2022-07-29 10:22:07	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 10:22:07	[DEBUG]		
+2022-07-29 10:22:07	[DEBUG]	servers	
+2022-07-29 10:22:07	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 10:22:07	[DEBUG]		
+2022-07-29 10:22:07	[DEBUG]	workers	
+2022-07-29 10:22:07	[DEBUG]	workers.io	
+2022-07-29 10:22:07	[DEBUG]	workers.io.thread_num	
+2022-07-29 10:22:07	[DEBUG]	workers.http_io	
+2022-07-29 10:22:07	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 10:22:07	[DEBUG]	workers.accept	
+2022-07-29 10:22:07	[DEBUG]	workers.accept.thread_num	
+2022-07-29 10:22:07	[DEBUG]	workers.worker	
+2022-07-29 10:22:07	[DEBUG]	workers.worker.thread_num	
+2022-07-29 10:22:07	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 10:22:07	[DEBUG]	stop	
+2022-07-29 10:22:07	[INFO]	Scheduer mian stop	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 10:22:07	[DEBUG]	main fiber is created	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 10:22:07	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 10:22:07	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=24 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 10:22:07	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 10:22:07	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=25 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 10:22:07	[INFO]	name=mian idle stopping exit	
+2022-07-29 10:22:07	[INFO]	idle fiber term	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 10:22:07	[DEBUG]	Fiber::~Fiber id=3 total=43	
+2022-07-29 10:22:07	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 10:22:07	[DEBUG]	Fiber::~Fiber id=2 total=42	
+2022-07-29 10:22:07	[DEBUG]	stop	
+2022-07-29 10:22:07	[INFO]	Scheduer mian stop	
+2022-07-29 10:22:07	[DEBUG]	~IOManager	
+2022-07-29 10:22:07	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 10:22:07	[DEBUG]	stop	
+2022-07-29 10:22:07	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:22:07	[INFO]	idle fiber term	
+2022-07-29 10:22:07	[DEBUG]	Fiber::~Fiber id=15 total=40	
+2022-07-29 10:22:07	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 10:22:10	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:22:10	[INFO]	idle fiber term	
+2022-07-29 10:22:10	[DEBUG]	Fiber::~Fiber id=16 total=38	
+2022-07-29 10:22:10	[DEBUG]	Fiber::~Fiber id=0 total=37	
+2022-07-29 10:22:10	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:22:10	[INFO]	idle fiber term	
+2022-07-29 10:22:10	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:22:10	[INFO]	idle fiber term	
+2022-07-29 10:22:10	[DEBUG]	Fiber::~Fiber id=21 total=35	
+2022-07-29 10:22:10	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 10:22:10	[DEBUG]	Fiber::~Fiber id=20 total=34	
+2022-07-29 10:22:10	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 10:22:13	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:22:13	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:22:13	[INFO]	idle fiber term	
+2022-07-29 10:22:13	[INFO]	idle fiber term	
+2022-07-29 10:22:13	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:22:13	[DEBUG]	Fiber::~Fiber id=17 total=31	
+2022-07-29 10:22:13	[INFO]	idle fiber term	
+2022-07-29 10:22:13	[DEBUG]	Fiber::~Fiber id=0 total=30	
+2022-07-29 10:22:13	[DEBUG]	Fiber::~Fiber id=19 total=29	
+2022-07-29 10:22:13	[DEBUG]	Fiber::~Fiber id=0 total=28	
+2022-07-29 10:22:13	[DEBUG]	Fiber::~Fiber id=18 total=28	
+2022-07-29 10:22:13	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 10:22:16	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:22:16	[INFO]	idle fiber term	
+2022-07-29 10:22:16	[DEBUG]	Fiber::~Fiber id=22 total=26	
+2022-07-29 10:22:16	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 10:22:16	[DEBUG]	~IOManager	
+2022-07-29 10:22:16	[DEBUG]	stop	
+2022-07-29 10:22:16	[INFO]	name=io idle stopping exit	
+2022-07-29 10:22:16	[INFO]	idle fiber term	
+2022-07-29 10:22:16	[DEBUG]	Fiber::~Fiber id=7 total=24	
+2022-07-29 10:22:16	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 10:22:19	[INFO]	name=io idle stopping exit	
+2022-07-29 10:22:19	[INFO]	name=io idle stopping exit	
+2022-07-29 10:22:19	[INFO]	idle fiber term	
+2022-07-29 10:22:19	[INFO]	idle fiber term	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=10 total=21	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=0 total=20	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=9 total=20	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=0 total=19	
+2022-07-29 10:22:19	[INFO]	name=io idle stopping exit	
+2022-07-29 10:22:19	[INFO]	idle fiber term	
+2022-07-29 10:22:19	[INFO]	name=io idle stopping exit	
+2022-07-29 10:22:19	[INFO]	idle fiber term	
+2022-07-29 10:22:19	[INFO]	name=io idle stopping exit	
+2022-07-29 10:22:19	[INFO]	idle fiber term	
+2022-07-29 10:22:19	[INFO]	name=io idle stopping exit	
+2022-07-29 10:22:19	[INFO]	idle fiber term	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=13 total=16	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=14 total=15	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=0 total=14	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=0 total=13	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=12 total=13	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=0 total=12	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=8 total=13	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=0 total=11	
+2022-07-29 10:22:19	[INFO]	name=io idle stopping exit	
+2022-07-29 10:22:19	[INFO]	idle fiber term	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=11 total=10	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=0 total=9	
+2022-07-29 10:22:19	[DEBUG]	~IOManager	
+2022-07-29 10:22:19	[DEBUG]	stop	
+2022-07-29 10:22:19	[INFO]	name=http_io idle stopping exit	
+2022-07-29 10:22:19	[INFO]	idle fiber term	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=6 total=8	
+2022-07-29 10:22:19	[DEBUG]	Fiber::~Fiber id=0 total=7	
+2022-07-29 10:22:19	[DEBUG]	~IOManager	
+2022-07-29 10:22:19	[DEBUG]	stop	
+2022-07-29 10:53:34	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 10:53:34	[DEBUG]		
+2022-07-29 10:53:34	[DEBUG]	servers	
+2022-07-29 10:53:34	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 10:53:34	[DEBUG]		
+2022-07-29 10:53:34	[DEBUG]	workers	
+2022-07-29 10:53:34	[DEBUG]	workers.io	
+2022-07-29 10:53:34	[DEBUG]	workers.io.thread_num	
+2022-07-29 10:53:34	[DEBUG]	workers.http_io	
+2022-07-29 10:53:34	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 10:53:34	[DEBUG]	workers.accept	
+2022-07-29 10:53:34	[DEBUG]	workers.accept.thread_num	
+2022-07-29 10:53:34	[DEBUG]	workers.worker	
+2022-07-29 10:53:34	[DEBUG]	workers.worker.thread_num	
+2022-07-29 10:53:34	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 10:53:34	[INFO]	main	
+2022-07-29 10:53:34	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 10:53:34	[DEBUG]		
+2022-07-29 10:53:34	[DEBUG]	logs	
+2022-07-29 10:53:34	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 10:53:34	[DEBUG]		
+2022-07-29 10:53:34	[DEBUG]	servers	
+2022-07-29 10:53:34	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 10:53:34	[DEBUG]		
+2022-07-29 10:53:34	[DEBUG]	workers	
+2022-07-29 10:53:34	[DEBUG]	workers.io	
+2022-07-29 10:53:34	[DEBUG]	workers.io.thread_num	
+2022-07-29 10:53:34	[DEBUG]	workers.http_io	
+2022-07-29 10:53:34	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 10:53:34	[DEBUG]	workers.accept	
+2022-07-29 10:53:34	[DEBUG]	workers.accept.thread_num	
+2022-07-29 10:53:34	[DEBUG]	workers.worker	
+2022-07-29 10:53:34	[DEBUG]	workers.worker.thread_num	
+2022-07-29 10:53:34	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 10:53:34	[DEBUG]	stop	
+2022-07-29 10:53:34	[INFO]	Scheduer mian stop	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 10:53:34	[DEBUG]	main fiber is created	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 10:53:34	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 10:53:34	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 10:53:34	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 10:53:34	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 10:53:34	[INFO]	name=mian idle stopping exit	
+2022-07-29 10:53:34	[INFO]	idle fiber term	
+2022-07-29 10:53:34	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 10:53:34	[DEBUG]	Fiber::~Fiber id=2 total=42	
+2022-07-29 10:53:34	[DEBUG]	stop	
+2022-07-29 10:53:34	[INFO]	Scheduer mian stop	
+2022-07-29 10:53:34	[DEBUG]	~IOManager	
+2022-07-29 10:53:34	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 10:53:34	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 10:53:34	[DEBUG]	stop	
+2022-07-29 10:53:34	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:53:34	[INFO]	idle fiber term	
+2022-07-29 10:53:34	[DEBUG]	Fiber::~Fiber id=20 total=40	
+2022-07-29 10:53:34	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 10:53:37	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:53:37	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:53:37	[INFO]	idle fiber term	
+2022-07-29 10:53:37	[INFO]	idle fiber term	
+2022-07-29 10:53:37	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=16 total=37	
+2022-07-29 10:53:37	[INFO]	idle fiber term	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=17 total=35	
+2022-07-29 10:53:37	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 10:53:37	[INFO]	idle fiber term	
+2022-07-29 10:53:37	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=18 total=33	
+2022-07-29 10:53:37	[INFO]	idle fiber term	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=0 total=32	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=19 total=31	
+2022-07-29 10:53:37	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=0 total=30	
+2022-07-29 10:53:37	[INFO]	idle fiber term	
+2022-07-29 10:53:37	[INFO]	name=worker idle stopping exit	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=15 total=29	
+2022-07-29 10:53:37	[INFO]	idle fiber term	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=0 total=28	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=21 total=27	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=22 total=27	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=0 total=26	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 10:53:37	[DEBUG]	~IOManager	
+2022-07-29 10:53:37	[DEBUG]	stop	
+2022-07-29 10:53:37	[INFO]	name=io idle stopping exit	
+2022-07-29 10:53:37	[INFO]	idle fiber term	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=13 total=24	
+2022-07-29 10:53:37	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 11:11:16	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 11:11:16	[DEBUG]		
+2022-07-29 11:11:16	[DEBUG]	servers	
+2022-07-29 11:11:16	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 11:11:16	[DEBUG]		
+2022-07-29 11:11:16	[DEBUG]	workers	
+2022-07-29 11:11:16	[DEBUG]	workers.io	
+2022-07-29 11:11:16	[DEBUG]	workers.io.thread_num	
+2022-07-29 11:11:16	[DEBUG]	workers.http_io	
+2022-07-29 11:11:16	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 11:11:16	[DEBUG]	workers.accept	
+2022-07-29 11:11:16	[DEBUG]	workers.accept.thread_num	
+2022-07-29 11:11:16	[DEBUG]	workers.worker	
+2022-07-29 11:11:16	[DEBUG]	workers.worker.thread_num	
+2022-07-29 11:11:16	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 11:11:16	[INFO]	main	
+2022-07-29 11:11:16	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 11:11:16	[DEBUG]		
+2022-07-29 11:11:16	[DEBUG]	logs	
+2022-07-29 11:11:16	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 11:11:16	[DEBUG]		
+2022-07-29 11:11:16	[DEBUG]	servers	
+2022-07-29 11:11:16	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 11:11:16	[DEBUG]		
+2022-07-29 11:11:16	[DEBUG]	workers	
+2022-07-29 11:11:16	[DEBUG]	workers.io	
+2022-07-29 11:11:16	[DEBUG]	workers.io.thread_num	
+2022-07-29 11:11:16	[DEBUG]	workers.http_io	
+2022-07-29 11:11:16	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 11:11:16	[DEBUG]	workers.accept	
+2022-07-29 11:11:16	[DEBUG]	workers.accept.thread_num	
+2022-07-29 11:11:16	[DEBUG]	workers.worker	
+2022-07-29 11:11:16	[DEBUG]	workers.worker.thread_num	
+2022-07-29 11:11:16	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 11:11:16	[DEBUG]	stop	
+2022-07-29 11:11:16	[INFO]	Scheduer mian stop	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 11:11:16	[DEBUG]	main fiber is created	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 11:11:16	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 11:11:16	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 11:11:16	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 11:11:16	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 11:11:16	[INFO]	name=mian idle stopping exit	
+2022-07-29 11:11:16	[INFO]	idle fiber term	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 11:11:16	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 11:11:16	[DEBUG]	Fiber::~Fiber id=2 total=41	
+2022-07-29 11:11:16	[DEBUG]	stop	
+2022-07-29 11:11:16	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 11:11:16	[INFO]	Scheduer mian stop	
+2022-07-29 11:11:16	[DEBUG]	~IOManager	
+2022-07-29 11:11:16	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 11:11:16	[DEBUG]	stop	
+2022-07-29 11:11:16	[INFO]	name=worker idle stopping exit	
+2022-07-29 11:11:16	[INFO]	idle fiber term	
+2022-07-29 11:11:16	[DEBUG]	Fiber::~Fiber id=20 total=40	
+2022-07-29 11:11:16	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 11:11:19	[INFO]	name=worker idle stopping exit	
+2022-07-29 11:11:19	[INFO]	name=worker idle stopping exit	
+2022-07-29 11:11:19	[INFO]	idle fiber term	
+2022-07-29 11:11:19	[INFO]	idle fiber term	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=16 total=37	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=18 total=36	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=0 total=35	
+2022-07-29 11:11:19	[INFO]	name=worker idle stopping exit	
+2022-07-29 11:11:19	[INFO]	idle fiber term	
+2022-07-29 11:11:19	[INFO]	name=worker idle stopping exit	
+2022-07-29 11:11:19	[INFO]	idle fiber term	
+2022-07-29 11:11:19	[INFO]	name=worker idle stopping exit	
+2022-07-29 11:11:19	[INFO]	idle fiber term	
+2022-07-29 11:11:19	[INFO]	name=worker idle stopping exit	
+2022-07-29 11:11:19	[INFO]	idle fiber term	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=15 total=31	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=0 total=30	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=17 total=30	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=19 total=29	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=0 total=28	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=21 total=28	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 11:11:19	[INFO]	name=worker idle stopping exit	
+2022-07-29 11:11:19	[INFO]	idle fiber term	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=22 total=26	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 11:11:19	[DEBUG]	~IOManager	
+2022-07-29 11:11:19	[DEBUG]	stop	
+2022-07-29 11:11:19	[INFO]	name=io idle stopping exit	
+2022-07-29 11:11:19	[INFO]	idle fiber term	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=13 total=24	
+2022-07-29 11:11:19	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 17:32:09	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 17:32:09	[DEBUG]		
+2022-07-29 17:32:09	[DEBUG]	servers	
+2022-07-29 17:32:09	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 17:32:09	[DEBUG]		
+2022-07-29 17:32:09	[DEBUG]	workers	
+2022-07-29 17:32:09	[DEBUG]	workers.io	
+2022-07-29 17:32:09	[DEBUG]	workers.io.thread_num	
+2022-07-29 17:32:09	[DEBUG]	workers.http_io	
+2022-07-29 17:32:09	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 17:32:09	[DEBUG]	workers.accept	
+2022-07-29 17:32:09	[DEBUG]	workers.accept.thread_num	
+2022-07-29 17:32:09	[DEBUG]	workers.worker	
+2022-07-29 17:32:09	[DEBUG]	workers.worker.thread_num	
+2022-07-29 17:32:09	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 17:32:09	[INFO]	main	
+2022-07-29 17:32:09	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 17:32:09	[DEBUG]		
+2022-07-29 17:32:09	[DEBUG]	logs	
+2022-07-29 17:32:09	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 17:32:09	[DEBUG]		
+2022-07-29 17:32:09	[DEBUG]	servers	
+2022-07-29 17:32:09	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 17:32:09	[DEBUG]		
+2022-07-29 17:32:09	[DEBUG]	workers	
+2022-07-29 17:32:09	[DEBUG]	workers.io	
+2022-07-29 17:32:09	[DEBUG]	workers.io.thread_num	
+2022-07-29 17:32:09	[DEBUG]	workers.http_io	
+2022-07-29 17:32:09	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 17:32:09	[DEBUG]	workers.accept	
+2022-07-29 17:32:09	[DEBUG]	workers.accept.thread_num	
+2022-07-29 17:32:09	[DEBUG]	workers.worker	
+2022-07-29 17:32:09	[DEBUG]	workers.worker.thread_num	
+2022-07-29 17:32:09	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 17:32:09	[DEBUG]	stop	
+2022-07-29 17:32:09	[INFO]	Scheduer mian stop	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 17:32:09	[DEBUG]	main fiber is created	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 17:32:09	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 17:32:09	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 17:32:09	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 17:32:09	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 17:32:09	[INFO]	name=mian idle stopping exit	
+2022-07-29 17:32:09	[INFO]	idle fiber term	
+2022-07-29 17:32:09	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 17:32:09	[DEBUG]	Fiber::~Fiber id=2 total=42	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 17:32:09	[DEBUG]	stop	
+2022-07-29 17:32:09	[INFO]	Scheduer mian stop	
+2022-07-29 17:32:09	[DEBUG]	~IOManager	
+2022-07-29 17:32:09	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 17:32:09	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 17:32:09	[DEBUG]	stop	
+2022-07-29 17:32:09	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:32:09	[INFO]	idle fiber term	
+2022-07-29 17:32:09	[DEBUG]	Fiber::~Fiber id=20 total=40	
+2022-07-29 17:32:09	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 17:32:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:32:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:32:12	[INFO]	idle fiber term	
+2022-07-29 17:32:12	[INFO]	idle fiber term	
+2022-07-29 17:32:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=22 total=37	
+2022-07-29 17:32:12	[INFO]	idle fiber term	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=19 total=35	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 17:32:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=17 total=34	
+2022-07-29 17:32:12	[INFO]	idle fiber term	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 17:32:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:32:12	[INFO]	idle fiber term	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=21 total=31	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=0 total=30	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=16 total=30	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 17:32:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:32:12	[INFO]	idle fiber term	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=15 total=28	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 17:32:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:32:12	[INFO]	idle fiber term	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=18 total=26	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 17:32:12	[DEBUG]	~IOManager	
+2022-07-29 17:32:12	[DEBUG]	stop	
+2022-07-29 17:32:12	[INFO]	name=io idle stopping exit	
+2022-07-29 17:32:12	[INFO]	idle fiber term	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=10 total=24	
+2022-07-29 17:32:12	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 17:32:15	[INFO]	name=io idle stopping exit	
+2022-07-29 17:32:15	[INFO]	name=io idle stopping exit	
+2022-07-29 17:32:15	[INFO]	idle fiber term	
+2022-07-29 17:32:15	[INFO]	idle fiber term	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=11 total=21	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=9 total=21	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=0 total=20	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=0 total=19	
+2022-07-29 17:32:15	[INFO]	name=io idle stopping exit	
+2022-07-29 17:32:15	[INFO]	idle fiber term	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=12 total=18	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=0 total=17	
+2022-07-29 17:32:15	[INFO]	name=io idle stopping exit	
+2022-07-29 17:32:15	[INFO]	idle fiber term	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=13 total=16	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=0 total=15	
+2022-07-29 17:32:15	[INFO]	name=io idle stopping exit	
+2022-07-29 17:32:15	[INFO]	idle fiber term	
+2022-07-29 17:32:15	[INFO]	name=io idle stopping exit	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=14 total=14	
+2022-07-29 17:32:15	[INFO]	idle fiber term	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=0 total=13	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=8 total=12	
+2022-07-29 17:32:15	[INFO]	name=io idle stopping exit	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=0 total=11	
+2022-07-29 17:32:15	[INFO]	idle fiber term	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=7 total=10	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=0 total=9	
+2022-07-29 17:32:15	[DEBUG]	~IOManager	
+2022-07-29 17:32:15	[DEBUG]	stop	
+2022-07-29 17:32:15	[INFO]	name=http_io idle stopping exit	
+2022-07-29 17:32:15	[INFO]	idle fiber term	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=6 total=8	
+2022-07-29 17:32:15	[DEBUG]	Fiber::~Fiber id=0 total=7	
+2022-07-29 17:32:15	[DEBUG]	~IOManager	
+2022-07-29 17:32:15	[DEBUG]	stop	
+2022-07-29 17:34:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 17:34:49	[DEBUG]		
+2022-07-29 17:34:49	[DEBUG]	servers	
+2022-07-29 17:34:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 17:34:49	[DEBUG]		
+2022-07-29 17:34:49	[DEBUG]	workers	
+2022-07-29 17:34:49	[DEBUG]	workers.io	
+2022-07-29 17:34:49	[DEBUG]	workers.io.thread_num	
+2022-07-29 17:34:49	[DEBUG]	workers.http_io	
+2022-07-29 17:34:49	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 17:34:49	[DEBUG]	workers.accept	
+2022-07-29 17:34:49	[DEBUG]	workers.accept.thread_num	
+2022-07-29 17:34:49	[DEBUG]	workers.worker	
+2022-07-29 17:34:49	[DEBUG]	workers.worker.thread_num	
+2022-07-29 17:34:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 17:34:49	[INFO]	main	
+2022-07-29 17:34:49	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 17:34:49	[DEBUG]		
+2022-07-29 17:34:49	[DEBUG]	logs	
+2022-07-29 17:34:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 17:34:49	[DEBUG]		
+2022-07-29 17:34:49	[DEBUG]	servers	
+2022-07-29 17:34:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 17:34:49	[DEBUG]		
+2022-07-29 17:34:49	[DEBUG]	workers	
+2022-07-29 17:34:49	[DEBUG]	workers.io	
+2022-07-29 17:34:49	[DEBUG]	workers.io.thread_num	
+2022-07-29 17:34:49	[DEBUG]	workers.http_io	
+2022-07-29 17:34:49	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 17:34:49	[DEBUG]	workers.accept	
+2022-07-29 17:34:49	[DEBUG]	workers.accept.thread_num	
+2022-07-29 17:34:49	[DEBUG]	workers.worker	
+2022-07-29 17:34:49	[DEBUG]	workers.worker.thread_num	
+2022-07-29 17:34:49	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 17:34:49	[DEBUG]	stop	
+2022-07-29 17:34:49	[INFO]	Scheduer mian stop	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 17:34:49	[DEBUG]	main fiber is created	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 17:34:49	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 17:34:49	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=24 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 17:34:49	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 17:34:49	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=25 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 17:34:49	[INFO]	name=mian idle stopping exit	
+2022-07-29 17:34:49	[INFO]	idle fiber term	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=2 total=41	
+2022-07-29 17:34:49	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 17:34:49	[DEBUG]	stop	
+2022-07-29 17:34:49	[INFO]	Scheduer mian stop	
+2022-07-29 17:34:49	[DEBUG]	~IOManager	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 17:34:49	[DEBUG]	stop	
+2022-07-29 17:34:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:34:49	[INFO]	idle fiber term	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=18 total=40	
+2022-07-29 17:34:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 17:34:49	[INFO]	idle fiber term	
+2022-07-29 17:34:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=17 total=38	
+2022-07-29 17:34:49	[INFO]	idle fiber term	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=0 total=37	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=16 total=36	
+2022-07-29 17:34:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=0 total=35	
+2022-07-29 17:34:49	[INFO]	idle fiber term	
+2022-07-29 17:34:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=20 total=34	
+2022-07-29 17:34:49	[INFO]	idle fiber term	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=15 total=32	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=0 total=31	
+2022-07-29 17:34:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:34:49	[INFO]	idle fiber term	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=21 total=30	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 17:34:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:34:49	[INFO]	idle fiber term	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=22 total=28	
+2022-07-29 17:34:49	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 17:34:52	[INFO]	name=worker idle stopping exit	
+2022-07-29 17:34:52	[INFO]	idle fiber term	
+2022-07-29 17:34:52	[DEBUG]	Fiber::~Fiber id=19 total=26	
+2022-07-29 17:34:52	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 17:34:52	[DEBUG]	~IOManager	
+2022-07-29 17:34:52	[DEBUG]	stop	
+2022-07-29 17:34:52	[INFO]	name=io idle stopping exit	
+2022-07-29 17:34:52	[INFO]	idle fiber term	
+2022-07-29 17:34:52	[DEBUG]	Fiber::~Fiber id=7 total=24	
+2022-07-29 17:34:52	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 17:34:55	[INFO]	name=io idle stopping exit	
+2022-07-29 17:34:55	[INFO]	name=io idle stopping exit	
+2022-07-29 17:34:55	[INFO]	idle fiber term	
+2022-07-29 17:34:55	[INFO]	idle fiber term	
+2022-07-29 17:34:55	[DEBUG]	Fiber::~Fiber id=10 total=21	
+2022-07-29 17:34:55	[DEBUG]	Fiber::~Fiber id=0 total=20	
+2022-07-29 17:34:55	[DEBUG]	Fiber::~Fiber id=8 total=20	
+2022-07-29 17:34:55	[DEBUG]	Fiber::~Fiber id=0 total=19	
+2022-07-29 17:34:55	[INFO]	name=io idle stopping exit	
+2022-07-29 17:34:55	[INFO]	idle fiber term	
+2022-07-29 17:34:55	[DEBUG]	Fiber::~Fiber id=11 total=18	
+2022-07-29 17:34:55	[DEBUG]	Fiber::~Fiber id=0 total=17	
+2022-07-29 17:34:58	[INFO]	name=io idle stopping exit	
+2022-07-29 17:34:58	[INFO]	idle fiber term	
+2022-07-29 17:34:58	[DEBUG]	Fiber::~Fiber id=14 total=16	
+2022-07-29 17:34:58	[DEBUG]	Fiber::~Fiber id=0 total=15	
+2022-07-29 17:35:01	[INFO]	name=io idle stopping exit	
+2022-07-29 17:35:01	[INFO]	name=io idle stopping exit	
+2022-07-29 17:35:01	[INFO]	idle fiber term	
+2022-07-29 17:35:01	[INFO]	idle fiber term	
+2022-07-29 17:35:01	[DEBUG]	Fiber::~Fiber id=12 total=13	
+2022-07-29 17:35:01	[DEBUG]	Fiber::~Fiber id=0 total=12	
+2022-07-29 17:35:01	[DEBUG]	Fiber::~Fiber id=13 total=12	
+2022-07-29 17:35:01	[DEBUG]	Fiber::~Fiber id=0 total=11	
+2022-07-29 17:35:04	[INFO]	name=io idle stopping exit	
+2022-07-29 17:35:04	[INFO]	idle fiber term	
+2022-07-29 17:35:04	[DEBUG]	Fiber::~Fiber id=9 total=10	
+2022-07-29 17:35:04	[DEBUG]	Fiber::~Fiber id=0 total=9	
+2022-07-29 17:35:04	[DEBUG]	~IOManager	
+2022-07-29 17:35:04	[DEBUG]	stop	
+2022-07-29 17:35:04	[INFO]	name=http_io idle stopping exit	
+2022-07-29 17:35:04	[INFO]	idle fiber term	
+2022-07-29 17:35:04	[DEBUG]	Fiber::~Fiber id=6 total=8	
+2022-07-29 17:35:04	[DEBUG]	Fiber::~Fiber id=0 total=7	
+2022-07-29 17:35:04	[DEBUG]	~IOManager	
+2022-07-29 17:35:04	[DEBUG]	stop	
+2022-07-29 18:03:11	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 18:03:11	[DEBUG]		
+2022-07-29 18:03:11	[DEBUG]	servers	
+2022-07-29 18:03:11	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 18:03:11	[DEBUG]		
+2022-07-29 18:03:11	[DEBUG]	workers	
+2022-07-29 18:03:11	[DEBUG]	workers.io	
+2022-07-29 18:03:11	[DEBUG]	workers.io.thread_num	
+2022-07-29 18:03:11	[DEBUG]	workers.http_io	
+2022-07-29 18:03:11	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 18:03:11	[DEBUG]	workers.accept	
+2022-07-29 18:03:11	[DEBUG]	workers.accept.thread_num	
+2022-07-29 18:03:11	[DEBUG]	workers.worker	
+2022-07-29 18:03:11	[DEBUG]	workers.worker.thread_num	
+2022-07-29 18:03:11	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 18:03:11	[INFO]	main	
+2022-07-29 18:03:11	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 18:03:11	[DEBUG]		
+2022-07-29 18:03:11	[DEBUG]	logs	
+2022-07-29 18:03:11	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 18:03:11	[DEBUG]		
+2022-07-29 18:03:11	[DEBUG]	servers	
+2022-07-29 18:03:11	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 18:03:11	[DEBUG]		
+2022-07-29 18:03:11	[DEBUG]	workers	
+2022-07-29 18:03:11	[DEBUG]	workers.io	
+2022-07-29 18:03:11	[DEBUG]	workers.io.thread_num	
+2022-07-29 18:03:11	[DEBUG]	workers.http_io	
+2022-07-29 18:03:11	[DEBUG]	workers.http_io.thread_num	
+2022-07-29 18:03:11	[DEBUG]	workers.accept	
+2022-07-29 18:03:11	[DEBUG]	workers.accept.thread_num	
+2022-07-29 18:03:11	[DEBUG]	workers.worker	
+2022-07-29 18:03:11	[DEBUG]	workers.worker.thread_num	
+2022-07-29 18:03:11	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 18:03:11	[DEBUG]	stop	
+2022-07-29 18:03:11	[INFO]	Scheduer mian stop	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 18:03:11	[DEBUG]	main fiber is created	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 18:03:11	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 18:03:11	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 18:03:11	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 18:03:11	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 18:03:11	[DEBUG]	start	
+2022-07-29 18:03:11	[DEBUG]	start	
+2022-07-29 18:03:11	[INFO]	name=mian idle stopping exit	
+2022-07-29 18:03:11	[INFO]	idle fiber term	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 18:03:11	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 18:03:11	[DEBUG]	Fiber::~Fiber id=2 total=41	
+2022-07-29 18:03:11	[DEBUG]	stop	
+2022-07-29 18:03:11	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 18:03:11	[INFO]	Scheduer mian stop	
+2022-07-29 18:03:11	[DEBUG]	~IOManager	
+2022-07-29 18:03:11	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 18:03:11	[DEBUG]	stop	
+2022-07-29 18:03:11	[INFO]	name=worker idle stopping exit	
+2022-07-29 18:03:11	[INFO]	idle fiber term	
+2022-07-29 18:03:11	[INFO]	name=worker idle stopping exit	
+2022-07-29 18:03:11	[INFO]	idle fiber term	
+2022-07-29 18:03:11	[DEBUG]	Fiber::~Fiber id=20 total=40	
+2022-07-29 18:03:11	[DEBUG]	Fiber::~Fiber id=22 total=39	
+2022-07-29 18:03:11	[DEBUG]	Fiber::~Fiber id=0 total=38	
+2022-07-29 18:03:11	[DEBUG]	Fiber::~Fiber id=0 total=37	
+2022-07-29 18:03:14	[INFO]	name=worker idle stopping exit	
+2022-07-29 18:03:14	[INFO]	name=worker idle stopping exit	
+2022-07-29 18:03:14	[INFO]	idle fiber term	
+2022-07-29 18:03:14	[INFO]	idle fiber term	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=15 total=35	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=17 total=34	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 18:03:14	[INFO]	name=worker idle stopping exit	
+2022-07-29 18:03:14	[INFO]	idle fiber term	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=16 total=32	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=0 total=31	
+2022-07-29 18:03:14	[INFO]	name=worker idle stopping exit	
+2022-07-29 18:03:14	[INFO]	idle fiber term	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=18 total=30	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 18:03:14	[INFO]	name=worker idle stopping exit	
+2022-07-29 18:03:14	[INFO]	idle fiber term	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=19 total=28	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 18:03:14	[INFO]	name=worker idle stopping exit	
+2022-07-29 18:03:14	[INFO]	idle fiber term	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=21 total=26	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 18:03:14	[DEBUG]	~IOManager	
+2022-07-29 18:03:14	[DEBUG]	stop	
+2022-07-29 18:03:14	[INFO]	name=io idle stopping exit	
+2022-07-29 18:03:14	[INFO]	name=io idle stopping exit	
+2022-07-29 18:03:14	[INFO]	idle fiber term	
+2022-07-29 18:03:14	[INFO]	idle fiber term	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=8 total=24	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=13 total=23	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=0 total=22	
+2022-07-29 18:03:14	[DEBUG]	Fiber::~Fiber id=0 total=21	
+2022-07-29 18:03:17	[INFO]	name=io idle stopping exit	
+2022-07-29 18:03:17	[INFO]	name=io idle stopping exit	
+2022-07-29 18:03:17	[INFO]	idle fiber term	
+2022-07-29 18:03:17	[INFO]	idle fiber term	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=9 total=19	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=0 total=18	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=7 total=18	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=0 total=17	
+2022-07-29 18:03:17	[INFO]	name=io idle stopping exit	
+2022-07-29 18:03:17	[INFO]	idle fiber term	
+2022-07-29 18:03:17	[INFO]	name=io idle stopping exit	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=10 total=16	
+2022-07-29 18:03:17	[INFO]	idle fiber term	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=0 total=15	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=14 total=14	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=0 total=13	
+2022-07-29 18:03:17	[INFO]	name=io idle stopping exit	
+2022-07-29 18:03:17	[INFO]	idle fiber term	
+2022-07-29 18:03:17	[INFO]	name=io idle stopping exit	
+2022-07-29 18:03:17	[INFO]	idle fiber term	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=11 total=11	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=0 total=10	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=12 total=10	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=0 total=9	
+2022-07-29 18:03:17	[DEBUG]	~IOManager	
+2022-07-29 18:03:17	[DEBUG]	stop	
+2022-07-29 18:03:17	[INFO]	name=http_io idle stopping exit	
+2022-07-29 18:03:17	[INFO]	idle fiber term	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=6 total=8	
+2022-07-29 18:03:17	[DEBUG]	Fiber::~Fiber id=0 total=7	
+2022-07-29 18:03:17	[DEBUG]	~IOManager	
+2022-07-29 18:03:17	[DEBUG]	stop	
+2022-07-29 19:44:46	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 19:44:46	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 19:44:46	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 19:44:46	[INFO]	main	
+2022-07-29 19:44:46	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 19:44:46	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 19:44:46	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 19:44:46	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 19:44:46	[DEBUG]	stop	
+2022-07-29 19:44:46	[INFO]	Scheduer mian stop	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	main fiber is created	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 19:44:46	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 19:44:46	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 19:44:46	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 19:44:46	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 19:44:46	[DEBUG]	[type=http name=JKYi/1.1 worker=http_io accept=accept recv_timeout=120000]
+  [Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]
+	
+2022-07-29 19:44:46	[DEBUG]	[type=http name=JKYi/1.0 worker=io accept=accept recv_timeout=120000]
+  [Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]
+	
+2022-07-29 19:44:46	[INFO]	name=mian idle stopping exit	
+2022-07-29 19:44:46	[INFO]	idle fiber term	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 19:44:46	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 19:44:46	[DEBUG]	Fiber::~Fiber id=2 total=41	
+2022-07-29 19:44:46	[DEBUG]	stop	
+2022-07-29 19:44:46	[INFO]	Scheduer mian stop	
+2022-07-29 19:44:46	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 19:44:46	[DEBUG]	~IOManager	
+2022-07-29 19:44:46	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 19:44:46	[DEBUG]	stop	
+2022-07-29 19:44:46	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:44:46	[INFO]	idle fiber term	
+2022-07-29 19:44:46	[DEBUG]	Fiber::~Fiber id=20 total=40	
+2022-07-29 19:44:46	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 19:44:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:44:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=17 total=37	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=15 total=36	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=35	
+2022-07-29 19:44:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=18 total=34	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 19:44:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=19 total=32	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=31	
+2022-07-29 19:44:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=16 total=30	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 19:44:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=21 total=28	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 19:44:49	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=22 total=26	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 19:44:49	[DEBUG]	~IOManager	
+2022-07-29 19:44:49	[DEBUG]	stop	
+2022-07-29 19:44:49	[INFO]	name=io idle stopping exit	
+2022-07-29 19:44:49	[INFO]	name=io idle stopping exit	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[INFO]	idle fiber term	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=14 total=24	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=10 total=23	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=22	
+2022-07-29 19:44:49	[DEBUG]	Fiber::~Fiber id=0 total=21	
+2022-07-29 19:49:00	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 19:49:00	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 19:49:00	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 19:49:00	[INFO]	main	
+2022-07-29 19:49:00	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 19:49:00	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 19:49:00	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 19:49:00	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 19:49:00	[DEBUG]	stop	
+2022-07-29 19:49:00	[INFO]	Scheduer mian stop	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 19:49:00	[DEBUG]	main fiber is created	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 19:49:00	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 19:49:00	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 19:49:00	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 19:49:00	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 19:49:00	[DEBUG]	[type=http name=JKYi/1.1 worker=http_io accept=accept recv_timeout=120000]
+  [Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]
+	
+2022-07-29 19:49:00	[DEBUG]	[type=http name=JKYi/1.0 worker=io accept=accept recv_timeout=120000]
+  [Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]
+	
+2022-07-29 19:49:00	[INFO]	name=mian idle stopping exit	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=2 total=41	
+2022-07-29 19:49:00	[DEBUG]	stop	
+2022-07-29 19:49:00	[INFO]	Scheduer mian stop	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 19:49:00	[DEBUG]	~IOManager	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 19:49:00	[DEBUG]	stop	
+2022-07-29 19:49:00	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:49:00	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=22 total=39	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=15 total=39	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=38	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=37	
+2022-07-29 19:49:00	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:49:00	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=17 total=36	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=16 total=35	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 19:49:00	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=18 total=32	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=31	
+2022-07-29 19:49:00	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=19 total=30	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=21 total=28	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 19:49:00	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=20 total=26	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 19:49:00	[DEBUG]	~IOManager	
+2022-07-29 19:49:00	[DEBUG]	stop	
+2022-07-29 19:49:00	[INFO]	name=io idle stopping exit	
+2022-07-29 19:49:00	[INFO]	idle fiber term	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=13 total=24	
+2022-07-29 19:49:00	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=25	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=26	
+2022-07-29 19:49:00	[DEBUG]	subFiber is created,fiber_id=27	
+2022-07-29 19:49:03	[INFO]	name=io idle stopping exit	
+2022-07-29 19:49:03	[INFO]	name=io idle stopping exit	
+2022-07-29 19:49:03	[INFO]	idle fiber term	
+2022-07-29 19:49:03	[INFO]	idle fiber term	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=12 total=24	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=14 total=23	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=0 total=22	
+2022-07-29 19:49:03	[INFO]	name=io idle stopping exit	
+2022-07-29 19:49:03	[INFO]	idle fiber term	
+2022-07-29 19:49:03	[INFO]	name=io idle stopping exit	
+2022-07-29 19:49:03	[INFO]	name=io idle stopping exit	
+2022-07-29 19:49:03	[INFO]	idle fiber term	
+2022-07-29 19:49:03	[INFO]	idle fiber term	
+2022-07-29 19:49:03	[INFO]	name=io idle stopping exit	
+2022-07-29 19:49:03	[INFO]	name=io idle stopping exit	
+2022-07-29 19:49:03	[INFO]	idle fiber term	
+2022-07-29 19:49:03	[INFO]	idle fiber term	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=8 total=17	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=10 total=17	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=0 total=16	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=0 total=15	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=9 total=15	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=0 total=14	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=7 total=14	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=0 total=13	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=11 total=13	
+2022-07-29 19:49:03	[DEBUG]	Fiber::~Fiber id=0 total=12	
+2022-07-29 19:49:03	[DEBUG]	~IOManager	
+2022-07-29 19:49:03	[DEBUG]	stop	
+2022-07-29 19:49:17	[INFO]	tickle	
+2022-07-29 19:50:06	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8020 remoteAddress=183.220.92.71:11485] keepalive = 1	
+2022-07-29 19:50:06	[DEBUG]	Fiber::~Fiber id=26 total=11	
+2022-07-29 19:50:06	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8020 remoteAddress=183.220.92.71:11543] keepalive = 1	
+2022-07-29 19:50:06	[DEBUG]	Fiber::~Fiber id=27 total=10	
+2022-07-29 19:50:29	[DEBUG]	subFiber is created,fiber_id=28	
+2022-07-29 19:51:33	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8020 remoteAddress=183.220.92.71:11631] keepalive = 1	
+2022-07-29 19:51:33	[DEBUG]	Fiber::~Fiber id=28 total=10	
+2022-07-29 19:52:18	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 19:52:18	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 19:52:18	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 19:52:18	[INFO]	main	
+2022-07-29 19:52:18	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 19:52:18	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 19:52:18	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 19:52:18	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 19:52:18	[DEBUG]	stop	
+2022-07-29 19:52:18	[INFO]	Scheduer mian stop	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 19:52:18	[DEBUG]	main fiber is created	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 19:52:18	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 19:52:18	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 19:52:18	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 19:52:18	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 19:52:18	[DEBUG]	[type=http name=JKYi/1.1 worker=http_io accept=accept recv_timeout=120000]
+  [Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]
+	
+2022-07-29 19:52:18	[DEBUG]	[type=http name=JKYi/1.0 worker=io accept=accept recv_timeout=120000]
+  [Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]
+	
+2022-07-29 19:52:18	[INFO]	name=mian idle stopping exit	
+2022-07-29 19:52:18	[INFO]	idle fiber term	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 19:52:18	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 19:52:18	[DEBUG]	Fiber::~Fiber id=2 total=41	
+2022-07-29 19:52:18	[DEBUG]	stop	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 19:52:18	[INFO]	Scheduer mian stop	
+2022-07-29 19:52:18	[DEBUG]	~IOManager	
+2022-07-29 19:52:18	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 19:52:18	[DEBUG]	stop	
+2022-07-29 19:52:18	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:52:18	[INFO]	idle fiber term	
+2022-07-29 19:52:18	[DEBUG]	Fiber::~Fiber id=20 total=40	
+2022-07-29 19:52:18	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=25	
+2022-07-29 19:52:18	[DEBUG]	subFiber is created,fiber_id=26	
+2022-07-29 19:52:19	[DEBUG]	Fiber::~Fiber id=25 total=40	
+2022-07-29 19:52:19	[DEBUG]	subFiber is created,fiber_id=27	
+2022-07-29 19:52:21	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:52:21	[INFO]	idle fiber term	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=18 total=40	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 19:52:21	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:52:21	[INFO]	idle fiber term	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=19 total=38	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=0 total=37	
+2022-07-29 19:52:21	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:52:21	[INFO]	idle fiber term	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=21 total=36	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=0 total=35	
+2022-07-29 19:52:21	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:52:21	[INFO]	idle fiber term	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=22 total=34	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 19:52:21	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:52:21	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:52:21	[INFO]	idle fiber term	
+2022-07-29 19:52:21	[INFO]	idle fiber term	
+2022-07-29 19:52:21	[INFO]	name=worker idle stopping exit	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=16 total=31	
+2022-07-29 19:52:21	[INFO]	idle fiber term	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=0 total=30	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=17 total=29	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=0 total=28	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=15 total=28	
+2022-07-29 19:52:21	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 19:52:21	[DEBUG]	~IOManager	
+2022-07-29 19:52:21	[DEBUG]	stop	
+2022-07-29 19:52:25	[DEBUG]	Fiber::~Fiber id=27 total=26	
+2022-07-29 19:52:25	[INFO]	name=io idle stopping exit	
+2022-07-29 19:52:25	[INFO]	idle fiber term	
+2022-07-29 19:52:25	[DEBUG]	Fiber::~Fiber id=12 total=25	
+2022-07-29 19:52:25	[DEBUG]	Fiber::~Fiber id=0 total=24	
+2022-07-29 19:52:25	[DEBUG]	subFiber is created,fiber_id=28	
+2022-07-29 19:52:29	[DEBUG]	Fiber::~Fiber id=28 total=24	
+2022-07-29 19:52:29	[INFO]	name=io idle stopping exit	
+2022-07-29 19:52:29	[INFO]	idle fiber term	
+2022-07-29 19:52:29	[DEBUG]	Fiber::~Fiber id=14 total=23	
+2022-07-29 19:52:29	[DEBUG]	Fiber::~Fiber id=0 total=22	
+2022-07-29 19:52:29	[DEBUG]	subFiber is created,fiber_id=29	
+2022-07-29 19:52:32	[DEBUG]	Fiber::~Fiber id=29 total=22	
+2022-07-29 19:52:32	[INFO]	name=io idle stopping exit	
+2022-07-29 19:52:32	[INFO]	idle fiber term	
+2022-07-29 19:52:32	[DEBUG]	Fiber::~Fiber id=13 total=21	
+2022-07-29 19:52:32	[DEBUG]	Fiber::~Fiber id=0 total=20	
+2022-07-29 19:52:32	[DEBUG]	subFiber is created,fiber_id=30	
+2022-07-29 19:52:41	[DEBUG]	subFiber is created,fiber_id=31	
+2022-07-29 19:53:15	[DEBUG]	Fiber::~Fiber id=30 total=21	
+2022-07-29 19:53:15	[INFO]	name=io idle stopping exit	
+2022-07-29 19:53:15	[INFO]	idle fiber term	
+2022-07-29 19:53:15	[DEBUG]	Fiber::~Fiber id=11 total=20	
+2022-07-29 19:53:15	[DEBUG]	Fiber::~Fiber id=0 total=19	
+2022-07-29 19:53:16	[DEBUG]	subFiber is created,fiber_id=32	
+2022-07-29 19:53:37	[DEBUG]	Fiber::~Fiber id=32 total=19	
+2022-07-29 19:53:37	[INFO]	name=io idle stopping exit	
+2022-07-29 19:53:37	[INFO]	idle fiber term	
+2022-07-29 19:53:37	[DEBUG]	Fiber::~Fiber id=7 total=18	
+2022-07-29 19:53:37	[DEBUG]	Fiber::~Fiber id=0 total=17	
+2022-07-29 19:53:37	[DEBUG]	subFiber is created,fiber_id=33	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:12:39	[INFO]	sub process start,pid =26551	
+2022-07-29 20:12:39	[INFO]	main	
+2022-07-29 20:12:39	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 20:12:39	[DEBUG]	stop	
+2022-07-29 20:12:39	[INFO]	Scheduer mian stop	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 20:12:39	[DEBUG]	main fiber is created	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 20:12:39	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 20:12:39	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 20:12:39	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 20:12:39	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 20:12:39	[DEBUG]	[type=http name=JKYi/1.1 worker=http_io accept=accept recv_timeout=120000]
+  [Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]
+	
+2022-07-29 20:12:39	[DEBUG]	[type=http name=JKYi/1.0 worker=io accept=accept recv_timeout=120000]
+  [Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]
+	
+2022-07-29 20:12:39	[INFO]	name=mian idle stopping exit	
+2022-07-29 20:12:39	[INFO]	idle fiber term	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 20:12:39	[DEBUG]	Fiber::~Fiber id=3 total=43	
+2022-07-29 20:12:39	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 20:12:39	[DEBUG]	Fiber::~Fiber id=2 total=42	
+2022-07-29 20:12:39	[DEBUG]	stop	
+2022-07-29 20:12:39	[INFO]	Scheduer mian stop	
+2022-07-29 20:12:39	[DEBUG]	~IOManager	
+2022-07-29 20:12:39	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 20:12:39	[DEBUG]	stop	
+2022-07-29 20:12:39	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:12:39	[INFO]	idle fiber term	
+2022-07-29 20:12:39	[DEBUG]	Fiber::~Fiber id=20 total=40	
+2022-07-29 20:12:39	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 20:12:42	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:12:42	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:12:42	[INFO]	idle fiber term	
+2022-07-29 20:12:42	[INFO]	idle fiber term	
+2022-07-29 20:12:42	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=18 total=37	
+2022-07-29 20:12:42	[INFO]	idle fiber term	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=17 total=35	
+2022-07-29 20:12:42	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 20:12:42	[INFO]	idle fiber term	
+2022-07-29 20:12:42	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=22 total=33	
+2022-07-29 20:12:42	[INFO]	idle fiber term	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=0 total=32	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=19 total=31	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=0 total=30	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=15 total=30	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 20:12:42	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:12:42	[INFO]	idle fiber term	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=21 total=28	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 20:12:42	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:12:42	[INFO]	idle fiber term	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=16 total=26	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 20:12:42	[DEBUG]	~IOManager	
+2022-07-29 20:12:42	[DEBUG]	stop	
+2022-07-29 20:12:42	[INFO]	name=io idle stopping exit	
+2022-07-29 20:12:42	[INFO]	idle fiber term	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=13 total=24	
+2022-07-29 20:12:42	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 20:13:23	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:13:23	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:13:23	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:13:23	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:13:40	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:13:40	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:13:40	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:13:40	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:14:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:14:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:14:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:14:15	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:15:32	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:15:32	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:15:32	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:15:32	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:16:12	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:16:12	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:16:12	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:16:12	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:16:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:16:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:16:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:16:15	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:16:17	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:16:17	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:16:17	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:16:20	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:16:20	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:16:20	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:16:36	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:16:36	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:16:36	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:16:41	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:16:41	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:16:41	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:16:41	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:22:48	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:22:48	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:22:48	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:22:48	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:25:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:25:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:25:15	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:25:15	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:27:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:27:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:27:55	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:27:55	[INFO]	server is running :/tmp/work/JKYi.pid	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:12:39	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:28:07	[ERROR]	child crash,pid = 26551 status = 11	
+2022-07-29 20:28:12	[INFO]	sub process start,pid =29210	
+2022-07-29 20:28:12	[INFO]	main	
+2022-07-29 20:28:12	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 20:28:12	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:28:12	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:28:12	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 20:28:12	[DEBUG]	stop	
+2022-07-29 20:28:12	[INFO]	Scheduer mian stop	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 20:28:12	[DEBUG]	main fiber is created	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 20:28:12	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 20:28:12	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 20:28:12	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 20:28:12	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 20:28:12	[DEBUG]	[type=http name=JKYi/1.1 worker=http_io accept=accept recv_timeout=120000]
+  [Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]
+	
+2022-07-29 20:28:12	[DEBUG]	[type=http name=JKYi/1.0 worker=io accept=accept recv_timeout=120000]
+  [Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]
+	
+2022-07-29 20:28:12	[INFO]	name=mian idle stopping exit	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 20:28:12	[INFO]	idle fiber term	
+2022-07-29 20:28:12	[DEBUG]	Fiber::~Fiber id=3 total=43	
+2022-07-29 20:28:12	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 20:28:12	[DEBUG]	Fiber::~Fiber id=2 total=42	
+2022-07-29 20:28:12	[DEBUG]	stop	
+2022-07-29 20:28:12	[INFO]	Scheduer mian stop	
+2022-07-29 20:28:12	[DEBUG]	~IOManager	
+2022-07-29 20:28:12	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 20:28:12	[DEBUG]	stop	
+2022-07-29 20:28:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:28:12	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:28:12	[INFO]	idle fiber term	
+2022-07-29 20:28:12	[DEBUG]	Fiber::~Fiber id=19 total=40	
+2022-07-29 20:28:12	[INFO]	idle fiber term	
+2022-07-29 20:28:12	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 20:28:12	[DEBUG]	Fiber::~Fiber id=20 total=38	
+2022-07-29 20:28:12	[DEBUG]	Fiber::~Fiber id=0 total=37	
+2022-07-29 20:28:14	[DEBUG]	subFiber is created,fiber_id=25	
+2022-07-29 20:28:14	[DEBUG]	subFiber is created,fiber_id=26	
+2022-07-29 20:28:15	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:28:15	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:28:15	[INFO]	idle fiber term	
+2022-07-29 20:28:15	[INFO]	idle fiber term	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=18 total=37	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 20:28:15	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:28:15	[INFO]	idle fiber term	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=15 total=35	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=22 total=34	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=0 total=33	
+2022-07-29 20:28:15	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:28:15	[INFO]	idle fiber term	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=17 total=32	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=0 total=31	
+2022-07-29 20:28:15	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:28:15	[INFO]	idle fiber term	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=21 total=30	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 20:28:15	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:28:15	[INFO]	idle fiber term	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=16 total=28	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 20:28:15	[DEBUG]	~IOManager	
+2022-07-29 20:28:15	[DEBUG]	stop	
+2022-07-29 20:28:15	[INFO]	name=io idle stopping exit	
+2022-07-29 20:28:15	[INFO]	name=io idle stopping exit	
+2022-07-29 20:28:15	[INFO]	idle fiber term	
+2022-07-29 20:28:15	[INFO]	idle fiber term	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=7 total=26	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=0 total=24	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=14 total=24	
+2022-07-29 20:28:15	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 20:28:18	[INFO]	name=io idle stopping exit	
+2022-07-29 20:28:18	[INFO]	name=io idle stopping exit	
+2022-07-29 20:28:18	[INFO]	idle fiber term	
+2022-07-29 20:28:18	[INFO]	idle fiber term	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=9 total=21	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=0 total=20	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=11 total=20	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=0 total=19	
+2022-07-29 20:28:18	[INFO]	name=io idle stopping exit	
+2022-07-29 20:28:18	[INFO]	idle fiber term	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=12 total=18	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=0 total=17	
+2022-07-29 20:28:18	[INFO]	name=io idle stopping exit	
+2022-07-29 20:28:18	[INFO]	idle fiber term	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=8 total=16	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=0 total=15	
+2022-07-29 20:28:18	[INFO]	name=io idle stopping exit	
+2022-07-29 20:28:18	[INFO]	name=io idle stopping exit	
+2022-07-29 20:28:18	[INFO]	idle fiber term	
+2022-07-29 20:28:18	[INFO]	idle fiber term	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=10 total=13	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=0 total=12	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=13 total=12	
+2022-07-29 20:28:18	[DEBUG]	Fiber::~Fiber id=0 total=11	
+2022-07-29 20:28:18	[DEBUG]	~IOManager	
+2022-07-29 20:28:18	[DEBUG]	stop	
+2022-07-29 20:28:22	[INFO]	tickle	
+2022-07-29 20:31:25	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:31:25	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:31:25	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:31:25	[INFO]	main	
+2022-07-29 20:31:25	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 20:31:25	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:31:25	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:31:25	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 20:31:25	[DEBUG]	stop	
+2022-07-29 20:31:25	[INFO]	Scheduer mian stop	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 20:31:25	[DEBUG]	main fiber is created	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 20:31:25	[DEBUG]	run_fiber	
+2022-07-29 20:31:25	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 20:31:25	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=20 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 20:31:25	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 20:31:25	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=21 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 20:31:25	[INFO]	name=mian idle stopping exit	
+2022-07-29 20:31:25	[INFO]	idle fiber term	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 20:31:25	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 20:31:25	[DEBUG]	Fiber::~Fiber id=2 total=41	
+2022-07-29 20:31:25	[DEBUG]	stop	
+2022-07-29 20:31:25	[INFO]	Scheduer mian stop	
+2022-07-29 20:31:25	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 20:31:25	[DEBUG]	~IOManager	
+2022-07-29 20:31:25	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 20:31:25	[DEBUG]	stop	
+2022-07-29 20:31:25	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:31:25	[INFO]	idle fiber term	
+2022-07-29 20:31:25	[DEBUG]	Fiber::~Fiber id=21 total=40	
+2022-07-29 20:31:25	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 20:31:28	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:31:28	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:31:28	[INFO]	idle fiber term	
+2022-07-29 20:31:28	[INFO]	idle fiber term	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=18 total=37	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=15 total=36	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=0 total=35	
+2022-07-29 20:31:28	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:31:28	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:31:28	[INFO]	idle fiber term	
+2022-07-29 20:31:28	[INFO]	idle fiber term	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=19 total=33	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=17 total=33	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=0 total=32	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=0 total=31	
+2022-07-29 20:31:28	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:31:28	[INFO]	idle fiber term	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=20 total=30	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 20:31:28	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:31:28	[INFO]	idle fiber term	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=22 total=28	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 20:31:28	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:31:28	[INFO]	idle fiber term	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=16 total=26	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 20:31:28	[DEBUG]	~IOManager	
+2022-07-29 20:31:28	[DEBUG]	stop	
+2022-07-29 20:31:28	[INFO]	name=io idle stopping exit	
+2022-07-29 20:31:28	[INFO]	idle fiber term	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=10 total=24	
+2022-07-29 20:31:28	[DEBUG]	Fiber::~Fiber id=0 total=23	
+2022-07-29 20:32:06	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:32:06	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:32:06	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:32:06	[INFO]	main	
+2022-07-29 20:32:06	[DEBUG]	/home/admin/workSpace/bin/conf	
+2022-07-29 20:32:06	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK	
+2022-07-29 20:32:06	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK	
+2022-07-29 20:32:06	[INFO]	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=1	
+2022-07-29 20:32:06	[DEBUG]	stop	
+2022-07-29 20:32:06	[INFO]	Scheduer mian stop	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=2	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=3	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=4	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=5	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=6	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=7	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=8	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=9	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=10	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=11	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=12	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=13	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=14	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=15	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=16	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=17	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=18	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=19	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=20	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=21	
+2022-07-29 20:32:06	[DEBUG]	main fiber is created	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=22	
+2022-07-29 20:32:06	[DEBUG]	run_fiber	
+2022-07-29 20:32:06	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: http_io
+process_worker: http_io
+args: {}
+address:
+  - 0.0.0.0:8020	
+2022-07-29 20:32:06	[INFO]	type=http name=JKYi/1.1 server bind success:[Socket sock=24 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]	
+2022-07-29 20:32:06	[DEBUG]	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 0
+timeout: 1000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090	
+2022-07-29 20:32:06	[INFO]	type=http name=JKYi/1.0 server bind success:[Socket sock=25 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]	
+2022-07-29 20:32:06	[INFO]	name=mian idle stopping exit	
+2022-07-29 20:32:06	[INFO]	idle fiber term	
+2022-07-29 20:32:06	[DEBUG]	Fiber::~Fiber id=3 total=42	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=23	
+2022-07-29 20:32:06	[DEBUG]	Fiber::~Fiber id=2 total=42	
+2022-07-29 20:32:06	[DEBUG]	stop	
+2022-07-29 20:32:06	[INFO]	Scheduer mian stop	
+2022-07-29 20:32:06	[DEBUG]	~IOManager	
+2022-07-29 20:32:06	[DEBUG]	subFiber is created,fiber_id=24	
+2022-07-29 20:32:06	[DEBUG]	Fiber::~Fiber id=1 total=41	
+2022-07-29 20:32:06	[DEBUG]	stop	
+2022-07-29 20:32:06	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:32:06	[INFO]	idle fiber term	
+2022-07-29 20:32:06	[DEBUG]	Fiber::~Fiber id=15 total=40	
+2022-07-29 20:32:06	[DEBUG]	Fiber::~Fiber id=0 total=39	
+2022-07-29 20:32:09	[DEBUG]	subFiber is created,fiber_id=25	
+2022-07-29 20:32:09	[DEBUG]	subFiber is created,fiber_id=26	
+2022-07-29 20:32:09	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:32:09	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:32:09	[INFO]	idle fiber term	
+2022-07-29 20:32:09	[INFO]	idle fiber term	
+2022-07-29 20:32:09	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=20 total=39	
+2022-07-29 20:32:09	[INFO]	idle fiber term	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=0 total=38	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=16 total=37	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=0 total=36	
+2022-07-29 20:32:09	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:32:09	[INFO]	idle fiber term	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=22 total=35	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=0 total=34	
+2022-07-29 20:32:09	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:32:09	[INFO]	idle fiber term	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=17 total=34	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=21 total=33	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=0 total=32	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=0 total=31	
+2022-07-29 20:32:09	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:32:09	[INFO]	idle fiber term	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=19 total=30	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=0 total=29	
+2022-07-29 20:32:09	[INFO]	name=worker idle stopping exit	
+2022-07-29 20:32:09	[INFO]	idle fiber term	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=18 total=28	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=0 total=27	
+2022-07-29 20:32:09	[DEBUG]	~IOManager	
+2022-07-29 20:32:09	[DEBUG]	stop	
+2022-07-29 20:32:09	[INFO]	name=io idle stopping exit	
+2022-07-29 20:32:09	[INFO]	idle fiber term	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=12 total=26	
+2022-07-29 20:32:09	[DEBUG]	Fiber::~Fiber id=0 total=25	
+2022-07-29 20:32:12	[INFO]	name=io idle stopping exit	
+2022-07-29 20:32:12	[INFO]	name=io idle stopping exit	
+2022-07-29 20:32:12	[INFO]	idle fiber term	
+2022-07-29 20:32:12	[INFO]	idle fiber term	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=9 total=23	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=0 total=22	
+2022-07-29 20:32:12	[INFO]	name=io idle stopping exit	
+2022-07-29 20:32:12	[INFO]	idle fiber term	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=14 total=21	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=0 total=20	
+2022-07-29 20:32:12	[INFO]	name=io idle stopping exit	
+2022-07-29 20:32:12	[INFO]	idle fiber term	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=11 total=19	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=0 total=18	
+2022-07-29 20:32:12	[INFO]	name=io idle stopping exit	
+2022-07-29 20:32:12	[INFO]	idle fiber term	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=7 total=17	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=0 total=16	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=8 total=16	
+2022-07-29 20:32:12	[DEBUG]	Fiber::~Fiber id=0 total=15	
+2022-07-29 20:32:15	[DEBUG]	subFiber is created,fiber_id=27	
+2022-07-29 20:32:15	[DEBUG]	subFiber is created,fiber_id=28	
+2022-07-29 20:32:15	[DEBUG]	Fiber::~Fiber id=28 total=16	
+2022-07-29 20:32:21	[DEBUG]	Fiber::~Fiber id=27 total=15	
+2022-07-29 20:32:21	[INFO]	name=io idle stopping exit	
+2022-07-29 20:32:21	[INFO]	idle fiber term	
+2022-07-29 20:32:21	[DEBUG]	Fiber::~Fiber id=13 total=14	
+2022-07-29 20:32:21	[DEBUG]	Fiber::~Fiber id=0 total=13	
+2022-07-29 20:32:21	[DEBUG]	subFiber is created,fiber_id=29	
+2022-07-29 20:32:24	[DEBUG]	Fiber::~Fiber id=29 total=13	
+2022-07-29 20:32:24	[INFO]	name=io idle stopping exit	
+2022-07-29 20:32:24	[INFO]	idle fiber term	
+2022-07-29 20:32:24	[DEBUG]	Fiber::~Fiber id=10 total=12	
+2022-07-29 20:32:24	[DEBUG]	Fiber::~Fiber id=0 total=11	
+2022-07-29 20:32:24	[DEBUG]	~IOManager	
+2022-07-29 20:32:24	[DEBUG]	stop	
+2022-07-29 20:32:24	[INFO]	tickle	
+2022-07-29 20:33:11	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8020 remoteAddress=183.220.92.71:6852] keepalive = 1	
+2022-07-29 20:33:11	[DEBUG]	Fiber::~Fiber id=26 total=10	
+2022-07-29 20:33:11	[DEBUG]	subFiber is created,fiber_id=30	
+2022-07-29 20:34:17	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8020 remoteAddress=183.220.92.71:11308] keepalive = 1	
+2022-07-29 20:34:17	[DEBUG]	Fiber::~Fiber id=30 total=10	
+2022-07-29 20:34:17	[DEBUG]	subFiber is created,fiber_id=31	
+2022-07-29 20:35:33	[ERROR]	recvRequest faile,errno = 11 errstr = Resource temporarily unavailable client = [Socket sock=-1 is_Connected=0 family=2 type=1 protocol=0 localAddress=172.26.4.185:8020 remoteAddress=183.220.92.71:11332] keepalive = 1	
+2022-07-29 20:35:33	[DEBUG]	Fiber::~Fiber id=31 total=10	

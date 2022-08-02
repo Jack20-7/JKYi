@@ -60,6 +60,7 @@ public:
 		   tickle();
 	   }
    }
+   std::ostream& dump(std::ostream& os);
 protected:
    //该函数是用来唤醒协程的,相当于是通知调度器有任务来了
    virtual void tickle();

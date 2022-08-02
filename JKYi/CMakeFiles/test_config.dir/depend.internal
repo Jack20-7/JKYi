@@ -36,6 +36,7 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o
  /root/yaml-cpp-master/include/yaml-cpp/yaml.h
  JKYi/config.h
  JKYi/env.h
+ JKYi/fiber.h
  JKYi/log.h
  JKYi/mutex.h
  JKYi/noncopyable.h

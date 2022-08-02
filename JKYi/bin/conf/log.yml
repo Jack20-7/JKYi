@@ -14,3 +14,4 @@ logs:
             file: system.txt
             formatter: '%d%T[%p]%T%m%T%n'
           - type: StdoutLogAppender
+

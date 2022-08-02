@@ -5,9 +5,11 @@
 #include"env.h"
 #include"log.h"
 #include"http/http_server.h"
+#include"worker.h"
 
 #include<unistd.h>
 #include<signal.h>
+#include<memory.h>
 
 namespace JKYi{
 
@@ -116,8 +118,10 @@ int Application::main(int argc,char ** argv){
 }
 
 int Application::run_fiber(){
+  JKYi::WorkerMgr::GetInstance()->init();
+  JKYI_LOG_DEBUG(g_logger) << "run_fiber";
   auto http_confs = g_servers_conf->getValue(); 
-  //std::vector<TcpServer::ptr> svrs;
+  std::vector<TcpServer::ptr> svrs;
   for(auto&i : http_confs){
       JKYI_LOG_DEBUG(g_logger) << std::endl << LexicalCast<TcpServerConf,std::string>()(i);
       std::vector<Address::ptr> address;
@@ -150,40 +154,76 @@ int Application::run_fiber(){
              address.push_back(aaddr);
              continue;
          }
-         JKYI_LOG_ERROR(g_logger) << "invalid address: " << a;
-         _exit(0);
-      }
-      //   IOManager * accept_worker = JKYi::IOManager::GetThis();
-      //   IOManager * io_worker = JKYi::IOManager::GetThis();
-      //   IOManager * process_worker = JKYi::IOManager::GetThis();
-      //这三个调度器默认是使用当前线程的，但是如果配置文件中有显式的指定的话，就使用指定名称的
-      //TcpServer::ptr server;
-      JKYi::http::HttpServer::ptr server(new JKYi::http::HttpServer(i.keepalive));
-      std::vector<Address::ptr> fails;
-      if(!server->bind(address,fails)){
-          for(auto& m : fails){
-           JKYI_LOG_ERROR(g_logger) << "httpserver bind error:"
-                                    << *m;
-          }
-         return -1;
-       }
-      server->start();
-      m_httpservers.push_back(server);
-  }
+          JKYI_LOG_ERROR(g_logger) << "invalid address: " << a;
+          _exit(0);
+         }
+         IOManager * accept_worker = JKYi::IOManager::GetThis();
+         IOManager * io_worker = JKYi::IOManager::GetThis();
+         IOManager * process_worker = JKYi::IOManager::GetThis();
+
+         if(!i.accept_worker.empty()){
+             accept_worker = JKYi::WorkerMgr::GetInstance()->getAsIOManager(i.accept_worker).get();
+             if(!accept_worker){
+                 JKYI_LOG_ERROR(g_logger) << "accept_worker:" << i.accept_worker << "not exists";
+                 _exit(0);
+             }
+         }
+         if(!i.io_worker.empty()){
+             io_worker = JKYi::WorkerMgr::GetInstance()->getAsIOManager(i.io_worker).get();
+             if(!io_worker){
+                 JKYI_LOG_ERROR(g_logger) << "io_worker:" << i.io_worker << " not exists";
+                 _exit(0);
+             }
+         }
+         if(!i.process_worker.empty()){
+             process_worker = JKYi::WorkerMgr::GetInstance()->getAsIOManager(i.process_worker).get();
+             if(!process_worker){
+                 JKYI_LOG_ERROR(g_logger) << "process_worker:" << i.process_worker << "not exists";
+                 _exit(0);
+             }
+         }
+         //
+         TcpServer::ptr server;
+         if(i.type == "http"){
+             server.reset(new JKYi::http::HttpServer(i.keepalive,process_worker,io_worker,accept_worker));
+         }else{
+             JKYI_LOG_ERROR(g_logger) << "invalid server type = "<<i.type 
+                                                                 << LexicalCast<TcpServerConf,std::string>()(i);
+             _exit(0);
+         }
+         if(!i.name.empty()){
+             server->setName(i.name);
+         }
+         std::vector<Address::ptr> fails;
+         if(!server->bind(address,fails)){
+             for(auto& x : fails){
+                 JKYI_LOG_ERROR(g_logger) << "bind address fail:" << x->toString();
+             }
+             _exit(0);
+         }
+          server->setConf(i);
+          m_servers[i.type].push_back(server);
+          svrs.push_back(server);
+    }
+    
+    for(auto& i : svrs){
+        i->start();
+    }
     return 0;
 }
 
-//bool Application::getServer(const std::string& type,std::vector<TcpServer::ptr>&svrs){
-//    auto it = m_servers.find(type);
-//    if(it == m_servers.end()){
-//        return false;
-//    }
-//    svrs = it->second;
-//    return true;
-//}
-//void Application::listAllServer(const std::map<std::string,std::vector<TcpServer::ptr>>&servers){
-//    servers = m_servers;
-//}
+bool Application::getServer(const std::string& type,std::vector<TcpServer::ptr>&svrs){
+    auto it = m_servers.find(type);
+    if(it == m_servers.end()){
+        return false;
+    }
+    svrs = it->second;
+    return true;
+}
+void Application::listAllServer(std::map<std::string,std::vector<TcpServer::ptr>>&servers){
+    servers = m_servers;
+    return ;
+}
 
 }
 

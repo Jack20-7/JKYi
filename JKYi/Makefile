@@ -62,17 +62,6 @@ CMAKE_BINARY_DIR = /home/admin/workSpace
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -83,6 +72,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -117,225 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_daemon
+# Target rules for targets named test_address
 
 # Build rule for target.
-test_daemon: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_daemon
-.PHONY : test_daemon
+test_address: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_address
+.PHONY : test_address
 
 # fast build rule for target.
-test_daemon/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
-.PHONY : test_daemon/fast
-
-#=============================================================================
-# Target rules for targets named test_http_parser
-
-# Build rule for target.
-test_http_parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_parser
-.PHONY : test_http_parser
-
-# fast build rule for target.
-test_http_parser/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
-.PHONY : test_http_parser/fast
-
-#=============================================================================
-# Target rules for targets named test_bytearray
-
-# Build rule for target.
-test_bytearray: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_bytearray
-.PHONY : test_bytearray
-
-# fast build rule for target.
-test_bytearray/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/build
-.PHONY : test_bytearray/fast
-
-#=============================================================================
-# Target rules for targets named test_http
-
-# Build rule for target.
-test_http: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http
-.PHONY : test_http
-
-# fast build rule for target.
-test_http/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/build
-.PHONY : test_http/fast
-
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
-
-#=============================================================================
-# Target rules for targets named test_socket
-
-# Build rule for target.
-test_socket: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_socket
-.PHONY : test_socket
-
-# fast build rule for target.
-test_socket/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
-.PHONY : test_socket/fast
-
-#=============================================================================
-# Target rules for targets named test_thread
-
-# Build rule for target.
-test_thread: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_thread
-.PHONY : test_thread
-
-# fast build rule for target.
-test_thread/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
-.PHONY : test_thread/fast
-
-#=============================================================================
-# Target rules for targets named test_http_server
-
-# Build rule for target.
-test_http_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_server
-.PHONY : test_http_server
-
-# fast build rule for target.
-test_http_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/build
-.PHONY : test_http_server/fast
-
-#=============================================================================
-# Target rules for targets named test_util
-
-# Build rule for target.
-test_util: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_util
-.PHONY : test_util
-
-# fast build rule for target.
-test_util/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/build
-.PHONY : test_util/fast
-
-#=============================================================================
-# Target rules for targets named test_config
-
-# Build rule for target.
-test_config: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_config
-.PHONY : test_config
-
-# fast build rule for target.
-test_config/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
-.PHONY : test_config/fast
-
-#=============================================================================
-# Target rules for targets named test_hook
-
-# Build rule for target.
-test_hook: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_hook
-.PHONY : test_hook
-
-# fast build rule for target.
-test_hook/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/build
-.PHONY : test_hook/fast
-
-#=============================================================================
-# Target rules for targets named test_fiber
-
-# Build rule for target.
-test_fiber: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_fiber
-.PHONY : test_fiber
-
-# fast build rule for target.
-test_fiber/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/build
-.PHONY : test_fiber/fast
-
-#=============================================================================
-# Target rules for targets named test_env
-
-# Build rule for target.
-test_env: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_env
-.PHONY : test_env
-
-# fast build rule for target.
-test_env/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
-.PHONY : test_env/fast
-
-#=============================================================================
-# Target rules for targets named my_http_server
-
-# Build rule for target.
-my_http_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_http_server
-.PHONY : my_http_server
-
-# fast build rule for target.
-my_http_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/build
-.PHONY : my_http_server/fast
-
-#=============================================================================
-# Target rules for targets named test_http_connection
-
-# Build rule for target.
-test_http_connection: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_connection
-.PHONY : test_http_connection
-
-# fast build rule for target.
-test_http_connection/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
-.PHONY : test_http_connection/fast
-
-#=============================================================================
-# Target rules for targets named JKYi
-
-# Build rule for target.
-JKYi: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 JKYi
-.PHONY : JKYi
-
-# fast build rule for target.
-JKYi/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/build
-.PHONY : JKYi/fast
-
-#=============================================================================
-# Target rules for targets named test_scheduler
-
-# Build rule for target.
-test_scheduler: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_scheduler
-.PHONY : test_scheduler
-
-# fast build rule for target.
-test_scheduler/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/build
-.PHONY : test_scheduler/fast
+test_address/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
+.PHONY : test_address/fast
 
 #=============================================================================
 # Target rules for targets named test_iomanager
@@ -351,6 +143,123 @@ test_iomanager/fast:
 .PHONY : test_iomanager/fast
 
 #=============================================================================
+# Target rules for targets named test_scheduler
+
+# Build rule for target.
+test_scheduler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_scheduler
+.PHONY : test_scheduler
+
+# fast build rule for target.
+test_scheduler/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_scheduler.dir/build.make CMakeFiles/test_scheduler.dir/build
+.PHONY : test_scheduler/fast
+
+#=============================================================================
+# Target rules for targets named JKYi
+
+# Build rule for target.
+JKYi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 JKYi
+.PHONY : JKYi
+
+# fast build rule for target.
+JKYi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/build
+.PHONY : JKYi/fast
+
+#=============================================================================
+# Target rules for targets named my_http_server
+
+# Build rule for target.
+my_http_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_http_server
+.PHONY : my_http_server
+
+# fast build rule for target.
+my_http_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_http_server.dir/build.make CMakeFiles/my_http_server.dir/build
+.PHONY : my_http_server/fast
+
+#=============================================================================
+# Target rules for targets named test_ws_client
+
+# Build rule for target.
+test_ws_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ws_client
+.PHONY : test_ws_client
+
+# fast build rule for target.
+test_ws_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/build
+.PHONY : test_ws_client/fast
+
+#=============================================================================
+# Target rules for targets named test_fiber
+
+# Build rule for target.
+test_fiber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_fiber
+.PHONY : test_fiber
+
+# fast build rule for target.
+test_fiber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/build
+.PHONY : test_fiber/fast
+
+#=============================================================================
+# Target rules for targets named test_http_connection
+
+# Build rule for target.
+test_http_connection: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_connection
+.PHONY : test_http_connection
+
+# fast build rule for target.
+test_http_connection/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_connection.dir/build.make CMakeFiles/test_http_connection.dir/build
+.PHONY : test_http_connection/fast
+
+#=============================================================================
+# Target rules for targets named test_hook
+
+# Build rule for target.
+test_hook: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_hook
+.PHONY : test_hook
+
+# fast build rule for target.
+test_hook/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/build
+.PHONY : test_hook/fast
+
+#=============================================================================
+# Target rules for targets named test_env
+
+# Build rule for target.
+test_env: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_env
+.PHONY : test_env
+
+# fast build rule for target.
+test_env/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_env.dir/build.make CMakeFiles/test_env.dir/build
+.PHONY : test_env/fast
+
+#=============================================================================
+# Target rules for targets named test_util
+
+# Build rule for target.
+test_util: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_util
+.PHONY : test_util
+
+# fast build rule for target.
+test_util/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/build
+.PHONY : test_util/fast
+
+#=============================================================================
 # Target rules for targets named test_application
 
 # Build rule for target.
@@ -364,17 +273,134 @@ test_application/fast:
 .PHONY : test_application/fast
 
 #=============================================================================
-# Target rules for targets named test_address
+# Target rules for targets named test_http_server
 
 # Build rule for target.
-test_address: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_address
-.PHONY : test_address
+test_http_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_server
+.PHONY : test_http_server
 
 # fast build rule for target.
-test_address/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_address.dir/build.make CMakeFiles/test_address.dir/build
-.PHONY : test_address/fast
+test_http_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_server.dir/build.make CMakeFiles/test_http_server.dir/build
+.PHONY : test_http_server/fast
+
+#=============================================================================
+# Target rules for targets named test_thread
+
+# Build rule for target.
+test_thread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_thread
+.PHONY : test_thread
+
+# fast build rule for target.
+test_thread/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
+
+#=============================================================================
+# Target rules for targets named test_config
+
+# Build rule for target.
+test_config: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_config
+.PHONY : test_config
+
+# fast build rule for target.
+test_config/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
+.PHONY : test_config/fast
+
+#=============================================================================
+# Target rules for targets named test_socket
+
+# Build rule for target.
+test_socket: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_socket
+.PHONY : test_socket
+
+# fast build rule for target.
+test_socket/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
+.PHONY : test_socket/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named test_http
+
+# Build rule for target.
+test_http: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http
+.PHONY : test_http
+
+# fast build rule for target.
+test_http/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/build
+.PHONY : test_http/fast
+
+#=============================================================================
+# Target rules for targets named test_ws_server
+
+# Build rule for target.
+test_ws_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ws_server
+.PHONY : test_ws_server
+
+# fast build rule for target.
+test_ws_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_server.dir/build.make CMakeFiles/test_ws_server.dir/build
+.PHONY : test_ws_server/fast
+
+#=============================================================================
+# Target rules for targets named test_bytearray
+
+# Build rule for target.
+test_bytearray: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_bytearray
+.PHONY : test_bytearray
+
+# fast build rule for target.
+test_bytearray/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_bytearray.dir/build.make CMakeFiles/test_bytearray.dir/build
+.PHONY : test_bytearray/fast
+
+#=============================================================================
+# Target rules for targets named test_http_parser
+
+# Build rule for target.
+test_http_parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_parser
+.PHONY : test_http_parser
+
+# fast build rule for target.
+test_http_parser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
+.PHONY : test_http_parser/fast
+
+#=============================================================================
+# Target rules for targets named test_daemon
+
+# Build rule for target.
+test_daemon: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_daemon
+.PHONY : test_daemon
+
+# fast build rule for target.
+test_daemon/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_daemon.dir/build.make CMakeFiles/test_daemon.dir/build
+.PHONY : test_daemon/fast
 
 JKYi/address.o: JKYi/address.cc.o
 
@@ -835,6 +861,114 @@ JKYi/http/servlet.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/servlet.cc.s
 .PHONY : JKYi/http/servlet.cc.s
 
+JKYi/http/ws_connection.o: JKYi/http/ws_connection.cc.o
+
+.PHONY : JKYi/http/ws_connection.o
+
+# target to build an object file
+JKYi/http/ws_connection.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_connection.cc.o
+.PHONY : JKYi/http/ws_connection.cc.o
+
+JKYi/http/ws_connection.i: JKYi/http/ws_connection.cc.i
+
+.PHONY : JKYi/http/ws_connection.i
+
+# target to preprocess a source file
+JKYi/http/ws_connection.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_connection.cc.i
+.PHONY : JKYi/http/ws_connection.cc.i
+
+JKYi/http/ws_connection.s: JKYi/http/ws_connection.cc.s
+
+.PHONY : JKYi/http/ws_connection.s
+
+# target to generate assembly for a file
+JKYi/http/ws_connection.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_connection.cc.s
+.PHONY : JKYi/http/ws_connection.cc.s
+
+JKYi/http/ws_server.o: JKYi/http/ws_server.cc.o
+
+.PHONY : JKYi/http/ws_server.o
+
+# target to build an object file
+JKYi/http/ws_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_server.cc.o
+.PHONY : JKYi/http/ws_server.cc.o
+
+JKYi/http/ws_server.i: JKYi/http/ws_server.cc.i
+
+.PHONY : JKYi/http/ws_server.i
+
+# target to preprocess a source file
+JKYi/http/ws_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_server.cc.i
+.PHONY : JKYi/http/ws_server.cc.i
+
+JKYi/http/ws_server.s: JKYi/http/ws_server.cc.s
+
+.PHONY : JKYi/http/ws_server.s
+
+# target to generate assembly for a file
+JKYi/http/ws_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_server.cc.s
+.PHONY : JKYi/http/ws_server.cc.s
+
+JKYi/http/ws_servlet.o: JKYi/http/ws_servlet.cc.o
+
+.PHONY : JKYi/http/ws_servlet.o
+
+# target to build an object file
+JKYi/http/ws_servlet.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_servlet.cc.o
+.PHONY : JKYi/http/ws_servlet.cc.o
+
+JKYi/http/ws_servlet.i: JKYi/http/ws_servlet.cc.i
+
+.PHONY : JKYi/http/ws_servlet.i
+
+# target to preprocess a source file
+JKYi/http/ws_servlet.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_servlet.cc.i
+.PHONY : JKYi/http/ws_servlet.cc.i
+
+JKYi/http/ws_servlet.s: JKYi/http/ws_servlet.cc.s
+
+.PHONY : JKYi/http/ws_servlet.s
+
+# target to generate assembly for a file
+JKYi/http/ws_servlet.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_servlet.cc.s
+.PHONY : JKYi/http/ws_servlet.cc.s
+
+JKYi/http/ws_session.o: JKYi/http/ws_session.cc.o
+
+.PHONY : JKYi/http/ws_session.o
+
+# target to build an object file
+JKYi/http/ws_session.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_session.cc.o
+.PHONY : JKYi/http/ws_session.cc.o
+
+JKYi/http/ws_session.i: JKYi/http/ws_session.cc.i
+
+.PHONY : JKYi/http/ws_session.i
+
+# target to preprocess a source file
+JKYi/http/ws_session.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_session.cc.i
+.PHONY : JKYi/http/ws_session.cc.i
+
+JKYi/http/ws_session.s: JKYi/http/ws_session.cc.s
+
+.PHONY : JKYi/http/ws_session.s
+
+# target to generate assembly for a file
+JKYi/http/ws_session.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/http/ws_session.cc.s
+.PHONY : JKYi/http/ws_session.cc.s
+
 JKYi/iomanager.o: JKYi/iomanager.cc.o
 
 .PHONY : JKYi/iomanager.o
@@ -1158,6 +1292,33 @@ JKYi/util.s: JKYi/util.cc.s
 JKYi/util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/util.cc.s
 .PHONY : JKYi/util.cc.s
+
+JKYi/worker.o: JKYi/worker.cc.o
+
+.PHONY : JKYi/worker.o
+
+# target to build an object file
+JKYi/worker.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/worker.cc.o
+.PHONY : JKYi/worker.cc.o
+
+JKYi/worker.i: JKYi/worker.cc.i
+
+.PHONY : JKYi/worker.i
+
+# target to preprocess a source file
+JKYi/worker.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/worker.cc.i
+.PHONY : JKYi/worker.cc.i
+
+JKYi/worker.s: JKYi/worker.cc.s
+
+.PHONY : JKYi/worker.s
+
+# target to generate assembly for a file
+JKYi/worker.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/worker.cc.s
+.PHONY : JKYi/worker.cc.s
 
 sample/my_http_server.o: sample/my_http_server.cc.o
 
@@ -1672,34 +1833,90 @@ tests/test_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cc.s
 .PHONY : tests/test_util.cc.s
 
+tests/test_ws_client.o: tests/test_ws_client.cc.o
+
+.PHONY : tests/test_ws_client.o
+
+# target to build an object file
+tests/test_ws_client.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o
+.PHONY : tests/test_ws_client.cc.o
+
+tests/test_ws_client.i: tests/test_ws_client.cc.i
+
+.PHONY : tests/test_ws_client.i
+
+# target to preprocess a source file
+tests/test_ws_client.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.i
+.PHONY : tests/test_ws_client.cc.i
+
+tests/test_ws_client.s: tests/test_ws_client.cc.s
+
+.PHONY : tests/test_ws_client.s
+
+# target to generate assembly for a file
+tests/test_ws_client.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_client.dir/build.make CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.s
+.PHONY : tests/test_ws_client.cc.s
+
+tests/test_ws_server.o: tests/test_ws_server.cc.o
+
+.PHONY : tests/test_ws_server.o
+
+# target to build an object file
+tests/test_ws_server.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_server.dir/build.make CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.o
+.PHONY : tests/test_ws_server.cc.o
+
+tests/test_ws_server.i: tests/test_ws_server.cc.i
+
+.PHONY : tests/test_ws_server.i
+
+# target to preprocess a source file
+tests/test_ws_server.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_server.dir/build.make CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.i
+.PHONY : tests/test_ws_server.cc.i
+
+tests/test_ws_server.s: tests/test_ws_server.cc.s
+
+.PHONY : tests/test_ws_server.s
+
+# target to generate assembly for a file
+tests/test_ws_server.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ws_server.dir/build.make CMakeFiles/test_ws_server.dir/tests/test_ws_server.cc.s
+.PHONY : tests/test_ws_server.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... test_daemon"
-	@echo "... edit_cache"
-	@echo "... test_http_parser"
-	@echo "... test_bytearray"
-	@echo "... test_http"
-	@echo "... test"
 	@echo "... rebuild_cache"
-	@echo "... test_socket"
-	@echo "... test_thread"
-	@echo "... test_http_server"
-	@echo "... test_util"
-	@echo "... test_config"
-	@echo "... test_hook"
-	@echo "... test_fiber"
-	@echo "... test_env"
-	@echo "... my_http_server"
-	@echo "... test_http_connection"
-	@echo "... JKYi"
-	@echo "... test_scheduler"
-	@echo "... test_iomanager"
-	@echo "... test_application"
 	@echo "... test_address"
+	@echo "... test_iomanager"
+	@echo "... test_scheduler"
+	@echo "... JKYi"
+	@echo "... my_http_server"
+	@echo "... test_ws_client"
+	@echo "... test_fiber"
+	@echo "... test_http_connection"
+	@echo "... test_hook"
+	@echo "... test_env"
+	@echo "... test_util"
+	@echo "... edit_cache"
+	@echo "... test_application"
+	@echo "... test_http_server"
+	@echo "... test_thread"
+	@echo "... test_config"
+	@echo "... test_socket"
+	@echo "... test"
+	@echo "... test_http"
+	@echo "... test_ws_server"
+	@echo "... test_bytearray"
+	@echo "... test_http_parser"
+	@echo "... test_daemon"
 	@echo "... JKYi/address.o"
 	@echo "... JKYi/address.i"
 	@echo "... JKYi/address.s"
@@ -1751,6 +1968,18 @@ help:
 	@echo "... JKYi/http/servlet.o"
 	@echo "... JKYi/http/servlet.i"
 	@echo "... JKYi/http/servlet.s"
+	@echo "... JKYi/http/ws_connection.o"
+	@echo "... JKYi/http/ws_connection.i"
+	@echo "... JKYi/http/ws_connection.s"
+	@echo "... JKYi/http/ws_server.o"
+	@echo "... JKYi/http/ws_server.i"
+	@echo "... JKYi/http/ws_server.s"
+	@echo "... JKYi/http/ws_servlet.o"
+	@echo "... JKYi/http/ws_servlet.i"
+	@echo "... JKYi/http/ws_servlet.s"
+	@echo "... JKYi/http/ws_session.o"
+	@echo "... JKYi/http/ws_session.i"
+	@echo "... JKYi/http/ws_session.s"
 	@echo "... JKYi/iomanager.o"
 	@echo "... JKYi/iomanager.i"
 	@echo "... JKYi/iomanager.s"
@@ -1787,6 +2016,9 @@ help:
 	@echo "... JKYi/util.o"
 	@echo "... JKYi/util.i"
 	@echo "... JKYi/util.s"
+	@echo "... JKYi/worker.o"
+	@echo "... JKYi/worker.i"
+	@echo "... JKYi/worker.s"
 	@echo "... sample/my_http_server.o"
 	@echo "... sample/my_http_server.i"
 	@echo "... sample/my_http_server.s"
@@ -1844,6 +2076,12 @@ help:
 	@echo "... tests/test_util.o"
 	@echo "... tests/test_util.i"
 	@echo "... tests/test_util.s"
+	@echo "... tests/test_ws_client.o"
+	@echo "... tests/test_ws_client.i"
+	@echo "... tests/test_ws_client.s"
+	@echo "... tests/test_ws_server.o"
+	@echo "... tests/test_ws_server.i"
+	@echo "... tests/test_ws_server.s"
 .PHONY : help
 
 

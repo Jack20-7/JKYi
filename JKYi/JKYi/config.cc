@@ -40,7 +40,6 @@ void Config::LoadFromYaml(const YAML::Node& node){
     ListAllMember("",node,all_nodes);
     for(auto&i : all_nodes){
         std::string key=i.first;
-        JKYI_LOG_DEBUG(g_logger) << key;
         if(key.empty()){
             continue;
         }

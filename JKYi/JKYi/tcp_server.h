@@ -130,6 +130,9 @@ public:
     std::vector<JKYi::Socket::ptr> getSocks()const { return m_socks; }
 
     virtual std::string toString(const std::string& prefix = "");
+
+    void setConf(TcpServerConf::ptr v) { m_conf = v; }
+    void setConf(const TcpServerConf& v);
 protected:
     virtual void handleClient(Socket::ptr client);
     virtual void startAccept(Socket::ptr sock);
@@ -148,11 +151,15 @@ protected:
     uint64_t m_recvTimeout;
     //
     std::string m_name;
-    //服务器的类型l
+    //服务器的类型
     std::string m_type = "tcp";
 
     //服务器是否停止运行
     bool m_isStop;
+
+    //bool m_ssl = false;
+
+    TcpServerConf::ptr m_conf;
 };
 }
 #endif

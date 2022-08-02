@@ -310,7 +310,6 @@ private:
     MapType m_params;
       
     MapType m_cookies;
-    
 
 };
 

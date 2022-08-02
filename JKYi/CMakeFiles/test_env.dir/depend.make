@@ -34,6 +34,7 @@ CMakeFiles/test_env.dir/tests/test_env.cc.o: /root/yaml-cpp-master/include/yaml-
 CMakeFiles/test_env.dir/tests/test_env.cc.o: /root/yaml-cpp-master/include/yaml-cpp/traits.h
 CMakeFiles/test_env.dir/tests/test_env.cc.o: /root/yaml-cpp-master/include/yaml-cpp/yaml.h
 CMakeFiles/test_env.dir/tests/test_env.cc.o: JKYi/env.h
+CMakeFiles/test_env.dir/tests/test_env.cc.o: JKYi/fiber.h
 CMakeFiles/test_env.dir/tests/test_env.cc.o: JKYi/log.h
 CMakeFiles/test_env.dir/tests/test_env.cc.o: JKYi/mutex.h
 CMakeFiles/test_env.dir/tests/test_env.cc.o: JKYi/noncopyable.h

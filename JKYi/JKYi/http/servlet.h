@@ -27,7 +27,7 @@ public:
     virtual int32_t handle(JKYi::http::HttpRequest::ptr request,JKYi::http::HttpResponse::ptr response,JKYi::http::HttpSession::ptr session) = 0;
 
     const std::string getName()const { return m_name; }
-private:
+protected:
     //服务器的名称
     std::string m_name;
 };

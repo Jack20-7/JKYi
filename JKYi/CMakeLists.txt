@@ -40,10 +40,15 @@ set (LIB_SRC
     JKYi/http/http_server.cc
     JKYi/http/servlet.cc
     JKYi/http/http_connection.cc
+    JKYi/http/ws_session.cc
+    JKYi/http/ws_server.cc
+    JKYi/http/ws_connection.cc
+    JKYi/http/ws_servlet.cc
     JKYi/stream.cc
     JKYi/stream/socket_stream.cc
     JKYi/tcp_server.cc
     JKYi/application.cc
+    JKYi/worker.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
@@ -100,6 +105,10 @@ JKYi_add_executable(test_daemon "tests/test_daemon.cc" JKYi "${LIBS}")
 JKYi_add_executable(test_env "tests/test_env.cc" JKYi "${LIBS}")
 
 JKYi_add_executable(test_application "tests/test_application.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_ws_server "tests/test_ws_server.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_ws_client "tests/test_ws_client.cc" JKYi "${LIBS}")
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

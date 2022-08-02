@@ -11,6 +11,7 @@
 #include<list>
 
 #include"noncopyable.h"
+#include"fiber.h"
 
 namespace JKYi{
 //对信号量的封装
@@ -233,6 +234,25 @@ public:
    }
 private:
    volatile std::atomic_flag m_mutex;
+};
+
+//用于协程的信号量
+class Scheduler;
+class FiberSemaphore{
+public:
+    typedef SpinLock MutexType;
+    FiberSemaphore(size_t initial_concurrency = 0);
+    ~FiberSemaphore();
+
+    bool tryWait();
+    void wait();
+    void notify();
+private:
+    //自旋锁的目的就是为了保护下面的信号量的值
+    MutexType m_mutex;
+    std::list<std::pair<Scheduler*,Fiber::ptr> >m_waiters;
+    size_t m_concurrency;
+
 };
 
 }

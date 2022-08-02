@@ -21,6 +21,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/admin/workSpace/JKYi/http/http_session.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/http/http_session.cc.o"
   "/home/admin/workSpace/JKYi/http/httpclient_parser.rl.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o"
   "/home/admin/workSpace/JKYi/http/servlet.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/http/servlet.cc.o"
+  "/home/admin/workSpace/JKYi/http/ws_connection.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/http/ws_connection.cc.o"
+  "/home/admin/workSpace/JKYi/http/ws_server.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/http/ws_server.cc.o"
+  "/home/admin/workSpace/JKYi/http/ws_servlet.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/http/ws_servlet.cc.o"
+  "/home/admin/workSpace/JKYi/http/ws_session.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/http/ws_session.cc.o"
   "/home/admin/workSpace/JKYi/iomanager.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/iomanager.cc.o"
   "/home/admin/workSpace/JKYi/log.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/log.cc.o"
   "/home/admin/workSpace/JKYi/mutex.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/mutex.cc.o"
@@ -33,6 +37,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/admin/workSpace/JKYi/timer.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/timer.cc.o"
   "/home/admin/workSpace/JKYi/uri.rl.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o"
   "/home/admin/workSpace/JKYi/util.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/util.cc.o"
+  "/home/admin/workSpace/JKYi/worker.cc" "/home/admin/workSpace/CMakeFiles/JKYi.dir/JKYi/worker.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

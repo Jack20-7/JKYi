@@ -35,6 +35,7 @@ CMakeFiles/test_env.dir/tests/test_env.cc.o
  /root/yaml-cpp-master/include/yaml-cpp/traits.h
  /root/yaml-cpp-master/include/yaml-cpp/yaml.h
  JKYi/env.h
+ JKYi/fiber.h
  JKYi/log.h
  JKYi/mutex.h
  JKYi/noncopyable.h
