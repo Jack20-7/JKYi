@@ -86,6 +86,8 @@ my_http_server_EXTERNAL_OBJECTS =
 bin/my_http_server: CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o
 bin/my_http_server: CMakeFiles/my_http_server.dir/build.make
 bin/my_http_server: lib/libJKYi.so
+bin/my_http_server: /usr/lib64/libssl.so
+bin/my_http_server: /usr/lib64/libcrypto.so
 bin/my_http_server: CMakeFiles/my_http_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/my_http_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_http_server.dir/link.txt --verbose=$(VERBOSE)

@@ -86,6 +86,8 @@ test_application_EXTERNAL_OBJECTS =
 bin/test_application: CMakeFiles/test_application.dir/tests/test_application.cc.o
 bin/test_application: CMakeFiles/test_application.dir/build.make
 bin/test_application: lib/libJKYi.so
+bin/test_application: /usr/lib64/libssl.so
+bin/test_application: /usr/lib64/libcrypto.so
 bin/test_application: CMakeFiles/test_application.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_application"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_application.dir/link.txt --verbose=$(VERBOSE)

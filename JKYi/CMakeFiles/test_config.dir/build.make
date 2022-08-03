@@ -86,6 +86,8 @@ test_config_EXTERNAL_OBJECTS =
 bin/test_config: CMakeFiles/test_config.dir/tests/test_config.cc.o
 bin/test_config: CMakeFiles/test_config.dir/build.make
 bin/test_config: lib/libJKYi.so
+bin/test_config: /usr/lib64/libssl.so
+bin/test_config: /usr/lib64/libcrypto.so
 bin/test_config: CMakeFiles/test_config.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_config"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_config.dir/link.txt --verbose=$(VERBOSE)

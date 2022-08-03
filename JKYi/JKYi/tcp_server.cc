@@ -30,17 +30,18 @@ void TcpServer::setConf(const TcpServerConf& v){
     m_conf.reset(new TcpServerConf(v));
 }
 
-bool TcpServer::bind(Address::ptr addr){
+bool TcpServer::bind(Address::ptr addr,bool ssl){
     std::vector<Address::ptr>addrs;
     std::vector<Address::ptr>fails;
     addrs.push_back(addr);
-    return bind(addrs,fails);
+    return bind(addrs,fails,ssl);
 }
 
 bool TcpServer::bind(const std::vector<Address::ptr>& addrs,
-                         std::vector<Address::ptr>&fails){
+                         std::vector<Address::ptr>&fails,bool ssl){
+    m_ssl = ssl;
     for(auto& i:addrs){
-        Socket::ptr sock = Socket::CreateTCP(i);
+        Socket::ptr sock = ssl ? SSLSocket::CreateTCP(i) : Socket::CreateTCP(i);
         if(!sock->bind(i)){
            JKYI_LOG_ERROR(g_logger)<<"bind fail errno:"<<errno
                                    <<" errstr = "<<strerror(errno)
@@ -65,6 +66,7 @@ bool TcpServer::bind(const std::vector<Address::ptr>& addrs,
    for(auto& i : m_socks){
        JKYI_LOG_INFO(g_logger)<<"type="<<m_type
                               <<" name="<<m_name
+                              <<" ssl = " <<m_ssl
                               <<" server bind success:"<<i->toString();
    }
    return true;
@@ -119,9 +121,21 @@ std::string TcpServer::toString(const std::string &prefix){
       <<" recv_timeout="<<m_recvTimeout<<"]"<<std::endl;
     std::string pfx = prefix.empty() ? " " :prefix;
     for(auto& i : m_socks){
-        ss<<pfx<<pfx<<i->toString()<<std::endl;
+        ss << pfx << pfx << i->toString() << std::endl;
     }
     return ss.str();
+}
+
+bool TcpServer::loadCertificates(const std::string& cert_file,const std::string& key_file){
+    for(auto& i : m_socks){
+        auto  ssl_socket = std::dynamic_pointer_cast<SSLSocket>(i);
+        if(ssl_socket){
+            if(!ssl_socket->loadCertificates(cert_file,key_file)){
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 }

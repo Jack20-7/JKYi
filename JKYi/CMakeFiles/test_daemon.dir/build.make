@@ -86,6 +86,8 @@ test_daemon_EXTERNAL_OBJECTS =
 bin/test_daemon: CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o
 bin/test_daemon: CMakeFiles/test_daemon.dir/build.make
 bin/test_daemon: lib/libJKYi.so
+bin/test_daemon: /usr/lib64/libssl.so
+bin/test_daemon: /usr/lib64/libcrypto.so
 bin/test_daemon: CMakeFiles/test_daemon.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_daemon"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_daemon.dir/link.txt --verbose=$(VERBOSE)

@@ -86,6 +86,8 @@ test_http_parser_EXTERNAL_OBJECTS =
 bin/test_http_parser: CMakeFiles/test_http_parser.dir/tests/test_http_parser.cc.o
 bin/test_http_parser: CMakeFiles/test_http_parser.dir/build.make
 bin/test_http_parser: lib/libJKYi.so
+bin/test_http_parser: /usr/lib64/libssl.so
+bin/test_http_parser: /usr/lib64/libcrypto.so
 bin/test_http_parser: CMakeFiles/test_http_parser.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_http_parser"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_http_parser.dir/link.txt --verbose=$(VERBOSE)

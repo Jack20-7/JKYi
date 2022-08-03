@@ -86,6 +86,8 @@ test_http_EXTERNAL_OBJECTS =
 bin/test_http: CMakeFiles/test_http.dir/tests/test_http.cc.o
 bin/test_http: CMakeFiles/test_http.dir/build.make
 bin/test_http: lib/libJKYi.so
+bin/test_http: /usr/lib64/libssl.so
+bin/test_http: /usr/lib64/libcrypto.so
 bin/test_http: CMakeFiles/test_http.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_http"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_http.dir/link.txt --verbose=$(VERBOSE)

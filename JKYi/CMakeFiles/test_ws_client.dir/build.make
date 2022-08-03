@@ -86,6 +86,8 @@ test_ws_client_EXTERNAL_OBJECTS =
 bin/test_ws_client: CMakeFiles/test_ws_client.dir/tests/test_ws_client.cc.o
 bin/test_ws_client: CMakeFiles/test_ws_client.dir/build.make
 bin/test_ws_client: lib/libJKYi.so
+bin/test_ws_client: /usr/lib64/libssl.so
+bin/test_ws_client: /usr/lib64/libcrypto.so
 bin/test_ws_client: CMakeFiles/test_ws_client.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_ws_client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_ws_client.dir/link.txt --verbose=$(VERBOSE)

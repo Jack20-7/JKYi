@@ -436,16 +436,192 @@ void Socket::newSock(){
     }
 }
 
+namespace {
+//在man函数之前做初始化操作
+struct _SSLInit{
+    _SSLInit(){
+        SSL_library_init();
+        SSL_load_error_strings();
+        OpenSSL_add_all_algorithms();
+    }
+};
 
+static _SSLInit s_init;
+}
 
+SSLSocket::SSLSocket(int family,int type,int protocol)
+    :Socket(family,type,protocol){
+}
 
+Socket::ptr SSLSocket::accept(){
+    SSLSocket::ptr sock(new SSLSocket(m_family,m_type,m_protocol));
+    int newsock = ::accept(m_sock,0,0);
+    if(newsock == -1){
+        JKYI_LOG_ERROR(g_logger) << " accept(" << m_sock << ") errno = "<<errno
+                                 << "errstr = " << strerror(errno);
+        return nullptr;
+    }
+    sock->m_ctx = m_ctx;
+    if(sock->init(newsock)){
+        return sock;
+    }
+    return nullptr;
+}
 
+bool SSLSocket::bind(const Address::ptr addr){
+    return Socket::bind(addr);
+}
 
+bool SSLSocket::connect(const Address::ptr addr,int64_t timeout_ms){
+    bool v = Socket::connect(addr,timeout_ms);
+    if(v){
+        m_ctx.reset(SSL_CTX_new(SSLv23_client_method()),SSL_CTX_free);
+        m_ssl.reset(SSL_new(m_ctx.get()),SSL_free);
+        SSL_set_fd(m_ssl.get(),m_sock);
+        v = (SSL_connect(m_ssl.get()) == 1);
+    }
+    return v;
+}
 
+bool SSLSocket::listen(int backlog){
+    return Socket::listen(backlog);
+}
 
+bool SSLSocket::close(){
+    return Socket::close();
+}
 
+int SSLSocket::send(const void * buffer,size_t length,int flags){
+    if(m_ssl){
+        return SSL_write(m_ssl.get(),buffer,length);
+    }
+    return -1;
+}
 
+int SSLSocket::send(const iovec * buffers,size_t length,int flags){
+    if(!m_ssl){
+        return -1;
+    }
+    int totals = 0;
+    for(size_t i = 0;i < length;++i){
+       int tmp = SSL_write(m_ssl.get(),buffers[i].iov_base,buffers[i].iov_len);
+       if(tmp <= 0){
+           return tmp;
+       }
+       totals += tmp;
+       if(tmp != (int)buffers[i].iov_len){
+           break;
+       }
+    }
+    return totals;
+}
 
+int SSLSocket::sendTo(const void * buffer,size_t length,const Address::ptr to,int flags){
+    JKYI_ASSERT(false);
+    return -1;
+}
+
+int SSLSocket::sendTo(const iovec * buffers,size_t length,const Address::ptr to
+                                                                       ,int flags){
+    JKYI_ASSERT(false);
+    return -1;
+}
+
+int SSLSocket::recv(void * buffer,size_t length,int flags){
+    if(m_ssl){
+        return SSL_read(m_ssl.get(),buffer,length);
+    }
+    return -1;
+}
+
+int SSLSocket::recv(iovec * buffers,size_t length,int flags){
+    if(!m_ssl){
+        return -1;
+    }
+    int totals = 0;
+    for(size_t i = 0;i < length; ++i){
+        int tmp = SSL_read(m_ssl.get(),buffers[i].iov_base,buffers[i].iov_len);
+        if(tmp <= 0){
+            return tmp;
+        }
+        totals += tmp;
+        if(tmp != (int)buffers[i].iov_len){
+            break;
+        }
+    }
+    return totals;
+}
+
+int SSLSocket::recvFrom(void * buffer,size_t length,Address::ptr from,int flags){
+    JKYI_ASSERT(false);
+    return -1;
+}
+
+int SSLSocket::recvFrom(iovec * buffers,size_t length,Address::ptr from,int flags){
+    JKYI_ASSERT(false);
+    return -1;
+}
+
+bool SSLSocket::init(int sock){
+    bool v = Socket::init(sock);
+    if(v){
+        m_ssl.reset(SSL_new(m_ctx.get()),SSL_free);
+        SSL_set_fd(m_ssl.get(),m_sock);
+        v = (SSL_accept(m_ssl.get()) == 1);
+    }
+    return v;
+}
+
+bool SSLSocket::loadCertificates(const std::string& cert_file,
+                                          const std::string& key_file){
+   m_ctx.reset(SSL_CTX_new(SSLv23_server_method()),SSL_CTX_free);
+   if(SSL_CTX_use_certificate_chain_file(m_ctx.get(),cert_file.c_str()) != 1){
+       JKYI_LOG_ERROR(g_logger) << "SSL_CTX_use_certificates_chain_file(" 
+                                << cert_file << ")error";
+       return false;
+   }
+   if(SSL_CTX_use_PrivateKey_file(m_ctx.get(),key_file.c_str(),SSL_FILETYPE_PEM) != 1){
+       JKYI_LOG_ERROR(g_logger) << "SSL_CTX_use_PrivateKey_file(" << key_file 
+                                << ")error";
+       return false;
+   }
+   if(SSL_CTX_check_private_key(m_ctx.get()) != 1){
+       JKYI_LOG_ERROR(g_logger) << "SSL_CTX_check_private_key cert_file = " <<cert_file
+                                << "key_file = " << key_file;
+       return false;
+   }
+   return true;
+}
+
+SSLSocket::ptr SSLSocket::CreateTCP(JKYi::Address::ptr address){
+    SSLSocket::ptr sock(new SSLSocket(address->getFamily(),TCP,0));
+    return sock;
+}
+SSLSocket::ptr SSLSocket::CreateTCPSocket(){
+    SSLSocket::ptr sock(new SSLSocket(IPv4,TCP,0));
+    return sock;
+}
+SSLSocket::ptr SSLSocket::CreateTCPSocket6(){
+    SSLSocket::ptr sock(new SSLSocket(IPv6,TCP,0));
+    return sock;
+}
+
+std::ostream& SSLSocket::dump(std::ostream& os)const{
+    os << "[SSLSocket sock = " << m_sock
+       << " is_connected = " << m_isConnected
+       << " family = " << m_family
+       << " type = " << m_type
+       << " protocol = " << m_protocol;
+
+       if(m_localAddress){
+           os << "local_address = " << m_localAddress->toString();
+       }
+       if(m_remoteAddress){
+           os << "remoteAddress = " << m_remoteAddress->toString();
+       }
+       os << "]";
+       return os;
+}
 
 
 

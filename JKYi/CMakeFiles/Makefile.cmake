@@ -25,12 +25,21 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/cmake/share/cmake-3.16/Modules/Compiler/GNU-C.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/Compiler/GNU.cmake"
+  "/usr/local/cmake/share/cmake-3.16/Modules/FindBoost.cmake"
+  "/usr/local/cmake/share/cmake-3.16/Modules/FindOpenSSL.cmake"
+  "/usr/local/cmake/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/local/cmake/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+  "/usr/local/cmake/share/cmake-3.16/Modules/FindPkgConfig.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/Platform/Linux.cmake"
   "/usr/local/cmake/share/cmake-3.16/Modules/Platform/UnixPaths.cmake"
+  "/usr/local/lib/cmake/Boost-1.79.0/BoostConfig.cmake"
+  "/usr/local/lib/cmake/Boost-1.79.0/BoostConfigVersion.cmake"
+  "/usr/local/lib/cmake/boost_headers-1.79.0/boost_headers-config-version.cmake"
+  "/usr/local/lib/cmake/boost_headers-1.79.0/boost_headers-config.cmake"
   )
 
 # The corresponding makefile is:

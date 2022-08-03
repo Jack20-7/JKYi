@@ -1,21 +1,38 @@
 cmake_minimum_required(VERSION 2.8)
 project(JKYi)
 
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 #include一般用于语句的复用，对于那些会在CMakeLists中多次用到的宏/函数，可以将它们写入到.cmake文件中去，然后使用include对它们进行加载，这样在编译时就可以使用
 include(cmake/utils.cmake)
 
 #set用来设置变量
 set(CMAKE_VERBOSE_MAKEFILE ON)
+
 #添加g++ 的编译选项
 set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations")
+
 #设置头文件的查找路径
 include_directories(.)
 include_directories(/root/yaml-cpp-master/include)
+
 #添加要需要链接的库的路径，相当于在gcc时的-L，就相当于将对应目录下的库加到搜索范围内
 link_directories(/root/yaml-cpp-master/lib)
 
-#find_library(YAMLCPP yaml-cpp)
-#find_library(PTHREAD pthread)
+#查找下来的开源库的相关信息
+find_package(Boost REQUIRED)
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS})
+endif()
+
+#find_package(MySQL REQUIRED)
+#    include_directories(${MySQL_INCLUDE_DIRS})
+#endif()
+
+find_package(OpenSSL REQUIRED)
+if(OPENSSL_FOUND)
+    include_directories(${OPENSSL_INCLUDE_DIR})
+endif()
+
 
 set (LIB_SRC 
     JKYi/log.cc
@@ -65,6 +82,7 @@ set(LIBS
       pthread
       yaml-cpp  
 	  dl
+      ${OPENSSL_LIBRARIES}
    )
 
 # utils.cmake文件中添加了一个function(生成的可执行文件名称 源文件名称 依赖名称 需要的库的名称)

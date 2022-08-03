@@ -6,6 +6,7 @@
 #include"log.h"
 #include"http/http_server.h"
 #include"worker.h"
+#include"http/ws_server.h"
 
 #include<unistd.h>
 #include<signal.h>
@@ -186,6 +187,8 @@ int Application::run_fiber(){
          TcpServer::ptr server;
          if(i.type == "http"){
              server.reset(new JKYi::http::HttpServer(i.keepalive,process_worker,io_worker,accept_worker));
+         }else if(i.type == "ws"){
+             server.reset(new JKYi::http::WSServer(process_worker,io_worker,accept_worker)); 
          }else{
              JKYI_LOG_ERROR(g_logger) << "invalid server type = "<<i.type 
                                                                  << LexicalCast<TcpServerConf,std::string>()(i);
@@ -195,15 +198,22 @@ int Application::run_fiber(){
              server->setName(i.name);
          }
          std::vector<Address::ptr> fails;
-         if(!server->bind(address,fails)){
+         if(!server->bind(address,fails,i.ssl)){
              for(auto& x : fails){
                  JKYI_LOG_ERROR(g_logger) << "bind address fail:" << x->toString();
              }
              _exit(0);
          }
-          server->setConf(i);
-          m_servers[i.type].push_back(server);
-          svrs.push_back(server);
+         if(i.ssl){
+             if(!server->loadCertificates(i.cert_file,i.key_file)){
+                 JKYI_LOG_ERROR(g_logger) << "loadCertificates fail,cert_file = " << i.cert_file
+                                          << " key_file = " << i.key_file;
+             }
+         }
+
+         server->setConf(i);
+         m_servers[i.type].push_back(server);
+         svrs.push_back(server);
     }
     
     for(auto& i : svrs){

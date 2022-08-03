@@ -114,8 +114,8 @@ public:
                                                                             IOManager * accept_worker = IOManager::GetThis());
     virtual ~TcpServer();
 
-    virtual bool bind(Address::ptr addr);
-    virtual bool bind(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails);
+    virtual bool bind(Address::ptr addr,bool ssl = false);
+    virtual bool bind(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails,bool ssl = false);
 
     virtual bool start();
     virtual void stop();
@@ -133,6 +133,8 @@ public:
 
     void setConf(TcpServerConf::ptr v) { m_conf = v; }
     void setConf(const TcpServerConf& v);
+
+    bool loadCertificates(const std::string& cert_file,const std::string& key_file);
 protected:
     virtual void handleClient(Socket::ptr client);
     virtual void startAccept(Socket::ptr sock);
@@ -157,7 +159,7 @@ protected:
     //服务器是否停止运行
     bool m_isStop;
 
-    //bool m_ssl = false;
+    bool m_ssl = false;
 
     TcpServerConf::ptr m_conf;
 };

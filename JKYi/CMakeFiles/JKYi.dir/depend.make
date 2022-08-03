@@ -53,6 +53,9 @@ CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/http.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/http_server.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/http_session.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/servlet.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/ws_server.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/ws_servlet.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/ws_session.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/iomanager.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/log.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/mutex.h
@@ -97,8 +100,12 @@ CMakeFiles/JKYi.dir/JKYi/application.cc.o: /root/yaml-cpp-master/include/yaml-cp
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: /root/yaml-cpp-master/include/yaml-cpp/traits.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: /root/yaml-cpp-master/include/yaml-cpp/yaml.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/bytearray.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/config.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/fiber.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/http_server.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/http_session.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/servlet.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/http/ws_session.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/iomanager.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/mutex.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/singleton.h
@@ -106,6 +113,7 @@ CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/socket.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/stream.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/stream/socket_stream.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/tcp_server.h
+CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/thread.h
 CMakeFiles/JKYi.dir/JKYi/application.cc.o: JKYi/util.h
 
 CMakeFiles/JKYi.dir/JKYi/bytearray.cc.o: JKYi/bytearray.cc

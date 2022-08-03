@@ -75,7 +75,7 @@ public:
     //网络编程相关的函数
     virtual Socket::ptr accept();
     virtual bool bind(const Address::ptr addr);
-    virtual bool connect(const Address::ptr addr,int64_t timeout_ms=-1);
+    virtual bool connect(const Address::ptr addr,int64_t timeout_ms = -1);
     virtual bool reconnect(int64_t timeout_ms=-1);
     virtual bool listen(int backlog = SOMAXCONN);
     virtual bool close();
@@ -110,14 +110,13 @@ public:
     bool cancelWrite();
     bool cancelAccept();
     bool cancelAll();
-private:
-
+protected:
     void initSock();
     void newSock();
 
     virtual bool init(int sock);
 
-private:
+protected:
     //
     int m_sock;
     int m_family;
@@ -128,6 +127,43 @@ private:
     Address::ptr m_localAddress;
 };
 
+//下面是提供对ssl的支持
+class SSLSocket:public Socket{
+public:
+    typedef std::shared_ptr<SSLSocket> ptr;
+
+    static SSLSocket::ptr CreateTCP(JKYi::Address::ptr addr);
+    static SSLSocket::ptr CreateTCPSocket();
+    static SSLSocket::ptr CreateTCPSocket6();
+
+    SSLSocket(int family,int type,int protocol = 0);
+    virtual Socket::ptr accept()override;
+    virtual bool bind(const Address::ptr addr)override;
+    virtual bool connect(const Address::ptr addr,int64_t timeout_ms = -1)override;
+    virtual bool listen(int backlog = SOMAXCONN)override;
+    virtual bool close()override;
+    
+    virtual int send(const void * buffer,size_t length,int flags = 0)override;
+    virtual int send(const iovec* buffers,size_t length,int flags = 0)override;
+    virtual int sendTo(const void * buffer,size_t length,const Address::ptr to,int flags = 0)override;
+    virtual int sendTo(const iovec * buffers,size_t length,const Address::ptr to,int flags = 0)override;
+
+    virtual int recv(void * buffer,size_t length,int flags = 0)override;
+    virtual int recv(iovec * buffers,size_t length,int flags = 0)override;
+    virtual int recvFrom(void * buffer,size_t length,Address::ptr from,int flags = 0)override;
+    virtual int recvFrom(iovec * buffers,size_t length,Address::ptr from,int flags = 0)override;
+
+    bool loadCertificates(const std::string& cert_file,const std::string& key_file);
+    virtual std::ostream& dump(std::ostream& os)const override;
+protected:
+    virtual bool init(int sock)override;
+private:
+    std::shared_ptr<SSL_CTX> m_ctx;
+    std::shared_ptr<SSL> m_ssl;
+};
+
 }
+
+
 
 #endif

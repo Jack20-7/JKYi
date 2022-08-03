@@ -86,6 +86,8 @@ test_bytearray_EXTERNAL_OBJECTS =
 bin/test_bytearray: CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o
 bin/test_bytearray: CMakeFiles/test_bytearray.dir/build.make
 bin/test_bytearray: lib/libJKYi.so
+bin/test_bytearray: /usr/lib64/libssl.so
+bin/test_bytearray: /usr/lib64/libcrypto.so
 bin/test_bytearray: CMakeFiles/test_bytearray.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_bytearray"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_bytearray.dir/link.txt --verbose=$(VERBOSE)

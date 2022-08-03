@@ -86,6 +86,8 @@ test_socket_EXTERNAL_OBJECTS =
 bin/test_socket: CMakeFiles/test_socket.dir/tests/test_socket.cc.o
 bin/test_socket: CMakeFiles/test_socket.dir/build.make
 bin/test_socket: lib/libJKYi.so
+bin/test_socket: /usr/lib64/libssl.so
+bin/test_socket: /usr/lib64/libcrypto.so
 bin/test_socket: CMakeFiles/test_socket.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_socket"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_socket.dir/link.txt --verbose=$(VERBOSE)

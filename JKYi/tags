@@ -983,7 +983,7 @@ FromString	JKYi/log.h	/^   static LogLevel::Level FromString(const std::string&s
 FunctionServlet	JKYi/http/servlet.cc	/^FunctionServlet::FunctionServlet(callback cb)$/;"	f	class:JKYi::http::FunctionServlet	signature:(callback cb)
 FunctionServlet	JKYi/http/servlet.h	/^    FunctionServlet(callback cb);$/;"	p	class:JKYi::http::FunctionServlet	access:public	signature:(callback cb)
 FunctionServlet	JKYi/http/servlet.h	/^class FunctionServlet:public Servlet{$/;"	c	namespace:JKYi::http	inherits:Servlet
-FunctionServlet	JKYi/http/ws_servlet.cc	/^FunctionServlet::FunctionServlet(callback cb,on_connect_cb connect_cb,$/;"	f	class:JKYi::http::FunctionServlet	signature:(callback cb,on_connect_cb connect_cb, on_close_cb close_cb)
+FunctionWSServlet	JKYi/http/ws_servlet.cc	/^FunctionWSServlet::FunctionWSServlet(callback cb,on_connect_cb connect_cb,$/;"	f	class:JKYi::http::FunctionWSServlet	signature:(callback cb,on_connect_cb connect_cb, on_close_cb close_cb)
 FunctionWSServlet	JKYi/http/ws_servlet.h	/^    FunctionWSServlet(callback cb,on_connect_cb connect_cb = nullptr,on_close_cb close_cb = nullptr);$/;"	p	class:JKYi::http::FunctionWSServlet	access:public	signature:(callback cb,on_connect_cb connect_cb = nullptr,on_close_cb close_cb = nullptr)
 FunctionWSServlet	JKYi/http/ws_servlet.h	/^class FunctionWSServlet:public WSServlet{$/;"	c	namespace:JKYi::http	inherits:WSServlet
 GetCurrentMS	JKYi/util.cc	/^uint64_t GetCurrentMS(){$/;"	f	namespace:JKYi	signature:()
@@ -2204,16 +2204,17 @@ JKYi::TabFormatItem::m_string	JKYi/log.cc	/^   std::string m_string;$/;"	m	class
 JKYi::TcpServer	JKYi/tcp_server.h	/^class TcpServer:public std::enable_shared_from_this<TcpServer>,Noncopyable{$/;"	c	namespace:JKYi	inherits:std::enable_shared_from_this,Noncopyable
 JKYi::TcpServer::TcpServer	JKYi/tcp_server.cc	/^TcpServer::TcpServer(IOManager * worker,IOManager * io_worker,IOManager * accept_worker)$/;"	f	class:JKYi::TcpServer	signature:(IOManager * worker,IOManager * io_worker,IOManager * accept_worker)
 JKYi::TcpServer::TcpServer	JKYi/tcp_server.h	/^    TcpServer(IOManager * worker = IOManager::GetThis(),IOManager * io_worker = IOManager::GetThis(),$/;"	p	class:JKYi::TcpServer	access:public	signature:(IOManager * worker = IOManager::GetThis(),IOManager * io_worker = IOManager::GetThis(), IOManager * accept_worker = IOManager::GetThis())
-JKYi::TcpServer::bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(Address::ptr addr){$/;"	f	class:JKYi::TcpServer	signature:(Address::ptr addr)
-JKYi::TcpServer::bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(const std::vector<Address::ptr>& addrs,$/;"	f	class:JKYi::TcpServer	signature:(const std::vector<Address::ptr>& addrs, std::vector<Address::ptr>&fails)
-JKYi::TcpServer::bind	JKYi/tcp_server.h	/^    virtual bool bind(Address::ptr addr);$/;"	p	class:JKYi::TcpServer	access:public	signature:(Address::ptr addr)
-JKYi::TcpServer::bind	JKYi/tcp_server.h	/^    virtual bool bind(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails);$/;"	p	class:JKYi::TcpServer	access:public	signature:(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails)
+JKYi::TcpServer::bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(Address::ptr addr,bool ssl){$/;"	f	class:JKYi::TcpServer	signature:(Address::ptr addr,bool ssl)
+JKYi::TcpServer::bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(const std::vector<Address::ptr>& addrs,$/;"	f	class:JKYi::TcpServer	signature:(const std::vector<Address::ptr>& addrs, std::vector<Address::ptr>&fails,bool ssl)
+JKYi::TcpServer::bind	JKYi/tcp_server.h	/^    virtual bool bind(Address::ptr addr,bool ssl = false);$/;"	p	class:JKYi::TcpServer	access:public	signature:(Address::ptr addr,bool ssl = false)
+JKYi::TcpServer::bind	JKYi/tcp_server.h	/^    virtual bool bind(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails,bool ssl = false);$/;"	p	class:JKYi::TcpServer	access:public	signature:(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails,bool ssl = false)
 JKYi::TcpServer::getName	JKYi/tcp_server.h	/^    std::string getName()const { return m_name; }$/;"	f	class:JKYi::TcpServer	access:public	signature:() const
 JKYi::TcpServer::getRecvTimeout	JKYi/tcp_server.h	/^    uint64_t getRecvTimeout()const { return m_recvTimeout; }$/;"	f	class:JKYi::TcpServer	access:public	signature:() const
 JKYi::TcpServer::getSocks	JKYi/tcp_server.h	/^    std::vector<JKYi::Socket::ptr> getSocks()const { return m_socks; }$/;"	f	class:JKYi::TcpServer	access:public	signature:() const
 JKYi::TcpServer::handleClient	JKYi/tcp_server.cc	/^void TcpServer::handleClient(Socket::ptr client){$/;"	f	class:JKYi::TcpServer	signature:(Socket::ptr client)
 JKYi::TcpServer::handleClient	JKYi/tcp_server.h	/^    virtual void handleClient(Socket::ptr client);$/;"	p	class:JKYi::TcpServer	access:protected	signature:(Socket::ptr client)
 JKYi::TcpServer::isStop	JKYi/tcp_server.h	/^    bool isStop()const { return m_isStop; }$/;"	f	class:JKYi::TcpServer	access:public	signature:() const
+JKYi::TcpServer::loadCertificates	JKYi/tcp_server.h	/^    bool loadCertificates(const std::string& cert_file,const std::string& key_file);$/;"	p	class:JKYi::TcpServer	access:public	signature:(const std::string& cert_file,const std::string& key_file)
 JKYi::TcpServer::m_acceptWorker	JKYi/tcp_server.h	/^    IOManager * m_acceptWorker;$/;"	m	class:JKYi::TcpServer	access:protected
 JKYi::TcpServer::m_conf	JKYi/tcp_server.h	/^    TcpServerConf::ptr m_conf;$/;"	m	class:JKYi::TcpServer	access:protected
 JKYi::TcpServer::m_ioWorker	JKYi/tcp_server.h	/^    IOManager * m_ioWorker;$/;"	m	class:JKYi::TcpServer	access:protected
@@ -2221,6 +2222,7 @@ JKYi::TcpServer::m_isStop	JKYi/tcp_server.h	/^    bool m_isStop;$/;"	m	class:JKY
 JKYi::TcpServer::m_name	JKYi/tcp_server.h	/^    std::string m_name;$/;"	m	class:JKYi::TcpServer	access:protected
 JKYi::TcpServer::m_recvTimeout	JKYi/tcp_server.h	/^    uint64_t m_recvTimeout;$/;"	m	class:JKYi::TcpServer	access:protected
 JKYi::TcpServer::m_socks	JKYi/tcp_server.h	/^    std::vector<Socket::ptr> m_socks;$/;"	m	class:JKYi::TcpServer	access:protected
+JKYi::TcpServer::m_ssl	JKYi/tcp_server.h	/^    bool m_ssl = false;$/;"	m	class:JKYi::TcpServer	access:protected
 JKYi::TcpServer::m_type	JKYi/tcp_server.h	/^    std::string m_type = "tcp";$/;"	m	class:JKYi::TcpServer	access:protected
 JKYi::TcpServer::m_worker	JKYi/tcp_server.h	/^    IOManager * m_worker;$/;"	m	class:JKYi::TcpServer	access:protected
 JKYi::TcpServer::ptr	JKYi/tcp_server.h	/^    typedef std::shared_ptr<TcpServer> ptr;$/;"	t	class:JKYi::TcpServer	access:public
@@ -2496,27 +2498,27 @@ JKYi::http::CharsToHttpMethod	JKYi/http/http.h	/^HttpMethod CharsToHttpMethod(co
 JKYi::http::FunctionServlet	JKYi/http/servlet.h	/^class FunctionServlet:public Servlet{$/;"	c	namespace:JKYi::http	inherits:Servlet
 JKYi::http::FunctionServlet::FunctionServlet	JKYi/http/servlet.cc	/^FunctionServlet::FunctionServlet(callback cb)$/;"	f	class:JKYi::http::FunctionServlet	signature:(callback cb)
 JKYi::http::FunctionServlet::FunctionServlet	JKYi/http/servlet.h	/^    FunctionServlet(callback cb);$/;"	p	class:JKYi::http::FunctionServlet	access:public	signature:(callback cb)
-JKYi::http::FunctionServlet::FunctionServlet	JKYi/http/ws_servlet.cc	/^FunctionServlet::FunctionServlet(callback cb,on_connect_cb connect_cb,$/;"	f	class:JKYi::http::FunctionServlet	signature:(callback cb,on_connect_cb connect_cb, on_close_cb close_cb)
 JKYi::http::FunctionServlet::callback	JKYi/http/servlet.h	/^    typedef std::function<int32_t (JKYi::http::HttpRequest::ptr request,JKYi::http::HttpResponse::ptr response,JKYi::http::HttpSession::ptr session)> callback; $/;"	t	class:JKYi::http::FunctionServlet	access:public
 JKYi::http::FunctionServlet::handle	JKYi/http/servlet.cc	/^int32_t FunctionServlet::handle(HttpRequest::ptr request,HttpResponse::ptr response,$/;"	f	class:JKYi::http::FunctionServlet	signature:(HttpRequest::ptr request,HttpResponse::ptr response, HttpSession::ptr session)
-JKYi::http::FunctionServlet::handle	JKYi/http/ws_servlet.cc	/^int32_t FunctionServlet::handle(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSServlet::ptr msg, JKYi::http::WSSession::ptr session)
 JKYi::http::FunctionServlet::m_cb	JKYi/http/servlet.h	/^    callback m_cb;$/;"	m	class:JKYi::http::FunctionServlet	access:private
-JKYi::http::FunctionServlet::onClose	JKYi/http/ws_servlet.cc	/^int32_t FunctionServlet::onClose(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSSession::ptr session)
-JKYi::http::FunctionServlet::onConnect	JKYi/http/ws_servlet.cc	/^int32_t FunctionServlet::onConnect(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSSession::ptr session)
 JKYi::http::FunctionServlet::override	JKYi/http/servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr request,JKYi::http::HttpResponse::ptr response,JKYi::http::HttpSession::ptr session) override;$/;"	m	class:JKYi::http::FunctionServlet	access:public
 JKYi::http::FunctionServlet::ptr	JKYi/http/servlet.h	/^    typedef std::shared_ptr<FunctionServlet> ptr;$/;"	t	class:JKYi::http::FunctionServlet	access:public
 JKYi::http::FunctionWSServlet	JKYi/http/ws_servlet.h	/^class FunctionWSServlet:public WSServlet{$/;"	c	namespace:JKYi::http	inherits:WSServlet
+JKYi::http::FunctionWSServlet::FunctionWSServlet	JKYi/http/ws_servlet.cc	/^FunctionWSServlet::FunctionWSServlet(callback cb,on_connect_cb connect_cb,$/;"	f	class:JKYi::http::FunctionWSServlet	signature:(callback cb,on_connect_cb connect_cb, on_close_cb close_cb)
 JKYi::http::FunctionWSServlet::FunctionWSServlet	JKYi/http/ws_servlet.h	/^    FunctionWSServlet(callback cb,on_connect_cb connect_cb = nullptr,on_close_cb close_cb = nullptr);$/;"	p	class:JKYi::http::FunctionWSServlet	access:public	signature:(callback cb,on_connect_cb connect_cb = nullptr,on_close_cb close_cb = nullptr)
-JKYi::http::FunctionWSServlet::callback	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSSendMessage::ptr msg,JKYi::http::WSSession::ptr session) > callback;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
+JKYi::http::FunctionWSServlet::callback	JKYi/http/ws_servlet.h	/^    typedef std::function<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSFrameMessage::ptr msg,JKYi::http::WSSession::ptr session) > callback;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
+JKYi::http::FunctionWSServlet::handle	JKYi/http/ws_servlet.cc	/^int32_t FunctionWSServlet::handle(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionWSServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSFrameMessage::ptr msg, JKYi::http::WSSession::ptr session)
 JKYi::http::FunctionWSServlet::m_callback	JKYi/http/ws_servlet.h	/^    callback m_callback;$/;"	m	class:JKYi::http::FunctionWSServlet	access:protected
-JKYi::http::FunctionWSServlet::m_onClose	JKYi/http/ws_servlet.h	/^    On_close_cb m_onClose;$/;"	m	class:JKYi::http::FunctionWSServlet	access:protected
+JKYi::http::FunctionWSServlet::m_onClose	JKYi/http/ws_servlet.h	/^    on_close_cb m_onClose;$/;"	m	class:JKYi::http::FunctionWSServlet	access:protected
 JKYi::http::FunctionWSServlet::m_onConnect	JKYi/http/ws_servlet.h	/^    on_connect_cb m_onConnect;$/;"	m	class:JKYi::http::FunctionWSServlet	access:protected
-JKYi::http::FunctionWSServlet::on_close_cb	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)> on_close_cb;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
+JKYi::http::FunctionWSServlet::onClose	JKYi/http/ws_servlet.cc	/^int32_t FunctionWSServlet::onClose(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionWSServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSSession::ptr session)
+JKYi::http::FunctionWSServlet::onConnect	JKYi/http/ws_servlet.cc	/^int32_t FunctionWSServlet::onConnect(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionWSServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSSession::ptr session)
+JKYi::http::FunctionWSServlet::on_close_cb	JKYi/http/ws_servlet.h	/^    typedef std::function<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)> on_close_cb;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
 JKYi::http::FunctionWSServlet::on_connect_cb	JKYi/http/ws_servlet.h	/^    typedef std::function<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session) > on_connect_cb;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
-JKYi::http::FunctionWSServlet::override	JKYi/http/ws_servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSendMessage::ptr msg,JKYi::http::WSSession::ptr session)override;$/;"	m	class:JKYi::http::FunctionWSServlet	access:public
+JKYi::http::FunctionWSServlet::override	JKYi/http/ws_servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr header,JKYi::http::WSFrameMessage::ptr msg,JKYi::http::WSSession::ptr session)override;$/;"	m	class:JKYi::http::FunctionWSServlet	access:public
 JKYi::http::FunctionWSServlet::override	JKYi/http/ws_servlet.h	/^    virtual int32_t onClose(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)override;$/;"	m	class:JKYi::http::FunctionWSServlet	access:public
 JKYi::http::FunctionWSServlet::override	JKYi/http/ws_servlet.h	/^    virtual int32_t onConnect(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)override;$/;"	m	class:JKYi::http::FunctionWSServlet	access:public
-JKYi::http::FunctionWSServlet::ptr	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<FunctionWSServelt> ptr;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
+JKYi::http::FunctionWSServlet::ptr	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<FunctionWSServlet> ptr;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
 JKYi::http::HttpConnection	JKYi/http/http_connection.h	/^class HttpConnection:public SocketStream{$/;"	c	namespace:JKYi::http	inherits:SocketStream
 JKYi::http::HttpConnection::DoGet	JKYi/http/http_connection.cc	/^HttpResult::ptr HttpConnection::DoGet(Uri::ptr uri,uint64_t timeout_ms,$/;"	f	class:JKYi::http::HttpConnection	signature:(Uri::ptr uri,uint64_t timeout_ms, const std::map<std::string,std::string>& headers, const std::string& body)
 JKYi::http::HttpConnection::DoGet	JKYi/http/http_connection.cc	/^HttpResult::ptr HttpConnection::DoGet(const std::string& url,uint64_t timeout_ms,$/;"	f	class:JKYi::http::HttpConnection	signature:(const std::string& url,uint64_t timeout_ms, const std::map<std::string,std::string>& headers, const std::string& body)
@@ -2892,18 +2894,18 @@ JKYi::http::WSFrameMessage::m_opcode	JKYi/http/ws_session.h	/^    int m_opcode;$
 JKYi::http::WSFrameMessage::ptr	JKYi/http/ws_session.h	/^    typedef std::shared_ptr<WSFrameMessage> ptr;$/;"	t	class:JKYi::http::WSFrameMessage	access:public
 JKYi::http::WSFrameMessage::setData	JKYi/http/ws_session.h	/^    void setData(const std::string& data){ m_data = data; }$/;"	f	class:JKYi::http::WSFrameMessage	access:public	signature:(const std::string& data)
 JKYi::http::WSFrameMessage::setOpcode	JKYi/http/ws_session.h	/^    void setOpcode(int v) { m_opcode = v; }$/;"	f	class:JKYi::http::WSFrameMessage	access:public	signature:(int v)
-JKYi::http::WSPing	JKYi/http/ws_session.cc	/^int32_t WSPing(Steam * stream){$/;"	f	namespace:JKYi::http	signature:(Steam * stream)
+JKYi::http::WSPing	JKYi/http/ws_session.cc	/^int32_t WSPing(Stream * stream){$/;"	f	namespace:JKYi::http	signature:(Stream * stream)
 JKYi::http::WSPing	JKYi/http/ws_session.h	/^int32_t WSPing(Stream * stream);$/;"	p	namespace:JKYi::http	signature:(Stream * stream)
-JKYi::http::WSPong	JKYi/http/ws_session.cc	/^int32_t WSPong(Steam * stream){$/;"	f	namespace:JKYi::http	signature:(Steam * stream)
+JKYi::http::WSPong	JKYi/http/ws_session.cc	/^int32_t WSPong(Stream * stream){$/;"	f	namespace:JKYi::http	signature:(Stream * stream)
 JKYi::http::WSPong	JKYi/http/ws_session.h	/^int32_t WSPong(Stream * stream);$/;"	p	namespace:JKYi::http	signature:(Stream * stream)
-JKYi::http::WSRecvMessage	JKYi/http/ws_session.cc	/^WSFrameMessage::ptr WSRecvMessage(Steam * straem,bool client){$/;"	f	namespace:JKYi::http	signature:(Steam * straem,bool client)
+JKYi::http::WSRecvMessage	JKYi/http/ws_session.cc	/^WSFrameMessage::ptr WSRecvMessage(Stream * stream,bool client){$/;"	f	namespace:JKYi::http	signature:(Stream * stream,bool client)
 JKYi::http::WSRecvMessage	JKYi/http/ws_session.h	/^WSFrameMessage::ptr WSRecvMessage(Stream * stream,bool client);$/;"	p	namespace:JKYi::http	signature:(Stream * stream,bool client)
 JKYi::http::WSSendMessage	JKYi/http/ws_session.cc	/^int32_t WSSendMessage(Stream * stream,WSFrameMessage::ptr msg,bool client,bool fin){$/;"	f	namespace:JKYi::http	signature:(Stream * stream,WSFrameMessage::ptr msg,bool client,bool fin)
 JKYi::http::WSSendMessage	JKYi/http/ws_session.h	/^int32_t WSSendMessage(Stream * stream,WSFrameMessage::ptr msg,bool client,bool fin);$/;"	p	namespace:JKYi::http	signature:(Stream * stream,WSFrameMessage::ptr msg,bool client,bool fin)
 JKYi::http::WSServer	JKYi/http/ws_server.h	/^class WSServer:public TcpServer{$/;"	c	namespace:JKYi::http	inherits:TcpServer
 JKYi::http::WSServer::WSServer	JKYi/http/ws_server.cc	/^WSServer::WSServer(JKYi::IOManager * worker,JKYi::IOManager * io_worker,$/;"	f	class:JKYi::http::WSServer	signature:(JKYi::IOManager * worker,JKYi::IOManager * io_worker, JKYi::IOManager * accept_worker)
-JKYi::http::WSServer::WSServlet	JKYi/http/ws_server.h	/^    WSServlet(JKYi::IOManager * worker = JKYi::IOManager::GetThis(),$/;"	p	class:JKYi::http::WSServer	access:public	signature:(JKYi::IOManager * worker = JKYi::IOManager::GetThis(), JKYi::IOManager * io_worker = JKYi::IOManager::GetThis(), JKYi::IOManager * accept_worker = JKYi::IOManager::GetThis())
-JKYi::http::WSServer::getWSServletDispatch	JKYi/http/ws_server.h	/^    WSServlet::ptr getWSServletDispatch()const { return m_dispatch; }$/;"	f	class:JKYi::http::WSServer	access:public	signature:() const
+JKYi::http::WSServer::WSServer	JKYi/http/ws_server.h	/^    WSServer(JKYi::IOManager * worker = JKYi::IOManager::GetThis(),$/;"	p	class:JKYi::http::WSServer	access:public	signature:(JKYi::IOManager * worker = JKYi::IOManager::GetThis(), JKYi::IOManager * io_worker = JKYi::IOManager::GetThis(), JKYi::IOManager * accept_worker = JKYi::IOManager::GetThis())
+JKYi::http::WSServer::getWSServletDispatch	JKYi/http/ws_server.h	/^    WSServletDispatch::ptr getWSServletDispatch()const { return m_dispatch; }$/;"	f	class:JKYi::http::WSServer	access:public	signature:() const
 JKYi::http::WSServer::handleClient	JKYi/http/ws_server.cc	/^void WSServer::handleClient(Socket::ptr client){$/;"	f	class:JKYi::http::WSServer	signature:(Socket::ptr client)
 JKYi::http::WSServer::m_dispatch	JKYi/http/ws_server.h	/^    WSServletDispatch::ptr m_dispatch;$/;"	m	class:JKYi::http::WSServer	access:private
 JKYi::http::WSServer::override	JKYi/http/ws_server.h	/^    virtual void handleClient(Socket::ptr client)override;$/;"	m	class:JKYi::http::WSServer	access:protected
@@ -2911,9 +2913,9 @@ JKYi::http::WSServer::ptr	JKYi/http/ws_server.h	/^    typedef std::shared_ptr<WS
 JKYi::http::WSServer::setWSServletDispatch	JKYi/http/ws_server.h	/^    void setWSServletDispatch(WSServletDispatch::ptr v) { m_dispatch = v; }$/;"	f	class:JKYi::http::WSServer	access:public	signature:(WSServletDispatch::ptr v)
 JKYi::http::WSServlet	JKYi/http/ws_servlet.h	/^class WSServlet:public Servlet{$/;"	c	namespace:JKYi::http	inherits:Servlet
 JKYi::http::WSServlet::WSServlet	JKYi/http/ws_servlet.h	/^    WSServlet(const std::string& name)$/;"	f	class:JKYi::http::WSServlet	access:public	signature:(const std::string& name)
-JKYi::http::WSServlet::getName	JKYi/http/ws_servlet.h	/^    const std::stirng& getName()const { return m_name; }$/;"	f	class:JKYi::http::WSServlet	access:public	signature:() const
+JKYi::http::WSServlet::getName	JKYi/http/ws_servlet.h	/^    const std::string& getName()const { return m_name; }$/;"	f	class:JKYi::http::WSServlet	access:public	signature:() const
 JKYi::http::WSServlet::handle	JKYi/http/ws_servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr header,JKYi::http::WSFrameMessage::ptr msg,JKYi::http::WSSession::ptr session) = 0;$/;"	p	class:JKYi::http::WSServlet	access:public	signature:(JKYi::http::HttpRequest::ptr header,JKYi::http::WSFrameMessage::ptr msg,JKYi::http::WSSession::ptr session)
-JKYi::http::WSServlet::m_name	JKYi/http/ws_servlet.h	/^    std::string m_name;$/;"	m	class:JKYi::http::WSServlet	access:public
+JKYi::http::WSServlet::m_name	JKYi/http/ws_servlet.h	/^    std::string m_name;$/;"	m	class:JKYi::http::WSServlet	access:protected
 JKYi::http::WSServlet::onClose	JKYi/http/ws_servlet.h	/^    virtual int32_t onClose(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session) = 0;$/;"	p	class:JKYi::http::WSServlet	access:public	signature:(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)
 JKYi::http::WSServlet::onConnect	JKYi/http/ws_servlet.h	/^    virtual int32_t onConnect(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session) = 0;$/;"	p	class:JKYi::http::WSServlet	access:public	signature:(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)
 JKYi::http::WSServlet::ptr	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<WSServlet> ptr;$/;"	t	class:JKYi::http::WSServlet	access:public
@@ -2922,9 +2924,9 @@ JKYi::http::WSServletDispatch	JKYi/http/ws_servlet.h	/^class WSServletDispatch:p
 JKYi::http::WSServletDispatch::RWMutexType	JKYi/http/ws_servlet.h	/^    typedef RWMutex RWMutexType;$/;"	t	class:JKYi::http::WSServletDispatch	access:public
 JKYi::http::WSServletDispatch::WSServletDispatch	JKYi/http/ws_servlet.cc	/^WSServletDispatch::WSServletDispatch(){$/;"	f	class:JKYi::http::WSServletDispatch	signature:()
 JKYi::http::WSServletDispatch::WSServletDispatch	JKYi/http/ws_servlet.h	/^    WSServletDispatch();$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:()
-JKYi::http::WSServletDispatch::addGlobServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addGlobServlet(const std::string& uri,$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri, FunctionServlet::callback cb, FunctionServlet::on_connect_cb connect_cb, FunctionServlet::on_close_cb close_cb)
-JKYi::http::WSServletDispatch::addGlobServlet	JKYi/http/ws_servlet.h	/^    void addGlobServlet(const std::string& uri,$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri, FunctionServlet::callback cb, FunctionServlet::on_connect_cb connect_cb = nullptr, FunctionServlet::on_close_cb close_cb = nullptr)
-JKYi::http::WSServletDispatch::addServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addServlet(const std::string& uri,$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri, FunctionServlet::callback cb, FunctionServlet::on_connect_cb connect_cb, FunctionServlet::on_close_cb close_cb)
+JKYi::http::WSServletDispatch::addGlobServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addGlobServlet(const std::string& uri,$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb, FunctionWSServlet::on_close_cb close_cb)
+JKYi::http::WSServletDispatch::addGlobServlet	JKYi/http/ws_servlet.h	/^    void addGlobServlet(const std::string& uri,$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb = nullptr, FunctionWSServlet::on_close_cb close_cb = nullptr)
+JKYi::http::WSServletDispatch::addServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addServlet(const std::string& uri,$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb, FunctionWSServlet::on_close_cb close_cb)
 JKYi::http::WSServletDispatch::addServlet	JKYi/http/ws_servlet.h	/^    void addServlet(const std::string& uri,$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb = nullptr, FunctionWSServlet::on_close_cb close_cb = nullptr)
 JKYi::http::WSServletDispatch::getWSServlet	JKYi/http/ws_servlet.cc	/^WSServlet::ptr WSServletDispatch::getWSServlet(const std::string& uri){$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri)
 JKYi::http::WSServletDispatch::getWSServlet	JKYi/http/ws_servlet.h	/^    WSServlet::ptr getWSServlet(const std::string& uri);$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri)
@@ -2943,7 +2945,7 @@ JKYi::http::WSSession::pong	JKYi/http/ws_session.h	/^    int32_t pong();$/;"	p	c
 JKYi::http::WSSession::ptr	JKYi/http/ws_session.h	/^    typedef std::shared_ptr<WSSession> ptr;$/;"	t	class:JKYi::http::WSSession	access:public
 JKYi::http::WSSession::recvMessage	JKYi/http/ws_session.cc	/^WSFrameMessage::ptr WSSession::recvMessage(){$/;"	f	class:JKYi::http::WSSession	signature:()
 JKYi::http::WSSession::recvMessage	JKYi/http/ws_session.h	/^    WSFrameMessage::ptr recvMessage();$/;"	p	class:JKYi::http::WSSession	access:public	signature:()
-JKYi::http::WSSession::sendMessage	JKYi/http/ws_session.cc	/^int32_t WSSession::sendMessage(Stream * stream,WSFrameMessage::ptr msg,$/;"	f	class:JKYi::http::WSSession	signature:(Stream * stream,WSFrameMessage::ptr msg, bool fin)
+JKYi::http::WSSession::sendMessage	JKYi/http/ws_session.cc	/^int32_t WSSession::sendMessage(WSFrameMessage::ptr msg,$/;"	f	class:JKYi::http::WSSession	signature:(WSFrameMessage::ptr msg, bool fin)
 JKYi::http::WSSession::sendMessage	JKYi/http/ws_session.cc	/^int32_t WSSession::sendMessage(const std::string& msg,int32_t opcode,bool fin){$/;"	f	class:JKYi::http::WSSession	signature:(const std::string& msg,int32_t opcode,bool fin)
 JKYi::http::WSSession::sendMessage	JKYi/http/ws_session.h	/^    int32_t sendMessage(WSFrameMessage::ptr msg,bool fin = true);$/;"	p	class:JKYi::http::WSSession	access:public	signature:(WSFrameMessage::ptr msg,bool fin = true)
 JKYi::http::WSSession::sendMessage	JKYi/http/ws_session.h	/^    int32_t sendMessage(const std::string& msg,int32_t opcode = WSFrameHead::TEXT_FRAME,bool fin = true);$/;"	p	class:JKYi::http::WSSession	access:public	signature:(const std::string& msg,int32_t opcode = WSFrameHead::TEXT_FRAME,bool fin = true)
@@ -3497,17 +3499,17 @@ WSFrameHead	JKYi/http/ws_session.h	/^struct WSFrameHead{$/;"	s	namespace:JKYi::h
 WSFrameMessage	JKYi/http/ws_session.cc	/^WSFrameMessage::WSFrameMessage(int opcode,const std::string& msg)$/;"	f	class:JKYi::http::WSFrameMessage	signature:(int opcode,const std::string& msg)
 WSFrameMessage	JKYi/http/ws_session.h	/^    WSFrameMessage(int opcode = 0,const std::string& data = "");$/;"	p	class:JKYi::http::WSFrameMessage	access:public	signature:(int opcode = 0,const std::string& data = �)
 WSFrameMessage	JKYi/http/ws_session.h	/^class WSFrameMessage{$/;"	c	namespace:JKYi::http
-WSPing	JKYi/http/ws_session.cc	/^int32_t WSPing(Steam * stream){$/;"	f	namespace:JKYi::http	signature:(Steam * stream)
+WSPing	JKYi/http/ws_session.cc	/^int32_t WSPing(Stream * stream){$/;"	f	namespace:JKYi::http	signature:(Stream * stream)
 WSPing	JKYi/http/ws_session.h	/^int32_t WSPing(Stream * stream);$/;"	p	namespace:JKYi::http	signature:(Stream * stream)
-WSPong	JKYi/http/ws_session.cc	/^int32_t WSPong(Steam * stream){$/;"	f	namespace:JKYi::http	signature:(Steam * stream)
+WSPong	JKYi/http/ws_session.cc	/^int32_t WSPong(Stream * stream){$/;"	f	namespace:JKYi::http	signature:(Stream * stream)
 WSPong	JKYi/http/ws_session.h	/^int32_t WSPong(Stream * stream);$/;"	p	namespace:JKYi::http	signature:(Stream * stream)
-WSRecvMessage	JKYi/http/ws_session.cc	/^WSFrameMessage::ptr WSRecvMessage(Steam * straem,bool client){$/;"	f	namespace:JKYi::http	signature:(Steam * straem,bool client)
+WSRecvMessage	JKYi/http/ws_session.cc	/^WSFrameMessage::ptr WSRecvMessage(Stream * stream,bool client){$/;"	f	namespace:JKYi::http	signature:(Stream * stream,bool client)
 WSRecvMessage	JKYi/http/ws_session.h	/^WSFrameMessage::ptr WSRecvMessage(Stream * stream,bool client);$/;"	p	namespace:JKYi::http	signature:(Stream * stream,bool client)
 WSSendMessage	JKYi/http/ws_session.cc	/^int32_t WSSendMessage(Stream * stream,WSFrameMessage::ptr msg,bool client,bool fin){$/;"	f	namespace:JKYi::http	signature:(Stream * stream,WSFrameMessage::ptr msg,bool client,bool fin)
 WSSendMessage	JKYi/http/ws_session.h	/^int32_t WSSendMessage(Stream * stream,WSFrameMessage::ptr msg,bool client,bool fin);$/;"	p	namespace:JKYi::http	signature:(Stream * stream,WSFrameMessage::ptr msg,bool client,bool fin)
 WSServer	JKYi/http/ws_server.cc	/^WSServer::WSServer(JKYi::IOManager * worker,JKYi::IOManager * io_worker,$/;"	f	class:JKYi::http::WSServer	signature:(JKYi::IOManager * worker,JKYi::IOManager * io_worker, JKYi::IOManager * accept_worker)
+WSServer	JKYi/http/ws_server.h	/^    WSServer(JKYi::IOManager * worker = JKYi::IOManager::GetThis(),$/;"	p	class:JKYi::http::WSServer	access:public	signature:(JKYi::IOManager * worker = JKYi::IOManager::GetThis(), JKYi::IOManager * io_worker = JKYi::IOManager::GetThis(), JKYi::IOManager * accept_worker = JKYi::IOManager::GetThis())
 WSServer	JKYi/http/ws_server.h	/^class WSServer:public TcpServer{$/;"	c	namespace:JKYi::http	inherits:TcpServer
-WSServlet	JKYi/http/ws_server.h	/^    WSServlet(JKYi::IOManager * worker = JKYi::IOManager::GetThis(),$/;"	p	class:JKYi::http::WSServer	access:public	signature:(JKYi::IOManager * worker = JKYi::IOManager::GetThis(), JKYi::IOManager * io_worker = JKYi::IOManager::GetThis(), JKYi::IOManager * accept_worker = JKYi::IOManager::GetThis())
 WSServlet	JKYi/http/ws_servlet.h	/^    WSServlet(const std::string& name)$/;"	f	class:JKYi::http::WSServlet	access:public	signature:(const std::string& name)
 WSServlet	JKYi/http/ws_servlet.h	/^class WSServlet:public Servlet{$/;"	c	namespace:JKYi::http	inherits:Servlet
 WSServletDispatch	JKYi/http/ws_servlet.cc	/^WSServletDispatch::WSServletDispatch(){$/;"	f	class:JKYi::http::WSServletDispatch	signature:()
@@ -3625,8 +3627,8 @@ addGlobServlet	JKYi/http/servlet.cc	/^void ServletDispatch::addGlobServlet(const
 addGlobServlet	JKYi/http/servlet.cc	/^void ServletDispatch::addGlobServlet(const std::string& uri,Servlet::ptr slt){$/;"	f	class:JKYi::http::ServletDispatch	signature:(const std::string& uri,Servlet::ptr slt)
 addGlobServlet	JKYi/http/servlet.h	/^    void addGlobServlet(const std::string& uri,FunctionServlet::callback cb);$/;"	p	class:JKYi::http::ServletDispatch	access:public	signature:(const std::string& uri,FunctionServlet::callback cb)
 addGlobServlet	JKYi/http/servlet.h	/^    void addGlobServlet(const std::string& uri,JKYi::http::Servlet::ptr slt);$/;"	p	class:JKYi::http::ServletDispatch	access:public	signature:(const std::string& uri,JKYi::http::Servlet::ptr slt)
-addGlobServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addGlobServlet(const std::string& uri,$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri, FunctionServlet::callback cb, FunctionServlet::on_connect_cb connect_cb, FunctionServlet::on_close_cb close_cb)
-addGlobServlet	JKYi/http/ws_servlet.h	/^    void addGlobServlet(const std::string& uri,$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri, FunctionServlet::callback cb, FunctionServlet::on_connect_cb connect_cb = nullptr, FunctionServlet::on_close_cb close_cb = nullptr)
+addGlobServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addGlobServlet(const std::string& uri,$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb, FunctionWSServlet::on_close_cb close_cb)
+addGlobServlet	JKYi/http/ws_servlet.h	/^    void addGlobServlet(const std::string& uri,$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb = nullptr, FunctionWSServlet::on_close_cb close_cb = nullptr)
 addHelp	JKYi/env.cc	/^void Env::addHelp(const std::string& key,const std::string& val){$/;"	f	class:JKYi::Env	signature:(const std::string& key,const std::string& val)
 addHelp	JKYi/env.h	/^     void addHelp(const std::string& key,const std::string& val);$/;"	p	class:JKYi::Env	access:public	signature:(const std::string& key,const std::string& val)
 addListener	JKYi/config.h	/^   uint64_t addListener(on_change_cb cb){$/;"	f	class:JKYi::ConfigVar	access:public	signature:(on_change_cb cb)
@@ -3634,7 +3636,7 @@ addServlet	JKYi/http/servlet.cc	/^void ServletDispatch::addServlet(const std::st
 addServlet	JKYi/http/servlet.cc	/^void ServletDispatch::addServlet(const std::string& uri,Servlet::ptr slt){$/;"	f	class:JKYi::http::ServletDispatch	signature:(const std::string& uri,Servlet::ptr slt)
 addServlet	JKYi/http/servlet.h	/^    void addServlet(const std::string& uri,FunctionServlet::callback cb);$/;"	p	class:JKYi::http::ServletDispatch	access:public	signature:(const std::string& uri,FunctionServlet::callback cb)
 addServlet	JKYi/http/servlet.h	/^    void addServlet(const std::string& uri,JKYi::http::Servlet::ptr slt);$/;"	p	class:JKYi::http::ServletDispatch	access:public	signature:(const std::string& uri,JKYi::http::Servlet::ptr slt)
-addServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addServlet(const std::string& uri,$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri, FunctionServlet::callback cb, FunctionServlet::on_connect_cb connect_cb, FunctionServlet::on_close_cb close_cb)
+addServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addServlet(const std::string& uri,$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb, FunctionWSServlet::on_close_cb close_cb)
 addServlet	JKYi/http/ws_servlet.h	/^    void addServlet(const std::string& uri,$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb = nullptr, FunctionWSServlet::on_close_cb close_cb = nullptr)
 addTimer	JKYi/timer.cc	/^Timer::ptr TimerManager::addTimer(uint64_t ms,std::function<void ()> cb,bool recurring){$/;"	f	class:JKYi::TimerManager	signature:(uint64_t ms,std::function<void ()> cb,bool recurring)
 addTimer	JKYi/timer.cc	/^void TimerManager::addTimer(Timer::ptr val,RWMutexType::WriteLock& lock){$/;"	f	class:JKYi::TimerManager	signature:(Timer::ptr val,RWMutexType::WriteLock& lock)
@@ -3647,10 +3649,10 @@ back	JKYi/fiber.cc	/^void Fiber::back(){$/;"	f	class:JKYi::Fiber	signature:()
 back	JKYi/fiber.h	/^	void back();$/;"	p	class:JKYi::Fiber	access:public	signature:()
 bind	JKYi/socket.cc	/^bool Socket::bind(Address::ptr address){$/;"	f	class:JKYi::Socket	signature:(Address::ptr address)
 bind	JKYi/socket.h	/^    virtual bool bind(const Address::ptr addr);$/;"	p	class:JKYi::Socket	access:public	signature:(const Address::ptr addr)
-bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(Address::ptr addr){$/;"	f	class:JKYi::TcpServer	signature:(Address::ptr addr)
-bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(const std::vector<Address::ptr>& addrs,$/;"	f	class:JKYi::TcpServer	signature:(const std::vector<Address::ptr>& addrs, std::vector<Address::ptr>&fails)
-bind	JKYi/tcp_server.h	/^    virtual bool bind(Address::ptr addr);$/;"	p	class:JKYi::TcpServer	access:public	signature:(Address::ptr addr)
-bind	JKYi/tcp_server.h	/^    virtual bool bind(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails);$/;"	p	class:JKYi::TcpServer	access:public	signature:(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails)
+bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(Address::ptr addr,bool ssl){$/;"	f	class:JKYi::TcpServer	signature:(Address::ptr addr,bool ssl)
+bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(const std::vector<Address::ptr>& addrs,$/;"	f	class:JKYi::TcpServer	signature:(const std::vector<Address::ptr>& addrs, std::vector<Address::ptr>&fails,bool ssl)
+bind	JKYi/tcp_server.h	/^    virtual bool bind(Address::ptr addr,bool ssl = false);$/;"	p	class:JKYi::TcpServer	access:public	signature:(Address::ptr addr,bool ssl = false)
+bind	JKYi/tcp_server.h	/^    virtual bool bind(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails,bool ssl = false);$/;"	p	class:JKYi::TcpServer	access:public	signature:(const std::vector<Address::ptr>& addrs,std::vector<Address::ptr>& fails,bool ssl = false)
 body_start	JKYi/http/http11_parser.h	/^      size_t body_start;$/;"	m	struct:http_parser	access:public
 body_start	JKYi/http/httpclient_parser.h	/^      size_t body_start;$/;"	m	struct:httpclient_parser	access:public
 broadcastAddress	JKYi/address.cc	/^IPAddress::ptr IPv4Address::broadcastAddress(uint32_t prefix_len){$/;"	f	class:JKYi::IPv4Address	signature:(uint32_t prefix_len)
@@ -3662,7 +3664,7 @@ byteswap	JKYi/endian.h	/^typename std::enable_if<sizeof(T)==sizeof(uint64_t),T>:
 call	JKYi/fiber.cc	/^void Fiber::call(){$/;"	f	class:JKYi::Fiber	signature:()
 call	JKYi/fiber.h	/^	void call();$/;"	p	class:JKYi::Fiber	access:public	signature:()
 callback	JKYi/http/servlet.h	/^    typedef std::function<int32_t (JKYi::http::HttpRequest::ptr request,JKYi::http::HttpResponse::ptr response,JKYi::http::HttpSession::ptr session)> callback; $/;"	t	class:JKYi::http::FunctionServlet	access:public
-callback	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSSendMessage::ptr msg,JKYi::http::WSSession::ptr session) > callback;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
+callback	JKYi/http/ws_servlet.h	/^    typedef std::function<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSFrameMessage::ptr msg,JKYi::http::WSSession::ptr session) > callback;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
 cancel	JKYi/timer.cc	/^bool Timer::cancel(){$/;"	f	class:JKYi::Timer	signature:()
 cancel	JKYi/timer.h	/^   bool cancel();$/;"	p	class:JKYi::Timer	access:public	signature:()
 cancelAccept	JKYi/socket.cc	/^bool Socket::cancelAccept(){$/;"	f	class:JKYi::Socket	signature:()
@@ -3855,6 +3857,8 @@ g_logger	tests/test_scheduler.cc	/^static JKYi::Logger::ptr  g_logger=JKYI_LOG_R
 g_logger	tests/test_socket.cc	/^static JKYi::Logger::ptr g_logger=JKYI_LOG_ROOT();$/;"	v	file:
 g_logger	tests/test_thread.cc	/^JKYi::Logger::ptr g_logger=JKYI_LOG_ROOT();$/;"	v
 g_logger	tests/test_util.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	v	file:
+g_logger	tests/test_ws_client.cc	/^JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v
+g_logger	tests/test_ws_server.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v	file:
 g_loggger	JKYi/worker.cc	/^static Logger::ptr g_loggger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 g_map_str_int_config	tests/test_config.cc	/^JKYi::ConfigVar<std::map<std::string,int>>::ptr g_map_str_int_config=JKYi::Config::Lookup("system.map_str_int",std::map<std::string,int>{{"k",6}},"system map_str_int");$/;"	v
 g_server_pid_file	JKYi/application.cc	/^static JKYi::ConfigVar<std::string>::ptr g_server_pid_file = $/;"	m	namespace:JKYi	file:
@@ -3977,7 +3981,7 @@ getMethod	JKYi/http/http.h	/^   HttpMethod getMethod()const{ return m_method; }$
 getMutex	JKYi/config.h	/^	static RWMutexType& getMutex(){$/;"	f	class:JKYi::Config	access:private	signature:()
 getName	JKYi/config.h	/^   const std::string& getName()const {return m_name;}$/;"	f	class:JKYi::ConfigVarBase	access:public	signature:() const
 getName	JKYi/http/servlet.h	/^    const std::string getName()const { return m_name; }$/;"	f	class:JKYi::http::Servlet	access:public	signature:() const
-getName	JKYi/http/ws_servlet.h	/^    const std::stirng& getName()const { return m_name; }$/;"	f	class:JKYi::http::WSServlet	access:public	signature:() const
+getName	JKYi/http/ws_servlet.h	/^    const std::string& getName()const { return m_name; }$/;"	f	class:JKYi::http::WSServlet	access:public	signature:() const
 getName	JKYi/log.h	/^    std::string getName()const {return m_name;}$/;"	f	class:JKYi::Logger	access:public	signature:() const
 getName	JKYi/scheduler.h	/^   const std::string& getName()const {return m_name;}$/;"	f	class:JKYi::Scheduler	access:public	signature:() const
 getName	JKYi/tcp_server.h	/^    std::string getName()const { return m_name; }$/;"	f	class:JKYi::TcpServer	access:public	signature:() const
@@ -4059,7 +4063,7 @@ getVersion	JKYi/http/http.h	/^    uint8_t getVersion()const { return m_version; 
 getVersion	JKYi/http/http.h	/^   uint8_t getVersion()const { return m_version; }$/;"	f	class:JKYi::http::HttpRequest	access:public	signature:() const
 getWSServlet	JKYi/http/ws_servlet.cc	/^WSServlet::ptr WSServletDispatch::getWSServlet(const std::string& uri){$/;"	f	class:JKYi::http::WSServletDispatch	signature:(const std::string& uri)
 getWSServlet	JKYi/http/ws_servlet.h	/^    WSServlet::ptr getWSServlet(const std::string& uri);$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri)
-getWSServletDispatch	JKYi/http/ws_server.h	/^    WSServlet::ptr getWSServletDispatch()const { return m_dispatch; }$/;"	f	class:JKYi::http::WSServer	access:public	signature:() const
+getWSServletDispatch	JKYi/http/ws_server.h	/^    WSServletDispatch::ptr getWSServletDispatch()const { return m_dispatch; }$/;"	f	class:JKYi::http::WSServer	access:public	signature:() const
 getWriteBuffers	JKYi/bytearray.cc	/^uint64_t ByteArray::getWriteBuffers(std::vector<iovec>&buffers,uint64_t len){$/;"	f	class:JKYi::ByteArray	signature:(std::vector<iovec>&buffers,uint64_t len)
 getWriteBuffers	JKYi/bytearray.h	/^    uint64_t getWriteBuffers(std::vector<iovec>&buffers,uint64_t len);$/;"	p	class:JKYi::ByteArray	access:public	signature:(std::vector<iovec>&buffers,uint64_t len)
 getWriteSize	JKYi/bytearray.h	/^    size_t getWriteSize()const { return m_capacity-m_position; }$/;"	f	class:JKYi::ByteArray	access:private	signature:() const
@@ -4069,7 +4073,7 @@ handle	JKYi/http/servlet.cc	/^int32_t FunctionServlet::handle(HttpRequest::ptr r
 handle	JKYi/http/servlet.cc	/^int32_t NotFoundServlet::handle(HttpRequest::ptr request,HttpResponse::ptr response$/;"	f	class:JKYi::http::NotFoundServlet	signature:(HttpRequest::ptr request,HttpResponse::ptr response ,HttpSession::ptr session)
 handle	JKYi/http/servlet.cc	/^int32_t ServletDispatch::handle(HttpRequest::ptr request,HttpResponse::ptr response,$/;"	f	class:JKYi::http::ServletDispatch	signature:(HttpRequest::ptr request,HttpResponse::ptr response, HttpSession::ptr session)
 handle	JKYi/http/servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr request,JKYi::http::HttpResponse::ptr response,JKYi::http::HttpSession::ptr session) = 0;$/;"	p	class:JKYi::http::Servlet	access:public	signature:(JKYi::http::HttpRequest::ptr request,JKYi::http::HttpResponse::ptr response,JKYi::http::HttpSession::ptr session)
-handle	JKYi/http/ws_servlet.cc	/^int32_t FunctionServlet::handle(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSServlet::ptr msg, JKYi::http::WSSession::ptr session)
+handle	JKYi/http/ws_servlet.cc	/^int32_t FunctionWSServlet::handle(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionWSServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSFrameMessage::ptr msg, JKYi::http::WSSession::ptr session)
 handle	JKYi/http/ws_servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr header,JKYi::http::WSFrameMessage::ptr msg,JKYi::http::WSSession::ptr session) = 0;$/;"	p	class:JKYi::http::WSServlet	access:public	signature:(JKYi::http::HttpRequest::ptr header,JKYi::http::WSFrameMessage::ptr msg,JKYi::http::WSSession::ptr session)
 handleClient	JKYi/http/http_server.cc	/^void HttpServer::handleClient(Socket::ptr client){$/;"	f	class:JKYi::http::HttpServer	signature:(Socket::ptr client)
 handleClient	JKYi/http/ws_server.cc	/^void WSServer::handleClient(Socket::ptr client){$/;"	f	class:JKYi::http::WSServer	signature:(Socket::ptr client)
@@ -4321,6 +4325,7 @@ listExpiredCb	JKYi/timer.cc	/^void TimerManager::listExpiredCb(std::vector<std::
 listExpiredCb	JKYi/timer.h	/^   void listExpiredCb(std::vector<std::function<void ()>>&cbs);$/;"	p	class:JKYi::TimerManager	access:public	signature:(std::vector<std::function<void ()>>&cbs)
 listen	JKYi/socket.cc	/^bool Socket::listen(int backlog){$/;"	f	class:JKYi::Socket	signature:(int backlog)
 listen	JKYi/socket.h	/^    virtual bool listen(int backlog = SOMAXCONN);$/;"	p	class:JKYi::Socket	access:public	signature:(int backlog = SOMAXCONN)
+loadCertificates	JKYi/tcp_server.h	/^    bool loadCertificates(const std::string& cert_file,const std::string& key_file);$/;"	p	class:JKYi::TcpServer	access:public	signature:(const std::string& cert_file,const std::string& key_file)
 lock	JKYi/mutex.h	/^   void lock(){$/;"	f	class:JKYi::CASLock	access:public	signature:()
 lock	JKYi/mutex.h	/^   void lock(){$/;"	f	class:JKYi::Mutex	access:public	signature:()
 lock	JKYi/mutex.h	/^   void lock(){$/;"	f	class:JKYi::SpinLock	access:public	signature:()
@@ -4456,14 +4461,14 @@ m_mutex	JKYi/timer.h	/^   RWMutexType m_mutex;$/;"	m	class:JKYi::TimerManager	ac
 m_name	JKYi/config.h	/^   std::string m_name;$/;"	m	class:JKYi::ConfigVarBase	access:private
 m_name	JKYi/http/servlet.h	/^    std::string m_name;$/;"	m	class:JKYi::http::NotFoundServlet	access:private
 m_name	JKYi/http/servlet.h	/^    std::string m_name;$/;"	m	class:JKYi::http::Servlet	access:protected
-m_name	JKYi/http/ws_servlet.h	/^    std::string m_name;$/;"	m	class:JKYi::http::WSServlet	access:public
+m_name	JKYi/http/ws_servlet.h	/^    std::string m_name;$/;"	m	class:JKYi::http::WSServlet	access:protected
 m_name	JKYi/log.h	/^    std::string m_name;       \/\/日志的名称$/;"	m	class:JKYi::Logger	access:private
 m_name	JKYi/scheduler.h	/^  std::string m_name;$/;"	m	class:JKYi::Scheduler	access:private
 m_name	JKYi/tcp_server.h	/^    std::string m_name;$/;"	m	class:JKYi::TcpServer	access:protected
 m_name	JKYi/thread.h	/^   std::string m_name;$/;"	m	class:JKYi::Thread	access:private
 m_name	tests/test_config.cc	/^    std::string m_name;$/;"	m	class:Person	file:	access:public
 m_next	JKYi/timer.h	/^   uint64_t m_next=0;$/;"	m	class:JKYi::Timer	access:private
-m_onClose	JKYi/http/ws_servlet.h	/^    On_close_cb m_onClose;$/;"	m	class:JKYi::http::FunctionWSServlet	access:protected
+m_onClose	JKYi/http/ws_servlet.h	/^    on_close_cb m_onClose;$/;"	m	class:JKYi::http::FunctionWSServlet	access:protected
 m_onConnect	JKYi/http/ws_servlet.h	/^    on_connect_cb m_onConnect;$/;"	m	class:JKYi::http::FunctionWSServlet	access:protected
 m_opcode	JKYi/http/ws_session.h	/^    int m_opcode;$/;"	m	class:JKYi::http::WSFrameMessage	access:private
 m_owner	JKYi/stream/socket_stream.h	/^     bool m_owner;$/;"	m	class:JKYi::SocketStream	access:private
@@ -4505,6 +4510,7 @@ m_sock	JKYi/socket.h	/^    int m_sock;$/;"	m	class:JKYi::Socket	access:private
 m_socket	JKYi/stream/socket_stream.h	/^     Socket::ptr m_socket;$/;"	m	class:JKYi::SocketStream	access:private
 m_socks	JKYi/tcp_server.h	/^    std::vector<Socket::ptr> m_socks;$/;"	m	class:JKYi::TcpServer	access:protected
 m_ss	JKYi/log.h	/^   std::stringstream m_ss;\/\/流，用来存储要输出的日志$/;"	m	class:JKYi::LogEvent	access:private
+m_ssl	JKYi/tcp_server.h	/^    bool m_ssl = false;$/;"	m	class:JKYi::TcpServer	access:protected
 m_stack	JKYi/fiber.h	/^   void *m_stack=nullptr;$/;"	m	class:JKYi::Fiber	access:private
 m_stacksize	JKYi/fiber.h	/^   uint32_t m_stacksize=0;$/;"	m	class:JKYi::Fiber	access:private
 m_state	JKYi/fiber.h	/^   State m_state=INIT;$/;"	m	class:JKYi::Fiber	access:private
@@ -4566,6 +4572,8 @@ main	tests/test_scheduler.cc	/^int main(int argc,char**argv){$/;"	f	signature:(i
 main	tests/test_socket.cc	/^int main(int argc,char**argv){$/;"	f	signature:(int argc,char**argv)
 main	tests/test_thread.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	tests/test_util.cc	/^int main(int argc,char**argv){$/;"	f	signature:(int argc,char**argv)
+main	tests/test_ws_client.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
+main	tests/test_ws_server.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main_id	JKYi/daemon.h	/^   pid_t main_id = 0;$/;"	m	struct:JKYi::ProcessInfo	access:public
 main_start_time	JKYi/daemon.h	/^   uint64_t main_start_time = 0;$/;"	m	struct:JKYi::ProcessInfo	access:public
 mark	JKYi/http/http11_parser.h	/^      size_t mark;$/;"	m	struct:http_parser	access:public
@@ -4589,14 +4597,14 @@ notify	JKYi/mutex.h	/^    void notify();$/;"	p	class:JKYi::FiberSemaphore	access
 notify	JKYi/mutex.h	/^   void notify();$/;"	p	class:JKYi::Semaphore	access:public	signature:()
 nread	JKYi/http/http11_parser.h	/^      size_t nread;$/;"	m	struct:http_parser	access:public
 nread	JKYi/http/httpclient_parser.h	/^      size_t nread;$/;"	m	struct:httpclient_parser	access:public
-onClose	JKYi/http/ws_servlet.cc	/^int32_t FunctionServlet::onClose(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSSession::ptr session)
+onClose	JKYi/http/ws_servlet.cc	/^int32_t FunctionWSServlet::onClose(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionWSServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSSession::ptr session)
 onClose	JKYi/http/ws_servlet.h	/^    virtual int32_t onClose(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session) = 0;$/;"	p	class:JKYi::http::WSServlet	access:public	signature:(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)
-onConnect	JKYi/http/ws_servlet.cc	/^int32_t FunctionServlet::onConnect(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSSession::ptr session)
+onConnect	JKYi/http/ws_servlet.cc	/^int32_t FunctionWSServlet::onConnect(JKYi::http::HttpRequest::ptr header,$/;"	f	class:JKYi::http::FunctionWSServlet	signature:(JKYi::http::HttpRequest::ptr header, JKYi::http::WSSession::ptr session)
 onConnect	JKYi/http/ws_servlet.h	/^    virtual int32_t onConnect(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session) = 0;$/;"	p	class:JKYi::http::WSServlet	access:public	signature:(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)
 onTimerInsertedAtFront	JKYi/iomanager.cc	/^void IOManager::onTimerInsertedAtFront(){$/;"	f	class:JKYi::IOManager	signature:()
 onTimerInsertedAtFront	JKYi/timer.h	/^   virtual void onTimerInsertedAtFront()=0;$/;"	p	class:JKYi::TimerManager	access:protected	signature:()
 on_change_cb	JKYi/config.h	/^   typedef std::function<void (const  T&oldValue,const T&newValue)> on_change_cb;$/;"	t	class:JKYi::ConfigVar	access:public
-on_close_cb	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)> on_close_cb;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
+on_close_cb	JKYi/http/ws_servlet.h	/^    typedef std::function<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)> on_close_cb;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
 on_connect_cb	JKYi/http/ws_servlet.h	/^    typedef std::function<int32_t (JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session) > on_connect_cb;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
 on_request_fragment	JKYi/http/http_parser.cc	/^void on_request_fragment(void * data,const char * at,size_t length){$/;"	f	namespace:JKYi::http	signature:(void * data,const char * at,size_t length)
 on_request_header_done	JKYi/http/http_parser.cc	/^void on_request_header_done(void * data,const char * at,size_t length){$/;"	f	namespace:JKYi::http	signature:(void * data,const char * at,size_t length)
@@ -4688,7 +4696,7 @@ override	JKYi/http/servlet.h	/^    virtual int32_t handle(JKYi::http::HttpReques
 override	JKYi/http/servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr request,JKYi::http::HttpResponse::ptr response,JKYi::http::HttpSession::ptr session) override;$/;"	m	class:JKYi::http::ServletDispatch	access:public
 override	JKYi/http/servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr request,JKYi::http::HttpResponse::ptr response,JKYi::http::HttpSession::ptr session)override;$/;"	m	class:JKYi::http::NotFoundServlet	access:public
 override	JKYi/http/ws_server.h	/^    virtual void handleClient(Socket::ptr client)override;$/;"	m	class:JKYi::http::WSServer	access:protected
-override	JKYi/http/ws_servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSendMessage::ptr msg,JKYi::http::WSSession::ptr session)override;$/;"	m	class:JKYi::http::FunctionWSServlet	access:public
+override	JKYi/http/ws_servlet.h	/^    virtual int32_t handle(JKYi::http::HttpRequest::ptr header,JKYi::http::WSFrameMessage::ptr msg,JKYi::http::WSSession::ptr session)override;$/;"	m	class:JKYi::http::FunctionWSServlet	access:public
 override	JKYi/http/ws_servlet.h	/^    virtual int32_t onClose(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)override;$/;"	m	class:JKYi::http::FunctionWSServlet	access:public
 override	JKYi/http/ws_servlet.h	/^    virtual int32_t onConnect(JKYi::http::HttpRequest::ptr header,JKYi::http::WSSession::ptr session)override;$/;"	m	class:JKYi::http::FunctionWSServlet	access:public
 override	JKYi/iomanager.h	/^   bool stopping()override;$/;"	m	class:JKYi::IOManager	access:protected
@@ -4746,7 +4754,7 @@ ptr	JKYi/http/servlet.h	/^    typedef std::shared_ptr<Servlet> ptr;$/;"	t	class:
 ptr	JKYi/http/servlet.h	/^    typedef std::shared_ptr<ServletDispatch> ptr;$/;"	t	class:JKYi::http::ServletDispatch	access:public
 ptr	JKYi/http/ws_connection.h	/^    typedef std::shared_ptr<WSConnection> ptr;$/;"	t	class:JKYi::http::WSConnection	access:public
 ptr	JKYi/http/ws_server.h	/^    typedef std::shared_ptr<WSServer> ptr;$/;"	t	class:JKYi::http::WSServer	access:public
-ptr	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<FunctionWSServelt> ptr;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
+ptr	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<FunctionWSServlet> ptr;$/;"	t	class:JKYi::http::FunctionWSServlet	access:public
 ptr	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<WSServlet> ptr;$/;"	t	class:JKYi::http::WSServlet	access:public
 ptr	JKYi/http/ws_servlet.h	/^    typedef std::shared_ptr<WSServletDispatch> ptr;$/;"	t	class:JKYi::http::WSServletDispatch	access:public
 ptr	JKYi/http/ws_session.h	/^    typedef std::shared_ptr<WSFrameMessage> ptr;$/;"	t	class:JKYi::http::WSFrameMessage	access:public
@@ -4889,6 +4897,8 @@ run	JKYi/thread.h	/^   static void * run(void*arg);$/;"	p	class:JKYi::Thread	acc
 run	sample/my_http_server.cc	/^void run(){$/;"	f	signature:()
 run	tests/test_http_connection.cc	/^void run(){$/;"	f	signature:()
 run	tests/test_http_server.cc	/^void run(){$/;"	f	signature:()
+run	tests/test_ws_client.cc	/^void run(){$/;"	f	signature:()
+run	tests/test_ws_server.cc	/^void run(){$/;"	f	signature:()
 run_fiber	JKYi/application.cc	/^int Application::run_fiber(){$/;"	f	class:JKYi::Application	signature:()
 run_fiber	JKYi/application.h	/^    int run_fiber();$/;"	p	class:JKYi::Application	access:private	signature:()
 s_connect_timeout	JKYi/hook.cc	/^static uint64_t s_connect_timeout=-1;$/;"	m	namespace:JKYi	file:
@@ -4916,7 +4926,7 @@ sendMessage	JKYi/http/ws_connection.cc	/^int32_t WSConnection::sendMessage(WSFra
 sendMessage	JKYi/http/ws_connection.cc	/^int32_t WSConnection::sendMessage(const std::string& msg,int32_t opcode,bool fin){$/;"	f	class:JKYi::http::WSConnection	signature:(const std::string& msg,int32_t opcode,bool fin)
 sendMessage	JKYi/http/ws_connection.h	/^    int32_t sendMessage(WSFrameMessage::ptr msg,bool fin = true);$/;"	p	class:JKYi::http::WSConnection	access:public	signature:(WSFrameMessage::ptr msg,bool fin = true)
 sendMessage	JKYi/http/ws_connection.h	/^    int32_t sendMessage(const std::string& msg,int32_t opcode = WSFrameHead::TEXT_FRAME,$/;"	p	class:JKYi::http::WSConnection	access:public	signature:(const std::string& msg,int32_t opcode = WSFrameHead::TEXT_FRAME, bool fin = true)
-sendMessage	JKYi/http/ws_session.cc	/^int32_t WSSession::sendMessage(Stream * stream,WSFrameMessage::ptr msg,$/;"	f	class:JKYi::http::WSSession	signature:(Stream * stream,WSFrameMessage::ptr msg, bool fin)
+sendMessage	JKYi/http/ws_session.cc	/^int32_t WSSession::sendMessage(WSFrameMessage::ptr msg,$/;"	f	class:JKYi::http::WSSession	signature:(WSFrameMessage::ptr msg, bool fin)
 sendMessage	JKYi/http/ws_session.cc	/^int32_t WSSession::sendMessage(const std::string& msg,int32_t opcode,bool fin){$/;"	f	class:JKYi::http::WSSession	signature:(const std::string& msg,int32_t opcode,bool fin)
 sendMessage	JKYi/http/ws_session.h	/^    int32_t sendMessage(WSFrameMessage::ptr msg,bool fin = true);$/;"	p	class:JKYi::http::WSSession	access:public	signature:(WSFrameMessage::ptr msg,bool fin = true)
 sendMessage	JKYi/http/ws_session.h	/^    int32_t sendMessage(const std::string& msg,int32_t opcode = WSFrameHead::TEXT_FRAME,bool fin = true);$/;"	p	class:JKYi::http::WSSession	access:public	signature:(const std::string& msg,int32_t opcode = WSFrameHead::TEXT_FRAME,bool fin = true)
