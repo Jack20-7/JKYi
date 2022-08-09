@@ -45,12 +45,12 @@ void IOManager::FdContext::triggerEvent(IOManager::Event event){
 		ctx.scheduler->schedule(&ctx.fiber);
 	}
 	//
-	ctx.scheduler=nullptr;
+	ctx.scheduler = nullptr;
 	return ;
 }
 
 //
-IOManager::IOManager(size_t threads,bool use_caller,const std::string&name)
+IOManager::IOManager(size_t threads,bool use_caller,const std::string& name)
    :Scheduler(threads,use_caller,name){
 	   m_epfd=epoll_create(5000);
 	   JKYI_ASSERT(m_epfd>0);
@@ -76,23 +76,23 @@ IOManager::IOManager(size_t threads,bool use_caller,const std::string&name)
 //
 IOManager::~IOManager(){
     stop();
-	//
-	JKYI_LOG_DEBUG(g_logger)<<"~IOManager";
+	
 	close(m_epfd);
     close(m_tickleFds[0]);
 	close(m_tickleFds[1]);
 	//
-	for(size_t i=0;i<m_fdContexts.size();++i){
+	for(size_t i = 0;i < m_fdContexts.size();++i){
 		if(m_fdContexts[i]){
 			delete m_fdContexts[i];
 		}
 	}
+   JKYI_LOG_DEBUG(g_logger) << "name = " << getName() << " is exit";
 }
 //
 void IOManager::contextResize(size_t size){
 	m_fdContexts.resize(size);
 	//
-	for(size_t i=0;i<size;++i){
+	for(size_t i=0;i < size;++i){
 		if(!m_fdContexts[i]){
 		  m_fdContexts[i]=new FdContext;
 		  m_fdContexts[i]->fd=i;
@@ -102,7 +102,7 @@ void IOManager::contextResize(size_t size){
 //
 int IOManager::addEvent(int fd,Event event,std::function<void()>cb){
 	//
-	FdContext*fd_ctx=nullptr;
+	FdContext*fd_ctx = nullptr;
 	RWMutexType::ReadLock lock(m_mutex);
 	if((int)m_fdContexts.size()>fd){
 		fd_ctx=m_fdContexts[fd];
@@ -116,7 +116,7 @@ int IOManager::addEvent(int fd,Event event,std::function<void()>cb){
 	}
 	//
    FdContext::MutexType::Lock lock2(fd_ctx->mutex);
-   if((fd_ctx->events & event)){
+   if((JKYI_UNLIKELY(fd_ctx->events & event))){
 	   JKYI_LOG_ERROR(g_logger)<<"addEvent assert fd="<<fd
 	                           <<" event="<<(EPOLL_EVENTS)event
 							   <<" fd_ctx.events="<<(EPOLL_EVENTS)fd_ctx->events;
@@ -262,24 +262,25 @@ void IOManager::tickle(){
 	//先管道内写入一个字节的数据，主要是用来将epoll_wait给唤醒
 	int rt=write(m_tickleFds[1],"T",1);
 	//JKYI_LOG_INFO(g_logger)<<"tickle";
-	JKYI_ASSERT(rt==1);
+	JKYI_ASSERT(rt == 1);
 }
 
 //这个函数用来判断是否符合关闭的添加并且如果不符合的话，可以通过引用的方式将epoll_wait的第三个参数进行传出
 bool IOManager::stopping(uint64_t &timeout){
-   timeout=getNextTimer();
-   //
-   return timeout== ~0ull&&m_pendingEventCount==0&&Scheduler::stopping();
+   timeout = getNextTimer();
+   return timeout == ~0ull
+          && m_pendingEventCount == 0
+          && Scheduler::stopping();
 }
 //
 bool IOManager::stopping(){
-	uint64_t timeout=0;
+	uint64_t timeout = 0;
 	return stopping(timeout);
 }
 //关键逻辑函数
 void IOManager::idle(){
-   const uint64_t MAX_EVENTS=256;   
-   epoll_event* events=new epoll_event[MAX_EVENTS];
+   const uint64_t MAX_EVENTS = 256;   
+   epoll_event* events = new epoll_event[MAX_EVENTS]();
    //使用智能指针来进行管理，但是要注意的是如果要使用shared_ptr来管理数组
    //需要自定义析构函数并且传入
    std::shared_ptr<epoll_event>shared_events(events,[](epoll_event*ptr){
@@ -287,23 +288,22 @@ void IOManager::idle(){
    });
 
    while(true){
-	   uint64_t next_timeout=0;
+	   uint64_t next_timeout = 0;
 	   if(stopping(next_timeout)){
-		   JKYI_LOG_INFO(g_logger)<<"name="<<getName()
+		   JKYI_LOG_INFO(g_logger)<<"name = " << getName()
 		                          <<" idle stopping exit";
 			break;
 	   }
-	   int rt=0;
+	   int rt = 0;
 	   do{
-         static const int MAX_TIMEOUT=3000;
-		 if(next_timeout!= ~0ull){
-			 next_timeout=(int)next_timeout>MAX_TIMEOUT?MAX_TIMEOUT
-			                                             :next_timeout;
+         static const int MAX_TIMEOUT = 3000;
+		 if(next_timeout != ~0ull){
+			 next_timeout = (int)next_timeout > MAX_TIMEOUT ? MAX_TIMEOUT : next_timeout;
 		 }else{
-			 next_timeout=MAX_TIMEOUT;
+			 next_timeout = MAX_TIMEOUT;
 		 }
-		 rt=epoll_wait(m_epfd,events,MAX_EVENTS,(int)next_timeout);
-		 if(rt<0&&errno==EINTR){
+		 rt = epoll_wait(m_epfd,events,MAX_EVENTS,(int)next_timeout);
+		 if(rt < 0 && errno == EINTR){
 		 }else{
 			 break;
 		 }
@@ -316,55 +316,54 @@ void IOManager::idle(){
 		   cbs.clear();
 	   }
 	   //
-	   for(int i=0;i<rt;++i){
-         epoll_event&event=events[i];
+	   for(int i = 0;i < rt;++i){
+         epoll_event& event = events[i];
 		 //判断是否是由于管道而被唤醒的
-		 if(event.data.fd==m_tickleFds[0]){
+		 if(event.data.fd == m_tickleFds[0]){
 			 uint8_t dummy[256];
 			 //在while循环中一次性读完
 			 while(read(m_tickleFds[0],dummy,sizeof(dummy))>0);
 			 continue;
 		 }
 		 //如果不是管道的话
-		 FdContext*fd_ctx=(FdContext*)event.data.ptr;
+		 FdContext*fd_ctx = (FdContext*)event.data.ptr;
 		 FdContext::MutexType::Lock lock(fd_ctx->mutex);
 		 //
-		 if(event.events&(EPOLLERR|EPOLLHUP)){
+		 if(event.events & (EPOLLERR|EPOLLHUP)){
 			 event.events|=(EPOLLIN|EPOLLOUT)&fd_ctx->events;
 		 }
-		 int real_events=NONE;
-		 if(event.events&EPOLLIN){
+		 int real_events = NONE;
+		 if(event.events & EPOLLIN){
 			 real_events|=READ;
 		 }
-		 if(event.events&EPOLLOUT){
+		 if(event.events & EPOLLOUT){
 			 real_events|=WRITE;
 		 }
-		 if((fd_ctx->events&real_events)==NONE){
+		 if((fd_ctx->events&real_events) == NONE){
 			 continue;
 		 }
 		 //
-		 int left_events=(fd_ctx->events & ~real_events);
-		 int op=left_events?EPOLL_CTL_MOD:EPOLL_CTL_DEL;
-		 event.events=EPOLLET|left_events;
+		 int left_events = (fd_ctx->events & ~real_events);
+		 int op = left_events ? EPOLL_CTL_MOD : EPOLL_CTL_DEL;
+		 event.events = EPOLLET|left_events;
 
-		 int rt2=epoll_ctl(m_epfd,op,fd_ctx->fd,&event);
+		 int rt2 = epoll_ctl(m_epfd,op,fd_ctx->fd,&event);
 		 if(rt2){
 			 JKYI_LOG_ERROR(g_logger)<<"epoll_ctl error";
 			 continue;
 		 }
-
-		 if(real_events&READ){
+		 if(real_events & READ){
 			 fd_ctx->triggerEvent(READ);
 			 --m_pendingEventCount;
 		 }
-		 if(real_events&WRITE){
+		 if(real_events & WRITE){
 			 fd_ctx->triggerEvent(WRITE);
 			 --m_pendingEventCount;
 		 }
 	   }
 	   //全部事件处理完成之后，将控制权返回一下
-	   Fiber::ptr cur=Fiber::GetThis();
-	   auto raw_ptr=cur.get();
+	   Fiber::ptr cur = Fiber::GetThis();
+	   auto raw_ptr = cur.get();
 	   cur.reset();
 	   raw_ptr->swapOut();
    }

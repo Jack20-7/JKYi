@@ -3,6 +3,7 @@
 
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/JKYi.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/address.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/application.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/bytearray.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/config.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/daemon.h
@@ -62,6 +63,7 @@ CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/yaml-cpp-master/include/yam
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/yaml-cpp-master/include/yaml-cpp/traits.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/http/http_server.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/iomanager.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/mutex.h
 CMakeFiles/test_hook.dir/tests/test_hook.cc.o: JKYi/singleton.h

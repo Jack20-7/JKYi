@@ -7,11 +7,11 @@
 
 namespace JKYi{
 
-static Logger::ptr g_loggger = JKYI_LOG_NAME("system");
+static Logger::ptr g_logger = JKYI_LOG_NAME("system");
 
-static ConfigVar<std::map<std::string,std::map<std::string,std::string>> >::ptr 
+static ConfigVar<std::unordered_map<std::string,std::unordered_map<std::string,std::string>> >::ptr 
                  g_workers_config = Config::Lookup("workers",
-                    std::map<std::string,std::map<std::string,std::string> >(),
+                    std::unordered_map<std::string,std::unordered_map<std::string,std::string> >(),
                     "worker config");
 
 WorkerManager::WorkerManager()
@@ -38,12 +38,13 @@ IOManager::ptr WorkerManager::getAsIOManager(const std::string& name){
     return std::dynamic_pointer_cast<IOManager> (get(name));
 }
 
-bool WorkerManager::init(const std::map<std::string,
-                                        std::map<std::string,std::string>>& v){
+bool WorkerManager::init(const std::unordered_map<std::string,
+                                        std::unordered_map<std::string,std::string>>& v){
    for(auto& i : v){
        std::string name = i.first;
        int32_t thread_num = GetParamValue(i.second,"thread_num",1);
        int32_t worker_num = GetParamValue(i.second,"worker_num",1);
+       //JKYI_LOG_DEBUG(g_logger) << "worker name = " << name << " is created";
 
        for(int32_t x = 0;x < worker_num;++x){
            Scheduler::ptr s;

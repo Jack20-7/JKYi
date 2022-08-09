@@ -890,11 +890,17 @@ Create	JKYi/http/ws_connection.h	/^    static std::pair<HttpResult::ptr,WSConnec
 Create	JKYi/uri.h	/^    static Uri::ptr Create(const std::string& uri);$/;"	p	class:JKYi::Uri	access:public	signature:(const std::string& uri)
 Create	JKYi/uri.rl.cc	/^Uri::ptr Uri::Create(const std::string& uristr) {$/;"	f	class:JKYi::Uri	signature:(const std::string& uristr)
 CreateMask	JKYi/address.cc	/^static T CreateMask(uint32_t bits){$/;"	f	namespace:JKYi	signature:(uint32_t bits)
+CreateTCP	JKYi/socket.cc	/^SSLSocket::ptr SSLSocket::CreateTCP(JKYi::Address::ptr address){$/;"	f	class:JKYi::SSLSocket	signature:(JKYi::Address::ptr address)
 CreateTCP	JKYi/socket.cc	/^Socket::ptr Socket::CreateTCP(Address::ptr address){$/;"	f	class:JKYi::Socket	signature:(Address::ptr address)
+CreateTCP	JKYi/socket.h	/^    static SSLSocket::ptr CreateTCP(JKYi::Address::ptr addr);$/;"	p	class:JKYi::SSLSocket	access:public	signature:(JKYi::Address::ptr addr)
 CreateTCP	JKYi/socket.h	/^    static Socket::ptr CreateTCP(Address::ptr address);$/;"	p	class:JKYi::Socket	access:public	signature:(Address::ptr address)
+CreateTCPSocket	JKYi/socket.cc	/^SSLSocket::ptr SSLSocket::CreateTCPSocket(){$/;"	f	class:JKYi::SSLSocket	signature:()
 CreateTCPSocket	JKYi/socket.cc	/^Socket::ptr Socket::CreateTCPSocket(){$/;"	f	class:JKYi::Socket	signature:()
+CreateTCPSocket	JKYi/socket.h	/^    static SSLSocket::ptr CreateTCPSocket();$/;"	p	class:JKYi::SSLSocket	access:public	signature:()
 CreateTCPSocket	JKYi/socket.h	/^    static Socket::ptr CreateTCPSocket();$/;"	p	class:JKYi::Socket	access:public	signature:()
+CreateTCPSocket6	JKYi/socket.cc	/^SSLSocket::ptr SSLSocket::CreateTCPSocket6(){$/;"	f	class:JKYi::SSLSocket	signature:()
 CreateTCPSocket6	JKYi/socket.cc	/^Socket::ptr Socket::CreateTCPSocket6(){$/;"	f	class:JKYi::Socket	signature:()
+CreateTCPSocket6	JKYi/socket.h	/^    static SSLSocket::ptr CreateTCPSocket6();$/;"	p	class:JKYi::SSLSocket	access:public	signature:()
 CreateTCPSocket6	JKYi/socket.h	/^    static Socket::ptr CreateTCPSocket6();$/;"	p	class:JKYi::Socket	access:public	signature:()
 CreateUDP	JKYi/socket.cc	/^Socket::ptr Socket::CreateUDP(Address::ptr address){$/;"	f	class:JKYi::Socket	signature:(Address::ptr address)
 CreateUDP	JKYi/socket.h	/^    static Socket::ptr CreateUDP(Address::ptr address);$/;"	p	class:JKYi::Socket	access:public	signature:(Address::ptr address)
@@ -1953,6 +1959,50 @@ JKYi::ReadScopedLockImpl::m_locked	JKYi/mutex.h	/^  bool m_locked;$/;"	m	class:J
 JKYi::ReadScopedLockImpl::m_mutex	JKYi/mutex.h	/^  T& m_mutex;$/;"	m	class:JKYi::ReadScopedLockImpl	access:private
 JKYi::ReadScopedLockImpl::unlock	JKYi/mutex.h	/^  void unlock(){$/;"	f	class:JKYi::ReadScopedLockImpl	access:public	signature:()
 JKYi::ReadScopedLockImpl::~ReadScopedLockImpl	JKYi/mutex.h	/^  ~ReadScopedLockImpl(){$/;"	f	class:JKYi::ReadScopedLockImpl	access:public	signature:()
+JKYi::SSLSocket	JKYi/socket.h	/^class SSLSocket:public Socket{$/;"	c	namespace:JKYi	inherits:Socket
+JKYi::SSLSocket::CreateTCP	JKYi/socket.cc	/^SSLSocket::ptr SSLSocket::CreateTCP(JKYi::Address::ptr address){$/;"	f	class:JKYi::SSLSocket	signature:(JKYi::Address::ptr address)
+JKYi::SSLSocket::CreateTCP	JKYi/socket.h	/^    static SSLSocket::ptr CreateTCP(JKYi::Address::ptr addr);$/;"	p	class:JKYi::SSLSocket	access:public	signature:(JKYi::Address::ptr addr)
+JKYi::SSLSocket::CreateTCPSocket	JKYi/socket.cc	/^SSLSocket::ptr SSLSocket::CreateTCPSocket(){$/;"	f	class:JKYi::SSLSocket	signature:()
+JKYi::SSLSocket::CreateTCPSocket	JKYi/socket.h	/^    static SSLSocket::ptr CreateTCPSocket();$/;"	p	class:JKYi::SSLSocket	access:public	signature:()
+JKYi::SSLSocket::CreateTCPSocket6	JKYi/socket.cc	/^SSLSocket::ptr SSLSocket::CreateTCPSocket6(){$/;"	f	class:JKYi::SSLSocket	signature:()
+JKYi::SSLSocket::CreateTCPSocket6	JKYi/socket.h	/^    static SSLSocket::ptr CreateTCPSocket6();$/;"	p	class:JKYi::SSLSocket	access:public	signature:()
+JKYi::SSLSocket::SSLSocket	JKYi/socket.cc	/^SSLSocket::SSLSocket(int family,int type,int protocol)$/;"	f	class:JKYi::SSLSocket	signature:(int family,int type,int protocol)
+JKYi::SSLSocket::SSLSocket	JKYi/socket.h	/^    SSLSocket(int family,int type,int protocol = 0);$/;"	p	class:JKYi::SSLSocket	access:public	signature:(int family,int type,int protocol = 0)
+JKYi::SSLSocket::accept	JKYi/socket.cc	/^Socket::ptr SSLSocket::accept(){$/;"	f	class:JKYi::SSLSocket	signature:()
+JKYi::SSLSocket::bind	JKYi/socket.cc	/^bool SSLSocket::bind(const Address::ptr addr){$/;"	f	class:JKYi::SSLSocket	signature:(const Address::ptr addr)
+JKYi::SSLSocket::close	JKYi/socket.cc	/^bool SSLSocket::close(){$/;"	f	class:JKYi::SSLSocket	signature:()
+JKYi::SSLSocket::connect	JKYi/socket.cc	/^bool SSLSocket::connect(const Address::ptr addr,int64_t timeout_ms){$/;"	f	class:JKYi::SSLSocket	signature:(const Address::ptr addr,int64_t timeout_ms)
+JKYi::SSLSocket::dump	JKYi/socket.cc	/^std::ostream& SSLSocket::dump(std::ostream& os)const{$/;"	f	class:JKYi::SSLSocket	signature:(std::ostream& os) const
+JKYi::SSLSocket::init	JKYi/socket.cc	/^bool SSLSocket::init(int sock){$/;"	f	class:JKYi::SSLSocket	signature:(int sock)
+JKYi::SSLSocket::listen	JKYi/socket.cc	/^bool SSLSocket::listen(int backlog){$/;"	f	class:JKYi::SSLSocket	signature:(int backlog)
+JKYi::SSLSocket::loadCertificates	JKYi/socket.cc	/^bool SSLSocket::loadCertificates(const std::string& cert_file,$/;"	f	class:JKYi::SSLSocket	signature:(const std::string& cert_file, const std::string& key_file)
+JKYi::SSLSocket::loadCertificates	JKYi/socket.h	/^    bool loadCertificates(const std::string& cert_file,const std::string& key_file);$/;"	p	class:JKYi::SSLSocket	access:public	signature:(const std::string& cert_file,const std::string& key_file)
+JKYi::SSLSocket::m_ctx	JKYi/socket.h	/^    std::shared_ptr<SSL_CTX> m_ctx;$/;"	m	class:JKYi::SSLSocket	access:private
+JKYi::SSLSocket::m_ssl	JKYi/socket.h	/^    std::shared_ptr<SSL> m_ssl;$/;"	m	class:JKYi::SSLSocket	access:private
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual Socket::ptr accept()override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual bool bind(const Address::ptr addr)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual bool close()override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual bool connect(const Address::ptr addr,int64_t timeout_ms = -1)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual bool init(int sock)override;$/;"	m	class:JKYi::SSLSocket	access:protected
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual bool listen(int backlog = SOMAXCONN)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual int recv(iovec * buffers,size_t length,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual int recv(void * buffer,size_t length,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual int recvFrom(iovec * buffers,size_t length,Address::ptr from,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual int recvFrom(void * buffer,size_t length,Address::ptr from,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual int send(const iovec* buffers,size_t length,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual int send(const void * buffer,size_t length,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual int sendTo(const iovec * buffers,size_t length,const Address::ptr to,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual int sendTo(const void * buffer,size_t length,const Address::ptr to,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::override	JKYi/socket.h	/^    virtual std::ostream& dump(std::ostream& os)const override;$/;"	m	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::ptr	JKYi/socket.h	/^    typedef std::shared_ptr<SSLSocket> ptr;$/;"	t	class:JKYi::SSLSocket	access:public
+JKYi::SSLSocket::recv	JKYi/socket.cc	/^int SSLSocket::recv(iovec * buffers,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(iovec * buffers,size_t length,int flags)
+JKYi::SSLSocket::recv	JKYi/socket.cc	/^int SSLSocket::recv(void * buffer,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(void * buffer,size_t length,int flags)
+JKYi::SSLSocket::recvFrom	JKYi/socket.cc	/^int SSLSocket::recvFrom(iovec * buffers,size_t length,Address::ptr from,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(iovec * buffers,size_t length,Address::ptr from,int flags)
+JKYi::SSLSocket::recvFrom	JKYi/socket.cc	/^int SSLSocket::recvFrom(void * buffer,size_t length,Address::ptr from,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(void * buffer,size_t length,Address::ptr from,int flags)
+JKYi::SSLSocket::send	JKYi/socket.cc	/^int SSLSocket::send(const iovec * buffers,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(const iovec * buffers,size_t length,int flags)
+JKYi::SSLSocket::send	JKYi/socket.cc	/^int SSLSocket::send(const void * buffer,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(const void * buffer,size_t length,int flags)
+JKYi::SSLSocket::sendTo	JKYi/socket.cc	/^int SSLSocket::sendTo(const iovec * buffers,size_t length,const Address::ptr to$/;"	f	class:JKYi::SSLSocket	signature:(const iovec * buffers,size_t length,const Address::ptr to ,int flags)
+JKYi::SSLSocket::sendTo	JKYi/socket.cc	/^int SSLSocket::sendTo(const void * buffer,size_t length,const Address::ptr to,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(const void * buffer,size_t length,const Address::ptr to,int flags)
 JKYi::Scheduler	JKYi/scheduler.h	/^class Scheduler{$/;"	c	namespace:JKYi
 JKYi::Scheduler::FiberAndThread	JKYi/scheduler.h	/^  struct FiberAndThread{$/;"	s	class:JKYi::Scheduler	access:private
 JKYi::Scheduler::FiberAndThread::FiberAndThread	JKYi/scheduler.h	/^	 FiberAndThread()$/;"	f	struct:JKYi::Scheduler::FiberAndThread	access:public	signature:()
@@ -2069,7 +2119,7 @@ JKYi::Socket::cancelWrite	JKYi/socket.h	/^    bool cancelWrite();$/;"	p	class:JK
 JKYi::Socket::close	JKYi/socket.cc	/^bool Socket::close(){$/;"	f	class:JKYi::Socket	signature:()
 JKYi::Socket::close	JKYi/socket.h	/^    virtual bool close();$/;"	p	class:JKYi::Socket	access:public	signature:()
 JKYi::Socket::connect	JKYi/socket.cc	/^bool Socket::connect(const Address::ptr addr,int64_t timeout_ms){$/;"	f	class:JKYi::Socket	signature:(const Address::ptr addr,int64_t timeout_ms)
-JKYi::Socket::connect	JKYi/socket.h	/^    virtual bool connect(const Address::ptr addr,int64_t timeout_ms=-1);$/;"	p	class:JKYi::Socket	access:public	signature:(const Address::ptr addr,int64_t timeout_ms=-1)
+JKYi::Socket::connect	JKYi/socket.h	/^    virtual bool connect(const Address::ptr addr,int64_t timeout_ms = -1);$/;"	p	class:JKYi::Socket	access:public	signature:(const Address::ptr addr,int64_t timeout_ms = -1)
 JKYi::Socket::dump	JKYi/socket.cc	/^std::ostream& Socket::dump(std::ostream&os)const{$/;"	f	class:JKYi::Socket	signature:(std::ostream&os) const
 JKYi::Socket::dump	JKYi/socket.h	/^    virtual std::ostream& dump(std::ostream&os)const;$/;"	p	class:JKYi::Socket	access:public	signature:(std::ostream&os) const
 JKYi::Socket::getError	JKYi/socket.cc	/^int Socket::getError(){$/;"	f	class:JKYi::Socket	signature:()
@@ -2090,22 +2140,22 @@ JKYi::Socket::getSendTimeout	JKYi/socket.h	/^    int64_t getSendTimeout();$/;"	p
 JKYi::Socket::getSocket	JKYi/socket.h	/^    int getSocket()const{ return m_sock; }$/;"	f	class:JKYi::Socket	access:public	signature:() const
 JKYi::Socket::getType	JKYi/socket.h	/^    int getType()const { return m_type; }$/;"	f	class:JKYi::Socket	access:public	signature:() const
 JKYi::Socket::init	JKYi/socket.cc	/^bool Socket::init(int sock){$/;"	f	class:JKYi::Socket	signature:(int sock)
-JKYi::Socket::init	JKYi/socket.h	/^    virtual bool init(int sock);$/;"	p	class:JKYi::Socket	access:private	signature:(int sock)
+JKYi::Socket::init	JKYi/socket.h	/^    virtual bool init(int sock);$/;"	p	class:JKYi::Socket	access:protected	signature:(int sock)
 JKYi::Socket::initSock	JKYi/socket.cc	/^void Socket::initSock(){$/;"	f	class:JKYi::Socket	signature:()
-JKYi::Socket::initSock	JKYi/socket.h	/^    void initSock();$/;"	p	class:JKYi::Socket	access:private	signature:()
+JKYi::Socket::initSock	JKYi/socket.h	/^    void initSock();$/;"	p	class:JKYi::Socket	access:protected	signature:()
 JKYi::Socket::isConnected	JKYi/socket.h	/^    bool isConnected()const { return m_isConnected; }$/;"	f	class:JKYi::Socket	access:public	signature:() const
 JKYi::Socket::isValid	JKYi/socket.h	/^    bool isValid()const  { return m_sock != -1; }$/;"	f	class:JKYi::Socket	access:public	signature:() const
 JKYi::Socket::listen	JKYi/socket.cc	/^bool Socket::listen(int backlog){$/;"	f	class:JKYi::Socket	signature:(int backlog)
 JKYi::Socket::listen	JKYi/socket.h	/^    virtual bool listen(int backlog = SOMAXCONN);$/;"	p	class:JKYi::Socket	access:public	signature:(int backlog = SOMAXCONN)
-JKYi::Socket::m_family	JKYi/socket.h	/^    int m_family;$/;"	m	class:JKYi::Socket	access:private
-JKYi::Socket::m_isConnected	JKYi/socket.h	/^    bool m_isConnected;$/;"	m	class:JKYi::Socket	access:private
-JKYi::Socket::m_localAddress	JKYi/socket.h	/^    Address::ptr m_localAddress;$/;"	m	class:JKYi::Socket	access:private
-JKYi::Socket::m_protocol	JKYi/socket.h	/^    int m_protocol;$/;"	m	class:JKYi::Socket	access:private
-JKYi::Socket::m_remoteAddress	JKYi/socket.h	/^    Address::ptr m_remoteAddress;$/;"	m	class:JKYi::Socket	access:private
-JKYi::Socket::m_sock	JKYi/socket.h	/^    int m_sock;$/;"	m	class:JKYi::Socket	access:private
-JKYi::Socket::m_type	JKYi/socket.h	/^    int m_type;$/;"	m	class:JKYi::Socket	access:private
+JKYi::Socket::m_family	JKYi/socket.h	/^    int m_family;$/;"	m	class:JKYi::Socket	access:protected
+JKYi::Socket::m_isConnected	JKYi/socket.h	/^    bool m_isConnected;$/;"	m	class:JKYi::Socket	access:protected
+JKYi::Socket::m_localAddress	JKYi/socket.h	/^    Address::ptr m_localAddress;$/;"	m	class:JKYi::Socket	access:protected
+JKYi::Socket::m_protocol	JKYi/socket.h	/^    int m_protocol;$/;"	m	class:JKYi::Socket	access:protected
+JKYi::Socket::m_remoteAddress	JKYi/socket.h	/^    Address::ptr m_remoteAddress;$/;"	m	class:JKYi::Socket	access:protected
+JKYi::Socket::m_sock	JKYi/socket.h	/^    int m_sock;$/;"	m	class:JKYi::Socket	access:protected
+JKYi::Socket::m_type	JKYi/socket.h	/^    int m_type;$/;"	m	class:JKYi::Socket	access:protected
 JKYi::Socket::newSock	JKYi/socket.cc	/^void Socket::newSock(){$/;"	f	class:JKYi::Socket	signature:()
-JKYi::Socket::newSock	JKYi/socket.h	/^    void newSock();$/;"	p	class:JKYi::Socket	access:private	signature:()
+JKYi::Socket::newSock	JKYi/socket.h	/^    void newSock();$/;"	p	class:JKYi::Socket	access:protected	signature:()
 JKYi::Socket::ptr	JKYi/socket.h	/^    typedef std::shared_ptr<Socket> ptr;$/;"	t	class:JKYi::Socket	access:public
 JKYi::Socket::reconnect	JKYi/socket.cc	/^bool Socket::reconnect(int64_t timeout_ms){$/;"	f	class:JKYi::Socket	signature:(int64_t timeout_ms)
 JKYi::Socket::reconnect	JKYi/socket.h	/^    virtual bool reconnect(int64_t timeout_ms=-1);$/;"	p	class:JKYi::Socket	access:public	signature:(int64_t timeout_ms=-1)
@@ -2214,6 +2264,7 @@ JKYi::TcpServer::getSocks	JKYi/tcp_server.h	/^    std::vector<JKYi::Socket::ptr>
 JKYi::TcpServer::handleClient	JKYi/tcp_server.cc	/^void TcpServer::handleClient(Socket::ptr client){$/;"	f	class:JKYi::TcpServer	signature:(Socket::ptr client)
 JKYi::TcpServer::handleClient	JKYi/tcp_server.h	/^    virtual void handleClient(Socket::ptr client);$/;"	p	class:JKYi::TcpServer	access:protected	signature:(Socket::ptr client)
 JKYi::TcpServer::isStop	JKYi/tcp_server.h	/^    bool isStop()const { return m_isStop; }$/;"	f	class:JKYi::TcpServer	access:public	signature:() const
+JKYi::TcpServer::loadCertificates	JKYi/tcp_server.cc	/^bool TcpServer::loadCertificates(const std::string& cert_file,const std::string& key_file){$/;"	f	class:JKYi::TcpServer	signature:(const std::string& cert_file,const std::string& key_file)
 JKYi::TcpServer::loadCertificates	JKYi/tcp_server.h	/^    bool loadCertificates(const std::string& cert_file,const std::string& key_file);$/;"	p	class:JKYi::TcpServer	access:public	signature:(const std::string& cert_file,const std::string& key_file)
 JKYi::TcpServer::m_acceptWorker	JKYi/tcp_server.h	/^    IOManager * m_acceptWorker;$/;"	m	class:JKYi::TcpServer	access:protected
 JKYi::TcpServer::m_conf	JKYi/tcp_server.h	/^    TcpServerConf::ptr m_conf;$/;"	m	class:JKYi::TcpServer	access:protected
@@ -2439,6 +2490,9 @@ JKYi::WriteScopedLockImpl::unlock	JKYi/mutex.h	/^  void unlock(){$/;"	f	class:JK
 JKYi::WriteScopedLockImpl::~WriteScopedLockImpl	JKYi/mutex.h	/^  ~WriteScopedLockImpl(){$/;"	f	class:JKYi::WriteScopedLockImpl	access:public	signature:()
 JKYi::_HookIniter	JKYi/hook.cc	/^struct _HookIniter{$/;"	s	namespace:JKYi	file:
 JKYi::_HookIniter::_HookIniter	JKYi/hook.cc	/^   _HookIniter(){$/;"	f	struct:JKYi::_HookIniter	access:public	signature:()
+JKYi::__anon2::_SSLInit	JKYi/socket.cc	/^struct _SSLInit{$/;"	s	namespace:JKYi::__anon2	file:
+JKYi::__anon2::_SSLInit::_SSLInit	JKYi/socket.cc	/^    _SSLInit(){$/;"	f	struct:JKYi::__anon2::_SSLInit	access:public	signature:()
+JKYi::__anon2::s_init	JKYi/socket.cc	/^static _SSLInit s_init;$/;"	m	namespace:JKYi::__anon2	file:
 JKYi::__lstat	JKYi/util.cc	/^static int __lstat(const char* file,struct stat* st = nullptr){$/;"	f	namespace:JKYi	signature:(const char* file,struct stat* st = nullptr)
 JKYi::__mkdir	JKYi/util.cc	/^static int __mkdir(const char * dirname){$/;"	f	namespace:JKYi	signature:(const char * dirname)
 JKYi::_log_init	JKYi/log.cc	/^static LogIniter _log_init;\/\/全局对象$/;"	m	namespace:JKYi	file:
@@ -3397,6 +3451,9 @@ SIMULATE_VERSION_PATCH	CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	52;"	d	f
 SIMULATE_VERSION_PATCH	CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	52;"	d	file:
 SIMULATE_VERSION_PATCH	CMakeFiles/3.16.6/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
 SIMULATE_VERSION_PATCH	CMakeFiles/3.16.6/CompilerIdCXX/CMakeCXXCompilerId.cpp	52;"	d	file:
+SSLSocket	JKYi/socket.cc	/^SSLSocket::SSLSocket(int family,int type,int protocol)$/;"	f	class:JKYi::SSLSocket	signature:(int family,int type,int protocol)
+SSLSocket	JKYi/socket.h	/^    SSLSocket(int family,int type,int protocol = 0);$/;"	p	class:JKYi::SSLSocket	access:public	signature:(int family,int type,int protocol = 0)
+SSLSocket	JKYi/socket.h	/^class SSLSocket:public Socket{$/;"	c	namespace:JKYi	inherits:Socket
 STRINGIFY	CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c	335;"	d	file:
 STRINGIFY	CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	320;"	d	file:
 STRINGIFY	CMakeFiles/3.16.6/CompilerIdC/CMakeCCompilerId.c	335;"	d	file:
@@ -3600,6 +3657,8 @@ _JKYI_WS_SERVLET_H_	JKYi/http/ws_servlet.h	2;"	d
 _JKYI_WS_SESSION_H_	JKYi/http/ws_session.h	2;"	d
 _RequestSizeIniter	JKYi/http/http_parser.cc	/^        _RequestSizeIniter(){$/;"	f	struct:JKYi::http::__anon1::_RequestSizeIniter	access:public	signature:()
 _RequestSizeIniter	JKYi/http/http_parser.cc	/^struct _RequestSizeIniter{$/;"	s	namespace:JKYi::http::__anon1	file:
+_SSLInit	JKYi/socket.cc	/^    _SSLInit(){$/;"	f	struct:JKYi::__anon2::_SSLInit	access:public	signature:()
+_SSLInit	JKYi/socket.cc	/^struct _SSLInit{$/;"	s	namespace:JKYi::__anon2	file:
 _TCP_SERVER_H_	JKYi/tcp_server.h	2;"	d
 __lstat	JKYi/util.cc	/^static int __lstat(const char* file,struct stat* st = nullptr){$/;"	f	namespace:JKYi	signature:(const char* file,struct stat* st = nullptr)
 __mkdir	JKYi/util.cc	/^static int __mkdir(const char * dirname){$/;"	f	namespace:JKYi	signature:(const char * dirname)
@@ -3607,6 +3666,7 @@ _http11_common_h	JKYi/http/http11_common.h	2;"	d
 _init	JKYi/http/http_parser.cc	/^static _RequestSizeIniter _init;$/;"	m	namespace:JKYi::http::__anon1	file:
 _log_init	JKYi/log.cc	/^static LogIniter _log_init;\/\/全局对象$/;"	m	namespace:JKYi	file:
 accept	JKYi/hook.cc	/^int accept(int s, struct sockaddr *addr, socklen_t *addrlen) {$/;"	f	signature:(int s, struct sockaddr *addr, socklen_t *addrlen)
+accept	JKYi/socket.cc	/^Socket::ptr SSLSocket::accept(){$/;"	f	class:JKYi::SSLSocket	signature:()
 accept	JKYi/socket.cc	/^Socket::ptr Socket::accept(){$/;"	f	class:JKYi::Socket	signature:()
 accept	JKYi/socket.h	/^    virtual Socket::ptr accept();$/;"	p	class:JKYi::Socket	access:public	signature:()
 accept_fun	JKYi/hook.h	/^typedef int (*accept_fun)(int s, struct sockaddr *addr, socklen_t *addrlen);$/;"	t
@@ -3647,6 +3707,7 @@ appenders	JKYi/log.cc	/^   std::vector<LogAppenderDefine>appenders;$/;"	m	struct
 args	JKYi/tcp_server.h	/^    std::map<std::string,std::string> args;$/;"	m	struct:JKYi::TcpServerConf	access:public
 back	JKYi/fiber.cc	/^void Fiber::back(){$/;"	f	class:JKYi::Fiber	signature:()
 back	JKYi/fiber.h	/^	void back();$/;"	p	class:JKYi::Fiber	access:public	signature:()
+bind	JKYi/socket.cc	/^bool SSLSocket::bind(const Address::ptr addr){$/;"	f	class:JKYi::SSLSocket	signature:(const Address::ptr addr)
 bind	JKYi/socket.cc	/^bool Socket::bind(Address::ptr address){$/;"	f	class:JKYi::Socket	signature:(Address::ptr address)
 bind	JKYi/socket.h	/^    virtual bool bind(const Address::ptr addr);$/;"	p	class:JKYi::Socket	access:public	signature:(const Address::ptr addr)
 bind	JKYi/tcp_server.cc	/^bool TcpServer::bind(Address::ptr addr,bool ssl){$/;"	f	class:JKYi::TcpServer	signature:(Address::ptr addr,bool ssl)
@@ -3699,14 +3760,16 @@ clearAppender	JKYi/log.h	/^    void clearAppender();$/;"	p	class:JKYi::Logger	ac
 clearListener	JKYi/config.h	/^   void clearListener(){$/;"	f	class:JKYi::ConfigVar	access:public	signature:()
 close	JKYi/hook.cc	/^int close(int fd){$/;"	f	signature:(int fd)
 close	JKYi/http/httpclient_parser.h	/^      int close;$/;"	m	struct:httpclient_parser	access:public
+close	JKYi/socket.cc	/^bool SSLSocket::close(){$/;"	f	class:JKYi::SSLSocket	signature:()
 close	JKYi/socket.cc	/^bool Socket::close(){$/;"	f	class:JKYi::Socket	signature:()
 close	JKYi/socket.h	/^    virtual bool close();$/;"	p	class:JKYi::Socket	access:public	signature:()
 close	JKYi/stream.h	/^    virtual void close() = 0;$/;"	p	class:JKYi::Stream	access:public	signature:()
 close	JKYi/stream/socket_stream.cc	/^void SocketStream::close(){$/;"	f	class:JKYi::SocketStream	signature:()
 close_fun	JKYi/hook.h	/^typedef int (*close_fun)(int fd);$/;"	t
 connect	JKYi/hook.cc	/^int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen) {$/;"	f	signature:(int sockfd, const struct sockaddr *addr, socklen_t addrlen)
+connect	JKYi/socket.cc	/^bool SSLSocket::connect(const Address::ptr addr,int64_t timeout_ms){$/;"	f	class:JKYi::SSLSocket	signature:(const Address::ptr addr,int64_t timeout_ms)
 connect	JKYi/socket.cc	/^bool Socket::connect(const Address::ptr addr,int64_t timeout_ms){$/;"	f	class:JKYi::Socket	signature:(const Address::ptr addr,int64_t timeout_ms)
-connect	JKYi/socket.h	/^    virtual bool connect(const Address::ptr addr,int64_t timeout_ms=-1);$/;"	p	class:JKYi::Socket	access:public	signature:(const Address::ptr addr,int64_t timeout_ms=-1)
+connect	JKYi/socket.h	/^    virtual bool connect(const Address::ptr addr,int64_t timeout_ms = -1);$/;"	p	class:JKYi::Socket	access:public	signature:(const Address::ptr addr,int64_t timeout_ms = -1)
 connect_fun	JKYi/hook.h	/^typedef int (*connect_fun)(int sockfd, const struct sockaddr *addr, socklen_t addrlen);$/;"	t
 connect_with_timeout	JKYi/hook.cc	/^int connect_with_timeout(int socketfd,const struct sockaddr*addr,socklen_t addrlen,uint64_t timeout_ms){$/;"	f	signature:(int socketfd,const struct sockaddr*addr,socklen_t addrlen,uint64_t timeout_ms)
 connect_with_timeout	JKYi/hook.h	/^extern int connect_with_timeout(int fd, const struct sockaddr* addr, socklen_t addrlen, uint64_t timeout_ms);$/;"	p	signature:(int fd, const struct sockaddr* addr, socklen_t addrlen, uint64_t timeout_ms)
@@ -3771,6 +3834,7 @@ dump	JKYi/http/http.h	/^    std::ostream& dump(std::ostream& os)const;$/;"	p	cla
 dump	JKYi/http/http.h	/^   std::ostream& dump(std::ostream& os)const;$/;"	p	class:JKYi::http::HttpRequest	access:public	signature:(std::ostream& os) const
 dump	JKYi/scheduler.cc	/^std::ostream& Scheduler::dump(std::ostream& os){$/;"	f	class:JKYi::Scheduler	signature:(std::ostream& os)
 dump	JKYi/scheduler.h	/^   std::ostream& dump(std::ostream& os);$/;"	p	class:JKYi::Scheduler	access:public	signature:(std::ostream& os)
+dump	JKYi/socket.cc	/^std::ostream& SSLSocket::dump(std::ostream& os)const{$/;"	f	class:JKYi::SSLSocket	signature:(std::ostream& os) const
 dump	JKYi/socket.cc	/^std::ostream& Socket::dump(std::ostream&os)const{$/;"	f	class:JKYi::Socket	signature:(std::ostream&os) const
 dump	JKYi/socket.h	/^    virtual std::ostream& dump(std::ostream&os)const;$/;"	p	class:JKYi::Socket	access:public	signature:(std::ostream&os) const
 dump	JKYi/uri.h	/^    std::ostream& dump(std::ostream& os)const ;$/;"	p	class:JKYi::Uri	access:public	signature:(std::ostream& os) const
@@ -4262,8 +4326,9 @@ init	JKYi/log.cc	/^void LogFormatter::init(){$/;"	f	class:JKYi::LogFormatter	sig
 init	JKYi/log.cc	/^void LoggerManager::init(){$/;"	f	class:JKYi::LoggerManager	signature:()
 init	JKYi/log.h	/^     void init();$/;"	p	class:JKYi::LoggerManager	access:public	signature:()
 init	JKYi/log.h	/^    void init();$/;"	p	class:JKYi::LogFormatter	access:public	signature:()
+init	JKYi/socket.cc	/^bool SSLSocket::init(int sock){$/;"	f	class:JKYi::SSLSocket	signature:(int sock)
 init	JKYi/socket.cc	/^bool Socket::init(int sock){$/;"	f	class:JKYi::Socket	signature:(int sock)
-init	JKYi/socket.h	/^    virtual bool init(int sock);$/;"	p	class:JKYi::Socket	access:private	signature:(int sock)
+init	JKYi/socket.h	/^    virtual bool init(int sock);$/;"	p	class:JKYi::Socket	access:protected	signature:(int sock)
 init	JKYi/worker.cc	/^bool WorkerManager::init(){$/;"	f	class:JKYi::WorkerManager	signature:()
 init	JKYi/worker.cc	/^bool WorkerManager::init(const std::map<std::string,$/;"	f	class:JKYi::WorkerManager	signature:(const std::map<std::string, std::map<std::string,std::string>>& v)
 init	JKYi/worker.h	/^    bool init();$/;"	p	class:JKYi::WorkerManager	access:public	signature:()
@@ -4277,7 +4342,7 @@ initParam	JKYi/http/http.h	/^   void initParam();$/;"	p	class:JKYi::http::HttpRe
 initQueryParam	JKYi/http/http.cc	/^void HttpRequest::initQueryParam(){$/;"	f	class:JKYi::http::HttpRequest	signature:()
 initQueryParam	JKYi/http/http.h	/^   void initQueryParam();$/;"	p	class:JKYi::http::HttpRequest	access:public	signature:()
 initSock	JKYi/socket.cc	/^void Socket::initSock(){$/;"	f	class:JKYi::Socket	signature:()
-initSock	JKYi/socket.h	/^    void initSock();$/;"	p	class:JKYi::Socket	access:private	signature:()
+initSock	JKYi/socket.h	/^    void initSock();$/;"	p	class:JKYi::Socket	access:protected	signature:()
 insert	JKYi/address.cc	/^std::ostream& IPv4Address::insert(std::ostream &os)const {$/;"	f	class:JKYi::IPv4Address	signature:(std::ostream &os) const
 insert	JKYi/address.cc	/^std::ostream& IPv6Address::insert(std::ostream&os)const{$/;"	f	class:JKYi::IPv6Address	signature:(std::ostream&os) const
 insert	JKYi/address.cc	/^std::ostream& UnixAddress::insert(std::ostream&os)const {$/;"	f	class:JKYi::UnixAddress	signature:(std::ostream&os) const
@@ -4323,8 +4388,12 @@ listAllServer	JKYi/application.cc	/^void Application::listAllServer(std::map<std
 listAllServer	JKYi/application.h	/^    void listAllServer(std::map<std::string,$/;"	p	class:JKYi::Application	access:public	signature:(std::map<std::string, std::vector<TcpServer::ptr>> &servers)
 listExpiredCb	JKYi/timer.cc	/^void TimerManager::listExpiredCb(std::vector<std::function<void ()>>&cbs){$/;"	f	class:JKYi::TimerManager	signature:(std::vector<std::function<void ()>>&cbs)
 listExpiredCb	JKYi/timer.h	/^   void listExpiredCb(std::vector<std::function<void ()>>&cbs);$/;"	p	class:JKYi::TimerManager	access:public	signature:(std::vector<std::function<void ()>>&cbs)
+listen	JKYi/socket.cc	/^bool SSLSocket::listen(int backlog){$/;"	f	class:JKYi::SSLSocket	signature:(int backlog)
 listen	JKYi/socket.cc	/^bool Socket::listen(int backlog){$/;"	f	class:JKYi::Socket	signature:(int backlog)
 listen	JKYi/socket.h	/^    virtual bool listen(int backlog = SOMAXCONN);$/;"	p	class:JKYi::Socket	access:public	signature:(int backlog = SOMAXCONN)
+loadCertificates	JKYi/socket.cc	/^bool SSLSocket::loadCertificates(const std::string& cert_file,$/;"	f	class:JKYi::SSLSocket	signature:(const std::string& cert_file, const std::string& key_file)
+loadCertificates	JKYi/socket.h	/^    bool loadCertificates(const std::string& cert_file,const std::string& key_file);$/;"	p	class:JKYi::SSLSocket	access:public	signature:(const std::string& cert_file,const std::string& key_file)
+loadCertificates	JKYi/tcp_server.cc	/^bool TcpServer::loadCertificates(const std::string& cert_file,const std::string& key_file){$/;"	f	class:JKYi::TcpServer	signature:(const std::string& cert_file,const std::string& key_file)
 loadCertificates	JKYi/tcp_server.h	/^    bool loadCertificates(const std::string& cert_file,const std::string& key_file);$/;"	p	class:JKYi::TcpServer	access:public	signature:(const std::string& cert_file,const std::string& key_file)
 lock	JKYi/mutex.h	/^   void lock(){$/;"	f	class:JKYi::CASLock	access:public	signature:()
 lock	JKYi/mutex.h	/^   void lock(){$/;"	f	class:JKYi::Mutex	access:public	signature:()
@@ -4369,6 +4438,7 @@ m_cookies	JKYi/http/http.h	/^    MapType m_cookies;$/;"	m	class:JKYi::http::Http
 m_cookies	JKYi/http/http.h	/^    std::vector<std::string>m_cookies;$/;"	m	class:JKYi::http::HttpResponse	access:private
 m_createTime	JKYi/http/http_connection.h	/^    uint64_t m_createTime ;$/;"	m	class:JKYi::http::HttpConnection	access:private
 m_ctx	JKYi/fiber.h	/^   ucontext_t m_ctx;$/;"	m	class:JKYi::Fiber	access:private
+m_ctx	JKYi/socket.h	/^    std::shared_ptr<SSL_CTX> m_ctx;$/;"	m	class:JKYi::SSLSocket	access:private
 m_cur	JKYi/bytearray.h	/^    Node * m_cur;$/;"	m	class:JKYi::ByteArray	access:private
 m_cwd	JKYi/env.h	/^    std::string m_cwd;$/;"	m	class:JKYi::Env	access:private
 m_data	JKYi/http/http_parser.h	/^    HttpRequest::ptr m_data;$/;"	m	class:JKYi::http::HttpRequestParser	access:private
@@ -4389,7 +4459,7 @@ m_error	JKYi/http/http_parser.h	/^    int m_error;$/;"	m	class:JKYi::http::HttpR
 m_error	JKYi/log.h	/^    bool m_error=false;$/;"	m	class:JKYi::LogFormatter	access:private
 m_event	JKYi/log.h	/^   LogEvent::ptr m_event;$/;"	m	class:JKYi::LogEventWrap	access:private
 m_exe	JKYi/env.h	/^    std::string m_exe;$/;"	m	class:JKYi::Env	access:private
-m_family	JKYi/socket.h	/^    int m_family;$/;"	m	class:JKYi::Socket	access:private
+m_family	JKYi/socket.h	/^    int m_family;$/;"	m	class:JKYi::Socket	access:protected
 m_fd	JKYi/fdmanager.h	/^  int m_fd;$/;"	m	class:JKYi::FdCtx	access:private
 m_fdContexts	JKYi/iomanager.h	/^   std::vector<FdContext*>m_fdContexts;$/;"	m	class:JKYi::IOManager	access:private
 m_fiberId	JKYi/log.h	/^   uint32_t m_fiberId=0;\/\/协程ID$/;"	m	class:JKYi::LogEvent	access:private
@@ -4415,7 +4485,7 @@ m_idleThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_idleThreadCount={0
 m_instance	JKYi/application.cc	/^Application* Application::m_instance = nullptr;$/;"	m	class:JKYi::Application	file:
 m_instance	JKYi/application.h	/^    static Application* m_instance;$/;"	m	class:JKYi::Application	access:private
 m_ioWorker	JKYi/tcp_server.h	/^    IOManager * m_ioWorker;$/;"	m	class:JKYi::TcpServer	access:protected
-m_isConnected	JKYi/socket.h	/^    bool m_isConnected;$/;"	m	class:JKYi::Socket	access:private
+m_isConnected	JKYi/socket.h	/^    bool m_isConnected;$/;"	m	class:JKYi::Socket	access:protected
 m_isHttps	JKYi/http/http_connection.h	/^    bool m_isHttps;$/;"	m	class:JKYi::http::HttpConnectionPool	access:private
 m_isKeepalive	JKYi/http/http_server.h	/^    bool m_isKeepalive;$/;"	m	class:JKYi::http::HttpServer	access:private
 m_isStop	JKYi/tcp_server.h	/^    bool m_isStop;$/;"	m	class:JKYi::TcpServer	access:protected
@@ -4426,7 +4496,7 @@ m_level	JKYi/log.h	/^    LogLevel::Level m_level;  \/\/日志的级别，只有�
 m_level	JKYi/log.h	/^    LogLevel::Level m_level=LogLevel::DEBUG;\/\/默认为debug模式$/;"	m	class:JKYi::LogAppender	access:protected
 m_level	JKYi/log.h	/^   LogLevel::Level m_level;$/;"	m	class:JKYi::LogEvent	access:private
 m_line	JKYi/log.h	/^   int32_t m_line=0;\/\/行号$/;"	m	class:JKYi::LogEvent	access:private
-m_localAddress	JKYi/socket.h	/^    Address::ptr m_localAddress;$/;"	m	class:JKYi::Socket	access:private
+m_localAddress	JKYi/socket.h	/^    Address::ptr m_localAddress;$/;"	m	class:JKYi::Socket	access:protected
 m_lock	JKYi/mutex.h	/^   pthread_rwlock_t m_lock;$/;"	m	class:JKYi::RWMutex	access:private
 m_locked	JKYi/mutex.h	/^  bool m_locked;$/;"	m	class:JKYi::ReadScopedLockImpl	access:private
 m_locked	JKYi/mutex.h	/^  bool m_locked;$/;"	m	class:JKYi::ScopedLockImpl	access:private
@@ -4485,14 +4555,14 @@ m_port	JKYi/uri.h	/^    int32_t m_port;$/;"	m	class:JKYi::Uri	access:private
 m_position	JKYi/bytearray.h	/^    size_t m_position;$/;"	m	class:JKYi::ByteArray	access:private
 m_previouseTime	JKYi/timer.h	/^   uint64_t m_previouseTime=0;$/;"	m	class:JKYi::TimerManager	access:private
 m_program	JKYi/env.h	/^    std::string m_program;$/;"	m	class:JKYi::Env	access:private
-m_protocol	JKYi/socket.h	/^    int m_protocol;$/;"	m	class:JKYi::Socket	access:private
+m_protocol	JKYi/socket.h	/^    int m_protocol;$/;"	m	class:JKYi::Socket	access:protected
 m_query	JKYi/http/http.h	/^    std::string m_query;$/;"	m	class:JKYi::http::HttpRequest	access:private
 m_query	JKYi/uri.h	/^    std::string m_query;$/;"	m	class:JKYi::Uri	access:private
 m_reason	JKYi/http/http.h	/^    std::string m_reason;$/;"	m	class:JKYi::http::HttpResponse	access:private
 m_recurring	JKYi/timer.h	/^   bool m_recurring=false;$/;"	m	class:JKYi::Timer	access:private
 m_recvTimeout	JKYi/fdmanager.h	/^  uint64_t m_recvTimeout;$/;"	m	class:JKYi::FdCtx	access:private
 m_recvTimeout	JKYi/tcp_server.h	/^    uint64_t m_recvTimeout;$/;"	m	class:JKYi::TcpServer	access:protected
-m_remoteAddress	JKYi/socket.h	/^    Address::ptr m_remoteAddress;$/;"	m	class:JKYi::Socket	access:private
+m_remoteAddress	JKYi/socket.h	/^    Address::ptr m_remoteAddress;$/;"	m	class:JKYi::Socket	access:protected
 m_request	JKYi/http/http_connection.h	/^    uint64_t m_request = 0;$/;"	m	class:JKYi::http::HttpConnection	access:private
 m_root	JKYi/bytearray.h	/^    Node * m_root;$/;"	m	class:JKYi::ByteArray	access:private
 m_root	JKYi/log.h	/^    Logger::ptr m_root;$/;"	m	class:JKYi::Logger	access:private
@@ -4506,10 +4576,11 @@ m_sendTimeout	JKYi/fdmanager.h	/^  uint64_t m_sendTimeout;$/;"	m	class:JKYi::FdC
 m_servers	JKYi/application.h	/^    std::map<std::string,std::vector<TcpServer::ptr>>m_servers;$/;"	m	class:JKYi::Application	access:private
 m_sex	tests/test_config.cc	/^    int m_sex;$/;"	m	class:Person	file:	access:public
 m_size	JKYi/bytearray.h	/^    size_t m_size;$/;"	m	class:JKYi::ByteArray	access:private
-m_sock	JKYi/socket.h	/^    int m_sock;$/;"	m	class:JKYi::Socket	access:private
+m_sock	JKYi/socket.h	/^    int m_sock;$/;"	m	class:JKYi::Socket	access:protected
 m_socket	JKYi/stream/socket_stream.h	/^     Socket::ptr m_socket;$/;"	m	class:JKYi::SocketStream	access:private
 m_socks	JKYi/tcp_server.h	/^    std::vector<Socket::ptr> m_socks;$/;"	m	class:JKYi::TcpServer	access:protected
 m_ss	JKYi/log.h	/^   std::stringstream m_ss;\/\/流，用来存储要输出的日志$/;"	m	class:JKYi::LogEvent	access:private
+m_ssl	JKYi/socket.h	/^    std::shared_ptr<SSL> m_ssl;$/;"	m	class:JKYi::SSLSocket	access:private
 m_ssl	JKYi/tcp_server.h	/^    bool m_ssl = false;$/;"	m	class:JKYi::TcpServer	access:protected
 m_stack	JKYi/fiber.h	/^   void *m_stack=nullptr;$/;"	m	class:JKYi::Fiber	access:private
 m_stacksize	JKYi/fiber.h	/^   uint32_t m_stacksize=0;$/;"	m	class:JKYi::Fiber	access:private
@@ -4530,7 +4601,7 @@ m_tickled	JKYi/timer.h	/^   bool m_tickled=false;$/;"	m	class:JKYi::TimerManager
 m_time	JKYi/log.h	/^   uint32_t m_time=0;\/\/时间戳$/;"	m	class:JKYi::LogEvent	access:private
 m_timers	JKYi/timer.h	/^   std::set<Timer::ptr,Timer::Comparator>m_timers;$/;"	m	class:JKYi::TimerManager	access:private
 m_total	JKYi/http/http_connection.h	/^    std::atomic<int32_t> m_total = {0};$/;"	m	class:JKYi::http::HttpConnectionPool	access:private
-m_type	JKYi/socket.h	/^    int m_type;$/;"	m	class:JKYi::Socket	access:private
+m_type	JKYi/socket.h	/^    int m_type;$/;"	m	class:JKYi::Socket	access:protected
 m_type	JKYi/tcp_server.h	/^    std::string m_type = "tcp";$/;"	m	class:JKYi::TcpServer	access:protected
 m_userinfo	JKYi/uri.h	/^    std::string m_userinfo;$/;"	m	class:JKYi::Uri	access:private
 m_val	JKYi/config.h	/^   T m_val;$/;"	m	class:JKYi::ConfigVar	access:private
@@ -4589,7 +4660,7 @@ networkAddress	JKYi/address.cc	/^IPAddress::ptr IPv4Address::networkAddress(uint
 networkAddress	JKYi/address.cc	/^IPAddress::ptr IPv6Address::networkAddress(uint32_t prefix_len){$/;"	f	class:JKYi::IPv6Address	signature:(uint32_t prefix_len)
 networkAddress	JKYi/address.h	/^	virtual IPAddress::ptr networkAddress(uint32_t prefix_len)=0;$/;"	p	class:JKYi::IPAddress	access:public	signature:(uint32_t prefix_len)
 newSock	JKYi/socket.cc	/^void Socket::newSock(){$/;"	f	class:JKYi::Socket	signature:()
-newSock	JKYi/socket.h	/^    void newSock();$/;"	p	class:JKYi::Socket	access:private	signature:()
+newSock	JKYi/socket.h	/^    void newSock();$/;"	p	class:JKYi::Socket	access:protected	signature:()
 next	JKYi/bytearray.h	/^        Node* next;$/;"	m	struct:JKYi::ByteArray::Node	access:public
 notify	JKYi/mutex.cc	/^void FiberSemaphore::notify(){$/;"	f	class:JKYi::FiberSemaphore	signature:()
 notify	JKYi/mutex.cc	/^void Semaphore::notify(){$/;"	f	class:JKYi::Semaphore	signature:()
@@ -4707,6 +4778,21 @@ override	JKYi/log.h	/^     std::string toYamlString()override;$/;"	m	class:JKYi:
 override	JKYi/log.h	/^     void log(Logger::ptr logger, LogLevel::Level level, LogEvent::ptr event) override;$/;"	m	class:JKYi::FileLogAppender	access:public
 override	JKYi/log.h	/^    std::string toYamlString()override;$/;"	m	class:JKYi::StdoutLogAppender	access:public
 override	JKYi/log.h	/^    void log(Logger::ptr logger, LogLevel::Level level, LogEvent::ptr event) override;$/;"	m	class:JKYi::StdoutLogAppender	access:public
+override	JKYi/socket.h	/^    virtual Socket::ptr accept()override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual bool bind(const Address::ptr addr)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual bool close()override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual bool connect(const Address::ptr addr,int64_t timeout_ms = -1)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual bool init(int sock)override;$/;"	m	class:JKYi::SSLSocket	access:protected
+override	JKYi/socket.h	/^    virtual bool listen(int backlog = SOMAXCONN)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual int recv(iovec * buffers,size_t length,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual int recv(void * buffer,size_t length,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual int recvFrom(iovec * buffers,size_t length,Address::ptr from,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual int recvFrom(void * buffer,size_t length,Address::ptr from,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual int send(const iovec* buffers,size_t length,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual int send(const void * buffer,size_t length,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual int sendTo(const iovec * buffers,size_t length,const Address::ptr to,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual int sendTo(const void * buffer,size_t length,const Address::ptr to,int flags = 0)override;$/;"	m	class:JKYi::SSLSocket	access:public
+override	JKYi/socket.h	/^    virtual std::ostream& dump(std::ostream& os)const override;$/;"	m	class:JKYi::SSLSocket	access:public
 override	JKYi/stream/socket_stream.h	/^     virtual int read(ByteArray::ptr ba,size_t length) override;$/;"	m	class:JKYi::SocketStream	access:public
 override	JKYi/stream/socket_stream.h	/^     virtual int read(void * buffer,size_t length) override;$/;"	m	class:JKYi::SocketStream	access:public
 override	JKYi/stream/socket_stream.h	/^     virtual int write(ByteArray::ptr ba,size_t length) override;$/;"	m	class:JKYi::SocketStream	access:public
@@ -4768,6 +4854,7 @@ ptr	JKYi/log.h	/^    typedef std::shared_ptr<Logger> ptr;$/;"	t	class:JKYi::Logg
 ptr	JKYi/log.h	/^    typedef std::shared_ptr<StdoutLogAppender> ptr;$/;"	t	class:JKYi::StdoutLogAppender	access:public
 ptr	JKYi/log.h	/^   typedef std::shared_ptr<LogEvent> ptr; $/;"	t	class:JKYi::LogEvent	access:public
 ptr	JKYi/scheduler.h	/^   typedef std::shared_ptr<Scheduler> ptr;$/;"	t	class:JKYi::Scheduler	access:public
+ptr	JKYi/socket.h	/^    typedef std::shared_ptr<SSLSocket> ptr;$/;"	t	class:JKYi::SSLSocket	access:public
 ptr	JKYi/socket.h	/^    typedef std::shared_ptr<Socket> ptr;$/;"	t	class:JKYi::Socket	access:public
 ptr	JKYi/stream.h	/^    typedef std::shared_ptr<Stream> ptr;$/;"	t	class:JKYi::Stream	access:public
 ptr	JKYi/stream/socket_stream.h	/^     typedef std::shared_ptr<SocketStream> ptr;$/;"	t	class:JKYi::SocketStream	access:public
@@ -4845,10 +4932,14 @@ reason_phrase	JKYi/http/httpclient_parser.h	/^      element_cb reason_phrase;$/;
 reconnect	JKYi/socket.cc	/^bool Socket::reconnect(int64_t timeout_ms){$/;"	f	class:JKYi::Socket	signature:(int64_t timeout_ms)
 reconnect	JKYi/socket.h	/^    virtual bool reconnect(int64_t timeout_ms=-1);$/;"	p	class:JKYi::Socket	access:public	signature:(int64_t timeout_ms=-1)
 recv	JKYi/hook.cc	/^ssize_t recv(int sockfd, void *buf, size_t len, int flags) {$/;"	f	signature:(int sockfd, void *buf, size_t len, int flags)
+recv	JKYi/socket.cc	/^int SSLSocket::recv(iovec * buffers,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(iovec * buffers,size_t length,int flags)
+recv	JKYi/socket.cc	/^int SSLSocket::recv(void * buffer,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(void * buffer,size_t length,int flags)
 recv	JKYi/socket.cc	/^int Socket::recv(struct iovec*buffers,size_t len,int flags){$/;"	f	class:JKYi::Socket	signature:(struct iovec*buffers,size_t len,int flags)
 recv	JKYi/socket.cc	/^int Socket::recv(void *buffer,size_t len,int flags){$/;"	f	class:JKYi::Socket	signature:(void *buffer,size_t len,int flags)
 recv	JKYi/socket.h	/^    virtual int recv(iovec*buffers,size_t len,int flags=0);$/;"	p	class:JKYi::Socket	access:public	signature:(iovec*buffers,size_t len,int flags=0)
 recv	JKYi/socket.h	/^    virtual int recv(void * buffer,size_t len,int flags=0);$/;"	p	class:JKYi::Socket	access:public	signature:(void * buffer,size_t len,int flags=0)
+recvFrom	JKYi/socket.cc	/^int SSLSocket::recvFrom(iovec * buffers,size_t length,Address::ptr from,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(iovec * buffers,size_t length,Address::ptr from,int flags)
+recvFrom	JKYi/socket.cc	/^int SSLSocket::recvFrom(void * buffer,size_t length,Address::ptr from,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(void * buffer,size_t length,Address::ptr from,int flags)
 recvFrom	JKYi/socket.cc	/^int Socket::recvFrom(iovec*buffers,size_t len,Address::ptr from,int flags){$/;"	f	class:JKYi::Socket	signature:(iovec*buffers,size_t len,Address::ptr from,int flags)
 recvFrom	JKYi/socket.cc	/^int Socket::recvFrom(void *buffer,size_t len,Address::ptr from,int flags){$/;"	f	class:JKYi::Socket	signature:(void *buffer,size_t len,Address::ptr from,int flags)
 recvFrom	JKYi/socket.h	/^    virtual int recvFrom(iovec*buffers,size_t len,Address::ptr from,int flags=0);$/;"	p	class:JKYi::Socket	access:public	signature:(iovec*buffers,size_t len,Address::ptr from,int flags=0)
@@ -4908,6 +4999,7 @@ s_http_request_buffer_size	JKYi/http/http_parser.cc	/^static uint64_t s_http_req
 s_http_request_max_body_size	JKYi/http/http_parser.cc	/^static uint64_t s_http_request_max_body_size=0;$/;"	m	namespace:JKYi::http	file:
 s_http_response_buffer_size	JKYi/http/http_parser.cc	/^static uint64_t s_http_response_buffer_size=0;$/;"	m	namespace:JKYi::http	file:
 s_http_response_max_body_size	JKYi/http/http_parser.cc	/^static uint64_t s_http_response_max_body_size=0;$/;"	m	namespace:JKYi::http	file:
+s_init	JKYi/socket.cc	/^static _SSLInit s_init;$/;"	m	namespace:JKYi::__anon2	file:
 s_method_string	JKYi/http/http.cc	/^static const char*s_method_string[]={$/;"	m	namespace:JKYi::http	file:
 s_mutex	JKYi/config.cc	/^static JKYi::Mutex s_mutex;   $/;"	m	namespace:JKYi	file:
 s_timer	tests/test_iomanager.cc	/^JKYi::Timer::ptr s_timer;$/;"	v
@@ -4918,6 +5010,8 @@ schedule	JKYi/worker.h	/^    void schedule(const std::string& name,Iter begin,It
 scheduleNoLock	JKYi/scheduler.h	/^   bool scheduleNoLock(FiberOrCb fc,int thread){$/;"	f	class:JKYi::Scheduler	access:private	signature:(FiberOrCb fc,int thread)
 scheduler	JKYi/iomanager.h	/^       Scheduler* scheduler=nullptr;$/;"	m	struct:JKYi::IOManager::FdContext::EventContext	access:public
 send	JKYi/hook.cc	/^ssize_t send(int s, const void *msg, size_t len, int flags) {$/;"	f	signature:(int s, const void *msg, size_t len, int flags)
+send	JKYi/socket.cc	/^int SSLSocket::send(const iovec * buffers,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(const iovec * buffers,size_t length,int flags)
+send	JKYi/socket.cc	/^int SSLSocket::send(const void * buffer,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(const void * buffer,size_t length,int flags)
 send	JKYi/socket.cc	/^int Socket::send(const iovec*buffers,size_t len,int flags){$/;"	f	class:JKYi::Socket	signature:(const iovec*buffers,size_t len,int flags)
 send	JKYi/socket.cc	/^int Socket::send(const void *buffer,size_t len,int flags){$/;"	f	class:JKYi::Socket	signature:(const void *buffer,size_t len,int flags)
 send	JKYi/socket.h	/^    virtual int send(const iovec*buffers,size_t len,int flags=0);$/;"	p	class:JKYi::Socket	access:public	signature:(const iovec*buffers,size_t len,int flags=0)
@@ -4934,6 +5028,8 @@ sendRequest	JKYi/http/http_connection.cc	/^int HttpConnection::sendRequest(HttpR
 sendRequest	JKYi/http/http_connection.h	/^    int sendRequest(HttpRequest::ptr req);$/;"	p	class:JKYi::http::HttpConnection	access:public	signature:(HttpRequest::ptr req)
 sendResponse	JKYi/http/http_session.cc	/^int  HttpSession::sendResponse(const HttpResponse::ptr rsp){$/;"	f	class:JKYi::http::HttpSession	signature:(const HttpResponse::ptr rsp)
 sendResponse	JKYi/http/http_session.h	/^    int sendResponse(HttpResponse::ptr rsp);$/;"	p	class:JKYi::http::HttpSession	access:public	signature:(HttpResponse::ptr rsp)
+sendTo	JKYi/socket.cc	/^int SSLSocket::sendTo(const iovec * buffers,size_t length,const Address::ptr to$/;"	f	class:JKYi::SSLSocket	signature:(const iovec * buffers,size_t length,const Address::ptr to ,int flags)
+sendTo	JKYi/socket.cc	/^int SSLSocket::sendTo(const void * buffer,size_t length,const Address::ptr to,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(const void * buffer,size_t length,const Address::ptr to,int flags)
 sendTo	JKYi/socket.cc	/^int Socket::sendTo(const struct iovec*buffers,size_t len,const Address::ptr to,int flags){$/;"	f	class:JKYi::Socket	signature:(const struct iovec*buffers,size_t len,const Address::ptr to,int flags)
 sendTo	JKYi/socket.cc	/^int Socket::sendTo(const void *buffer,size_t len,const Address::ptr to,int flags){$/;"	f	class:JKYi::Socket	signature:(const void *buffer,size_t len,const Address::ptr to,int flags)
 sendTo	JKYi/socket.h	/^    virtual int sendTo(const iovec*buffers,size_t len,const Address::ptr to,int flags=0);$/;"	p	class:JKYi::Socket	access:public	signature:(const iovec*buffers,size_t len,const Address::ptr to,int flags=0)

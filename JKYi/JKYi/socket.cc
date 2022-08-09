@@ -478,6 +478,8 @@ bool SSLSocket::connect(const Address::ptr addr,int64_t timeout_ms){
         m_ctx.reset(SSL_CTX_new(SSLv23_client_method()),SSL_CTX_free);
         m_ssl.reset(SSL_new(m_ctx.get()),SSL_free);
         SSL_set_fd(m_ssl.get(),m_sock);
+
+        //请求服务器建立SSL连接
         v = (SSL_connect(m_ssl.get()) == 1);
     }
     return v;
@@ -567,6 +569,7 @@ bool SSLSocket::init(int sock){
     if(v){
         m_ssl.reset(SSL_new(m_ctx.get()),SSL_free);
         SSL_set_fd(m_ssl.get(),m_sock);
+        //等待客户端请求建立SSL连接
         v = (SSL_accept(m_ssl.get()) == 1);
     }
     return v;
@@ -575,16 +578,19 @@ bool SSLSocket::init(int sock){
 bool SSLSocket::loadCertificates(const std::string& cert_file,
                                           const std::string& key_file){
    m_ctx.reset(SSL_CTX_new(SSLv23_server_method()),SSL_CTX_free);
+   //加载证书
    if(SSL_CTX_use_certificate_chain_file(m_ctx.get(),cert_file.c_str()) != 1){
        JKYI_LOG_ERROR(g_logger) << "SSL_CTX_use_certificates_chain_file(" 
                                 << cert_file << ")error";
        return false;
    }
+   //加载私钥
    if(SSL_CTX_use_PrivateKey_file(m_ctx.get(),key_file.c_str(),SSL_FILETYPE_PEM) != 1){
        JKYI_LOG_ERROR(g_logger) << "SSL_CTX_use_PrivateKey_file(" << key_file 
                                 << ")error";
        return false;
    }
+   //用于检测加载的证书和私钥的一致性
    if(SSL_CTX_check_private_key(m_ctx.get()) != 1){
        JKYI_LOG_ERROR(g_logger) << "SSL_CTX_check_private_key cert_file = " <<cert_file
                                 << "key_file = " << key_file;
@@ -614,10 +620,10 @@ std::ostream& SSLSocket::dump(std::ostream& os)const{
        << " protocol = " << m_protocol;
 
        if(m_localAddress){
-           os << "local_address = " << m_localAddress->toString();
+           os << " local_address = " << m_localAddress->toString();
        }
        if(m_remoteAddress){
-           os << "remoteAddress = " << m_remoteAddress->toString();
+           os << " remoteAddress = " << m_remoteAddress->toString();
        }
        os << "]";
        return os;

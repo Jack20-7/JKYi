@@ -21,8 +21,7 @@ static JKYi::ConfigVar<std::string>::ptr g_server_work_path =
                JKYi::Config::Lookup("server.work_path",std::string("/tmp/work")
                                                        ,"serve work path");
 static JKYi::ConfigVar<std::string>::ptr g_server_pid_file = 
-              JKYi::Config::Lookup("sverver.pid_file",std::string("JKYi.pid"),"serve pid file");
-
+              JKYi::Config::Lookup("server.pid_file",std::string("JKYi.pid"),"serve pid file");
 
 
 static JKYi::ConfigVar<std::vector<TcpServerConf>>::ptr g_servers_conf = 
@@ -96,7 +95,7 @@ bool Application::run(){
 
 int Application::main(int argc,char ** argv){
    signal(SIGPIPE,SIG_IGN);
-   JKYI_LOG_INFO(g_logger) << "main";
+   //JKYI_LOG_INFO(g_logger) << "main";
    std::string conf_path = JKYi::EnvMgr::GetInstance()->getConfigPath();
    JKYi::Config::LoadFromConfDir(conf_path,true);
    {
@@ -111,16 +110,17 @@ int Application::main(int argc,char ** argv){
    }
    m_mainIOManager.reset(new JKYi::IOManager(1,true,"mian"));
    m_mainIOManager->schedule(std::bind(&Application::run_fiber,this));
-   //m_mainIOManager->addTimer(2000,[](){
-   //     JKYI_LOG_INFO(g_logger) <<" hello";
-   //},true);
+   //这里的定时器是必须要加上的，这样就可以避免由于main_IOManager析构导致的异常，这个问题找了快一周了
+   m_mainIOManager->addTimer(2000,[](){
+        //JKYI_LOG_INFO(g_logger) <<" hello";
+   },true);
    m_mainIOManager->stop();
    return 0;
 }
 
 int Application::run_fiber(){
   JKYi::WorkerMgr::GetInstance()->init();
-  JKYI_LOG_DEBUG(g_logger) << "run_fiber";
+
   auto http_confs = g_servers_conf->getValue(); 
   std::vector<TcpServer::ptr> svrs;
   for(auto&i : http_confs){

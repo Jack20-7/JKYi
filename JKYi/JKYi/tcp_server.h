@@ -135,6 +135,8 @@ public:
     void setConf(const TcpServerConf& v);
 
     bool loadCertificates(const std::string& cert_file,const std::string& key_file);
+
+    bool isHttps()const { return m_ssl == true; }
 protected:
     virtual void handleClient(Socket::ptr client);
     virtual void startAccept(Socket::ptr sock);

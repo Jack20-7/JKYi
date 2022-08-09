@@ -35,6 +35,7 @@ CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o: /root/yaml-cpp-master/
 CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o: /root/yaml-cpp-master/include/yaml-cpp/yaml.h
 CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o: JKYi/JKYi.h
 CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o: JKYi/address.h
+CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o: JKYi/application.h
 CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o: JKYi/bytearray.h
 CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o: JKYi/config.h
 CMakeFiles/my_http_server.dir/sample/my_http_server.cc.o: JKYi/daemon.h

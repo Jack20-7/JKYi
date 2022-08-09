@@ -23,6 +23,7 @@
 #include"http/http_parser.h"
 #include"http/http_server.h"
 #include"http/servlet.h"
+#include"application.h"
 #include"tcp_server.h"
 
 #endif

@@ -3,6 +3,7 @@
 
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/JKYi.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/address.h
+CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/application.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/bytearray.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/config.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/daemon.h
@@ -62,6 +63,7 @@ CMakeFiles/test_socket.dir/tests/test_socket.cc.o: /root/yaml-cpp-master/include
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: /root/yaml-cpp-master/include/yaml-cpp/traits.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/http/http_server.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/iomanager.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/mutex.h
 CMakeFiles/test_socket.dir/tests/test_socket.cc.o: JKYi/singleton.h

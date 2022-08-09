@@ -23,7 +23,7 @@ private:
      //事件的上下文，用来对注册的每一个事件进行描述
 	 struct EventContext{
 	   //表示该事件该由哪一个调度器进行调度
-       Scheduler* scheduler=nullptr;
+       Scheduler* scheduler = nullptr;
 	   //负责处理该事件的协程
 	   Fiber::ptr fiber;
 	   //负责处理该事件的回调函数
@@ -35,7 +35,7 @@ private:
 	 void resetContext(EventContext&ctx);
 	 //触发该文件描述符上传入的事件对应的回调函数/协程
 	 void triggerEvent(Event event);
-	 //
+	 
      //读事件对应的上下文
 	 EventContext read;
      //写事件对应的上下文
@@ -49,12 +49,12 @@ private:
    };
 public:
    //
-   IOManager(size_t threads=1,bool use_caller=true,const std::string&name="");
+   IOManager(size_t threads = 1,bool use_caller = true,const std::string&name = "");
 
    ~IOManager();    
    //向fd上添加某一个事件
    //成功返回0，失败返回-1
-   int addEvent(int fd,Event event,std::function<void ()>cb=nullptr);
+   int addEvent(int fd,Event event,std::function<void ()>cb = nullptr);
    //
    bool delEvent(int fd,Event event);
    //取消fd上的event事件并且对它进行触发
@@ -85,7 +85,7 @@ private:
    int m_tickleFds[2];
    //记录当前还需要处理的事件的个数
    std::atomic<size_t>m_pendingEventCount={0};
-   //
+   
    RWMutexType m_mutex;
    //记录注册的socket对应的上下文
    std::vector<FdContext*>m_fdContexts;

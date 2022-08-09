@@ -43,7 +43,7 @@ public:
     }
 
     bool init();
-    bool init(const std::map<std::string,std::map<std::string,std::string> >& v);
+    bool init(const std::unordered_map<std::string,std::unordered_map<std::string,std::string> >& v);
     void stop();
 
     bool isStop()const { return m_stop; }

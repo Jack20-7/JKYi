@@ -6,13 +6,15 @@
 namespace JKYi{
 //系统的日志全是用system来打
 static Logger::ptr g_logger=JKYI_LOG_NAME("system"); 
+
 //当前线程正在使用的调度器
-static thread_local Scheduler* t_scheduler=nullptr;
-//当前线程中真正进行调度工作的协程
-static thread_local Fiber* t_scheduler_fiber=nullptr;
+static thread_local Scheduler* t_scheduler = nullptr;
+
+//当前线程中真正进行调度工作的协程,也代表当前线程使用的调度器中的主调度协程
+static thread_local Fiber* t_scheduler_fiber = nullptr;
 
 Scheduler::Scheduler(size_t threads,bool use_caller,const std::string&name)
-:m_name(name){
+ :m_name(name){
 	JKYI_ASSERT(threads>0);
 
       //判断是否要使用当前创建调度器的这个线程
@@ -22,33 +24,33 @@ Scheduler::Scheduler(size_t threads,bool use_caller,const std::string&name)
 	  --threads;
       //一山不容二虎
 	  JKYI_ASSERT(GetThis()==nullptr);
-	  t_scheduler=this;
+	  t_scheduler = this;
 	  //
 	  //在当前线程中创建正在进行调度工作的协程
 	  m_rootFiber.reset(new Fiber(std::bind(&Scheduler::run,this),0,true));
 	  JKYi::Thread::setName(m_name);
 	  //
-	  t_scheduler_fiber=m_rootFiber.get();
-	  m_rootThread=JKYi::GetThreadId();
+	  t_scheduler_fiber = m_rootFiber.get();
+	  m_rootThread = JKYi::GetThreadId();
 	  m_threadIds.push_back(m_rootThread);
 	}else{
-      m_rootThread=-1;
+      m_rootThread = -1;
 	}
-	m_threadCount=threads;
+	m_threadCount = threads;
 }
 
 Scheduler::~Scheduler(){
 	JKYI_ASSERT(m_stopping);
 	//如果当前线程使用的正是该调度器的话，那么就将它置为空
-	if(GetThis()==this){
-		t_scheduler=nullptr;
+	if(GetThis() == this){
+		t_scheduler = nullptr;
 	}
 }
 //
 Scheduler* Scheduler::GetThis(){
 	return t_scheduler;
 }
-//返回当前线程真正在执行调度工作的协程
+//返回当前线程所使用的调度器的主调度协程
 Fiber* Scheduler::GetMainFiber(){
 	return t_scheduler_fiber;
 }
@@ -58,7 +60,7 @@ void Scheduler::start(){
 	if(!m_stopping){
 		return ;
 	}
-	m_stopping=false;
+	m_stopping = false;
 	JKYI_ASSERT(m_threads.empty());
 	//
 	m_threads.resize(m_threadCount);
@@ -76,27 +78,30 @@ void Scheduler::start(){
 }
 //
 void Scheduler::stop(){
-	JKYI_LOG_DEBUG(g_logger)<<"stop";
-	m_autoStop=true;
-	if(m_rootFiber&&m_threadCount==0&&(m_rootFiber->getState()==Fiber::TERM||m_rootFiber->getState()==Fiber::INIT)){
-		JKYI_LOG_INFO(g_logger)<<"Scheduer "<<m_name<<" stop";
-		m_stopping=true;
+	//JKYI_LOG_DEBUG(g_logger)<<"stop";
+	m_autoStop = true;
+	if(m_rootFiber
+             && m_threadCount == 0
+             && (m_rootFiber->getState() == Fiber::TERM || m_rootFiber->getState() == Fiber::INIT)){
+		//JKYI_LOG_INFO(g_logger)<<"Scheduer "<< m_name <<" stop";
+		m_stopping = true;
 		if(stopping()){
 			return ;
 		}
 	}
 	//这里的意思就是如果是use_caller的话，m_rootThread就是创建调度的的线程id
-	//
-	if(m_rootThread!=-1){
-		JKYI_ASSERT(GetThis()==this);
+	
+	if(m_rootThread != -1){
+		JKYI_ASSERT(GetThis() == this);
 	}else{
-		JKYI_ASSERT(GetThis()!=this);
+		JKYI_ASSERT(GetThis() != this);
 	}
 	//
-	m_stopping=true;
+	m_stopping = true;
 	//将所有的线程唤醒
 	//
-	for(size_t i=0;i<m_threadCount;++i){
+	for(size_t i = 0;i < m_threadCount;++i){
+        //JKYI_LOG_INFO(g_logger) << "thread tickle";
 		tickle();
 	}
 	if(m_rootFiber){
@@ -116,6 +121,7 @@ void Scheduler::stop(){
 		thrs.swap(m_threads);
 	}
 	for(auto&i :thrs){
+        //JKYI_LOG_INFO(g_logger) << "join";
 		i->join();
 	}
 }
@@ -137,7 +143,7 @@ std::ostream& Scheduler::dump(std::ostream& os){
 }
 //
 void Scheduler::setThis(){
-	t_scheduler=this;
+	t_scheduler = this;
 }
 //
 void Scheduler::run(){
@@ -146,15 +152,15 @@ void Scheduler::run(){
 
 	setThis();
 	//如果当前线程不是use_caller线程，那么他的主调度协程就是它的主协程
-	if(JKYi::GetThreadId()!=m_rootThread){
-		t_scheduler_fiber=Fiber::GetThis().get();
+	if(JKYi::GetThreadId() != m_rootThread){
+		t_scheduler_fiber = Fiber::GetThis().get();
 	}
 	//
     //创建一用来执行空闲任务的协程	
 	Fiber::ptr idle_fiber(new Fiber(std::bind(&Scheduler::idle,this)));
 	//创建一个用来执行函数任务的协程
     Fiber::ptr cb_fiber;	
-   //
+   
     FiberAndThread ft;
     while(true) {
         ft.reset();
@@ -163,7 +169,7 @@ void Scheduler::run(){
 		{
 			MutexType::Lock lock(m_mutex);
             auto it=m_fibers.begin();
-			while(it!=m_fibers.end()){
+			while(it != m_fibers.end()){
 				if(it->thread!=-1 && it->thread!=JKYi::GetThreadId()){
 					++it;
 					tickle_me=true;
@@ -181,14 +187,14 @@ void Scheduler::run(){
 			  is_active=true;
 			  break;
 			}
-			tickle_me|=it!=m_fibers.end();
+			tickle_me |= it!=m_fibers.end();
 		}
 		//
 		if(tickle_me){
 			tickle();
 		}
 		//下面就是对取下的任务进行执行
-		if(ft.fiber&&(ft.fiber->getState()!=Fiber::TERM||ft.fiber->getState()!=Fiber::EXCEPT)){
+		if(ft.fiber && (ft.fiber->getState()!=Fiber::TERM && ft.fiber->getState() != Fiber::EXCEPT)){
 			ft.fiber->swapIn();
 			--m_activeThreadCount;
 			if(ft.fiber->getState()==Fiber::READY){
@@ -210,10 +216,10 @@ void Scheduler::run(){
 			if(cb_fiber->getState()==Fiber::READY){
 				schedule(cb_fiber);
 				cb_fiber.reset();
-			}else if(cb_fiber->getState()==Fiber::TERM||cb_fiber->getState()==Fiber::EXCEPT){
+			}else if(cb_fiber->getState() == Fiber::TERM || cb_fiber->getState() == Fiber::EXCEPT){
 				cb_fiber->reset(nullptr);
 			}else{
-				cb_fiber->m_state=Fiber::HOLD;
+				cb_fiber->m_state = Fiber::HOLD;
 				cb_fiber.reset();
 			}
 		}else{
@@ -221,30 +227,33 @@ void Scheduler::run(){
 				--m_activeThreadCount;
 				continue;
 			}
-			if(idle_fiber->getState()==Fiber::TERM){
+			if(idle_fiber->getState() == Fiber::TERM){
 				JKYI_LOG_INFO(g_logger)<<"idle fiber term";
 				break;
 			}
 			++m_idleThreadCount;
 			idle_fiber->swapIn();
 			--m_idleThreadCount;
-			if(idle_fiber->getState()!=Fiber::TERM&&idle_fiber->getState()!=Fiber::EXCEPT){
-				idle_fiber->m_state=Fiber::HOLD;
+			if(idle_fiber->getState() != Fiber::TERM && idle_fiber->getState() != Fiber::EXCEPT){
+				idle_fiber->m_state = Fiber::HOLD;
 			}
 		}
 	}
 }
 
 void Scheduler::tickle(){
-	JKYI_LOG_INFO(g_logger)<<"tickle";
+	JKYI_LOG_INFO(g_logger)<<"Scheduler::tickle";
 }
-//
 bool Scheduler::stopping(){
-	return m_autoStop&&m_stopping&&m_fibers.empty()&&m_activeThreadCount==0;
+    MutexType::Lock lock(m_mutex);
+	return m_autoStop&&
+           m_stopping&&
+           m_fibers.empty()&&
+           m_activeThreadCount == 0;
 }
 //
 void Scheduler::idle(){
-	JKYI_LOG_INFO(g_logger)<<"idle";
+	JKYI_LOG_INFO(g_logger)<<"Scheduler::idle";
     while(!stopping()){
 		JKYi::Fiber::YieldToHold();
 	}

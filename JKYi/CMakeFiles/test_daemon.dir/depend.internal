@@ -36,6 +36,7 @@ CMakeFiles/test_daemon.dir/tests/test_daemon.cc.o
  /root/yaml-cpp-master/include/yaml-cpp/yaml.h
  JKYi/JKYi.h
  JKYi/address.h
+ JKYi/application.h
  JKYi/bytearray.h
  JKYi/config.h
  JKYi/daemon.h

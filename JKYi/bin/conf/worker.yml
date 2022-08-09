@@ -1,9 +1,5 @@
 workers:
-    io:
-        thread_num: 8
-    http_io:
-        thread_num: 1
     accept:
-        thread_num: 2
-    worker:
-        thread_num: 8
+        thread_num: 1
+    io:
+        thread_num: 4

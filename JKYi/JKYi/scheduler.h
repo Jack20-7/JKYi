@@ -18,11 +18,11 @@ public:
    typedef Mutex MutexType;
 public:
    //这里的use_caller我的理解就是是否要使用当前创建调度器的线程
-   Scheduler(size_t threads=1,bool use_caller=true,const std::string&name="");
+   Scheduler(size_t threads = 1,bool use_caller = true,const std::string& name = "");
    //该类会作为基类被子类所继承，所以为了避免出现内存泄漏的情况，这里的话将析构函数定义为虚函数
    virtual ~Scheduler();
    //
-   const std::string& getName()const {return m_name;}
+   const std::string& getName()const { return m_name; }
    //返回当前线程正在使用的调度器
    static Scheduler* GetThis();
    //返回当前线程的主调度协程
@@ -34,11 +34,11 @@ public:
 
    //该函数用来向调度器的工作队列中加入要执行的任务
    template<class FiberOrCb>
-   void schedule(FiberOrCb fc,int thread=-1){
-      bool need_tickle=false;
+   void schedule(FiberOrCb fc,int thread = -1){
+      bool need_tickle = false;
 	  {
 		  MutexType::Lock lock(m_mutex);
-		  need_tickle=scheduleNoLock(fc,thread);
+		  need_tickle = scheduleNoLock(fc,thread);
 	  }
 	  if(need_tickle){
 		  tickle();
@@ -78,7 +78,7 @@ private:
    //无所状态下向调度器的工作队列中插入任务
    template<class FiberOrCb>
    bool scheduleNoLock(FiberOrCb fc,int thread){
-	   bool need_tickle=m_fibers.empty();
+	   bool need_tickle = m_fibers.empty();
 	   FiberAndThread ft(fc,thread);
 	   if(ft.fiber||ft.cb){
 		   m_fibers.push_back(ft);
@@ -96,7 +96,6 @@ private:
 	 FiberAndThread(Fiber::ptr f,int thr)
 	 :fiber(f),
 	 thread(thr){
-
 	 }
 
 	 FiberAndThread(Fiber::ptr * f,int thr)
@@ -120,9 +119,9 @@ private:
 	 }
 	 //
 	 void reset(){
-       fiber=nullptr;
-	   cb=nullptr;
-	   thread=-1;
+       fiber = nullptr;
+	   cb = nullptr;
+	   thread = -1;
 	 }
   };
 private:

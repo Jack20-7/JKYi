@@ -127,3 +127,12 @@ k: 9
 2022-07-28 14:11:17	on_logger_conf_changed
 2022-07-28 14:19:35	on_logger_conf_changed
 2022-07-28 14:19:35	on_logger_conf_changed
+2022-08-06 17:06:23	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-08-06 17:06:23	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-08-06 17:06:46	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-08-06 17:06:46	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-08-06 17:07:24	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-08-06 17:07:24	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-08-06 17:07:55	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-08-06 17:07:55	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
+2022-08-08 17:10:17	28456	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/JKYi/config.cc:26	Config invalid name: workers.X_accept: thread_num: 1

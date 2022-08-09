@@ -3,6 +3,7 @@
 
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/JKYi.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/address.h
+CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/application.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/bytearray.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/config.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/daemon.h
@@ -62,6 +63,7 @@ CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: /root/yaml-cpp-master/i
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: /root/yaml-cpp-master/include/yaml-cpp/traits.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/http/http_server.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/iomanager.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/mutex.h
 CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o: JKYi/singleton.h

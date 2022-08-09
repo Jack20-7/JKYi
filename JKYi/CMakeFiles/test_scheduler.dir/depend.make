@@ -3,6 +3,7 @@
 
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/JKYi.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/address.h
+CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/application.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/bytearray.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/config.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/daemon.h
@@ -62,6 +63,7 @@ CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/yaml-cpp-master/i
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/yaml-cpp-master/include/yaml-cpp/stlemitter.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/yaml-cpp-master/include/yaml-cpp/traits.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: /root/yaml-cpp-master/include/yaml-cpp/yaml.h
+CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/http/http_server.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/iomanager.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/mutex.h
 CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o: JKYi/singleton.h
