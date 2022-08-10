@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.12)
 project(project_name)
 
 #执行框架的cmake
@@ -29,7 +29,7 @@ set (LIB_SRC
     )
 
 add_library(project_name SHARED ${LIB_SRC})
-force_redefine_file_macro_for_sources(project)
+force_redefine_file_macro_for_sources(project_name)
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
