@@ -4,10 +4,10 @@ logs:
       appenders:
           - type: FileLogAppender
             file: /tmp/logs/project_name/root.log
-            type: StdoutLogAppender
+          - type: StdoutLogAppender
     - name: system
       level: info
       appenders:
           - type: FileLogAppender
             file: /tmp/logs/project_name/system.log
-            type: StdoutLogAppender
+          - type: StdoutLogAppender
