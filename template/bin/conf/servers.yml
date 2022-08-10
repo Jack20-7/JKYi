@@ -1,0 +1,17 @@
+servers:
+       - address: ["0.0.0.0:8020"]
+         keepalive: 1
+         timeout: 5000
+         name: JKYi/1.1
+         accept_worker: accept
+         io_worker: io
+         process_worker: io
+         type: http
+       - address: ["0.0.0.0:8090"]
+         keepalive: 1
+         timeout: 5000
+         name: JKYi/1.0
+         accept_worker: accept
+         io_worker: io
+         process_worker: io
+         type: ws 

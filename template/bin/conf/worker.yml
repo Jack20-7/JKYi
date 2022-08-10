@@ -1,0 +1,5 @@
+workers:
+    accept:
+        thread_num: 1
+    io:
+        thread_num: 4
