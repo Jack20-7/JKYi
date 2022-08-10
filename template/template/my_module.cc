@@ -30,10 +30,11 @@ bool MyModule::onServerUp(){
     return true;
 }
 
+}
 extern "C"{
 
-JKYi::Mudule* CreateModule(){
-   JKYi::Mudule * module = new name_space::MyModule;
+JKYi::Module* CreateModule(){
+   JKYi::Module * module = new name_space::MyModule;
    JKYI_LOG_INFO(name_space::g_logger) << "CreateModule" << module;
    return module;
 }
@@ -46,4 +47,4 @@ void DestroyMudole(JKYi::Module * module){
   
 }
 
-}
+
