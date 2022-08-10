@@ -66,6 +66,9 @@ set (LIB_SRC
     JKYi/tcp_server.cc
     JKYi/application.cc
     JKYi/worker.cc
+    JKYi/protocol.cc
+    JKYi/library.cc
+    JKYi/module.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)

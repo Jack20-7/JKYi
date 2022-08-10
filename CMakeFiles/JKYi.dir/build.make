@@ -481,9 +481,48 @@ CMakeFiles/JKYi.dir/JKYi/worker.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JKYi.dir/JKYi/worker.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/workSpace/JKYi/worker.cc -o CMakeFiles/JKYi.dir/JKYi/worker.cc.s
 
+CMakeFiles/JKYi.dir/JKYi/protocol.cc.o: CMakeFiles/JKYi.dir/flags.make
+CMakeFiles/JKYi.dir/JKYi/protocol.cc.o: JKYi/protocol.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/JKYi.dir/JKYi/protocol.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/protocol.cc.o -c /home/admin/workSpace/JKYi/protocol.cc
+
+CMakeFiles/JKYi.dir/JKYi/protocol.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JKYi.dir/JKYi/protocol.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/workSpace/JKYi/protocol.cc > CMakeFiles/JKYi.dir/JKYi/protocol.cc.i
+
+CMakeFiles/JKYi.dir/JKYi/protocol.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JKYi.dir/JKYi/protocol.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/workSpace/JKYi/protocol.cc -o CMakeFiles/JKYi.dir/JKYi/protocol.cc.s
+
+CMakeFiles/JKYi.dir/JKYi/library.cc.o: CMakeFiles/JKYi.dir/flags.make
+CMakeFiles/JKYi.dir/JKYi/library.cc.o: JKYi/library.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/JKYi.dir/JKYi/library.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/library.cc.o -c /home/admin/workSpace/JKYi/library.cc
+
+CMakeFiles/JKYi.dir/JKYi/library.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JKYi.dir/JKYi/library.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/workSpace/JKYi/library.cc > CMakeFiles/JKYi.dir/JKYi/library.cc.i
+
+CMakeFiles/JKYi.dir/JKYi/library.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JKYi.dir/JKYi/library.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/workSpace/JKYi/library.cc -o CMakeFiles/JKYi.dir/JKYi/library.cc.s
+
+CMakeFiles/JKYi.dir/JKYi/module.cc.o: CMakeFiles/JKYi.dir/flags.make
+CMakeFiles/JKYi.dir/JKYi/module.cc.o: JKYi/module.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/JKYi.dir/JKYi/module.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/module.cc.o -c /home/admin/workSpace/JKYi/module.cc
+
+CMakeFiles/JKYi.dir/JKYi/module.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/JKYi.dir/JKYi/module.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/workSpace/JKYi/module.cc > CMakeFiles/JKYi.dir/JKYi/module.cc.i
+
+CMakeFiles/JKYi.dir/JKYi/module.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/JKYi.dir/JKYi/module.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/workSpace/JKYi/module.cc -o CMakeFiles/JKYi.dir/JKYi/module.cc.s
+
 CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o: CMakeFiles/JKYi.dir/flags.make
 CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o: JKYi/http/http11_parser.rl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o -c /home/admin/workSpace/JKYi/http/http11_parser.rl.cc
 
 CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.i: cmake_force
@@ -496,7 +535,7 @@ CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.s: cmake_force
 
 CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o: CMakeFiles/JKYi.dir/flags.make
 CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o: JKYi/http/httpclient_parser.rl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o -c /home/admin/workSpace/JKYi/http/httpclient_parser.rl.cc
 
 CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.i: cmake_force
@@ -509,7 +548,7 @@ CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.s: cmake_force
 
 CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o: CMakeFiles/JKYi.dir/flags.make
 CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o: JKYi/uri.rl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o -c /home/admin/workSpace/JKYi/uri.rl.cc
 
 CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.i: cmake_force
@@ -553,6 +592,9 @@ JKYi_OBJECTS = \
 "CMakeFiles/JKYi.dir/JKYi/tcp_server.cc.o" \
 "CMakeFiles/JKYi.dir/JKYi/application.cc.o" \
 "CMakeFiles/JKYi.dir/JKYi/worker.cc.o" \
+"CMakeFiles/JKYi.dir/JKYi/protocol.cc.o" \
+"CMakeFiles/JKYi.dir/JKYi/library.cc.o" \
+"CMakeFiles/JKYi.dir/JKYi/module.cc.o" \
 "CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o" \
 "CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o" \
 "CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o"
@@ -591,12 +633,15 @@ lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/stream/socket_stream.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/tcp_server.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/application.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/worker.cc.o
+lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/protocol.cc.o
+lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/library.cc.o
+lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/module.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/http/http11_parser.rl.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/http/httpclient_parser.rl.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/JKYi/uri.rl.cc.o
 lib/libJKYi.so: CMakeFiles/JKYi.dir/build.make
 lib/libJKYi.so: CMakeFiles/JKYi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX shared library lib/libJKYi.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/workSpace/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Linking CXX shared library lib/libJKYi.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/JKYi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

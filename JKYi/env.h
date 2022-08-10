@@ -32,7 +32,7 @@ public:
      bool setEnv(const std::string& key,const std::string& val);
      std::string getEnv(const std::string& key,const std::string& default_val = "");
 
-     //根据传入的path返回对于的绝对路径
+     //根据传入的path返回对应的绝对路径
      std::string getAbsolutePath(const std::string& path)const;
 
      std::string getAbsoluteWorkPath(const std::string& path)const;

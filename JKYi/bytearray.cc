@@ -36,7 +36,7 @@ ByteArray::Node::~Node(){
 }
 
 ByteArray::ByteArray(size_t base_size)
-   :m_baseSize(base_size)
+    :m_baseSize(base_size)
     ,m_position(0)
     ,m_capacity(base_size)
     ,m_size(0)

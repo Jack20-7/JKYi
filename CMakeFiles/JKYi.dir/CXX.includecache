@@ -47,6 +47,8 @@ worker.h
 /home/admin/workSpace/JKYi/worker.h
 http/ws_server.h
 /home/admin/workSpace/JKYi/http/ws_server.h
+JKYi/module.h
+/home/admin/workSpace/JKYi/JKYi/module.h
 unistd.h
 -
 signal.h
@@ -108,14 +110,6 @@ JKYi/mutex.h
 map
 -
 vector
--
-
-/home/admin/workSpace/JKYi/fiber.h
-memory
--
-functional
--
-ucontext.h
 -
 
 /home/admin/workSpace/JKYi/http/http.h
@@ -346,18 +340,6 @@ iomanip
 sys/time.h
 -
 boost/lexical_cast.hpp
--
-
-/home/admin/workSpace/JKYi/worker.cc
-worker.h
-/home/admin/workSpace/JKYi/worker.h
-log.h
-/home/admin/workSpace/JKYi/log.h
-config.h
-/home/admin/workSpace/JKYi/config.h
-util.h
-/home/admin/workSpace/JKYi/util.h
-string.h
 -
 
 /home/admin/workSpace/JKYi/worker.h
@@ -824,6 +806,20 @@ JKYi/scheduler.h
 timer.h
 JKYi/timer.h
 
+JKYi/module.h
+JKYi/stream.h
+JKYi/JKYi/stream.h
+JKYi/singleton.h
+JKYi/JKYi/singleton.h
+JKYi/mutex.h
+JKYi/JKYi/mutex.h
+JKYi/protocol.h
+JKYi/JKYi/protocol.h
+map
+-
+unordered_map
+-
+
 JKYi/mutex.h
 thread
 -
@@ -845,6 +841,14 @@ noncopyable.h
 JKYi/noncopyable.h
 fiber.h
 JKYi/fiber.h
+
+JKYi/protocol.h
+memory
+-
+JKYi/stream.h
+JKYi/JKYi/stream.h
+JKYi/bytearray.h
+JKYi/JKYi/bytearray.h
 
 JKYi/singleton.h
 memory

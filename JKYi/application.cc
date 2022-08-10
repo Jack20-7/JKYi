@@ -7,6 +7,7 @@
 #include"http/http_server.h"
 #include"worker.h"
 #include"http/ws_server.h"
+#include"JKYi/module.h"
 
 #include<unistd.h>
 #include<signal.h>
@@ -56,10 +57,24 @@ bool Application::init(int argc,char ** argv){
    JKYI_LOG_INFO(g_logger) << "load conf path:" << conf_path;
    JKYi::Config::LoadFromConfDir(conf_path);
 
+   ModuleMgr::GetInstance()->init();
+   std::vector<Module::ptr>modules;
+   ModuleMgr::GetInstance()->listAll(modules);
+
+   for(auto & i : modules){
+       i->onBeforeArgsParse(argc,argv);
+   }
+
    if(is_print_help){
        JKYi::EnvMgr::GetInstance()->printHelp();
        return false;
    }
+
+   for(auto & i : modules){
+       i->onAfterArgsParse(argc,argv);
+   }
+
+   modules.clear();
 
    int run_type = 0;
    if(JKYi::EnvMgr::GetInstance()->has("s")){
@@ -119,6 +134,21 @@ int Application::main(int argc,char ** argv){
 }
 
 int Application::run_fiber(){
+  std::vector<Module::ptr>modules;
+  ModuleMgr::GetInstance()->listAll(modules);
+  bool has_error = false;
+  for(auto & i : modules){
+      if(!i->onLoad()){
+          JKYI_LOG_ERROR(g_logger) << "module name = " << i->getName()
+                                   << " version = " << i->getVersion()
+                                   << " filename = " << i->getFilename();
+          has_error = true;
+      }
+  }
+  if(has_error){
+      _exit(0);
+  }
+
   JKYi::WorkerMgr::GetInstance()->init();
 
   auto http_confs = g_servers_conf->getValue(); 
@@ -216,8 +246,16 @@ int Application::run_fiber(){
          svrs.push_back(server);
     }
     
+    for(auto & i : modules){
+        i->onServerReady();
+    }
+
     for(auto& i : svrs){
         i->start();
+    }
+
+    for(auto & i : modules){
+        i->onServerUp();
     }
     return 0;
 }

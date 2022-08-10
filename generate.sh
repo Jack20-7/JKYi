@@ -26,7 +26,7 @@ command_error_exit mv template ${namespace}
 command_error_exit sed -i "s/project_name/${project_name}/g" CMakeLists.txt
 command_error_exit sed -i "s/template/${namespace}/g" CMakeLists.txt
 command_error_exit sed -i "s/project_name/${project_name}/g" move.sh
-commamd_error_exit cd ${namespace}
+command_error_exit cd ${namespace}
 command_error_exit sed -i "s/name_space/${namespace}/g" `ls .`
 command_error_exit sed -i "s/project_name/${project_name}/g" `ls .`
 command_error_exit cd ../bin/conf

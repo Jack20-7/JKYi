@@ -996,6 +996,33 @@ JKYi/iomanager.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/iomanager.cc.s
 .PHONY : JKYi/iomanager.cc.s
 
+JKYi/library.o: JKYi/library.cc.o
+
+.PHONY : JKYi/library.o
+
+# target to build an object file
+JKYi/library.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/library.cc.o
+.PHONY : JKYi/library.cc.o
+
+JKYi/library.i: JKYi/library.cc.i
+
+.PHONY : JKYi/library.i
+
+# target to preprocess a source file
+JKYi/library.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/library.cc.i
+.PHONY : JKYi/library.cc.i
+
+JKYi/library.s: JKYi/library.cc.s
+
+.PHONY : JKYi/library.s
+
+# target to generate assembly for a file
+JKYi/library.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/library.cc.s
+.PHONY : JKYi/library.cc.s
+
 JKYi/log.o: JKYi/log.cc.o
 
 .PHONY : JKYi/log.o
@@ -1023,6 +1050,33 @@ JKYi/log.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/log.cc.s
 .PHONY : JKYi/log.cc.s
 
+JKYi/module.o: JKYi/module.cc.o
+
+.PHONY : JKYi/module.o
+
+# target to build an object file
+JKYi/module.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/module.cc.o
+.PHONY : JKYi/module.cc.o
+
+JKYi/module.i: JKYi/module.cc.i
+
+.PHONY : JKYi/module.i
+
+# target to preprocess a source file
+JKYi/module.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/module.cc.i
+.PHONY : JKYi/module.cc.i
+
+JKYi/module.s: JKYi/module.cc.s
+
+.PHONY : JKYi/module.s
+
+# target to generate assembly for a file
+JKYi/module.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/module.cc.s
+.PHONY : JKYi/module.cc.s
+
 JKYi/mutex.o: JKYi/mutex.cc.o
 
 .PHONY : JKYi/mutex.o
@@ -1049,6 +1103,33 @@ JKYi/mutex.s: JKYi/mutex.cc.s
 JKYi/mutex.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/mutex.cc.s
 .PHONY : JKYi/mutex.cc.s
+
+JKYi/protocol.o: JKYi/protocol.cc.o
+
+.PHONY : JKYi/protocol.o
+
+# target to build an object file
+JKYi/protocol.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/protocol.cc.o
+.PHONY : JKYi/protocol.cc.o
+
+JKYi/protocol.i: JKYi/protocol.cc.i
+
+.PHONY : JKYi/protocol.i
+
+# target to preprocess a source file
+JKYi/protocol.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/protocol.cc.i
+.PHONY : JKYi/protocol.cc.i
+
+JKYi/protocol.s: JKYi/protocol.cc.s
+
+.PHONY : JKYi/protocol.s
+
+# target to generate assembly for a file
+JKYi/protocol.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JKYi.dir/build.make CMakeFiles/JKYi.dir/JKYi/protocol.cc.s
+.PHONY : JKYi/protocol.cc.s
 
 JKYi/scheduler.o: JKYi/scheduler.cc.o
 
@@ -1983,12 +2064,21 @@ help:
 	@echo "... JKYi/iomanager.o"
 	@echo "... JKYi/iomanager.i"
 	@echo "... JKYi/iomanager.s"
+	@echo "... JKYi/library.o"
+	@echo "... JKYi/library.i"
+	@echo "... JKYi/library.s"
 	@echo "... JKYi/log.o"
 	@echo "... JKYi/log.i"
 	@echo "... JKYi/log.s"
+	@echo "... JKYi/module.o"
+	@echo "... JKYi/module.i"
+	@echo "... JKYi/module.s"
 	@echo "... JKYi/mutex.o"
 	@echo "... JKYi/mutex.i"
 	@echo "... JKYi/mutex.s"
+	@echo "... JKYi/protocol.o"
+	@echo "... JKYi/protocol.i"
+	@echo "... JKYi/protocol.s"
 	@echo "... JKYi/scheduler.o"
 	@echo "... JKYi/scheduler.i"
 	@echo "... JKYi/scheduler.s"
