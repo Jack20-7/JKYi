@@ -1,4 +1,0 @@
-# Hashes of file build rules.
-9d629a339a3f9cf09136ddde487c0c45 JKYi/http/http11_parser.rl.cc
-34e72b02ab90a24662bd8c5222d8ea56 JKYi/http/httpclient_parser.rl.cc
-9d96c7d790a0f8262034a5f168faff32 JKYi/uri.rl.cc

@@ -39,7 +39,7 @@ JKYi::Module* CreateModule(){
    return module;
 }
 
-void DestroyMudole(JKYi::Module * module){
+void DestroyModule(JKYi::Module * module){
     JKYI_LOG_INFO(name_space::g_logger) << "DestroyModule";
     delete module;
 }

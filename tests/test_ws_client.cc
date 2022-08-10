@@ -5,7 +5,7 @@
 JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();
 
 void run(){
-  auto rt = JKYi::http::WSConnection::Create("http://127.0.0.1:8020/JKYi",1000); 
+  auto rt = JKYi::http::WSConnection::Create("http://127.0.0.1:8090/JKYi",1000); 
   if(!rt.second){
       JKYI_LOG_ERROR(g_logger) << rt.first->toString();
       return ;

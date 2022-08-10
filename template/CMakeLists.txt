@@ -7,11 +7,12 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/JKYi)
 include(JKYi/cmake/utils.cmake)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Woo-deprecated -Werror -Wno-unused-function -Wno-builtin-macro -redefined")
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
 
 #添加头文件的查找
 include_directories(.)
 include_directories(/root/yaml-cpp-master/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/JKYi)
 
 #加载下载的一些的一下开源库
 find_package(Boost REQUIRED)
