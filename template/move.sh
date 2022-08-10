@@ -9,5 +9,5 @@ else
     unlink bin/module/libproject_name.so
 fi
 
-cp JKYi/bin/JKYi bin/project_name
+cp JKYi/bin/test_application bin/project_name
 cp lib/libproject_name.so bin/module/
