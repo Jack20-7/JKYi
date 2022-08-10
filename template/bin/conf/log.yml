@@ -2,12 +2,12 @@ logs:
     - name: root
       level: info
       appenders:
-          - type: FileAppender
+          - type: FileLogAppender
             file: /tmp/logs/project_name/root.log
             type: StdoutLogAppender
     - name: system
       level: info
       appenders:
-          - type: FileAppender
+          - type: FileLogAppender
             file: /tmp/logs/project_name/system.log
             type: StdoutLogAppender

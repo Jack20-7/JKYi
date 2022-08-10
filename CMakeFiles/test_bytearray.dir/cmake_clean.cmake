@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_bytearray.dir/tests/test_bytearray.cc.o"
-  "bin/test_bytearray"
   "bin/test_bytearray.pdb"
+  "bin/test_bytearray"
 )
 
 # Per-language clean rules from dependency scanning.
