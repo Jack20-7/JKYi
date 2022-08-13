@@ -55,6 +55,17 @@ public:
 
 };
 
+class TypeUtil{
+public:
+    static int8_t ToChar(const std::string& str);
+    static int64_t Atoi(const std::string& str);
+    static double Atof(const std::string& str);
+
+    static int8_t ToChar(const char * str);
+    static int64_t Atoi(const char * str);
+    static double Atof(const char * str);
+};
+
 template<class Map ,class K,class V>
 V GetParamValue(const Map& m,const K& k,const V& def = V()){
     auto it = m.find(k);

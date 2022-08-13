@@ -25027,3 +25027,55 @@ address:
 2022-08-09 09:14:04	4455	accept-0	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=10
 2022-08-09 09:14:12	4451	io-0	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=11
 2022-08-09 09:14:12	4452	io-1	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=12
+2022-08-13 20:15:37	18939	UNKNOW	0	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-13 20:15:37	18939	UNKNOW	0	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-13 20:15:37	18939	UNKNOW	0	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-13 20:15:37	18939	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/config.cc:70	/home/admin/workSpace/bin/conf
+2022-08-13 20:15:37	18939	UNKNOW	0	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/system.yml OK
+2022-08-13 20:15:37	18939	UNKNOW	0	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-13 20:15:37	18939	UNKNOW	0	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-13 20:15:37	18939	UNKNOW	0	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-13 20:15:37	18939	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=1
+2022-08-13 20:15:37	18939	mian	1	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=2
+2022-08-13 20:15:37	18939	mian	1	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=3
+2022-08-13 20:15:37	18940	io-0	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=4
+2022-08-13 20:15:37	18941	io-1	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=5
+2022-08-13 20:15:37	18942	io-2	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=6
+2022-08-13 20:15:37	18943	io-3	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=7
+2022-08-13 20:15:37	18944	accept-0	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=8
+2022-08-13 20:15:37	18939	mian	3	[DEBUG]	[system]	/home/admin/workSpace/JKYi/application.cc:157	
+id: ""
+type: http
+name: JKYi/1.1
+keepalive: 1
+timeout: 5000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8020
+2022-08-13 20:15:37	18939	mian	3	[INFO]	[system]	/home/admin/workSpace/JKYi/tcp_server.cc:67	type=http name=JKYi/1.1 ssl = 0 server bind success:[Socket sock=14 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8020]
+2022-08-13 20:15:37	18939	mian	3	[DEBUG]	[system]	/home/admin/workSpace/JKYi/application.cc:157	
+id: ""
+type: http
+name: JKYi/1.0
+keepalive: 1
+timeout: 5000
+ssl: 0
+cerf_file: ""
+key_file: ""
+accept_worker: accept
+io_worker: io
+process_worker: io
+args: {}
+address:
+  - 0.0.0.0:8090
+2022-08-13 20:15:37	18939	mian	3	[INFO]	[system]	/home/admin/workSpace/JKYi/tcp_server.cc:67	type=http name=JKYi/1.0 ssl = 0 server bind success:[Socket sock=15 is_Connected=0 family=2 type=1 protocol=0 localAddress=0.0.0.0:8090]
+2022-08-13 20:15:37	18944	accept-0	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=9
+2022-08-13 20:15:37	18944	accept-0	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=10
+2022-08-13 20:15:37	18941	io-1	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=11
+2022-08-13 20:15:37	18941	io-1	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=12

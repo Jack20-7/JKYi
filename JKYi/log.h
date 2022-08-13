@@ -10,11 +10,12 @@
 #include <vector>
 #include <stdarg.h>
 #include <map>
-#include "util.h"
-#include "singleton.h"
 #include<yaml-cpp/yaml.h>
+
 #include"mutex.h"
 #include"thread.h"
+#include "singleton.h"
+#include "util.h"
 
 //定义一些宏，方便我们对日志的使用
 #define JKYI_LOG_LEVEL(logger,level) \

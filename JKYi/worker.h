@@ -1,6 +1,7 @@
 #ifndef _JKYI_WORKER_H_
 #define _JKYI_WORKER_H_
 
+#include<unordered_map>
 #include"mutex.h"
 #include"singleton.h"
 #include"log.h"

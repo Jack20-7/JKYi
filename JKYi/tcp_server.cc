@@ -60,7 +60,7 @@ bool TcpServer::bind(const std::vector<Address::ptr>& addrs,
    }
    if(!fails.empty()){
        m_socks.clear();
-       return nullptr;
+       return false;
    }
    //执行到这里表示所有的监听socket都应经创建好了
    for(auto& i : m_socks){
