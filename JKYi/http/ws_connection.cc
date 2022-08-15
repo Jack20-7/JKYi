@@ -61,7 +61,7 @@ std::pair<HttpResult::ptr,WSConnection::ptr> WSConnection::Create(Uri::ptr uri,
     }
     req->setHeader("Upgrade","websocket");
     req->setHeader("Sec-webSocket-Version","13");
-    req->setHeader("Sec-webSocket-Key","258EAFA5-E914-47DA-95CA-C5AB0DC85B11");
+    req->setHeader("Sec-webSocket-Key",JKYi::base64encode(random_string(16)));
     if(!has_host){
         req->setHeader("Host",uri->getHost());
     }

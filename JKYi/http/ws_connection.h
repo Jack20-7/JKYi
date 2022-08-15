@@ -3,6 +3,7 @@
 
 #include"JKYi/http/http_connection.h"
 #include"JKYi/http/ws_session.h"
+#include"JKYi/util/hash_util.h"
 
 namespace JKYi{
 namespace http{

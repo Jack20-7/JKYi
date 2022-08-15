@@ -37,10 +37,10 @@ endif()
 #    include_directories(${MySQL_INCLUDE_DIRS})
 #endif()
 
-find_package(OpenSSL REQUIRED)
-if(OPENSSL_FOUND)
-    include_directories(${OPENSSL_INCLUDE_DIR})
-endif()
+#find_package(OpenSSL REQUIRED)
+#if(OPENSSL_FOUND)
+#    include_directories(${OPENSSL_INCLUDE_DIR})
+#endif()
 
 set (LIB_SRC 
     JKYi/log.cc
@@ -78,6 +78,7 @@ set (LIB_SRC
     JKYi/library.cc
     JKYi/module.cc
     JKYi/util/json_util.cc
+    JKYi/util/hash_util.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
@@ -97,7 +98,8 @@ set(LIBS
       pthread
       yaml-cpp
       jsoncpp
-      ${OPENSSL_LIBRARIES}
+      ssl
+      crypto
    )
 # utils.cmake文件中添加了一个function(生成的可执行文件名称 源文件名称 依赖名称 需要的库的名称)
 JKYi_add_executable(test "tests/test.cc" JKYi "${LIBS}")

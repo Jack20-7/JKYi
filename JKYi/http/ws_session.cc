@@ -1,6 +1,7 @@
 #include"JKYi/http/ws_session.h"
 #include"JKYi/log.h"
 #include"JKYi/endian.h"
+#include"JKYi/util/hash_util.h"
 
 #include<string.h>
 
@@ -44,6 +45,7 @@ HttpRequest::ptr WSSession::handleShake(){
             break;
         }
         std::string v = key + "258EAFA5-E914-47DA-95CA-C5AB0DC85B11";
+        v = JKYi::base64encode(JKYi::sha1sum(v));
         //
         req->setWebsocket(true);  
 
