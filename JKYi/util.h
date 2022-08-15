@@ -66,6 +66,12 @@ public:
     static double Atof(const char * str);
 };
 
+class StringUtil{
+public:
+   static std::string Trim(const std::string& str,const std::string& delimit = " \t\r\n");
+
+};
+
 template<class Map ,class K,class V>
 V GetParamValue(const Map& m,const K& k,const V& def = V()){
     auto it = m.find(k);

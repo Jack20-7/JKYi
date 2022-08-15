@@ -214,6 +214,15 @@ double TypeUtil::Atof(const char * str){
     }
     return atof(str);
 }
+
+std::string StringUtil::Trim(const std::string& str,const std::string& delimit){
+    auto begin = str.find_first_not_of(delimit);
+    if(begin == std::string::npos){
+        return "";
+    }
+    auto end = str.find_last_not_of(delimit);
+    return str.substr(begin,end - begin + 1);
+}
    
 }
 

@@ -200,11 +200,56 @@ void HttpRequest::initParam(){
     initBodyParam();
     initCookies();
 }
+//将Http请求报文中?后面的那些用&连接起来的参数保存起来
 void HttpRequest::initQueryParam(){
+    if(m_parseParamFlag & 0x1){
+        return ;
+    }
+#define PARSE_PARAM(str,m,flag,trim)\
+    size_t pos = 0; \
+    do{\
+        size_t last = pos;\
+        pos = str.find('=',pos);\
+        if(pos == std::string::npos){\
+            break;\
+        }\
+        size_t key = pos;\
+        pos = str.find(flag,pos);\
+        m.insert(std::make_pair(trim(str.substr(last,key - last)),\
+                   str.substr(key + 1,pos - key - 1)));\
+        if(pos == std::string::npos){\
+            break;\
+        }\
+        pos++;\
+    }while(true);
+
+    PARSE_PARAM(m_query,m_params,'&',);
+    m_parseParamFlag |= 0x1;
+
 }
 void HttpRequest::initBodyParam(){
+    if(m_parseParamFlag & 0x2){
+        return ;
+    }
+    std::string content_type = getHeader("content-type");
+    if(strcasestr(content_type.c_str(),"application/x-www-form-urlencoded") == nullptr){
+        m_parseParamFlag |= 0x2;
+        return ;
+    }
+    PARSE_PARAM(m_body,m_params,'&',);
+    m_parseParamFlag |= 0x2;
 }
 void HttpRequest::initCookies(){
+    if(m_parseParamFlag & 0x4){
+        return ;
+    }
+    std::string cookie = getHeader("cookie");
+    if(cookie.empty()){
+        m_parseParamFlag |= 0x4;
+        return ;
+    }
+    PARSE_PARAM(cookie,m_cookies,';',JKYi::StringUtil::Trim);
+    m_parseParamFlag |= 0x4;
 }
 
 //HttpResponse
@@ -232,6 +277,21 @@ void HttpResponse::setRedirect(const std::string& uri){
 void HttpResponse::setCookie(const std::string& key,const std::string& value
                            ,time_t expired,const std::string& path
                             ,const std::string& domain,bool secure){
+    std::stringstream ss;
+    ss << key << "=" <<value;
+    if(expired > 0){
+        ss << ";expired=" << JKYi::Time2Str(expired,"%a, %d %b %Y %H:%M:%S") << "GMT";
+    }
+    if(!domain.empty()){
+        ss << ";domain=" << domain;
+    }
+    if(!path.empty()){
+        ss << ";path=" << path;
+    }
+    if(secure){
+        ss << ";secure=" << secure;
+    }
+    m_cookies.push_back(ss.str());
 }
 std::string HttpResponse::toString()const{
     std::stringstream ss;
