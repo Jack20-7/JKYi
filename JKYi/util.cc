@@ -12,6 +12,7 @@
 #include<ifaddrs.h>
 #include<arpa/inet.h>
 #include<stdlib.h>
+#include<stdarg.h>
 
 
 namespace JKYi{
@@ -69,6 +70,14 @@ std::string Time2Str(time_t ts,const std::string& format){
     char buf[64];
     strftime(buf,sizeof(buf),format.c_str(),&tm);
     return buf; 
+}
+time_t Str2Time(const char * str,const char * format){
+    struct tm tm;
+    memset(&tm,0,sizeof(tm));
+    if(!strptime(str,format,&tm)){
+        return 0;
+    }
+    return mktime(&tm);
 }
 
 void FSUtil::ListAllFile(std::vector<std::string>& files,
@@ -222,6 +231,23 @@ std::string StringUtil::Trim(const std::string& str,const std::string& delimit){
     }
     auto end = str.find_last_not_of(delimit);
     return str.substr(begin,end - begin + 1);
+}
+std::string StringUtil::Format(const char * fmt,...){
+    va_list ap;
+    va_start(ap,fmt);
+    auto ret = Formatv(fmt,ap);
+    va_end(ap);
+    return ret;
+}
+std::string StringUtil::Formatv(const char * fmt,va_list ap){
+    char * buf = nullptr;
+    auto len = vasprintf(&buf,fmt,ap);
+    if(len == -1){
+        return "";
+    }
+    std::string ret(buf,len);
+    free(buf);
+    return ret;
 }
    
 }

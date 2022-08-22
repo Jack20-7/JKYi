@@ -10,8 +10,7 @@ include(cmake/utils.cmake)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 #添加g++ 的编译选项
-set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations")
-set(CMAKE_C_FLAGS "$ENV{CXXFLAGS} -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations")
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O1 -fPIC -ggdb -std=c++17 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations")
 
 set(CMAKE_CXX_STANDARD 14)
 #set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -20,10 +19,12 @@ add_definitions(-D_GLIBCXX_USE_C99=1)
 #设置头文件的查找路径
 include_directories(.)
 include_directories(/usr/local/include)
+include_directories(/usr/local/mysql/include)
 
 #添加要需要链接的库的路径，相当于在gcc时的-L，就相当于将对应目录下的库加到搜索范围内
 link_directories(/usr/local/lib)
 link_directories(/usr/local/lib64)
+link_directories(/usr/local/mysql/lib)
 
 find_library(PTHREAD pthread)
 
@@ -79,6 +80,7 @@ set (LIB_SRC
     JKYi/module.cc
     JKYi/util/json_util.cc
     JKYi/util/hash_util.cc
+    JKYi/db/mysql.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
@@ -100,6 +102,7 @@ set(LIBS
       jsoncpp
       ssl
       crypto
+      mysqlclient
    )
 # utils.cmake文件中添加了一个function(生成的可执行文件名称 源文件名称 依赖名称 需要的库的名称)
 JKYi_add_executable(test "tests/test.cc" JKYi "${LIBS}")
@@ -143,6 +146,8 @@ JKYi_add_executable(test_application "tests/test_application.cc" JKYi "${LIBS}")
 JKYi_add_executable(test_ws_server "tests/test_ws_server.cc" JKYi "${LIBS}")
 
 JKYi_add_executable(test_ws_client "tests/test_ws_client.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_mysql "tests/test_mysql.cc" JKYi "${LIBS}")
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

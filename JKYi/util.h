@@ -39,6 +39,7 @@ uint64_t GetCurrentUS();
 //该函数就是将MS时间戳转换为我们平时理解的时间
 std::string Time2Str(time_t ts = time(0),const std::string& format 
                                                  = "%Y-%m-%d %H:%M:%S");
+time_t Str2Time(const char * str,const char * format = "%Y-%m-%d %H:%M:%S");
 
 //封装一个专门对文件操作的类
 //
@@ -69,10 +70,12 @@ public:
 class StringUtil{
 public:
    static std::string Trim(const std::string& str,const std::string& delimit = " \t\r\n");
+   static std::string Format(const char * fmt,...);
+   static std::string Formatv(const char * fmt,va_list ap);
 
 };
 
-template<class Map ,class K,class V>
+template<class V,class Map,class K>
 V GetParamValue(const Map& m,const K& k,const V& def = V()){
     auto it = m.find(k);
     if(it == m.end()){
@@ -83,6 +86,9 @@ V GetParamValue(const Map& m,const K& k,const V& def = V()){
     }catch(...){
     }
     return def;
+}
+template<class T>
+void nop(T * t){
 }
 
 

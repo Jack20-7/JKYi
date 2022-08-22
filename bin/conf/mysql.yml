@@ -1,0 +1,14 @@
+mysql:
+  host: "127.0.0.1"
+  user: root
+  dbname: JKYi
+  passwd: '512'
+  port: 3306
+  
+  dbs:
+    test_0:
+      host: "127.0.0.1"
+      user: root
+      dbname: "JKYi"
+      passwd: '512'
+      port: 3306

@@ -25079,3 +25079,59 @@ address:
 2022-08-13 20:15:37	18944	accept-0	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=10
 2022-08-13 20:15:37	18941	io-1	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=11
 2022-08-13 20:15:37	18941	io-1	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/fiber.cc:78	subFiber is created,fiber_id=12
+2022-08-21 15:55:45	8542	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-21 15:55:45	8542	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-21 15:55:45	8542	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-21 15:55:45	8542	UNKNOW	3	[ERROR]	[system]	/home/admin/workSpace/JKYi/db/mysql.cc:73	mysql_real_connect47.97.102.181 ,0, JKYi error,errstr = Host '47.97.102.181' is not allowed to connect to this MySQL server
+2022-08-21 15:55:45	8542	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-21 15:55:45	8542	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-21 15:55:45	8542	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit
+2022-08-21 15:59:23	8933	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-21 15:59:23	8933	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-21 15:59:23	8933	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-21 15:59:23	8933	UNKNOW	3	[ERROR]	[system]	/home/admin/workSpace/JKYi/db/mysql.cc:73	mysql_real_connect47.97.102.181 ,3306, JKYi error,errstr = Host '47.97.102.181' is not allowed to connect to this MySQL server
+2022-08-21 15:59:23	8933	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-21 15:59:23	8933	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-21 15:59:23	8933	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit
+2022-08-21 15:59:49	8973	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-21 15:59:49	8973	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-21 15:59:49	8973	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-21 15:59:49	8973	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-21 15:59:49	8973	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-21 15:59:49	8973	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit
+2022-08-21 16:10:40	11201	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-21 16:10:40	11201	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-21 16:10:40	11201	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-21 16:10:40	11201	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-21 16:10:40	11201	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-21 16:10:40	11201	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit
+2022-08-21 16:19:09	12510	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-21 16:19:09	12510	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-21 16:19:09	12510	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-21 16:19:09	12510	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-21 16:19:09	12510	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-21 16:19:09	12510	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit
+2022-08-21 16:20:51	13023	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-21 16:20:51	13023	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-21 16:20:51	13023	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-21 16:20:51	13023	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-21 16:20:51	13023	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-21 16:20:51	13023	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit
+2022-08-21 16:29:49	14248	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-21 16:29:49	14248	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-21 16:29:49	14248	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-21 16:29:49	14248	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-21 16:29:49	14248	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-21 16:29:49	14248	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit
+2022-08-22 09:53:36	365	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/log.yml OK
+2022-08-22 09:53:36	365	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/servers.yml OK
+2022-08-22 09:53:36	365	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf/worker.yml OK
+2022-08-22 09:53:36	365	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-22 09:53:36	365	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-22 09:53:36	365	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit
+2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf//log.yml OK
+2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf//servers.yml OK
+2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[system]	/home/admin/workSpace/JKYi/config.cc:89	 LoadFromFile file =/home/admin/workSpace/bin/conf//worker.yml OK
+2022-08-22 16:38:19	26303	UNKNOW	2	[INFO]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:293	name =  idle stopping exit
+2022-08-22 16:38:19	26303	UNKNOW	1	[INFO]	[system]	/home/admin/workSpace/JKYi/scheduler.cc:231	idle fiber term
+2022-08-22 16:38:19	26303	UNKNOW	0	[DEBUG]	[system]	/home/admin/workSpace/JKYi/iomanager.cc:89	name =  is exit

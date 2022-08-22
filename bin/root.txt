@@ -136,3 +136,8 @@ k: 9
 2022-08-06 17:07:55	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
 2022-08-06 17:07:55	ConfigVar::FromString exception bad conversion convert: string to St6vectorIN4JKYi13TcpServerConfESaIS1_EE
 2022-08-08 17:10:17	28456	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/JKYi/config.cc:26	Config invalid name: workers.X_accept: thread_num: 1
+2022-08-21 15:55:45	8542	UNKNOW	3	[ERROR]	[root]	/home/admin/workSpace/tests/test_mysql.cc:19	connect fail 
+2022-08-21 15:59:23	8933	UNKNOW	3	[ERROR]	[root]	/home/admin/workSpace/tests/test_mysql.cc:19	connect fail 
+2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[root]	/home/admin/workSpace/tests/test_mysql.cc:75	insert data ---------------------
+2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[root]	/home/admin/workSpace/tests/test_mysql.cc:86	 update data ---------------------
+2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[root]	/home/admin/workSpace/tests/test_mysql.cc:98	delete data----------------------
