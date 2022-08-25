@@ -147,12 +147,12 @@ void ByteArray::writeInt32(int32_t val){
 }
 void ByteArray::writeUint32(uint32_t val){
     uint8_t tmp[5];
-    uint8_t i=0;
+    uint8_t i = 0;
     while(val >= 0x80){
-        tmp[i++]= (val & 0x7f) | 0x80;
+        tmp[i++] = (val & 0x7f) | 0x80;
         val >>= 7;
     }
-    tmp[i++]=val;
+    tmp[i++] = val;
     write(tmp,i);
 }
 

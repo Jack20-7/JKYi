@@ -38,6 +38,10 @@ ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	468
 ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	471;"	d	file:
 ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	474;"	d	file:
 ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	477;"	d	file:
+ASSOCIATING	JKYi/zk_client.cc	/^const int ZKClient::StateType::ASSOCIATING = ZOO_ASSOCIATING_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+ASSOCIATING	JKYi/zk_client.h	/^        static const int ASSOCIATING;$/;"	m	class:JKYi::ZKClient::StateType	access:public
+AUTH_FAILED	JKYi/zk_client.cc	/^const int ZKClient::StateType::AUTH_FAILED = ZOO_AUTH_FAILED_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+AUTH_FAILED	JKYi/zk_client.h	/^        static const int AUTH_FAILED;$/;"	m	class:JKYi::ZKClient::StateType	access:public
 Address	JKYi/address.h	/^class Address{$/;"	c	namespace:JKYi
 Alloc	JKYi/fiber.cc	/^   static void* Alloc(size_t size){$/;"	f	class:JKYi::MallocStackAllocator	access:public	signature:(size_t size)
 Application	JKYi/application.cc	/^Application::Application(){$/;"	f	class:JKYi::Application	signature:()
@@ -63,6 +67,10 @@ ByteArray	JKYi/bytearray.h	/^    ByteArray(size_t base_size=4096);$/;"	p	class:J
 ByteArray	JKYi/bytearray.h	/^class ByteArray{$/;"	c	namespace:JKYi
 CASLock	JKYi/mutex.h	/^   CASLock(){$/;"	f	class:JKYi::CASLock	access:public	signature:()
 CASLock	JKYi/mutex.h	/^class CASLock:Noncopyable{$/;"	c	namespace:JKYi	inherits:Noncopyable
+CHANGED	JKYi/zk_client.cc	/^const int ZKClient::EventType::CHANGED = ZOO_CHANGED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+CHANGED	JKYi/zk_client.h	/^        static const int CHANGED;$/;"	m	class:JKYi::ZKClient::EventType	access:public
+CHILD	JKYi/zk_client.cc	/^const int ZKClient::EventType::CHILD = ZOO_CHILD_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+CHILD	JKYi/zk_client.h	/^        static const int CHILD;$/;"	m	class:JKYi::ZKClient::EventType	access:public
 CLOSE	JKYi/http/ws_session.h	/^        CLOSE = 8,$/;"	e	enum:JKYi::http::WSFrameHead::OPCODE
 CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
 CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
@@ -324,8 +332,14 @@ COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.
 COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	191;"	d	file:
 COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	236;"	d	file:
 COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+CONNECTED	JKYi/zk_client.cc	/^const int ZKClient::StateType::CONNECTED = ZOO_CONNECTED_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+CONNECTED	JKYi/zk_client.h	/^        static const int CONNECTED;$/;"	m	class:JKYi::ZKClient::StateType	access:public
+CONNECTING	JKYi/zk_client.cc	/^const int ZKClient::StateType::CONNECTING = ZOO_CONNECTING_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+CONNECTING	JKYi/zk_client.h	/^        static const int CONNECTING;$/;"	m	class:JKYi::ZKClient::StateType	access:public
 CONNECT_FAIL	JKYi/http/http_connection.h	/^        CONNECT_FAIL = 3,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
 CONTINUE	JKYi/http/ws_session.h	/^        CONTINUE = 0,$/;"	e	enum:JKYi::http::WSFrameHead::OPCODE
+CREATED	JKYi/zk_client.cc	/^const int ZKClient::EventType::CREATED = ZOO_CREATED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+CREATED	JKYi/zk_client.h	/^        static const int CREATED;$/;"	m	class:JKYi::ZKClient::EventType	access:public
 CREATE_SOCKET_ERROR	JKYi/http/http_connection.h	/^        CREATE_SOCKET_ERROR = 7,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
 CXX_STD	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	558;"	d	file:
 CXX_STD	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	560;"	d	file:
@@ -396,6 +410,8 @@ CreateUnixUDPSocket	JKYi/socket.h	/^    static Socket::ptr CreateUnixUDPSocket()
 DEBUG	JKYi/log.h	/^     DEBUG=1,$/;"	e	enum:JKYi::LogLevel::Level
 DEC	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	496;"	d	file:
 DEC	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	481;"	d	file:
+DELETED	JKYi/zk_client.cc	/^const int ZKClient::EventType::DELETED = ZOO_DELETED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+DELETED	JKYi/zk_client.h	/^        static const int DELETED;$/;"	m	class:JKYi::ZKClient::EventType	access:public
 Data	JKYi/db/mysql.cc	/^MySQLStmtRes::Data::Data()$/;"	f	class:JKYi::MySQLStmtRes::Data	signature:()
 Data	JKYi/db/mysql.h	/^        Data();$/;"	p	struct:JKYi::MySQLStmtRes::Data	access:public	signature:()
 Data	JKYi/db/mysql.h	/^    struct Data{$/;"	s	class:JKYi::MySQLStmtRes	access:private
@@ -419,10 +435,14 @@ DoRequest	JKYi/http/http_connection.cc	/^HttpResult::ptr HttpConnection::DoReque
 DoRequest	JKYi/http/http_connection.h	/^    static HttpResult::ptr DoRequest(HttpMethod method,Uri::ptr uri,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = "");$/;"	p	class:JKYi::http::HttpConnection	access:public	signature:(HttpMethod method,Uri::ptr uri,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = ”)
 DoRequest	JKYi/http/http_connection.h	/^    static HttpResult::ptr DoRequest(HttpMethod method,const std::string& url,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = "");$/;"	p	class:JKYi::http::HttpConnection	access:public	signature:(HttpMethod method,const std::string& url,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = ”)
 DoRequest	JKYi/http/http_connection.h	/^    static HttpResult::ptr DoRequest(HttpRequest::ptr request,Uri::ptr uri,uint64_t timeout_ms);$/;"	p	class:JKYi::http::HttpConnection	access:public	signature:(HttpRequest::ptr request,Uri::ptr uri,uint64_t timeout_ms)
+EPHEMERAL	JKYi/zk_client.cc	/^const int ZKClient::FlagsType::EPHEMERAL = ZOO_EPHEMERAL;$/;"	m	class:JKYi::ZKClient::FlagsType	file:
+EPHEMERAL	JKYi/zk_client.h	/^        static const int EPHEMERAL;$/;"	m	class:JKYi::ZKClient::FlagsType	access:public
 EQUALS	build/Makefile	/^EQUALS = =$/;"	m
 ERROR	JKYi/log.h	/^     ERROR=4,$/;"	e	enum:JKYi::LogLevel::Level
 EXCEPT	JKYi/fiber.h	/^	  EXCEPT\/\/ÂºÇÂ∏∏ÊÄÅ$/;"	e	enum:JKYi::Fiber::State
 EXEC	JKYi/fiber.h	/^	  EXEC,  \/\/ËøêË°åÊÄÅ$/;"	e	enum:JKYi::Fiber::State
+EXPIRED_SESSION	JKYi/zk_client.cc	/^const int ZKClient::StateType::EXPIRED_SESSION = ZOO_EXPIRED_SESSION_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+EXPIRED_SESSION	JKYi/zk_client.h	/^        static const int EXPIRED_SESSION;$/;"	m	class:JKYi::ZKClient::StateType	access:public
 ElapseFormatItem	JKYi/log.cc	/^    ElapseFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::ElapseFormatItem	access:public	signature:(const std::string&str=”)
 ElapseFormatItem	JKYi/log.cc	/^class ElapseFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:	inherits:LogFormatter::FormatItem
 EncodeZigzag32	JKYi/bytearray.cc	/^static uint32_t EncodeZigzag32(const int32_t &val){$/;"	f	namespace:JKYi	signature:(const int32_t &val)
@@ -432,6 +452,7 @@ EnvMgr	JKYi/env.h	/^typedef JKYi::Singleton<Env> EnvMgr;$/;"	t	namespace:JKYi
 Error	JKYi/http/http_connection.h	/^    enum class Error{$/;"	c	struct:JKYi::http::HttpResult	access:public
 Event	JKYi/iomanager.h	/^   enum Event{$/;"	g	class:JKYi::IOManager	access:public
 EventContext	JKYi/iomanager.h	/^	 struct EventContext{$/;"	s	struct:JKYi::IOManager::FdContext	access:public
+EventType	JKYi/zk_client.h	/^    class EventType{$/;"	c	class:JKYi::ZKClient	access:public
 Excute	JKYi/db/mysql.cc	/^int MySQLUtil::Excute(const std::string& name,const char * format,...){$/;"	f	class:JKYi::MySQLUtil	signature:(const std::string& name,const char * format,...)
 Excute	JKYi/db/mysql.cc	/^int MySQLUtil::Excute(const std::string& name,const char * format,va_list ap){$/;"	f	class:JKYi::MySQLUtil	signature:(const std::string& name,const char * format,va_list ap)
 Excute	JKYi/db/mysql.cc	/^int MySQLUtil::Excute(const std::string& name,const std::string& sql){$/;"	f	class:JKYi::MySQLUtil	signature:(const std::string& name,const std::string& sql)
@@ -470,6 +491,7 @@ FileLogAppender	JKYi/log.h	/^     FileLogAppender(const std::string& filename);$
 FileLogAppender	JKYi/log.h	/^class FileLogAppender:public LogAppender{$/;"	c	namespace:JKYi	inherits:LogAppender
 FilenameFormatItem	JKYi/log.cc	/^    FilenameFormatItem(const std::string& str = "") {}$/;"	f	class:JKYi::FilenameFormatItem	access:public	signature:(const std::string& str = ”)
 FilenameFormatItem	JKYi/log.cc	/^class FilenameFormatItem : public LogFormatter::FormatItem {$/;"	c	namespace:JKYi	file:	inherits:LogFormatter::FormatItem
+FlagsType	JKYi/zk_client.h	/^    class FlagsType{$/;"	c	class:JKYi::ZKClient	access:public
 Format	JKYi/util.cc	/^std::string StringUtil::Format(const char * fmt,...){$/;"	f	class:JKYi::StringUtil	signature:(const char * fmt,...)
 Format	JKYi/util.h	/^   static std::string Format(const char * fmt,...);$/;"	p	class:JKYi::StringUtil	access:public	signature:(const char * fmt,...)
 FormatItem	JKYi/log.h	/^    class FormatItem{$/;"	c	class:JKYi::LogFormatter	access:public
@@ -703,6 +725,8 @@ JKYi	JKYi/util/json_util.cc	/^namespace JKYi{$/;"	n	file:
 JKYi	JKYi/util/json_util.h	/^namespace JKYi{$/;"	n
 JKYi	JKYi/worker.cc	/^namespace JKYi{$/;"	n	file:
 JKYi	JKYi/worker.h	/^namespace JKYi{$/;"	n
+JKYi	JKYi/zk_client.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	JKYi/zk_client.h	/^namespace JKYi{$/;"	n
 JKYi	tests/test_config.cc	/^namespace JKYi{$/;"	n	file:
 JKYi::Address	JKYi/address.h	/^class Address{$/;"	c	namespace:JKYi
 JKYi::Address::Create	JKYi/address.cc	/^Address::ptr Address::Create(const sockaddr*addr,socklen_t addrlen){$/;"	f	class:JKYi::Address	signature:(const sockaddr*addr,socklen_t addrlen)
@@ -1308,6 +1332,7 @@ JKYi::ITransaction::commit	JKYi/db/db.h	/^    virtual bool commit() = 0;$/;"	p	c
 JKYi::ITransaction::ptr	JKYi/db/db.h	/^    typedef std::shared_ptr<ITransaction> ptr;$/;"	t	class:JKYi::ITransaction	access:public
 JKYi::ITransaction::rollback	JKYi/db/db.h	/^    virtual bool rollback() = 0; $/;"	p	class:JKYi::ITransaction	access:public	signature:()
 JKYi::ITransaction::~ITransaction	JKYi/db/db.h	/^    virtual ~ITransaction(){}$/;"	f	class:JKYi::ITransaction	access:public	signature:()
+JKYi::Join	JKYi/util.h	/^std::string Join(Iter begin,Iter end,const std::string& str){$/;"	f	namespace:JKYi	signature:(Iter begin,Iter end,const std::string& str)
 JKYi::JsonUtil	JKYi/util/json_util.h	/^class JsonUtil{$/;"	c	namespace:JKYi
 JKYi::JsonUtil::FromString	JKYi/util/json_util.cc	/^bool JsonUtil::FromString(Json::Value& json,const std::string& str){$/;"	f	class:JKYi::JsonUtil	signature:(Json::Value& json,const std::string& str)
 JKYi::JsonUtil::FromString	JKYi/util/json_util.h	/^    static bool FromString(Json::Value& json,const std::string& str);$/;"	p	class:JKYi::JsonUtil	access:public	signature:(Json::Value& json,const std::string& str)
@@ -2469,10 +2494,10 @@ JKYi::TimerManager::RWMutexType	JKYi/timer.h	/^   typedef RWMutex RWMutexType;$/
 JKYi::TimerManager::TimerManager	JKYi/timer.cc	/^TimerManager::TimerManager(){$/;"	f	class:JKYi::TimerManager	signature:()
 JKYi::TimerManager::TimerManager	JKYi/timer.h	/^   TimerManager();$/;"	p	class:JKYi::TimerManager	access:public	signature:()
 JKYi::TimerManager::addConditionTimer	JKYi/timer.cc	/^Timer::ptr TimerManager::addConditionTimer(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring){$/;"	f	class:JKYi::TimerManager	signature:(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring)
-JKYi::TimerManager::addConditionTimer	JKYi/timer.h	/^   Timer::ptr addConditionTimer(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring=false);$/;"	p	class:JKYi::TimerManager	access:public	signature:(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring=false)
+JKYi::TimerManager::addConditionTimer	JKYi/timer.h	/^   Timer::ptr addConditionTimer(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring = false);$/;"	p	class:JKYi::TimerManager	access:public	signature:(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring = false)
 JKYi::TimerManager::addTimer	JKYi/timer.cc	/^Timer::ptr TimerManager::addTimer(uint64_t ms,std::function<void ()> cb,bool recurring){$/;"	f	class:JKYi::TimerManager	signature:(uint64_t ms,std::function<void ()> cb,bool recurring)
 JKYi::TimerManager::addTimer	JKYi/timer.cc	/^void TimerManager::addTimer(Timer::ptr val,RWMutexType::WriteLock& lock){$/;"	f	class:JKYi::TimerManager	signature:(Timer::ptr val,RWMutexType::WriteLock& lock)
-JKYi::TimerManager::addTimer	JKYi/timer.h	/^   Timer::ptr addTimer(uint64_t ms,std::function<void ()>cb,bool recurring=false);$/;"	p	class:JKYi::TimerManager	access:public	signature:(uint64_t ms,std::function<void ()>cb,bool recurring=false)
+JKYi::TimerManager::addTimer	JKYi/timer.h	/^   Timer::ptr addTimer(uint64_t ms,std::function<void ()>cb,bool recurring = false);$/;"	p	class:JKYi::TimerManager	access:public	signature:(uint64_t ms,std::function<void ()>cb,bool recurring = false)
 JKYi::TimerManager::addTimer	JKYi/timer.h	/^   void addTimer(Timer::ptr val,RWMutexType::WriteLock &lock);$/;"	p	class:JKYi::TimerManager	access:protected	signature:(Timer::ptr val,RWMutexType::WriteLock &lock)
 JKYi::TimerManager::deleteClockRollover	JKYi/timer.cc	/^bool TimerManager::deleteClockRollover(uint64_t now_ms){$/;"	f	class:JKYi::TimerManager	signature:(uint64_t now_ms)
 JKYi::TimerManager::deleteClockRollover	JKYi/timer.h	/^   bool deleteClockRollover(uint64_t now_ms);$/;"	p	class:JKYi::TimerManager	access:private	signature:(uint64_t now_ms)
@@ -2483,10 +2508,10 @@ JKYi::TimerManager::hasTimer	JKYi/timer.h	/^   bool hasTimer();$/;"	p	class:JKYi
 JKYi::TimerManager::listExpiredCb	JKYi/timer.cc	/^void TimerManager::listExpiredCb(std::vector<std::function<void ()>>&cbs){$/;"	f	class:JKYi::TimerManager	signature:(std::vector<std::function<void ()>>&cbs)
 JKYi::TimerManager::listExpiredCb	JKYi/timer.h	/^   void listExpiredCb(std::vector<std::function<void ()>>&cbs);$/;"	p	class:JKYi::TimerManager	access:public	signature:(std::vector<std::function<void ()>>&cbs)
 JKYi::TimerManager::m_mutex	JKYi/timer.h	/^   RWMutexType m_mutex;$/;"	m	class:JKYi::TimerManager	access:private
-JKYi::TimerManager::m_previouseTime	JKYi/timer.h	/^   uint64_t m_previouseTime=0;$/;"	m	class:JKYi::TimerManager	access:private
-JKYi::TimerManager::m_tickled	JKYi/timer.h	/^   bool m_tickled=false;$/;"	m	class:JKYi::TimerManager	access:private
+JKYi::TimerManager::m_previouseTime	JKYi/timer.h	/^   uint64_t m_previouseTime = 0;$/;"	m	class:JKYi::TimerManager	access:private
+JKYi::TimerManager::m_tickled	JKYi/timer.h	/^   bool m_tickled = false;$/;"	m	class:JKYi::TimerManager	access:private
 JKYi::TimerManager::m_timers	JKYi/timer.h	/^   std::set<Timer::ptr,Timer::Comparator>m_timers;$/;"	m	class:JKYi::TimerManager	access:private
-JKYi::TimerManager::onTimerInsertedAtFront	JKYi/timer.h	/^   virtual void onTimerInsertedAtFront()=0;$/;"	p	class:JKYi::TimerManager	access:protected	signature:()
+JKYi::TimerManager::onTimerInsertedAtFront	JKYi/timer.h	/^   virtual void onTimerInsertedAtFront() = 0;$/;"	p	class:JKYi::TimerManager	access:protected	signature:()
 JKYi::TimerManager::~TimerManager	JKYi/timer.cc	/^TimerManager::~TimerManager(){$/;"	f	class:JKYi::TimerManager	signature:()
 JKYi::TimerManager::~TimerManager	JKYi/timer.h	/^   virtual ~TimerManager(); $/;"	p	class:JKYi::TimerManager	access:public	signature:()
 JKYi::TypeUtil	JKYi/util.h	/^class TypeUtil{$/;"	c	namespace:JKYi
@@ -2607,6 +2632,69 @@ JKYi::WriteScopedLockImpl::m_locked	JKYi/mutex.h	/^  bool m_locked;$/;"	m	class:
 JKYi::WriteScopedLockImpl::m_mutex	JKYi/mutex.h	/^  T& m_mutex;$/;"	m	class:JKYi::WriteScopedLockImpl	access:private
 JKYi::WriteScopedLockImpl::unlock	JKYi/mutex.h	/^  void unlock(){$/;"	f	class:JKYi::WriteScopedLockImpl	access:public	signature:()
 JKYi::WriteScopedLockImpl::~WriteScopedLockImpl	JKYi/mutex.h	/^  ~WriteScopedLockImpl(){$/;"	f	class:JKYi::WriteScopedLockImpl	access:public	signature:()
+JKYi::ZKClient	JKYi/zk_client.h	/^class ZKClient : public std::enable_shared_from_this<ZKClient>{$/;"	c	namespace:JKYi	inherits:std::enable_shared_from_this
+JKYi::ZKClient::EventType	JKYi/zk_client.h	/^    class EventType{$/;"	c	class:JKYi::ZKClient	access:public
+JKYi::ZKClient::EventType::CHANGED	JKYi/zk_client.cc	/^const int ZKClient::EventType::CHANGED = ZOO_CHANGED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+JKYi::ZKClient::EventType::CHANGED	JKYi/zk_client.h	/^        static const int CHANGED;$/;"	m	class:JKYi::ZKClient::EventType	access:public
+JKYi::ZKClient::EventType::CHILD	JKYi/zk_client.cc	/^const int ZKClient::EventType::CHILD = ZOO_CHILD_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+JKYi::ZKClient::EventType::CHILD	JKYi/zk_client.h	/^        static const int CHILD;$/;"	m	class:JKYi::ZKClient::EventType	access:public
+JKYi::ZKClient::EventType::CREATED	JKYi/zk_client.cc	/^const int ZKClient::EventType::CREATED = ZOO_CREATED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+JKYi::ZKClient::EventType::CREATED	JKYi/zk_client.h	/^        static const int CREATED;$/;"	m	class:JKYi::ZKClient::EventType	access:public
+JKYi::ZKClient::EventType::DELETED	JKYi/zk_client.cc	/^const int ZKClient::EventType::DELETED = ZOO_DELETED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+JKYi::ZKClient::EventType::DELETED	JKYi/zk_client.h	/^        static const int DELETED;$/;"	m	class:JKYi::ZKClient::EventType	access:public
+JKYi::ZKClient::EventType::NOWATCHING	JKYi/zk_client.cc	/^const int ZKClient::EventType::NOWATCHING = ZOO_NOTWATCHING_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+JKYi::ZKClient::EventType::NOWATCHING	JKYi/zk_client.h	/^        static const int NOWATCHING;$/;"	m	class:JKYi::ZKClient::EventType	access:public
+JKYi::ZKClient::EventType::SESSION	JKYi/zk_client.cc	/^const int ZKClient::EventType::SESSION = ZOO_SESSION_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+JKYi::ZKClient::EventType::SESSION	JKYi/zk_client.h	/^        static const int SESSION;$/;"	m	class:JKYi::ZKClient::EventType	access:public
+JKYi::ZKClient::FlagsType	JKYi/zk_client.h	/^    class FlagsType{$/;"	c	class:JKYi::ZKClient	access:public
+JKYi::ZKClient::FlagsType::EPHEMERAL	JKYi/zk_client.cc	/^const int ZKClient::FlagsType::EPHEMERAL = ZOO_EPHEMERAL;$/;"	m	class:JKYi::ZKClient::FlagsType	file:
+JKYi::ZKClient::FlagsType::EPHEMERAL	JKYi/zk_client.h	/^        static const int EPHEMERAL;$/;"	m	class:JKYi::ZKClient::FlagsType	access:public
+JKYi::ZKClient::FlagsType::SEQUENCE	JKYi/zk_client.cc	/^const int ZKClient::FlagsType::SEQUENCE = ZOO_SEQUENCE;$/;"	m	class:JKYi::ZKClient::FlagsType	file:
+JKYi::ZKClient::FlagsType::SEQUENCE	JKYi/zk_client.h	/^        static const int SEQUENCE;$/;"	m	class:JKYi::ZKClient::FlagsType	access:public
+JKYi::ZKClient::OnWatcher	JKYi/zk_client.cc	/^void ZKClient::OnWatcher(zhandle_t* zk,int type,int stat,const char * path,$/;"	f	class:JKYi::ZKClient	signature:(zhandle_t* zk,int type,int stat,const char * path, void * watcherCtx)
+JKYi::ZKClient::OnWatcher	JKYi/zk_client.h	/^    static void OnWatcher(zhandle_t * zh,int type,int stat,const char * path,void * watcherCtx);$/;"	p	class:JKYi::ZKClient	access:private	signature:(zhandle_t * zh,int type,int stat,const char * path,void * watcherCtx)
+JKYi::ZKClient::StateType	JKYi/zk_client.h	/^    class StateType{$/;"	c	class:JKYi::ZKClient	access:public
+JKYi::ZKClient::StateType::ASSOCIATING	JKYi/zk_client.cc	/^const int ZKClient::StateType::ASSOCIATING = ZOO_ASSOCIATING_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+JKYi::ZKClient::StateType::ASSOCIATING	JKYi/zk_client.h	/^        static const int ASSOCIATING;$/;"	m	class:JKYi::ZKClient::StateType	access:public
+JKYi::ZKClient::StateType::AUTH_FAILED	JKYi/zk_client.cc	/^const int ZKClient::StateType::AUTH_FAILED = ZOO_AUTH_FAILED_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+JKYi::ZKClient::StateType::AUTH_FAILED	JKYi/zk_client.h	/^        static const int AUTH_FAILED;$/;"	m	class:JKYi::ZKClient::StateType	access:public
+JKYi::ZKClient::StateType::CONNECTED	JKYi/zk_client.cc	/^const int ZKClient::StateType::CONNECTED = ZOO_CONNECTED_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+JKYi::ZKClient::StateType::CONNECTED	JKYi/zk_client.h	/^        static const int CONNECTED;$/;"	m	class:JKYi::ZKClient::StateType	access:public
+JKYi::ZKClient::StateType::CONNECTING	JKYi/zk_client.cc	/^const int ZKClient::StateType::CONNECTING = ZOO_CONNECTING_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+JKYi::ZKClient::StateType::CONNECTING	JKYi/zk_client.h	/^        static const int CONNECTING;$/;"	m	class:JKYi::ZKClient::StateType	access:public
+JKYi::ZKClient::StateType::EXPIRED_SESSION	JKYi/zk_client.cc	/^const int ZKClient::StateType::EXPIRED_SESSION = ZOO_EXPIRED_SESSION_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
+JKYi::ZKClient::StateType::EXPIRED_SESSION	JKYi/zk_client.h	/^        static const int EXPIRED_SESSION;$/;"	m	class:JKYi::ZKClient::StateType	access:public
+JKYi::ZKClient::ZKClient	JKYi/zk_client.cc	/^ZKClient::ZKClient()$/;"	f	class:JKYi::ZKClient	signature:()
+JKYi::ZKClient::ZKClient	JKYi/zk_client.h	/^    ZKClient();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
+JKYi::ZKClient::close	JKYi/zk_client.cc	/^int32_t ZKClient::close(){$/;"	f	class:JKYi::ZKClient	signature:()
+JKYi::ZKClient::close	JKYi/zk_client.h	/^    int32_t close();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
+JKYi::ZKClient::create	JKYi/zk_client.cc	/^int32_t ZKClient::create(const std::string& path,const std::string& val,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,const std::string& val, std::string& new_path,const struct ACL_vector * acl, int flags)
+JKYi::ZKClient::create	JKYi/zk_client.h	/^    int32_t create(const std::string& path,const std::string& val,std::string& new_path,const struct ACL_vector* acl = &ZOO_OPEN_ACL_UNSAFE,int flags = 0);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,const std::string& val,std::string& new_path,const struct ACL_vector* acl = &ZOO_OPEN_ACL_UNSAFE,int flags = 0)
+JKYi::ZKClient::del	JKYi/zk_client.cc	/^int32_t ZKClient::del(const std::string& path,int version){$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,int version)
+JKYi::ZKClient::del	JKYi/zk_client.h	/^    int32_t del(const std::string& path,int version = -1);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,int version = -1)
+JKYi::ZKClient::exists	JKYi/zk_client.cc	/^int32_t ZKClient::exists(const std::string& path,bool watch,Stat * stat ){$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,bool watch,Stat * stat )
+JKYi::ZKClient::exists	JKYi/zk_client.h	/^    int32_t exists(const std::string& path,bool watch,Stat * stat = nullptr);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,bool watch,Stat * stat = nullptr)
+JKYi::ZKClient::get	JKYi/zk_client.cc	/^int32_t ZKClient::get(const std::string& path,std::string& val,bool watch,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,std::string& val,bool watch, Stat * stat)
+JKYi::ZKClient::get	JKYi/zk_client.h	/^    int32_t get(const std::string& path,std::string& val,bool watch,Stat * stat = nullptr);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,std::string& val,bool watch,Stat * stat = nullptr)
+JKYi::ZKClient::getChildren	JKYi/zk_client.cc	/^int32_t ZKClient::getChildren(const std::string& path,std::vector<std::string>&val,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,std::vector<std::string>&val, bool watch,Stat * stat)
+JKYi::ZKClient::getChildren	JKYi/zk_client.h	/^    int32_t getChildren(const std::string& path,std::vector<std::string>& val,bool watch,Stat * stat = nullptr);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,std::vector<std::string>& val,bool watch,Stat * stat = nullptr)
+JKYi::ZKClient::getState	JKYi/zk_client.cc	/^int32_t ZKClient::getState(){$/;"	f	class:JKYi::ZKClient	signature:()
+JKYi::ZKClient::getState	JKYi/zk_client.h	/^    int32_t getState();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
+JKYi::ZKClient::init	JKYi/zk_client.cc	/^bool ZKClient::init(const std::string& hosts,int recv_timeout,watcher_callback cb$/;"	f	class:JKYi::ZKClient	signature:(const std::string& hosts,int recv_timeout,watcher_callback cb )
+JKYi::ZKClient::init	JKYi/zk_client.h	/^    bool init(const std::string& hosts,int recv_timeout,watcher_callback cb);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& hosts,int recv_timeout,watcher_callback cb)
+JKYi::ZKClient::m_handle	JKYi/zk_client.h	/^    zhandle_t * m_handle;$/;"	m	class:JKYi::ZKClient	access:private
+JKYi::ZKClient::m_hosts	JKYi/zk_client.h	/^    std::string m_hosts;$/;"	m	class:JKYi::ZKClient	access:private
+JKYi::ZKClient::m_recvTimeout	JKYi/zk_client.h	/^    int32_t m_recvTimeout;$/;"	m	class:JKYi::ZKClient	access:private
+JKYi::ZKClient::m_watcherCb	JKYi/zk_client.h	/^    watcher_callback2 m_watcherCb;$/;"	m	class:JKYi::ZKClient	access:private
+JKYi::ZKClient::ptr	JKYi/zk_client.h	/^    typedef std::shared_ptr<ZKClient> ptr;$/;"	t	class:JKYi::ZKClient	access:public
+JKYi::ZKClient::reconnect	JKYi/zk_client.cc	/^bool ZKClient::reconnect(){$/;"	f	class:JKYi::ZKClient	signature:()
+JKYi::ZKClient::reconnect	JKYi/zk_client.h	/^    bool reconnect();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
+JKYi::ZKClient::set	JKYi/zk_client.cc	/^int32_t ZKClient::set(const std::string& path,const std::string& val,int version,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,const std::string& val,int version, Stat * stat)
+JKYi::ZKClient::set	JKYi/zk_client.h	/^    int32_t set(const std::string& path,const std::string& val,int version = -1,Stat * stat = nullptr);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,const std::string& val,int version = -1,Stat * stat = nullptr)
+JKYi::ZKClient::watcher_callback	JKYi/zk_client.h	/^    typedef std::function<void (int type,int stat,const std::string& path,ZKClient::ptr)>watcher_callback;$/;"	t	class:JKYi::ZKClient	access:public
+JKYi::ZKClient::watcher_callback2	JKYi/zk_client.h	/^    typedef std::function<void (int type,int stat,const std::string& path)> watcher_callback2;$/;"	t	class:JKYi::ZKClient	access:private
+JKYi::ZKClient::~ZKClient	JKYi/zk_client.cc	/^ZKClient::~ZKClient(){$/;"	f	class:JKYi::ZKClient	signature:()
+JKYi::ZKClient::~ZKClient	JKYi/zk_client.h	/^    ~ZKClient();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
 JKYi::_HookIniter	JKYi/hook.cc	/^struct _HookIniter{$/;"	s	namespace:JKYi	file:
 JKYi::_HookIniter::_HookIniter	JKYi/hook.cc	/^   _HookIniter(){$/;"	f	struct:JKYi::_HookIniter	access:public	signature:()
 JKYi::__anon2::_SSLInit	JKYi/socket.cc	/^struct _SSLInit{$/;"	s	namespace:JKYi::__anon2	file:
@@ -3218,6 +3306,7 @@ JKYi::uri_parser_en_main	JKYi/uri.rl.cc	/^static const int uri_parser_en_main = 
 JKYi::uri_parser_error	JKYi/uri.rl.cc	/^static const int uri_parser_error = 0;$/;"	m	namespace:JKYi	file:
 JKYi::uri_parser_first_final	JKYi/uri.rl.cc	/^static const int uri_parser_first_final = 451;$/;"	m	namespace:JKYi	file:
 JKYi::uri_parser_start	JKYi/uri.rl.cc	/^static const int uri_parser_start = 451;$/;"	m	namespace:JKYi	file:
+Join	JKYi/util.h	/^std::string Join(Iter begin,Iter end,const std::string& str){$/;"	f	namespace:JKYi	signature:(Iter begin,Iter end,const std::string& str)
 JsonUtil	JKYi/util/json_util.h	/^class JsonUtil{$/;"	c	namespace:JKYi
 LEN	JKYi/http/http11_parser.rl.cc	45;"	d	file:
 LEN	JKYi/http/httpclient_parser.rl.cc	46;"	d	file:
@@ -3351,6 +3440,8 @@ MySQLTransaction	JKYi/db/mysql.h	/^class MySQLTransaction:public ITransaction{$/
 MySQLUtil	JKYi/db/mysql.h	/^class MySQLUtil{$/;"	c	namespace:JKYi
 NONE	JKYi/iomanager.h	/^	   NONE  =  0x0,$/;"	e	enum:JKYi::IOManager::Event
 NOTIFY	JKYi/protocol.h	/^        NOTIFY = 3,$/;"	e	enum:JKYi::Message::MessageType
+NOWATCHING	JKYi/zk_client.cc	/^const int ZKClient::EventType::NOWATCHING = ZOO_NOTWATCHING_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+NOWATCHING	JKYi/zk_client.h	/^        static const int NOWATCHING;$/;"	m	class:JKYi::ZKClient::EventType	access:public
 NameFormatItem	JKYi/log.cc	/^    NameFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::NameFormatItem	access:public	signature:(const std::string&str=”)
 NameFormatItem	JKYi/log.cc	/^class NameFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:	inherits:LogFormatter::FormatItem
 NewLineFormatItem	JKYi/log.cc	/^    NewLineFormatItem(const std::string& str = "") {}$/;"	f	class:JKYi::NewLineFormatItem	access:public	signature:(const std::string& str = ”)
@@ -3373,6 +3464,8 @@ Notify	JKYi/protocol.h	/^class Notify:public Message{$/;"	c	namespace:JKYi	inher
 OK	JKYi/http/http_connection.h	/^        OK = 0,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
 OPCODE	JKYi/http/ws_session.h	/^    enum OPCODE{$/;"	g	struct:JKYi::http::WSFrameHead	access:public
 OnTimer	JKYi/timer.cc	/^static void OnTimer(std::weak_ptr<void>weak_cond,std::function<void()>cb){$/;"	f	namespace:JKYi	signature:(std::weak_ptr<void>weak_cond,std::function<void()>cb)
+OnWatcher	JKYi/zk_client.cc	/^void ZKClient::OnWatcher(zhandle_t* zk,int type,int stat,const char * path,$/;"	f	class:JKYi::ZKClient	signature:(zhandle_t* zk,int type,int stat,const char * path, void * watcherCtx)
+OnWatcher	JKYi/zk_client.h	/^    static void OnWatcher(zhandle_t * zh,int type,int stat,const char * path,void * watcherCtx);$/;"	p	class:JKYi::ZKClient	access:private	signature:(zhandle_t * zh,int type,int stat,const char * path,void * watcherCtx)
 PARSE_PARAM	JKYi/http/http.cc	208;"	d	file:
 PING	JKYi/http/ws_session.h	/^        PING = 9,$/;"	e	enum:JKYi::http::WSFrameHead::OPCODE
 PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	337;"	d	file:
@@ -3487,6 +3580,10 @@ Response	JKYi/protocol.h	/^    Response();$/;"	p	class:JKYi::Response	access:pub
 Response	JKYi/protocol.h	/^class Response:public Message{$/;"	c	namespace:JKYi	inherits:Message
 SEND_CLOSE_BY_PEER	JKYi/http/http_connection.h	/^        SEND_CLOSE_BY_PEER = 4,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
 SEND_SOCKET_ERROR	JKYi/http/http_connection.h	/^        SEND_SOCKET_ERROR = 5,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
+SEQUENCE	JKYi/zk_client.cc	/^const int ZKClient::FlagsType::SEQUENCE = ZOO_SEQUENCE;$/;"	m	class:JKYi::ZKClient::FlagsType	file:
+SEQUENCE	JKYi/zk_client.h	/^        static const int SEQUENCE;$/;"	m	class:JKYi::ZKClient::FlagsType	access:public
+SESSION	JKYi/zk_client.cc	/^const int ZKClient::EventType::SESSION = ZOO_SESSION_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
+SESSION	JKYi/zk_client.h	/^        static const int SESSION;$/;"	m	class:JKYi::ZKClient::EventType	access:public
 SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SIMULATE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	187;"	d	file:
 SIMULATE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
@@ -3541,6 +3638,7 @@ SocketStream	JKYi/stream/socket_stream.h	/^class SocketStream:public Stream{$/;"
 SpinLock	JKYi/mutex.h	/^   SpinLock(){$/;"	f	class:JKYi::SpinLock	access:public	signature:()
 SpinLock	JKYi/mutex.h	/^class SpinLock:Noncopyable{$/;"	c	namespace:JKYi	inherits:Noncopyable
 State	JKYi/fiber.h	/^   enum State{$/;"	g	class:JKYi::Fiber	access:public
+StateType	JKYi/zk_client.h	/^    class StateType{$/;"	c	class:JKYi::ZKClient	access:public
 StdoutLogAppender	JKYi/log.h	/^class StdoutLogAppender:public LogAppender{$/;"	c	namespace:JKYi	inherits:LogAppender
 Str2Time	JKYi/util.cc	/^time_t Str2Time(const char * str,const char * format){$/;"	f	namespace:JKYi	signature:(const char * str,const char * format)
 Str2Time	JKYi/util.h	/^time_t Str2Time(const char * str,const char * format = "%Y-%m-%d %H:%M:%S");$/;"	p	namespace:JKYi	signature:(const char * str,const char * format = ”)
@@ -3656,10 +3754,10 @@ WriteScopedLockImpl	JKYi/mutex.h	/^  WriteScopedLockImpl(T&mutex)$/;"	f	class:JK
 WriteScopedLockImpl	JKYi/mutex.h	/^class WriteScopedLockImpl{$/;"	c	namespace:JKYi
 XX	JKYi/bytearray.cc	224;"	d	file:
 XX	JKYi/bytearray.cc	254;"	d	file:
-XX	JKYi/db/mysql.cc	532;"	d	file:
-XX	JKYi/db/mysql.cc	546;"	d	file:
-XX	JKYi/db/mysql.cc	592;"	d	file:
-XX	JKYi/db/mysql.cc	625;"	d	file:
+XX	JKYi/db/mysql.cc	533;"	d	file:
+XX	JKYi/db/mysql.cc	547;"	d	file:
+XX	JKYi/db/mysql.cc	593;"	d	file:
+XX	JKYi/db/mysql.cc	626;"	d	file:
 XX	JKYi/hook.cc	/^    HOOK_FUN(XX);$/;"	v
 XX	JKYi/hook.cc	176;"	d	file:
 XX	JKYi/hook.cc	178;"	d	file:
@@ -3693,6 +3791,9 @@ YieldToHold	JKYi/fiber.cc	/^void Fiber::YieldToHold(){$/;"	f	class:JKYi::Fiber	s
 YieldToHold	JKYi/fiber.h	/^   static void YieldToHold();$/;"	p	class:JKYi::Fiber	access:public	signature:()
 YieldToReady	JKYi/fiber.cc	/^void Fiber::YieldToReady(){$/;"	f	class:JKYi::Fiber	signature:()
 YieldToReady	JKYi/fiber.h	/^   static void YieldToReady();$/;"	p	class:JKYi::Fiber	access:public	signature:()
+ZKClient	JKYi/zk_client.cc	/^ZKClient::ZKClient()$/;"	f	class:JKYi::ZKClient	signature:()
+ZKClient	JKYi/zk_client.h	/^    ZKClient();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
+ZKClient	JKYi/zk_client.h	/^class ZKClient : public std::enable_shared_from_this<ZKClient>{$/;"	c	namespace:JKYi	inherits:std::enable_shared_from_this
 _HTTP_PARSER_H_	JKYi/http/http_parser.h	2;"	d
 _HookIniter	JKYi/hook.cc	/^   _HookIniter(){$/;"	f	struct:JKYi::_HookIniter	access:public	signature:()
 _HookIniter	JKYi/hook.cc	/^struct _HookIniter{$/;"	s	namespace:JKYi	file:
@@ -3738,6 +3839,7 @@ _JKYI_WS_CONNECTION_H_	JKYi/http/ws_connection.h	2;"	d
 _JKYI_WS_SERVER_H_	JKYi/http/ws_server.h	2;"	d
 _JKYI_WS_SERVLET_H_	JKYi/http/ws_servlet.h	2;"	d
 _JKYI_WS_SESSION_H_	JKYi/http/ws_session.h	2;"	d
+_JKYI_ZK_CLIENT_H_	JKYi/zk_client.h	2;"	d
 _RequestSizeIniter	JKYi/http/http_parser.cc	/^        _RequestSizeIniter(){$/;"	f	struct:JKYi::http::__anon1::_RequestSizeIniter	access:public	signature:()
 _RequestSizeIniter	JKYi/http/http_parser.cc	/^struct _RequestSizeIniter{$/;"	s	namespace:JKYi::http::__anon1	file:
 _SSLInit	JKYi/socket.cc	/^    _SSLInit(){$/;"	f	struct:JKYi::__anon2::_SSLInit	access:public	signature:()
@@ -3765,7 +3867,7 @@ addAppender	JKYi/log.h	/^    void addAppender(LogAppender::ptr appender);$/;"	p	
 addCapacity	JKYi/bytearray.cc	/^void ByteArray::addCapacity(size_t size){$/;"	f	class:JKYi::ByteArray	signature:(size_t size)
 addCapacity	JKYi/bytearray.h	/^    void addCapacity(size_t size);$/;"	p	class:JKYi::ByteArray	access:private	signature:(size_t size)
 addConditionTimer	JKYi/timer.cc	/^Timer::ptr TimerManager::addConditionTimer(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring){$/;"	f	class:JKYi::TimerManager	signature:(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring)
-addConditionTimer	JKYi/timer.h	/^   Timer::ptr addConditionTimer(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring=false);$/;"	p	class:JKYi::TimerManager	access:public	signature:(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring=false)
+addConditionTimer	JKYi/timer.h	/^   Timer::ptr addConditionTimer(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring = false);$/;"	p	class:JKYi::TimerManager	access:public	signature:(uint64_t ms,std::function<void()>cb,std::weak_ptr<void>weak_cond,bool recurring = false)
 addEvent	JKYi/iomanager.cc	/^int IOManager::addEvent(int fd,Event event,std::function<void()>cb){$/;"	f	class:JKYi::IOManager	signature:(int fd,Event event,std::function<void()>cb)
 addEvent	JKYi/iomanager.h	/^   int addEvent(int fd,Event event,std::function<void ()>cb = nullptr);$/;"	p	class:JKYi::IOManager	access:public	signature:(int fd,Event event,std::function<void ()>cb = nullptr)
 addGlobServlet	JKYi/http/servlet.cc	/^void ServletDispatch::addGlobServlet(const std::string& uri,$/;"	f	class:JKYi::http::ServletDispatch	signature:(const std::string& uri, FunctionServlet::callback cb)
@@ -3785,7 +3887,7 @@ addServlet	JKYi/http/ws_servlet.cc	/^void WSServletDispatch::addServlet(const st
 addServlet	JKYi/http/ws_servlet.h	/^    void addServlet(const std::string& uri,$/;"	p	class:JKYi::http::WSServletDispatch	access:public	signature:(const std::string& uri, FunctionWSServlet::callback cb, FunctionWSServlet::on_connect_cb connect_cb = nullptr, FunctionWSServlet::on_close_cb close_cb = nullptr)
 addTimer	JKYi/timer.cc	/^Timer::ptr TimerManager::addTimer(uint64_t ms,std::function<void ()> cb,bool recurring){$/;"	f	class:JKYi::TimerManager	signature:(uint64_t ms,std::function<void ()> cb,bool recurring)
 addTimer	JKYi/timer.cc	/^void TimerManager::addTimer(Timer::ptr val,RWMutexType::WriteLock& lock){$/;"	f	class:JKYi::TimerManager	signature:(Timer::ptr val,RWMutexType::WriteLock& lock)
-addTimer	JKYi/timer.h	/^   Timer::ptr addTimer(uint64_t ms,std::function<void ()>cb,bool recurring=false);$/;"	p	class:JKYi::TimerManager	access:public	signature:(uint64_t ms,std::function<void ()>cb,bool recurring=false)
+addTimer	JKYi/timer.h	/^   Timer::ptr addTimer(uint64_t ms,std::function<void ()>cb,bool recurring = false);$/;"	p	class:JKYi::TimerManager	access:public	signature:(uint64_t ms,std::function<void ()>cb,bool recurring = false)
 addTimer	JKYi/timer.h	/^   void addTimer(Timer::ptr val,RWMutexType::WriteLock &lock);$/;"	p	class:JKYi::TimerManager	access:protected	signature:(Timer::ptr val,RWMutexType::WriteLock &lock)
 address	JKYi/tcp_server.h	/^    std::vector<std::string> address;$/;"	m	struct:JKYi::TcpServerConf	access:public
 alloc	JKYi/db/mysql.cc	/^void MySQLStmtRes::Data::alloc(size_t size){$/;"	f	class:JKYi::MySQLStmtRes::Data	signature:(size_t size)
@@ -3922,6 +4024,8 @@ close	JKYi/socket.cc	/^bool Socket::close(){$/;"	f	class:JKYi::Socket	signature:
 close	JKYi/socket.h	/^    virtual bool close();$/;"	p	class:JKYi::Socket	access:public	signature:()
 close	JKYi/stream.h	/^    virtual void close() = 0;$/;"	p	class:JKYi::Stream	access:public	signature:()
 close	JKYi/stream/socket_stream.cc	/^void SocketStream::close(){$/;"	f	class:JKYi::SocketStream	signature:()
+close	JKYi/zk_client.cc	/^int32_t ZKClient::close(){$/;"	f	class:JKYi::ZKClient	signature:()
+close	JKYi/zk_client.h	/^    int32_t close();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
 close_fun	JKYi/hook.h	/^typedef int (*close_fun)(int fd);$/;"	t
 cmd	JKYi/db/mysql.cc	/^const char * MySQL::cmd(){$/;"	f	class:JKYi::MySQL	signature:()
 cmd	JKYi/db/mysql.h	/^    const char * cmd();$/;"	p	class:JKYi::MySQL	access:public	signature:()
@@ -3943,6 +4047,8 @@ content_len	JKYi/http/httpclient_parser.h	/^      int content_len;$/;"	m	struct:
 contextResize	JKYi/iomanager.cc	/^void IOManager::contextResize(size_t size){$/;"	f	class:JKYi::IOManager	signature:(size_t size)
 contextResize	JKYi/iomanager.h	/^   void contextResize(size_t size);$/;"	p	class:JKYi::IOManager	access:protected	signature:(size_t size)
 count	tests/test_thread.cc	/^int count=0;$/;"	v
+create	JKYi/zk_client.cc	/^int32_t ZKClient::create(const std::string& path,const std::string& val,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,const std::string& val, std::string& new_path,const struct ACL_vector * acl, int flags)
+create	JKYi/zk_client.h	/^    int32_t create(const std::string& path,const std::string& val,std::string& new_path,const struct ACL_vector* acl = &ZOO_OPEN_ACL_UNSAFE,int flags = 0);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,const std::string& val,std::string& new_path,const struct ACL_vector* acl = &ZOO_OPEN_ACL_UNSAFE,int flags = 0)
 createAddress	JKYi/uri.h	/^    Address::ptr createAddress()const;$/;"	p	class:JKYi::Uri	access:public	signature:() const
 createAddress	JKYi/uri.rl.cc	/^Address::ptr Uri::createAddress() const {$/;"	f	class:JKYi::Uri	signature:() const
 createResponse	JKYi/http/http.cc	/^std::shared_ptr<HttpResponse> HttpRequest::createResponse(){$/;"	f	class:JKYi::http::HttpRequest	signature:()
@@ -3963,6 +4069,8 @@ del	JKYi/fdmanager.cc	/^void FdManager::del(int fd){$/;"	f	class:JKYi::FdManager
 del	JKYi/fdmanager.h	/^	void del(int fd);$/;"	p	class:JKYi::FdManager	access:public	signature:(int fd)
 del	JKYi/module.cc	/^void ModuleManager::del(const std::string& name){$/;"	f	class:JKYi::ModuleManager	signature:(const std::string& name)
 del	JKYi/module.h	/^    void del(const std::string& name);$/;"	p	class:JKYi::ModuleManager	access:public	signature:(const std::string& name)
+del	JKYi/zk_client.cc	/^int32_t ZKClient::del(const std::string& path,int version){$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,int version)
+del	JKYi/zk_client.h	/^    int32_t del(const std::string& path,int version = -1);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,int version = -1)
 delAll	JKYi/module.cc	/^void ModuleManager::delAll(){$/;"	f	class:JKYi::ModuleManager	signature:()
 delAll	JKYi/module.h	/^    void delAll();$/;"	p	class:JKYi::ModuleManager	access:public	signature:()
 delAppender	JKYi/log.cc	/^void Logger::delAppender(LogAppender::ptr appender){$/;"	f	class:JKYi::Logger	signature:(LogAppender::ptr appender)
@@ -4041,6 +4149,8 @@ execute	JKYi/http/http_parser.cc	/^size_t HttpRequestParser::execute(char * data
 execute	JKYi/http/http_parser.cc	/^size_t HttpResponseParser::execute(char* data,size_t len,bool chunk){$/;"	f	class:JKYi::http::HttpResponseParser	signature:(char* data,size_t len,bool chunk)
 execute	JKYi/http/http_parser.h	/^    size_t execute(char * data,size_t len);$/;"	p	class:JKYi::http::HttpRequestParser	access:public	signature:(char * data,size_t len)
 execute	JKYi/http/http_parser.h	/^    size_t execute(char * data,size_t len,bool chunk);$/;"	p	class:JKYi::http::HttpResponseParser	access:public	signature:(char * data,size_t len,bool chunk)
+exists	JKYi/zk_client.cc	/^int32_t ZKClient::exists(const std::string& path,bool watch,Stat * stat ){$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,bool watch,Stat * stat )
+exists	JKYi/zk_client.h	/^    int32_t exists(const std::string& path,bool watch,Stat * stat = nullptr);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,bool watch,Stat * stat = nullptr)
 fatal	JKYi/log.cc	/^void Logger::fatal(LogEvent::ptr event){$/;"	f	class:JKYi::Logger	signature:(LogEvent::ptr event)
 fatal	JKYi/log.h	/^    void fatal(LogEvent::ptr event);$/;"	p	class:JKYi::Logger	access:public	signature:(LogEvent::ptr event)
 fcntl	JKYi/hook.cc	/^int fcntl(int fd,int cmd,...){$/;"	f	signature:(int fd,int cmd,...)
@@ -4072,6 +4182,7 @@ freeMySQL	JKYi/db/mysql.h	/^    void freeMySQL(const std::string& name,MySQL* m)
 fromString	JKYi/config.h	/^   virtual bool fromString(const std::string&val)=0;$/;"	p	class:JKYi::ConfigVarBase	access:public	signature:(const std::string&val)
 fun	tests/test_thread.cc	/^void fun(){$/;"	f	signature:()
 func1	tests/test_fiber.cc	/^void func1(){$/;"	f	signature:()
+g_argc	tests/test_zookeeper.cc	/^int g_argc;$/;"	v
 g_daemon_restart_interval	JKYi/daemon.cc	/^static ConfigVar<uint32_t>::ptr g_daemon_restart_interval = $/;"	m	namespace:JKYi	file:
 g_fiber_stack_size	JKYi/fiber.cc	/^ static ConfigVar<uint32_t>::ptr g_fiber_stack_size=JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");$/;"	m	namespace:JKYi	file:
 g_float_value_config	tests/test_config.cc	/^JKYi::ConfigVar<float>::ptr g_float_value_config=JKYi::Config::Lookup("system.value",(float)10.2f,"system value");$/;"	v
@@ -4127,6 +4238,7 @@ g_logger	tests/test_thread.cc	/^JKYi::Logger::ptr g_logger=JKYI_LOG_ROOT();$/;"	
 g_logger	tests/test_util.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	v	file:
 g_logger	tests/test_ws_client.cc	/^JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v
 g_logger	tests/test_ws_server.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v	file:
+g_logger	tests/test_zookeeper.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v	file:
 g_map_str_int_config	tests/test_config.cc	/^JKYi::ConfigVar<std::map<std::string,int>>::ptr g_map_str_int_config=JKYi::Config::Lookup("system.map_str_int",std::map<std::string,int>{{"k",6}},"system map_str_int");$/;"	v
 g_module_path	JKYi/module.cc	/^static JKYi::ConfigVar<std::string>::ptr g_module_path = $/;"	m	namespace:JKYi	file:
 g_mysql_config	tests/test_mysql.cc	/^static JKYi::ConfigVar<std::map<std::string,std::string>>::ptr g_mysql_config = JKYi::Config::Lookup("mysql",std::map<std::string,std::string>(),"mysql config");$/;"	v	file:
@@ -4154,6 +4266,8 @@ get	JKYi/module.cc	/^Module::ptr ModuleManager::get(const std::string& name){$/;
 get	JKYi/module.h	/^    Module::ptr get(const std::string& name);$/;"	p	class:JKYi::ModuleManager	access:public	signature:(const std::string& name)
 get	JKYi/worker.cc	/^Scheduler::ptr WorkerManager::get(const std::string& name){$/;"	f	class:JKYi::WorkerManager	signature:(const std::string& name)
 get	JKYi/worker.h	/^    Scheduler::ptr get(const std::string& name);$/;"	p	class:JKYi::WorkerManager	access:public	signature:(const std::string& name)
+get	JKYi/zk_client.cc	/^int32_t ZKClient::get(const std::string& path,std::string& val,bool watch,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,std::string& val,bool watch, Stat * stat)
+get	JKYi/zk_client.h	/^    int32_t get(const std::string& path,std::string& val,bool watch,Stat * stat = nullptr);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,std::string& val,bool watch,Stat * stat = nullptr)
 getAbsolutePath	JKYi/env.cc	/^std::string Env::getAbsolutePath(const std::string& path)const{$/;"	f	class:JKYi::Env	signature:(const std::string& path) const
 getAbsolutePath	JKYi/env.h	/^     std::string getAbsolutePath(const std::string& path)const;$/;"	p	class:JKYi::Env	access:public	signature:(const std::string& path) const
 getAbsoluteWorkPath	JKYi/env.cc	/^std::string Env::getAbsoluteWorkPath(const std::string& path)const{$/;"	f	class:JKYi::Env	signature:(const std::string& path) const
@@ -4184,6 +4298,8 @@ getBlob	JKYi/db/mysql.cc	/^std::string MySQLRes::getBlob(int idx){$/;"	f	class:J
 getBlob	JKYi/db/mysql.cc	/^std::string MySQLStmtRes::getBlob(int idx){$/;"	f	class:JKYi::MySQLStmtRes	signature:(int idx)
 getBody	JKYi/http/http.h	/^    const std::string&  getBody()const { return m_body; }$/;"	f	class:JKYi::http::HttpResponse	access:public	signature:() const
 getBody	JKYi/http/http.h	/^   const std::string getBody()const { return m_body; }$/;"	f	class:JKYi::http::HttpRequest	access:public	signature:() const
+getChildren	JKYi/zk_client.cc	/^int32_t ZKClient::getChildren(const std::string& path,std::vector<std::string>&val,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,std::vector<std::string>&val, bool watch,Stat * stat)
+getChildren	JKYi/zk_client.h	/^    int32_t getChildren(const std::string& path,std::vector<std::string>& val,bool watch,Stat * stat = nullptr);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,std::vector<std::string>& val,bool watch,Stat * stat = nullptr)
 getCmd	JKYi/protocol.h	/^    uint32_t getCmd()const { return m_cmd; }$/;"	f	class:JKYi::Request	access:public	signature:() const
 getCmd	JKYi/protocol.h	/^    uint32_t getCmd()const { return m_cmd; }$/;"	f	class:JKYi::Response	access:public	signature:() const
 getColumnBytes	JKYi/db/db.h	/^    virtual int getColumnBytes(int idx) = 0;$/;"	p	class:JKYi::ISQLData	access:public	signature:(int idx)
@@ -4399,6 +4515,8 @@ getSocket	JKYi/socket.h	/^    int getSocket()const{ return m_sock; }$/;"	f	class
 getSocket	JKYi/stream/socket_stream.h	/^     Socket::ptr getSocket() const { return m_socket; }$/;"	f	class:JKYi::SocketStream	access:public	signature:() const
 getSocks	JKYi/tcp_server.h	/^    std::vector<JKYi::Socket::ptr> getSocks()const { return m_socks; }$/;"	f	class:JKYi::TcpServer	access:public	signature:() const
 getState	JKYi/fiber.h	/^	State getState()const{return m_state;}$/;"	f	class:JKYi::Fiber	access:public	signature:() const
+getState	JKYi/zk_client.cc	/^int32_t ZKClient::getState(){$/;"	f	class:JKYi::ZKClient	signature:()
+getState	JKYi/zk_client.h	/^    int32_t getState();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
 getStatus	JKYi/http/http.h	/^    HttpStatus getStatus()const { return m_status; }$/;"	f	class:JKYi::http::HttpResponse	access:public	signature:() const
 getString	JKYi/db/db.h	/^    virtual std::string getString(int idx) = 0;$/;"	p	class:JKYi::ISQLData	access:public	signature:(int idx)
 getString	JKYi/db/mysql.cc	/^std::string MySQLRes::getString(int idx){$/;"	f	class:JKYi::MySQLRes	signature:(int idx)
@@ -4623,6 +4741,8 @@ init	JKYi/worker.cc	/^bool WorkerManager::init(){$/;"	f	class:JKYi::WorkerManage
 init	JKYi/worker.cc	/^bool WorkerManager::init(const std::unordered_map<std::string,$/;"	f	class:JKYi::WorkerManager	signature:(const std::unordered_map<std::string, std::unordered_map<std::string,std::string>>& v)
 init	JKYi/worker.h	/^    bool init();$/;"	p	class:JKYi::WorkerManager	access:public	signature:()
 init	JKYi/worker.h	/^    bool init(const std::unordered_map<std::string,std::unordered_map<std::string,std::string> >& v);$/;"	p	class:JKYi::WorkerManager	access:public	signature:(const std::unordered_map<std::string,std::unordered_map<std::string,std::string> >& v)
+init	JKYi/zk_client.cc	/^bool ZKClient::init(const std::string& hosts,int recv_timeout,watcher_callback cb$/;"	f	class:JKYi::ZKClient	signature:(const std::string& hosts,int recv_timeout,watcher_callback cb )
+init	JKYi/zk_client.h	/^    bool init(const std::string& hosts,int recv_timeout,watcher_callback cb);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& hosts,int recv_timeout,watcher_callback cb)
 initBodyParam	JKYi/http/http.cc	/^void HttpRequest::initBodyParam(){$/;"	f	class:JKYi::http::HttpRequest	signature:()
 initBodyParam	JKYi/http/http.h	/^   void initBodyParam();$/;"	p	class:JKYi::http::HttpRequest	access:public	signature:()
 initCookies	JKYi/http/http.cc	/^void HttpRequest::initCookies(){$/;"	f	class:JKYi::http::HttpRequest	signature:()
@@ -4800,6 +4920,7 @@ m_fragment	JKYi/http/http.h	/^    std::string m_fragment;$/;"	m	class:JKYi::http
 m_fragment	JKYi/uri.h	/^    std::string m_fragment;$/;"	m	class:JKYi::Uri	access:private
 m_globs	JKYi/http/servlet.h	/^    std::vector<std::pair<std::string,Servlet::ptr>> m_globs;$/;"	m	class:JKYi::http::ServletDispatch	access:private
 m_handle	JKYi/library.cc	/^    void * m_handle;$/;"	m	class:JKYi::ModuleCloser	file:	access:private
+m_handle	JKYi/zk_client.h	/^    zhandle_t * m_handle;$/;"	m	class:JKYi::ZKClient	access:private
 m_hasError	JKYi/db/mysql.h	/^    bool m_hasError;$/;"	m	class:JKYi::MySQL	access:private
 m_hasError	JKYi/db/mysql.h	/^   bool m_hasError;$/;"	m	class:JKYi::MySQLTransaction	access:private
 m_hasFormatter	JKYi/log.h	/^    bool m_hasFormatter=false;$/;"	m	class:JKYi::LogAppender	access:protected
@@ -4808,6 +4929,7 @@ m_headers	JKYi/http/http.h	/^    MapType m_headers;$/;"	m	class:JKYi::http::Http
 m_helps	JKYi/env.h	/^    std::vector<std::pair<std::string,std::string>> m_helps;$/;"	m	class:JKYi::Env	access:private
 m_host	JKYi/http/http_connection.h	/^    std::string m_host;$/;"	m	class:JKYi::http::HttpConnectionPool	access:private
 m_host	JKYi/uri.h	/^    std::string m_host;$/;"	m	class:JKYi::Uri	access:private
+m_hosts	JKYi/zk_client.h	/^    std::string m_hosts;$/;"	m	class:JKYi::ZKClient	access:private
 m_id	JKYi/fiber.h	/^   uint64_t m_id = 0;$/;"	m	class:JKYi::Fiber	access:private
 m_id	JKYi/module.h	/^   std::string m_id;$/;"	m	class:JKYi::Module	access:protected
 m_id	JKYi/thread.h	/^   pid_t m_id=-1;$/;"	m	class:JKYi::Thread	access:private
@@ -4896,7 +5018,7 @@ m_poolSize	JKYi/db/mysql.h	/^    int32_t m_poolSize;$/;"	m	class:JKYi::MySQL	acc
 m_port	JKYi/http/http_connection.h	/^    uint32_t m_port;$/;"	m	class:JKYi::http::HttpConnectionPool	access:private
 m_port	JKYi/uri.h	/^    int32_t m_port;$/;"	m	class:JKYi::Uri	access:private
 m_position	JKYi/bytearray.h	/^    size_t m_position;$/;"	m	class:JKYi::ByteArray	access:private
-m_previouseTime	JKYi/timer.h	/^   uint64_t m_previouseTime=0;$/;"	m	class:JKYi::TimerManager	access:private
+m_previouseTime	JKYi/timer.h	/^   uint64_t m_previouseTime = 0;$/;"	m	class:JKYi::TimerManager	access:private
 m_program	JKYi/env.h	/^    std::string m_program;$/;"	m	class:JKYi::Env	access:private
 m_protocol	JKYi/socket.h	/^    int m_protocol;$/;"	m	class:JKYi::Socket	access:protected
 m_query	JKYi/http/http.h	/^    std::string m_query;$/;"	m	class:JKYi::http::HttpRequest	access:private
@@ -4905,6 +5027,7 @@ m_reason	JKYi/http/http.h	/^    std::string m_reason;$/;"	m	class:JKYi::http::Ht
 m_recurring	JKYi/timer.h	/^   bool m_recurring=false;$/;"	m	class:JKYi::Timer	access:private
 m_recvTimeout	JKYi/fdmanager.h	/^  uint64_t m_recvTimeout;$/;"	m	class:JKYi::FdCtx	access:private
 m_recvTimeout	JKYi/tcp_server.h	/^    uint64_t m_recvTimeout;$/;"	m	class:JKYi::TcpServer	access:protected
+m_recvTimeout	JKYi/zk_client.h	/^    int32_t m_recvTimeout;$/;"	m	class:JKYi::ZKClient	access:private
 m_remoteAddress	JKYi/socket.h	/^    Address::ptr m_remoteAddress;$/;"	m	class:JKYi::Socket	access:protected
 m_request	JKYi/http/http_connection.h	/^    uint64_t m_request = 0;$/;"	m	class:JKYi::http::HttpConnection	access:private
 m_result	JKYi/protocol.h	/^    uint32_t m_result;$/;"	m	class:JKYi::Response	access:protected
@@ -4946,7 +5069,7 @@ m_threadIds	JKYi/scheduler.h	/^   std::vector<int> m_threadIds;$/;"	m	class:JKYi
 m_threadName	JKYi/log.h	/^   std::string m_threadName;$/;"	m	class:JKYi::LogEvent	access:private
 m_threads	JKYi/scheduler.h	/^  std::vector<Thread::ptr> m_threads;$/;"	m	class:JKYi::Scheduler	access:private
 m_tickleFds	JKYi/iomanager.h	/^   int m_tickleFds[2];$/;"	m	class:JKYi::IOManager	access:private
-m_tickled	JKYi/timer.h	/^   bool m_tickled=false;$/;"	m	class:JKYi::TimerManager	access:private
+m_tickled	JKYi/timer.h	/^   bool m_tickled = false;$/;"	m	class:JKYi::TimerManager	access:private
 m_time	JKYi/log.h	/^   uint32_t m_time=0;\/\/Êó∂Èó¥Êà≥$/;"	m	class:JKYi::LogEvent	access:private
 m_timers	JKYi/timer.h	/^   std::set<Timer::ptr,Timer::Comparator>m_timers;$/;"	m	class:JKYi::TimerManager	access:private
 m_total	JKYi/http/http_connection.h	/^    std::atomic<int32_t> m_total = {0};$/;"	m	class:JKYi::http::HttpConnectionPool	access:private
@@ -4961,6 +5084,7 @@ m_version	JKYi/http/http.h	/^    uint8_t m_version;$/;"	m	class:JKYi::http::Http
 m_version	JKYi/module.h	/^   std::string m_version;$/;"	m	class:JKYi::Module	access:protected
 m_vhost	JKYi/http/http_connection.h	/^    std::string m_vhost;$/;"	m	class:JKYi::http::HttpConnectionPool	access:private
 m_waiters	JKYi/mutex.h	/^    std::list<std::pair<Scheduler*,Fiber::ptr> >m_waiters;$/;"	m	class:JKYi::FiberSemaphore	access:private
+m_watcherCb	JKYi/zk_client.h	/^    watcher_callback2 m_watcherCb;$/;"	m	class:JKYi::ZKClient	access:private
 m_websocket	JKYi/http/http.h	/^    bool m_websocket;$/;"	m	class:JKYi::http::HttpRequest	access:private
 m_websocket	JKYi/http/http.h	/^    bool m_websocket;$/;"	m	class:JKYi::http::HttpResponse	access:private
 m_worker	JKYi/tcp_server.h	/^    IOManager * m_worker;$/;"	m	class:JKYi::TcpServer	access:protected
@@ -4993,6 +5117,7 @@ main	tests/test_thread.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(in
 main	tests/test_util.cc	/^int main(int argc,char**argv){$/;"	f	signature:(int argc,char**argv)
 main	tests/test_ws_client.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	tests/test_ws_server.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
+main	tests/test_zookeeper.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main_id	JKYi/daemon.h	/^   pid_t main_id = 0;$/;"	m	struct:JKYi::ProcessInfo	access:public
 main_start_time	JKYi/daemon.h	/^   uint64_t main_start_time = 0;$/;"	m	struct:JKYi::ProcessInfo	access:public
 mark	JKYi/http/http11_parser.h	/^      size_t mark;$/;"	m	struct:http_parser	access:public
@@ -5065,7 +5190,7 @@ onServerUp	JKYi/module.cc	/^bool Module::onServerUp(){$/;"	f	class:JKYi::Module	
 onServerUp	JKYi/module.h	/^    virtual bool onServerUp();$/;"	p	class:JKYi::Module	access:public	signature:()
 onServerUp	template/template/my_module.cc	/^bool MyModule::onServerUp(){$/;"	f	class:name_space::MyModule	signature:()
 onTimerInsertedAtFront	JKYi/iomanager.cc	/^void IOManager::onTimerInsertedAtFront(){$/;"	f	class:JKYi::IOManager	signature:()
-onTimerInsertedAtFront	JKYi/timer.h	/^   virtual void onTimerInsertedAtFront()=0;$/;"	p	class:JKYi::TimerManager	access:protected	signature:()
+onTimerInsertedAtFront	JKYi/timer.h	/^   virtual void onTimerInsertedAtFront() = 0;$/;"	p	class:JKYi::TimerManager	access:protected	signature:()
 onUnload	JKYi/module.cc	/^bool Module::onUnload(){$/;"	f	class:JKYi::Module	signature:()
 onUnload	JKYi/module.h	/^    virtual bool onUnload();$/;"	p	class:JKYi::Module	access:public	signature:()
 onUnload	template/template/my_module.cc	/^bool MyModule::onUnload(){$/;"	f	class:name_space::MyModule	signature:()
@@ -5375,6 +5500,7 @@ ptr	JKYi/thread.h	/^   typedef std::shared_ptr<Thread> ptr;$/;"	t	class:JKYi::Th
 ptr	JKYi/timer.h	/^   typedef std::shared_ptr<Timer> ptr;$/;"	t	class:JKYi::Timer	access:public
 ptr	JKYi/uri.h	/^    typedef std::shared_ptr<Uri> ptr;$/;"	t	class:JKYi::Uri	access:public
 ptr	JKYi/worker.h	/^    typedef std::shared_ptr<WorkerManager> ptr;$/;"	t	class:JKYi::WorkerManager	access:public
+ptr	JKYi/zk_client.h	/^    typedef std::shared_ptr<ZKClient> ptr;$/;"	t	class:JKYi::ZKClient	access:public
 ptr	template/template/my_module.h	/^    typedef std::shared_ptr<MyModule> ptr;$/;"	t	class:name_space::MyModule	access:public
 qnxnto	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 qnxnto	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
@@ -5457,6 +5583,8 @@ real_start	JKYi/daemon.cc	/^static int real_start(int argc,char ** argv,$/;"	f	n
 reason_phrase	JKYi/http/httpclient_parser.h	/^      element_cb reason_phrase;$/;"	m	struct:httpclient_parser	access:public
 reconnect	JKYi/socket.cc	/^bool Socket::reconnect(int64_t timeout_ms){$/;"	f	class:JKYi::Socket	signature:(int64_t timeout_ms)
 reconnect	JKYi/socket.h	/^    virtual bool reconnect(int64_t timeout_ms=-1);$/;"	p	class:JKYi::Socket	access:public	signature:(int64_t timeout_ms=-1)
+reconnect	JKYi/zk_client.cc	/^bool ZKClient::reconnect(){$/;"	f	class:JKYi::ZKClient	signature:()
+reconnect	JKYi/zk_client.h	/^    bool reconnect();$/;"	p	class:JKYi::ZKClient	access:public	signature:()
 recv	JKYi/hook.cc	/^ssize_t recv(int sockfd, void *buf, size_t len, int flags) {$/;"	f	signature:(int sockfd, void *buf, size_t len, int flags)
 recv	JKYi/socket.cc	/^int SSLSocket::recv(iovec * buffers,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(iovec * buffers,size_t length,int flags)
 recv	JKYi/socket.cc	/^int SSLSocket::recv(void * buffer,size_t length,int flags){$/;"	f	class:JKYi::SSLSocket	signature:(void * buffer,size_t length,int flags)
@@ -5576,6 +5704,8 @@ serializeToByteArray	JKYi/protocol.cc	/^bool Request::serializeToByteArray(ByteA
 serializeToByteArray	JKYi/protocol.cc	/^bool Response::serializeToByteArray(ByteArray::ptr bytearray){$/;"	f	class:JKYi::Response	signature:(ByteArray::ptr bytearray)
 serializeToByteArray	JKYi/protocol.h	/^    virtual bool serializeToByteArray(ByteArray::ptr bytearray) = 0;$/;"	p	class:JKYi::Message	access:public	signature:(ByteArray::ptr bytearray)
 server_main	tests/test_daemon.cc	/^int server_main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
+set	JKYi/zk_client.cc	/^int32_t ZKClient::set(const std::string& path,const std::string& val,int version,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,const std::string& val,int version, Stat * stat)
+set	JKYi/zk_client.h	/^    int32_t set(const std::string& path,const std::string& val,int version = -1,Stat * stat = nullptr);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,const std::string& val,int version = -1,Stat * stat = nullptr)
 setAddrLen	JKYi/address.cc	/^void UnixAddress::setAddrLen(uint32_t len){$/;"	f	class:JKYi::UnixAddress	signature:(uint32_t len)
 setAddrLen	JKYi/address.h	/^	void setAddrLen(uint32_t v);$/;"	p	class:JKYi::UnixAddress	access:public	signature:(uint32_t v)
 setBody	JKYi/http/http.h	/^    void setBody(const std::string& v) { m_body=v; }$/;"	f	class:JKYi::http::HttpResponse	access:public	signature:(const std::string& v)
@@ -5738,6 +5868,7 @@ test_iface	tests/test_address.cc	/^void test_iface(){$/;"	f	signature:()
 test_ipv4	tests/test_address.cc	/^void test_ipv4(){$/;"	f	signature:()
 test_loadconf	tests/test_config.cc	/^void test_loadconf(){$/;"	f	signature:()
 test_log	tests/test_config.cc	/^void test_log(){$/;"	f	signature:()
+test_mysql_mgr	tests/test_mysql.cc	/^void test_mysql_mgr(){$/;"	f	signature:()
 test_pool	tests/test_http_connection.cc	/^void test_pool(){$/;"	f	signature:()
 test_request	tests/test_http.cc	/^void test_request(){$/;"	f	signature:()
 test_request	tests/test_http_parser.cc	/^void test_request(){$/;"	f	signature:()
@@ -5826,6 +5957,8 @@ wait	JKYi/mutex.h	/^    void wait();$/;"	p	class:JKYi::FiberSemaphore	access:pub
 wait	JKYi/mutex.h	/^   void wait();$/;"	p	class:JKYi::Semaphore	access:public	signature:()
 warn	JKYi/log.cc	/^void Logger::warn(LogEvent::ptr event){$/;"	f	class:JKYi::Logger	signature:(LogEvent::ptr event)
 warn	JKYi/log.h	/^    void warn(LogEvent::ptr event);$/;"	p	class:JKYi::Logger	access:public	signature:(LogEvent::ptr event)
+watcher_callback	JKYi/zk_client.h	/^    typedef std::function<void (int type,int stat,const std::string& path,ZKClient::ptr)>watcher_callback;$/;"	t	class:JKYi::ZKClient	access:public
+watcher_callback2	JKYi/zk_client.h	/^    typedef std::function<void (int type,int stat,const std::string& path)> watcher_callback2;$/;"	t	class:JKYi::ZKClient	access:private
 weak_ptr	JKYi/socket.h	/^    typedef std::weak_ptr<Socket> weak_ptr;$/;"	t	class:JKYi::Socket	access:public
 write	JKYi/bytearray.cc	/^void ByteArray::write(const void * buf,size_t len){$/;"	f	class:JKYi::ByteArray	signature:(const void * buf,size_t len)
 write	JKYi/bytearray.h	/^    void write(const void * buf,size_t len);$/;"	p	class:JKYi::ByteArray	access:public	signature:(const void * buf,size_t len)
@@ -5951,3 +6084,5 @@ xml_sent	JKYi/http/http11_parser.h	/^      int xml_sent;$/;"	m	struct:http_parse
 ~TimerManager	JKYi/timer.h	/^   virtual ~TimerManager(); $/;"	p	class:JKYi::TimerManager	access:public	signature:()
 ~WSServlet	JKYi/http/ws_servlet.h	/^    virtual ~WSServlet(){}$/;"	f	class:JKYi::http::WSServlet	access:public	signature:()
 ~WriteScopedLockImpl	JKYi/mutex.h	/^  ~WriteScopedLockImpl(){$/;"	f	class:JKYi::WriteScopedLockImpl	access:public	signature:()
+~ZKClient	JKYi/zk_client.cc	/^ZKClient::~ZKClient(){$/;"	f	class:JKYi::ZKClient	signature:()
+~ZKClient	JKYi/zk_client.h	/^    ~ZKClient();$/;"	p	class:JKYi::ZKClient	access:public	signature:()

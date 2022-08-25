@@ -87,9 +87,23 @@ V GetParamValue(const Map& m,const K& k,const V& def = V()){
     }
     return def;
 }
+
 template<class T>
 void nop(T * t){
 }
+
+template<class Iter>
+std::string Join(Iter begin,Iter end,const std::string& str){
+    std::stringstream ss;
+    for(Iter it = begin;it != end;++it){
+        if(it !=  begin){
+            ss << str;
+        }
+        ss << (*it);
+    }
+    return ss.str();
+}
+
 
 
 }
