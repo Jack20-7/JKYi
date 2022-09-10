@@ -57,7 +57,6 @@ void test_timer(){
 		  //s_timer->cancel();
 	  }
 	},true);
-
 }
 
 int main(int argc,char**argv){

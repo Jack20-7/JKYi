@@ -32,9 +32,9 @@ private:
    static void * run(void*arg);
 private:
    //线程的id，也就是实际显式的id
-   pid_t m_id=-1;
+   pid_t m_id = -1;
    //pthread_create返回的id，我们一般不使用这个id 
-   pthread_t m_thread=0;
+   pthread_t m_thread = 0;
    //线程实际执行的函数   
    std::function<void()>m_cb;
    //线程的名称

@@ -141,3 +141,18 @@ k: 9
 2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[root]	/home/admin/workSpace/tests/test_mysql.cc:75	insert data ---------------------
 2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[root]	/home/admin/workSpace/tests/test_mysql.cc:86	 update data ---------------------
 2022-08-22 16:38:19	26303	UNKNOW	3	[INFO]	[root]	/home/admin/workSpace/tests/test_mysql.cc:98	delete data----------------------
+2022-09-07 13:58:06	7408	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/tests/test_redis.cc:10	 get redis error 
+2022-09-07 14:00:38	8006	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:11	[RedisManager total = 1 ]
+    test :[  {host : 127.0.0.1:6379 }  {pool : 1 }  {timeout : 100 }  {type : redis }  ] 
+
+2022-09-07 14:00:38	8006	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/tests/test_redis.cc:14	 get redis error 
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	0
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	1
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	2
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	3
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	4
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	5
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	6
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	7
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	8
+2022-09-07 14:17:17	10710	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test_redis.cc:23	9

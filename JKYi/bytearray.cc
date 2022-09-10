@@ -42,15 +42,31 @@ ByteArray::ByteArray(size_t base_size)
     ,m_size(0)
     ,m_endian(JKYI_BIG_ENDIAN)
     ,m_root(new Node(base_size))
-    ,m_cur(m_root){
-
+    ,m_cur(m_root)
+    ,m_owner(true){
 } 
+ByteArray::ByteArray(void * data,size_t size,bool owner)
+    :m_baseSize(size),
+     m_position(0),
+     m_capacity(size),
+     m_size(size),
+     m_endian(JKYI_BIG_ENDIAN){
+
+     m_root = new Node();
+     m_root->ptr = (char * )data;
+     m_root->size = size;
+
+     m_cur = m_root;
+     m_owner = owner;
+}
+
+
 
 ByteArray::~ByteArray(){
-    Node* tmp=m_root;
+    Node* tmp = m_root;
     while(tmp){
-       m_cur=tmp;
-       tmp=tmp->next;
+       m_cur = tmp;
+       tmp = tmp->next;
        delete m_cur;
     }
 }

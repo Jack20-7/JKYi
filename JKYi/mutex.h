@@ -36,25 +36,25 @@ public:
   ScopedLockImpl(T&mutex)
   :m_mutex(mutex){
      m_mutex.lock();
-	 m_locked=true;
+	 m_locked = true;
   }
   //析构函数
   ~ScopedLockImpl(){
     m_mutex.unlock();
-	m_locked=false;
+	m_locked = false;
   }
   //加锁的函数
   void lock(){
 	  if(!m_locked){
 		  m_mutex.lock();
-		  m_locked=true;
+		  m_locked = true;
 	  }
   }
   //解锁的函数
   void unlock(){
 	  if(m_locked){
 		  m_mutex.unlock();
-		  m_locked=false;
+		  m_locked = false;
 	  }
   }
   
@@ -190,6 +190,7 @@ public:
 private:
    pthread_rwlock_t m_lock;
 };
+
 //这里的话，封装一个自旋锁来提高效率
 class SpinLock:Noncopyable{
 public:

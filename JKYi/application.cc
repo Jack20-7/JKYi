@@ -8,6 +8,8 @@
 #include"worker.h"
 #include"http/ws_server.h"
 #include"JKYi/module.h"
+#include"JKYi/db/fox_thread.h"
+#include"JKYi/db/redis.h"
 
 #include<unistd.h>
 #include<signal.h>
@@ -134,6 +136,12 @@ int Application::main(int argc,char ** argv){
 }
 
 int Application::run_fiber(){
+
+  JKYi::WorkerMgr::GetInstance()->init();
+  JKYi::FoxThreadMgr::GetInstance()->init();
+  JKYi::FoxThreadMgr::GetInstance()->start();
+  JKYi::RedisMgr::GetInstance();
+
   std::vector<Module::ptr>modules;
   ModuleMgr::GetInstance()->listAll(modules);
   bool has_error = false;
@@ -149,7 +157,6 @@ int Application::run_fiber(){
       _exit(0);
   }
 
-  JKYi::WorkerMgr::GetInstance()->init();
 
   auto http_confs = g_servers_conf->getValue(); 
   std::vector<TcpServer::ptr> svrs;

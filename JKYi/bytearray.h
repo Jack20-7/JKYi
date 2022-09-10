@@ -29,7 +29,8 @@ public:
         Node* next;
     };
 
-    ByteArray(size_t base_size=4096);
+    ByteArray(size_t base_size = 4096);
+    ByteArray(void * data,size_t size,bool owner = false);
 
     ~ByteArray();
 
@@ -166,6 +167,9 @@ private:
 
     //当前正在操作的节点
     Node * m_cur;
+
+    //是否拥有数据的管理权限
+    bool m_owner;
 };
 
 }

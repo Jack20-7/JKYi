@@ -81,7 +81,13 @@ set (LIB_SRC
     JKYi/util/json_util.cc
     JKYi/util/hash_util.cc
     JKYi/db/mysql.cc
+    JKYi/db/fox_thread.cc
+    JKYi/db/redis.cc
     JKYi/zk_client.cc
+    JKYi/http2/dynamic_table.cc
+    JKYi/http2/huffman.cc
+    JKYi/http2/hpack.cc
+    JKYi/http2/frame.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
@@ -105,6 +111,8 @@ set(LIBS
       crypto
       mysqlclient
       zookeeper_mt
+      event
+      hiredis_vip
    )
 # utils.cmake文件中添加了一个function(生成的可执行文件名称 源文件名称 依赖名称 需要的库的名称)
 JKYi_add_executable(test "tests/test.cc" JKYi "${LIBS}")
@@ -152,6 +160,8 @@ JKYi_add_executable(test_ws_client "tests/test_ws_client.cc" JKYi "${LIBS}")
 JKYi_add_executable(test_mysql "tests/test_mysql.cc" JKYi "${LIBS}")
 
 JKYi_add_executable(test_zookeeper "tests/test_zookeeper.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_redis "tests/test_redis.cc" JKYi "${LIBS}")
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
