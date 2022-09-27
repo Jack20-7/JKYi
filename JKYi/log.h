@@ -19,7 +19,7 @@
 
 //定义一些宏，方便我们对日志的使用
 #define JKYI_LOG_LEVEL(logger,level) \
-    if(logger->getLevel()<=level) \
+    if(logger->getLevel() <= level) \
        JKYi::LogEventWrap(JKYi::LogEvent::ptr (new JKYi::LogEvent(logger,level,\
        __FILE__,__LINE__,0,JKYi::GetThreadId(),\
        JKYi::GetFiberId(),time(0),JKYi::Thread::GetName()))).getSS()
@@ -48,12 +48,12 @@ class LoggerManager;
 class LogLevel{
 public:
    enum Level{
-     UNKNOW=0,
-     DEBUG=1,
-     INFO=2,
-     WARN=3,
-     ERROR=4,
-     FATAL=5
+     UNKNOW = 0,
+     DEBUG = 1,
+     INFO = 2,
+     WARN = 3,
+     ERROR = 4,
+     FATAL = 5
    };
    static const char* ToString(LogLevel::Level level);
    static LogLevel::Level FromString(const std::string&str);
@@ -84,12 +84,12 @@ public:
    LogLevel::Level getLevel() const {return m_level;}
    const std::string& getThreadName()const {return m_threadName;}
 private:
-   const char* m_file=nullptr;//目标日志文件的名称
-   int32_t m_line=0;//行号
-   uint32_t m_elapse=0;//程序启动开始到现在的毫秒数
-   uint32_t m_threadId=0;//线程ID
-   uint32_t m_fiberId=0;//协程ID
-   uint32_t m_time=0;//时间戳
+   const char* m_file = nullptr;//目标日志文件的名称
+   int32_t m_line = 0;//行号
+   uint32_t m_elapse = 0;//程序启动开始到现在的毫秒数
+   uint32_t m_threadId = 0;//线程ID
+   uint32_t m_fiberId = 0;//协程ID
+   uint32_t m_time = 0;//时间戳
    std::stringstream m_ss;//流，用来存储要输出的日志
    //下面的内容是用来辅助日志的输出
    std::shared_ptr<Logger>m_logger;
@@ -121,7 +121,7 @@ public:
        typedef std::shared_ptr<FormatItem> ptr;
        //FormatItem(const std::string&fmt=""){}
        virtual ~FormatItem(){}
-       virtual void format(std::ostream&os,std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event)=0;
+       virtual void format(std::ostream&os,std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event) = 0;
     };
     //pattern的解析
     void init();
@@ -138,7 +138,7 @@ private:
     std::vector<FormatItem::ptr>m_items;
 
     //判断格式是否正确
-    bool m_error=false;
+    bool m_error = false;
 };
 //
 //日志输出地
@@ -150,22 +150,18 @@ public:
     virtual ~LogAppender(){};//由于该类需要作为基类，所以这里的话就析构函数申明为虚函数，避免内存泄漏
     virtual void log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) = 0;
     //
-    virtual std::string toYamlString()=0;
+    virtual std::string toYamlString() = 0;
     //设置日志输出的格式
     void setFormatter(LogFormatter::ptr formatter);
     LogFormatter::ptr getFormatter(); 
     //级别
     LogLevel::Level getLevel(LogLevel::Level level){return m_level;}
-    void setLevel(LogLevel::Level level){m_level=level;}
+    void setLevel(LogLevel::Level level){m_level = level;}
     //
 protected://这里由于子类可能会用到，所以权限设置为protected
-    
-    LogLevel::Level m_level=LogLevel::DEBUG;//默认为debug模式
-    
+    LogLevel::Level m_level = LogLevel::DEBUG;//默认为debug模式
     LogFormatter::ptr m_formatter;//定义日志输出的格式
-    //
-    bool m_hasFormatter=false;
-	//互斥锁
+    bool m_hasFormatter = false;
 	MutexType m_mutex;
 };
 //日志器
@@ -204,15 +200,10 @@ public:
     std::string toYamlString();
 private:
     std::string m_name;       //日志的名称
-
-    LogLevel::Level m_level;  //日志的级别，只有满足级别的日志才会被输出workSpace/JKYi/log.h
-
+    LogLevel::Level m_level;  //日志的级别，只有满足级别的日志才会被输出
     std::list<LogAppender::ptr>m_appenders;//Appender集合
-
     LogFormatter::ptr m_formatter;//日志的输出格式
-
     Logger::ptr m_root;
-	//
 	MutexType m_mutex;
 };
 
@@ -238,7 +229,7 @@ public:
 private:
      std::string m_filename;//文件名
      std::ofstream m_filestream;
-	 uint64_t m_lastTime=0;//记录上一次打开的时间
+	 uint64_t m_lastTime = 0;//记录上一次打开的时间
 };
 //为了方便使用日志而定义得类，使得我们不需要每一次在打日志得时候都需要去自己手动定义一个logger
 class LoggerManager{
@@ -253,7 +244,6 @@ private:
     std::map<std::string,Logger::ptr>m_loggers;
     //默认的主日志器
     Logger::ptr m_root;
-	//
 	MutexType m_mutex;
 };
 

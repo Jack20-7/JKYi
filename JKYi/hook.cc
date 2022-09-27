@@ -228,8 +228,8 @@ int socket(int domain,int type,int protocol){
 		return socket_f(domain,type,protocol);
 	}
     //JKYI_LOG_INFO(g_logger)<<" hook socekt ---------";
-	int fd=socket_f(domain,type,protocol);
-	if(fd==-1){
+	int fd = socket_f(domain,type,protocol);
+	if(fd == -1){
 		return fd; 
 	}
 	JKYi::FdMgr::GetInstance()->get(fd,true);

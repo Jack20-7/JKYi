@@ -37,7 +37,7 @@
     if(JKYI_UNLIKELY(!(x))){ \
 		JKYI_LOG_ERROR(JKYI_LOG_ROOT())<<"ASSERTION:"#x \
 		<<"\n"<<w \
-		<<"\nbacktrace\n" \
+		<<"\nbacktrace:\n" \
 		<<JKYi::BacktraceToString(100,2,"  "); \
 		assert(x); \
 	} \

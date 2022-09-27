@@ -31,7 +31,6 @@ public:
         IPv6 = AF_INET6,
         Unix = AF_UNIX
     };
-    
     //下面定义一些方便用户使用的函数
     static Socket::ptr CreateTCP(Address::ptr address);
     static Socket::ptr CreateUDP(Address::ptr address);
@@ -48,7 +47,7 @@ public:
     static Socket::ptr CreateUnixUDPSocket();
 
     //
-    Socket(int family,int type,int protocol=0);
+    Socket(int family,int type,int protocol = 0);
     //未来有需求的话可以作为基类
     virtual ~Socket();
 
@@ -61,14 +60,14 @@ public:
     bool getOption(int level,int option,void *result,socklen_t *len);
     template<class T>
     bool getOption(int level,int option,T&result){
-        int len=sizeof(result);
+        int len = sizeof(result);
         return getOption(level,option,&result,&len);
     }
 
     bool setOption(int level,int option,const void *result,socklen_t len);
     template<class T>
     bool setOption(int level,int option,const T&result){
-        socklen_t len=sizeof(result);
+        socklen_t len = sizeof(result);
         return setOption(level,option,&result,len);
     }
 

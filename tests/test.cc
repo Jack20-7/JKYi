@@ -6,7 +6,6 @@
 
 int main(int argc,char**argv){
     JKYi::Logger::ptr logger(new JKYi::Logger);
-    
     logger->addAppender(JKYi::LogAppender::ptr (new JKYi::StdoutLogAppender));
     //然后再写入到日志里面去
     JKYi::LogAppender::ptr fileAppend(new JKYi::FileLogAppender("../log.txt"));

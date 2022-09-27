@@ -1,7 +1,6 @@
 #ifndef _JKYI_BYTEARRAY_H_
 #define _JKYI_BYTEARRAY_H_
 
-
 #include<memory>
 #include<string>
 #include<stdint.h>
@@ -19,11 +18,8 @@ public:
     //在类中定义链表节点类型，ByteArray底层使用链表来存储数据
     struct Node{
         Node(size_t s);
-
         Node();
-
         ~Node();
-
         char * ptr;
         size_t size;
         Node* next;

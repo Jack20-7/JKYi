@@ -14,12 +14,13 @@ Socket::ptr Socket::CreateTCP(Address::ptr address){
     Socket::ptr sock(new Socket(address->getFamily(),TCP,0));
     return sock;
 }
+
 Socket::ptr Socket::CreateUDP(Address::ptr address){
     Socket::ptr sock(new Socket(address->getFamily(),UDP,0));
     //这里由于UDPSocket在Socket创建好了之后就直接sento、recvfrom，并没有建立连接的过程
     //所以在创建就需要我们将socket创建好
     sock->newSock();
-    sock->m_isConnected=true;
+    sock->m_isConnected = true;
     return sock;
 }
 
@@ -61,7 +62,6 @@ Socket::Socket(int family,int type,int protocol)
      m_type(type),
      m_protocol(protocol),
      m_isConnected(false){
-
 }
 
 Socket::~Socket(){
@@ -70,7 +70,7 @@ Socket::~Socket(){
 
 //下面就是收发数据包相关的函数了
 int64_t Socket::getSendTimeout(){
-    FdCtx::ptr ctx=FdMgr::GetInstance()->get(m_sock);
+    FdCtx::ptr ctx = FdMgr::GetInstance()->get(m_sock);
     if(ctx){
         return ctx->getTimeout(SO_SNDTIMEO);
     }
@@ -82,7 +82,7 @@ void Socket::setSendTimeout(int64_t v){
 }
 
 int64_t Socket::getRcvTimeout(){
-    FdCtx::ptr ctx=FdMgr::GetInstance()->get(m_sock);
+    FdCtx::ptr ctx = FdMgr::GetInstance()->get(m_sock);
     if(ctx){
         return ctx->getTimeout(SO_RCVTIMEO);
     }
@@ -94,7 +94,7 @@ void Socket::setRcvTimeout(int64_t v){
 }
 //
 bool Socket::getOption(int level,int option,void *result,socklen_t *len){
-    int rt=getsockopt(m_sock,level,option,result,len);
+    int rt = getsockopt(m_sock,level,option,result,len);
     if(rt){
         JKYI_LOG_ERROR(g_logger)<<"getOptin sock="<<m_sock
                                 <<" level="<<level<<" option="
@@ -118,7 +118,7 @@ bool Socket::setOption(int level,int option,const void * result,socklen_t len){
 
 Socket::ptr Socket::accept(){
    Socket::ptr sock(new Socket(m_family,m_type,m_protocol));
-   int newSock=::accept(m_sock,nullptr,nullptr);
+   int newSock = ::accept(m_sock,nullptr,nullptr);
    if(newSock == -1){
        JKYI_LOG_ERROR(g_logger)<<" accept("<<m_sock<<") errno ="
                                <<errno<<" errstr"<<strerror(errno);
@@ -129,11 +129,12 @@ Socket::ptr Socket::accept(){
    }
    return nullptr;
 }
+
 bool Socket::init(int sock){
-    FdCtx::ptr ctx=FdMgr::GetInstance()->get(sock);
+    FdCtx::ptr ctx = FdMgr::GetInstance()->get(sock);
     if(ctx && ctx->isSocket() && !ctx->isClose()){
-        m_sock=sock;
-        m_isConnected=true;
+        m_sock = sock;
+        m_isConnected = true;
         initSock();
         getLocalAddress();
         getRemoteAddress();
@@ -153,7 +154,6 @@ bool Socket::bind(Address::ptr address){
        JKYI_LOG_ERROR(g_logger)<<" bind sock error";
        return false;
     }
-    
     if(::bind(m_sock,address->getAddr(),address->getAddrLen())){
         JKYI_LOG_ERROR(g_logger)<<" bind error errno="<<errno
                                 <<" errstr="<<strerror(errno); 
@@ -164,7 +164,6 @@ bool Socket::bind(Address::ptr address){
 }
 
 bool Socket::reconnect(int64_t timeout_ms){
-
     if(!m_remoteAddress){
        JKYI_LOG_ERROR(g_logger)<<"reconnect m_remoteAddress is null";
        return false;
@@ -174,7 +173,7 @@ bool Socket::reconnect(int64_t timeout_ms){
 }
 
 bool Socket::connect(const Address::ptr addr,int64_t timeout_ms){
-    m_remoteAddress=addr;
+    m_remoteAddress = addr;
     if(!isValid()){
       newSock();
       if(JKYI_UNLIKELY(!isValid())){
@@ -201,7 +200,7 @@ bool Socket::connect(const Address::ptr addr,int64_t timeout_ms){
           return false;
       }
    }
-   m_isConnected=true;
+   m_isConnected = true;
    getRemoteAddress();
    getLocalAddress();
    return true;
@@ -221,13 +220,13 @@ bool Socket::listen(int backlog){
 } 
 
 bool Socket::close(){
-   if(m_sock==-1 && !m_isConnected ){
+   if(m_sock == -1 && !m_isConnected ){
       return true;
    }
-   m_isConnected=false;
+   m_isConnected = false;
    if(m_sock != -1){
       ::close(m_sock);
-      m_sock=-1;
+      m_sock = -1;
    }
    return false;
 }
@@ -358,7 +357,7 @@ Address::ptr Socket::getLocalAddress(){
             result.reset(new UnknowAddress(m_family));
             break;
     }
-    socklen_t addrlen=result->getAddrLen();
+    socklen_t addrlen = result->getAddrLen();
     if(getsockname(m_sock,result->getAddr(),&addrlen)){
         JKYI_LOG_ERROR(g_logger)<<"getsockname error sock="<<m_sock
                                 <<" errno="<<errno<<" errstr"<<strerror(errno);
@@ -368,7 +367,7 @@ Address::ptr Socket::getLocalAddress(){
         UnixAddress::ptr addr=std::dynamic_pointer_cast<UnixAddress>(result);
         addr->setAddrLen(addrlen);
     }
-    m_localAddress=result;
+    m_localAddress = result;
     return m_localAddress;
 }
 
@@ -420,15 +419,15 @@ bool Socket::cancelAll(){
 }
 
 void Socket::initSock(){
-    int val=1;
+    int val = 1;
     setOption(SOL_SOCKET,SO_REUSEADDR,val);
-    if(m_type==SOCK_STREAM){
+    if(m_type == SOCK_STREAM){
         setOption(IPPROTO_TCP,TCP_NODELAY,val);
     }
 }
 
 void Socket::newSock(){
-    m_sock=::socket(m_family,m_type,m_protocol);
+    m_sock = ::socket(m_family,m_type,m_protocol);
     if(JKYI_LIKELY(m_sock!=-1)){
        initSock();         
     }else{

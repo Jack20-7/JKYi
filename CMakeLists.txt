@@ -49,6 +49,7 @@ set (LIB_SRC
     JKYi/config.cc
     JKYi/thread.cc
 	JKYi/mutex.cc
+    JKYi/condition.cc
 	JKYi/fiber.cc
 	JKYi/scheduler.cc
 	JKYi/timer.cc
@@ -88,6 +89,27 @@ set (LIB_SRC
     JKYi/http2/huffman.cc
     JKYi/http2/hpack.cc
     JKYi/http2/frame.cc
+    JKYi/timestamp.cc
+    JKYi/CountDownLatch.cc
+    JKYi/reactor/Buffer.cc
+    JKYi/reactor/Thread.cc
+    JKYi/reactor/CurrentThread.cc
+    JKYi/reactor/EventLoopThread.cc
+    JKYi/reactor/EventLoop.cc
+    JKYi/reactor/channel.cc
+    JKYi/reactor/timer.cc
+    JKYi/reactor/timerQueue.cc
+    JKYi/reactor/acceptor.cc
+    JKYi/reactor/poller.cc
+    JKYi/reactor/poller/epollPoller.cc
+    JKYi/reactor/poller/pollPoller.cc
+    JKYi/reactor/EventLoopThreadPool.cc
+    JKYi/reactor/SocketsOps.cc
+    JKYi/reactor/Socket.cc
+    JKYi/reactor/TcpConnection.cc
+    JKYi/reactor/TcpServer.cc
+    JKYi/reactor/Connector.cc
+    JKYi/reactor/TcpClient.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
@@ -114,6 +136,9 @@ set(LIBS
       event
       hiredis_vip
    )
+
+add_subdirectory(JKYi/reactor/examples)
+
 # utils.cmake文件中添加了一个function(生成的可执行文件名称 源文件名称 依赖名称 需要的库的名称)
 JKYi_add_executable(test "tests/test.cc" JKYi "${LIBS}")
 #
@@ -162,6 +187,15 @@ JKYi_add_executable(test_mysql "tests/test_mysql.cc" JKYi "${LIBS}")
 JKYi_add_executable(test_zookeeper "tests/test_zookeeper.cc" JKYi "${LIBS}")
 
 JKYi_add_executable(test_redis "tests/test_redis.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_timestamp "tests/test_timestamp.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_reactor_thread "tests/test_reactor_thread.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_reactor_tcpserver "tests/test_reactor_tcpserver.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(test_reactor_tcpclient "tests/test_reactor_tcpClient.cc" JKYi "${LIBS}")
+
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

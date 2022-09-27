@@ -318,7 +318,7 @@ socklen_t IPv4Address::getAddrLen()const {
 }
 
 std::ostream& IPv4Address::insert(std::ostream &os)const {
-    uint32_t addr=toNetEndian(m_addr.sin_addr.s_addr);
+    uint32_t addr = toNetEndian(m_addr.sin_addr.s_addr);
    // uint32_t addr=m_addr.sin_addr.s_addr;
     os<< ((addr>>24) & 0xff)<<"."
       << ((addr>>16) & 0xff)<<"."

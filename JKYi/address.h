@@ -13,6 +13,7 @@
 #include<map>
 
 namespace JKYi{
+
 //对socket地址进行封装
 //     ------Address------
 //		 -        -
@@ -53,7 +54,7 @@ public:
 	//留给子类实现的接口
 	virtual const sockaddr* getAddr()const=0;
 
-	virtual sockaddr* getAddr()=0;
+	virtual sockaddr* getAddr() = 0;
 
 	virtual socklen_t getAddrLen()const=0;
 
@@ -105,7 +106,7 @@ public:
 
 	IPv4Address(const sockaddr_in&addr);
 
-	IPv4Address(uint32_t address=INADDR_ANY,uint16_t port=0);
+	IPv4Address(uint32_t address = INADDR_ANY,uint16_t port = 0);
     
 	const sockaddr* getAddr()const override;
 
@@ -136,7 +137,7 @@ public:
 
 	IPv6Address();
 
-	IPv6Address(const sockaddr_in6&address);
+	IPv6Address(const sockaddr_in6& address);
 
 	IPv6Address(const uint8_t address[16],uint16_t port=0);
 

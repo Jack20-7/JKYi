@@ -33,7 +33,7 @@ template<class T>
 class ScopedLockImpl{
 public:
   //构造函数
-  ScopedLockImpl(T&mutex)
+  ScopedLockImpl(T& mutex)
   :m_mutex(mutex){
      m_mutex.lock();
 	 m_locked = true;
@@ -155,6 +155,9 @@ public:
    //解锁
    void unlock(){
 	   pthread_mutex_unlock(&m_mutex);
+   }
+   pthread_mutex_t* getPthreadMutex(){
+       return &m_mutex;
    }
 private:
    pthread_mutex_t m_mutex;

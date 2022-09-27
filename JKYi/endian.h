@@ -7,23 +7,24 @@
 
 #include<byteswap.h>
 #include<stdint.h>
+#include<type_traits>
 
 namespace JKYi{
 
   //8字节大小转化的函数
 template<class T>
-typename std::enable_if<sizeof(T)==sizeof(uint64_t),T>::type byteswap(T value){
+typename std::enable_if<sizeof(T) == sizeof(uint64_t),T>::type byteswap(T value){
 	return (T)bswap_64((uint64_t)value);
 }
 //4字节转化的函数
 template<class T>
-typename std::enable_if<sizeof(T)==sizeof(uint32_t),T>::type byteswap(T value){
+typename std::enable_if<sizeof(T) == sizeof(uint32_t),T>::type byteswap(T value){
 	return (T)bswap_32((uint32_t)value);
 }
 
 //2个字节的转化函数
 template<class T>
-typename std::enable_if<sizeof(T)==sizeof(uint16_t),T>::type byteswap(T value){
+typename std::enable_if<sizeof(T) == sizeof(uint16_t),T>::type byteswap(T value){
 	return (T)bswap_16((uint16_t)value);
 }
 //以下通过系统提供的宏来根据当前系统是大端序还是小端序做出响应的处理

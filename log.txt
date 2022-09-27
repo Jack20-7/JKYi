@@ -1,0 +1,11 @@
+2022-09-19 21:03:28	21281	UNKNOW	0	[DEBUG]	[root]	/home/admin/workSpace/tests/test.cc:21	Hello,JKYI log!
+2022-09-19 21:03:28	21281	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test.cc:22	Hello,JKYI log!
+2022-09-19 21:03:28	21281	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/tests/test.cc:23	Hello,JKYI log!
+2022-09-19 21:03:28	21281	UNKNOW	0	[WARN]	[root]	/home/admin/workSpace/tests/test.cc:24	Hello,JKYI log!
+2022-09-19 21:03:28	21281	UNKNOW	0	[FATAL]	[root]	/home/admin/workSpace/tests/test.cc:25	Hello,JKYI log!
+2022-09-19 21:04:20	21545	UNKNOW	0	[INFO]	[root]	/home/admin/workSpace/tests/test.cc:23	Hello,JKYI log!
+2022-09-19 21:04:20	21545	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/tests/test.cc:24	Hello,JKYI log!
+2022-09-19 21:04:20	21545	UNKNOW	0	[WARN]	[root]	/home/admin/workSpace/tests/test.cc:25	Hello,JKYI log!
+2022-09-19 21:04:20	21545	UNKNOW	0	[FATAL]	[root]	/home/admin/workSpace/tests/test.cc:26	Hello,JKYI log!
+2022-09-19 21:05:05	21848	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/tests/test.cc:24	Hello,JKYI log!
+2022-09-19 21:05:05	21848	UNKNOW	0	[FATAL]	[root]	/home/admin/workSpace/tests/test.cc:26	Hello,JKYI log!
