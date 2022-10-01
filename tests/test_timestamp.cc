@@ -20,10 +20,12 @@ void run1(){
 int main(int argc,char ** argv){
     //JKYi::net::Timestamp timestamp = JKYi::net::Timestamp::now();;
     //JKYI_LOG_INFO(g_logger) << timestamp.toFormattedString();
-    JKYi::net::EventLoop loop;
-    loop.runAfter(1,
-            std::bind(&run,&loop));
+    //JKYi::net::EventLoop loop;
+    //loop.runAfter(1,
+    //        std::bind(&run,&loop));
     //loop.runEvery(1,&run1);
-    loop.loop();
+    //loop.loop();
+    JKYi::net::Timestamp now = JKYi::net::Timestamp::now();
+    JKYI_LOG_INFO(g_logger) << now.toFormattedString(false);
     return 0;
 }

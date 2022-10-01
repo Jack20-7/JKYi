@@ -157,3 +157,7 @@ protobuf是用来进行序列化和反序列化的,之所以要进行序列化�
 本机器上在cmake的时候，需要cmake -DCMAKE_CXX_COMPILER=$(which g++) -DCMAKE_C_COMPILER=$(which gcc) ,并且还需要在目标库的CMakeLists文件中添加add_definitions(-D_GLIBCXX_USE_C99=1)
 cmake中可以通过option来定义编译开关，语法为option(名称 “描述" on/off),add_definitions用来定义宏
 之所以要限制并发连接数的原因:1.避免服务器过载 2.当文件描述符用完时，如果进行accept会很麻烦,会造成busy-loop
+
+2022.9.28
+ox7f 表示的是十六进制的一个字节，0x代表是十六进制，7f = 0111 1111.同理，0x80 = 1000 0000
+protobuf程序在链接时需要链接上线程库

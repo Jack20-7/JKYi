@@ -3,6 +3,7 @@
 
 #include<string.h>
 #include<iosfwd>
+#include<string>
 
 namespace JKYi{
 namespace net{

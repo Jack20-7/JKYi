@@ -133,7 +133,7 @@ void ByteArray::writeFuint64(uint64_t val){
 
 //该函数用来将32位的有符号整形转化为无符号整形
 static uint32_t EncodeZigzag32(const int32_t &val){
-   if( val<0 ){
+   if(val < 0){
        //如果是一个负数的话
        return ((uint32_t)(-val))*2-1;
    }else{
@@ -141,7 +141,7 @@ static uint32_t EncodeZigzag32(const int32_t &val){
    }
 }
 static uint64_t EncodeZigzag64(const int64_t &val){
-    if(val<0){
+    if(val < 0){
         return ((uint64_t)(-val))*2-1;
     }else{
         return val*2;
@@ -177,7 +177,6 @@ void ByteArray::writeInt64(int64_t val){
 
 }
 void ByteArray::writeUint64(uint64_t val){
-
     uint8_t tmp[10];
     uint8_t i=0;
     while(val >= 0x80){
@@ -274,9 +273,9 @@ int32_t ByteArray::readInt32(){
     return DecodeZigzag32(readUint32());
 }
 uint32_t ByteArray::readUint32(){
-   uint32_t result=0; 
-   for(int i=0;i<32;i+=7){
-       uint8_t val=readFuint8();
+   uint32_t result = 0; 
+   for(int i = 0;i < 32;i += 7){
+       uint8_t val = readFuint8();
        if(val < 0x80){
            //如果是最后一个有效字节的话
            result |= ((uint32_t)val) << i;
@@ -287,6 +286,7 @@ uint32_t ByteArray::readUint32(){
    }
    return result;
 }
+
 int64_t ByteArray::readInt64(){
    return DecodeZigzag64(readUint64());
 }

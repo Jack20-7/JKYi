@@ -13,7 +13,6 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O1 -fPIC -ggdb -std=c++17 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations")
 
 set(CMAKE_CXX_STANDARD 14)
-#set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_definitions(-D_GLIBCXX_USE_C99=1)
 
 #设置头文件的查找路径
@@ -110,6 +109,7 @@ set (LIB_SRC
     JKYi/reactor/TcpServer.cc
     JKYi/reactor/Connector.cc
     JKYi/reactor/TcpClient.cc
+    JKYi/reactor/protobuf/ProtobufCodeLite.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
@@ -135,6 +135,8 @@ set(LIBS
       zookeeper_mt
       event
       hiredis_vip
+      z
+      protobuf
    )
 
 add_subdirectory(JKYi/reactor/examples)

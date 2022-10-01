@@ -91,6 +91,7 @@ void TcpServer::newConnection(int sockfd,const Address::ptr& peerAddr){
 }
 
 void TcpServer::removeConnection(const TcpConnection::ptr& conn){
+    //该函数会在tcpconnection所在的线程被调用，所以为了能够线程安全，这里将它转移到TcpServer所在的线程
     loop_->runInLoop(
             std::bind(&TcpServer::removeConnectionInLoop,this,conn));
 }
@@ -105,6 +106,7 @@ void TcpServer::removeConnectionInLoop(const TcpConnection::ptr& conn){
     JKYI_ASSERT(n == 1);
 
     EventLoop* ioLoop = conn->getLoop();
+    //在转移回Tcpconnection所在的线程
     ioLoop->queueInLoop(
             std::bind(&TcpConnection::connectDestroyed,conn));
 }

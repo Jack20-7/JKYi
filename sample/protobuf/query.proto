@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package test;
+
+message Query{
+    required int64 id = 1;
+    required string questioner = 2;  //发送进程的id
+
+    required string question = 3;   //发送的问题
+}
+
+message Answer{
+    required int64 id = 1;
+    required string questioner = 2;   //发送进程的id
+    required string answerer = 3;     //响应进程的id
+
+    repeated string solution = 4;     //应答
+}
+
+message Empty{
+    optional int32 id = 1;          
+}
+
