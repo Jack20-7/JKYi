@@ -6,40 +6,6 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 ACK	JKYi/http2/frame.h	/^    ACK            = 0x1$/;"	m	class:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings	access:private
 ACK	JKYi/http2/frame.h	/^    ACK            = 0x1$/;"	m	class:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing	access:private
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	440;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	443;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	446;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	449;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	453;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	455;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	457;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	461;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	464;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	467;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	472;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	475;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	478;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	483;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	486;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	489;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	492;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	425;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	428;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	431;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	434;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	438;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	440;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	442;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	446;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	449;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	452;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	457;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	460;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	463;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	468;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	471;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	474;"	d	file:
-ARCHITECTURE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	477;"	d	file:
 ASSOCIATING	JKYi/zk_client.cc	/^const int ZKClient::StateType::ASSOCIATING = ZOO_ASSOCIATING_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
 ASSOCIATING	JKYi/zk_client.h	/^        static const int ASSOCIATING;$/;"	m	class:JKYi::ZKClient::StateType	access:public
 AUTH_FAILED	JKYi/zk_client.cc	/^const int ZKClient::StateType::AUTH_FAILED = ZOO_AUTH_FAILED_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
@@ -122,283 +88,8 @@ CHK_	sample/protobuf/query.pb.cc	686;"	d	file:
 CHK_	sample/protobuf/query.pb.cc	938;"	d	file:
 CHK_	sample/protobuf/query.pb.cc	974;"	d	file:
 CLOSE	JKYi/http/ws_session.h	/^        CLOSE = 8,$/;"	e	enum:JKYi::http::WSFrameHead::OPCODE
-CMAKE_BINARY_DIR	build/JKYi/reactor/examples/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
-CMAKE_BINARY_DIR	build/JKYi/reactor/examples/idleconnection/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
-CMAKE_BINARY_DIR	build/JKYi/reactor/examples/maxconnection/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
-CMAKE_BINARY_DIR	build/JKYi/reactor/examples/netty/discard/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
-CMAKE_BINARY_DIR	build/JKYi/reactor/protobuf/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
-CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
-CMAKE_COMMAND	build/JKYi/reactor/examples/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
-CMAKE_COMMAND	build/JKYi/reactor/examples/idleconnection/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
-CMAKE_COMMAND	build/JKYi/reactor/examples/maxconnection/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
-CMAKE_COMMAND	build/JKYi/reactor/examples/netty/discard/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
-CMAKE_COMMAND	build/JKYi/reactor/protobuf/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
-CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
-CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
-CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/idleconnection/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
-CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/maxconnection/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
-CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/netty/discard/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
-CMAKE_SOURCE_DIR	build/JKYi/reactor/protobuf/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
-CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
 CMD_ERR	JKYi/db/redis.h	/^        CMD_ERR = 3,$/;"	e	enum:JKYi::FoxRedis::RESULT
 CMD_ERR	JKYi/db/redis.h	/^        CMD_ERR = 3,$/;"	e	enum:JKYi::FoxRedisCluster::RESULT
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	108;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	123;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	138;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	153;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	166;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	176;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	179;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	185;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	200;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	214;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	224;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	242;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	251;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	260;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	275;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	288;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	306;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	309;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	312;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	42;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	50;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	56;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	94;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	108;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	123;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	138;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	13;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	153;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	166;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	173;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	176;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	179;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	19;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	208;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	222;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	240;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	249;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	258;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	273;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	291;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	294;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	297;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	50;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	62;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
-COMPILER_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	94;"	d	file:
-COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	256;"	d	file:
-COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	254;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	103;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	154;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	162;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	168;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	189;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	204;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	215;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	226;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	245;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	24;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	253;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	263;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	268;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	277;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	282;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	291;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	296;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	51;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	58;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	64;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	73;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	83;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	88;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	96;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	103;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	116;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	154;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	162;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	168;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	183;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	198;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	210;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	212;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	224;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	243;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	251;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	261;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	266;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	276;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	281;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	43;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	58;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	64;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	73;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	88;"	d	file:
-COMPILER_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	96;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	111;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	117;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	126;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	132;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	141;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	147;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	163;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	169;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	190;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	205;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	217;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	227;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	246;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	254;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	264;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	269;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	278;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	283;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	292;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	297;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	44;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	65;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	74;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	84;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	97;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	111;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	117;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	126;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	132;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	141;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	147;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	163;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	169;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	16;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	199;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	215;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	225;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	244;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	252;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	25;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	262;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	267;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	277;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	282;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	52;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	84;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
-COMPILER_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	97;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	105;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	112;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	118;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	127;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	133;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	142;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	148;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	157;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	191;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	206;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	220;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	231;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	234;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	247;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	255;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	265;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	270;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	279;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	27;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	284;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	293;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	298;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	29;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	53;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	67;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	76;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	85;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	90;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	105;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	112;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	118;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	127;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	133;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	142;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	148;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	157;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	185;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	200;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	218;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	229;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	232;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	245;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	253;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	263;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	268;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	278;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	283;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	29;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	46;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	53;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	67;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	76;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	85;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	90;"	d	file:
-COMPILER_VERSION_PATCH	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	143;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	197;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	238;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	33;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	191;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	236;"	d	file:
-COMPILER_VERSION_TWEAK	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
 CONNECTED	JKYi/db/redis.h	/^        CONNECTED = 2$/;"	e	enum:JKYi::FoxRedis::STATUS
 CONNECTED	JKYi/db/redis.h	/^        CONNECTED = 2$/;"	e	enum:JKYi::FoxRedisCluster::STATUS
 CONNECTED	JKYi/zk_client.cc	/^const int ZKClient::StateType::CONNECTED = ZOO_CONNECTED_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
@@ -415,13 +106,6 @@ CONTINUE	JKYi/http/ws_session.h	/^        CONTINUE = 0,$/;"	e	enum:JKYi::http::W
 CREATED	JKYi/zk_client.cc	/^const int ZKClient::EventType::CREATED = ZOO_CREATED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
 CREATED	JKYi/zk_client.h	/^        static const int CREATED;$/;"	m	class:JKYi::ZKClient::EventType	access:public
 CREATE_SOCKET_ERROR	JKYi/http/http_connection.h	/^        CREATE_SOCKET_ERROR = 7,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
-CXX_STD	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	558;"	d	file:
-CXX_STD	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	560;"	d	file:
-C_DIALECT	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	575;"	d	file:
-C_DIALECT	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	577;"	d	file:
-C_DIALECT	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	580;"	d	file:
-C_DIALECT	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	582;"	d	file:
-C_DIALECT	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	584;"	d	file:
 Callback	sample/protobuf/dispatcher.cc	/^class Callback : public boost::noncopyable{$/;"	c	file:	inherits:boost::noncopyable
 Callback::onMessage	sample/protobuf/dispatcher.cc	/^    virtual void onMessage(google::protobuf::Message* message) const = 0;$/;"	p	class:Callback	file:	access:public	signature:(google::protobuf::Message* message) const
 Callback::~Callback	sample/protobuf/dispatcher.cc	/^    virtual ~Callback() {}$/;"	f	class:Callback	access:public	signature:()
@@ -471,7 +155,9 @@ ConnectCb	JKYi/db/redis.cc	/^void FoxRedisCluster::ConnectCb(const redisAsyncCon
 ConnectCb	JKYi/db/redis.h	/^    static void ConnectCb(const redisAsyncContext* c,int status);$/;"	p	class:JKYi::FoxRedis	access:private	signature:(const redisAsyncContext* c,int status)
 ConnectCb	JKYi/db/redis.h	/^    static void ConnectCb(const redisAsyncContext* c,int status);$/;"	p	class:JKYi::FoxRedisCluster	access:private	signature:(const redisAsyncContext* c,int status)
 ConnectionCallback	JKYi/reactor/Callbacks.h	/^typedef std::function<void (const TcpConnectionPtr&)> ConnectionCallback;$/;"	t	namespace:JKYi::net
+ConnectionCallback	JKYi/reactor/examples/hub/pubsub.h	/^    typedef std::function<void (PubSubClient*)> ConnectionCallback;$/;"	t	class:pubsub::PubSubClient	access:public
 ConnectionMap	JKYi/reactor/TcpServer.h	/^    typedef std::map<std::string,TcpConnection::ptr> ConnectionMap;$/;"	t	class:JKYi::net::TcpServer	access:private
+ConnectionSubscription	JKYi/reactor/examples/hub/hub.cc	/^typedef std::set<std::string> ConnectionSubscription;  \/\/用作TcpConnection的上下文，里面存储的是该连接所关注的topic$/;"	t	namespace:pubsub	file:
 Connector	JKYi/reactor/Connector.cc	/^Connector::Connector(EventLoop* loop,const Address::ptr& serverAddr)$/;"	f	class:JKYi::net::Connector	signature:(EventLoop* loop,const Address::ptr& serverAddr)
 Connector	JKYi/reactor/Connector.h	/^    Connector(EventLoop* loop,const Address::ptr& serverAddr);$/;"	p	class:JKYi::net::Connector	access:public	signature:(EventLoop* loop,const Address::ptr& serverAddr)
 Connector	JKYi/reactor/Connector.h	/^class Connector : public Noncopyable,$/;"	c	namespace:JKYi::net	inherits:Noncopyable,std::enable_shared_from_this
@@ -551,8 +237,6 @@ CurrentThread	JKYi/reactor/CurrentThread.h	/^namespace CurrentThread{$/;"	n	name
 CurrentThread	JKYi/reactor/Thread.cc	/^namespace CurrentThread{$/;"	n	namespace:JKYi	file:
 DATA	JKYi/http2/frame.h	/^    DATA           = 0x0,$/;"	m	class:JKYi::http2::FrameType	access:private
 DEBUG	JKYi/log.h	/^     DEBUG = 1,$/;"	e	enum:JKYi::LogLevel::Level
-DEC	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	496;"	d	file:
-DEC	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	481;"	d	file:
 DELETED	JKYi/zk_client.cc	/^const int ZKClient::EventType::DELETED = ZOO_DELETED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
 DELETED	JKYi/zk_client.h	/^        static const int DELETED;$/;"	m	class:JKYi::ZKClient::EventType	access:public
 Data	JKYi/db/mysql.cc	/^MySQLStmtRes::Data::Data()$/;"	f	class:JKYi::MySQLStmtRes::Data	signature:()
@@ -621,12 +305,6 @@ END_STREAM	JKYi/http2/frame.h	/^    END_STREAM     = 0x1,$/;"	m	class:JKYi::http
 END_STREAM	JKYi/http2/frame.h	/^    END_STREAM = 0x1,$/;"	m	class:JKYi::http2::FrameType::FrameFlagData	access:private
 EPHEMERAL	JKYi/zk_client.cc	/^const int ZKClient::FlagsType::EPHEMERAL = ZOO_EPHEMERAL;$/;"	m	class:JKYi::ZKClient::FlagsType	file:
 EPHEMERAL	JKYi/zk_client.h	/^        static const int EPHEMERAL;$/;"	m	class:JKYi::ZKClient::FlagsType	access:public
-EQUALS	build/JKYi/reactor/examples/Makefile	/^EQUALS = =$/;"	m
-EQUALS	build/JKYi/reactor/examples/idleconnection/Makefile	/^EQUALS = =$/;"	m
-EQUALS	build/JKYi/reactor/examples/maxconnection/Makefile	/^EQUALS = =$/;"	m
-EQUALS	build/JKYi/reactor/examples/netty/discard/Makefile	/^EQUALS = =$/;"	m
-EQUALS	build/JKYi/reactor/protobuf/Makefile	/^EQUALS = =$/;"	m
-EQUALS	build/Makefile	/^EQUALS = =$/;"	m
 ERROR	JKYi/http2/hpack.h	/^    ERROR                         = 7$/;"	m	class:JKYi::http2::IndexType	access:private
 ERROR	JKYi/log.h	/^     ERROR = 4,$/;"	e	enum:JKYi::LogLevel::Level
 EXCEPT	JKYi/fiber.h	/^	  EXCEPT\/\/异常态$/;"	e	enum:JKYi::Fiber::State
@@ -927,8 +605,6 @@ GetUint64	JKYi/util/json_util.h	/^    static uint64_t GetUint64(const Json::Valu
 GoAwayFrame	JKYi/http2/frame.h	/^struct GoAwayFrame : public IFrame{$/;"	s	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame	inherits:IFrame	access:public
 HEADERS	JKYi/http2/frame.h	/^    HEADERS        = 0x1,$/;"	m	class:JKYi::http2::FrameType	access:private
 HEADER_TABLE_SIZE	JKYi/http2/frame.h	/^        HEADER_TABLE_SIZE        =  0x1,$/;"	m	class:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::Settings	access:private
-HEX	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	507;"	d	file:
-HEX	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	492;"	d	file:
 HEX_TO_HF_CODE	JKYi/http2/huffman.cc	10;"	d	file:
 HEX_TO_HF_CODE_LEN	JKYi/http2/huffman.cc	11;"	d	file:
 HM_RETURN	JKYi/http2/huffman.cc	/^enum HM_RETURN{$/;"	g	namespace:JKYi::http2	file:
@@ -978,7 +654,6 @@ HttpStatus	JKYi/http/http.h	/^enum class HttpStatus{$/;"	c	namespace:JKYi::http
 HttpStatusToString	JKYi/http/http.cc	/^const char* HttpStatusToString(const HttpStatus& s){$/;"	f	namespace:JKYi::http	signature:(const HttpStatus& s)
 Huffman	JKYi/http2/huffman.h	/^class Huffman {$/;"	c	namespace:JKYi::http2
 IDB	JKYi/db/db.h	/^class IDB:public ISQLUpdate,public ISQLQuery{$/;"	c	namespace:JKYi	inherits:ISQLUpdate,ISQLQuery
-ID_VOID_MAIN	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 IFoxThread	JKYi/db/fox_thread.h	/^class IFoxThread{$/;"	c	namespace:JKYi
 IFrame	JKYi/http2/frame.h	/^class IFrame{$/;"	c	class:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR	access:private
 INDEXED	JKYi/http2/hpack.h	/^    INDEXED                       = 0, \/\/ headers的name和value都在表中$/;"	m	class:JKYi::http2::IndexType	access:private
@@ -5704,68 +5379,6 @@ PADDED	JKYi/http2/frame.h	/^    PADDED     = 0x8$/;"	m	class:JKYi::http2::FrameT
 PARSE_PARAM	JKYi/http/http.cc	208;"	d	file:
 PING	JKYi/http/ws_session.h	/^        PING = 9,$/;"	e	enum:JKYi::http::WSFrameHead::OPCODE
 PING	JKYi/http2/frame.h	/^    PING           = 0X6,$/;"	m	class:JKYi::http2::FrameType	access:private
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	337;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	340;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	343;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	346;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	349;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	352;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	355;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	358;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	361;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	364;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	367;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	370;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	373;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	376;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	379;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	382;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	385;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	388;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	391;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	394;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	397;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	400;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	403;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	406;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	409;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	413;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	416;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	419;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	422;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	425;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	429;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	322;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	325;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	328;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	331;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	334;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	337;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	340;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	343;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	346;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	349;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	352;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	355;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	358;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	361;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	364;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	367;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	370;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	373;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	376;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	379;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	382;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	385;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	388;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	391;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	394;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	398;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	401;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	404;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	407;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	410;"	d	file:
-PLATFORM_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	414;"	d	file:
 PONG	JKYi/http/ws_session.h	/^        PONG = 0xA$/;"	e	enum:JKYi::http::WSFrameHead::OPCODE
 POOL_GET_CONNECTION	JKYi/http/http_connection.h	/^        POOL_GET_CONNECTION = 8,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
 POOL_INVALID_CONNECTION	JKYi/http/http_connection.h	/^        POOL_INVALID_CONNECTION = 9,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
@@ -5777,6 +5390,7 @@ PTR_TO	JKYi/http/httpclient_parser.rl.cc	48;"	d	file:
 PUSH_PROMISE	JKYi/http2/frame.h	/^    PUSH_PROMISE   = 0X5,$/;"	m	class:JKYi::http2::FrameType	access:private
 Pack	JKYi/http2/hpack.cc	/^int HPack::Pack(HeaderField * header,ByteArray::ptr ba){$/;"	f	class:JKYi::http2::HPack	signature:(HeaderField * header,ByteArray::ptr ba)
 Pack	JKYi/http2/hpack.h	/^    static int Pack(HeaderField * header,ByteArray::ptr ba);$/;"	p	class:JKYi::http2::IndexType::HPack	access:public	signature:(HeaderField * header,ByteArray::ptr ba)
+ParseResult	JKYi/reactor/examples/hub/codec.h	/^enum ParseResult{$/;"	g	namespace:pubsub
 Person	tests/test_config.cc	/^    Person(std::string name="巫成洋",int age=18,int sex=1)$/;"	f	class:Person	access:public	signature:(std::string name=�,int age=18,int sex=1)
 Person	tests/test_config.cc	/^class Person{$/;"	c	file:
 Person::Person	tests/test_config.cc	/^    Person(std::string name="巫成洋",int age=18,int sex=1)$/;"	f	class:Person	access:public	signature:(std::string name=�,int age=18,int sex=1)
@@ -5823,6 +5437,21 @@ ProtobufMessageCallback	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^             
 ProtobufMessageCallback	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^                                Timestamp)> ProtobufMessageCallback;$/;"	t	class:JKYi::net::ProtobufCodecLiteT	access:public
 ProtobufMessageCallback	sample/protobuf/dispatcher.cc	/^    typedef std::function<void (T*)> ProtobufMessageCallback;$/;"	t	class:CallbackT	file:	access:public
 ProtobufVersionCheck	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^    int ProtobufVersionCheck(){$/;"	f	namespace:__anon20	signature:()
+PubSubClient	JKYi/reactor/examples/hub/pubsub.cc	/^PubSubClient::PubSubClient(EventLoop* loop,$/;"	f	class:PubSubClient	signature:(EventLoop* loop, const Address::ptr& serverAddr, const std::string& name)
+PubSubClient	JKYi/reactor/examples/hub/pubsub.h	/^    PubSubClient(JKYi::net::EventLoop* loop,$/;"	p	class:pubsub::PubSubClient	access:public	signature:(JKYi::net::EventLoop* loop, const JKYi::Address::ptr& serverAddr, const std::string& name)
+PubSubClient	JKYi/reactor/examples/hub/pubsub.h	/^class PubSubClient : public boost::noncopyable{$/;"	c	namespace:pubsub	inherits:boost::noncopyable
+PubSubClient::PubSubClient	JKYi/reactor/examples/hub/pubsub.cc	/^PubSubClient::PubSubClient(EventLoop* loop,$/;"	f	class:PubSubClient	signature:(EventLoop* loop, const Address::ptr& serverAddr, const std::string& name)
+PubSubClient::connected	JKYi/reactor/examples/hub/pubsub.cc	/^bool PubSubClient::connected()const{$/;"	f	class:PubSubClient	signature:() const
+PubSubClient::onConnection	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::onConnection(const TcpConnection::ptr& conn){$/;"	f	class:PubSubClient	signature:(const TcpConnection::ptr& conn)
+PubSubClient::onMessage	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::onMessage(const TcpConnection::ptr& conn,Buffer* buf,Timestamp time){$/;"	f	class:PubSubClient	signature:(const TcpConnection::ptr& conn,Buffer* buf,Timestamp time)
+PubSubClient::publish	JKYi/reactor/examples/hub/pubsub.cc	/^bool PubSubClient::publish(const std::string& topic,$/;"	f	class:PubSubClient	signature:(const std::string& topic, const std::string& content)
+PubSubClient::send	JKYi/reactor/examples/hub/pubsub.cc	/^bool PubSubClient::send(const std::string& message){$/;"	f	class:PubSubClient	signature:(const std::string& message)
+PubSubClient::start	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::start(){$/;"	f	class:PubSubClient	signature:()
+PubSubClient::stop	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::stop(){$/;"	f	class:PubSubClient	signature:()
+PubSubClient::subscribe	JKYi/reactor/examples/hub/pubsub.cc	/^bool PubSubClient::subscribe(const std::string& topic,$/;"	f	class:PubSubClient	signature:(const std::string& topic, const SubscribeCallback& cb)
+PubSubClient::unsubscribe	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::unsubscribe(const std::string& topic){$/;"	f	class:PubSubClient	signature:(const std::string& topic)
+PubSubServer	JKYi/reactor/examples/hub/hub.cc	/^    PubSubServer(EventLoop* loop,const Address::ptr& serverAddr)$/;"	f	class:pubsub::PubSubServer	access:public	signature:(EventLoop* loop,const Address::ptr& serverAddr)
+PubSubServer	JKYi/reactor/examples/hub/hub.cc	/^class PubSubServer : public boost::noncopyable{$/;"	c	namespace:pubsub	file:	inherits:boost::noncopyable
 PushPromisedFrame	JKYi/http2/frame.h	/^struct PushPromisedFrame : public IFrame{$/;"	s	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame	inherits:IFrame	access:public
 Query	JKYi/db/mysql.cc	/^ISQLData::ptr MySQLUtil::Query(const std::string& name,const char * format,...){$/;"	f	class:JKYi::MySQLUtil	signature:(const std::string& name,const char * format,...)
 Query	JKYi/db/mysql.cc	/^ISQLData::ptr MySQLUtil::Query(const std::string& name,const char * format,va_list ap){$/;"	f	class:JKYi::MySQLUtil	signature:(const std::string& name,const char * format,va_list ap)
@@ -5852,12 +5481,6 @@ REQUEST	JKYi/protocol.h	/^        REQUEST = 1,$/;"	e	enum:JKYi::Message::Message
 RESPONSE	JKYi/protocol.h	/^        RESPONSE = 2,$/;"	e	enum:JKYi::Message::MessageType
 RESULT	JKYi/db/redis.h	/^    enum RESULT{$/;"	g	class:JKYi::FoxRedis	access:public
 RESULT	JKYi/db/redis.h	/^    enum RESULT{$/;"	g	class:JKYi::FoxRedisCluster	access:public
-RM	build/JKYi/reactor/examples/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
-RM	build/JKYi/reactor/examples/idleconnection/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
-RM	build/JKYi/reactor/examples/maxconnection/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
-RM	build/JKYi/reactor/examples/netty/discard/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
-RM	build/JKYi/reactor/protobuf/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
-RM	build/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
 RST_STREAM	JKYi/http2/frame.h	/^    RST_STREAM     = 0X3,$/;"	m	class:JKYi::http2::FrameType	access:private
 RWMutex	JKYi/mutex.h	/^    RWMutex(){$/;"	f	class:JKYi::RWMutex	access:public	signature:()
 RWMutex	JKYi/mutex.h	/^class RWMutex:Noncopyable{$/;"	c	namespace:JKYi	inherits:Noncopyable
@@ -5920,30 +5543,6 @@ SESSION	JKYi/zk_client.cc	/^const int ZKClient::EventType::SESSION = ZOO_SESSION
 SESSION	JKYi/zk_client.h	/^        static const int SESSION;$/;"	m	class:JKYi::ZKClient::EventType	access:public
 SET	JKYi/http2/frame.h	/^    SET      = 0x1$/;"	m	class:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR	access:private
 SETTINGS	JKYi/http2/frame.h	/^    SETTINGS       = 0x4,$/;"	m	class:JKYi::http2::FrameType	access:private
-SHELL	build/JKYi/reactor/examples/Makefile	/^SHELL = \/bin\/sh$/;"	m
-SHELL	build/JKYi/reactor/examples/idleconnection/Makefile	/^SHELL = \/bin\/sh$/;"	m
-SHELL	build/JKYi/reactor/examples/maxconnection/Makefile	/^SHELL = \/bin\/sh$/;"	m
-SHELL	build/JKYi/reactor/examples/netty/discard/Makefile	/^SHELL = \/bin\/sh$/;"	m
-SHELL	build/JKYi/reactor/protobuf/Makefile	/^SHELL = \/bin\/sh$/;"	m
-SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
-SIMULATE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	187;"	d	file:
-SIMULATE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
-SIMULATE_ID	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	21;"	d	file:
-SIMULATE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	181;"	d	file:
-SIMULATE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	196;"	d	file:
-SIMULATE_ID	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
-SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	194;"	d	file:
-SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	209;"	d	file:
-SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
-SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	188;"	d	file:
-SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	203;"	d	file:
-SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	37;"	d	file:
-SIMULATE_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	195;"	d	file:
-SIMULATE_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	210;"	d	file:
-SIMULATE_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	38;"	d	file:
-SIMULATE_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	189;"	d	file:
-SIMULATE_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	204;"	d	file:
-SIMULATE_VERSION_MINOR	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
 SIZE	JKYi/http2/frame.h	/^    static const uint32_t SIZE = 4;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::RstStreamFrame	access:public
 SIZE	JKYi/http2/frame.h	/^    static const uint32_t SIZE = 4;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::WindowUpdateFrame	access:public
 SIZE	JKYi/http2/frame.h	/^    static const uint32_t SIZE = 5;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::PriorityFrame	access:public
@@ -5955,19 +5554,9 @@ SSLSocket	JKYi/socket.h	/^class SSLSocket:public Socket{$/;"	c	namespace:JKYi	in
 STATIC_HEADERS	JKYi/http2/dynamic_table.cc	7;"	d	file:
 STATUS	JKYi/db/redis.h	/^    enum STATUS{$/;"	g	class:JKYi::FoxRedis	access:public
 STATUS	JKYi/db/redis.h	/^    enum STATUS{$/;"	g	class:JKYi::FoxRedisCluster	access:public
-STRINGIFY	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	333;"	d	file:
-STRINGIFY	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	318;"	d	file:
-STRINGIFY_HELPER	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	332;"	d	file:
-STRINGIFY_HELPER	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	317;"	d	file:
 STRINGPIECE_BINARY_PREDICATE	JKYi/reactor/StringPiece.h	/^  STRINGPIECE_BINARY_PREDICATE(<,  <);$/;"	p	class:JKYi::net::StringPiece	access:public	signature:(<, <); STRINGPIECE_BINARY_PREDICATE(<=, <); STRINGPIECE_BINARY_PREDICATE(>=, >); STRINGPIECE_BINARY_PREDICATE(>, >)
 STRINGPIECE_BINARY_PREDICATE	JKYi/reactor/StringPiece.h	102;"	d
 STRINGPIECE_BINARY_PREDICATE	JKYi/reactor/StringPiece.h	93;"	d
-SUFFIXES	build/JKYi/reactor/examples/Makefile	/^SUFFIXES =$/;"	m
-SUFFIXES	build/JKYi/reactor/examples/idleconnection/Makefile	/^SUFFIXES =$/;"	m
-SUFFIXES	build/JKYi/reactor/examples/maxconnection/Makefile	/^SUFFIXES =$/;"	m
-SUFFIXES	build/JKYi/reactor/examples/netty/discard/Makefile	/^SUFFIXES =$/;"	m
-SUFFIXES	build/JKYi/reactor/protobuf/Makefile	/^SUFFIXES =$/;"	m
-SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
 Scheduler	JKYi/scheduler.cc	/^Scheduler::Scheduler(size_t threads,bool use_caller,const std::string&name)$/;"	f	class:JKYi::Scheduler	signature:(size_t threads,bool use_caller,const std::string&name)
 Scheduler	JKYi/scheduler.h	/^   Scheduler(size_t threads = 1,bool use_caller = true,const std::string& name = "");$/;"	p	class:JKYi::Scheduler	access:public	signature:(size_t threads = 1,bool use_caller = true,const std::string& name = �)
 Scheduler	JKYi/scheduler.h	/^class Scheduler{$/;"	c	namespace:JKYi
@@ -6040,6 +5629,7 @@ StringPiece	JKYi/reactor/StringPiece.h	/^class StringPiece {$/;"	c	namespace:JKY
 StringToHttpMethod	JKYi/http/http.cc	/^HttpMethod StringToHttpMethod(const std::string& m){$/;"	f	namespace:JKYi::http	signature:(const std::string& m)
 StringToHttpMethod	JKYi/http/http.h	/^HttpMethod StringToHttpMethod(const std::string& str);$/;"	p	namespace:JKYi::http	signature:(const std::string& str)
 StringUtil	JKYi/util.h	/^class StringUtil{$/;"	c	namespace:JKYi
+SubscribeCallback	JKYi/reactor/examples/hub/pubsub.h	/^                                JKYi::net::Timestamp)> SubscribeCallback;$/;"	t	class:pubsub::PubSubClient	access:public
 Swap	sample/protobuf/query.pb.h	/^  inline void Swap(Answer* other) {$/;"	f	class:test::final	access:public	signature:(Answer* other)
 Swap	sample/protobuf/query.pb.h	/^  inline void Swap(Empty* other) {$/;"	f	class:test::final	access:public	signature:(Empty* other)
 Swap	sample/protobuf/query.pb.h	/^  inline void Swap(Query* other) {$/;"	f	class:test::final	access:public	signature:(Query* other)
@@ -6131,6 +5721,8 @@ ToString	JKYi/log.cc	/^ const char* LogLevel::ToString(LogLevel::Level level){$/
 ToString	JKYi/log.h	/^   static const char* ToString(LogLevel::Level level);$/;"	p	class:JKYi::LogLevel	access:public	signature:(LogLevel::Level level)
 ToString	JKYi/util/json_util.cc	/^std::string JsonUtil::ToString(const Json::Value& json){$/;"	f	class:JKYi::JsonUtil	signature:(const Json::Value& json)
 ToString	JKYi/util/json_util.h	/^    static std::string ToString(const Json::Value& json);$/;"	p	class:JKYi::JsonUtil	access:public	signature:(const Json::Value& json)
+Topic	JKYi/reactor/examples/hub/hub.cc	/^    Topic(const std::string & topic)$/;"	f	class:pubsub::Topic	access:public	signature:(const std::string & topic)
+Topic	JKYi/reactor/examples/hub/hub.cc	/^class Topic{$/;"	c	namespace:pubsub	file:
 TotalFibers	JKYi/fiber.cc	/^uint64_t Fiber::TotalFibers(){$/;"	f	class:JKYi::Fiber	signature:()
 TotalFibers	JKYi/fiber.h	/^   static uint64_t TotalFibers();$/;"	p	class:JKYi::Fiber	access:public	signature:()
 Trim	JKYi/util.cc	/^std::string StringUtil::Trim(const std::string& str,const std::string& delimit){$/;"	f	class:JKYi::StringUtil	signature:(const std::string& str,const std::string& delimit)
@@ -6173,12 +5765,6 @@ UnsafeArenaSwap	sample/protobuf/query.pb.h	/^  void UnsafeArenaSwap(Query* other
 Uri	JKYi/uri.h	/^    Uri();$/;"	p	class:JKYi::Uri	access:public	signature:()
 Uri	JKYi/uri.h	/^class Uri{$/;"	c	namespace:JKYi
 Uri	JKYi/uri.rl.cc	/^Uri::Uri()$/;"	f	class:JKYi::Uri	signature:()
-VERBOSE	build/JKYi/reactor/examples/Makefile	/^VERBOSE = 1$/;"	m
-VERBOSE	build/JKYi/reactor/examples/idleconnection/Makefile	/^VERBOSE = 1$/;"	m
-VERBOSE	build/JKYi/reactor/examples/maxconnection/Makefile	/^VERBOSE = 1$/;"	m
-VERBOSE	build/JKYi/reactor/examples/netty/discard/Makefile	/^VERBOSE = 1$/;"	m
-VERBOSE	build/JKYi/reactor/protobuf/Makefile	/^VERBOSE = 1$/;"	m
-VERBOSE	build/Makefile	/^VERBOSE = 1$/;"	m
 Visit	JKYi/config.cc	/^void Config::Visit(std::function<void (ConfigVarBase::ptr)>cb){$/;"	f	class:JKYi::Config	signature:(std::function<void (ConfigVarBase::ptr)>cb)
 Visit	JKYi/config.h	/^	static void Visit(std::function<void (ConfigVarBase::ptr)>cb); $/;"	p	class:JKYi::Config	access:public	signature:(std::function<void (ConfigVarBase::ptr)>cb)
 WARN	JKYi/log.h	/^     WARN = 3,$/;"	e	enum:JKYi::LogLevel::Level
@@ -6326,8 +5912,10 @@ _JKYI_EPOLLPOLLER_H_	JKYi/reactor/poller/epollPoller.h	2;"	d
 _JKYI_EVENTLOOP_H_	JKYi/reactor/EventLoop.h	2;"	d
 _JKYI_EVENT_LOOP_THREAD_H_	JKYi/reactor/EventLoopThread.h	2;"	d
 _JKYI_EVENT_LOOP_THREAD_POOL_H_	JKYi/reactor/EventLoopThreadPool.h	2;"	d
+_JKYI_EXAMPLES_HUB_H_	JKYi/reactor/examples/hub/codec.h	2;"	d
 _JKYI_EXAMPLES_IDLECONNECTION_H_	JKYi/reactor/examples/idleconnection/echo.h	2;"	d
 _JKYI_EXAMPLES_MAXCONNECTION_H_	JKYi/reactor/examples/maxconnection/echo.h	2;"	d
+_JKYI_EXAMPLES_PUBSUB_H_	JKYi/reactor/examples/hub/pubsub.h	2;"	d
 _JKYI_FDMANAGER_H	JKYi/fdmanager.h	2;"	d
 _JKYI_FIBER_H_	JKYi/fiber.h	2;"	d
 _JKYI_FRAME_H_	JKYi/http2/frame.h	2;"	d
@@ -6505,6 +6093,7 @@ add	JKYi/env.cc	/^void Env::add(const std::string& key,const std::string& val){$
 add	JKYi/env.h	/^     void add(const std::string& key,const std::string& val);$/;"	p	class:JKYi::Env	access:public	signature:(const std::string& key,const std::string& val)
 add	JKYi/module.cc	/^void ModuleManager::add(Module::ptr m){$/;"	f	class:JKYi::ModuleManager	signature:(Module::ptr m)
 add	JKYi/module.h	/^    void add(Module::ptr m);$/;"	p	class:JKYi::ModuleManager	access:public	signature:(Module::ptr m)
+add	JKYi/reactor/examples/hub/hub.cc	/^    void add(const TcpConnection::ptr& conn){$/;"	f	class:pubsub::Topic	access:public	signature:(const TcpConnection::ptr& conn)
 add	JKYi/worker.cc	/^void WorkerManager::add(Scheduler::ptr s){$/;"	f	class:JKYi::WorkerManager	signature:(Scheduler::ptr s)
 add	JKYi/worker.h	/^    void add(Scheduler::ptr s);$/;"	p	class:JKYi::WorkerManager	access:public	signature:(Scheduler::ptr s)
 addAndGet	JKYi/atomic.h	/^    T addAndGet(T x){$/;"	f	class:JKYi::AtomicIntegerT	access:public	signature:(T x)
@@ -6581,6 +6170,7 @@ asInt32	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^    static int32_t asInt32(co
 as_string	JKYi/reactor/StringPiece.h	/^  std::string as_string() const {$/;"	f	class:JKYi::net::StringPiece	access:public	signature:() const
 assertInLoopThread	JKYi/reactor/EventLoop.h	/^    void assertInLoopThread(){$/;"	f	class:JKYi::net::EventLoop	access:public	signature:()
 assertInLoopThread	JKYi/reactor/poller.h	/^    void assertInLoopThread()const{ ownerLoop_->assertInLoopThread(); }$/;"	f	class:JKYi::net::Poller	access:public	signature:() const
+audiences_	JKYi/reactor/examples/hub/hub.cc	/^    std::set<TcpConnection::ptr> audiences_;  \/\/目前关注了该topic的sub的连接$/;"	m	class:pubsub::Topic	file:	access:private
 back	JKYi/fiber.cc	/^void Fiber::back(){$/;"	f	class:JKYi::Fiber	signature:()
 back	JKYi/fiber.h	/^	void back();$/;"	p	class:JKYi::Fiber	access:public	signature:()
 base64decode	JKYi/util/hash_util.cc	/^std::string base64decode(const std::string &src) {$/;"	f	namespace:JKYi	signature:(const std::string &src)
@@ -6773,6 +6363,7 @@ clear_questioner	sample/protobuf/query.pb.h	/^inline void Answer::clear_question
 clear_questioner	sample/protobuf/query.pb.h	/^inline void Query::clear_questioner() {$/;"	f	class:test::Query	signature:()
 clear_solution	sample/protobuf/query.pb.h	/^  void clear_solution();$/;"	p	class:test::final	access:public	signature:()
 clear_solution	sample/protobuf/query.pb.h	/^inline void Answer::clear_solution() {$/;"	f	class:test::Answer	signature:()
+client_	JKYi/reactor/examples/hub/pubsub.h	/^    JKYi::net::TcpClient client_;$/;"	m	class:pubsub::PubSubClient	access:private
 client_	JKYi/reactor/examples/netty/discard/client.cc	/^    TcpClient client_;$/;"	m	class:DiscardClient	file:	access:private
 close	JKYi/hook.cc	/^int close(int fd){$/;"	f	signature:(int fd)
 close	JKYi/http/httpclient_parser.h	/^      int close;$/;"	m	struct:httpclient_parser	access:public
@@ -6820,6 +6411,7 @@ compare	JKYi/reactor/StringPiece.h	/^  int compare(const StringPiece& x) const {
 condition_	JKYi/BlockingQueue.h	/^    Condition condition_;$/;"	m	class:JKYi::BlockingQueue	access:private
 condition_	JKYi/CountDownLatch.h	/^    Condition condition_;$/;"	m	class:JKYi::CountDownLatch	access:private
 condition_	JKYi/reactor/EventLoopThread.h	/^    Condition condition_;$/;"	m	class:JKYi::net::EventLoopThread	access:private
+conn_	JKYi/reactor/examples/hub/pubsub.h	/^    JKYi::net::TcpConnection::ptr conn_;$/;"	m	class:pubsub::PubSubClient	access:private
 connecetion	JKYi/reactor/TcpClient.h	/^    TcpConnection::ptr connecetion()const{$/;"	f	class:JKYi::net::TcpClient	access:public	signature:() const
 connect	JKYi/db/mysql.cc	/^bool MySQL::connect(){$/;"	f	class:JKYi::MySQL	signature:()
 connect	JKYi/db/mysql.h	/^    bool connect();$/;"	p	class:JKYi::MySQL	access:public	signature:()
@@ -6850,19 +6442,24 @@ connect_fun	JKYi/hook.h	/^typedef int (*connect_fun)(int sockfd, const struct so
 connect_with_timeout	JKYi/hook.cc	/^int connect_with_timeout(int socketfd,const struct sockaddr*addr,socklen_t addrlen,uint64_t timeout_ms){$/;"	f	signature:(int socketfd,const struct sockaddr*addr,socklen_t addrlen,uint64_t timeout_ms)
 connect_with_timeout	JKYi/hook.h	/^extern int connect_with_timeout(int fd, const struct sockaddr* addr, socklen_t addrlen, uint64_t timeout_ms);$/;"	p	signature:(int fd, const struct sockaddr* addr, socklen_t addrlen, uint64_t timeout_ms)
 connected	JKYi/reactor/TcpConnection.h	/^    bool connected()const { return state_ == kConnected; }$/;"	f	class:JKYi::net::TcpConnection	access:public	signature:() const
+connected	JKYi/reactor/examples/hub/pubsub.cc	/^bool PubSubClient::connected()const{$/;"	f	class:PubSubClient	signature:() const
+connected	JKYi/reactor/examples/hub/pubsub.h	/^    bool connected()const;$/;"	p	class:pubsub::PubSubClient	access:public	signature:() const
 connecting	JKYi/reactor/Connector.cc	/^void Connector::connecting(int sockfd){$/;"	f	class:JKYi::net::Connector	signature:(int sockfd)
 connecting	JKYi/reactor/Connector.h	/^    void connecting(int sockfd);$/;"	p	class:JKYi::net::Connector	access:private	signature:(int sockfd)
+connection	JKYi/reactor/examples/hub/pub.cc	/^void connection(PubSubClient* client){$/;"	f	signature:(PubSubClient* client)
+connection	JKYi/reactor/examples/hub/sub.cc	/^void connection(PubSubClient* client){$/;"	f	signature:(PubSubClient* client)
 connectionBuckets_	JKYi/reactor/examples/idleconnection/echo.h	/^    WeakConnectionList connectionBuckets_;   \/\/时间轮$/;"	m	class:EchoServer	access:private
 connectionCallback_	JKYi/reactor/TcpClient.h	/^    ConnectionCallback connectionCallback_;$/;"	m	class:JKYi::net::TcpClient	access:private
 connectionCallback_	JKYi/reactor/TcpConnection.h	/^    ConnectionCallback connectionCallback_;$/;"	m	class:JKYi::net::TcpConnection	access:private
 connectionCallback_	JKYi/reactor/TcpServer.h	/^    ConnectionCallback connectionCallback_;$/;"	m	class:JKYi::net::TcpServer	access:private
+connectionCallback_	JKYi/reactor/examples/hub/pubsub.h	/^    ConnectionCallback connectionCallback_;$/;"	m	class:pubsub::PubSubClient	access:private
 connectionList_	JKYi/reactor/examples/idleconnection/sortedList.cc	/^    WeakConnectionList connectionList_;$/;"	m	class:EchoServer	file:	access:private
 connection_	JKYi/reactor/TcpClient.h	/^    TcpConnection::ptr connection_;$/;"	m	class:JKYi::net::TcpClient	access:private
 connections_	JKYi/reactor/TcpServer.h	/^    ConnectionMap connections_;    $/;"	m	class:JKYi::net::TcpServer	access:private
 connector_	JKYi/reactor/TcpClient.h	/^    ConnectorPtr connector_;  \/\/连接器$/;"	m	class:JKYi::net::TcpClient	access:private
-const	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
 constexpr::_pb::file_level_enum_descriptors_query_2eproto	sample/protobuf/query.pb.cc	/^static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_query_2eproto = nullptr;$/;"	m	class:constexpr::_pb	file:
 constexpr::_pb::file_level_service_descriptors_query_2eproto	sample/protobuf/query.pb.cc	/^static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_query_2eproto = nullptr;$/;"	m	class:constexpr::_pb	file:
+content_	JKYi/reactor/examples/hub/hub.cc	/^    std::string content_;$/;"	m	class:pubsub::Topic	file:	access:private
 content_len	JKYi/http/http11_parser.h	/^      int content_len;$/;"	m	struct:http_parser	access:public
 content_len	JKYi/http/httpclient_parser.h	/^      int content_len;$/;"	m	struct:httpclient_parser	access:public
 contextResize	JKYi/iomanager.cc	/^void IOManager::contextResize(size_t size){$/;"	f	class:JKYi::IOManager	signature:(size_t size)
@@ -6984,12 +6581,15 @@ doPost	JKYi/http/http_connection.cc	/^HttpResult::ptr HttpConnectionPool::doPost
 doPost	JKYi/http/http_connection.cc	/^HttpResult::ptr HttpConnectionPool::doPost(const std::string& url,uint64_t timeout_ms,$/;"	f	class:JKYi::http::HttpConnectionPool	signature:(const std::string& url,uint64_t timeout_ms, const std::map<std::string,std::string>& headers, const std::string& body)
 doPost	JKYi/http/http_connection.h	/^    HttpResult::ptr doPost(Uri::ptr uri,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = "");$/;"	p	class:JKYi::http::HttpConnectionPool	access:public	signature:(Uri::ptr uri,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = �)
 doPost	JKYi/http/http_connection.h	/^    HttpResult::ptr doPost(const std::string& url,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = "");$/;"	p	class:JKYi::http::HttpConnectionPool	access:public	signature:(const std::string& url,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = �)
+doPublish	JKYi/reactor/examples/hub/hub.cc	/^    void doPublish(const std::string& source,$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const std::string& source, const std::string& topic, const std::string& content, Timestamp time)
 doRequest	JKYi/http/http_connection.cc	/^HttpResult::ptr HttpConnectionPool::doRequest(HttpMethod method,Uri::ptr uri,uint64_t timeout_ms,$/;"	f	class:JKYi::http::HttpConnectionPool	signature:(HttpMethod method,Uri::ptr uri,uint64_t timeout_ms, const std::map<std::string,std::string>& headers, const std::string& body)
 doRequest	JKYi/http/http_connection.cc	/^HttpResult::ptr HttpConnectionPool::doRequest(HttpMethod method,const std::string& url,uint64_t timeout_ms,$/;"	f	class:JKYi::http::HttpConnectionPool	signature:(HttpMethod method,const std::string& url,uint64_t timeout_ms, const std::map<std::string,std::string>& headers, const std::string& body)
 doRequest	JKYi/http/http_connection.cc	/^HttpResult::ptr HttpConnectionPool::doRequest(HttpRequest::ptr req,uint64_t timeout_ms){$/;"	f	class:JKYi::http::HttpConnectionPool	signature:(HttpRequest::ptr req,uint64_t timeout_ms)
 doRequest	JKYi/http/http_connection.h	/^    HttpResult::ptr doRequest(HttpMethod method,Uri::ptr uri,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = "");$/;"	p	class:JKYi::http::HttpConnectionPool	access:public	signature:(HttpMethod method,Uri::ptr uri,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = �)
 doRequest	JKYi/http/http_connection.h	/^    HttpResult::ptr doRequest(HttpMethod method,const std::string& url,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = "");$/;"	p	class:JKYi::http::HttpConnectionPool	access:public	signature:(HttpMethod method,const std::string& url,uint64_t timeout_ms,const std::map<std::string,std::string>& headers = {},const std::string& body = �)
 doRequest	JKYi/http/http_connection.h	/^    HttpResult::ptr doRequest(HttpRequest::ptr req,uint64_t timeout_ms);$/;"	p	class:JKYi::http::HttpConnectionPool	access:public	signature:(HttpRequest::ptr req,uint64_t timeout_ms)
+doSubscribe	JKYi/reactor/examples/hub/hub.cc	/^    void doSubscribe(const TcpConnection::ptr& conn,const std::string& topic){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const TcpConnection::ptr& conn,const std::string& topic)
+doUnsubscribe	JKYi/reactor/examples/hub/hub.cc	/^    void doUnsubscribe(const TcpConnection::ptr& conn,const std::string& topic){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const TcpConnection::ptr& conn,const std::string& topic)
 do_io	JKYi/hook.cc	/^static ssize_t do_io(int fd,OriginFun&fun,const char * hook_fun_name,uint32_t event,int timeout_so,Args&&...args){$/;"	f	file:	signature:(int fd,OriginFun&fun,const char * hook_fun_name,uint32_t event,int timeout_so,Args&&...args)
 down_cast	JKYi/Types.h	/^inline To down_cast(From* f){$/;"	f	namespace:JKYi	signature:(From* f)
 down_pointer_cast	JKYi/reactor/Callbacks.h	/^inline ::std::shared_ptr<To> down_pointer_cast(const ::std::shared_ptr<From>& f) {$/;"	f	namespace:JKYi	signature:(const ::std::shared_ptr<From>& f)
@@ -7089,8 +6689,6 @@ fctx	JKYi/db/redis.h	/^        FCtx* fctx;$/;"	m	struct:JKYi::FoxRedis::Ctx	acce
 fctx	JKYi/db/redis.h	/^        FCtx* fctx;$/;"	m	struct:JKYi::FoxRedisCluster::Ctx	access:public
 fd	JKYi/iomanager.h	/^	 int fd=0;$/;"	m	struct:JKYi::IOManager::FdContext	access:public
 fd_	JKYi/reactor/channel.h	/^    const int fd_;                \/\/ 所代表的文件描述符$/;"	m	class:JKYi::net::Channel	access:private
-features	build/CMakeFiles/feature_tests.c	/^  const char features[] = {"\\n"$/;"	v
-features	build/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	v
 fiber	JKYi/db/redis.h	/^        JKYi::Fiber::ptr fiber;$/;"	m	struct:JKYi::FoxRedis::FCtx	access:public
 fiber	JKYi/db/redis.h	/^        JKYi::Fiber::ptr fiber;$/;"	m	struct:JKYi::FoxRedisCluster::FCtx	access:public
 fiber	JKYi/iomanager.h	/^	   Fiber::ptr fiber;$/;"	m	struct:JKYi::IOManager::FdContext::EventContext	access:public
@@ -7168,6 +6766,7 @@ func_	JKYi/reactor/Thread.h	/^    ThreadFunc func_;$/;"	m	class:JKYi::net::Threa
 function_	JKYi/WeakCallback.h	/^    std::function<void (CLASS*,ARGS...)> function_;$/;"	m	class:JKYi::WeakCallback	access:private
 g_argc	tests/test_zookeeper.cc	/^int g_argc;$/;"	v
 g_conn	tests/test_reactor_tcpClient.cc	/^JKYi::net::TcpConnection::ptr g_conn;$/;"	v
+g_content	JKYi/reactor/examples/hub/pub.cc	/^std::string g_content;$/;"	v
 g_daemon_restart_interval	JKYi/daemon.cc	/^static ConfigVar<uint32_t>::ptr g_daemon_restart_interval = $/;"	m	namespace:JKYi	file:
 g_fiber_stack_size	JKYi/fiber.cc	/^ static ConfigVar<uint32_t>::ptr g_fiber_stack_size=JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");$/;"	m	namespace:JKYi	file:
 g_float_value_config	tests/test_config.cc	/^JKYi::ConfigVar<float>::ptr g_float_value_config=JKYi::Config::Lookup("system.value",(float)10.2f,"system value");$/;"	v
@@ -7210,6 +6809,7 @@ g_logger	JKYi/reactor/TcpServer.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME
 g_logger	JKYi/reactor/Thread.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 g_logger	JKYi/reactor/acceptor.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
 g_logger	JKYi/reactor/channel.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
+g_logger	JKYi/reactor/examples/hub/hub.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:pubsub	file:
 g_logger	JKYi/reactor/examples/idleconnection/echo.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	v	file:
 g_logger	JKYi/reactor/examples/idleconnection/main.cc	/^JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v
 g_logger	JKYi/reactor/examples/idleconnection/sortedList.cc	/^static Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v	file:
@@ -7265,6 +6865,8 @@ g_tcp_connect_timeout	JKYi/hook.cc	/^static ConfigVar<int>::ptr g_tcp_connect_ti
 g_tcp_server_read_timeout	JKYi/tcp_server.cc	/^static ConfigVar<uint64_t>::ptr g_tcp_server_read_timeout = $/;"	m	namespace:JKYi	file:
 g_thread_info_set	JKYi/db/fox_thread.cc	/^                g_thread_info_set = Config::Lookup("fox_thread",$/;"	m	namespace:JKYi	file:
 g_timer	tests/test_daemon.cc	/^JKYi::Timer::ptr g_timer;$/;"	v
+g_topic	JKYi/reactor/examples/hub/pub.cc	/^std::string g_topic;$/;"	v
+g_topics	JKYi/reactor/examples/hub/sub.cc	/^std::vector<std::string> g_topics;$/;"	v
 g_umap_str_int_config	tests/test_config.cc	/^JKYi::ConfigVar<std::unordered_map<std::string,int>>::ptr g_umap_str_int_config=JKYi::Config::Lookup("system.umap_str_int",std::unordered_map<std::string,int>{{"k",9},{"k2",8}},"syetem umap_str_int");$/;"	v
 g_uset_int_config	tests/test_config.cc	/^JKYi::ConfigVar<std::unordered_set<int>>::ptr g_uset_int_config=JKYi::Config::Lookup("system.uset_int",std::unordered_set<int>{7,8,9,9},"system uset_int");$/;"	v
 g_vec_int_config	tests/test_config.cc	/^JKYi::ConfigVar<std::vector<int>>::ptr g_vec_int_config=JKYi::Config::Lookup("system.vec_int",std::vector<int>{1,2,3},"system vec_int");$/;"	v
@@ -7616,6 +7218,7 @@ getTime	JKYi/db/mysql.cc	/^time_t MySQLStmtRes::getTime(int idx){$/;"	f	class:JK
 getTime	JKYi/log.h	/^   uint32_t getTime()const{return m_time;}$/;"	f	class:JKYi::LogEvent	access:public	signature:() const
 getTimeout	JKYi/fdmanager.cc	/^uint64_t FdCtx::getTimeout(int type){$/;"	f	class:JKYi::FdCtx	signature:(int type)
 getTimeout	JKYi/fdmanager.h	/^   uint64_t getTimeout(int type);$/;"	p	class:JKYi::FdCtx	access:public	signature:(int type)
+getTopic	JKYi/reactor/examples/hub/hub.cc	/^    Topic& getTopic(const std::string& topic){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const std::string& topic)
 getTotal	JKYi/db/fox_thread.h	/^    uint64_t getTotal() { return m_total; }$/;"	f	class:JKYi::FoxThread	access:public	signature:()
 getTotal	JKYi/db/fox_thread.h	/^    uint64_t getTotal(){ return m_total; }$/;"	f	class:JKYi::FoxThreadPool	access:public	signature:()
 getTotal	JKYi/db/fox_thread.h	/^    virtual uint64_t getTotal() = 0;$/;"	p	class:JKYi::IFoxThread	access:public	signature:()
@@ -7895,24 +7498,6 @@ index	JKYi/http2/hpack.h	/^    uint32_t index = 0;$/;"	m	struct:JKYi::http2::Ind
 index_	JKYi/reactor/channel.h	/^    int index_;                   \/\/poll 作为底层io复用系统调用时使用$/;"	m	class:JKYi::net::Channel	access:private
 info	JKYi/log.cc	/^void Logger::info(LogEvent::ptr event){$/;"	f	class:JKYi::Logger	signature:(LogEvent::ptr event)
 info	JKYi/log.h	/^    void info(LogEvent::ptr event);$/;"	p	class:JKYi::Logger	access:public	signature:(LogEvent::ptr event)
-info_arch	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
-info_arch	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
-info_compiler	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
-info_compiler	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
-info_cray	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
-info_cray	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
-info_language_dialect_default	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v
-info_language_dialect_default	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v
-info_platform	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
-info_platform	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
-info_simulate	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
-info_simulate	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
-info_simulate_version	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
-info_simulate_version	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
-info_version	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
-info_version	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
-info_version_internal	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
-info_version_internal	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
 init	JKYi/application.cc	/^bool Application::init(int argc,char ** argv){$/;"	f	class:JKYi::Application	signature:(int argc,char ** argv)
 init	JKYi/application.h	/^    bool init(int argc,char** argv);$/;"	p	class:JKYi::Application	access:public	signature:(int argc,char** argv)
 init	JKYi/db/fox_thread.cc	/^void FoxThreadManager::init(){$/;"	f	class:JKYi::FoxThreadManager	signature:()
@@ -8055,10 +7640,12 @@ kConnected	JKYi/reactor/Connector.h	/^        kConnected$/;"	e	enum:JKYi::net::C
 kConnected	JKYi/reactor/TcpConnection.h	/^        kConnected,$/;"	e	enum:JKYi::net::TcpConnection::StateE
 kConnecting	JKYi/reactor/Connector.h	/^        kConnecting,$/;"	e	enum:JKYi::net::Connector::State
 kConnecting	JKYi/reactor/TcpConnection.h	/^        kConnecting,$/;"	e	enum:JKYi::net::TcpConnection::StateE
+kContinue	JKYi/reactor/examples/hub/codec.h	/^    kContinue = 2,$/;"	e	enum:pubsub::ParseResult
 kDeleted	JKYi/reactor/poller/epollPoller.cc	/^    const int kDeleted = 2;   \/\/map中存在该channel，但是对应的fd已经epoll_ctl_del$/;"	m	namespace:JKYi::net::__anon18	file:
 kDisconnected	JKYi/reactor/Connector.h	/^        kDisconnected,$/;"	e	enum:JKYi::net::Connector::State
 kDisconnected	JKYi/reactor/TcpConnection.h	/^        kDisconnected,$/;"	e	enum:JKYi::net::TcpConnection::StateE
 kDisconnecting	JKYi/reactor/TcpConnection.h	/^        kDisconnecting$/;"	e	enum:JKYi::net::TcpConnection::StateE
+kError	JKYi/reactor/examples/hub/codec.h	/^    kError = 0,$/;"	e	enum:pubsub::ParseResult
 kHeaderLen	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^    const static int kHeaderLen = sizeof(int32_t);$/;"	m	class:JKYi::net::ProtobufCodecLite	access:public
 kIndexInFileMessages	sample/protobuf/query.pb.h	/^  static constexpr int kIndexInFileMessages =$/;"	m	class:test::final	access:public
 kInitEventListSize	JKYi/reactor/poller/epollPoller.h	/^    static const int kInitEventListSize = 16;$/;"	m	class:JKYi::net::EpollPoller	access:private
@@ -8087,6 +7674,7 @@ kPollTimeMs	JKYi/reactor/EventLoop.cc	/^const int kPollTimeMs = 10000;$/;"	m	nam
 kReadEvent	JKYi/reactor/channel.cc	/^const int Channel::kReadEvent = POLLIN | POLLPRI;$/;"	m	class:JKYi::net::Channel	file:
 kReadEvent	JKYi/reactor/channel.h	/^    static const int kReadEvent;$/;"	m	class:JKYi::net::Channel	access:private
 kReusePort	JKYi/reactor/TcpServer.h	/^        kReusePort$/;"	e	enum:JKYi::net::TcpServer::Option
+kSuccess	JKYi/reactor/examples/hub/codec.h	/^    kSuccess = 1,$/;"	e	enum:pubsub::ParseResult
 kUnknowMessageType	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^        kUnknowMessageType = 4,$/;"	e	enum:JKYi::net::ProtobufCodecLite::ErrorCode
 kUnknowMessageTypeStr	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^  const std::string kUnknowMessageTypeStr = "UnknownMessageType";$/;"	m	namespace:__anon21	file:
 kUnknownErrorStr	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^  const std::string kUnknownErrorStr = "UnknownError";$/;"	m	namespace:__anon21	file:
@@ -8095,6 +7683,7 @@ kWriteEvent	JKYi/reactor/channel.h	/^    static const int kWriteEvent;$/;"	m	cla
 keepalive	JKYi/tcp_server.h	/^    int keepalive = 0;$/;"	m	struct:JKYi::TcpServerConf	access:public
 key_file	JKYi/tcp_server.h	/^    std::string key_file;$/;"	m	struct:JKYi::TcpServerConf	access:public
 kvs	JKYi/http2/frame.h	/^    std::vector<std::pair<std::string,std::string>> kvs;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::HeadersFrame	access:public
+lastPubTime_	JKYi/reactor/examples/hub/hub.cc	/^    Timestamp lastPubTime_;  \/\/上一次pub的时间$/;"	m	class:pubsub::Topic	file:	access:private
 lastReceiveTime	JKYi/reactor/examples/idleconnection/sortedList.cc	/^       Timestamp lastReceiveTime; $/;"	m	struct:EchoServer::Node	file:	access:public
 last_chunk	JKYi/http/httpclient_parser.h	/^      element_cb last_chunk;$/;"	m	struct:httpclient_parser	access:public
 last_stream_id	JKYi/http2/frame.h	/^            uint32_t last_stream_id : 31;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::GoAwayFrame::__anon12::__anon13	access:public
@@ -8152,6 +7741,7 @@ loop_	JKYi/reactor/TcpConnection.h	/^    EventLoop* loop_;$/;"	m	class:JKYi::net
 loop_	JKYi/reactor/TcpServer.h	/^    EventLoop* loop_;$/;"	m	class:JKYi::net::TcpServer	access:private
 loop_	JKYi/reactor/acceptor.h	/^    EventLoop* loop_;$/;"	m	class:JKYi::net::Acceptor	access:private
 loop_	JKYi/reactor/channel.h	/^    EventLoop* loop_;             \/\/属于那一个eventloop$/;"	m	class:JKYi::net::Channel	access:private
+loop_	JKYi/reactor/examples/hub/hub.cc	/^    EventLoop* loop_;$/;"	m	class:pubsub::PubSubServer	file:	access:private
 loop_	JKYi/reactor/examples/netty/discard/client.cc	/^    EventLoop* loop_;$/;"	m	class:DiscardClient	file:	access:private
 loop_	JKYi/reactor/timerQueue.h	/^    EventLoop* loop_;$/;"	m	class:JKYi::net::TimerQueue	access:private
 looping_	JKYi/reactor/EventLoop.h	/^    bool looping_;$/;"	m	class:JKYi::net::EventLoop	access:private
@@ -8483,16 +8073,14 @@ m_working	JKYi/db/fox_thread.h	/^    bool m_working;$/;"	m	class:JKYi::FoxThread
 m_write	JKYi/db/fox_thread.h	/^    evutil_socket_t m_write;$/;"	m	class:JKYi::FoxThread	access:private
 main	JKYi/application.cc	/^int Application::main(int argc,char ** argv){$/;"	f	class:JKYi::Application	signature:(int argc,char ** argv)
 main	JKYi/application.h	/^    int main(int argc,char** argv);$/;"	p	class:JKYi::Application	access:private	signature:(int argc,char** argv)
+main	JKYi/reactor/examples/hub/hub.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
+main	JKYi/reactor/examples/hub/pub.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
+main	JKYi/reactor/examples/hub/sub.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/idleconnection/main.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/idleconnection/sortedList.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/maxconnection/main.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/netty/discard/client.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/netty/discard/server.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
-main	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
-main	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
-main	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	signature:(int argc, char* argv[])
-main	build/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	signature:(int argc, char** argv)
-main	build/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	signature:(int argc, char** argv)
 main	sample/my_http_server.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	sample/protobuf/dispatcher.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	tests/test.cc	/^int main(int argc,char**argv){$/;"	f	signature:(int argc,char**argv)
@@ -8524,6 +8112,7 @@ main	tests/test_ws_server.cc	/^int main(int argc,char ** argv){$/;"	f	signature:
 main	tests/test_zookeeper.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main_id	JKYi/daemon.h	/^   pid_t main_id = 0;$/;"	m	struct:JKYi::ProcessInfo	access:public
 main_start_time	JKYi/daemon.h	/^   uint64_t main_start_time = 0;$/;"	m	struct:JKYi::ProcessInfo	access:public
+makeMessage	JKYi/reactor/examples/hub/hub.cc	/^    std::string makeMessage(){$/;"	f	class:pubsub::Topic	file:	access:private	signature:()
 makeSpace	JKYi/reactor/Buffer.h	/^    void makeSpace(size_t len){$/;"	f	class:JKYi::net::Buffer	access:private	signature:(size_t len)
 makeWeakCallback	JKYi/WeakCallback.h	/^WeakCallback<CLASS,ARGS...> makeWeakCallback(const std::shared_ptr<CLASS>& object,void (CLASS::* function)(ARGS...)){$/;"	f	namespace:JKYi	signature:(const std::shared_ptr<CLASS>& object,void (CLASS::* function)(ARGS...))
 makeWeakCallback	JKYi/WeakCallback.h	/^WeakCallback<CLASS,ARGS...> makeWeakCallback(const std::shared_ptr<CLASS>& object,void (CLASS::* function)(ARGS...)const){$/;"	f	namespace:JKYi	signature:(const std::shared_ptr<CLASS>& object,void (CLASS::* function)(ARGS...)const)
@@ -8691,6 +8280,9 @@ onConnect	JKYi/module.cc	/^bool Module::onConnect(JKYi::Stream::ptr stream){$/;"
 onConnect	JKYi/module.cc	/^void ModuleManager::onConnect(Stream::ptr stream){$/;"	f	class:JKYi::ModuleManager	signature:(Stream::ptr stream)
 onConnect	JKYi/module.h	/^    virtual bool onConnect(JKYi::Stream::ptr stream);$/;"	p	class:JKYi::Module	access:public	signature:(JKYi::Stream::ptr stream)
 onConnect	JKYi/module.h	/^    void onConnect(Stream::ptr stream);$/;"	p	class:JKYi::ModuleManager	access:public	signature:(Stream::ptr stream)
+onConnection	JKYi/reactor/examples/hub/hub.cc	/^    void onConnection(const TcpConnection::ptr& conn){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const TcpConnection::ptr& conn)
+onConnection	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::onConnection(const TcpConnection::ptr& conn){$/;"	f	class:PubSubClient	signature:(const TcpConnection::ptr& conn)
+onConnection	JKYi/reactor/examples/hub/pubsub.h	/^    void onConnection(const JKYi::net::TcpConnection::ptr& conn);$/;"	p	class:pubsub::PubSubClient	access:private	signature:(const JKYi::net::TcpConnection::ptr& conn)
 onConnection	JKYi/reactor/examples/idleconnection/echo.cc	/^void EchoServer::onConnection(const TcpConnection::ptr& conn){$/;"	f	class:EchoServer	signature:(const TcpConnection::ptr& conn)
 onConnection	JKYi/reactor/examples/idleconnection/echo.h	/^    void onConnection(const JKYi::net::TcpConnection::ptr& conn);$/;"	p	class:EchoServer	access:private	signature:(const JKYi::net::TcpConnection::ptr& conn)
 onConnection	JKYi/reactor/examples/idleconnection/sortedList.cc	/^    void onConnection(const TcpConnection::ptr& conn);$/;"	p	class:EchoServer	file:	access:private	signature:(const TcpConnection::ptr& conn)
@@ -8707,6 +8299,9 @@ onDisconnect	JKYi/module.h	/^    void onDisconnect(Stream::ptr stream);$/;"	p	cl
 onLoad	JKYi/module.cc	/^bool Module::onLoad(){$/;"	f	class:JKYi::Module	signature:()
 onLoad	JKYi/module.h	/^    virtual bool onLoad();$/;"	p	class:JKYi::Module	access:public	signature:()
 onLoad	template/template/my_module.cc	/^bool MyModule::onLoad(){$/;"	f	class:name_space::MyModule	signature:()
+onMessage	JKYi/reactor/examples/hub/hub.cc	/^    void onMessage(const TcpConnection::ptr& conn,Buffer* buf,Timestamp receiveTime){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const TcpConnection::ptr& conn,Buffer* buf,Timestamp receiveTime)
+onMessage	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::onMessage(const TcpConnection::ptr& conn,Buffer* buf,Timestamp time){$/;"	f	class:PubSubClient	signature:(const TcpConnection::ptr& conn,Buffer* buf,Timestamp time)
+onMessage	JKYi/reactor/examples/hub/pubsub.h	/^    void onMessage(const JKYi::net::TcpConnection::ptr& conn,JKYi::net::Buffer* buf,JKYi::net::Timestamp receiveTime);$/;"	p	class:pubsub::PubSubClient	access:private	signature:(const JKYi::net::TcpConnection::ptr& conn,JKYi::net::Buffer* buf,JKYi::net::Timestamp receiveTime)
 onMessage	JKYi/reactor/examples/idleconnection/echo.cc	/^void EchoServer::onMessage(const TcpConnection::ptr& conn,$/;"	f	class:EchoServer	signature:(const TcpConnection::ptr& conn, Buffer* buf,Timestamp receiveTime)
 onMessage	JKYi/reactor/examples/idleconnection/echo.h	/^    void onMessage(const JKYi::net::TcpConnection::ptr& conn,JKYi::net::Buffer* buf,JKYi::net::Timestamp receiveTime);$/;"	p	class:EchoServer	access:private	signature:(const JKYi::net::TcpConnection::ptr& conn,JKYi::net::Buffer* buf,JKYi::net::Timestamp receiveTime)
 onMessage	JKYi/reactor/examples/idleconnection/sortedList.cc	/^    void onMessage(const TcpConnection::ptr& conn,Buffer* buf,Timestamp receiveTime);$/;"	p	class:EchoServer	file:	access:private	signature:(const TcpConnection::ptr& conn,Buffer* buf,Timestamp receiveTime)
@@ -9078,6 +8673,8 @@ parseFromByteArray	JKYi/protocol.cc	/^bool Notify::parseFromByteArray(ByteArray:
 parseFromByteArray	JKYi/protocol.cc	/^bool Request::parseFromByteArray(ByteArray::ptr bytearray){$/;"	f	class:JKYi::Request	signature:(ByteArray::ptr bytearray)
 parseFromByteArray	JKYi/protocol.cc	/^bool Response::parseFromByteArray(ByteArray::ptr bytearray){$/;"	f	class:JKYi::Response	signature:(ByteArray::ptr bytearray)
 parseFromByteArray	JKYi/protocol.h	/^    virtual bool parseFromByteArray(ByteArray::ptr bytearray) = 0;$/;"	p	class:JKYi::Message	access:public	signature:(ByteArray::ptr bytearray)
+parseMessage	JKYi/reactor/examples/hub/codec.cc	/^ParseResult pubsub::parseMessage(Buffer* buf,$/;"	f	class:pubsub	signature:(Buffer* buf, std::string* cmd, std::string* topic, std::string* content)
+parseMessage	JKYi/reactor/examples/hub/codec.h	/^ParseResult parseMessage(JKYi::net::Buffer* buf,$/;"	p	namespace:pubsub	signature:(JKYi::net::Buffer* buf, std::string * cmd, std::string * topic, std::string * content)
 payload	JKYi/http/ws_session.h	/^   uint32_t payload: 7;$/;"	m	struct:JKYi::http::WSFrameHead	access:public
 pcmd	JKYi/db/redis.cc	/^void FoxRedis::pcmd(FCtx * fctx){$/;"	f	class:JKYi::FoxRedis	signature:(FCtx * fctx)
 pcmd	JKYi/db/redis.cc	/^void FoxRedisCluster::pcmd(FCtx* fctx){$/;"	f	class:JKYi::FoxRedisCluster	signature:(FCtx* fctx)
@@ -9235,13 +8832,66 @@ ptr	JKYi/worker.h	/^    typedef std::shared_ptr<WorkerManager> ptr;$/;"	t	class:
 ptr	JKYi/zk_client.h	/^    typedef std::shared_ptr<ZKClient> ptr;$/;"	t	class:JKYi::ZKClient	access:public
 ptr	template/template/my_module.h	/^    typedef std::shared_ptr<MyModule> ptr;$/;"	t	class:name_space::MyModule	access:public
 ptr_	JKYi/reactor/StringPiece.h	/^  const char*   ptr_;$/;"	m	class:JKYi::net::StringPiece	access:private
+publish	JKYi/reactor/examples/hub/hub.cc	/^    void publish(const std::string& content,Timestamp time){$/;"	f	class:pubsub::Topic	access:public	signature:(const std::string& content,Timestamp time)
+publish	JKYi/reactor/examples/hub/pubsub.cc	/^bool PubSubClient::publish(const std::string& topic,$/;"	f	class:PubSubClient	signature:(const std::string& topic, const std::string& content)
+publish	JKYi/reactor/examples/hub/pubsub.h	/^    bool publish(const std::string& topic,const std::string& content);$/;"	p	class:pubsub::PubSubClient	access:public	signature:(const std::string& topic,const std::string& content)
+pubsub	JKYi/reactor/examples/hub/codec.h	/^namespace pubsub{$/;"	n
+pubsub	JKYi/reactor/examples/hub/hub.cc	/^namespace pubsub{$/;"	n	file:
+pubsub	JKYi/reactor/examples/hub/pubsub.h	/^namespace pubsub{$/;"	n
+pubsub::ConnectionSubscription	JKYi/reactor/examples/hub/hub.cc	/^typedef std::set<std::string> ConnectionSubscription;  \/\/用作TcpConnection的上下文，里面存储的是该连接所关注的topic$/;"	t	namespace:pubsub	file:
+pubsub::ParseResult	JKYi/reactor/examples/hub/codec.h	/^enum ParseResult{$/;"	g	namespace:pubsub
+pubsub::PubSubClient	JKYi/reactor/examples/hub/pubsub.h	/^class PubSubClient : public boost::noncopyable{$/;"	c	namespace:pubsub	inherits:boost::noncopyable
+pubsub::PubSubClient::ConnectionCallback	JKYi/reactor/examples/hub/pubsub.h	/^    typedef std::function<void (PubSubClient*)> ConnectionCallback;$/;"	t	class:pubsub::PubSubClient	access:public
+pubsub::PubSubClient::PubSubClient	JKYi/reactor/examples/hub/pubsub.h	/^    PubSubClient(JKYi::net::EventLoop* loop,$/;"	p	class:pubsub::PubSubClient	access:public	signature:(JKYi::net::EventLoop* loop, const JKYi::Address::ptr& serverAddr, const std::string& name)
+pubsub::PubSubClient::SubscribeCallback	JKYi/reactor/examples/hub/pubsub.h	/^                                JKYi::net::Timestamp)> SubscribeCallback;$/;"	t	class:pubsub::PubSubClient	access:public
+pubsub::PubSubClient::client_	JKYi/reactor/examples/hub/pubsub.h	/^    JKYi::net::TcpClient client_;$/;"	m	class:pubsub::PubSubClient	access:private
+pubsub::PubSubClient::conn_	JKYi/reactor/examples/hub/pubsub.h	/^    JKYi::net::TcpConnection::ptr conn_;$/;"	m	class:pubsub::PubSubClient	access:private
+pubsub::PubSubClient::connected	JKYi/reactor/examples/hub/pubsub.h	/^    bool connected()const;$/;"	p	class:pubsub::PubSubClient	access:public	signature:() const
+pubsub::PubSubClient::connectionCallback_	JKYi/reactor/examples/hub/pubsub.h	/^    ConnectionCallback connectionCallback_;$/;"	m	class:pubsub::PubSubClient	access:private
+pubsub::PubSubClient::onConnection	JKYi/reactor/examples/hub/pubsub.h	/^    void onConnection(const JKYi::net::TcpConnection::ptr& conn);$/;"	p	class:pubsub::PubSubClient	access:private	signature:(const JKYi::net::TcpConnection::ptr& conn)
+pubsub::PubSubClient::onMessage	JKYi/reactor/examples/hub/pubsub.h	/^    void onMessage(const JKYi::net::TcpConnection::ptr& conn,JKYi::net::Buffer* buf,JKYi::net::Timestamp receiveTime);$/;"	p	class:pubsub::PubSubClient	access:private	signature:(const JKYi::net::TcpConnection::ptr& conn,JKYi::net::Buffer* buf,JKYi::net::Timestamp receiveTime)
+pubsub::PubSubClient::publish	JKYi/reactor/examples/hub/pubsub.h	/^    bool publish(const std::string& topic,const std::string& content);$/;"	p	class:pubsub::PubSubClient	access:public	signature:(const std::string& topic,const std::string& content)
+pubsub::PubSubClient::send	JKYi/reactor/examples/hub/pubsub.h	/^    bool send(const std::string& message);$/;"	p	class:pubsub::PubSubClient	access:private	signature:(const std::string& message)
+pubsub::PubSubClient::setConnectionCallback	JKYi/reactor/examples/hub/pubsub.h	/^    void setConnectionCallback(const ConnectionCallback& cb){$/;"	f	class:pubsub::PubSubClient	access:public	signature:(const ConnectionCallback& cb)
+pubsub::PubSubClient::start	JKYi/reactor/examples/hub/pubsub.h	/^    void start();$/;"	p	class:pubsub::PubSubClient	access:public	signature:()
+pubsub::PubSubClient::stop	JKYi/reactor/examples/hub/pubsub.h	/^    void stop();$/;"	p	class:pubsub::PubSubClient	access:public	signature:()
+pubsub::PubSubClient::subscribe	JKYi/reactor/examples/hub/pubsub.h	/^    bool subscribe(const std::string& topic,const SubscribeCallback& cb);$/;"	p	class:pubsub::PubSubClient	access:public	signature:(const std::string& topic,const SubscribeCallback& cb)
+pubsub::PubSubClient::subscribeCallback_	JKYi/reactor/examples/hub/pubsub.h	/^    SubscribeCallback subscribeCallback_;$/;"	m	class:pubsub::PubSubClient	access:private
+pubsub::PubSubClient::unsubscribe	JKYi/reactor/examples/hub/pubsub.h	/^    void unsubscribe(const std::string& topic);$/;"	p	class:pubsub::PubSubClient	access:public	signature:(const std::string& topic)
+pubsub::PubSubServer	JKYi/reactor/examples/hub/hub.cc	/^class PubSubServer : public boost::noncopyable{$/;"	c	namespace:pubsub	file:	inherits:boost::noncopyable
+pubsub::PubSubServer::PubSubServer	JKYi/reactor/examples/hub/hub.cc	/^    PubSubServer(EventLoop* loop,const Address::ptr& serverAddr)$/;"	f	class:pubsub::PubSubServer	access:public	signature:(EventLoop* loop,const Address::ptr& serverAddr)
+pubsub::PubSubServer::doPublish	JKYi/reactor/examples/hub/hub.cc	/^    void doPublish(const std::string& source,$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const std::string& source, const std::string& topic, const std::string& content, Timestamp time)
+pubsub::PubSubServer::doSubscribe	JKYi/reactor/examples/hub/hub.cc	/^    void doSubscribe(const TcpConnection::ptr& conn,const std::string& topic){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const TcpConnection::ptr& conn,const std::string& topic)
+pubsub::PubSubServer::doUnsubscribe	JKYi/reactor/examples/hub/hub.cc	/^    void doUnsubscribe(const TcpConnection::ptr& conn,const std::string& topic){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const TcpConnection::ptr& conn,const std::string& topic)
+pubsub::PubSubServer::getTopic	JKYi/reactor/examples/hub/hub.cc	/^    Topic& getTopic(const std::string& topic){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const std::string& topic)
+pubsub::PubSubServer::loop_	JKYi/reactor/examples/hub/hub.cc	/^    EventLoop* loop_;$/;"	m	class:pubsub::PubSubServer	file:	access:private
+pubsub::PubSubServer::onConnection	JKYi/reactor/examples/hub/hub.cc	/^    void onConnection(const TcpConnection::ptr& conn){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const TcpConnection::ptr& conn)
+pubsub::PubSubServer::onMessage	JKYi/reactor/examples/hub/hub.cc	/^    void onMessage(const TcpConnection::ptr& conn,Buffer* buf,Timestamp receiveTime){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:(const TcpConnection::ptr& conn,Buffer* buf,Timestamp receiveTime)
+pubsub::PubSubServer::server_	JKYi/reactor/examples/hub/hub.cc	/^    TcpServer server_;$/;"	m	class:pubsub::PubSubServer	file:	access:private
+pubsub::PubSubServer::start	JKYi/reactor/examples/hub/hub.cc	/^    void start(){$/;"	f	class:pubsub::PubSubServer	access:public	signature:()
+pubsub::PubSubServer::timePublish	JKYi/reactor/examples/hub/hub.cc	/^    void timePublish(){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:()
+pubsub::PubSubServer::topics_	JKYi/reactor/examples/hub/hub.cc	/^    std::map<std::string,Topic> topics_; $/;"	m	class:pubsub::PubSubServer	file:	access:private
+pubsub::Topic	JKYi/reactor/examples/hub/hub.cc	/^class Topic{$/;"	c	namespace:pubsub	file:
+pubsub::Topic::Topic	JKYi/reactor/examples/hub/hub.cc	/^    Topic(const std::string & topic)$/;"	f	class:pubsub::Topic	access:public	signature:(const std::string & topic)
+pubsub::Topic::add	JKYi/reactor/examples/hub/hub.cc	/^    void add(const TcpConnection::ptr& conn){$/;"	f	class:pubsub::Topic	access:public	signature:(const TcpConnection::ptr& conn)
+pubsub::Topic::audiences_	JKYi/reactor/examples/hub/hub.cc	/^    std::set<TcpConnection::ptr> audiences_;  \/\/目前关注了该topic的sub的连接$/;"	m	class:pubsub::Topic	file:	access:private
+pubsub::Topic::content_	JKYi/reactor/examples/hub/hub.cc	/^    std::string content_;$/;"	m	class:pubsub::Topic	file:	access:private
+pubsub::Topic::lastPubTime_	JKYi/reactor/examples/hub/hub.cc	/^    Timestamp lastPubTime_;  \/\/上一次pub的时间$/;"	m	class:pubsub::Topic	file:	access:private
+pubsub::Topic::makeMessage	JKYi/reactor/examples/hub/hub.cc	/^    std::string makeMessage(){$/;"	f	class:pubsub::Topic	file:	access:private	signature:()
+pubsub::Topic::publish	JKYi/reactor/examples/hub/hub.cc	/^    void publish(const std::string& content,Timestamp time){$/;"	f	class:pubsub::Topic	access:public	signature:(const std::string& content,Timestamp time)
+pubsub::Topic::remove	JKYi/reactor/examples/hub/hub.cc	/^    void remove(const TcpConnection::ptr& conn){$/;"	f	class:pubsub::Topic	access:public	signature:(const TcpConnection::ptr& conn)
+pubsub::Topic::topic_	JKYi/reactor/examples/hub/hub.cc	/^    std::string topic_;$/;"	m	class:pubsub::Topic	file:	access:private
+pubsub::g_logger	JKYi/reactor/examples/hub/hub.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:pubsub	file:
+pubsub::kContinue	JKYi/reactor/examples/hub/codec.h	/^    kContinue = 2,$/;"	e	enum:pubsub::ParseResult
+pubsub::kError	JKYi/reactor/examples/hub/codec.h	/^    kError = 0,$/;"	e	enum:pubsub::ParseResult
+pubsub::kSuccess	JKYi/reactor/examples/hub/codec.h	/^    kSuccess = 1,$/;"	e	enum:pubsub::ParseResult
+pubsub::parseMessage	JKYi/reactor/examples/hub/codec.cc	/^ParseResult pubsub::parseMessage(Buffer* buf,$/;"	f	class:pubsub	signature:(Buffer* buf, std::string* cmd, std::string* topic, std::string* content)
+pubsub::parseMessage	JKYi/reactor/examples/hub/codec.h	/^ParseResult parseMessage(JKYi::net::Buffer* buf,$/;"	p	namespace:pubsub	signature:(JKYi::net::Buffer* buf, std::string * cmd, std::string * topic, std::string * content)
 push	JKYi/BlockingQueue.h	/^    void push(T&& t){$/;"	f	class:JKYi::BlockingQueue	access:public	signature:(T&& t)
 push	JKYi/BlockingQueue.h	/^    void push(const T& t){$/;"	f	class:JKYi::BlockingQueue	access:public	signature:(const T& t)
 push	JKYi/BoundedBlockingQueue.h	/^    void push(T&& t){$/;"	f	class:JKYi::BoundedBlockingQueue	access:public	signature:(T&& t)
 push	JKYi/BoundedBlockingQueue.h	/^    void push(const T& t){$/;"	f	class:JKYi::BoundedBlockingQueue	access:public	signature:(const T& t)
 push	JKYi/ds/blocking_queue.h	/^    size_t push(const data_type& data){$/;"	f	class:JKYi::ds::BlockingQueue	access:public	signature:(const data_type& data)
-qnxnto	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
-qnxnto	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
 query	JKYi/db/db.h	/^    virtual ISQLData::ptr query() = 0;$/;"	p	class:JKYi::IStmt	access:public	signature:()
 query	JKYi/db/db.h	/^    virtual ISQLData::ptr query(const char * format,...) = 0;$/;"	p	class:JKYi::ISQLQuery	access:public	signature:(const char * format,...)
 query	JKYi/db/db.h	/^    virtual ISQLData::ptr query(const std::string& sql) = 0;$/;"	p	class:JKYi::ISQLQuery	access:public	signature:(const std::string& sql)
@@ -9427,6 +9077,7 @@ release_questioner	sample/protobuf/query.pb.h	/^inline std::string* Answer::rele
 release_questioner	sample/protobuf/query.pb.h	/^inline std::string* Query::release_questioner() {$/;"	f	class:test::Query	signature:()
 remove	JKYi/reactor/channel.cc	/^void Channel::remove(){$/;"	f	class:JKYi::net::Channel	signature:()
 remove	JKYi/reactor/channel.h	/^    void remove();$/;"	p	class:JKYi::net::Channel	access:public	signature:()
+remove	JKYi/reactor/examples/hub/hub.cc	/^    void remove(const TcpConnection::ptr& conn){$/;"	f	class:pubsub::Topic	access:public	signature:(const TcpConnection::ptr& conn)
 removeAndResetChannel	JKYi/reactor/Connector.cc	/^int Connector::removeAndResetChannel(){$/;"	f	class:JKYi::net::Connector	signature:()
 removeAndResetChannel	JKYi/reactor/Connector.h	/^    int removeAndResetChannel();$/;"	p	class:JKYi::net::Connector	access:private	signature:()
 removeChannel	JKYi/reactor/EventLoop.cc	/^void EventLoop::removeChannel(Channel* channel){$/;"	f	class:JKYi::net::EventLoop	signature:(Channel* channel)
@@ -9558,6 +9209,8 @@ send	JKYi/reactor/TcpConnection.cc	/^void TcpConnection::send(const void * data,
 send	JKYi/reactor/TcpConnection.h	/^    void send(Buffer* message);$/;"	p	class:JKYi::net::TcpConnection	access:public	signature:(Buffer* message)
 send	JKYi/reactor/TcpConnection.h	/^    void send(const StringPiece& message);$/;"	p	class:JKYi::net::TcpConnection	access:public	signature:(const StringPiece& message)
 send	JKYi/reactor/TcpConnection.h	/^    void send(const void * message,int len);$/;"	p	class:JKYi::net::TcpConnection	access:public	signature:(const void * message,int len)
+send	JKYi/reactor/examples/hub/pubsub.cc	/^bool PubSubClient::send(const std::string& message){$/;"	f	class:PubSubClient	signature:(const std::string& message)
+send	JKYi/reactor/examples/hub/pubsub.h	/^    bool send(const std::string& message);$/;"	p	class:pubsub::PubSubClient	access:private	signature:(const std::string& message)
 send	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^void ProtobufCodecLite::send(const TcpConnection::ptr& conn,$/;"	f	class:ProtobufCodecLite	signature:(const TcpConnection::ptr& conn, const ::google::protobuf::Message& message)
 send	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^    void send(const TcpConnection::ptr& conn, const MSG& message){$/;"	f	class:JKYi::net::ProtobufCodecLiteT	access:public	signature:(const TcpConnection::ptr& conn, const MSG& message)
 send	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^    void send(const TcpConnection::ptr& conn,const ::google::protobuf::Message& message);$/;"	p	class:JKYi::net::ProtobufCodecLite	access:public	signature:(const TcpConnection::ptr& conn,const ::google::protobuf::Message& message)
@@ -9607,6 +9260,7 @@ serializeToByteArray	JKYi/protocol.cc	/^bool Response::serializeToByteArray(Byte
 serializeToByteArray	JKYi/protocol.h	/^    virtual bool serializeToByteArray(ByteArray::ptr bytearray) = 0;$/;"	p	class:JKYi::Message	access:public	signature:(ByteArray::ptr bytearray)
 serverAddr_	JKYi/reactor/Connector.h	/^    Address::ptr serverAddr_;  \/\/要连接的服务器端的地址$/;"	m	class:JKYi::net::Connector	access:private
 serverAddress	JKYi/reactor/Connector.h	/^    const Address::ptr& serverAddress()const { return serverAddr_; }$/;"	f	class:JKYi::net::Connector	access:public	signature:() const
+server_	JKYi/reactor/examples/hub/hub.cc	/^    TcpServer server_;$/;"	m	class:pubsub::PubSubServer	file:	access:private
 server_	JKYi/reactor/examples/idleconnection/echo.h	/^    JKYi::net::TcpServer server_;$/;"	m	class:EchoServer	access:private
 server_	JKYi/reactor/examples/idleconnection/sortedList.cc	/^    TcpServer server_;$/;"	m	class:EchoServer	file:	access:private
 server_	JKYi/reactor/examples/maxconnection/echo.h	/^   JKYi::net::TcpServer server_;$/;"	m	class:EchoServer	access:private
@@ -9633,6 +9287,7 @@ setConf	JKYi/tcp_server.h	/^    void setConf(const TcpServerConf& v);$/;"	p	clas
 setConnectionCallback	JKYi/reactor/TcpClient.h	/^    void setConnectionCallback(ConnectionCallback cb){$/;"	f	class:JKYi::net::TcpClient	access:public	signature:(ConnectionCallback cb)
 setConnectionCallback	JKYi/reactor/TcpConnection.h	/^    void setConnectionCallback(const ConnectionCallback& cb){$/;"	f	class:JKYi::net::TcpConnection	access:public	signature:(const ConnectionCallback& cb)
 setConnectionCallback	JKYi/reactor/TcpServer.h	/^    void setConnectionCallback(const ConnectionCallback& cb){$/;"	f	class:JKYi::net::TcpServer	access:public	signature:(const ConnectionCallback& cb)
+setConnectionCallback	JKYi/reactor/examples/hub/pubsub.h	/^    void setConnectionCallback(const ConnectionCallback& cb){$/;"	f	class:pubsub::PubSubClient	access:public	signature:(const ConnectionCallback& cb)
 setContext	JKYi/reactor/EventLoop.h	/^    void setContext(const boost::any& context){$/;"	f	class:JKYi::net::EventLoop	access:public	signature:(const boost::any& context)
 setContext	JKYi/reactor/TcpConnection.h	/^    void setContext(const boost::any& context){$/;"	f	class:JKYi::net::TcpConnection	access:public	signature:(const boost::any& context)
 setCookie	JKYi/http/http.cc	/^void HttpRequest::setCookie(const std::string& key,const std::string& value){$/;"	f	class:JKYi::http::HttpRequest	signature:(const std::string& key,const std::string& value)
@@ -9884,6 +9539,9 @@ start	JKYi/reactor/TcpServer.cc	/^void TcpServer::start(){$/;"	f	class:JKYi::net
 start	JKYi/reactor/TcpServer.h	/^    void start();$/;"	p	class:JKYi::net::TcpServer	access:public	signature:()
 start	JKYi/reactor/Thread.cc	/^void Thread::start(){$/;"	f	class:JKYi::net::Thread	signature:()
 start	JKYi/reactor/Thread.h	/^    void start();$/;"	p	class:JKYi::net::Thread	access:public	signature:()
+start	JKYi/reactor/examples/hub/hub.cc	/^    void start(){$/;"	f	class:pubsub::PubSubServer	access:public	signature:()
+start	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::start(){$/;"	f	class:PubSubClient	signature:()
+start	JKYi/reactor/examples/hub/pubsub.h	/^    void start();$/;"	p	class:pubsub::PubSubClient	access:public	signature:()
 start	JKYi/reactor/examples/idleconnection/echo.cc	/^void EchoServer::start(){$/;"	f	class:EchoServer	signature:()
 start	JKYi/reactor/examples/idleconnection/echo.h	/^    void start();$/;"	p	class:EchoServer	access:public	signature:()
 start	JKYi/reactor/examples/idleconnection/sortedList.cc	/^    void start(){$/;"	f	class:EchoServer	access:public	signature:()
@@ -9937,6 +9595,8 @@ stop	JKYi/reactor/Connector.cc	/^void Connector::stop(){$/;"	f	class:JKYi::net::
 stop	JKYi/reactor/Connector.h	/^    void stop();        \/\/can be called in any thread$/;"	p	class:JKYi::net::Connector	access:public	signature:()
 stop	JKYi/reactor/TcpClient.cc	/^void TcpClient::stop(){$/;"	f	class:JKYi::net::TcpClient	signature:()
 stop	JKYi/reactor/TcpClient.h	/^    void stop();$/;"	p	class:JKYi::net::TcpClient	access:public	signature:()
+stop	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::stop(){$/;"	f	class:PubSubClient	signature:()
+stop	JKYi/reactor/examples/hub/pubsub.h	/^    void stop();$/;"	p	class:pubsub::PubSubClient	access:public	signature:()
 stop	JKYi/scheduler.cc	/^void Scheduler::stop(){$/;"	f	class:JKYi::Scheduler	signature:()
 stop	JKYi/scheduler.h	/^   void stop();$/;"	p	class:JKYi::Scheduler	access:public	signature:()
 stop	JKYi/tcp_server.cc	/^void TcpServer::stop(){$/;"	f	class:JKYi::TcpServer	signature:()
@@ -9960,6 +9620,10 @@ stream_id	JKYi/http2/frame.h	/^            uint32_t stream_id : 31;$/;"	m	struct
 subnetMaskAddress	JKYi/address.cc	/^IPAddress::ptr IPv4Address::subnetMaskAddress(uint32_t prefix_len){$/;"	f	class:JKYi::IPv4Address	signature:(uint32_t prefix_len)
 subnetMaskAddress	JKYi/address.cc	/^IPAddress::ptr IPv6Address::subnetMaskAddress(uint32_t prefix_len){$/;"	f	class:JKYi::IPv6Address	signature:(uint32_t prefix_len)
 subnetMaskAddress	JKYi/address.h	/^	virtual IPAddress::ptr subnetMaskAddress(uint32_t prefix_len)=0;$/;"	p	class:JKYi::IPAddress	access:public	signature:(uint32_t prefix_len)
+subscribe	JKYi/reactor/examples/hub/pubsub.cc	/^bool PubSubClient::subscribe(const std::string& topic,$/;"	f	class:PubSubClient	signature:(const std::string& topic, const SubscribeCallback& cb)
+subscribe	JKYi/reactor/examples/hub/pubsub.h	/^    bool subscribe(const std::string& topic,const SubscribeCallback& cb);$/;"	p	class:pubsub::PubSubClient	access:public	signature:(const std::string& topic,const SubscribeCallback& cb)
+subscribeCallback_	JKYi/reactor/examples/hub/pubsub.h	/^    SubscribeCallback subscribeCallback_;$/;"	m	class:pubsub::PubSubClient	access:private
+subscription	JKYi/reactor/examples/hub/sub.cc	/^void subscription(const std::string& topic,const std::string& content,Timestamp time){$/;"	f	signature:(const std::string& topic,const std::string& content,Timestamp time)
 sum	tests/test_scheduler.cc	/^uint64_t sum=0;$/;"	v
 swap	JKYi/reactor/Buffer.h	/^    void swap(Buffer& rhv){$/;"	f	class:JKYi::net::Buffer	access:public	signature:(Buffer& rhv)
 swap	JKYi/timestamp.h	/^    void swap(Timestamp& rhv){$/;"	f	class:JKYi::net::Timestamp	access:public	signature:(Timestamp& rhv)
@@ -10355,6 +10019,7 @@ tie	JKYi/reactor/channel.h	/^    void tie(const std::shared_ptr<void>&);$/;"	p	c
 tie_	JKYi/reactor/channel.h	/^    std::weak_ptr<void> tie_;$/;"	m	class:JKYi::net::Channel	access:private
 tied_	JKYi/reactor/channel.h	/^    bool tied_;$/;"	m	class:JKYi::net::Channel	access:private
 timeDifference	JKYi/timestamp.h	/^inline double timeDifference(const Timestamp& high,const Timestamp& low){$/;"	f	namespace:JKYi::net	signature:(const Timestamp& high,const Timestamp& low)
+timePublish	JKYi/reactor/examples/hub/hub.cc	/^    void timePublish(){$/;"	f	class:pubsub::PubSubServer	file:	access:private	signature:()
 time_t_to_mysql_time	JKYi/db/mysql.h	/^bool time_t_to_mysql_time(const time_t& ts,MYSQL_TIME& mt);$/;"	p	namespace:JKYi	signature:(const time_t& ts,MYSQL_TIME& mt)
 time_to_mysql_time	JKYi/db/mysql.cc	/^bool time_to_mysql_time(const time_t& ts,MYSQL_TIME& mt){$/;"	f	namespace:JKYi	signature:(const time_t& ts,MYSQL_TIME& mt)
 timeout	JKYi/db/redis.h	/^        bool timeout;$/;"	m	struct:JKYi::FoxRedis::Ctx	access:public
@@ -10434,6 +10099,8 @@ toYamlString	JKYi/log.cc	/^std::string StdoutLogAppender::toYamlString(){$/;"	f	
 toYamlString	JKYi/log.h	/^     std::string toYamlString();$/;"	p	class:JKYi::LoggerManager	access:public	signature:()
 toYamlString	JKYi/log.h	/^    std::string toYamlString();$/;"	p	class:JKYi::Logger	access:public	signature:()
 toYamlString	JKYi/log.h	/^    virtual std::string toYamlString() = 0;$/;"	p	class:JKYi::LogAppender	access:public	signature:()
+topic_	JKYi/reactor/examples/hub/hub.cc	/^    std::string topic_;$/;"	m	class:pubsub::Topic	file:	access:private
+topics_	JKYi/reactor/examples/hub/hub.cc	/^    std::map<std::string,Topic> topics_; $/;"	m	class:pubsub::PubSubServer	file:	access:private
 transferred_	JKYi/reactor/examples/netty/discard/server.cc	/^    AtomicInt64 transferred_;  \/\/记录这段时间收到的字节数$/;"	m	class:DiscardServer	file:	access:private
 triggerEvent	JKYi/iomanager.cc	/^void IOManager::FdContext::triggerEvent(IOManager::Event event){$/;"	f	class:JKYi::IOManager::FdContext	signature:(IOManager::Event event)
 triggerEvent	JKYi/iomanager.h	/^	 void triggerEvent(Event event);$/;"	p	struct:JKYi::IOManager::FdContext	access:public	signature:(Event event)
@@ -10456,6 +10123,8 @@ unlock	JKYi/mutex.h	/^  void unlock(){$/;"	f	class:JKYi::ScopedLockImpl	access:p
 unlock	JKYi/mutex.h	/^  void unlock(){$/;"	f	class:JKYi::WriteScopedLockImpl	access:public	signature:()
 unsetThis	JKYi/db/fox_thread.cc	/^void FoxThread::unsetThis(){$/;"	f	class:JKYi::FoxThread	signature:()
 unsetThis	JKYi/db/fox_thread.h	/^    void unsetThis();$/;"	p	class:JKYi::FoxThread	access:public	signature:()
+unsubscribe	JKYi/reactor/examples/hub/pubsub.cc	/^void PubSubClient::unsubscribe(const std::string& topic){$/;"	f	class:PubSubClient	signature:(const std::string& topic)
+unsubscribe	JKYi/reactor/examples/hub/pubsub.h	/^    void unsubscribe(const std::string& topic);$/;"	p	class:pubsub::PubSubClient	access:public	signature:(const std::string& topic)
 unwrite	JKYi/reactor/Buffer.h	/^    void unwrite(size_t len){$/;"	f	class:JKYi::net::Buffer	access:public	signature:(size_t len)
 update	JKYi/http2/dynamic_table.cc	/^int32_t DynamicTable::update(const std::string& name,const std::string& value){$/;"	f	class:JKYi::http2::DynamicTable	signature:(const std::string& name,const std::string& value)
 update	JKYi/http2/dynamic_table.h	/^    int32_t update(const std::string& name,const std::string& value);$/;"	p	class:JKYi::http2::DynamicTable	access:public	signature:(const std::string& name,const std::string& value)
@@ -10483,7 +10152,6 @@ validateChecksum	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^    static bool vali
 value	JKYi/http2/frame.h	/^    uint32_t value = 0;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsItem	access:public
 value	JKYi/http2/hpack.h	/^    std::string value;$/;"	m	struct:JKYi::http2::IndexType::HeaderField	access:public
 value_	JKYi/atomic.h	/^    volatile T value_;$/;"	m	class:JKYi::AtomicIntegerT	access:private
-volatile	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:
 wait	JKYi/CountDownLatch.cc	/^void CountDownLatch::wait(){$/;"	f	class:JKYi::CountDownLatch	signature:()
 wait	JKYi/CountDownLatch.h	/^    void wait();$/;"	p	class:JKYi::CountDownLatch	access:public	signature:()
 wait	JKYi/condition.h	/^    void wait(){$/;"	f	class:JKYi::Condition	access:public	signature:()

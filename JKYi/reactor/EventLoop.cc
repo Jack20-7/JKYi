@@ -63,7 +63,7 @@ EventLoop::EventLoop()
      wakeupChannel_(new Channel(this,wakeupFd_)),
      currentActiveChannel_(nullptr){
      JKYI_LOG_DEBUG(g_logger) << " EventLoop created " << this 
-                             << "in thread" << threadId_;
+                             << "in thread " << threadId_;
 
     if(t_loopInThisThread){
         JKYI_LOG_DEBUG(g_logger) << " Anthor EventLoop " << t_loopInThisThread
@@ -132,6 +132,7 @@ void EventLoop::queueInLoop(Functor cb){
         pendingFunctors_.push_back(std::move(cb));
     }
     if(!isInLoopThread() || callingPendingFunctors_){
+        //第二个唤醒条件说明当前就是在io线程调用的queueInLoop函数，但是是在进行doPendingFunction内部的function中调用的，为了避免出现死循环，所以需压迫wakeup一下
         wakeup();
     }
 }
