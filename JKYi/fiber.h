@@ -54,33 +54,39 @@ public:
 
    //将传入的协程设置为当前正在执行的协程
    static void SetThis(Fiber*f);
-   //
+   
    static Fiber::ptr GetThis();
    //将当前正在执行的协程设置为就绪态
    static void YieldToReady();
-   //
+   
    static void YieldToHold();
    //返回当前的协程总数
    static uint64_t TotalFibers();
-   //
+   
    static void MainFunc();
-   //
+   
    static void CallerMainFunc();
+
    //返回当前协程的id
    static uint64_t GetFiberId();
 private:
-   //协程id、
+   //协程id
    uint64_t m_id = 0;
+
    //协程运行栈的大小
    uint32_t m_stacksize = 0;
+
    //协程的栈
    void *m_stack = nullptr;
+
    //协程的状态
    State m_state = INIT;
+
    //协程的上下文(CPU上下文，栈)的相关信息
    ucontext_t m_ctx;
+
    //协程的执行函数
-   std::function<void ()>m_cb;
+   std::function<void ()> m_cb;
    
 };
 }

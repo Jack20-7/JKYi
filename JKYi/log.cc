@@ -224,7 +224,7 @@ LogEvent::LogEvent(std::shared_ptr<Logger>logger
 Logger::Logger(const std::string& name)
     :m_name(name)
     ,m_level(LogLevel::DEBUG){       //%d表示时间   %p表示级别  %f表示文件名   %l表示行号  %m表示消息  %n表示换行
-        m_formatter.reset(new LogFormatter("%d{%Y-%m-%d %H:%M:%S}%T%t%T%N%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"));
+    m_formatter.reset(new LogFormatter("%d{%Y-%m-%d %H:%M:%S}%T%t%T%N%T%F%T[%p]%T[%c]%T%f:%l%T%m%n"));
 }
 
 void Logger::addAppender(LogAppender::ptr appender){
@@ -351,6 +351,8 @@ LogFormatter::ptr LogAppender::getFormatter(){
   MutexType::Lock lock(m_mutex);
   return m_formatter;
 }
+
+//每一个appenders都用自己的输出级别，在调用log进行日志输出时，需要传入一个level，只有当传入的level >= 该appender的级别时，日志才会输出
 void StdoutLogAppender::log(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event){
     if(level >= m_level){
 		MutexType::Lock lock(m_mutex);
@@ -559,21 +561,21 @@ LoggerManager::LoggerManager(){
     m_loggers[m_root->getName()] = m_root;
     init();
 }
-Logger::ptr LoggerManager::getLogger(const std::string&name){
+Logger::ptr LoggerManager::getLogger(const std::string& name){
 	MutexType::Lock lock(m_mutex);
-    auto it=m_loggers.find(name);
-    if(it!=m_loggers.end()){
+    auto it = m_loggers.find(name);
+    if(it != m_loggers.end()){
         return it->second;
     }
     //如果不存在的话
     Logger::ptr logger(new Logger(name));
-    logger->m_root=this->m_root;
-    m_loggers[name]=logger;
+    logger->m_root = this->m_root;
+    m_loggers[name] = logger;
     return logger;
 }
 struct LogAppenderDefine{
-    int type=0;//2表示Stdout，1表示file
-    LogLevel::Level level=LogLevel::UNKNOW;
+    int type = 0;//2表示Stdout，1表示file
+    LogLevel::Level level = LogLevel::UNKNOW;
     std::string formatter;
     std::string file;
     bool operator== (const LogAppenderDefine&rhv)const {
@@ -613,8 +615,8 @@ public:
               <<std::endl;
               throw std::logic_error("log config name is null");
           }
-          ld.name=node["name"].as<std::string>();
-          ld.level=LogLevel::FromString(node["level"].IsDefined()?node["level"].as<std::string>():"");
+          ld.name = node["name"].as<std::string>();
+          ld.level = LogLevel::FromString(node["level"].IsDefined() ? node["level"].as<std::string>():"");
           if(node["formatter"].IsDefined()){
               ld.formatter=node["formatter"].as<std::string>();
           }
@@ -622,30 +624,38 @@ public:
           //下面就是appender
           if(node["appender"].IsDefined()){
               for(size_t i=0;i<node["appender"].size();++i){
-                  auto x=node["appender"][i];
+                  auto x = node["appender"][i];
                   if(!x["type"].IsDefined()){
                       std::cout<<"log conf error:appender type is null,"<<x
                       <<std::endl;
                       continue;
                   }
-                  std::string type=x["type"].as<std::string>();
+                  std::string type = x["type"].as<std::string>();
                   LogAppenderDefine lad;
-                  if(type=="FileLogAppender"){
-                     lad.type=1;
+                  if(type == "FileLogAppender"){
+                     lad.type = 1;
                      if(!x["file"].IsDefined()){
                          std::cout << "log config error: fileappender file is null, " << x
                               << std::endl;
                               continue;
                      }
-                     lad.file=x["file"].as<std::string>();
+                     lad.file = x["file"].as<std::string>();
                      if(x["formatter"].IsDefined()){
                        lad.formatter = x["formatter"].as<std::string>();
+                     }
+                     if(x["level"].IsDefined()){
+                         lad.level = LogLevel::FromString(x["level"].IsDefined() ? 
+                                            x["level"].as<std::string>() : "");
                      }
                   }else if(type=="StdoutLogAppender"){
                        lad.type=2;
                        if(x["formatter"].IsDefined()) {
                         lad.formatter = x["formatter"].as<std::string>();
                       }
+                      if(x["level"].IsDefined()){
+                         lad.level = LogLevel::FromString(x["level"].IsDefined() ? 
+                                            x["level"].as<std::string>() : "");
+                     }
                   }else{
                        std::cout << "log config error: appender type is invalid, " << x
                               << std::endl;
@@ -681,8 +691,8 @@ public:
                 a["type"]="StdoutLogAppender";
              }
              //
-             if(i.level!=LogLevel::UNKNOW){
-                 a["level"]=LogLevel::ToString(i.level);
+             if(i.level != LogLevel::UNKNOW){
+                 a["level"] = LogLevel::ToString(i.level);
              }
              if(!i.formatter.empty()){
                  a["formatter"]=i.formatter;
@@ -704,17 +714,17 @@ struct LogIniter{
             //三种事件  新增、删除、修改
             JKYI_LOG_INFO(JKYI_LOG_ROOT())<<"on_logger_conf_changed";
             for(auto &i:new_value){
-                auto it=old_value.find(i);
+                auto it = old_value.find(i);
                 JKYi::Logger::ptr logger;
-                if(it==old_value.end()){
+                if(it == old_value.end()){
                     //旧得中不存在，属于是新增得
                     //logger.reset(new JKYi::Logger(i.name));
-                    logger=JKYI_LOG_NAME(i.name);
+                    logger = JKYI_LOG_NAME(i.name);
                 }else{
                     //存在
-                    if(!(i==*it)){
+                    if(!(i == *it)){
                         //修改
-                        logger=JKYI_LOG_NAME(i.name);
+                        logger = JKYI_LOG_NAME(i.name);
                     }
                 }
                 logger->setLevel(i.level);
@@ -725,12 +735,13 @@ struct LogIniter{
                 logger->clearAppender();
                 for(auto&a:i.appenders){
                     JKYi::LogAppender::ptr ap;
-                    if(a.type==1){
+                    if(a.type == 1){
                        //输出到文件
                        ap.reset(new JKYi::FileLogAppender(a.file));
                     }else if(a.type==2){
                         ap.reset(new JKYi::StdoutLogAppender());
                     }
+
                     ap->setLevel(a.level);
                     //这里还需耀解决appender的formatter
                     if(!a.formatter.empty()){
@@ -747,10 +758,10 @@ struct LogIniter{
             }
             //删除的情况
             for(auto&i:old_value){
-                auto it=new_value.find(i);
-                if(it==new_value.end()){
+                auto it = new_value.find(i);
+                if(it == new_value.end()){
                     //删除
-                    JKYi::Logger::ptr logger=JKYI_LOG_NAME(i.name);
+                    JKYi::Logger::ptr logger = JKYI_LOG_NAME(i.name);
                     //这里的删除是逻辑上的删除，也就是将这个logger的级别调到最高
                     //也就是让用户使用不了
                     logger->setLevel((LogLevel::Level)100);

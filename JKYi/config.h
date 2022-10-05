@@ -59,10 +59,10 @@ template<class T>
 class LexicalCast<std::string,std::vector<T>>{
 public:
    std::vector<T> operator()(const std::string&v){
-       YAML::Node node=YAML::Load(v);
+       YAML::Node node = YAML::Load(v);
        typename std::vector<T> vec;
        std::stringstream ss;
-       for(size_t i=0;i<node.size();++i){
+       for(size_t i = 0;i < node.size();++i){
           ss.str("");
           ss<<node[i];
           vec.push_back(LexicalCast<std::string,T>()(ss.str()));
@@ -288,7 +288,7 @@ public:
    void setValue(const T&t){
 	{
       RWMutex::ReadLock lock(m_mutex);	
-      if(m_val==t){
+      if(m_val == t){
          return ;
       }
       //不相等的话，代表发生的值的变化，所以需要依次调用每一个回调函数
@@ -297,15 +297,15 @@ public:
       }
 	}
 	  RWMutexType::WriteLock lock(m_mutex);
-      m_val=t;
+      m_val = t;
    }
    std::string getType()const override { return typeid(T).name();}
    //回调函数相关
    uint64_t addListener(on_change_cb cb){
-	  static uint64_t s_fun_id=0;
+	  static uint64_t s_fun_id = 0;
 	  RWMutexType::WriteLock lock(m_mutex);
 	  ++s_fun_id;
-      m_cbs[s_fun_id]=cb;
+      m_cbs[s_fun_id] = cb;
 	  return s_fun_id;
    }
    void delListener(uint64_t key){
@@ -314,8 +314,8 @@ public:
    }
    on_change_cb getListener(uint64_t key){
 	   RWMutexType::ReadLock lock(m_mutex);
-      auto it=m_cbs.find(key);
-      return it==m_cbs.end()?nullptr:it->second;
+      auto it = m_cbs.find(key);
+      return it == m_cbs.end() ? nullptr:it->second;
    }
    void clearListener(){
 	  RWMutexType::WriteLock lock(m_mutex);
@@ -336,14 +336,14 @@ public:
 	typedef RWMutex RWMutexType;
     //查找，不存在就创建新的
     template<class T>
-    static typename ConfigVar<T>::ptr Lookup(const std::string&name,
-    const T&default_value,const std::string&description=""){
+    static typename ConfigVar<T>::ptr Lookup(const std::string& name,
+    const T& default_value,const std::string& description = ""){
         //这里需要特别处理那些名称相同但是类型不同的configvar
 		RWMutexType::WriteLock lock(getMutex());
-        auto it=getDatas().find(name);
-        if(it!=getDatas().end()){
+        auto it = getDatas().find(name);
+        if(it != getDatas().end()){
            //如果存在的话，需要判断是否是类型相同的
-           auto tmp=std::dynamic_pointer_cast<ConfigVar<T>>(it->second);
+           auto tmp = std::dynamic_pointer_cast<ConfigVar<T>>(it->second);
            if(tmp){//如果能够转型成功的话，那么就表示是同一种类型
             JKYI_LOG_INFO(JKYI_LOG_ROOT())<<"Lookup name="<<name<<"exists";
             return tmp;
@@ -355,7 +355,7 @@ public:
            }
         }
         //这里还需要判断名称是否合法
-        if(name.find_first_not_of("abcdefghijklmnopqrstuvwxyz._012345678")!=std::string::npos){
+        if(name.find_first_not_of("abcdefghijklmnopqrstuvwxyz._012345678") != std::string::npos){
             JKYI_LOG_ERROR(JKYI_LOG_ROOT())<<"Lookup name invalid:"<<name;
             throw std::invalid_argument(name);
         }
@@ -369,8 +369,8 @@ public:
     template<class T>
     static typename ConfigVar<T>::ptr Lookup(const std::string&name){
 		RWMutexType::ReadLock lock(getMutex());
-        auto it=getDatas().find(name);
-        if(it==getDatas().end()){
+        auto it = getDatas().find(name);
+        if(it == getDatas().end()){
            return nullptr;
         }
         return std::dynamic_pointer_cast<ConfigVar<T>>(it->second);
@@ -388,7 +388,7 @@ public:
 private: 
     //这里为了解决全局变量初始化顺序不可预知的问题，这里将成员放到static成员函数里面去
     static ConfigVarMap& getDatas(){
-       static ConfigVarMap m_datas;
+        static ConfigVarMap m_datas;
         return m_datas;
     }
 	//这里还是为了避免全局全局变量和静态变量初始化顺序的问题，将锁变成static局部变量

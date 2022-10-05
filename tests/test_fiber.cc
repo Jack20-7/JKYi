@@ -1,6 +1,6 @@
 #include"/home/admin/workSpace/JKYi/JKYi.h"
 
-JKYi::Logger::ptr g_logger=JKYI_LOG_ROOT();
+JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();
 void func1(){
   JKYI_LOG_INFO(g_logger)<<"func1 start"; 
   JKYi::Fiber::YieldToHold(); 

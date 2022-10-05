@@ -201,6 +201,8 @@ JKYi_add_executable(test_reactor_tcpserver "tests/test_reactor_tcpserver.cc" JKY
 
 JKYi_add_executable(test_reactor_tcpclient "tests/test_reactor_tcpClient.cc" JKYi "${LIBS}")
 
+JKYi_add_executable(test_log "tests/test_log.cc" JKYi "${LIBS}")
+
 
 #将生成的目标文件放到bin目录下
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

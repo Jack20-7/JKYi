@@ -123,7 +123,7 @@ public:
        virtual ~FormatItem(){}
        virtual void format(std::ostream&os,std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event) = 0;
     };
-    //pattern的解析
+    //pattern的解析,根据m_pattern的值，创建对应的FormatItem，然后将他们放入到m_items
     void init();
     //
     bool isError()const{return m_error;}
@@ -172,7 +172,7 @@ friend class LoggerManager;
 public:
     typedef std::shared_ptr<Logger> ptr;
 	typedef SpinLock MutexType;
-    Logger(const std::string& name="root");
+    Logger(const std::string& name = "root");
     void log(LogLevel::Level level,LogEvent::ptr event);
 
     //用户输出日志时调用的接口
@@ -202,7 +202,7 @@ private:
     std::string m_name;       //日志的名称
     LogLevel::Level m_level;  //日志的级别，只有满足级别的日志才会被输出
     std::list<LogAppender::ptr>m_appenders;//Appender集合
-    LogFormatter::ptr m_formatter;//日志的输出格式
+    LogFormatter::ptr m_formatter;//日志的输出格式,Logger的输出格式的话是用来向内部添加appneder的时候，如果这个appender没有设置format，就是用logger
     Logger::ptr m_root;
 	MutexType m_mutex;
 };

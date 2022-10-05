@@ -48,11 +48,11 @@ public:
    //批量的往队列中插入任务
    template<class InputIterator>
    void schedule(InputIterator begin,InputIterator end){
-	   bool need_tickle=false;
+	   bool need_tickle = false;
 	   {
 		   MutexType::Lock lock(m_mutex);
-		   while(begin!=end){
-			   need_tickle=scheduleNoLock(&*begin,-1)||need_tickle;
+		   while(begin != end){
+			   need_tickle = scheduleNoLock(&*begin,-1)||need_tickle;
 			   ++begin;
 		   }
 	   }
@@ -73,7 +73,7 @@ protected:
    //将该调度器设置为当前线程正在使用的调度器 
    void setThis();
    //判断是否拥有空闲的协程
-   bool hasIdleThreads(){return m_idleThreadCount>0;}
+   bool hasIdleThreads(){return m_idleThreadCount > 0;}
 private:
    //无所状态下向调度器的工作队列中插入任务
    template<class FiberOrCb>
@@ -138,17 +138,17 @@ protected:
    //存储创建的线程id
    std::vector<int> m_threadIds;
    //调度器中要调度的线程的数目
-   size_t m_threadCount=0;
+   size_t m_threadCount = 0;
    //正在工作的线程数目
-   std::atomic<size_t> m_activeThreadCount={0};
+   std::atomic<size_t> m_activeThreadCount = {0};
    //处于空闲状态的线程数目
-   std::atomic<size_t> m_idleThreadCount={0};
+   std::atomic<size_t> m_idleThreadCount = {0};
    //是否正在停止
-   bool m_stopping=true;
+   bool m_stopping = true;
    //是否自动停止
-   bool m_autoStop=false;
+   bool m_autoStop = false;
    //调度器主调度协程所在的线程id
-   int m_rootThread=0;
+   int m_rootThread = 0;
 };
 }
 #endif

@@ -5,7 +5,7 @@
 
 namespace JKYi{
 //系统的日志全是用system来打
-static Logger::ptr g_logger=JKYI_LOG_NAME("system"); 
+static Logger::ptr g_logger = JKYI_LOG_NAME("system"); 
 
 //当前线程正在使用的调度器
 static thread_local Scheduler* t_scheduler = nullptr;
@@ -13,7 +13,7 @@ static thread_local Scheduler* t_scheduler = nullptr;
 //当前线程中真正进行调度工作的协程,也代表当前线程使用的调度器中的主调度协程
 static thread_local Fiber* t_scheduler_fiber = nullptr;
 
-Scheduler::Scheduler(size_t threads,bool use_caller,const std::string&name)
+Scheduler::Scheduler(size_t threads,bool use_caller,const std::string& name)
  :m_name(name){
 	JKYI_ASSERT(threads>0);
 
@@ -23,7 +23,7 @@ Scheduler::Scheduler(size_t threads,bool use_caller,const std::string&name)
 	  JKYi::Fiber::GetThis();
 	  --threads;
       //一山不容二虎
-	  JKYI_ASSERT(GetThis()==nullptr);
+	  JKYI_ASSERT(GetThis() == nullptr);
 	  t_scheduler = this;
 	  //
 	  //在当前线程中创建正在进行调度工作的协程
@@ -164,11 +164,11 @@ void Scheduler::run(){
     FiberAndThread ft;
     while(true) {
         ft.reset();
-		bool tickle_me=false;
-		bool is_active=false;
+		bool tickle_me = false;
+		bool is_active = false;
 		{
 			MutexType::Lock lock(m_mutex);
-            auto it=m_fibers.begin();
+            auto it = m_fibers.begin();
 			while(it != m_fibers.end()){
 				if(it->thread!=-1 && it->thread!=JKYi::GetThreadId()){
 					++it;

@@ -7,20 +7,20 @@
 
 namespace JKYi{
  //服务器框架中的日志统一使用system
- static JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");
+ static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");
  //记录分配的协程id
  static std::atomic<uint64_t>s_fiber_id{0};
  //记录创建的协程数目
  static std::atomic<uint64_t>s_fiber_count{0};
 
- //通过使用线程局部变量来记录当前正在执行的协程
+ //通过使用线程局部变量来记录当前献策韩国你中正在执行的协程
  static thread_local Fiber* t_fiber = nullptr;
 
  //记录当前线程的主协程
  static thread_local Fiber::ptr t_threadFiber = nullptr;
 
  //用来实现通过配置系统修改协程栈的大小
- static ConfigVar<uint32_t>::ptr g_fiber_stack_size=JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");
+ static ConfigVar<uint32_t>::ptr g_fiber_stack_size = JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");
 
 //这里封装一个协程栈的分配器
 class MallocStackAllocator{
@@ -33,13 +33,12 @@ public:
    }
 };
 //
-using StackAllocator=MallocStackAllocator;
+using StackAllocator = MallocStackAllocator;
 
 
 Fiber::Fiber(){
-   m_state=EXEC;
+   m_state = EXEC;
    SetThis(this);
-   //将自己设置为主协程 
    //注意，shared_from_this不能够在构造函数中调用
    //t_threadFiber=shared_from_this();
    //将创建时的CPU上下文作为自己的上下文保存起来
@@ -64,10 +63,11 @@ Fiber::Fiber(std::function<void ()>cb,size_t stacksize,bool use_caller)
 	}
 	//设置本协程自己的上下文
 	//ul_link里面设置的是写一个关联的协程的上下文
-	m_ctx.uc_link=nullptr;
+	m_ctx.uc_link = nullptr;
 	m_ctx.uc_stack.ss_sp = m_stack;
 	m_ctx.uc_stack.ss_size = m_stacksize;
-   //
+   //use_caller表示的是创建的协程是否是当前调度器的主调度协程,如果不是的话，那么在执行完成之后通过swapOut返回主调度协程
+   //如果要作为主调度协程的话，在执行完成之后，通过back返回的是当前协程所在线程的主协程
    if(!use_caller){
       makecontext(&m_ctx,&Fiber::MainFunc,0);
    }else{
@@ -75,21 +75,20 @@ Fiber::Fiber(std::function<void ()>cb,size_t stacksize,bool use_caller)
 	   makecontext(&m_ctx,&Fiber::CallerMainFunc,0);
    }
 	//
-	JKYI_LOG_DEBUG(g_logger)<<"subFiber is created,fiber_id="<<m_id;
+	//JKYI_LOG_DEBUG(g_logger)<<"subFiber is created,fiber_id="<<m_id;
 }
 //
 Fiber::~Fiber(){
 	--s_fiber_count;
     if(m_stack){
        //如果析构的是子协程
-	   JKYI_ASSERT(m_state==TERM||m_state==EXCEPT||m_state==INIT);
+	   JKYI_ASSERT(m_state == TERM||m_state == EXCEPT||m_state == INIT);
 	   StackAllocator::Dealloc(m_stack,m_stacksize);
 	}else{
-       //如果析构的是主协程的话
 	   JKYI_ASSERT(!m_cb);
-	   JKYI_ASSERT(m_state==EXEC);
-	   Fiber*cur=t_fiber;
-	   if(cur==this){
+	   JKYI_ASSERT(m_state == EXEC);
+	   Fiber*cur = t_fiber;
+	   if(cur == this){
 		   SetThis(nullptr);
 	   }
 	}
@@ -99,19 +98,19 @@ Fiber::~Fiber(){
 //
 void Fiber::reset(std::function<void()>cb){
     JKYI_ASSERT(m_stack);   
-	JKYI_ASSERT(m_state==INIT||m_state==TERM||m_state==EXCEPT);
+	JKYI_ASSERT(m_state == INIT||m_state == TERM||m_state == EXCEPT);
     
-	m_cb=cb;
+	m_cb = cb;
 	if(getcontext(&m_ctx)){
 		JKYI_ASSERT2(false,"getcontext");
 	}
 	//
-	m_ctx.uc_link=nullptr;
-	m_ctx.uc_stack.ss_sp=m_stack;
-	m_ctx.uc_stack.ss_size=m_stacksize;
+	m_ctx.uc_link = nullptr;
+	m_ctx.uc_stack.ss_sp = m_stack;
+	m_ctx.uc_stack.ss_size = m_stacksize;
 
 	makecontext(&m_ctx,&Fiber::MainFunc,0);
-	m_state=INIT;
+	m_state = INIT;
 	return ;
 }
 //在主协程中使用，用来执行子协程
@@ -161,7 +160,6 @@ Fiber::ptr Fiber::GetThis(){
 	if(t_fiber){
 		return t_fiber->shared_from_this();
 	}
-	//还未创建主协程
 	Fiber::ptr main_fiber(new Fiber);
 	JKYI_ASSERT(t_fiber == main_fiber.get());
 	t_threadFiber = main_fiber;
@@ -171,7 +169,7 @@ Fiber::ptr Fiber::GetThis(){
 void Fiber::YieldToReady(){
     Fiber::ptr cur=GetThis();
 	JKYI_ASSERT(cur->m_state==EXEC);
-	cur->m_state=READY;
+	cur->m_state = READY;
     cur->swapOut();
 }
 //
@@ -253,33 +251,4 @@ void Fiber::CallerMainFunc(){
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

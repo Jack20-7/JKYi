@@ -10,8 +10,8 @@ namespace JKYi{
 //查找config的map中是否存在name这个名称的
 ConfigVarBase::ptr Config::LookupBase(const std::string&name){
   RWMutexType::ReadLock lock(getMutex());
-  auto it=getDatas().find(name);
-  return it==getDatas().end()?nullptr:it->second;
+  auto it = getDatas().find(name);
+  return it == getDatas().end()?nullptr:it->second;
 }
 
 static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");
@@ -21,7 +21,7 @@ static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");
 // 转化为
 //A.B 10
 static void ListAllMember(const std::string&prefix,const YAML::Node&node,std::list<std::pair<std::string,const YAML::Node>>&output){
-    if(prefix.find_first_not_of("abcdefghikjlmnopqrstuvwxyz._012345678")!=std::string::npos){
+    if(prefix.find_first_not_of("abcdefghikjlmnopqrstuvwxyz._012345678") != std::string::npos){
         //如果名字有问题
         JKYI_LOG_ERROR(JKYI_LOG_ROOT())<<"Config invalid name: "<<prefix<<": "<<node;
         return ;
@@ -39,7 +39,7 @@ void Config::LoadFromYaml(const YAML::Node& node){
     std::list<std::pair<std::string,const YAML::Node>>all_nodes;
     ListAllMember("",node,all_nodes);
     for(auto&i : all_nodes){
-        std::string key=i.first;
+        std::string key = i.first;
         if(key.empty()){
             continue;
         }
@@ -96,8 +96,8 @@ void Config::LoadFromConfDir(const std::string& path,bool force){
 }
 void Config::Visit(std::function<void (ConfigVarBase::ptr)>cb){
    RWMutexType::ReadLock lock(getMutex());
-   ConfigVarMap&m=getDatas();
-   for(auto it=m.begin();it!=m.end();++it){
+   ConfigVarMap&m = getDatas();
+   for(auto it = m.begin();it != m.end();++it){
 	   cb(it->second);
    }
 
