@@ -346,6 +346,6 @@ Bytearray(二进制序列化模块),用作网络编程中数据的载体，支�
 
 HTTP模块的话，对HTTP请求报文和HTTP响应报文进行的封装，分别封装成了HttpRequest和HttpResponse,并且对于HTTP报文的解析，是通过ragel来进行解析的，ragel其实就是有效状态机
 
-## reactor模块
+##  Reactor模块
 
 实现了one loop per thread 模型，在使用的时候，如果涉及到突发的计算任务的话，可以额外添加一个线程池来处于计算任务，接口就在用户设置的onMessage回调函数中.linux下推荐使用的网络编程模型是one loop per thread + 线程池 的高性能模型
