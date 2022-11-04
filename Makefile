@@ -15,3 +15,7 @@
 		mkdir build; \
 		cd build && cmake -DCMAKE_CXX_COMPILER:FILEPATH=$(shell which g++) -DCMAKE_C_COMPILER:FILEPATH=$(shell which gcc) $@ ..; \
 	fi
+clean:
+	rm -rf bin/ 
+	rm -rf lib/
+	rm -rf build/

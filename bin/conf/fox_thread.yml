@@ -1,5 +1,0 @@
-fox_thread:
-    redis:
-        name: redis
-        num: 1
-        advance: 0

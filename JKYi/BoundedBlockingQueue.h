@@ -26,7 +26,7 @@ public:
         }
         JKYI_ASSERT(!queue_.full());
         queue_.push_back(t);
-        notEmpty_.nofity();
+        notEmpty_.notify();
     }
     void push(T&& t){
         Mutex::Lock lock(mutex_);
@@ -69,7 +69,7 @@ public:
     }
 private:
     mutable Mutex mutex_;
-    Condition notEpmty_;
+    Condition notEmpty_;
     Condition notFull_;
     //循环队列
     boost::circular_buffer<T> queue_;

@@ -61,6 +61,9 @@ Answer	sample/protobuf/query.pb.h	/^  explicit PROTOBUF_CONSTEXPR Answer(::PROTO
 Answer	sample/protobuf/query.pb.h	/^  inline Answer() : Answer(nullptr) {}$/;"	f	class:test::final	access:public	signature:()
 AnswerDefaultTypeInternal	sample/protobuf/query.pb.cc	/^  PROTOBUF_CONSTEXPR AnswerDefaultTypeInternal()$/;"	f	struct:test::AnswerDefaultTypeInternal	access:public	signature:()
 AnswerDefaultTypeInternal	sample/protobuf/query.pb.cc	/^struct AnswerDefaultTypeInternal {$/;"	s	namespace:test	file:
+AppendFile	JKYi/reactor/FileUtil.cc	/^AppendFile::AppendFile(const std::string& filename)$/;"	f	class:JKYi::net::AppendFile	signature:(const std::string& filename)
+AppendFile	JKYi/reactor/FileUtil.h	/^    explicit AppendFile(const std::string& filename);$/;"	p	class:JKYi::net::AppendFile	access:public	signature:(const std::string& filename)
+AppendFile	JKYi/reactor/FileUtil.h	/^class AppendFile : public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
 Application	JKYi/application.cc	/^Application::Application(){$/;"	f	class:JKYi::Application	signature:()
 Application	JKYi/application.h	/^    Application();$/;"	p	class:JKYi::Application	access:public	signature:()
 Application	JKYi/application.h	/^class Application{$/;"	c	namespace:JKYi
@@ -69,6 +72,9 @@ Arena::CreateMaybeMessage	sample/protobuf/query.pb.cc	/^Arena::CreateMaybeMessag
 Arena::CreateMaybeMessage	sample/protobuf/query.pb.cc	/^Arena::CreateMaybeMessage< ::test::Query >(Arena* arena) {$/;"	f	class:Arena	signature:(Arena* arena)
 Arena::CreateMaybeMessage	sample/protobuf/query.pb.h	/^template<> ::test::Empty* Arena::CreateMaybeMessage<::test::Empty>(Arena*);$/;"	p	class:Arena	signature:(Arena*)
 Arena::CreateMaybeMessage	sample/protobuf/query.pb.h	/^template<> ::test::Query* Arena::CreateMaybeMessage<::test::Query>(Arena*);$/;"	p	class:Arena	signature:(Arena*)
+AsyncLogging	JKYi/reactor/AsyncLogging.cc	/^AsyncLogging::AsyncLogging(const std::string& basename,$/;"	f	class:JKYi::net::AsyncLogging	signature:(const std::string& basename, off_t rollSize, int flushInterval)
+AsyncLogging	JKYi/reactor/AsyncLogging.h	/^    AsyncLogging(const std::string& basename,$/;"	p	class:JKYi::net::AsyncLogging	access:public	signature:(const std::string& basename, off_t rollSize, int flushInterval = 3)
+AsyncLogging	JKYi/reactor/AsyncLogging.h	/^class AsyncLogging :public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
 Atof	JKYi/util.cc	/^double TypeUtil::Atof(const char * str){$/;"	f	class:JKYi::TypeUtil	signature:(const char * str)
 Atof	JKYi/util.cc	/^double TypeUtil::Atof(const std::string& str){$/;"	f	class:JKYi::TypeUtil	signature:(const std::string& str)
 Atof	JKYi/util.h	/^    static double Atof(const char * str);$/;"	p	class:JKYi::TypeUtil	access:public	signature:(const char * str)
@@ -95,10 +101,14 @@ BlockingQueue	JKYi/ds/blocking_queue.h	/^class BlockingQueue{$/;"	c	namespace:JK
 BoundedBlockingQueue	JKYi/BoundedBlockingQueue.h	/^    explicit BoundedBlockingQueue(int maxSize)$/;"	f	class:JKYi::BoundedBlockingQueue	access:public	signature:(int maxSize)
 BoundedBlockingQueue	JKYi/BoundedBlockingQueue.h	/^class BoundedBlockingQueue : Noncopyable{$/;"	c	namespace:JKYi	inherits:Noncopyable
 Bucket	JKYi/reactor/examples/idleconnection/echo.h	/^    typedef std::unordered_set<EntryPtr> Bucket;$/;"	t	class:EchoServer	access:private
+Buffer	JKYi/reactor/AsyncLogging.h	/^    typedef JKYi::net::detail::FixedBuffer<JKYi::net::detail::kLargeBuffer> Buffer;$/;"	t	class:JKYi::net::AsyncLogging	access:private
 Buffer	JKYi/reactor/Buffer.h	/^    explicit Buffer(size_t initialSize = kInitialSize)$/;"	f	class:JKYi::net::Buffer	access:public	signature:(size_t initialSize = kInitialSize)
 Buffer	JKYi/reactor/Buffer.h	/^class Buffer{$/;"	c	namespace:JKYi::net
+Buffer	JKYi/reactor/LogStream.h	/^   typedef detail::FixedBuffer<detail::kSmallBuffer> Buffer;$/;"	t	class:JKYi::net::LogStream	access:public
 BufferOutputStream	JKYi/reactor/protobuf/BufferStream.h	/^    BufferOutputStream(Buffer* buf)$/;"	f	class:JKYi::net::BufferOutputStream	access:public	signature:(Buffer* buf)
 BufferOutputStream	JKYi/reactor/protobuf/BufferStream.h	/^class BufferOutputStream : public google::protobuf::io::ZeroCopyOutputStream{$/;"	c	namespace:JKYi::net	inherits:google::protobuf::io::ZeroCopyOutputStream
+BufferPtr	JKYi/reactor/AsyncLogging.h	/^    typedef BufferVector::value_type BufferPtr;$/;"	t	class:JKYi::net::AsyncLogging	access:private
+BufferVector	JKYi/reactor/AsyncLogging.h	/^    typedef std::vector<std::unique_ptr<Buffer>> BufferVector;$/;"	t	class:JKYi::net::AsyncLogging	access:private
 ByteArray	JKYi/bytearray.cc	/^ByteArray::ByteArray(size_t base_size)$/;"	f	class:JKYi::ByteArray	signature:(size_t base_size)
 ByteArray	JKYi/bytearray.cc	/^ByteArray::ByteArray(void * data,size_t size,bool owner)$/;"	f	class:JKYi::ByteArray	signature:(void * data,size_t size,bool owner)
 ByteArray	JKYi/bytearray.h	/^    ByteArray(size_t base_size = 4096);$/;"	p	class:JKYi::ByteArray	access:public	signature:(size_t base_size = 4096)
@@ -126,6 +136,7 @@ CMAKE_BINARY_DIR	build/JKYi/reactor/examples/Makefile	/^CMAKE_BINARY_DIR = \/hom
 CMAKE_BINARY_DIR	build/JKYi/reactor/examples/http/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
 CMAKE_BINARY_DIR	build/JKYi/reactor/examples/hub/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
 CMAKE_BINARY_DIR	build/JKYi/reactor/examples/idleconnection/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
+CMAKE_BINARY_DIR	build/JKYi/reactor/examples/log/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
 CMAKE_BINARY_DIR	build/JKYi/reactor/examples/maxconnection/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
 CMAKE_BINARY_DIR	build/JKYi/reactor/examples/netty/discard/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
 CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/admin\/workSpace\/build$/;"	m
@@ -133,6 +144,7 @@ CMAKE_COMMAND	build/JKYi/reactor/examples/Makefile	/^CMAKE_COMMAND = \/usr\/loca
 CMAKE_COMMAND	build/JKYi/reactor/examples/http/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/JKYi/reactor/examples/hub/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/JKYi/reactor/examples/idleconnection/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/JKYi/reactor/examples/log/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/JKYi/reactor/examples/maxconnection/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/JKYi/reactor/examples/netty/discard/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
 CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/local\/bin\/cmake$/;"	m
@@ -140,6 +152,7 @@ CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/Makefile	/^CMAKE_SOURCE_DIR = \/hom
 CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/http/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
 CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/hub/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
 CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/idleconnection/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
+CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/log/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
 CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/maxconnection/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
 CMAKE_SOURCE_DIR	build/JKYi/reactor/examples/netty/discard/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
 CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/admin\/workSpace$/;"	m
@@ -556,6 +569,7 @@ CurrentThread	JKYi/reactor/CurrentThread.h	/^namespace CurrentThread{$/;"	n	name
 CurrentThread	JKYi/reactor/Thread.cc	/^namespace CurrentThread{$/;"	n	namespace:JKYi	file:
 DATA	JKYi/http2/frame.h	/^    DATA           = 0x0,$/;"	m	class:JKYi::http2::FrameType	access:private
 DEBUG	JKYi/log.h	/^     DEBUG = 1,$/;"	e	enum:JKYi::LogLevel::Level
+DEBUG	JKYi/reactor/Logging.h	/^        DEBUG,$/;"	e	enum:JKYi::net::Logger::LogLevel
 DEC	build/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c	496;"	d	file:
 DEC	build/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp	481;"	d	file:
 DELETED	JKYi/zk_client.cc	/^const int ZKClient::EventType::DELETED = ZOO_DELETED_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
@@ -630,11 +644,13 @@ EQUALS	build/JKYi/reactor/examples/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/JKYi/reactor/examples/http/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/JKYi/reactor/examples/hub/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/JKYi/reactor/examples/idleconnection/Makefile	/^EQUALS = =$/;"	m
+EQUALS	build/JKYi/reactor/examples/log/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/JKYi/reactor/examples/maxconnection/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/JKYi/reactor/examples/netty/discard/Makefile	/^EQUALS = =$/;"	m
 EQUALS	build/Makefile	/^EQUALS = =$/;"	m
 ERROR	JKYi/http2/hpack.h	/^    ERROR                         = 7$/;"	m	class:JKYi::http2::IndexType	access:private
 ERROR	JKYi/log.h	/^     ERROR = 4,$/;"	e	enum:JKYi::LogLevel::Level
+ERROR	JKYi/reactor/Logging.h	/^        ERROR,$/;"	e	enum:JKYi::net::Logger::LogLevel
 EXCEPT	JKYi/fiber.h	/^	  EXCEPT\/\/异常态$/;"	e	enum:JKYi::Fiber::State
 EXEC	JKYi/fiber.h	/^	  EXEC,  \/\/运行态$/;"	e	enum:JKYi::Fiber::State
 EXPIRED_SESSION	JKYi/zk_client.cc	/^const int ZKClient::StateType::EXPIRED_SESSION = ZOO_EXPIRED_SESSION_STATE;$/;"	m	class:JKYi::ZKClient::StateType	file:
@@ -761,6 +777,7 @@ Excute	JKYi/db/mysql.h	/^    static int Excute(const std::string& name,const cha
 Excute	JKYi/db/mysql.h	/^    static int Excute(const std::string& name,const char * format,va_list ap);$/;"	p	class:JKYi::MySQLUtil	access:public	signature:(const std::string& name,const char * format,va_list ap)
 Excute	JKYi/db/mysql.h	/^    static int Excute(const std::string& name,const std::string& sql);$/;"	p	class:JKYi::MySQLUtil	access:public	signature:(const std::string& name,const std::string& sql)
 FATAL	JKYi/log.h	/^     FATAL = 5$/;"	e	enum:JKYi::LogLevel::Level
+FATAL	JKYi/reactor/Logging.h	/^        FATAL,$/;"	e	enum:JKYi::net::Logger::LogLevel
 FCtx	JKYi/db/redis.h	/^    struct FCtx{$/;"	s	class:JKYi::FoxRedis	access:private
 FCtx	JKYi/db/redis.h	/^    struct FCtx{$/;"	s	class:JKYi::FoxRedisCluster	access:private
 FOX_REDIS	JKYi/db/redis.h	/^        FOX_REDIS = 3,$/;"	e	enum:JKYi::IRedis::Type
@@ -796,7 +813,10 @@ FileLogAppender	JKYi/log.h	/^     FileLogAppender(const std::string& filename);$
 FileLogAppender	JKYi/log.h	/^class FileLogAppender:public LogAppender{$/;"	c	namespace:JKYi	inherits:LogAppender
 FilenameFormatItem	JKYi/log.cc	/^    FilenameFormatItem(const std::string& str = "") {}$/;"	f	class:JKYi::FilenameFormatItem	access:public	signature:(const std::string& str = �)
 FilenameFormatItem	JKYi/log.cc	/^class FilenameFormatItem : public LogFormatter::FormatItem {$/;"	c	namespace:JKYi	file:	inherits:LogFormatter::FormatItem
+FixedBuffer	JKYi/reactor/LogStream.h	/^    FixedBuffer()$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
+FixedBuffer	JKYi/reactor/LogStream.h	/^class FixedBuffer : public Noncopyable{$/;"	c	namespace:JKYi::net::detail	inherits:Noncopyable
 FlagsType	JKYi/zk_client.h	/^    class FlagsType{$/;"	c	class:JKYi::ZKClient	access:public
+FlushFunc	JKYi/reactor/Logging.h	/^    typedef void (*FlushFunc) ();$/;"	t	class:JKYi::net::Logger	access:public
 Format	JKYi/util.cc	/^std::string StringUtil::Format(const char * fmt,...){$/;"	f	class:JKYi::StringUtil	signature:(const char * fmt,...)
 Format	JKYi/util.h	/^   static std::string Format(const char * fmt,...);$/;"	p	class:JKYi::StringUtil	access:public	signature:(const char * fmt,...)
 FormatItem	JKYi/log.h	/^    class FormatItem{$/;"	c	class:JKYi::LogFormatter	access:public
@@ -1004,6 +1024,7 @@ IFoxThread	JKYi/db/fox_thread.h	/^class IFoxThread{$/;"	c	namespace:JKYi
 IFrame	JKYi/http2/frame.h	/^class IFrame{$/;"	c	class:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR	access:private
 INDEXED	JKYi/http2/hpack.h	/^    INDEXED                       = 0, \/\/ headers的name和value都在表中$/;"	m	class:JKYi::http2::IndexType	access:private
 INFO	JKYi/log.h	/^     INFO = 2,$/;"	e	enum:JKYi::LogLevel::Level
+INFO	JKYi/reactor/Logging.h	/^        INFO,$/;"	e	enum:JKYi::net::Logger::LogLevel
 INIT	JKYi/fiber.h	/^      INIT,   \/\/创建态  $/;"	e	enum:JKYi::Fiber::State
 INITAL_WINDOW_SIZE	JKYi/http2/frame.h	/^        INITAL_WINDOW_SIZE       =  0x4,$/;"	m	class:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::Settings	access:private
 INIT_ERR	JKYi/db/redis.h	/^        INIT_ERR = 6$/;"	e	enum:JKYi::FoxRedis::RESULT
@@ -1038,6 +1059,9 @@ ISyncRedis	JKYi/db/redis.h	/^class ISyncRedis :public IRedis{$/;"	c	namespace:JK
 ITransaction	JKYi/db/db.h	/^class ITransaction:public ISQLUpdate{$/;"	c	namespace:JKYi	inherits:ISQLUpdate
 IgnoreSigPipe	JKYi/reactor/EventLoop.cc	/^    IgnoreSigPipe(){$/;"	f	class:__anon22::IgnoreSigPipe	access:public	signature:()
 IgnoreSigPipe	JKYi/reactor/EventLoop.cc	/^class IgnoreSigPipe{$/;"	c	namespace:__anon22	file:
+Impl	JKYi/reactor/Logging.cc	/^Logger::Impl::Impl(LogLevel level,const std::string& filename,int line)$/;"	f	class:JKYi::net::Logger::Impl	signature:(LogLevel level,const std::string& filename,int line)
+Impl	JKYi/reactor/Logging.h	/^        Impl(LogLevel level,const std::string& filename,int line);$/;"	p	class:JKYi::net::Logger::Impl	access:public	signature:(LogLevel level,const std::string& filename,int line)
+Impl	JKYi/reactor/Logging.h	/^    class Impl{$/;"	c	class:JKYi::net::Logger	access:private
 Impl_	sample/protobuf/query.pb.h	/^  struct Impl_ {$/;"	s	class:test::final	access:private
 IndexType	JKYi/http2/hpack.h	/^enum class IndexType{$/;"	c	namespace:JKYi::http2
 IndexTypeToString	JKYi/http2/hpack.cc	/^std::string IndexTypeToString(IndexType type){$/;"	f	namespace:JKYi::http2	signature:(IndexType type)
@@ -1154,6 +1178,8 @@ JKYi	JKYi/mutex.h	/^namespace JKYi{$/;"	n
 JKYi	JKYi/noncopyable.h	/^namespace JKYi{$/;"	n
 JKYi	JKYi/protocol.cc	/^namespace JKYi{$/;"	n	file:
 JKYi	JKYi/protocol.h	/^namespace JKYi{$/;"	n
+JKYi	JKYi/reactor/AsyncLogging.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	JKYi/reactor/AsyncLogging.h	/^namespace JKYi{$/;"	n
 JKYi	JKYi/reactor/Buffer.cc	/^namespace JKYi{$/;"	n	file:
 JKYi	JKYi/reactor/Buffer.h	/^namespace JKYi{$/;"	n
 JKYi	JKYi/reactor/Callbacks.h	/^namespace JKYi{$/;"	n
@@ -1167,6 +1193,14 @@ JKYi	JKYi/reactor/EventLoopThread.cc	/^namespace JKYi{$/;"	n	file:
 JKYi	JKYi/reactor/EventLoopThread.h	/^namespace JKYi{$/;"	n
 JKYi	JKYi/reactor/EventLoopThreadPool.cc	/^namespace JKYi{$/;"	n	file:
 JKYi	JKYi/reactor/EventLoopThreadPool.h	/^namespace JKYi{$/;"	n
+JKYi	JKYi/reactor/FileUtil.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	JKYi/reactor/FileUtil.h	/^namespace JKYi{$/;"	n
+JKYi	JKYi/reactor/LogFile.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	JKYi/reactor/LogFile.h	/^namespace JKYi{$/;"	n
+JKYi	JKYi/reactor/LogStream.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	JKYi/reactor/LogStream.h	/^namespace JKYi{$/;"	n
+JKYi	JKYi/reactor/Logging.cc	/^namespace JKYi{$/;"	n	file:
+JKYi	JKYi/reactor/Logging.h	/^namespace JKYi{$/;"	n
 JKYi	JKYi/reactor/Socket.cc	/^namespace JKYi{$/;"	n	file:
 JKYi	JKYi/reactor/Socket.h	/^namespace JKYi{$/;"	n
 JKYi	JKYi/reactor/SocketsOps.h	/^namespace JKYi{$/;"	n
@@ -1316,7 +1350,7 @@ JKYi::BoundedBlockingQueue::capacity	JKYi/BoundedBlockingQueue.h	/^    size_t ca
 JKYi::BoundedBlockingQueue::empty	JKYi/BoundedBlockingQueue.h	/^    bool empty()const{$/;"	f	class:JKYi::BoundedBlockingQueue	access:public	signature:() const
 JKYi::BoundedBlockingQueue::full	JKYi/BoundedBlockingQueue.h	/^    bool full()const{$/;"	f	class:JKYi::BoundedBlockingQueue	access:public	signature:() const
 JKYi::BoundedBlockingQueue::mutex_	JKYi/BoundedBlockingQueue.h	/^    mutable Mutex mutex_;$/;"	m	class:JKYi::BoundedBlockingQueue	access:private
-JKYi::BoundedBlockingQueue::notEpmty_	JKYi/BoundedBlockingQueue.h	/^    Condition notEpmty_;$/;"	m	class:JKYi::BoundedBlockingQueue	access:private
+JKYi::BoundedBlockingQueue::notEmpty_	JKYi/BoundedBlockingQueue.h	/^    Condition notEmpty_;$/;"	m	class:JKYi::BoundedBlockingQueue	access:private
 JKYi::BoundedBlockingQueue::notFull_	JKYi/BoundedBlockingQueue.h	/^    Condition notFull_;$/;"	m	class:JKYi::BoundedBlockingQueue	access:private
 JKYi::BoundedBlockingQueue::push	JKYi/BoundedBlockingQueue.h	/^    void push(T&& t){$/;"	f	class:JKYi::BoundedBlockingQueue	access:public	signature:(T&& t)
 JKYi::BoundedBlockingQueue::push	JKYi/BoundedBlockingQueue.h	/^    void push(const T& t){$/;"	f	class:JKYi::BoundedBlockingQueue	access:public	signature:(const T& t)
@@ -1480,8 +1514,8 @@ JKYi::Config::LoadFromConfDir	JKYi/config.cc	/^void Config::LoadFromConfDir(cons
 JKYi::Config::LoadFromConfDir	JKYi/config.h	/^    static void LoadFromConfDir(const std::string& path,bool force = false);$/;"	p	class:JKYi::Config	access:public	signature:(const std::string& path,bool force = false)
 JKYi::Config::LoadFromYaml	JKYi/config.cc	/^void Config::LoadFromYaml(const YAML::Node& node){$/;"	f	class:JKYi::Config	signature:(const YAML::Node& node)
 JKYi::Config::LoadFromYaml	JKYi/config.h	/^    static void LoadFromYaml(const YAML::Node&node);$/;"	p	class:JKYi::Config	access:public	signature:(const YAML::Node&node)
+JKYi::Config::Lookup	JKYi/config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string& name,$/;"	f	class:JKYi::Config	access:public	signature:(const std::string& name, const T& default_value,const std::string& description = �)
 JKYi::Config::Lookup	JKYi/config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string&name){$/;"	f	class:JKYi::Config	access:public	signature:(const std::string&name)
-JKYi::Config::Lookup	JKYi/config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string&name,$/;"	f	class:JKYi::Config	access:public	signature:(const std::string&name, const T&default_value,const std::string&description=�)
 JKYi::Config::LookupBase	JKYi/config.cc	/^ConfigVarBase::ptr Config::LookupBase(const std::string&name){$/;"	f	class:JKYi::Config	signature:(const std::string&name)
 JKYi::Config::LookupBase	JKYi/config.h	/^    static ConfigVarBase::ptr LookupBase(const std::string&name);$/;"	p	class:JKYi::Config	access:public	signature:(const std::string&name)
 JKYi::Config::RWMutexType	JKYi/config.h	/^	typedef RWMutex RWMutexType;$/;"	t	class:JKYi::Config	access:public
@@ -1668,7 +1702,7 @@ JKYi::Fiber::call	JKYi/fiber.cc	/^void Fiber::call(){$/;"	f	class:JKYi::Fiber	si
 JKYi::Fiber::call	JKYi/fiber.h	/^	void call();$/;"	p	class:JKYi::Fiber	access:public	signature:()
 JKYi::Fiber::getId	JKYi/fiber.h	/^	uint64_t getId()const {return m_id;}$/;"	f	class:JKYi::Fiber	access:public	signature:() const
 JKYi::Fiber::getState	JKYi/fiber.h	/^	State getState()const{return m_state;}$/;"	f	class:JKYi::Fiber	access:public	signature:() const
-JKYi::Fiber::m_cb	JKYi/fiber.h	/^   std::function<void ()>m_cb;$/;"	m	class:JKYi::Fiber	access:private
+JKYi::Fiber::m_cb	JKYi/fiber.h	/^   std::function<void ()> m_cb;$/;"	m	class:JKYi::Fiber	access:private
 JKYi::Fiber::m_ctx	JKYi/fiber.h	/^   ucontext_t m_ctx;$/;"	m	class:JKYi::Fiber	access:private
 JKYi::Fiber::m_id	JKYi/fiber.h	/^   uint64_t m_id = 0;$/;"	m	class:JKYi::Fiber	access:private
 JKYi::Fiber::m_stack	JKYi/fiber.h	/^   void *m_stack = nullptr;$/;"	m	class:JKYi::Fiber	access:private
@@ -2325,9 +2359,9 @@ JKYi::LogAppender::~LogAppender	JKYi/log.h	/^    virtual ~LogAppender(){};\/\/�
 JKYi::LogAppenderDefine	JKYi/log.cc	/^struct LogAppenderDefine{$/;"	s	namespace:JKYi	file:
 JKYi::LogAppenderDefine::file	JKYi/log.cc	/^    std::string file;$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
 JKYi::LogAppenderDefine::formatter	JKYi/log.cc	/^    std::string formatter;$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
-JKYi::LogAppenderDefine::level	JKYi/log.cc	/^    LogLevel::Level level=LogLevel::UNKNOW;$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
+JKYi::LogAppenderDefine::level	JKYi/log.cc	/^    LogLevel::Level level = LogLevel::UNKNOW;$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
 JKYi::LogAppenderDefine::operator ==	JKYi/log.cc	/^    bool operator== (const LogAppenderDefine&rhv)const {$/;"	f	struct:JKYi::LogAppenderDefine	access:public	signature:(const LogAppenderDefine&rhv) const
-JKYi::LogAppenderDefine::type	JKYi/log.cc	/^    int type=0;\/\/2表示Stdout，1表示file$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
+JKYi::LogAppenderDefine::type	JKYi/log.cc	/^    int type = 0;\/\/2表示Stdout，1表示file$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
 JKYi::LogDefine	JKYi/log.cc	/^struct LogDefine{$/;"	s	namespace:JKYi	file:
 JKYi::LogDefine::appenders	JKYi/log.cc	/^   std::vector<LogAppenderDefine>appenders;$/;"	m	struct:JKYi::LogDefine	file:	access:public
 JKYi::LogDefine::formatter	JKYi/log.cc	/^   std::string formatter;$/;"	m	struct:JKYi::LogDefine	file:	access:public
@@ -2402,7 +2436,7 @@ JKYi::LogLevel::UNKNOW	JKYi/log.h	/^     UNKNOW = 0,$/;"	e	enum:JKYi::LogLevel::
 JKYi::LogLevel::WARN	JKYi/log.h	/^     WARN = 3,$/;"	e	enum:JKYi::LogLevel::Level
 JKYi::Logger	JKYi/log.h	/^class Logger:public std::enable_shared_from_this<Logger>{$/;"	c	namespace:JKYi	inherits:std::enable_shared_from_this
 JKYi::Logger::Logger	JKYi/log.cc	/^Logger::Logger(const std::string& name)$/;"	f	class:JKYi::Logger	signature:(const std::string& name)
-JKYi::Logger::Logger	JKYi/log.h	/^    Logger(const std::string& name="root");$/;"	p	class:JKYi::Logger	access:public	signature:(const std::string& name=�)
+JKYi::Logger::Logger	JKYi/log.h	/^    Logger(const std::string& name = "root");$/;"	p	class:JKYi::Logger	access:public	signature:(const std::string& name = �)
 JKYi::Logger::MutexType	JKYi/log.h	/^	typedef SpinLock MutexType;$/;"	t	class:JKYi::Logger	access:public
 JKYi::Logger::addAppender	JKYi/log.cc	/^void Logger::addAppender(LogAppender::ptr appender){$/;"	f	class:JKYi::Logger	signature:(LogAppender::ptr appender)
 JKYi::Logger::addAppender	JKYi/log.h	/^    void addAppender(LogAppender::ptr appender);$/;"	p	class:JKYi::Logger	access:public	signature:(LogAppender::ptr appender)
@@ -2425,7 +2459,7 @@ JKYi::Logger::info	JKYi/log.h	/^    void info(LogEvent::ptr event);$/;"	p	class:
 JKYi::Logger::log	JKYi/log.cc	/^void Logger::log(LogLevel::Level level,LogEvent::ptr event){$/;"	f	class:JKYi::Logger	signature:(LogLevel::Level level,LogEvent::ptr event)
 JKYi::Logger::log	JKYi/log.h	/^    void log(LogLevel::Level level,LogEvent::ptr event);$/;"	p	class:JKYi::Logger	access:public	signature:(LogLevel::Level level,LogEvent::ptr event)
 JKYi::Logger::m_appenders	JKYi/log.h	/^    std::list<LogAppender::ptr>m_appenders;\/\/Appender集合$/;"	m	class:JKYi::Logger	access:private
-JKYi::Logger::m_formatter	JKYi/log.h	/^    LogFormatter::ptr m_formatter;\/\/日志的输出格式$/;"	m	class:JKYi::Logger	access:private
+JKYi::Logger::m_formatter	JKYi/log.h	/^    LogFormatter::ptr m_formatter;\/\/日志的输出格式,Logger的输出格式的话是用来向内部添加appneder的时候，如果这个appender没有设置format，就是用logger$/;"	m	class:JKYi::Logger	access:private
 JKYi::Logger::m_level	JKYi/log.h	/^    LogLevel::Level m_level;  \/\/日志的级别，只有满足级别的日志才会被输出$/;"	m	class:JKYi::Logger	access:private
 JKYi::Logger::m_mutex	JKYi/log.h	/^	MutexType m_mutex;$/;"	m	class:JKYi::Logger	access:private
 JKYi::Logger::m_name	JKYi/log.h	/^    std::string m_name;       \/\/日志的名称$/;"	m	class:JKYi::Logger	access:private
@@ -2444,7 +2478,7 @@ JKYi::LoggerManager	JKYi/log.h	/^class LoggerManager{$/;"	c	namespace:JKYi
 JKYi::LoggerManager::LoggerManager	JKYi/log.cc	/^LoggerManager::LoggerManager(){$/;"	f	class:JKYi::LoggerManager	signature:()
 JKYi::LoggerManager::LoggerManager	JKYi/log.h	/^     LoggerManager();$/;"	p	class:JKYi::LoggerManager	access:public	signature:()
 JKYi::LoggerManager::MutexType	JKYi/log.h	/^     typedef SpinLock MutexType;$/;"	t	class:JKYi::LoggerManager	access:public
-JKYi::LoggerManager::getLogger	JKYi/log.cc	/^Logger::ptr LoggerManager::getLogger(const std::string&name){$/;"	f	class:JKYi::LoggerManager	signature:(const std::string&name)
+JKYi::LoggerManager::getLogger	JKYi/log.cc	/^Logger::ptr LoggerManager::getLogger(const std::string& name){$/;"	f	class:JKYi::LoggerManager	signature:(const std::string& name)
 JKYi::LoggerManager::getLogger	JKYi/log.h	/^     Logger::ptr getLogger(const std::string&name);$/;"	p	class:JKYi::LoggerManager	access:public	signature:(const std::string&name)
 JKYi::LoggerManager::getRoot	JKYi/log.h	/^     Logger::ptr getRoot()const {return m_root;}$/;"	f	class:JKYi::LoggerManager	access:public	signature:() const
 JKYi::LoggerManager::init	JKYi/log.cc	/^void LoggerManager::init(){$/;"	f	class:JKYi::LoggerManager	signature:()
@@ -3143,24 +3177,24 @@ JKYi::Scheduler::GetMainFiber	JKYi/scheduler.h	/^   static Fiber* GetMainFiber()
 JKYi::Scheduler::GetThis	JKYi/scheduler.cc	/^Scheduler* Scheduler::GetThis(){$/;"	f	class:JKYi::Scheduler	signature:()
 JKYi::Scheduler::GetThis	JKYi/scheduler.h	/^   static Scheduler* GetThis();$/;"	p	class:JKYi::Scheduler	access:public	signature:()
 JKYi::Scheduler::MutexType	JKYi/scheduler.h	/^   typedef Mutex MutexType;$/;"	t	class:JKYi::Scheduler	access:public
-JKYi::Scheduler::Scheduler	JKYi/scheduler.cc	/^Scheduler::Scheduler(size_t threads,bool use_caller,const std::string&name)$/;"	f	class:JKYi::Scheduler	signature:(size_t threads,bool use_caller,const std::string&name)
+JKYi::Scheduler::Scheduler	JKYi/scheduler.cc	/^Scheduler::Scheduler(size_t threads,bool use_caller,const std::string& name)$/;"	f	class:JKYi::Scheduler	signature:(size_t threads,bool use_caller,const std::string& name)
 JKYi::Scheduler::Scheduler	JKYi/scheduler.h	/^   Scheduler(size_t threads = 1,bool use_caller = true,const std::string& name = "");$/;"	p	class:JKYi::Scheduler	access:public	signature:(size_t threads = 1,bool use_caller = true,const std::string& name = �)
 JKYi::Scheduler::dump	JKYi/scheduler.cc	/^std::ostream& Scheduler::dump(std::ostream& os){$/;"	f	class:JKYi::Scheduler	signature:(std::ostream& os)
 JKYi::Scheduler::dump	JKYi/scheduler.h	/^   std::ostream& dump(std::ostream& os);$/;"	p	class:JKYi::Scheduler	access:public	signature:(std::ostream& os)
 JKYi::Scheduler::getName	JKYi/scheduler.h	/^   const std::string& getName()const { return m_name; }$/;"	f	class:JKYi::Scheduler	access:public	signature:() const
-JKYi::Scheduler::hasIdleThreads	JKYi/scheduler.h	/^   bool hasIdleThreads(){return m_idleThreadCount>0;}$/;"	f	class:JKYi::Scheduler	access:protected	signature:()
+JKYi::Scheduler::hasIdleThreads	JKYi/scheduler.h	/^   bool hasIdleThreads(){return m_idleThreadCount > 0;}$/;"	f	class:JKYi::Scheduler	access:protected	signature:()
 JKYi::Scheduler::idle	JKYi/scheduler.cc	/^void Scheduler::idle(){$/;"	f	class:JKYi::Scheduler	signature:()
 JKYi::Scheduler::idle	JKYi/scheduler.h	/^   virtual void idle();$/;"	p	class:JKYi::Scheduler	access:protected	signature:()
-JKYi::Scheduler::m_activeThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_activeThreadCount={0};$/;"	m	class:JKYi::Scheduler	access:protected
-JKYi::Scheduler::m_autoStop	JKYi/scheduler.h	/^   bool m_autoStop=false;$/;"	m	class:JKYi::Scheduler	access:protected
+JKYi::Scheduler::m_activeThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_activeThreadCount = {0};$/;"	m	class:JKYi::Scheduler	access:protected
+JKYi::Scheduler::m_autoStop	JKYi/scheduler.h	/^   bool m_autoStop = false;$/;"	m	class:JKYi::Scheduler	access:protected
 JKYi::Scheduler::m_fibers	JKYi/scheduler.h	/^  std::list<FiberAndThread> m_fibers;$/;"	m	class:JKYi::Scheduler	access:private
-JKYi::Scheduler::m_idleThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_idleThreadCount={0};$/;"	m	class:JKYi::Scheduler	access:protected
+JKYi::Scheduler::m_idleThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_idleThreadCount = {0};$/;"	m	class:JKYi::Scheduler	access:protected
 JKYi::Scheduler::m_mutex	JKYi/scheduler.h	/^   MutexType m_mutex;$/;"	m	class:JKYi::Scheduler	access:private
 JKYi::Scheduler::m_name	JKYi/scheduler.h	/^  std::string m_name;$/;"	m	class:JKYi::Scheduler	access:private
 JKYi::Scheduler::m_rootFiber	JKYi/scheduler.h	/^  Fiber::ptr m_rootFiber;$/;"	m	class:JKYi::Scheduler	access:private
-JKYi::Scheduler::m_rootThread	JKYi/scheduler.h	/^   int m_rootThread=0;$/;"	m	class:JKYi::Scheduler	access:protected
-JKYi::Scheduler::m_stopping	JKYi/scheduler.h	/^   bool m_stopping=true;$/;"	m	class:JKYi::Scheduler	access:protected
-JKYi::Scheduler::m_threadCount	JKYi/scheduler.h	/^   size_t m_threadCount=0;$/;"	m	class:JKYi::Scheduler	access:protected
+JKYi::Scheduler::m_rootThread	JKYi/scheduler.h	/^   int m_rootThread = 0;$/;"	m	class:JKYi::Scheduler	access:protected
+JKYi::Scheduler::m_stopping	JKYi/scheduler.h	/^   bool m_stopping = true;$/;"	m	class:JKYi::Scheduler	access:protected
+JKYi::Scheduler::m_threadCount	JKYi/scheduler.h	/^   size_t m_threadCount = 0;$/;"	m	class:JKYi::Scheduler	access:protected
 JKYi::Scheduler::m_threadIds	JKYi/scheduler.h	/^   std::vector<int> m_threadIds;$/;"	m	class:JKYi::Scheduler	access:protected
 JKYi::Scheduler::m_threads	JKYi/scheduler.h	/^  std::vector<Thread::ptr> m_threads;$/;"	m	class:JKYi::Scheduler	access:private
 JKYi::Scheduler::ptr	JKYi/scheduler.h	/^   typedef std::shared_ptr<Scheduler> ptr;$/;"	t	class:JKYi::Scheduler	access:public
@@ -3755,7 +3789,7 @@ JKYi::ds::BlockingQueue::ptr	JKYi/ds/blocking_queue.h	/^    typedef std::shared_
 JKYi::ds::BlockingQueue::push	JKYi/ds/blocking_queue.h	/^    size_t push(const data_type& data){$/;"	f	class:JKYi::ds::BlockingQueue	access:public	signature:(const data_type& data)
 JKYi::ds::BlockingQueue::size	JKYi/ds/blocking_queue.h	/^    size_t size(){$/;"	f	class:JKYi::ds::BlockingQueue	access:public	signature:()
 JKYi::g_daemon_restart_interval	JKYi/daemon.cc	/^static ConfigVar<uint32_t>::ptr g_daemon_restart_interval = $/;"	m	namespace:JKYi	file:
-JKYi::g_fiber_stack_size	JKYi/fiber.cc	/^ static ConfigVar<uint32_t>::ptr g_fiber_stack_size=JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");$/;"	m	namespace:JKYi	file:
+JKYi::g_fiber_stack_size	JKYi/fiber.cc	/^ static ConfigVar<uint32_t>::ptr g_fiber_stack_size = JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");$/;"	m	namespace:JKYi	file:
 JKYi::g_log_defines	JKYi/log.cc	/^JKYi::ConfigVar<std::set<LogDefine>>::ptr g_log_defines = JKYi::Config::Lookup("logs",std::set<LogDefine>(),"logs config");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/address.cc	/^static JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/application.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
@@ -3766,12 +3800,12 @@ JKYi::g_logger	JKYi/db/fox_thread.cc	/^static Logger::ptr g_logger = JKYI_LOG_NA
 JKYi::g_logger	JKYi/db/mysql.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/db/redis.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/env.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
-JKYi::g_logger	JKYi/fiber.cc	/^ static JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
+JKYi::g_logger	JKYi/fiber.cc	/^ static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/iomanager.cc	/^static Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/library.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/module.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/reactor/Thread.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
-JKYi::g_logger	JKYi/scheduler.cc	/^static Logger::ptr g_logger=JKYI_LOG_NAME("system"); $/;"	m	namespace:JKYi	file:
+JKYi::g_logger	JKYi/scheduler.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system"); $/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/socket.cc	/^static Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/tcp_server.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 JKYi::g_logger	JKYi/thread.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
@@ -4675,6 +4709,8 @@ JKYi::my_mysql_query	JKYi/db/mysql.cc	/^static MYSQL_RES* my_mysql_query(MYSQL* 
 JKYi::mysql_init	JKYi/db/mysql.cc	/^static MYSQL* mysql_init(std::map<std::string,std::string>& params,$/;"	f	namespace:JKYi	signature:(std::map<std::string,std::string>& params, const int& timeout)
 JKYi::mysql_time_to_time_t	JKYi/db/mysql.cc	/^bool mysql_time_to_time_t(const MYSQL_TIME& mt,time_t& ts){$/;"	f	namespace:JKYi	signature:(const MYSQL_TIME& mt,time_t& ts)
 JKYi::mysql_time_to_time_t	JKYi/db/mysql.h	/^bool mysql_time_to_time_t(const MYSQL_TIME& mt,time_t& ts);$/;"	p	namespace:JKYi	signature:(const MYSQL_TIME& mt,time_t& ts)
+JKYi::net	JKYi/reactor/AsyncLogging.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+JKYi::net	JKYi/reactor/AsyncLogging.h	/^namespace net{$/;"	n	namespace:JKYi
 JKYi::net	JKYi/reactor/Buffer.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
 JKYi::net	JKYi/reactor/Buffer.h	/^namespace net{$/;"	n	namespace:JKYi
 JKYi::net	JKYi/reactor/Callbacks.h	/^namespace net{$/;"	n	namespace:JKYi
@@ -4686,6 +4722,14 @@ JKYi::net	JKYi/reactor/EventLoopThread.cc	/^namespace net{$/;"	n	namespace:JKYi	
 JKYi::net	JKYi/reactor/EventLoopThread.h	/^namespace net{$/;"	n	namespace:JKYi
 JKYi::net	JKYi/reactor/EventLoopThreadPool.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
 JKYi::net	JKYi/reactor/EventLoopThreadPool.h	/^namespace net{$/;"	n	namespace:JKYi
+JKYi::net	JKYi/reactor/FileUtil.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+JKYi::net	JKYi/reactor/FileUtil.h	/^namespace net{$/;"	n	namespace:JKYi
+JKYi::net	JKYi/reactor/LogFile.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+JKYi::net	JKYi/reactor/LogFile.h	/^namespace net{$/;"	n	namespace:JKYi
+JKYi::net	JKYi/reactor/LogStream.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+JKYi::net	JKYi/reactor/LogStream.h	/^namespace net{$/;"	n	namespace:JKYi
+JKYi::net	JKYi/reactor/Logging.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+JKYi::net	JKYi/reactor/Logging.h	/^namespace net{$/;"	n	namespace:JKYi
 JKYi::net	JKYi/reactor/Socket.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
 JKYi::net	JKYi/reactor/Socket.h	/^namespace net{$/;"	n	namespace:JKYi
 JKYi::net	JKYi/reactor/SocketsOps.h	/^namespace net{$/;"	n	namespace:JKYi
@@ -4740,6 +4784,45 @@ JKYi::net::Acceptor::newConnectionCallback_	JKYi/reactor/acceptor.h	/^    NewCon
 JKYi::net::Acceptor::setNewConnectionCallback	JKYi/reactor/acceptor.h	/^    void setNewConnectionCallback(const NewConnectionCallback& cb){$/;"	f	class:JKYi::net::Acceptor	access:public	signature:(const NewConnectionCallback& cb)
 JKYi::net::Acceptor::~Acceptor	JKYi/reactor/acceptor.cc	/^Acceptor::~Acceptor(){$/;"	f	class:JKYi::net::Acceptor	signature:()
 JKYi::net::Acceptor::~Acceptor	JKYi/reactor/acceptor.h	/^    ~Acceptor();$/;"	p	class:JKYi::net::Acceptor	access:public	signature:()
+JKYi::net::AppendFile	JKYi/reactor/FileUtil.h	/^class AppendFile : public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
+JKYi::net::AppendFile::AppendFile	JKYi/reactor/FileUtil.cc	/^AppendFile::AppendFile(const std::string& filename)$/;"	f	class:JKYi::net::AppendFile	signature:(const std::string& filename)
+JKYi::net::AppendFile::AppendFile	JKYi/reactor/FileUtil.h	/^    explicit AppendFile(const std::string& filename);$/;"	p	class:JKYi::net::AppendFile	access:public	signature:(const std::string& filename)
+JKYi::net::AppendFile::append	JKYi/reactor/FileUtil.cc	/^void AppendFile::append(const char* logline,const size_t len){$/;"	f	class:JKYi::net::AppendFile	signature:(const char* logline,const size_t len)
+JKYi::net::AppendFile::append	JKYi/reactor/FileUtil.h	/^    void append(const char* logline,size_t len);$/;"	p	class:JKYi::net::AppendFile	access:public	signature:(const char* logline,size_t len)
+JKYi::net::AppendFile::buffer_	JKYi/reactor/FileUtil.h	/^    char buffer_[64 * 1024];$/;"	m	class:JKYi::net::AppendFile	access:private
+JKYi::net::AppendFile::flush	JKYi/reactor/FileUtil.cc	/^void AppendFile::flush(){$/;"	f	class:JKYi::net::AppendFile	signature:()
+JKYi::net::AppendFile::flush	JKYi/reactor/FileUtil.h	/^    void flush();$/;"	p	class:JKYi::net::AppendFile	access:public	signature:()
+JKYi::net::AppendFile::fp_	JKYi/reactor/FileUtil.h	/^    FILE* fp_;$/;"	m	class:JKYi::net::AppendFile	access:private
+JKYi::net::AppendFile::write	JKYi/reactor/FileUtil.cc	/^size_t AppendFile::write(const char* logline,size_t len){$/;"	f	class:JKYi::net::AppendFile	signature:(const char* logline,size_t len)
+JKYi::net::AppendFile::write	JKYi/reactor/FileUtil.h	/^    size_t write(const char* logfile,size_t len);$/;"	p	class:JKYi::net::AppendFile	access:private	signature:(const char* logfile,size_t len)
+JKYi::net::AppendFile::writtenBytes	JKYi/reactor/FileUtil.h	/^    off_t writtenBytes()const { return writtenBytes_; }$/;"	f	class:JKYi::net::AppendFile	access:public	signature:() const
+JKYi::net::AppendFile::writtenBytes_	JKYi/reactor/FileUtil.h	/^    off_t writtenBytes_;$/;"	m	class:JKYi::net::AppendFile	access:private
+JKYi::net::AppendFile::~AppendFile	JKYi/reactor/FileUtil.cc	/^AppendFile::~AppendFile(){$/;"	f	class:JKYi::net::AppendFile	signature:()
+JKYi::net::AppendFile::~AppendFile	JKYi/reactor/FileUtil.h	/^    ~AppendFile();$/;"	p	class:JKYi::net::AppendFile	access:public	signature:()
+JKYi::net::AsyncLogging	JKYi/reactor/AsyncLogging.h	/^class AsyncLogging :public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
+JKYi::net::AsyncLogging::AsyncLogging	JKYi/reactor/AsyncLogging.cc	/^AsyncLogging::AsyncLogging(const std::string& basename,$/;"	f	class:JKYi::net::AsyncLogging	signature:(const std::string& basename, off_t rollSize, int flushInterval)
+JKYi::net::AsyncLogging::AsyncLogging	JKYi/reactor/AsyncLogging.h	/^    AsyncLogging(const std::string& basename,$/;"	p	class:JKYi::net::AsyncLogging	access:public	signature:(const std::string& basename, off_t rollSize, int flushInterval = 3)
+JKYi::net::AsyncLogging::Buffer	JKYi/reactor/AsyncLogging.h	/^    typedef JKYi::net::detail::FixedBuffer<JKYi::net::detail::kLargeBuffer> Buffer;$/;"	t	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::BufferPtr	JKYi/reactor/AsyncLogging.h	/^    typedef BufferVector::value_type BufferPtr;$/;"	t	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::BufferVector	JKYi/reactor/AsyncLogging.h	/^    typedef std::vector<std::unique_ptr<Buffer>> BufferVector;$/;"	t	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::append	JKYi/reactor/AsyncLogging.cc	/^void AsyncLogging::append(const char* logline,int len){$/;"	f	class:JKYi::net::AsyncLogging	signature:(const char* logline,int len)
+JKYi::net::AsyncLogging::append	JKYi/reactor/AsyncLogging.h	/^    void append(const char* logline,int len);$/;"	p	class:JKYi::net::AsyncLogging	access:public	signature:(const char* logline,int len)
+JKYi::net::AsyncLogging::basename_	JKYi/reactor/AsyncLogging.h	/^    const std::string basename_;       \/\/日志文件的名称$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::buffers_	JKYi/reactor/AsyncLogging.h	/^    BufferVector buffers_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::cond_	JKYi/reactor/AsyncLogging.h	/^    JKYi::Condition cond_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::currentBuffer_	JKYi/reactor/AsyncLogging.h	/^    BufferPtr currentBuffer_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::flushInterval_	JKYi/reactor/AsyncLogging.h	/^    const int flushInterval_;           \/\/刷盘的间隔$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::latch_	JKYi/reactor/AsyncLogging.h	/^    JKYi::CountDownLatch latch_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::mutex_	JKYi/reactor/AsyncLogging.h	/^    JKYi::Mutex mutex_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::nextBuffer_	JKYi/reactor/AsyncLogging.h	/^    BufferPtr nextBuffer_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::rollSize_	JKYi/reactor/AsyncLogging.h	/^    const off_t rollSize_;             \/\/更换目标文件的大小$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::running_	JKYi/reactor/AsyncLogging.h	/^    std::atomic<bool> running_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::start	JKYi/reactor/AsyncLogging.h	/^    void start(){$/;"	f	class:JKYi::net::AsyncLogging	access:public	signature:()
+JKYi::net::AsyncLogging::stop	JKYi/reactor/AsyncLogging.h	/^    void stop(){$/;"	f	class:JKYi::net::AsyncLogging	access:public	signature:()
+JKYi::net::AsyncLogging::threadFunc	JKYi/reactor/AsyncLogging.cc	/^void AsyncLogging::threadFunc(){$/;"	f	class:JKYi::net::AsyncLogging	signature:()
+JKYi::net::AsyncLogging::threadFunc	JKYi/reactor/AsyncLogging.h	/^    void threadFunc();$/;"	p	class:JKYi::net::AsyncLogging	access:private	signature:()
+JKYi::net::AsyncLogging::thread_	JKYi/reactor/AsyncLogging.h	/^    JKYi::net::Thread thread_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
+JKYi::net::AsyncLogging::~AsyncLogging	JKYi/reactor/AsyncLogging.h	/^    ~AsyncLogging(){$/;"	f	class:JKYi::net::AsyncLogging	access:public	signature:()
 JKYi::net::Buffer	JKYi/reactor/Buffer.h	/^class Buffer{$/;"	c	namespace:JKYi::net
 JKYi::net::Buffer::Buffer	JKYi/reactor/Buffer.h	/^    explicit Buffer(size_t initialSize = kInitialSize)$/;"	f	class:JKYi::net::Buffer	access:public	signature:(size_t initialSize = kInitialSize)
 JKYi::net::Buffer::append	JKYi/reactor/Buffer.h	/^    void append(const StringPiece& str){$/;"	f	class:JKYi::net::Buffer	access:public	signature:(const StringPiece& str)
@@ -5137,6 +5220,110 @@ JKYi::net::HttpServer::setThreadNum	JKYi/reactor/http/HttpServer.h	/^    void se
 JKYi::net::HttpServer::start	JKYi/reactor/http/HttpServer.cc	/^void HttpServer::start(){$/;"	f	class:JKYi::net::HttpServer	signature:()
 JKYi::net::HttpServer::start	JKYi/reactor/http/HttpServer.h	/^    void start();$/;"	p	class:JKYi::net::HttpServer	access:public	signature:()
 JKYi::net::JKYi::net::Thread::numCreated_	JKYi/reactor/Thread.cc	/^AtomicInt32 JKYi::net::Thread::numCreated_;$/;"	m	class:JKYi::net::JKYi::net::Thread	file:
+JKYi::net::LogFile	JKYi/reactor/LogFile.h	/^class LogFile : public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
+JKYi::net::LogFile::LogFile	JKYi/reactor/LogFile.cc	/^LogFile::LogFile(const std::string& filename,$/;"	f	class:JKYi::net::LogFile	signature:(const std::string& filename, off_t rollSize, bool threadSafe, int flushInterval, int checkEveryN)
+JKYi::net::LogFile::LogFile	JKYi/reactor/LogFile.h	/^    LogFile(const std::string& filename,$/;"	p	class:JKYi::net::LogFile	access:public	signature:(const std::string& filename, off_t rollSize, bool threadSafe = true, int flushInterval = 3, int chechEveryN = 1024)
+JKYi::net::LogFile::append	JKYi/reactor/LogFile.cc	/^void LogFile::append(const char* logline,int len){$/;"	f	class:JKYi::net::LogFile	signature:(const char* logline,int len)
+JKYi::net::LogFile::append	JKYi/reactor/LogFile.h	/^    void append(const char* logline,int len);$/;"	p	class:JKYi::net::LogFile	access:public	signature:(const char* logline,int len)
+JKYi::net::LogFile::append_unlocked	JKYi/reactor/LogFile.cc	/^void LogFile::append_unlocked(const char* logline,int len){$/;"	f	class:JKYi::net::LogFile	signature:(const char* logline,int len)
+JKYi::net::LogFile::append_unlocked	JKYi/reactor/LogFile.h	/^    void append_unlocked(const char* logline,int len);$/;"	p	class:JKYi::net::LogFile	access:private	signature:(const char* logline,int len)
+JKYi::net::LogFile::basename_	JKYi/reactor/LogFile.h	/^    const std::string basename_;$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::checkEveryN_	JKYi/reactor/LogFile.h	/^    const int checkEveryN_;       \/\/对同一个日志文件最多能够写的次数$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::count_	JKYi/reactor/LogFile.h	/^    int count_;                   \/\/用来记录对一个日志文件进行写操作的次数$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::file_	JKYi/reactor/LogFile.h	/^    std::unique_ptr<AppendFile> file_;$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::flush	JKYi/reactor/LogFile.cc	/^void LogFile::flush(){$/;"	f	class:JKYi::net::LogFile	signature:()
+JKYi::net::LogFile::flush	JKYi/reactor/LogFile.h	/^    void flush();$/;"	p	class:JKYi::net::LogFile	access:public	signature:()
+JKYi::net::LogFile::flushInterval_	JKYi/reactor/LogFile.h	/^    const int flushInterval_;$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::getLogFileName	JKYi/reactor/LogFile.cc	/^std::string LogFile::getLogFileName(const std::string& basename,time_t* now){$/;"	f	class:JKYi::net::LogFile	signature:(const std::string& basename,time_t* now)
+JKYi::net::LogFile::getLogFileName	JKYi/reactor/LogFile.h	/^    static std::string getLogFileName(const std::string& name,time_t* now);$/;"	p	class:JKYi::net::LogFile	access:private	signature:(const std::string& name,time_t* now)
+JKYi::net::LogFile::kRollPerSeconds_	JKYi/reactor/LogFile.h	/^    const static int kRollPerSeconds_ = 60 * 60 * 24; $/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::lastFlush_	JKYi/reactor/LogFile.h	/^    time_t lastFlush_;$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::lastRoll_	JKYi/reactor/LogFile.h	/^    time_t lastRoll_;$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::mutex_	JKYi/reactor/LogFile.h	/^    std::unique_ptr<JKYi::Mutex> mutex_;$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::rollFile	JKYi/reactor/LogFile.cc	/^bool LogFile::rollFile(){$/;"	f	class:JKYi::net::LogFile	signature:()
+JKYi::net::LogFile::rollFile	JKYi/reactor/LogFile.h	/^    bool rollFile();$/;"	p	class:JKYi::net::LogFile	access:public	signature:()
+JKYi::net::LogFile::rollSize_	JKYi/reactor/LogFile.h	/^    const off_t rollSize_;          \/\/日志文件的临界大小$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::startOfPeriod_	JKYi/reactor/LogFile.h	/^    time_t startOfPeriod_;$/;"	m	class:JKYi::net::LogFile	access:private
+JKYi::net::LogFile::~LogFile	JKYi/reactor/LogFile.cc	/^LogFile::~LogFile() = default;$/;"	p	class:JKYi::net::LogFile	file:	signature:()
+JKYi::net::LogFile::~LogFile	JKYi/reactor/LogFile.h	/^    ~LogFile();$/;"	p	class:JKYi::net::LogFile	access:public	signature:()
+JKYi::net::LogLevelName	JKYi/reactor/Logging.cc	/^const char* LogLevelName[Logger::NUM_LOG_LEVELS] = {$/;"	m	namespace:JKYi::net	file:
+JKYi::net::LogStream	JKYi/reactor/LogStream.h	/^class LogStream : public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
+JKYi::net::LogStream::Buffer	JKYi/reactor/LogStream.h	/^   typedef detail::FixedBuffer<detail::kSmallBuffer> Buffer;$/;"	t	class:JKYi::net::LogStream	access:public
+JKYi::net::LogStream::append	JKYi/reactor/LogStream.h	/^   void append(const char* data,int len) { buffer_.append(data,len); }$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const char* data,int len)
+JKYi::net::LogStream::buffer	JKYi/reactor/LogStream.h	/^   const Buffer& buffer()const { return buffer_; }$/;"	f	class:JKYi::net::LogStream	access:public	signature:() const
+JKYi::net::LogStream::buffer_	JKYi/reactor/LogStream.h	/^   Buffer buffer_;$/;"	m	class:JKYi::net::LogStream	access:private
+JKYi::net::LogStream::formatInteger	JKYi/reactor/LogStream.cc	/^void LogStream::formatInteger(T v){$/;"	f	class:JKYi::net::LogStream	signature:(T v)
+JKYi::net::LogStream::formatInteger	JKYi/reactor/LogStream.h	/^   void formatInteger(T);$/;"	p	class:JKYi::net::LogStream	access:private	signature:(T)
+JKYi::net::LogStream::kMaxNumericSize	JKYi/reactor/LogStream.h	/^   static const int kMaxNumericSize = 48;$/;"	m	class:JKYi::net::LogStream	access:private
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (const void * p){$/;"	f	class:JKYi::net::LogStream	signature:(const void * p)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (double v){$/;"	f	class:JKYi::net::LogStream	signature:(double v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (int v){$/;"	f	class:JKYi::net::LogStream	signature:(int v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (long long v){$/;"	f	class:JKYi::net::LogStream	signature:(long long v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (long v){$/;"	f	class:JKYi::net::LogStream	signature:(long v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (short v){$/;"	f	class:JKYi::net::LogStream	signature:(short v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (unsigned int v){$/;"	f	class:JKYi::net::LogStream	signature:(unsigned int v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (unsigned long long v){$/;"	f	class:JKYi::net::LogStream	signature:(unsigned long long v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (unsigned long v){$/;"	f	class:JKYi::net::LogStream	signature:(unsigned long v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (unsigned short v ){$/;"	f	class:JKYi::net::LogStream	signature:(unsigned short v )
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (bool v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(bool v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (char v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(char v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const Buffer& v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const Buffer& v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const StringPiece& v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const StringPiece& v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const char* str){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const char* str)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const std::string& v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const std::string& v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const unsigned char* str){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const unsigned char* str)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const void *);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(const void *)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (double v);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(double v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (float v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(float v)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (int);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(int)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (long long);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(long long)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (long);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(long)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (short);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(short)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (unsigned int);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(unsigned int)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (unsigned long long);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(unsigned long long)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (unsigned long);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(unsigned long)
+JKYi::net::LogStream::operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (unsigned short);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(unsigned short)
+JKYi::net::LogStream::resetBuffer	JKYi/reactor/LogStream.h	/^   void resetBuffer() { buffer_.reset(); }$/;"	f	class:JKYi::net::LogStream	access:public	signature:()
+JKYi::net::LogStream::self	JKYi/reactor/LogStream.h	/^typedef LogStream self;$/;"	t	class:JKYi::net::LogStream	access:private
+JKYi::net::Logger	JKYi/reactor/Logging.h	/^class Logger{$/;"	c	namespace:JKYi::net
+JKYi::net::Logger::DEBUG	JKYi/reactor/Logging.h	/^        DEBUG,$/;"	e	enum:JKYi::net::Logger::LogLevel
+JKYi::net::Logger::ERROR	JKYi/reactor/Logging.h	/^        ERROR,$/;"	e	enum:JKYi::net::Logger::LogLevel
+JKYi::net::Logger::FATAL	JKYi/reactor/Logging.h	/^        FATAL,$/;"	e	enum:JKYi::net::Logger::LogLevel
+JKYi::net::Logger::FlushFunc	JKYi/reactor/Logging.h	/^    typedef void (*FlushFunc) ();$/;"	t	class:JKYi::net::Logger	access:public
+JKYi::net::Logger::INFO	JKYi/reactor/Logging.h	/^        INFO,$/;"	e	enum:JKYi::net::Logger::LogLevel
+JKYi::net::Logger::Impl	JKYi/reactor/Logging.h	/^    class Impl{$/;"	c	class:JKYi::net::Logger	access:private
+JKYi::net::Logger::Impl::Impl	JKYi/reactor/Logging.cc	/^Logger::Impl::Impl(LogLevel level,const std::string& filename,int line)$/;"	f	class:JKYi::net::Logger::Impl	signature:(LogLevel level,const std::string& filename,int line)
+JKYi::net::Logger::Impl::Impl	JKYi/reactor/Logging.h	/^        Impl(LogLevel level,const std::string& filename,int line);$/;"	p	class:JKYi::net::Logger::Impl	access:public	signature:(LogLevel level,const std::string& filename,int line)
+JKYi::net::Logger::Impl::LogLevel	JKYi/reactor/Logging.h	/^        typedef Logger::LogLevel LogLevel;$/;"	t	class:JKYi::net::Logger::Impl	access:public
+JKYi::net::Logger::Impl::filename_	JKYi/reactor/Logging.h	/^        const std::string& filename_;$/;"	m	class:JKYi::net::Logger::Impl	access:public
+JKYi::net::Logger::Impl::finish	JKYi/reactor/Logging.cc	/^void Logger::Impl::finish(){$/;"	f	class:JKYi::net::Logger::Impl	signature:()
+JKYi::net::Logger::Impl::finish	JKYi/reactor/Logging.h	/^        void finish();$/;"	p	class:JKYi::net::Logger::Impl	access:public	signature:()
+JKYi::net::Logger::Impl::formatTime	JKYi/reactor/Logging.cc	/^void Logger::Impl::formatTime(){$/;"	f	class:JKYi::net::Logger::Impl	signature:()
+JKYi::net::Logger::Impl::formatTime	JKYi/reactor/Logging.h	/^        void formatTime();$/;"	p	class:JKYi::net::Logger::Impl	access:public	signature:()
+JKYi::net::Logger::Impl::level_	JKYi/reactor/Logging.h	/^        LogLevel level_;$/;"	m	class:JKYi::net::Logger::Impl	access:public
+JKYi::net::Logger::Impl::line_	JKYi/reactor/Logging.h	/^        int line_;$/;"	m	class:JKYi::net::Logger::Impl	access:public
+JKYi::net::Logger::Impl::stream_	JKYi/reactor/Logging.h	/^        LogStream stream_;$/;"	m	class:JKYi::net::Logger::Impl	access:public
+JKYi::net::Logger::LogLevel	JKYi/reactor/Logging.h	/^    enum LogLevel{$/;"	g	class:JKYi::net::Logger	access:public
+JKYi::net::Logger::Logger	JKYi/reactor/Logging.cc	/^Logger::Logger(const std::string& filename,int line)$/;"	f	class:JKYi::net::Logger	signature:(const std::string& filename,int line)
+JKYi::net::Logger::Logger	JKYi/reactor/Logging.cc	/^Logger::Logger(const std::string& filename,int line,LogLevel level)$/;"	f	class:JKYi::net::Logger	signature:(const std::string& filename,int line,LogLevel level)
+JKYi::net::Logger::Logger	JKYi/reactor/Logging.h	/^    Logger(const std::string& filename,int line);$/;"	p	class:JKYi::net::Logger	access:public	signature:(const std::string& filename,int line)
+JKYi::net::Logger::Logger	JKYi/reactor/Logging.h	/^    Logger(const std::string& filename,int line,LogLevel level);$/;"	p	class:JKYi::net::Logger	access:public	signature:(const std::string& filename,int line,LogLevel level)
+JKYi::net::Logger::NUM_LOG_LEVELS	JKYi/reactor/Logging.h	/^        NUM_LOG_LEVELS,$/;"	e	enum:JKYi::net::Logger::LogLevel
+JKYi::net::Logger::TRACE	JKYi/reactor/Logging.h	/^        TRACE,$/;"	e	enum:JKYi::net::Logger::LogLevel
+JKYi::net::Logger::WARN	JKYi/reactor/Logging.h	/^        WARN,$/;"	e	enum:JKYi::net::Logger::LogLevel
+JKYi::net::Logger::impl_	JKYi/reactor/Logging.h	/^    Impl impl_;$/;"	m	class:JKYi::net::Logger	access:private
+JKYi::net::Logger::logLevel	JKYi/reactor/Logging.h	/^    static LogLevel logLevel();$/;"	p	class:JKYi::net::Logger	access:public	signature:()
+JKYi::net::Logger::logLevel	JKYi/reactor/Logging.h	/^inline Logger::LogLevel Logger::logLevel(){$/;"	f	class:JKYi::net::Logger	signature:()
+JKYi::net::Logger::outputFunc	JKYi/reactor/Logging.h	/^    typedef void (*outputFunc) (const char* msg,int len);$/;"	t	class:JKYi::net::Logger	access:public
+JKYi::net::Logger::setFlush	JKYi/reactor/Logging.cc	/^void Logger::setFlush(FlushFunc flush){$/;"	f	class:JKYi::net::Logger	signature:(FlushFunc flush)
+JKYi::net::Logger::setFlush	JKYi/reactor/Logging.h	/^    static void setFlush(FlushFunc func);$/;"	p	class:JKYi::net::Logger	access:public	signature:(FlushFunc func)
+JKYi::net::Logger::setLogLevel	JKYi/reactor/Logging.cc	/^void Logger::setLogLevel(Logger::LogLevel level){$/;"	f	class:JKYi::net::Logger	signature:(Logger::LogLevel level)
+JKYi::net::Logger::setLogLevel	JKYi/reactor/Logging.h	/^    static void setLogLevel(LogLevel level);$/;"	p	class:JKYi::net::Logger	access:public	signature:(LogLevel level)
+JKYi::net::Logger::setOutput	JKYi/reactor/Logging.cc	/^void Logger::setOutput(outputFunc out){$/;"	f	class:JKYi::net::Logger	signature:(outputFunc out)
+JKYi::net::Logger::setOutput	JKYi/reactor/Logging.h	/^    static void setOutput(outputFunc func);$/;"	p	class:JKYi::net::Logger	access:public	signature:(outputFunc func)
+JKYi::net::Logger::stream	JKYi/reactor/Logging.h	/^    LogStream& stream() { return impl_.stream_; }$/;"	f	class:JKYi::net::Logger	access:public	signature:()
+JKYi::net::Logger::~Logger	JKYi/reactor/Logging.cc	/^Logger::~Logger(){$/;"	f	class:JKYi::net::Logger	signature:()
+JKYi::net::Logger::~Logger	JKYi/reactor/Logging.h	/^    ~Logger();$/;"	p	class:JKYi::net::Logger	access:public	signature:()
 JKYi::net::MessageCallback	JKYi/reactor/Callbacks.h	/^                                       Timestamp)> MessageCallback;$/;"	t	namespace:JKYi::net
 JKYi::net::MessagePtr	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^typedef std::shared_ptr<google::protobuf::Message> MessagePtr;$/;"	t	namespace:JKYi::net
 JKYi::net::PollPoller	JKYi/reactor/poller/pollPoller.h	/^class PollPoller:public Poller{$/;"	c	namespace:JKYi::net	inherits:Poller
@@ -5275,6 +5462,10 @@ JKYi::net::StringPiece::set	JKYi/reactor/StringPiece.h	/^  void set(const char* 
 JKYi::net::StringPiece::set	JKYi/reactor/StringPiece.h	/^  void set(const void* buffer, int len) {$/;"	f	class:JKYi::net::StringPiece	access:public	signature:(const void* buffer, int len)
 JKYi::net::StringPiece::size	JKYi/reactor/StringPiece.h	/^  int size() const { return length_; }$/;"	f	class:JKYi::net::StringPiece	access:public	signature:() const
 JKYi::net::StringPiece::starts_with	JKYi/reactor/StringPiece.h	/^  bool starts_with(const StringPiece& x) const {$/;"	f	class:JKYi::net::StringPiece	access:public	signature:(const StringPiece& x) const
+JKYi::net::T	JKYi/reactor/Logging.cc	/^class T{$/;"	c	namespace:JKYi::net	file:
+JKYi::net::T::T	JKYi/reactor/Logging.cc	/^    T(const char* str,unsigned len)$/;"	f	class:JKYi::net::T	access:public	signature:(const char* str,unsigned len)
+JKYi::net::T::len_	JKYi/reactor/Logging.cc	/^    const unsigned len_;$/;"	m	class:JKYi::net::T	file:	access:public
+JKYi::net::T::str_	JKYi/reactor/Logging.cc	/^    const char* str_;$/;"	m	class:JKYi::net::T	file:	access:public
 JKYi::net::TcpClient	JKYi/reactor/TcpClient.h	/^class TcpClient : public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
 JKYi::net::TcpClient::TcpClient	JKYi/reactor/TcpClient.cc	/^TcpClient::TcpClient(EventLoop* loop,const Address::ptr& serverAddr,$/;"	f	class:JKYi::net::TcpClient	signature:(EventLoop* loop,const Address::ptr& serverAddr, const std::string& nameArg)
 JKYi::net::TcpClient::TcpClient	JKYi/reactor/TcpClient.h	/^    TcpClient(EventLoop* loop,$/;"	p	class:JKYi::net::TcpClient	access:public	signature:(EventLoop* loop, const Address::ptr& serverAddr, const std::string& nameArg)
@@ -5535,21 +5726,53 @@ JKYi::net::__anon18::kAdded	JKYi/reactor/poller/epollPoller.cc	/^    const int k
 JKYi::net::__anon18::kDeleted	JKYi/reactor/poller/epollPoller.cc	/^    const int kDeleted = 2;   \/\/map中存在该channel，但是对应的fd已经epoll_ctl_del$/;"	m	namespace:JKYi::net::__anon18	file:
 JKYi::net::__anon18::kNew	JKYi/reactor/poller/epollPoller.cc	/^    const int kNew  = -1;     \/\/未添加$/;"	m	namespace:JKYi::net::__anon18	file:
 JKYi::net::addTime	JKYi/timestamp.h	/^inline Timestamp addTime(Timestamp timestamp,double seconds){$/;"	f	namespace:JKYi::net	signature:(Timestamp timestamp,double seconds)
+JKYi::net::asyncLogger	JKYi/reactor/Logging.cc	/^static AsyncLogging* asyncLogger;$/;"	m	namespace:JKYi::net	file:
 JKYi::net::defaultConnectionCallback	JKYi/reactor/Callbacks.h	/^void defaultConnectionCallback(const TcpConnectionPtr& conn);$/;"	p	namespace:JKYi::net	signature:(const TcpConnectionPtr& conn)
 JKYi::net::defaultConnectionCallback	JKYi/reactor/TcpConnection.cc	/^void defaultConnectionCallback(const TcpConnectionPtr& conn){$/;"	f	namespace:JKYi::net	signature:(const TcpConnectionPtr& conn)
+JKYi::net::defaultFlush	JKYi/reactor/Logging.cc	/^void defaultFlush(){$/;"	f	namespace:JKYi::net	signature:()
 JKYi::net::defaultMessageCallback	JKYi/reactor/Callbacks.h	/^void defaultMessageCallback(const TcpConnectionPtr& conn,Buffer*,$/;"	p	namespace:JKYi::net	signature:(const TcpConnectionPtr& conn,Buffer*, Timestamp receiveTime)
 JKYi::net::defaultMessageCallback	JKYi/reactor/TcpConnection.cc	/^void defaultMessageCallback(const TcpConnectionPtr& conn,Buffer* buf,$/;"	f	namespace:JKYi::net	signature:(const TcpConnectionPtr& conn,Buffer* buf, Timestamp receiveTime)
+JKYi::net::defaultOutput	JKYi/reactor/Logging.cc	/^void defaultOutput (const char* msg,int len){$/;"	f	namespace:JKYi::net	signature:(const char* msg,int len)
+JKYi::net::detail	JKYi/reactor/LogStream.cc	/^namespace detail{$/;"	n	namespace:JKYi::net	file:
+JKYi::net::detail	JKYi/reactor/LogStream.h	/^namespace detail{$/;"	n	namespace:JKYi::net
 JKYi::net::detail	JKYi/reactor/TcpClient.cc	/^namespace detail{$/;"	n	namespace:JKYi::net	file:
 JKYi::net::detail	JKYi/reactor/http/HttpServer.cc	/^namespace detail{$/;"	n	namespace:JKYi::net	file:
 JKYi::net::detail	JKYi/reactor/timerQueue.cc	/^namespace detail{$/;"	n	namespace:JKYi::net	file:
+JKYi::net::detail::FixedBuffer	JKYi/reactor/LogStream.h	/^class FixedBuffer : public Noncopyable{$/;"	c	namespace:JKYi::net::detail	inherits:Noncopyable
+JKYi::net::detail::FixedBuffer::FixedBuffer	JKYi/reactor/LogStream.h	/^    FixedBuffer()$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
+JKYi::net::detail::FixedBuffer::add	JKYi/reactor/LogStream.h	/^    void add(size_t len){ cur_ += len; }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:(size_t len)
+JKYi::net::detail::FixedBuffer::append	JKYi/reactor/LogStream.h	/^    void append(const char* buf,size_t len){$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:(const char* buf,size_t len)
+JKYi::net::detail::FixedBuffer::avail	JKYi/reactor/LogStream.h	/^    int avail()const { return static_cast<int>(end() - cur_); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
+JKYi::net::detail::FixedBuffer::bzero	JKYi/reactor/LogStream.h	/^    void bzero() { memset(data_,0,sizeof(data_)); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
+JKYi::net::detail::FixedBuffer::cur_	JKYi/reactor/LogStream.h	/^    char* cur_;$/;"	m	class:JKYi::net::detail::FixedBuffer	access:private
+JKYi::net::detail::FixedBuffer::current	JKYi/reactor/LogStream.h	/^    char* current() { return cur_; }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
+JKYi::net::detail::FixedBuffer::data	JKYi/reactor/LogStream.h	/^    const char* data()const { return data_; }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
+JKYi::net::detail::FixedBuffer::data_	JKYi/reactor/LogStream.h	/^    char data_[SIZE];$/;"	m	class:JKYi::net::detail::FixedBuffer	access:private
+JKYi::net::detail::FixedBuffer::end	JKYi/reactor/LogStream.h	/^    const char* end()const { return data_ + sizeof(data_); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:private	signature:() const
+JKYi::net::detail::FixedBuffer::length	JKYi/reactor/LogStream.h	/^    int length()const {$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
+JKYi::net::detail::FixedBuffer::reset	JKYi/reactor/LogStream.h	/^    void reset() { cur_ = data_; }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
+JKYi::net::detail::FixedBuffer::toString	JKYi/reactor/LogStream.h	/^    std::string toString()const { return std::string(data_,length()); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
+JKYi::net::detail::FixedBuffer::toStringPiece	JKYi/reactor/LogStream.h	/^    StringPiece toStringPiece()const { return StringPiece(data_,length()); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
+JKYi::net::detail::FixedBuffer::~FixedBuffer	JKYi/reactor/LogStream.h	/^    ~FixedBuffer(){$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
+JKYi::net::detail::convert	JKYi/reactor/LogStream.cc	/^size_t convert(char buf[],T value){$/;"	f	namespace:JKYi::net::detail	signature:(char buf[],T value)
+JKYi::net::detail::convertHex	JKYi/reactor/LogStream.cc	/^size_t convertHex(char buf[],uintptr_t value){$/;"	f	namespace:JKYi::net::detail	signature:(char buf[],uintptr_t value)
 JKYi::net::detail::createTimerfd	JKYi/reactor/timerQueue.cc	/^int createTimerfd(){$/;"	f	namespace:JKYi::net::detail	signature:()
 JKYi::net::detail::defaultHttpCallback	JKYi/reactor/http/HttpServer.cc	/^void defaultHttpCallback(const HttpRequest& req,HttpResponse* rsp){$/;"	f	namespace:JKYi::net::detail	signature:(const HttpRequest& req,HttpResponse* rsp)
+JKYi::net::detail::digits	JKYi/reactor/LogStream.cc	/^const char digits[] = "9876543210123456789";$/;"	m	namespace:JKYi::net::detail	file:
+JKYi::net::detail::digitsHex	JKYi/reactor/LogStream.cc	/^const char digitsHex[] = "0123456789ABCDEF";$/;"	m	namespace:JKYi::net::detail	file:
 JKYi::net::detail::g_logger	JKYi/reactor/timerQueue.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net::detail	file:
 JKYi::net::detail::howMuchTimeFromNow	JKYi/reactor/timerQueue.cc	/^struct timespec howMuchTimeFromNow(Timestamp when){$/;"	f	namespace:JKYi::net::detail	signature:(Timestamp when)
+JKYi::net::detail::kLargeBuffer	JKYi/reactor/LogStream.h	/^const int kLargeBuffer = 4000 * 1000;$/;"	m	namespace:JKYi::net::detail
+JKYi::net::detail::kSmallBuffer	JKYi/reactor/LogStream.h	/^const int kSmallBuffer = 4000;$/;"	m	namespace:JKYi::net::detail
 JKYi::net::detail::readTimerfd	JKYi/reactor/timerQueue.cc	/^void readTimerfd(int timerfd,Timestamp now){$/;"	f	namespace:JKYi::net::detail	signature:(int timerfd,Timestamp now)
 JKYi::net::detail::removeConnection	JKYi/reactor/TcpClient.cc	/^void removeConnection(EventLoop* loop,const TcpConnection::ptr& conn){$/;"	f	namespace:JKYi::net::detail	signature:(EventLoop* loop,const TcpConnection::ptr& conn)
 JKYi::net::detail::removeConnector	JKYi/reactor/TcpClient.cc	/^void removeConnector(const ConnectorPtr& connector){$/;"	f	namespace:JKYi::net::detail	signature:(const ConnectorPtr& connector)
 JKYi::net::detail::resetTimerfd	JKYi/reactor/timerQueue.cc	/^void resetTimerfd(int timerfd,Timestamp expiration){$/;"	f	namespace:JKYi::net::detail	signature:(int timerfd,Timestamp expiration)
+JKYi::net::detail::sizeof	JKYi/reactor/LogStream.cc	/^static_assert(sizeof(digits) == 20,"wrong number of digits");$/;"	p	namespace:JKYi::net::detail	file:	signature:(digits)
+JKYi::net::detail::sizeof	JKYi/reactor/LogStream.cc	/^static_assert(sizeof(digitsHex) == 17,"wrong number of digitsHex");$/;"	p	namespace:JKYi::net::detail	file:	signature:(digitsHex)
+JKYi::net::detail::zero	JKYi/reactor/LogStream.cc	/^const char* zero = digits + 9;$/;"	m	namespace:JKYi::net::detail	file:
+JKYi::net::g_flush	JKYi/reactor/Logging.cc	/^Logger::FlushFunc g_flush = defaultFlush;$/;"	m	namespace:JKYi::net	file:
+JKYi::net::g_logLevel	JKYi/reactor/Logging.cc	/^Logger::LogLevel g_logLevel = Logger::LogLevel::DEBUG;$/;"	m	namespace:JKYi::net	file:
 JKYi::net::g_logger	JKYi/reactor/Connector.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
 JKYi::net::g_logger	JKYi/reactor/Socket.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
 JKYi::net::g_logger	JKYi/reactor/TcpClient.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
@@ -5560,8 +5783,13 @@ JKYi::net::g_logger	JKYi/reactor/channel.cc	/^static Logger::ptr g_logger = JKYI
 JKYi::net::g_logger	JKYi/reactor/http/HttpServer.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
 JKYi::net::g_logger	JKYi/reactor/poller/epollPoller.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
 JKYi::net::g_logger	JKYi/reactor/poller/pollPoller.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
+JKYi::net::g_output	JKYi/reactor/Logging.cc	/^Logger::outputFunc g_output = defaultOutput;$/;"	m	namespace:JKYi::net	file:
+JKYi::net::once_control	JKYi/reactor/Logging.cc	/^static pthread_once_t once_control = PTHREAD_ONCE_INIT;$/;"	m	namespace:JKYi::net	file:
+JKYi::net::once_init	JKYi/reactor/Logging.cc	/^void once_init(){$/;"	f	namespace:JKYi::net	signature:()
 JKYi::net::operator <	JKYi/timestamp.h	/^inline bool operator< (const Timestamp& lhv,const Timestamp& rhv){$/;"	f	namespace:JKYi::net	signature:(const Timestamp& lhv,const Timestamp& rhv)
+JKYi::net::operator <<	JKYi/reactor/Logging.cc	/^inline LogStream& operator<< (LogStream& s,T v){$/;"	f	namespace:JKYi::net	signature:(LogStream& s,T v)
 JKYi::net::operator ==	JKYi/timestamp.h	/^inline bool operator== (const Timestamp& lhv,const Timestamp& rhv){$/;"	f	namespace:JKYi::net	signature:(const Timestamp& lhv,const Timestamp& rhv)
+JKYi::net::outputToFile	JKYi/reactor/Logging.cc	/^void outputToFile(const char* msg,int len){$/;"	f	namespace:JKYi::net	signature:(const char* msg,int len)
 JKYi::net::sockets	JKYi/reactor/SocketsOps.h	/^namespace sockets{$/;"	n	namespace:JKYi::net
 JKYi::net::sockets::accept	JKYi/reactor/SocketsOps.h	/^int  accept(int sockfd, struct sockaddr_in6* addr);$/;"	p	namespace:JKYi::net::sockets	signature:(int sockfd, struct sockaddr_in6* addr)
 JKYi::net::sockets::bindOrDie	JKYi/reactor/SocketsOps.h	/^void bindOrDie(int sockfd, const struct sockaddr* addr);$/;"	p	namespace:JKYi::net::sockets	signature:(int sockfd, const struct sockaddr* addr)
@@ -5634,6 +5862,12 @@ Join	JKYi/util.h	/^std::string Join(Iter begin,Iter end,const std::string& str){
 JsonUtil	JKYi/util/json_util.h	/^class JsonUtil{$/;"	c	namespace:JKYi
 LEN	JKYi/http/http11_parser.rl.cc	45;"	d	file:
 LEN	JKYi/http/httpclient_parser.rl.cc	46;"	d	file:
+LOG_DEBUG	JKYi/reactor/Logging.h	63;"	d
+LOG_ERROR	JKYi/reactor/Logging.h	68;"	d
+LOG_FATAL	JKYi/reactor/Logging.h	69;"	d
+LOG_INFO	JKYi/reactor/Logging.h	65;"	d
+LOG_TRACE	JKYi/reactor/Logging.h	61;"	d
+LOG_WARN	JKYi/reactor/Logging.h	67;"	d
 Level	JKYi/log.h	/^   enum Level{$/;"	g	class:JKYi::LogLevel	access:public
 LevelFormatItem	JKYi/log.cc	/^    LevelFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::LevelFormatItem	access:public	signature:(const std::string&str=�)
 LevelFormatItem	JKYi/log.cc	/^class LevelFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:	inherits:LogFormatter::FormatItem
@@ -5677,23 +5911,35 @@ LogEvent	JKYi/log.h	/^class LogEvent{$/;"	c	namespace:JKYi
 LogEventWrap	JKYi/log.cc	/^LogEventWrap::LogEventWrap(LogEvent::ptr event)$/;"	f	class:JKYi::LogEventWrap	signature:(LogEvent::ptr event)
 LogEventWrap	JKYi/log.h	/^   LogEventWrap(LogEvent::ptr event);$/;"	p	class:JKYi::LogEventWrap	access:public	signature:(LogEvent::ptr event)
 LogEventWrap	JKYi/log.h	/^class LogEventWrap{$/;"	c	namespace:JKYi
+LogFile	JKYi/reactor/LogFile.cc	/^LogFile::LogFile(const std::string& filename,$/;"	f	class:JKYi::net::LogFile	signature:(const std::string& filename, off_t rollSize, bool threadSafe, int flushInterval, int checkEveryN)
+LogFile	JKYi/reactor/LogFile.h	/^    LogFile(const std::string& filename,$/;"	p	class:JKYi::net::LogFile	access:public	signature:(const std::string& filename, off_t rollSize, bool threadSafe = true, int flushInterval = 3, int chechEveryN = 1024)
+LogFile	JKYi/reactor/LogFile.h	/^class LogFile : public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
 LogFormatter	JKYi/log.cc	/^LogFormatter::LogFormatter(const std::string&pattern)$/;"	f	class:JKYi::LogFormatter	signature:(const std::string&pattern)
 LogFormatter	JKYi/log.h	/^    LogFormatter(const std::string&pattern);$/;"	p	class:JKYi::LogFormatter	access:public	signature:(const std::string&pattern)
 LogFormatter	JKYi/log.h	/^class LogFormatter{$/;"	c	namespace:JKYi
 LogIniter	JKYi/log.cc	/^    LogIniter(){$/;"	f	struct:JKYi::LogIniter	access:public	signature:()
 LogIniter	JKYi/log.cc	/^struct LogIniter{$/;"	s	namespace:JKYi	file:
 LogLevel	JKYi/log.h	/^class LogLevel{$/;"	c	namespace:JKYi
+LogLevel	JKYi/reactor/Logging.h	/^        typedef Logger::LogLevel LogLevel;$/;"	t	class:JKYi::net::Logger::Impl	access:public
+LogLevel	JKYi/reactor/Logging.h	/^    enum LogLevel{$/;"	g	class:JKYi::net::Logger	access:public
+LogLevelName	JKYi/reactor/Logging.cc	/^const char* LogLevelName[Logger::NUM_LOG_LEVELS] = {$/;"	m	namespace:JKYi::net	file:
+LogStream	JKYi/reactor/LogStream.h	/^class LogStream : public Noncopyable{$/;"	c	namespace:JKYi::net	inherits:Noncopyable
 Logger	JKYi/log.cc	/^Logger::Logger(const std::string& name)$/;"	f	class:JKYi::Logger	signature:(const std::string& name)
-Logger	JKYi/log.h	/^    Logger(const std::string& name="root");$/;"	p	class:JKYi::Logger	access:public	signature:(const std::string& name=�)
+Logger	JKYi/log.h	/^    Logger(const std::string& name = "root");$/;"	p	class:JKYi::Logger	access:public	signature:(const std::string& name = �)
 Logger	JKYi/log.h	/^class Logger:public std::enable_shared_from_this<Logger>{$/;"	c	namespace:JKYi	inherits:std::enable_shared_from_this
+Logger	JKYi/reactor/Logging.cc	/^Logger::Logger(const std::string& filename,int line)$/;"	f	class:JKYi::net::Logger	signature:(const std::string& filename,int line)
+Logger	JKYi/reactor/Logging.cc	/^Logger::Logger(const std::string& filename,int line,LogLevel level)$/;"	f	class:JKYi::net::Logger	signature:(const std::string& filename,int line,LogLevel level)
+Logger	JKYi/reactor/Logging.h	/^    Logger(const std::string& filename,int line);$/;"	p	class:JKYi::net::Logger	access:public	signature:(const std::string& filename,int line)
+Logger	JKYi/reactor/Logging.h	/^    Logger(const std::string& filename,int line,LogLevel level);$/;"	p	class:JKYi::net::Logger	access:public	signature:(const std::string& filename,int line,LogLevel level)
+Logger	JKYi/reactor/Logging.h	/^class Logger{$/;"	c	namespace:JKYi::net
 LoggerManager	JKYi/log.cc	/^LoggerManager::LoggerManager(){$/;"	f	class:JKYi::LoggerManager	signature:()
 LoggerManager	JKYi/log.h	/^     LoggerManager();$/;"	p	class:JKYi::LoggerManager	access:public	signature:()
 LoggerManager	JKYi/log.h	/^class LoggerManager{$/;"	c	namespace:JKYi
 LoggerMgr	JKYi/log.h	/^typedef JKYi::Singleton<LoggerManager> LoggerMgr;$/;"	t	namespace:JKYi
 Lookup	JKYi/address.cc	/^bool Address::Lookup(std::vector<Address::ptr>&result,const std::string&host,int family,int type,int protocol){$/;"	f	class:JKYi::Address	signature:(std::vector<Address::ptr>&result,const std::string&host,int family,int type,int protocol)
 Lookup	JKYi/address.h	/^	static bool Lookup(std::vector<Address::ptr>&result,const std::string&host,int family=AF_INET,int type=0,int protocol=0);$/;"	p	class:JKYi::Address	access:public	signature:(std::vector<Address::ptr>&result,const std::string&host,int family=AF_INET,int type=0,int protocol=0)
+Lookup	JKYi/config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string& name,$/;"	f	class:JKYi::Config	access:public	signature:(const std::string& name, const T& default_value,const std::string& description = �)
 Lookup	JKYi/config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string&name){$/;"	f	class:JKYi::Config	access:public	signature:(const std::string&name)
-Lookup	JKYi/config.h	/^    static typename ConfigVar<T>::ptr Lookup(const std::string&name,$/;"	f	class:JKYi::Config	access:public	signature:(const std::string&name, const T&default_value,const std::string&description=�)
 LookupAny	JKYi/address.cc	/^Address::ptr Address::LookupAny(const std::string&host,int family,int type,int protocol){$/;"	f	class:JKYi::Address	signature:(const std::string&host,int family,int type,int protocol)
 LookupAny	JKYi/address.h	/^	static Address::ptr LookupAny(const std::string&host,int family=AF_INET,int type=0,int protocol=0);$/;"	p	class:JKYi::Address	access:public	signature:(const std::string&host,int family=AF_INET,int type=0,int protocol=0)
 LookupAnyIPAddress	JKYi/address.cc	/^IPAddress::ptr Address::LookupAnyIPAddress(const std::string&host,int family,int type,int protocol){$/;"	f	class:JKYi::Address	signature:(const std::string&host,int family,int type,int protocol)
@@ -5785,6 +6031,7 @@ NONE	JKYi/iomanager.h	/^	   NONE  =  0x0,$/;"	e	enum:JKYi::IOManager::Event
 NOTIFY	JKYi/protocol.h	/^        NOTIFY = 3,$/;"	e	enum:JKYi::Message::MessageType
 NOWATCHING	JKYi/zk_client.cc	/^const int ZKClient::EventType::NOWATCHING = ZOO_NOTWATCHING_EVENT;$/;"	m	class:JKYi::ZKClient::EventType	file:
 NOWATCHING	JKYi/zk_client.h	/^        static const int NOWATCHING;$/;"	m	class:JKYi::ZKClient::EventType	access:public
+NUM_LOG_LEVELS	JKYi/reactor/Logging.h	/^        NUM_LOG_LEVELS,$/;"	e	enum:JKYi::net::Logger::LogLevel
 NameFormatItem	JKYi/log.cc	/^    NameFormatItem(const std::string&str=""){}$/;"	f	class:JKYi::NameFormatItem	access:public	signature:(const std::string&str=�)
 NameFormatItem	JKYi/log.cc	/^class NameFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:	inherits:LogFormatter::FormatItem
 NewConnectionCallback	JKYi/reactor/Connector.h	/^    typedef std::function<void (int sockfd)> NewConnectionCallback;$/;"	t	class:JKYi::net::Connector	access:public
@@ -5994,6 +6241,7 @@ RM	build/JKYi/reactor/examples/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remov
 RM	build/JKYi/reactor/examples/http/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
 RM	build/JKYi/reactor/examples/hub/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
 RM	build/JKYi/reactor/examples/idleconnection/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
+RM	build/JKYi/reactor/examples/log/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
 RM	build/JKYi/reactor/examples/maxconnection/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
 RM	build/JKYi/reactor/examples/netty/discard/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
 RM	build/Makefile	/^RM = \/usr\/local\/bin\/cmake -E remove -f$/;"	m
@@ -6063,6 +6311,7 @@ SHELL	build/JKYi/reactor/examples/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/JKYi/reactor/examples/http/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/JKYi/reactor/examples/hub/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/JKYi/reactor/examples/idleconnection/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/JKYi/reactor/examples/log/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/JKYi/reactor/examples/maxconnection/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/JKYi/reactor/examples/netty/discard/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
@@ -6106,10 +6355,11 @@ SUFFIXES	build/JKYi/reactor/examples/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/JKYi/reactor/examples/http/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/JKYi/reactor/examples/hub/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/JKYi/reactor/examples/idleconnection/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/JKYi/reactor/examples/log/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/JKYi/reactor/examples/maxconnection/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/JKYi/reactor/examples/netty/discard/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
-Scheduler	JKYi/scheduler.cc	/^Scheduler::Scheduler(size_t threads,bool use_caller,const std::string&name)$/;"	f	class:JKYi::Scheduler	signature:(size_t threads,bool use_caller,const std::string&name)
+Scheduler	JKYi/scheduler.cc	/^Scheduler::Scheduler(size_t threads,bool use_caller,const std::string& name)$/;"	f	class:JKYi::Scheduler	signature:(size_t threads,bool use_caller,const std::string& name)
 Scheduler	JKYi/scheduler.h	/^   Scheduler(size_t threads = 1,bool use_caller = true,const std::string& name = "");$/;"	p	class:JKYi::Scheduler	access:public	signature:(size_t threads = 1,bool use_caller = true,const std::string& name = �)
 Scheduler	JKYi/scheduler.h	/^class Scheduler{$/;"	c	namespace:JKYi
 ScopedLockImpl	JKYi/mutex.h	/^  ScopedLockImpl(T& mutex)$/;"	f	class:JKYi::ScopedLockImpl	access:public	signature:(T& mutex)
@@ -6185,12 +6435,15 @@ SubscribeCallback	JKYi/reactor/examples/hub/pubsub.h	/^                         
 Swap	sample/protobuf/query.pb.h	/^  inline void Swap(Answer* other) {$/;"	f	class:test::final	access:public	signature:(Answer* other)
 Swap	sample/protobuf/query.pb.h	/^  inline void Swap(Empty* other) {$/;"	f	class:test::final	access:public	signature:(Empty* other)
 Swap	sample/protobuf/query.pb.h	/^  inline void Swap(Query* other) {$/;"	f	class:test::final	access:public	signature:(Query* other)
+T	JKYi/reactor/Logging.cc	/^    T(const char* str,unsigned len)$/;"	f	class:JKYi::net::T	access:public	signature:(const char* str,unsigned len)
+T	JKYi/reactor/Logging.cc	/^class T{$/;"	c	namespace:JKYi::net	file:
 TCP	JKYi/socket.h	/^        TCP = SOCK_STREAM,$/;"	e	enum:JKYi::Socket::Type
 TERM	JKYi/fiber.h	/^	  TERM,  \/\/结束态$/;"	e	enum:JKYi::Fiber::State
 TEXT_FRAME	JKYi/http/ws_session.h	/^        TEXT_FRAME = 1,$/;"	e	enum:JKYi::http::WSFrameHead::OPCODE
 TIMEOUT	JKYi/http/http_connection.h	/^        TIMEOUT = 6,$/;"	m	class:JKYi::http::HttpResult::Error	access:private
 TIME_OUT	JKYi/db/redis.h	/^        TIME_OUT = 1,$/;"	e	enum:JKYi::FoxRedis::RESULT
 TIME_OUT	JKYi/db/redis.h	/^        TIME_OUT = 1,$/;"	e	enum:JKYi::FoxRedisCluster::RESULT
+TRACE	JKYi/reactor/Logging.h	/^        TRACE,$/;"	e	enum:JKYi::net::Logger::LogLevel
 TabFormatItem	JKYi/log.cc	/^   TabFormatItem(const std::string str = ""){}$/;"	f	class:JKYi::TabFormatItem	access:public	signature:(const std::string str = �)
 TabFormatItem	JKYi/log.cc	/^class TabFormatItem:public LogFormatter::FormatItem{$/;"	c	namespace:JKYi	file:	inherits:LogFormatter::FormatItem
 TableStruct_query_2eproto	sample/protobuf/query.pb.h	/^struct TableStruct_query_2eproto {$/;"	s
@@ -6321,6 +6574,7 @@ VERBOSE	build/JKYi/reactor/examples/Makefile	/^VERBOSE = 1$/;"	m
 VERBOSE	build/JKYi/reactor/examples/http/Makefile	/^VERBOSE = 1$/;"	m
 VERBOSE	build/JKYi/reactor/examples/hub/Makefile	/^VERBOSE = 1$/;"	m
 VERBOSE	build/JKYi/reactor/examples/idleconnection/Makefile	/^VERBOSE = 1$/;"	m
+VERBOSE	build/JKYi/reactor/examples/log/Makefile	/^VERBOSE = 1$/;"	m
 VERBOSE	build/JKYi/reactor/examples/maxconnection/Makefile	/^VERBOSE = 1$/;"	m
 VERBOSE	build/JKYi/reactor/examples/netty/discard/Makefile	/^VERBOSE = 1$/;"	m
 VERBOSE	build/Makefile	/^VERBOSE = 1$/;"	m
@@ -6328,6 +6582,7 @@ Version	JKYi/reactor/http/HttpRequest.h	/^    enum Version{$/;"	g	class:JKYi::ne
 Visit	JKYi/config.cc	/^void Config::Visit(std::function<void (ConfigVarBase::ptr)>cb){$/;"	f	class:JKYi::Config	signature:(std::function<void (ConfigVarBase::ptr)>cb)
 Visit	JKYi/config.h	/^	static void Visit(std::function<void (ConfigVarBase::ptr)>cb); $/;"	p	class:JKYi::Config	access:public	signature:(std::function<void (ConfigVarBase::ptr)>cb)
 WARN	JKYi/log.h	/^     WARN = 3,$/;"	e	enum:JKYi::LogLevel::Level
+WARN	JKYi/reactor/Logging.h	/^        WARN,$/;"	e	enum:JKYi::net::Logger::LogLevel
 WINDOW_UPDATE	JKYi/http2/frame.h	/^    WINDOW_UPDATE  = 0X8,$/;"	m	class:JKYi::http2::FrameType	access:private
 WITHOUT_INDEXING_INDEXED_NAME	JKYi/http2/hpack.h	/^    WITHOUT_INDEXING_INDEXED_NAME = 3, \/\/ name 在表中，value需要编码传输并且不更新到动态表中去$/;"	m	class:JKYi::http2::IndexType	access:private
 WITHOUT_INDEXING_NEW_NAME	JKYi/http2/hpack.h	/^    WITHOUT_INDEXING_NEW_NAME     = 4, \/\/ name和value都不在表中，都需要编码传输并且不更新到表中去$/;"	m	class:JKYi::http2::IndexType	access:private
@@ -6409,9 +6664,9 @@ XX	JKYi/http2/frame.cc	434;"	d	file:
 XX	JKYi/log.cc	17;"	d	file:
 XX	JKYi/log.cc	27;"	d	file:
 XX	JKYi/log.cc	34;"	d	file:
-XX	JKYi/log.cc	517;"	d	file:
+XX	JKYi/log.cc	519;"	d	file:
 XX	JKYi/log.cc	52;"	d	file:
-XX	JKYi/log.cc	533;"	d	file:
+XX	JKYi/log.cc	535;"	d	file:
 XX	JKYi/reactor/channel.cc	111;"	d	file:
 XX	JKYi/reactor/channel.cc	122;"	d	file:
 XX	JKYi/reactor/http/HttpRequest.h	67;"	d
@@ -6500,6 +6755,11 @@ _JKYI_MACRO_H_	JKYi/macro.h	2;"	d
 _JKYI_MODULE_H_	JKYi/module.h	2;"	d
 _JKYI_MUTEX_H_	JKYi/mutex.h	2;"	d
 _JKYI_MYSQL_H_	JKYi/db/mysql.h	2;"	d
+_JKYI_NET_ASYNCLOGGING_H_	JKYi/reactor/AsyncLogging.h	2;"	d
+_JKYI_NET_FILEUTIL_H_	JKYi/reactor/FileUtil.h	2;"	d
+_JKYI_NET_LOGFILE_H_	JKYi/reactor/LogFile.h	2;"	d
+_JKYI_NET_LOGGING_H_	JKYi/reactor/Logging.h	2;"	d
+_JKYI_NET_LOGSTREAM_H_	JKYi/reactor/LogStream.h	2;"	d
 _JKYI_NONCOPYABLE_H_	JKYi/noncopyable.h	2;"	d
 _JKYI_POLLER_H_	JKYi/reactor/poller.h	2;"	d
 _JKYI_POLLPOLLER_H_	JKYi/reactor/poller/pollPoller.h	2;"	d
@@ -6659,6 +6919,7 @@ add	JKYi/env.cc	/^void Env::add(const std::string& key,const std::string& val){$
 add	JKYi/env.h	/^     void add(const std::string& key,const std::string& val);$/;"	p	class:JKYi::Env	access:public	signature:(const std::string& key,const std::string& val)
 add	JKYi/module.cc	/^void ModuleManager::add(Module::ptr m){$/;"	f	class:JKYi::ModuleManager	signature:(Module::ptr m)
 add	JKYi/module.h	/^    void add(Module::ptr m);$/;"	p	class:JKYi::ModuleManager	access:public	signature:(Module::ptr m)
+add	JKYi/reactor/LogStream.h	/^    void add(size_t len){ cur_ += len; }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:(size_t len)
 add	JKYi/reactor/examples/hub/hub.cc	/^    void add(const TcpConnection::ptr& conn){$/;"	f	class:pubsub::Topic	access:public	signature:(const TcpConnection::ptr& conn)
 add	JKYi/worker.cc	/^void WorkerManager::add(Scheduler::ptr s){$/;"	f	class:JKYi::WorkerManager	signature:(Scheduler::ptr s)
 add	JKYi/worker.h	/^    void add(Scheduler::ptr s);$/;"	p	class:JKYi::WorkerManager	access:public	signature:(Scheduler::ptr s)
@@ -6715,9 +6976,17 @@ alloc	JKYi/db/mysql.h	/^        void alloc(size_t size);$/;"	p	struct:JKYi::MySQ
 answerer	sample/protobuf/query.pb.h	/^  const std::string& answerer() const;$/;"	p	class:test::final	access:public	signature:() const
 answerer	sample/protobuf/query.pb.h	/^inline const std::string& Answer::answerer() const {$/;"	f	class:test::Answer	signature:() const
 answerer_	sample/protobuf/query.pb.h	/^    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr answerer_;$/;"	m	struct:test::final::Impl_	access:public
+append	JKYi/reactor/AsyncLogging.cc	/^void AsyncLogging::append(const char* logline,int len){$/;"	f	class:JKYi::net::AsyncLogging	signature:(const char* logline,int len)
+append	JKYi/reactor/AsyncLogging.h	/^    void append(const char* logline,int len);$/;"	p	class:JKYi::net::AsyncLogging	access:public	signature:(const char* logline,int len)
 append	JKYi/reactor/Buffer.h	/^    void append(const StringPiece& str){$/;"	f	class:JKYi::net::Buffer	access:public	signature:(const StringPiece& str)
 append	JKYi/reactor/Buffer.h	/^    void append(const char * data,size_t len){$/;"	f	class:JKYi::net::Buffer	access:public	signature:(const char * data,size_t len)
 append	JKYi/reactor/Buffer.h	/^    void append(const void * data,size_t len){$/;"	f	class:JKYi::net::Buffer	access:public	signature:(const void * data,size_t len)
+append	JKYi/reactor/FileUtil.cc	/^void AppendFile::append(const char* logline,const size_t len){$/;"	f	class:JKYi::net::AppendFile	signature:(const char* logline,const size_t len)
+append	JKYi/reactor/FileUtil.h	/^    void append(const char* logline,size_t len);$/;"	p	class:JKYi::net::AppendFile	access:public	signature:(const char* logline,size_t len)
+append	JKYi/reactor/LogFile.cc	/^void LogFile::append(const char* logline,int len){$/;"	f	class:JKYi::net::LogFile	signature:(const char* logline,int len)
+append	JKYi/reactor/LogFile.h	/^    void append(const char* logline,int len);$/;"	p	class:JKYi::net::LogFile	access:public	signature:(const char* logline,int len)
+append	JKYi/reactor/LogStream.h	/^    void append(const char* buf,size_t len){$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:(const char* buf,size_t len)
+append	JKYi/reactor/LogStream.h	/^   void append(const char* data,int len) { buffer_.append(data,len); }$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const char* data,int len)
 appendCmd	JKYi/db/redis.cc	/^int Redis::appendCmd(const char * fmt,...){$/;"	f	class:JKYi::Redis	signature:(const char * fmt,...)
 appendCmd	JKYi/db/redis.cc	/^int Redis::appendCmd(const char * fmt,va_list ap){$/;"	f	class:JKYi::Redis	signature:(const char * fmt,va_list ap)
 appendCmd	JKYi/db/redis.cc	/^int Redis::appendCmd(const std::vector<std::string>& argv){$/;"	f	class:JKYi::Redis	signature:(const std::vector<std::string>& argv)
@@ -6733,6 +7002,8 @@ appendInt64	JKYi/reactor/Buffer.h	/^    void appendInt64(int64_t x){$/;"	f	class
 appendInt8	JKYi/reactor/Buffer.h	/^    void appendInt8(int8_t x){$/;"	f	class:JKYi::net::Buffer	access:public	signature:(int8_t x)
 appendToBuffer	JKYi/reactor/http/HttpResponse.cc	/^void HttpResponse::appendToBuffer(Buffer* output)const{$/;"	f	class:HttpResponse	signature:(Buffer* output) const
 appendToBuffer	JKYi/reactor/http/HttpResponse.h	/^   void appendToBuffer(Buffer* output)const;$/;"	p	class:JKYi::net::HttpResponse	access:public	signature:(Buffer* output) const
+append_unlocked	JKYi/reactor/LogFile.cc	/^void LogFile::append_unlocked(const char* logline,int len){$/;"	f	class:JKYi::net::LogFile	signature:(const char* logline,int len)
+append_unlocked	JKYi/reactor/LogFile.h	/^    void append_unlocked(const char* logline,int len);$/;"	p	class:JKYi::net::LogFile	access:private	signature:(const char* logline,int len)
 appenders	JKYi/log.cc	/^   std::vector<LogAppenderDefine>appenders;$/;"	m	struct:JKYi::LogDefine	file:	access:public
 args	JKYi/tcp_server.h	/^    std::map<std::string,std::string> args;$/;"	m	struct:JKYi::TcpServerConf	access:public
 asInt32	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^int32_t ProtobufCodecLite::asInt32(const void* buf){$/;"	f	class:ProtobufCodecLite	signature:(const void* buf)
@@ -6740,7 +7011,9 @@ asInt32	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^    static int32_t asInt32(co
 as_string	JKYi/reactor/StringPiece.h	/^  std::string as_string() const {$/;"	f	class:JKYi::net::StringPiece	access:public	signature:() const
 assertInLoopThread	JKYi/reactor/EventLoop.h	/^    void assertInLoopThread(){$/;"	f	class:JKYi::net::EventLoop	access:public	signature:()
 assertInLoopThread	JKYi/reactor/poller.h	/^    void assertInLoopThread()const{ ownerLoop_->assertInLoopThread(); }$/;"	f	class:JKYi::net::Poller	access:public	signature:() const
+asyncLogger	JKYi/reactor/Logging.cc	/^static AsyncLogging* asyncLogger;$/;"	m	namespace:JKYi::net	file:
 audiences_	JKYi/reactor/examples/hub/hub.cc	/^    std::set<TcpConnection::ptr> audiences_;  \/\/目前关注了该topic的sub的连接$/;"	m	class:pubsub::Topic	file:	access:private
+avail	JKYi/reactor/LogStream.h	/^    int avail()const { return static_cast<int>(end() - cur_); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
 back	JKYi/fiber.cc	/^void Fiber::back(){$/;"	f	class:JKYi::Fiber	signature:()
 back	JKYi/fiber.h	/^	void back();$/;"	p	class:JKYi::Fiber	access:public	signature:()
 base64decode	JKYi/util/hash_util.cc	/^std::string base64decode(const std::string &src) {$/;"	f	namespace:JKYi	signature:(const std::string &src)
@@ -6750,6 +7023,8 @@ base64encode	JKYi/util/hash_util.cc	/^std::string base64encode(const void* data,
 base64encode	JKYi/util/hash_util.h	/^std::string base64encode(const std::string& data);$/;"	p	namespace:JKYi	signature:(const std::string& data)
 base64encode	JKYi/util/hash_util.h	/^std::string base64encode(const void * data,size_t len);$/;"	p	namespace:JKYi	signature:(const void * data,size_t len)
 baseLoop_	JKYi/reactor/EventLoopThreadPool.h	/^    EventLoop* baseLoop_;$/;"	m	class:JKYi::net::EventLoopThreadPool	access:private
+basename_	JKYi/reactor/AsyncLogging.h	/^    const std::string basename_;       \/\/日志文件的名称$/;"	m	class:JKYi::net::AsyncLogging	access:private
+basename_	JKYi/reactor/LogFile.h	/^    const std::string basename_;$/;"	m	class:JKYi::net::LogFile	access:private
 batchDispatch	JKYi/db/fox_thread.cc	/^bool FoxThread::batchDispatch(const std::vector<callback>&cbs){$/;"	f	class:JKYi::FoxThread	signature:(const std::vector<callback>&cbs)
 batchDispatch	JKYi/db/fox_thread.cc	/^bool FoxThreadPool::batchDispatch(const std::vector<callback>& cbs){$/;"	f	class:JKYi::FoxThreadPool	signature:(const std::vector<callback>& cbs)
 batchDispatch	JKYi/db/fox_thread.cc	/^void FoxThreadManager::batchDispatch(const std::string& name,$/;"	f	class:JKYi::FoxThreadManager	signature:(const std::string& name, const std::vector<callback>& cbs)
@@ -6844,11 +7119,16 @@ broadcast	JKYi/db/fox_thread.h	/^    void broadcast(const std::string& name,call
 broadcastAddress	JKYi/address.cc	/^IPAddress::ptr IPv4Address::broadcastAddress(uint32_t prefix_len){$/;"	f	class:JKYi::IPv4Address	signature:(uint32_t prefix_len)
 broadcastAddress	JKYi/address.cc	/^IPAddress::ptr IPv6Address::broadcastAddress(uint32_t prefix_len){$/;"	f	class:JKYi::IPv6Address	signature:(uint32_t prefix_len)
 broadcastAddress	JKYi/address.h	/^	virtual IPAddress::ptr broadcastAddress(uint32_t prefix_len)=0;$/;"	p	class:JKYi::IPAddress	access:public	signature:(uint32_t prefix_len)
+buffer	JKYi/reactor/LogStream.h	/^   const Buffer& buffer()const { return buffer_; }$/;"	f	class:JKYi::net::LogStream	access:public	signature:() const
 buffer_	JKYi/reactor/Buffer.h	/^    std::vector<char> buffer_;$/;"	m	class:JKYi::net::Buffer	access:private
+buffer_	JKYi/reactor/FileUtil.h	/^    char buffer_[64 * 1024];$/;"	m	class:JKYi::net::AppendFile	access:private
+buffer_	JKYi/reactor/LogStream.h	/^   Buffer buffer_;$/;"	m	class:JKYi::net::LogStream	access:private
 buffer_	JKYi/reactor/protobuf/BufferStream.h	/^    Buffer* buffer_;$/;"	m	class:JKYi::net::BufferOutputStream	access:private
+buffers_	JKYi/reactor/AsyncLogging.h	/^    BufferVector buffers_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
 byteswap	JKYi/endian.h	/^typename std::enable_if<sizeof(T) == sizeof(uint16_t),T>::type byteswap(T value){$/;"	f	namespace:JKYi	signature:(T value)
 byteswap	JKYi/endian.h	/^typename std::enable_if<sizeof(T) == sizeof(uint32_t),T>::type byteswap(T value){$/;"	f	namespace:JKYi	signature:(T value)
 byteswap	JKYi/endian.h	/^typename std::enable_if<sizeof(T) == sizeof(uint64_t),T>::type byteswap(T value){$/;"	f	namespace:JKYi	signature:(T value)
+bzero	JKYi/reactor/LogStream.h	/^    void bzero() { memset(data_,0,sizeof(data_)); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
 c_str	JKYi/reactor/StringPiece.h	/^  const char* c_str() const { return str_; }$/;"	f	class:JKYi::net::StringArg	access:public	signature:() const
 cacheTid	JKYi/reactor/CurrentThread.h	/^void cacheTid();$/;"	p	namespace:JKYi::CurrentThread	signature:()
 cacheTid	JKYi/reactor/Thread.cc	/^void cacheTid(){$/;"	f	namespace:JKYi::CurrentThread	signature:()
@@ -6904,6 +7184,7 @@ check	JKYi/db/fox_thread.h	/^    void check();$/;"	p	class:JKYi::FoxThreadPool	a
 check	JKYi/http/httpclient_parser.rl.cc	49;"	d	file:
 checkConnection	JKYi/db/mysql.cc	/^void MySQLManager::checkConnection(int sec){$/;"	f	class:JKYi::MySQLManager	signature:(int sec)
 checkConnection	JKYi/db/mysql.h	/^    void checkConnection(int sec = 30);$/;"	p	class:JKYi::MySQLManager	access:public	signature:(int sec = 30)
+checkEveryN_	JKYi/reactor/LogFile.h	/^    const int checkEveryN_;       \/\/对同一个日志文件最多能够写的次数$/;"	m	class:JKYi::net::LogFile	access:private
 checkGetAs	JKYi/http/http.h	/^bool checkGetAs(const MapType&m,const std::string&key,T& val,const T&def=T()){$/;"	f	namespace:JKYi::http	signature:(const MapType&m,const std::string&key,T& val,const T&def=T())
 checkGetCookieAs	JKYi/http/http.h	/^   bool checkGetCookieAs(const std::string& key,T&val,const T& def=T()){$/;"	f	class:JKYi::http::HttpRequest	access:public	signature:(const std::string& key,T&val,const T& def=T())
 checkGetHeaderAs	JKYi/http/http.h	/^    bool checkGetHeaderAs(const std::string&key,T& val,const T& def=T()){$/;"	f	class:JKYi::http::HttpResponse	access:public	signature:(const std::string&key,T& val,const T& def=T())
@@ -6981,6 +7262,7 @@ command_error_exit	generate.sh	/^command_error_exit(){$/;"	f
 commit	JKYi/db/db.h	/^    virtual bool commit() = 0;$/;"	p	class:JKYi::ITransaction	access:public	signature:()
 commit	JKYi/db/mysql.cc	/^bool MySQLTransaction::commit(){$/;"	f	class:JKYi::MySQLTransaction	signature:()
 compare	JKYi/reactor/StringPiece.h	/^  int compare(const StringPiece& x) const {$/;"	f	class:JKYi::net::StringPiece	access:public	signature:(const StringPiece& x) const
+cond_	JKYi/reactor/AsyncLogging.h	/^    JKYi::Condition cond_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
 condition_	JKYi/BlockingQueue.h	/^    Condition condition_;$/;"	m	class:JKYi::BlockingQueue	access:private
 condition_	JKYi/CountDownLatch.h	/^    Condition condition_;$/;"	m	class:JKYi::CountDownLatch	access:private
 condition_	JKYi/reactor/EventLoopThread.h	/^    Condition condition_;$/;"	m	class:JKYi::net::EventLoopThread	access:private
@@ -7040,11 +7322,14 @@ contextResize	JKYi/iomanager.cc	/^void IOManager::contextResize(size_t size){$/;
 contextResize	JKYi/iomanager.h	/^   void contextResize(size_t size);$/;"	p	class:JKYi::IOManager	access:protected	signature:(size_t size)
 context_	JKYi/reactor/EventLoop.h	/^    boost::any context_;                   \/\/用来携带一些用户自己的东西$/;"	m	class:JKYi::net::EventLoop	access:private
 context_	JKYi/reactor/TcpConnection.h	/^    boost::any context_;    \/\/用户自定义携带的上下文信息$/;"	m	class:JKYi::net::TcpConnection	access:private
+convert	JKYi/reactor/LogStream.cc	/^size_t convert(char buf[],T value){$/;"	f	namespace:JKYi::net::detail	signature:(char buf[],T value)
+convertHex	JKYi/reactor/LogStream.cc	/^size_t convertHex(char buf[],uintptr_t value){$/;"	f	namespace:JKYi::net::detail	signature:(char buf[],uintptr_t value)
 count	tests/test_thread.cc	/^int count=0;$/;"	v
 count	tests/test_timestamp.cc	/^int count = 1;$/;"	v
 countDown	JKYi/CountDownLatch.cc	/^void CountDownLatch::countDown(){$/;"	f	class:JKYi::CountDownLatch	signature:()
 countDown	JKYi/CountDownLatch.h	/^    void countDown();$/;"	p	class:JKYi::CountDownLatch	access:public	signature:()
 count_	JKYi/CountDownLatch.h	/^    int count_;$/;"	m	class:JKYi::CountDownLatch	access:private
+count_	JKYi/reactor/LogFile.h	/^    int count_;                   \/\/用来记录对一个日志文件进行写操作的次数$/;"	m	class:JKYi::net::LogFile	access:private
 create	JKYi/zk_client.cc	/^int32_t ZKClient::create(const std::string& path,const std::string& val,$/;"	f	class:JKYi::ZKClient	signature:(const std::string& path,const std::string& val, std::string& new_path,const struct ACL_vector * acl, int flags)
 create	JKYi/zk_client.h	/^    int32_t create(const std::string& path,const std::string& val,std::string& new_path,const struct ACL_vector* acl = &ZOO_OPEN_ACL_UNSAFE,int flags = 0);$/;"	p	class:JKYi::ZKClient	access:public	signature:(const std::string& path,const std::string& val,std::string& new_path,const struct ACL_vector* acl = &ZOO_OPEN_ACL_UNSAFE,int flags = 0)
 createAddress	JKYi/uri.h	/^    Address::ptr createAddress()const;$/;"	p	class:JKYi::Uri	access:public	signature:() const
@@ -7058,7 +7343,10 @@ createTimerfd	JKYi/reactor/timerQueue.cc	/^int createTimerfd(){$/;"	f	namespace:
 create_module	JKYi/library.cc	/^typedef Module* (*create_module)();$/;"	t	namespace:JKYi	file:
 cs	JKYi/http/http11_parser.h	/^      int cs;$/;"	m	struct:http_parser	access:public
 cs	JKYi/http/httpclient_parser.h	/^      int cs;$/;"	m	struct:httpclient_parser	access:public
+cur_	JKYi/reactor/LogStream.h	/^    char* cur_;$/;"	m	class:JKYi::net::detail::FixedBuffer	access:private
+current	JKYi/reactor/LogStream.h	/^    char* current() { return cur_; }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
 currentActiveChannel_	JKYi/reactor/EventLoop.h	/^    Channel* currentActiveChannel_;$/;"	m	class:JKYi::net::EventLoop	access:private
+currentBuffer_	JKYi/reactor/AsyncLogging.h	/^    BufferPtr currentBuffer_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
 data	JKYi/db/mysql.h	/^        char * data;$/;"	m	struct:JKYi::MySQLStmtRes::Data	access:public
 data	JKYi/http/http11_parser.h	/^      void *data;$/;"	m	struct:http_parser	access:public
 data	JKYi/http/httpclient_parser.h	/^      void *data;$/;"	m	struct:httpclient_parser	access:public
@@ -7068,7 +7356,9 @@ data	JKYi/http2/frame.h	/^    std::string data;$/;"	m	struct:JKYi::http2::FrameT
 data	JKYi/http2/frame.h	/^    std::string data;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::HeadersFrame	access:public
 data	JKYi/http2/frame.h	/^    std::string data;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::GoAwayFrame	access:public
 data	JKYi/http2/frame.h	/^    std::string data;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::PushPromisedFrame	access:public
+data	JKYi/reactor/LogStream.h	/^    const char* data()const { return data_; }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
 data	JKYi/reactor/StringPiece.h	/^  const char* data() const { return ptr_; }$/;"	f	class:JKYi::net::StringPiece	access:public	signature:() const
+data_	JKYi/reactor/LogStream.h	/^    char data_[SIZE];$/;"	m	class:JKYi::net::detail::FixedBuffer	access:private
 data_cb	JKYi/db/mysql.h	/^    typedef std::function<bool(MYSQL_ROW row,int field_count,int row_no)> data_cb;$/;"	t	class:JKYi::MySQLRes	access:public
 data_length	JKYi/db/mysql.h	/^        int32_t data_length;$/;"	m	struct:JKYi::MySQLStmtRes::Data	access:public
 data_type	JKYi/ds/blocking_queue.h	/^    typedef std::shared_ptr<T> data_type;$/;"	t	class:JKYi::ds::BlockingQueue	access:public
@@ -7081,9 +7371,11 @@ defaultConnectionCallback	JKYi/reactor/Callbacks.h	/^void defaultConnectionCallb
 defaultConnectionCallback	JKYi/reactor/TcpConnection.cc	/^void defaultConnectionCallback(const TcpConnectionPtr& conn){$/;"	f	namespace:JKYi::net	signature:(const TcpConnectionPtr& conn)
 defaultErrorCallback	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^void ProtobufCodecLite::defaultErrorCallback(const TcpConnection::ptr& conn,$/;"	f	class:ProtobufCodecLite	signature:(const TcpConnection::ptr& conn, Buffer* buf, Timestamp receiveTime, ErrorCode errorCode)
 defaultErrorCallback	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^    static void defaultErrorCallback(const TcpConnection::ptr& ,$/;"	p	class:JKYi::net::ProtobufCodecLite	access:public	signature:(const TcpConnection::ptr& , Buffer* , Timestamp, ErrorCode)
+defaultFlush	JKYi/reactor/Logging.cc	/^void defaultFlush(){$/;"	f	namespace:JKYi::net	signature:()
 defaultHttpCallback	JKYi/reactor/http/HttpServer.cc	/^void defaultHttpCallback(const HttpRequest& req,HttpResponse* rsp){$/;"	f	namespace:JKYi::net::detail	signature:(const HttpRequest& req,HttpResponse* rsp)
 defaultMessageCallback	JKYi/reactor/Callbacks.h	/^void defaultMessageCallback(const TcpConnectionPtr& conn,Buffer*,$/;"	p	namespace:JKYi::net	signature:(const TcpConnectionPtr& conn,Buffer*, Timestamp receiveTime)
 defaultMessageCallback	JKYi/reactor/TcpConnection.cc	/^void defaultMessageCallback(const TcpConnectionPtr& conn,Buffer* buf,$/;"	f	namespace:JKYi::net	signature:(const TcpConnectionPtr& conn,Buffer* buf, Timestamp receiveTime)
+defaultOutput	JKYi/reactor/Logging.cc	/^void defaultOutput (const char* msg,int len){$/;"	f	namespace:JKYi::net	signature:(const char* msg,int len)
 default_instance	sample/protobuf/query.pb.h	/^  static const Answer& default_instance() {$/;"	f	class:test::final	access:public	signature:()
 default_instance	sample/protobuf/query.pb.h	/^  static const Empty& default_instance() {$/;"	f	class:test::final	access:public	signature:()
 default_instance	sample/protobuf/query.pb.h	/^  static const Query& default_instance() {$/;"	f	class:test::final	access:public	signature:()
@@ -7126,10 +7418,14 @@ descriptor_table_query_2eproto	sample/protobuf/query.pb.cc	/^const ::_pbi::Descr
 descriptor_table_query_2eproto_getter	sample/protobuf/query.pb.cc	/^PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_query_2eproto_getter() {$/;"	f	signature:()
 descriptor_table_query_2eproto_once	sample/protobuf/query.pb.cc	/^static ::_pbi::once_flag descriptor_table_query_2eproto_once;$/;"	v	file:
 destroy_module	JKYi/library.cc	/^typedef void (*destroy_module)(Module*);$/;"	t	namespace:JKYi	file:
+detail	JKYi/reactor/LogStream.cc	/^namespace detail{$/;"	n	namespace:JKYi::net	file:
+detail	JKYi/reactor/LogStream.h	/^namespace detail{$/;"	n	namespace:JKYi::net
 detail	JKYi/reactor/TcpClient.cc	/^namespace detail{$/;"	n	namespace:JKYi::net	file:
 detail	JKYi/reactor/Thread.cc	/^namespace detail{$/;"	n	namespace:JKYi	file:
 detail	JKYi/reactor/http/HttpServer.cc	/^namespace detail{$/;"	n	namespace:JKYi::net	file:
 detail	JKYi/reactor/timerQueue.cc	/^namespace detail{$/;"	n	namespace:JKYi::net	file:
+digits	JKYi/reactor/LogStream.cc	/^const char digits[] = "9876543210123456789";$/;"	m	namespace:JKYi::net::detail	file:
+digitsHex	JKYi/reactor/LogStream.cc	/^const char digitsHex[] = "0123456789ABCDEF";$/;"	m	namespace:JKYi::net::detail	file:
 disableAll	JKYi/reactor/channel.h	/^    void disableAll() { events_ = kNoneEvent; update();}$/;"	f	class:JKYi::net::Channel	access:public	signature:()
 disableReading	JKYi/reactor/channel.h	/^    void disableReading() { events_ &= ~kReadEvent; update(); }$/;"	f	class:JKYi::net::Channel	access:public	signature:()
 disableWriting	JKYi/reactor/channel.h	/^    void disableWriting() { events_ &= ~kWriteEvent; update(); }$/;"	f	class:JKYi::net::Channel	access:public	signature:()
@@ -7205,6 +7501,7 @@ empty	JKYi/reactor/StringPiece.h	/^  bool empty() const { return length_ == 0; }
 enableReading	JKYi/reactor/channel.h	/^    void enableReading() { events_ |= kReadEvent; update();}$/;"	f	class:JKYi::net::Channel	access:public	signature:()
 enableRetry	JKYi/reactor/TcpClient.h	/^    void enableRetry(){$/;"	f	class:JKYi::net::TcpClient	access:public	signature:()
 enableWriting	JKYi/reactor/channel.h	/^    void enableWriting() { events_ |= kWriteEvent; update(); }$/;"	f	class:JKYi::net::Channel	access:public	signature:()
+end	JKYi/reactor/LogStream.h	/^    const char* end()const { return data_ + sizeof(data_); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:private	signature:() const
 end	JKYi/reactor/StringPiece.h	/^  const char* end() const { return ptr_ + length_; }$/;"	f	class:JKYi::net::StringPiece	access:public	signature:() const
 ensureWritableBytes	JKYi/reactor/Buffer.h	/^    void ensureWritableBytes(size_t len){$/;"	f	class:JKYi::net::Buffer	access:public	signature:(size_t len)
 epollfd_	JKYi/reactor/poller/epollPoller.h	/^    int epollfd_;$/;"	m	class:JKYi::net::EpollPoller	access:private
@@ -7278,10 +7575,12 @@ field_len	JKYi/http/httpclient_parser.h	/^      size_t field_len;$/;"	m	struct:h
 field_start	JKYi/http/http11_parser.h	/^      size_t field_start;$/;"	m	struct:http_parser	access:public
 field_start	JKYi/http/httpclient_parser.h	/^      size_t field_start;$/;"	m	struct:httpclient_parser	access:public
 file	JKYi/log.cc	/^    std::string file;$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
+file_	JKYi/reactor/LogFile.h	/^    std::unique_ptr<AppendFile> file_;$/;"	m	class:JKYi::net::LogFile	access:private
 file_default_instances	sample/protobuf/query.pb.cc	/^static const ::_pb::Message* const file_default_instances[] = {$/;"	m	class:_pb	file:
 file_level_enum_descriptors_query_2eproto	sample/protobuf/query.pb.cc	/^static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_query_2eproto = nullptr;$/;"	m	class:constexpr::_pb	file:
 file_level_metadata_query_2eproto	sample/protobuf/query.pb.cc	/^static ::_pb::Metadata file_level_metadata_query_2eproto[3];$/;"	v	file:
 file_level_service_descriptors_query_2eproto	sample/protobuf/query.pb.cc	/^static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_query_2eproto = nullptr;$/;"	m	class:constexpr::_pb	file:
+filename_	JKYi/reactor/Logging.h	/^        const std::string& filename_;$/;"	m	class:JKYi::net::Logger::Impl	access:public
 fillActiveChannels	JKYi/reactor/poller/epollPoller.cc	/^void EpollPoller::fillActiveChannels(int numEvents,ChannelList* activeChannels)const{$/;"	f	class:JKYi::net::EpollPoller	signature:(int numEvents,ChannelList* activeChannels) const
 fillActiveChannels	JKYi/reactor/poller/epollPoller.h	/^    void fillActiveChannels(int numEvents,ChannelList* activeChannels) const;$/;"	p	class:JKYi::net::EpollPoller	access:private	signature:(int numEvents,ChannelList* activeChannels) const
 fillActiveChannels	JKYi/reactor/poller/pollPoller.cc	/^void PollPoller::fillActiveChannels(int numEvents,ChannelList* activeChannels){$/;"	f	class:JKYi::net::PollPoller	signature:(int numEvents,ChannelList* activeChannels)
@@ -7309,7 +7608,15 @@ findIndex	JKYi/http2/dynamic_table.cc	/^int32_t DynamicTable::findIndex(const st
 findIndex	JKYi/http2/dynamic_table.h	/^    int32_t findIndex(const std::string& name);$/;"	p	class:JKYi::http2::DynamicTable	access:public	signature:(const std::string& name)
 findPair	JKYi/http2/dynamic_table.cc	/^std::pair<int32_t,bool> DynamicTable::findPair(const std::string& name,$/;"	f	class:JKYi::http2::DynamicTable	signature:(const std::string& name, const std::string& value) const
 findPair	JKYi/http2/dynamic_table.h	/^    std::pair<int32_t,bool> findPair(const std::string& name,const std::string& value)const;$/;"	p	class:JKYi::http2::DynamicTable	access:public	signature:(const std::string& name,const std::string& value) const
+finish	JKYi/reactor/Logging.cc	/^void Logger::Impl::finish(){$/;"	f	class:JKYi::net::Logger::Impl	signature:()
+finish	JKYi/reactor/Logging.h	/^        void finish();$/;"	p	class:JKYi::net::Logger::Impl	access:public	signature:()
 flags	JKYi/http2/frame.h	/^    uint8_t flags = 0;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::FrameHeader	access:public
+flush	JKYi/reactor/FileUtil.cc	/^void AppendFile::flush(){$/;"	f	class:JKYi::net::AppendFile	signature:()
+flush	JKYi/reactor/FileUtil.h	/^    void flush();$/;"	p	class:JKYi::net::AppendFile	access:public	signature:()
+flush	JKYi/reactor/LogFile.cc	/^void LogFile::flush(){$/;"	f	class:JKYi::net::LogFile	signature:()
+flush	JKYi/reactor/LogFile.h	/^    void flush();$/;"	p	class:JKYi::net::LogFile	access:public	signature:()
+flushInterval_	JKYi/reactor/AsyncLogging.h	/^    const int flushInterval_;           \/\/刷盘的间隔$/;"	m	class:JKYi::net::AsyncLogging	access:private
+flushInterval_	JKYi/reactor/LogFile.h	/^    const int flushInterval_;$/;"	m	class:JKYi::net::LogFile	access:private
 forceClose	JKYi/reactor/TcpConnection.cc	/^void TcpConnection::forceClose(){$/;"	f	class:JKYi::net::TcpConnection	signature:()
 forceClose	JKYi/reactor/TcpConnection.h	/^    void forceClose();$/;"	p	class:JKYi::net::TcpConnection	access:public	signature:()
 forceCloseInLoop	JKYi/reactor/TcpConnection.cc	/^void TcpConnection::forceCloseInLoop(){$/;"	f	class:JKYi::net::TcpConnection	signature:()
@@ -7323,8 +7630,13 @@ foreach	JKYi/module.h	/^    void foreach(uint32_t type,std::function<void (Modul
 format	JKYi/log.cc	/^std::string LogFormatter::format(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event){$/;"	f	class:JKYi::LogFormatter	signature:(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event)
 format	JKYi/log.h	/^       virtual void format(std::ostream&os,std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event) = 0;$/;"	p	class:JKYi::LogFormatter::FormatItem	access:public	signature:(std::ostream&os,std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event)
 format	JKYi/log.h	/^    std::string format(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event);$/;"	p	class:JKYi::LogFormatter	access:public	signature:(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event)
+formatInteger	JKYi/reactor/LogStream.cc	/^void LogStream::formatInteger(T v){$/;"	f	class:JKYi::net::LogStream	signature:(T v)
+formatInteger	JKYi/reactor/LogStream.h	/^   void formatInteger(T);$/;"	p	class:JKYi::net::LogStream	access:private	signature:(T)
+formatTime	JKYi/reactor/Logging.cc	/^void Logger::Impl::formatTime(){$/;"	f	class:JKYi::net::Logger::Impl	signature:()
+formatTime	JKYi/reactor/Logging.h	/^        void formatTime();$/;"	p	class:JKYi::net::Logger::Impl	access:public	signature:()
 formatter	JKYi/log.cc	/^    std::string formatter;$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
 formatter	JKYi/log.cc	/^   std::string formatter;$/;"	m	struct:JKYi::LogDefine	file:	access:public
+fp_	JKYi/reactor/FileUtil.h	/^    FILE* fp_;$/;"	m	class:JKYi::net::AppendFile	access:private
 fragment	JKYi/http/http11_parser.h	/^      element_cb fragment;$/;"	m	struct:http_parser	access:public
 freeMySQL	JKYi/db/mysql.cc	/^void MySQLManager::freeMySQL(const std::string& name,MySQL * m){$/;"	f	class:JKYi::MySQLManager	signature:(const std::string& name,MySQL * m)
 freeMySQL	JKYi/db/mysql.h	/^    void freeMySQL(const std::string& name,MySQL* m);$/;"	p	class:JKYi::MySQLManager	access:private	signature:(const std::string& name,MySQL* m)
@@ -7347,14 +7659,16 @@ g_argc	tests/test_zookeeper.cc	/^int g_argc;$/;"	v
 g_conn	tests/test_reactor_tcpClient.cc	/^JKYi::net::TcpConnection::ptr g_conn;$/;"	v
 g_content	JKYi/reactor/examples/hub/pub.cc	/^std::string g_content;$/;"	v
 g_daemon_restart_interval	JKYi/daemon.cc	/^static ConfigVar<uint32_t>::ptr g_daemon_restart_interval = $/;"	m	namespace:JKYi	file:
-g_fiber_stack_size	JKYi/fiber.cc	/^ static ConfigVar<uint32_t>::ptr g_fiber_stack_size=JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");$/;"	m	namespace:JKYi	file:
+g_fiber_stack_size	JKYi/fiber.cc	/^ static ConfigVar<uint32_t>::ptr g_fiber_stack_size = JKYi::Config::Lookup<uint32_t>("fiber.stack_size",1024*1024,"fiber stack size");$/;"	m	namespace:JKYi	file:
 g_float_value_config	tests/test_config.cc	/^JKYi::ConfigVar<float>::ptr g_float_value_config=JKYi::Config::Lookup("system.value",(float)10.2f,"system value");$/;"	v
+g_flush	JKYi/reactor/Logging.cc	/^Logger::FlushFunc g_flush = defaultFlush;$/;"	m	namespace:JKYi::net	file:
 g_http_request_buffer_size	JKYi/http/http_parser.cc	/^static JKYi::ConfigVar<uint64_t>::ptr g_http_request_buffer_size=JKYi::Config::Lookup("http.request.buffer_size",(uint64_t)(4*1024),"http request buffer size");$/;"	m	namespace:JKYi::http	file:
 g_http_request_max_body_size	JKYi/http/http_parser.cc	/^static JKYi::ConfigVar<uint64_t>::ptr g_http_request_max_body_size=JKYi::Config::Lookup("http.request.max_body_size",(uint64_t)(64 * 1024 * 1024),"http request max body size");$/;"	m	namespace:JKYi::http	file:
 g_http_response_buffer_size	JKYi/http/http_parser.cc	/^static JKYi::ConfigVar<uint64_t>::ptr g_http_response_buffer_size=JKYi::Config::Lookup("http.response.buffer_size",(uint64_t)(4*1024),"http response buffer size");$/;"	m	namespace:JKYi::http	file:
 g_http_response_max_body_size	JKYi/http/http_parser.cc	/^static JKYi::ConfigVar<uint64_t>::ptr g_http_response_max_body_size=JKYi::Config::Lookup("http.response.max_body_size",(uint64_t)(64*1024*1024),"http response max body size");$/;"	m	namespace:JKYi::http	file:
 g_int_value_config	tests/test_config.cc	/^JKYi::ConfigVar<int>::ptr g_int_value_config=JKYi::Config::Lookup("system.port",(int)8080,"system port");$/;"	v
 g_list_int_config	tests/test_config.cc	/^JKYi::ConfigVar<std::list<int>>::ptr g_list_int_config=JKYi::Config::Lookup("system.list_int",std::list<int>{10,20,30},"system list_int");$/;"	v
+g_logLevel	JKYi/reactor/Logging.cc	/^Logger::LogLevel g_logLevel = Logger::LogLevel::DEBUG;$/;"	m	namespace:JKYi::net	file:
 g_log_defines	JKYi/log.cc	/^JKYi::ConfigVar<std::set<LogDefine>>::ptr g_log_defines = JKYi::Config::Lookup("logs",std::set<LogDefine>(),"logs config");$/;"	m	namespace:JKYi	file:
 g_logger	JKYi/address.cc	/^static JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 g_logger	JKYi/application.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
@@ -7365,7 +7679,7 @@ g_logger	JKYi/db/fox_thread.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("sy
 g_logger	JKYi/db/mysql.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 g_logger	JKYi/db/redis.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 g_logger	JKYi/env.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
-g_logger	JKYi/fiber.cc	/^ static JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
+g_logger	JKYi/fiber.cc	/^ static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 g_logger	JKYi/hook.cc	/^JKYi::Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	v
 g_logger	JKYi/http/http_connection.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::http	file:
 g_logger	JKYi/http/http_parser.cc	/^static Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::http	file:
@@ -7399,7 +7713,7 @@ g_logger	JKYi/reactor/poller/epollPoller.cc	/^static Logger::ptr g_logger = JKYI
 g_logger	JKYi/reactor/poller/pollPoller.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net	file:
 g_logger	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	v	file:
 g_logger	JKYi/reactor/timerQueue.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi::net::detail	file:
-g_logger	JKYi/scheduler.cc	/^static Logger::ptr g_logger=JKYI_LOG_NAME("system"); $/;"	m	namespace:JKYi	file:
+g_logger	JKYi/scheduler.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system"); $/;"	m	namespace:JKYi	file:
 g_logger	JKYi/socket.cc	/^static Logger::ptr g_logger=JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 g_logger	JKYi/tcp_server.cc	/^static Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
 g_logger	JKYi/thread.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");$/;"	m	namespace:JKYi	file:
@@ -7412,7 +7726,7 @@ g_logger	tests/test_address.cc	/^static JKYi::Logger::ptr g_logger=JKYI_LOG_ROOT
 g_logger	tests/test_bytearray.cc	/^static JKYi::Logger::ptr g_logger=JKYI_LOG_ROOT();$/;"	v	file:
 g_logger	tests/test_daemon.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v	file:
 g_logger	tests/test_env.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v	file:
-g_logger	tests/test_fiber.cc	/^JKYi::Logger::ptr g_logger=JKYI_LOG_ROOT();$/;"	v
+g_logger	tests/test_fiber.cc	/^JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v
 g_logger	tests/test_hook.cc	/^static JKYi::Logger::ptr g_logger=JKYI_LOG_ROOT();$/;"	v	file:
 g_logger	tests/test_http.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v	file:
 g_logger	tests/test_http_connection.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	v	file:
@@ -7436,6 +7750,7 @@ g_map_str_int_config	tests/test_config.cc	/^JKYi::ConfigVar<std::map<std::string
 g_module_path	JKYi/module.cc	/^static JKYi::ConfigVar<std::string>::ptr g_module_path = $/;"	m	namespace:JKYi	file:
 g_mysql_config	tests/test_mysql.cc	/^static JKYi::ConfigVar<std::map<std::string,std::string>>::ptr g_mysql_config = JKYi::Config::Lookup("mysql",std::map<std::string,std::string>(),"mysql config");$/;"	v	file:
 g_mysql_dbs	JKYi/db/mysql.cc	/^                        g_mysql_dbs = JKYi::Config::Lookup("mysql.dbs",std::map<std::string,std::map<std::string,std::string>>(),"mysql dbs");$/;"	m	namespace:JKYi	file:
+g_output	JKYi/reactor/Logging.cc	/^Logger::outputFunc g_output = defaultOutput;$/;"	m	namespace:JKYi::net	file:
 g_redis	JKYi/db/redis.cc	/^         g_redis = JKYi::Config::Lookup("redis.config",$/;"	m	namespace:JKYi	file:
 g_server_pid_file	JKYi/application.cc	/^static JKYi::ConfigVar<std::string>::ptr g_server_pid_file = $/;"	m	namespace:JKYi	file:
 g_server_work_path	JKYi/application.cc	/^static JKYi::ConfigVar<std::string>::ptr g_server_work_path = $/;"	m	namespace:JKYi	file:
@@ -7658,7 +7973,9 @@ getLocalAddress	JKYi/stream/socket_stream.cc	/^Address::ptr SocketStream::getLoc
 getLocalAddress	JKYi/stream/socket_stream.h	/^     Address::ptr getLocalAddress();$/;"	p	class:JKYi::SocketStream	access:public	signature:()
 getLocalAddressString	JKYi/stream/socket_stream.cc	/^std::string SocketStream::getLocalAddressString(){$/;"	f	class:JKYi::SocketStream	signature:()
 getLocalAddressString	JKYi/stream/socket_stream.h	/^     std::string getLocalAddressString();$/;"	p	class:JKYi::SocketStream	access:public	signature:()
-getLogger	JKYi/log.cc	/^Logger::ptr LoggerManager::getLogger(const std::string&name){$/;"	f	class:JKYi::LoggerManager	signature:(const std::string&name)
+getLogFileName	JKYi/reactor/LogFile.cc	/^std::string LogFile::getLogFileName(const std::string& basename,time_t* now){$/;"	f	class:JKYi::net::LogFile	signature:(const std::string& basename,time_t* now)
+getLogFileName	JKYi/reactor/LogFile.h	/^    static std::string getLogFileName(const std::string& name,time_t* now);$/;"	p	class:JKYi::net::LogFile	access:private	signature:(const std::string& name,time_t* now)
+getLogger	JKYi/log.cc	/^Logger::ptr LoggerManager::getLogger(const std::string& name){$/;"	f	class:JKYi::LoggerManager	signature:(const std::string& name)
 getLogger	JKYi/log.h	/^     Logger::ptr getLogger(const std::string&name);$/;"	p	class:JKYi::LoggerManager	access:public	signature:(const std::string&name)
 getLogger	JKYi/log.h	/^   std::shared_ptr<Logger> getLogger()const {return m_logger;}$/;"	f	class:JKYi::LogEvent	access:public	signature:() const
 getLoop	JKYi/reactor/TcpClient.h	/^    EventLoop* getLoop()const{$/;"	f	class:JKYi::net::TcpClient	access:public	signature:() const
@@ -7902,7 +8219,7 @@ hasError	JKYi/http/http_parser.h	/^    int hasError();$/;"	p	class:JKYi::http::H
 hasError	JKYi/http/http_parser.h	/^    int hasError();$/;"	p	class:JKYi::http::HttpResponseParser	access:public	signature:()
 hasHeader	JKYi/http/http.cc	/^bool HttpRequest::hasHeader(const std::string& key,std::string * val){$/;"	f	class:JKYi::http::HttpRequest	signature:(const std::string& key,std::string * val)
 hasHeader	JKYi/http/http.h	/^   bool hasHeader(const std::string& key,std::string * val=nullptr );$/;"	p	class:JKYi::http::HttpRequest	access:public	signature:(const std::string& key,std::string * val=nullptr )
-hasIdleThreads	JKYi/scheduler.h	/^   bool hasIdleThreads(){return m_idleThreadCount>0;}$/;"	f	class:JKYi::Scheduler	access:protected	signature:()
+hasIdleThreads	JKYi/scheduler.h	/^   bool hasIdleThreads(){return m_idleThreadCount > 0;}$/;"	f	class:JKYi::Scheduler	access:protected	signature:()
 hasParam	JKYi/http/http.cc	/^bool HttpRequest::hasParam(const std::string& key,std::string * val){$/;"	f	class:JKYi::http::HttpRequest	signature:(const std::string& key,std::string * val)
 hasParam	JKYi/http/http.h	/^   bool hasParam(const std::string& key,std::string * val=nullptr );$/;"	p	class:JKYi::http::HttpRequest	access:public	signature:(const std::string& key,std::string * val=nullptr )
 hasTimer	JKYi/timer.cc	/^bool TimerManager::hasTimer(){$/;"	f	class:JKYi::TimerManager	signature:()
@@ -8078,6 +8395,7 @@ idle	JKYi/scheduler.cc	/^void Scheduler::idle(){$/;"	f	class:JKYi::Scheduler	sig
 idle	JKYi/scheduler.h	/^   virtual void idle();$/;"	p	class:JKYi::Scheduler	access:protected	signature:()
 idleFd_	JKYi/reactor/acceptor.h	/^    int idleFd_;$/;"	m	class:JKYi::net::Acceptor	access:private
 idleSeconds_	JKYi/reactor/examples/idleconnection/sortedList.cc	/^    int idleSeconds_;$/;"	m	class:EchoServer	file:	access:private
+impl_	JKYi/reactor/Logging.h	/^    Impl impl_;$/;"	m	class:JKYi::net::Logger	access:private
 implicit_cast	JKYi/Types.h	/^inline To implicit_cast(From const & f){$/;"	f	namespace:JKYi	signature:(From const & f)
 increment	JKYi/atomic.h	/^    void increment(){$/;"	f	class:JKYi::AtomicIntegerT	access:public	signature:()
 increment	JKYi/http2/frame.h	/^            uint32_t increment : 31;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::WindowUpdateFrame::__anon14::__anon15	access:public
@@ -8276,8 +8594,10 @@ kInvalidLength	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^        kInvalidLength
 kInvalidLengthStr	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^  const std::string kInvalidLengthStr = "InvalidLength";$/;"	m	namespace:__anon21	file:
 kInvalidNameLen	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^        kInvalidNameLen = 3,$/;"	e	enum:JKYi::net::ProtobufCodecLite::ErrorCode
 kInvalidNameLenStr	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^  const std::string kInvalidNameLenStr = "InvalidNameLen";$/;"	m	namespace:__anon21	file:
+kLargeBuffer	JKYi/reactor/LogStream.h	/^const int kLargeBuffer = 4000 * 1000;$/;"	m	namespace:JKYi::net::detail
 kMaxConnections_	JKYi/reactor/examples/maxconnection/echo.h	/^   const int kMaxConnections_;   \/\/最大连接数$/;"	m	class:EchoServer	access:private
 kMaxMessageLen	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^    const static int kMaxMessageLen = 64 * 1024 * 1024;$/;"	m	class:JKYi::net::ProtobufCodecLite	access:public
+kMaxNumericSize	JKYi/reactor/LogStream.h	/^   static const int kMaxNumericSize = 48;$/;"	m	class:JKYi::net::LogStream	access:private
 kMaxRetryDelayMs	JKYi/reactor/Connector.cc	/^const int Connector::kMaxRetryDelayMs;$/;"	m	class:JKYi::net::Connector	file:
 kMaxRetryDelayMs	JKYi/reactor/Connector.h	/^    static const int kMaxRetryDelayMs = 30 * 1000;     $/;"	m	class:JKYi::net::Connector	access:private
 kMicroSecondsPerSecond	JKYi/timestamp.h	/^    static const int kMicroSecondsPerSecond = 1000 * 1000;$/;"	m	class:JKYi::net::Timestamp	access:public
@@ -8296,6 +8616,8 @@ kPut	JKYi/reactor/http/HttpRequest.h	/^        kPut = 4,$/;"	e	enum:JKYi::net::H
 kReadEvent	JKYi/reactor/channel.cc	/^const int Channel::kReadEvent = POLLIN | POLLPRI;$/;"	m	class:JKYi::net::Channel	file:
 kReadEvent	JKYi/reactor/channel.h	/^    static const int kReadEvent;$/;"	m	class:JKYi::net::Channel	access:private
 kReusePort	JKYi/reactor/TcpServer.h	/^        kReusePort$/;"	e	enum:JKYi::net::TcpServer::Option
+kRollPerSeconds_	JKYi/reactor/LogFile.h	/^    const static int kRollPerSeconds_ = 60 * 60 * 24; $/;"	m	class:JKYi::net::LogFile	access:private
+kSmallBuffer	JKYi/reactor/LogStream.h	/^const int kSmallBuffer = 4000;$/;"	m	namespace:JKYi::net::detail
 kSuccess	JKYi/reactor/examples/hub/codec.h	/^    kSuccess = 1,$/;"	e	enum:pubsub::ParseResult
 kUnknowMessageType	JKYi/reactor/protobuf/ProtobufCodeLite.h	/^        kUnknowMessageType = 4,$/;"	e	enum:JKYi::net::ProtobufCodecLite::ErrorCode
 kUnknowMessageTypeStr	JKYi/reactor/protobuf/ProtobufCodeLite.cc	/^  const std::string kUnknowMessageTypeStr = "UnknownMessageType";$/;"	m	namespace:__anon21	file:
@@ -8307,19 +8629,26 @@ kWriteEvent	JKYi/reactor/channel.h	/^    static const int kWriteEvent;$/;"	m	cla
 keepalive	JKYi/tcp_server.h	/^    int keepalive = 0;$/;"	m	struct:JKYi::TcpServerConf	access:public
 key_file	JKYi/tcp_server.h	/^    std::string key_file;$/;"	m	struct:JKYi::TcpServerConf	access:public
 kvs	JKYi/http2/frame.h	/^    std::vector<std::pair<std::string,std::string>> kvs;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::HeadersFrame	access:public
+lastFlush_	JKYi/reactor/LogFile.h	/^    time_t lastFlush_;$/;"	m	class:JKYi::net::LogFile	access:private
 lastPubTime_	JKYi/reactor/examples/hub/hub.cc	/^    Timestamp lastPubTime_;  \/\/上一次pub的时间$/;"	m	class:pubsub::Topic	file:	access:private
 lastReceiveTime	JKYi/reactor/examples/idleconnection/sortedList.cc	/^       Timestamp lastReceiveTime; $/;"	m	struct:EchoServer::Node	file:	access:public
+lastRoll_	JKYi/reactor/LogFile.h	/^    time_t lastRoll_;$/;"	m	class:JKYi::net::LogFile	access:private
 last_chunk	JKYi/http/httpclient_parser.h	/^      element_cb last_chunk;$/;"	m	struct:httpclient_parser	access:public
 last_stream_id	JKYi/http2/frame.h	/^            uint32_t last_stream_id : 31;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::GoAwayFrame::__anon12::__anon13	access:public
+latch_	JKYi/reactor/AsyncLogging.h	/^    JKYi::CountDownLatch latch_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
 latch_	JKYi/reactor/Thread.cc	/^    CountDownLatch* latch_;$/;"	m	struct:JKYi::detail::ThreadData	file:	access:public
 latch_	JKYi/reactor/Thread.h	/^    CountDownLatch latch_;          \/\/用来让主线程等待子线程得到自己的tid之后在往下执行$/;"	m	class:JKYi::net::Thread	access:private
 len	JKYi/http2/hpack.h	/^            uint8_t len : 7;$/;"	m	struct:JKYi::http2::IndexType::StringHeader::__anon16::__anon17	access:public
+len_	JKYi/reactor/Logging.cc	/^    const unsigned len_;$/;"	m	class:JKYi::net::T	file:	access:public
 len_type	JKYi/http2/frame.h	/^        uint32_t len_type = 0;$/;"	m	union:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::FrameHeader::__anon3	access:public
 length	JKYi/db/mysql.h	/^        unsigned long length;$/;"	m	struct:JKYi::MySQLStmtRes::Data	access:public
 length	JKYi/http2/frame.h	/^            uint32_t length : 24;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::FrameHeader::__anon3::__anon4	access:public
+length	JKYi/reactor/LogStream.h	/^    int length()const {$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
 length_	JKYi/reactor/StringPiece.h	/^  int           length_;$/;"	m	class:JKYi::net::StringPiece	access:private
-level	JKYi/log.cc	/^    LogLevel::Level level=LogLevel::UNKNOW;$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
+level	JKYi/log.cc	/^    LogLevel::Level level = LogLevel::UNKNOW;$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
 level	JKYi/log.cc	/^   LogLevel::Level level=LogLevel::UNKNOW;$/;"	m	struct:JKYi::LogDefine	file:	access:public
+level_	JKYi/reactor/Logging.h	/^        LogLevel level_;$/;"	m	class:JKYi::net::Logger::Impl	access:public
+line_	JKYi/reactor/Logging.h	/^        int line_;$/;"	m	class:JKYi::net::Logger::Impl	access:public
 listAll	JKYi/module.cc	/^void ModuleManager::listAll(std::vector<Module::ptr>& ms){$/;"	f	class:JKYi::ModuleManager	signature:(std::vector<Module::ptr>& ms)
 listAll	JKYi/module.h	/^    void listAll(std::vector<Module::ptr>& ms);$/;"	p	class:JKYi::ModuleManager	access:public	signature:(std::vector<Module::ptr>& ms)
 listAllServer	JKYi/application.cc	/^void Application::listAllServer(std::map<std::string,std::vector<TcpServer::ptr>>&servers){$/;"	f	class:JKYi::Application	signature:(std::map<std::string,std::vector<TcpServer::ptr>>&servers)
@@ -8356,6 +8685,8 @@ log	JKYi/log.cc	/^void Logger::log(LogLevel::Level level,LogEvent::ptr event){$/
 log	JKYi/log.cc	/^void StdoutLogAppender::log(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event){$/;"	f	class:JKYi::StdoutLogAppender	signature:(std::shared_ptr<Logger>logger,LogLevel::Level level,LogEvent::ptr event)
 log	JKYi/log.h	/^    virtual void log(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event) = 0;$/;"	p	class:JKYi::LogAppender	access:public	signature:(std::shared_ptr<Logger> logger, LogLevel::Level level, LogEvent::ptr event)
 log	JKYi/log.h	/^    void log(LogLevel::Level level,LogEvent::ptr event);$/;"	p	class:JKYi::Logger	access:public	signature:(LogLevel::Level level,LogEvent::ptr event)
+logLevel	JKYi/reactor/Logging.h	/^    static LogLevel logLevel();$/;"	p	class:JKYi::net::Logger	access:public	signature:()
+logLevel	JKYi/reactor/Logging.h	/^inline Logger::LogLevel Logger::logLevel(){$/;"	f	class:JKYi::net::Logger	signature:()
 loop	JKYi/reactor/EventLoop.cc	/^void EventLoop::loop(){$/;"	f	class:JKYi::net::EventLoop	signature:()
 loop	JKYi/reactor/EventLoop.h	/^    void loop();$/;"	p	class:JKYi::net::EventLoop	access:public	signature:()
 loop_	JKYi/reactor/Connector.h	/^    EventLoop* loop_;$/;"	m	class:JKYi::net::Connector	access:private
@@ -8371,7 +8702,7 @@ loop_	JKYi/reactor/timerQueue.h	/^    EventLoop* loop_;$/;"	m	class:JKYi::net::T
 looping_	JKYi/reactor/EventLoop.h	/^    bool looping_;$/;"	m	class:JKYi::net::EventLoop	access:private
 loops_	JKYi/reactor/EventLoopThreadPool.h	/^    std::vector<EventLoop*> loops_;$/;"	m	class:JKYi::net::EventLoopThreadPool	access:private
 m_acceptWorker	JKYi/tcp_server.h	/^    IOManager * m_acceptWorker;$/;"	m	class:JKYi::TcpServer	access:protected
-m_activeThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_activeThreadCount={0};$/;"	m	class:JKYi::Scheduler	access:protected
+m_activeThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_activeThreadCount = {0};$/;"	m	class:JKYi::Scheduler	access:protected
 m_addr	JKYi/address.h	/^	sockaddr m_addr;$/;"	m	class:JKYi::UnknowAddress	access:private
 m_addr	JKYi/address.h	/^	sockaddr_in m_addr;$/;"	m	class:JKYi::IPv4Address	access:private
 m_addr	JKYi/address.h	/^	sockaddr_in6 m_addr;$/;"	m	class:JKYi::IPv6Address	access:private
@@ -8383,7 +8714,7 @@ m_argc	JKYi/application.h	/^    int m_argc = 0;$/;"	m	class:JKYi::Application	ac
 m_args	JKYi/env.h	/^    std::map<std::string,std::string> m_args;$/;"	m	class:JKYi::Env	access:private
 m_argv	JKYi/application.h	/^    char ** m_argv = nullptr;$/;"	m	class:JKYi::Application	access:private
 m_autoCommit	JKYi/db/mysql.h	/^   bool m_autoCommit;$/;"	m	class:JKYi::MySQLTransaction	access:private
-m_autoStop	JKYi/scheduler.h	/^   bool m_autoStop=false;$/;"	m	class:JKYi::Scheduler	access:protected
+m_autoStop	JKYi/scheduler.h	/^   bool m_autoStop = false;$/;"	m	class:JKYi::Scheduler	access:protected
 m_base	JKYi/db/fox_thread.h	/^    struct event_base* m_base;$/;"	m	class:JKYi::FoxThread	typeref:struct:JKYi::FoxThread::event_base	access:private
 m_baseSize	JKYi/bytearray.h	/^    size_t m_baseSize;$/;"	m	class:JKYi::ByteArray	access:private
 m_binds	JKYi/db/mysql.h	/^    std::vector<MYSQL_BIND> m_binds;$/;"	m	class:JKYi::MySQLStmt	access:private
@@ -8394,7 +8725,7 @@ m_callback	JKYi/http/ws_servlet.h	/^    callback m_callback;$/;"	m	class:JKYi::h
 m_callbacks	JKYi/db/fox_thread.h	/^    std::list<callback> m_callbacks;$/;"	m	class:JKYi::FoxThread	access:private
 m_callbacks	JKYi/db/fox_thread.h	/^    std::list<callback> m_callbacks;$/;"	m	class:JKYi::FoxThreadPool	access:private
 m_capacity	JKYi/bytearray.h	/^    size_t m_capacity;$/;"	m	class:JKYi::ByteArray	access:private
-m_cb	JKYi/fiber.h	/^   std::function<void ()>m_cb;$/;"	m	class:JKYi::Fiber	access:private
+m_cb	JKYi/fiber.h	/^   std::function<void ()> m_cb;$/;"	m	class:JKYi::Fiber	access:private
 m_cb	JKYi/http/servlet.h	/^    callback m_cb;$/;"	m	class:JKYi::http::FunctionServlet	access:private
 m_cb	JKYi/thread.h	/^   std::function<void()>m_cb;$/;"	m	class:JKYi::Thread	access:private
 m_cb	JKYi/timer.h	/^   std::function<void()>m_cb;$/;"	m	class:JKYi::Timer	access:private
@@ -8480,7 +8811,7 @@ m_filename	JKYi/module.h	/^   std::string m_filename;$/;"	m	class:JKYi::Module	a
 m_filestream	JKYi/log.h	/^     std::ofstream m_filestream;$/;"	m	class:JKYi::FileLogAppender	access:private
 m_format	JKYi/log.cc	/^    std::string m_format;$/;"	m	class:JKYi::DateTimeFormatItem	file:	access:private
 m_formatter	JKYi/log.h	/^    LogFormatter::ptr m_formatter;\/\/定义日志输出的格式$/;"	m	class:JKYi::LogAppender	access:protected
-m_formatter	JKYi/log.h	/^    LogFormatter::ptr m_formatter;\/\/日志的输出格式$/;"	m	class:JKYi::Logger	access:private
+m_formatter	JKYi/log.h	/^    LogFormatter::ptr m_formatter;\/\/日志的输出格式,Logger的输出格式的话是用来向内部添加appneder的时候，如果这个appender没有设置format，就是用logger$/;"	m	class:JKYi::Logger	access:private
 m_fragment	JKYi/http/http.h	/^    std::string m_fragment;$/;"	m	class:JKYi::http::HttpRequest	access:private
 m_fragment	JKYi/uri.h	/^    std::string m_fragment;$/;"	m	class:JKYi::Uri	access:private
 m_freeFoxThreads	JKYi/db/fox_thread.h	/^    std::list<FoxThread*> m_freeFoxThreads;$/;"	m	class:JKYi::FoxThreadPool	access:private
@@ -8504,7 +8835,7 @@ m_hosts	JKYi/zk_client.h	/^    std::string m_hosts;$/;"	m	class:JKYi::ZKClient	a
 m_id	JKYi/fiber.h	/^   uint64_t m_id = 0;$/;"	m	class:JKYi::Fiber	access:private
 m_id	JKYi/module.h	/^   std::string m_id;$/;"	m	class:JKYi::Module	access:protected
 m_id	JKYi/thread.h	/^   pid_t m_id = -1;$/;"	m	class:JKYi::Thread	access:private
-m_idleThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_idleThreadCount={0};$/;"	m	class:JKYi::Scheduler	access:protected
+m_idleThreadCount	JKYi/scheduler.h	/^   std::atomic<size_t> m_idleThreadCount = {0};$/;"	m	class:JKYi::Scheduler	access:protected
 m_initCb	JKYi/db/fox_thread.h	/^    FoxThread::init_cb m_initCb;$/;"	m	class:JKYi::FoxThreadPool	access:private
 m_initCb	JKYi/db/fox_thread.h	/^    init_cb m_initCb;$/;"	m	class:JKYi::FoxThread	access:private
 m_instance	JKYi/application.cc	/^Application* Application::m_instance = nullptr;$/;"	m	class:JKYi::Application	file:
@@ -8626,7 +8957,7 @@ m_root	JKYi/bytearray.h	/^    Node * m_root;$/;"	m	class:JKYi::ByteArray	access:
 m_root	JKYi/log.h	/^    Logger::ptr m_root;$/;"	m	class:JKYi::Logger	access:private
 m_root	JKYi/log.h	/^    Logger::ptr m_root;$/;"	m	class:JKYi::LoggerManager	access:private
 m_rootFiber	JKYi/scheduler.h	/^  Fiber::ptr m_rootFiber;$/;"	m	class:JKYi::Scheduler	access:private
-m_rootThread	JKYi/scheduler.h	/^   int m_rootThread=0;$/;"	m	class:JKYi::Scheduler	access:protected
+m_rootThread	JKYi/scheduler.h	/^   int m_rootThread = 0;$/;"	m	class:JKYi::Scheduler	access:protected
 m_scheme	JKYi/uri.h	/^    std::string m_scheme;$/;"	m	class:JKYi::Uri	access:private
 m_sem	JKYi/ds/blocking_queue.h	/^    JKYi::FiberSemaphore m_sem;$/;"	m	class:JKYi::ds::BlockingQueue	access:private
 m_semaphore	JKYi/mutex.h	/^   sem_t m_semaphore; $/;"	m	class:JKYi::Semaphore	access:private
@@ -8655,7 +8986,7 @@ m_status	JKYi/http/http.h	/^    HttpStatus m_status;$/;"	m	class:JKYi::http::Htt
 m_stmt	JKYi/db/mysql.h	/^    MYSQL_STMT * m_stmt;$/;"	m	class:JKYi::MySQLStmt	access:private
 m_stmt	JKYi/db/mysql.h	/^    std::shared_ptr<MySQLStmt> m_stmt;$/;"	m	class:JKYi::MySQLStmtRes	access:private
 m_stop	JKYi/worker.h	/^    bool m_stop;$/;"	m	class:JKYi::WorkerManager	access:private
-m_stopping	JKYi/scheduler.h	/^   bool m_stopping=true;$/;"	m	class:JKYi::Scheduler	access:protected
+m_stopping	JKYi/scheduler.h	/^   bool m_stopping = true;$/;"	m	class:JKYi::Scheduler	access:protected
 m_string	JKYi/log.cc	/^   std::string m_string;$/;"	m	class:JKYi::StringFormatItem	file:	access:private
 m_string	JKYi/log.cc	/^   std::string m_string;$/;"	m	class:JKYi::TabFormatItem	file:	access:private
 m_table	JKYi/http2/hpack.h	/^    DynamicTable& m_table;$/;"	m	class:JKYi::http2::IndexType::HPack	access:private
@@ -8663,7 +8994,7 @@ m_thread	JKYi/db/fox_thread.h	/^    std::thread* m_thread;$/;"	m	class:JKYi::Fox
 m_thread	JKYi/db/redis.h	/^    JKYi::FoxThread* m_thread;$/;"	m	class:JKYi::FoxRedis	access:private
 m_thread	JKYi/db/redis.h	/^    JKYi::FoxThread* m_thread;$/;"	m	class:JKYi::FoxRedisCluster	access:private
 m_thread	JKYi/thread.h	/^   pthread_t m_thread = 0;$/;"	m	class:JKYi::Thread	access:private
-m_threadCount	JKYi/scheduler.h	/^   size_t m_threadCount=0;$/;"	m	class:JKYi::Scheduler	access:protected
+m_threadCount	JKYi/scheduler.h	/^   size_t m_threadCount = 0;$/;"	m	class:JKYi::Scheduler	access:protected
 m_threadId	JKYi/log.h	/^   uint32_t m_threadId = 0;\/\/线程ID$/;"	m	class:JKYi::LogEvent	access:private
 m_threadIds	JKYi/scheduler.h	/^   std::vector<int> m_threadIds;$/;"	m	class:JKYi::Scheduler	access:protected
 m_threadName	JKYi/log.h	/^   std::string m_threadName;$/;"	m	class:JKYi::LogEvent	access:private
@@ -8703,6 +9034,7 @@ main	JKYi/reactor/examples/hub/pub.cc	/^int main(int argc,char ** argv){$/;"	f	s
 main	JKYi/reactor/examples/hub/sub.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/idleconnection/main.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/idleconnection/sortedList.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
+main	JKYi/reactor/examples/log/async_log_test.cc	/^int main(){$/;"	f	signature:()
 main	JKYi/reactor/examples/maxconnection/main.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/netty/discard/client.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	JKYi/reactor/examples/netty/discard/server.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
@@ -8727,6 +9059,7 @@ main	tests/test_http_connection.cc	/^int main(int argc,char ** argv){$/;"	f	sign
 main	tests/test_http_parser.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	tests/test_http_server.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	tests/test_iomanager.cc	/^int main(int argc,char**argv){$/;"	f	signature:(int argc,char**argv)
+main	tests/test_log.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	tests/test_mysql.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
 main	tests/test_reactor_tcpClient.cc	/^int main(int argc,char * *argv){$/;"	f	signature:(int argc,char * *argv)
 main	tests/test_reactor_tcpserver.cc	/^int main(int argc,char ** argv){$/;"	f	signature:(int argc,char ** argv)
@@ -8776,8 +9109,10 @@ mutex_	JKYi/BlockingQueue.h	/^    mutable Mutex mutex_;$/;"	m	class:JKYi::Blocki
 mutex_	JKYi/BoundedBlockingQueue.h	/^    mutable Mutex mutex_;$/;"	m	class:JKYi::BoundedBlockingQueue	access:private
 mutex_	JKYi/CountDownLatch.h	/^    mutable Mutex mutex_;$/;"	m	class:JKYi::CountDownLatch	access:private
 mutex_	JKYi/condition.h	/^    Mutex& mutex_;$/;"	m	class:JKYi::Condition	access:private
+mutex_	JKYi/reactor/AsyncLogging.h	/^    JKYi::Mutex mutex_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
 mutex_	JKYi/reactor/EventLoop.h	/^    mutable Mutex mutex_;$/;"	m	class:JKYi::net::EventLoop	access:private
 mutex_	JKYi/reactor/EventLoopThread.h	/^    Mutex mutex_;$/;"	m	class:JKYi::net::EventLoopThread	access:private
+mutex_	JKYi/reactor/LogFile.h	/^    std::unique_ptr<JKYi::Mutex> mutex_;$/;"	m	class:JKYi::net::LogFile	access:private
 mutex_	JKYi/reactor/TcpClient.h	/^    mutable Mutex mutex_;$/;"	m	class:JKYi::net::TcpClient	access:private
 my_mysql_query	JKYi/db/mysql.cc	/^static MYSQL_RES* my_mysql_query(MYSQL* mysql,const char * sql){$/;"	f	namespace:JKYi	signature:(MYSQL* mysql,const char * sql)
 mysql_init	JKYi/db/mysql.cc	/^static MYSQL* mysql_init(std::map<std::string,std::string>& params,$/;"	f	namespace:JKYi	signature:(std::map<std::string,std::string>& params, const int& timeout)
@@ -8815,6 +9150,8 @@ name_space::MyModule::ptr	template/template/my_module.h	/^    typedef std::share
 name_space::g_logger	template/template/my_module.cc	/^static JKYi::Logger::ptr g_logger = JKYI_LOG_ROOT();$/;"	m	namespace:name_space	file:
 nanosleep	JKYi/hook.cc	/^int nanosleep(const struct timespec*req,struct timespec *rem){$/;"	f	signature:(const struct timespec*req,struct timespec *rem)
 nanosleep_fun	JKYi/hook.h	/^typedef int (*nanosleep_fun)(const struct timespec *req, struct timespec *rem);$/;"	t
+net	JKYi/reactor/AsyncLogging.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+net	JKYi/reactor/AsyncLogging.h	/^namespace net{$/;"	n	namespace:JKYi
 net	JKYi/reactor/Buffer.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
 net	JKYi/reactor/Buffer.h	/^namespace net{$/;"	n	namespace:JKYi
 net	JKYi/reactor/Callbacks.h	/^namespace net{$/;"	n	namespace:JKYi
@@ -8826,6 +9163,14 @@ net	JKYi/reactor/EventLoopThread.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
 net	JKYi/reactor/EventLoopThread.h	/^namespace net{$/;"	n	namespace:JKYi
 net	JKYi/reactor/EventLoopThreadPool.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
 net	JKYi/reactor/EventLoopThreadPool.h	/^namespace net{$/;"	n	namespace:JKYi
+net	JKYi/reactor/FileUtil.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+net	JKYi/reactor/FileUtil.h	/^namespace net{$/;"	n	namespace:JKYi
+net	JKYi/reactor/LogFile.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+net	JKYi/reactor/LogFile.h	/^namespace net{$/;"	n	namespace:JKYi
+net	JKYi/reactor/LogStream.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+net	JKYi/reactor/LogStream.h	/^namespace net{$/;"	n	namespace:JKYi
+net	JKYi/reactor/Logging.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
+net	JKYi/reactor/Logging.h	/^namespace net{$/;"	n	namespace:JKYi
 net	JKYi/reactor/Socket.cc	/^namespace net{$/;"	n	namespace:JKYi	file:
 net	JKYi/reactor/Socket.h	/^namespace net{$/;"	n	namespace:JKYi
 net	JKYi/reactor/SocketsOps.h	/^namespace net{$/;"	n	namespace:JKYi
@@ -8878,13 +9223,14 @@ next	JKYi/bytearray.h	/^        Node* next;$/;"	m	struct:JKYi::ByteArray::Node	a
 next	JKYi/db/db.h	/^    virtual bool next() = 0;$/;"	p	class:JKYi::ISQLData	access:public	signature:()
 next	JKYi/db/mysql.cc	/^bool MySQLRes::next(){$/;"	f	class:JKYi::MySQLRes	signature:()
 next	JKYi/db/mysql.cc	/^bool MySQLStmtRes::next(){$/;"	f	class:JKYi::MySQLStmtRes	signature:()
+nextBuffer_	JKYi/reactor/AsyncLogging.h	/^    BufferPtr nextBuffer_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
 nextConnId_	JKYi/reactor/TcpClient.h	/^    int nextConnId_;$/;"	m	class:JKYi::net::TcpClient	access:private
 nextConnId_	JKYi/reactor/TcpServer.h	/^    int nextConnId_;$/;"	m	class:JKYi::net::TcpServer	access:private
 next_	JKYi/reactor/EventLoopThreadPool.h	/^    int next_;          \/\/用于实现round-robin$/;"	m	class:JKYi::net::EventLoopThreadPool	access:private
 node	JKYi/http2/huffman.cc	/^struct node{$/;"	s	namespace:JKYi::http2	file:
 node_create	JKYi/http2/huffman.cc	/^static NODE * node_create(){$/;"	f	namespace:JKYi::http2	signature:()
 nop	JKYi/util.h	/^void nop(T * t){$/;"	f	namespace:JKYi	signature:(T * t)
-notEpmty_	JKYi/BoundedBlockingQueue.h	/^    Condition notEpmty_;$/;"	m	class:JKYi::BoundedBlockingQueue	access:private
+notEmpty_	JKYi/BoundedBlockingQueue.h	/^    Condition notEmpty_;$/;"	m	class:JKYi::BoundedBlockingQueue	access:private
 notFull_	JKYi/BoundedBlockingQueue.h	/^    Condition notFull_;$/;"	m	class:JKYi::BoundedBlockingQueue	access:private
 notify	JKYi/condition.h	/^    void notify(){$/;"	f	class:JKYi::Condition	access:public	signature:()
 notify	JKYi/mutex.cc	/^void FiberSemaphore::notify(){$/;"	f	class:JKYi::FiberSemaphore	signature:()
@@ -8998,6 +9344,8 @@ on_response_reason	JKYi/http/http_parser.cc	/^void on_response_reason(void * dat
 on_response_status	JKYi/http/http_parser.cc	/^void on_response_status(void * data,const char * at,size_t length){$/;"	f	namespace:JKYi::http	signature:(void * data,const char * at,size_t length)
 on_response_version	JKYi/http/http_parser.cc	/^void on_response_version(void * data,const char * at,size_t length){$/;"	f	namespace:JKYi::http	signature:(void * data,const char * at,size_t length)
 on_watcher	tests/test_zookeeper.cc	/^void on_watcher(int type,int stat,const std::string& path,JKYi::ZKClient::ptr client){$/;"	f	signature:(int type,int stat,const std::string& path,JKYi::ZKClient::ptr client)
+once_control	JKYi/reactor/Logging.cc	/^static pthread_once_t once_control = PTHREAD_ONCE_INIT;$/;"	m	namespace:JKYi::net	file:
+once_init	JKYi/reactor/Logging.cc	/^void once_init(){$/;"	f	namespace:JKYi::net	signature:()
 opcode	JKYi/http/ws_session.h	/^   uint32_t opcode: 4; $/;"	m	struct:JKYi::http::WSFrameHead	access:public
 openTransaction	JKYi/db/db.h	/^    virtual ITransaction::ptr openTransaction(bool auto_commit = false) = 0;$/;"	p	class:JKYi::IDB	access:public	signature:(bool auto_commit = false)
 openTransaction	JKYi/db/mysql.cc	/^ITransaction::ptr MySQL::openTransaction(bool auto_commit){$/;"	f	class:JKYi::MySQL	signature:(bool auto_commit)
@@ -9043,6 +9391,35 @@ operator <<	JKYi/http/http.cc	/^std::ostream& operator<< (std::ostream& os,const
 operator <<	JKYi/http/http.cc	/^std::ostream& operator<< (std::ostream& os,const HttpResponse& rsp){$/;"	f	namespace:JKYi::http	signature:(std::ostream& os,const HttpResponse& rsp)
 operator <<	JKYi/http/http.h	/^std::ostream& operator<< (std::ostream& os,const HttpRequest&req);$/;"	p	namespace:JKYi::http	signature:(std::ostream& os,const HttpRequest&req)
 operator <<	JKYi/http/http.h	/^std::ostream& operator<< (std::ostream& os,const HttpStatus& rsp);$/;"	p	namespace:JKYi::http	signature:(std::ostream& os,const HttpStatus& rsp)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (const void * p){$/;"	f	class:JKYi::net::LogStream	signature:(const void * p)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (double v){$/;"	f	class:JKYi::net::LogStream	signature:(double v)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (int v){$/;"	f	class:JKYi::net::LogStream	signature:(int v)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (long long v){$/;"	f	class:JKYi::net::LogStream	signature:(long long v)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (long v){$/;"	f	class:JKYi::net::LogStream	signature:(long v)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (short v){$/;"	f	class:JKYi::net::LogStream	signature:(short v)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (unsigned int v){$/;"	f	class:JKYi::net::LogStream	signature:(unsigned int v)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (unsigned long long v){$/;"	f	class:JKYi::net::LogStream	signature:(unsigned long long v)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (unsigned long v){$/;"	f	class:JKYi::net::LogStream	signature:(unsigned long v)
+operator <<	JKYi/reactor/LogStream.cc	/^LogStream& LogStream::operator<< (unsigned short v ){$/;"	f	class:JKYi::net::LogStream	signature:(unsigned short v )
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (bool v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(bool v)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (char v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(char v)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const Buffer& v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const Buffer& v)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const StringPiece& v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const StringPiece& v)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const char* str){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const char* str)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const std::string& v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const std::string& v)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const unsigned char* str){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(const unsigned char* str)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (const void *);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(const void *)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (double v);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(double v)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (float v){$/;"	f	class:JKYi::net::LogStream	access:public	signature:(float v)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (int);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(int)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (long long);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(long long)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (long);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(long)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (short);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(short)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (unsigned int);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(unsigned int)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (unsigned long long);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(unsigned long long)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (unsigned long);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(unsigned long)
+operator <<	JKYi/reactor/LogStream.h	/^   self& operator<< (unsigned short);$/;"	p	class:JKYi::net::LogStream	access:public	signature:(unsigned short)
+operator <<	JKYi/reactor/Logging.cc	/^inline LogStream& operator<< (LogStream& s,T v){$/;"	f	namespace:JKYi::net	signature:(LogStream& s,T v)
 operator =	JKYi/noncopyable.h	/^  Noncopyable& operator= (const Noncopyable&) = delete;$/;"	p	class:JKYi::Noncopyable	access:public	signature:(const Noncopyable&)
 operator =	sample/protobuf/query.pb.h	/^  inline Answer& operator=(const Answer& from) {$/;"	f	class:test::final	access:public	signature:(const Answer& from)
 operator =	sample/protobuf/query.pb.h	/^  inline Empty& operator=(const Empty& from) {$/;"	f	class:test::final	access:public	signature:(const Empty& from)
@@ -9059,6 +9436,8 @@ operator []	JKYi/reactor/StringPiece.h	/^  char operator[](int i) const { return
 originalSize_	JKYi/reactor/protobuf/BufferStream.h	/^    size_t originalSize_;$/;"	m	class:JKYi::net::BufferOutputStream	access:private
 outputBuffer	JKYi/reactor/TcpConnection.h	/^    Buffer* outputBuffer(){$/;"	f	class:JKYi::net::TcpConnection	access:public	signature:()
 outputBuffer_	JKYi/reactor/TcpConnection.h	/^    Buffer outputBuffer_;$/;"	m	class:JKYi::net::TcpConnection	access:private
+outputFunc	JKYi/reactor/Logging.h	/^    typedef void (*outputFunc) (const char* msg,int len);$/;"	t	class:JKYi::net::Logger	access:public
+outputToFile	JKYi/reactor/Logging.cc	/^void outputToFile(const char* msg,int len){$/;"	f	namespace:JKYi::net	signature:(const char* msg,int len)
 override	JKYi/address.h	/^	IPAddress::ptr broadcastAddress(uint32_t prefix_len)override;$/;"	m	class:JKYi::IPv4Address	access:public
 override	JKYi/address.h	/^	IPAddress::ptr broadcastAddress(uint32_t prefix_len)override;$/;"	m	class:JKYi::IPv6Address	access:public
 override	JKYi/address.h	/^	IPAddress::ptr networkAddress(uint32_t prefix_len)override;$/;"	m	class:JKYi::IPv4Address	access:public
@@ -9765,12 +10144,14 @@ request_path	JKYi/http/http11_parser.h	/^      element_cb request_path;$/;"	m	st
 request_uri	JKYi/http/http11_parser.h	/^      element_cb request_uri;$/;"	m	struct:http_parser	access:public
 reset	JKYi/fiber.cc	/^void Fiber::reset(std::function<void()>cb){$/;"	f	class:JKYi::Fiber	signature:(std::function<void()>cb)
 reset	JKYi/fiber.h	/^	void reset(std::function<void ()>cb);$/;"	p	class:JKYi::Fiber	access:public	signature:(std::function<void ()>cb)
+reset	JKYi/reactor/LogStream.h	/^    void reset() { cur_ = data_; }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
 reset	JKYi/reactor/http/HttpContext.h	/^    void reset(){$/;"	f	class:JKYi::net::HttpContext	access:public	signature:()
 reset	JKYi/reactor/timerQueue.cc	/^void TimerQueue::reset(const std::vector<Entry>& expired,Timestamp now){$/;"	f	class:TimerQueue	signature:(const std::vector<Entry>& expired,Timestamp now)
 reset	JKYi/reactor/timerQueue.h	/^    void reset(const std::vector<Entry>& expired,Timestamp now);$/;"	p	class:JKYi::net::TimerQueue	access:private	signature:(const std::vector<Entry>& expired,Timestamp now)
 reset	JKYi/scheduler.h	/^	 void reset(){$/;"	f	struct:JKYi::Scheduler::FiberAndThread	access:public	signature:()
 reset	JKYi/timer.cc	/^bool Timer::reset(uint64_t ms,bool from_now){$/;"	f	class:JKYi::Timer	signature:(uint64_t ms,bool from_now)
 reset	JKYi/timer.h	/^   bool reset(uint64_t ms,bool from_now);$/;"	p	class:JKYi::Timer	access:public	signature:(uint64_t ms,bool from_now)
+resetBuffer	JKYi/reactor/LogStream.h	/^   void resetBuffer() { buffer_.reset(); }$/;"	f	class:JKYi::net::LogStream	access:public	signature:()
 resetChannel	JKYi/reactor/Connector.cc	/^void Connector::resetChannel(){$/;"	f	class:JKYi::net::Connector	signature:()
 resetChannel	JKYi/reactor/Connector.h	/^    void resetChannel();$/;"	p	class:JKYi::net::Connector	access:private	signature:()
 resetContext	JKYi/iomanager.cc	/^void IOManager::FdContext::resetContext(EventContext&ctx){$/;"	f	class:JKYi::IOManager::FdContext	signature:(EventContext&ctx)
@@ -9799,6 +10180,10 @@ retry_	JKYi/reactor/TcpClient.h	/^    bool retry_;$/;"	m	class:JKYi::net::TcpCli
 reventsToString	JKYi/reactor/channel.cc	/^std::string Channel::reventsToString()const{$/;"	f	class:JKYi::net::Channel	signature:() const
 reventsToString	JKYi/reactor/channel.h	/^    std::string reventsToString()const;$/;"	p	class:JKYi::net::Channel	access:public	signature:() const
 revents_	JKYi/reactor/channel.h	/^    int revents_;                 \/\/实际发生的事件$/;"	m	class:JKYi::net::Channel	access:private
+rollFile	JKYi/reactor/LogFile.cc	/^bool LogFile::rollFile(){$/;"	f	class:JKYi::net::LogFile	signature:()
+rollFile	JKYi/reactor/LogFile.h	/^    bool rollFile();$/;"	p	class:JKYi::net::LogFile	access:public	signature:()
+rollSize_	JKYi/reactor/AsyncLogging.h	/^    const off_t rollSize_;             \/\/更换目标文件的大小$/;"	m	class:JKYi::net::AsyncLogging	access:private
+rollSize_	JKYi/reactor/LogFile.h	/^    const off_t rollSize_;          \/\/日志文件的临界大小$/;"	m	class:JKYi::net::LogFile	access:private
 rollback	JKYi/db/db.h	/^    virtual bool rollback() = 0; $/;"	p	class:JKYi::ITransaction	access:public	signature:()
 rollback	JKYi/db/mysql.cc	/^bool MySQLTransaction::rollback(){$/;"	f	class:JKYi::MySQLTransaction	signature:()
 rpy	JKYi/db/redis.h	/^        ReplyPtr rpy;$/;"	m	struct:JKYi::FoxRedis::FCtx	access:public
@@ -9835,6 +10220,7 @@ runInLoop	JKYi/reactor/EventLoop.h	/^    void runInLoop(Functor cb);$/;"	p	class
 runInThread	JKYi/reactor/Thread.cc	/^    void runInThread(){$/;"	f	struct:JKYi::detail::ThreadData	access:public	signature:()
 run_fiber	JKYi/application.cc	/^int Application::run_fiber(){$/;"	f	class:JKYi::Application	signature:()
 run_fiber	JKYi/application.h	/^    int run_fiber();$/;"	p	class:JKYi::Application	access:private	signature:()
+running_	JKYi/reactor/AsyncLogging.h	/^    std::atomic<bool> running_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
 s_connect_timeout	JKYi/hook.cc	/^static uint64_t s_connect_timeout=-1;$/;"	m	namespace:JKYi	file:
 s_file2modifytime	JKYi/config.cc	/^static std::map<std::string,uint64_t> s_file2modifytime;$/;"	m	namespace:JKYi	file:
 s_frame_types	JKYi/http2/frame.cc	/^static const std::vector<std::string> s_frame_types = {$/;"	m	namespace:JKYi::http2	file:
@@ -9863,6 +10249,7 @@ scheduleNoLock	JKYi/scheduler.h	/^   bool scheduleNoLock(FiberOrCb fc,int thread
 scheduler	JKYi/db/redis.h	/^        JKYi::Scheduler * scheduler;$/;"	m	struct:JKYi::FoxRedis::FCtx	access:public
 scheduler	JKYi/db/redis.h	/^        JKYi::Scheduler* scheduler;$/;"	m	struct:JKYi::FoxRedisCluster::FCtx	access:public
 scheduler	JKYi/iomanager.h	/^       Scheduler* scheduler = nullptr;$/;"	m	struct:JKYi::IOManager::FdContext::EventContext	access:public
+self	JKYi/reactor/LogStream.h	/^typedef LogStream self;$/;"	t	class:JKYi::net::LogStream	access:private
 send	JKYi/hook.cc	/^ssize_t send(int s, const void *msg, size_t len, int flags) {$/;"	f	signature:(int s, const void *msg, size_t len, int flags)
 send	JKYi/reactor/TcpConnection.cc	/^void TcpConnection::send(Buffer * buf){$/;"	f	class:JKYi::net::TcpConnection	signature:(Buffer * buf)
 send	JKYi/reactor/TcpConnection.cc	/^void TcpConnection::send(const StringPiece& message){$/;"	f	class:JKYi::net::TcpConnection	signature:(const StringPiece& message)
@@ -9972,6 +10359,8 @@ setError	JKYi/http/http_parser.h	/^    void setError(int v) { m_error=v; }$/;"	f
 setError	JKYi/http/http_parser.h	/^    void setError(int v){ m_error=v; }$/;"	f	class:JKYi::http::HttpRequestParser	access:public	signature:(int v)
 setErrorCallback	JKYi/reactor/channel.h	/^    void setErrorCallback(EventCallback cb) { errorCallback_ = std::move(cb); }$/;"	f	class:JKYi::net::Channel	access:public	signature:(EventCallback cb)
 setFilename	JKYi/module.h	/^    void setFilename(const std::string& v) { m_filename = v; }$/;"	f	class:JKYi::Module	access:public	signature:(const std::string& v)
+setFlush	JKYi/reactor/Logging.cc	/^void Logger::setFlush(FlushFunc flush){$/;"	f	class:JKYi::net::Logger	signature:(FlushFunc flush)
+setFlush	JKYi/reactor/Logging.h	/^    static void setFlush(FlushFunc func);$/;"	p	class:JKYi::net::Logger	access:public	signature:(FlushFunc func)
 setFormatter	JKYi/log.cc	/^void LogAppender::setFormatter(LogFormatter::ptr formatter){$/;"	f	class:JKYi::LogAppender	signature:(LogFormatter::ptr formatter)
 setFormatter	JKYi/log.cc	/^void Logger::setFormatter(LogFormatter::ptr formatter){$/;"	f	class:JKYi::Logger	signature:(LogFormatter::ptr formatter)
 setFormatter	JKYi/log.cc	/^void Logger::setFormatter(const std::string&str){$/;"	f	class:JKYi::Logger	signature:(const std::string&str)
@@ -9999,6 +10388,8 @@ setKeepAlive	JKYi/reactor/Socket.h	/^    void setKeepAlive(bool on);$/;"	p	class
 setLastActiveTime	JKYi/db/redis.h	/^    void setLastActiveTime(uint64_t v) { m_lastActiveTime = v; }$/;"	f	class:JKYi::ISyncRedis	access:public	signature:(uint64_t v)
 setLevel	JKYi/log.h	/^    void setLevel(LogLevel::Level level){m_level = level;}$/;"	f	class:JKYi::LogAppender	access:public	signature:(LogLevel::Level level)
 setLevel	JKYi/log.h	/^    void setLevel(LogLevel::Level level){m_level=level;}$/;"	f	class:JKYi::Logger	access:public	signature:(LogLevel::Level level)
+setLogLevel	JKYi/reactor/Logging.cc	/^void Logger::setLogLevel(Logger::LogLevel level){$/;"	f	class:JKYi::net::Logger	signature:(Logger::LogLevel level)
+setLogLevel	JKYi/reactor/Logging.h	/^    static void setLogLevel(LogLevel level);$/;"	p	class:JKYi::net::Logger	access:public	signature:(LogLevel level)
 setMaxConn	JKYi/db/mysql.h	/^    void setMaxConn(uint32_t v) { m_maxConn = v; }$/;"	f	class:JKYi::MySQLManager	access:public	signature:(uint32_t v)
 setMaxDataSize	JKYi/http2/dynamic_table.h	/^    void setMaxDataSize(int32_t v) { m_maxDataSize = v; }$/;"	f	class:JKYi::http2::DynamicTable	access:public	signature:(int32_t v)
 setMessageCallback	JKYi/reactor/TcpClient.h	/^    void setMessageCallback(MessageCallback cb){$/;"	f	class:JKYi::net::TcpClient	access:public	signature:(MessageCallback cb)
@@ -10019,6 +10410,8 @@ setOpcode	JKYi/http/ws_session.h	/^    void setOpcode(int v) { m_opcode = v; }$/
 setOption	JKYi/socket.cc	/^bool Socket::setOption(int level,int option,const void * result,socklen_t len){$/;"	f	class:JKYi::Socket	signature:(int level,int option,const void * result,socklen_t len)
 setOption	JKYi/socket.h	/^    bool setOption(int level,int option,const T&result){$/;"	f	class:JKYi::Socket	access:public	signature:(int level,int option,const T&result)
 setOption	JKYi/socket.h	/^    bool setOption(int level,int option,const void *result,socklen_t len);$/;"	p	class:JKYi::Socket	access:public	signature:(int level,int option,const void *result,socklen_t len)
+setOutput	JKYi/reactor/Logging.cc	/^void Logger::setOutput(outputFunc out){$/;"	f	class:JKYi::net::Logger	signature:(outputFunc out)
+setOutput	JKYi/reactor/Logging.h	/^    static void setOutput(outputFunc func);$/;"	p	class:JKYi::net::Logger	access:public	signature:(outputFunc func)
 setParam	JKYi/http/http.cc	/^void HttpRequest::setParam(const std::string& key,const std::string& value){$/;"	f	class:JKYi::http::HttpRequest	signature:(const std::string& key,const std::string& value)
 setParam	JKYi/http/http.h	/^   void setParam(const std::string&key,const std::string&value);$/;"	p	class:JKYi::http::HttpRequest	access:public	signature:(const std::string&key,const std::string&value)
 setParams	JKYi/http/http.h	/^   void setParams(const MapType& v){ m_params=v; }$/;"	f	class:JKYi::http::HttpRequest	access:public	signature:(const MapType& v)
@@ -10151,6 +10544,8 @@ size	JKYi/bytearray.h	/^        size_t size;$/;"	m	struct:JKYi::ByteArray::Node	
 size	JKYi/ds/blocking_queue.h	/^    size_t size(){$/;"	f	class:JKYi::ds::BlockingQueue	access:public	signature:()
 size	JKYi/http2/huffman.cc	/^    int size;$/;"	m	struct:JKYi::http2::node	file:	access:public
 size	JKYi/reactor/StringPiece.h	/^  int size() const { return length_; }$/;"	f	class:JKYi::net::StringPiece	access:public	signature:() const
+sizeof	JKYi/reactor/LogStream.cc	/^static_assert(sizeof(digits) == 20,"wrong number of digits");$/;"	p	namespace:JKYi::net::detail	file:	signature:(digits)
+sizeof	JKYi/reactor/LogStream.cc	/^static_assert(sizeof(digitsHex) == 17,"wrong number of digitsHex");$/;"	p	namespace:JKYi::net::detail	file:	signature:(digitsHex)
 sleep	JKYi/hook.cc	/^unsigned sleep(unsigned int second){$/;"	f	signature:(unsigned int second)
 sleep_fun	JKYi/hook.h	/^typedef unsigned int (*sleep_fun)(unsigned int seconds);$/;"	t
 sock	tests/test_iomanager.cc	/^int sock=0;$/;"	v
@@ -10205,6 +10600,7 @@ start	JKYi/db/fox_thread.cc	/^void FoxThreadManager::start(){$/;"	f	class:JKYi::
 start	JKYi/db/fox_thread.cc	/^void FoxThreadPool::start(){$/;"	f	class:JKYi::FoxThreadPool	signature:()
 start	JKYi/db/fox_thread.h	/^    virtual void start() = 0;$/;"	p	class:JKYi::IFoxThread	access:public	signature:()
 start	JKYi/db/fox_thread.h	/^    void start();$/;"	p	class:JKYi::FoxThreadManager	access:public	signature:()
+start	JKYi/reactor/AsyncLogging.h	/^    void start(){$/;"	f	class:JKYi::net::AsyncLogging	access:public	signature:()
 start	JKYi/reactor/Connector.cc	/^void Connector::start(){$/;"	f	class:JKYi::net::Connector	signature:()
 start	JKYi/reactor/Connector.h	/^    void start();       \/\/can be called in any thread$/;"	p	class:JKYi::net::Connector	access:public	signature:()
 start	JKYi/reactor/EventLoopThreadPool.cc	/^void EventLoopThreadPool::start(const ThreadInitCallback& cb){$/;"	f	class:JKYi::net::EventLoopThreadPool	signature:(const ThreadInitCallback& cb)
@@ -10234,6 +10630,7 @@ startInLoop	JKYi/reactor/Connector.cc	/^void Connector::startInLoop(){$/;"	f	cla
 startInLoop	JKYi/reactor/Connector.h	/^    void startInLoop();$/;"	p	class:JKYi::net::Connector	access:private	signature:()
 startLoop	JKYi/reactor/EventLoopThread.cc	/^EventLoop* EventLoopThread::startLoop(){$/;"	f	class:JKYi::net::EventLoopThread	signature:()
 startLoop	JKYi/reactor/EventLoopThread.h	/^    EventLoop* startLoop();$/;"	p	class:JKYi::net::EventLoopThread	access:public	signature:()
+startOfPeriod_	JKYi/reactor/LogFile.h	/^    time_t startOfPeriod_;$/;"	m	class:JKYi::net::LogFile	access:private
 startRead	JKYi/reactor/TcpConnection.cc	/^void TcpConnection::startRead(){$/;"	f	class:JKYi::net::TcpConnection	signature:()
 startRead	JKYi/reactor/TcpConnection.h	/^    void startRead();$/;"	p	class:JKYi::net::TcpConnection	access:public	signature:()
 startReadInLoop	JKYi/reactor/TcpConnection.cc	/^void TcpConnection::startReadInLoop(){$/;"	f	class:JKYi::net::TcpConnection	signature:()
@@ -10270,6 +10667,7 @@ stop	JKYi/db/fox_thread.cc	/^void FoxThreadManager::stop(){$/;"	f	class:JKYi::Fo
 stop	JKYi/db/fox_thread.cc	/^void FoxThreadPool::stop(){$/;"	f	class:JKYi::FoxThreadPool	signature:()
 stop	JKYi/db/fox_thread.h	/^    virtual void stop() = 0;$/;"	p	class:JKYi::IFoxThread	access:public	signature:()
 stop	JKYi/db/fox_thread.h	/^    void stop();$/;"	p	class:JKYi::FoxThreadManager	access:public	signature:()
+stop	JKYi/reactor/AsyncLogging.h	/^    void stop(){$/;"	f	class:JKYi::net::AsyncLogging	access:public	signature:()
 stop	JKYi/reactor/Connector.cc	/^void Connector::stop(){$/;"	f	class:JKYi::net::Connector	signature:()
 stop	JKYi/reactor/Connector.h	/^    void stop();        \/\/can be called in any thread$/;"	p	class:JKYi::net::Connector	access:public	signature:()
 stop	JKYi/reactor/TcpClient.cc	/^void TcpClient::stop(){$/;"	f	class:JKYi::net::TcpClient	signature:()
@@ -10293,7 +10691,10 @@ stopping	JKYi/iomanager.cc	/^bool IOManager::stopping(uint64_t &timeout){$/;"	f	
 stopping	JKYi/iomanager.h	/^   bool stopping(uint64_t&timeout);$/;"	p	class:JKYi::IOManager	access:protected	signature:(uint64_t&timeout)
 stopping	JKYi/scheduler.cc	/^bool Scheduler::stopping(){$/;"	f	class:JKYi::Scheduler	signature:()
 stopping	JKYi/scheduler.h	/^   virtual bool stopping();$/;"	p	class:JKYi::Scheduler	access:protected	signature:()
+str_	JKYi/reactor/Logging.cc	/^    const char* str_;$/;"	m	class:JKYi::net::T	file:	access:public
 str_	JKYi/reactor/StringPiece.h	/^  const char* str_;$/;"	m	class:JKYi::net::StringArg	access:private
+stream	JKYi/reactor/Logging.h	/^    LogStream& stream() { return impl_.stream_; }$/;"	f	class:JKYi::net::Logger	access:public	signature:()
+stream_	JKYi/reactor/Logging.h	/^        LogStream stream_;$/;"	m	class:JKYi::net::Logger::Impl	access:public
 stream_dep	JKYi/http2/frame.h	/^            uint32_t stream_dep : 31;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::PriorityFrame::__anon7::__anon8	access:public
 stream_id	JKYi/http2/frame.h	/^            uint32_t stream_id : 31;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::PushPromisedFrame::__anon9::__anon10	access:public
 subnetMaskAddress	JKYi/address.cc	/^IPAddress::ptr IPv4Address::subnetMaskAddress(uint32_t prefix_len){$/;"	f	class:JKYi::IPv4Address	signature:(uint32_t prefix_len)
@@ -10675,12 +11076,15 @@ test_yaml	tests/test_config.cc	/^void test_yaml(){$/;"	f	signature:()
 thread	JKYi/db/redis.h	/^        FoxThread * thread;$/;"	m	struct:JKYi::FoxRedis::Ctx	access:public
 thread	JKYi/db/redis.h	/^        FoxThread* thread;$/;"	m	struct:JKYi::FoxRedisCluster::Ctx	access:public
 thread	JKYi/scheduler.h	/^	 int thread;$/;"	m	struct:JKYi::Scheduler::FiberAndThread	access:public
+threadFunc	JKYi/reactor/AsyncLogging.cc	/^void AsyncLogging::threadFunc(){$/;"	f	class:JKYi::net::AsyncLogging	signature:()
+threadFunc	JKYi/reactor/AsyncLogging.h	/^    void threadFunc();$/;"	p	class:JKYi::net::AsyncLogging	access:private	signature:()
 threadFunc	JKYi/reactor/EventLoopThread.cc	/^void EventLoopThread::threadFunc(){$/;"	f	class:JKYi::net::EventLoopThread	signature:()
 threadFunc	JKYi/reactor/EventLoopThread.h	/^    void threadFunc();$/;"	p	class:JKYi::net::EventLoopThread	access:private	signature:()
 threadId_	JKYi/reactor/EventLoop.h	/^    const pid_t threadId_;$/;"	m	class:JKYi::net::EventLoop	access:private
 threadInitCallback_	JKYi/reactor/TcpServer.h	/^    ThreadInitCallback threadInitCallback_;$/;"	m	class:JKYi::net::TcpServer	access:private
 threadPool	JKYi/reactor/TcpServer.h	/^    std::shared_ptr<EventLoopThreadPool> threadPool(){$/;"	f	class:JKYi::net::TcpServer	access:public	signature:()
 threadPool_	JKYi/reactor/TcpServer.h	/^    std::shared_ptr<EventLoopThreadPool> threadPool_;  \/\/线程池$/;"	m	class:JKYi::net::TcpServer	access:private
+thread_	JKYi/reactor/AsyncLogging.h	/^    JKYi::net::Thread thread_;$/;"	m	class:JKYi::net::AsyncLogging	access:private
 thread_	JKYi/reactor/EventLoopThread.h	/^    Thread thread_;$/;"	m	class:JKYi::net::EventLoopThread	access:private
 thread_cb	JKYi/db/fox_thread.cc	/^void FoxThread::thread_cb(){$/;"	f	class:JKYi::FoxThread	signature:()
 thread_cb	JKYi/db/fox_thread.h	/^    void thread_cb();$/;"	p	class:JKYi::FoxThread	access:private	signature:()
@@ -10762,6 +11166,7 @@ toString	JKYi/http2/hpack.cc	/^std::string HeaderField::toString()const{$/;"	f	c
 toString	JKYi/http2/hpack.h	/^    std::string toString()const;$/;"	p	class:JKYi::http2::IndexType::HPack	access:public	signature:() const
 toString	JKYi/http2/hpack.h	/^    std::string toString()const;$/;"	p	struct:JKYi::http2::IndexType::HeaderField	access:public	signature:() const
 toString	JKYi/protocol.h	/^    virtual std::string toString()const = 0;$/;"	p	class:JKYi::Message	access:public	signature:() const
+toString	JKYi/reactor/LogStream.h	/^    std::string toString()const { return std::string(data_,length()); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
 toString	JKYi/socket.cc	/^std::string Socket::toString()const{$/;"	f	class:JKYi::Socket	signature:() const
 toString	JKYi/socket.h	/^    virtual std::string toString()const;$/;"	p	class:JKYi::Socket	access:public	signature:() const
 toString	JKYi/tcp_server.cc	/^std::string TcpServer::toString(const std::string &prefix){$/;"	f	class:JKYi::TcpServer	signature:(const std::string &prefix)
@@ -10772,6 +11177,7 @@ toString	JKYi/uri.h	/^    std::string toString()const;$/;"	p	class:JKYi::Uri	acc
 toString	JKYi/uri.rl.cc	/^std::string Uri::toString() const {$/;"	f	class:JKYi::Uri	signature:() const
 toString	tests/test_config.cc	/^    std::string toString()const {$/;"	f	class:Person	access:public	signature:() const
 toStringPiece	JKYi/reactor/Buffer.h	/^    StringPiece toStringPiece()const{$/;"	f	class:JKYi::net::Buffer	access:public	signature:() const
+toStringPiece	JKYi/reactor/LogStream.h	/^    StringPiece toStringPiece()const { return StringPiece(data_,length()); }$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:() const
 toYamlString	JKYi/log.cc	/^std::string FileLogAppender::toYamlString(){$/;"	f	class:JKYi::FileLogAppender	signature:()
 toYamlString	JKYi/log.cc	/^std::string Logger::toYamlString(){$/;"	f	class:JKYi::Logger	signature:()
 toYamlString	JKYi/log.cc	/^std::string LoggerManager::toYamlString(){$/;"	f	class:JKYi::LoggerManager	signature:()
@@ -10790,7 +11196,7 @@ ts	JKYi/db/mysql.h	/^    time_t ts;$/;"	m	struct:JKYi::MySQLTime	access:public
 type	JKYi/db/mysql.h	/^        enum_field_types type;$/;"	m	struct:JKYi::MySQLStmtRes::Data	access:public
 type	JKYi/http2/frame.h	/^            uint8_t type;$/;"	m	struct:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::FrameHeader::__anon3::__anon4	access:public
 type	JKYi/http2/hpack.h	/^    IndexType type = IndexType::ERROR;$/;"	m	struct:JKYi::http2::IndexType::HeaderField	access:public
-type	JKYi/log.cc	/^    int type=0;\/\/2表示Stdout，1表示file$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
+type	JKYi/log.cc	/^    int type = 0;\/\/2表示Stdout，1表示file$/;"	m	struct:JKYi::LogAppenderDefine	file:	access:public
 type	JKYi/tcp_server.h	/^    std::string type = "http";$/;"	m	struct:JKYi::TcpServerConf	access:public
 uint64	JKYi/http2/frame.h	/^        uint64_t uint64 = 0;$/;"	m	union:JKYi::http2::FrameType::FrameFlagData::FrameFlagHeaders::FrameFlagSettings::FrameFlagPing::FrameFlagContinuation::FrameFlagPromise::FrameR::SettingsFrame::PingFrame::__anon11	access:public
 unknown_fields	sample/protobuf/query.pb.h	/^  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {$/;"	f	class:test::final	access:public	signature:() const
@@ -10861,6 +11267,8 @@ write	JKYi/bytearray.cc	/^void ByteArray::write(const void * buf,size_t len){$/;
 write	JKYi/bytearray.h	/^    void write(const void * buf,size_t len);$/;"	p	class:JKYi::ByteArray	access:public	signature:(const void * buf,size_t len)
 write	JKYi/hook.cc	/^ssize_t write(int fd, const void *buf, size_t count) {$/;"	f	signature:(int fd, const void *buf, size_t count)
 write	JKYi/iomanager.h	/^	 EventContext write;$/;"	m	struct:JKYi::IOManager::FdContext	access:public
+write	JKYi/reactor/FileUtil.cc	/^size_t AppendFile::write(const char* logline,size_t len){$/;"	f	class:JKYi::net::AppendFile	signature:(const char* logline,size_t len)
+write	JKYi/reactor/FileUtil.h	/^    size_t write(const char* logfile,size_t len);$/;"	p	class:JKYi::net::AppendFile	access:private	signature:(const char* logfile,size_t len)
 write	JKYi/reactor/SocketsOps.cc	/^ssize_t sockets::write(int sockfd, const void *buf, size_t count){$/;"	f	class:sockets	signature:(int sockfd, const void *buf, size_t count)
 write	JKYi/reactor/SocketsOps.h	/^ssize_t write(int sockfd, const void *buf, size_t count);$/;"	p	namespace:JKYi::net::sockets	signature:(int sockfd, const void *buf, size_t count)
 write	JKYi/stream.h	/^    virtual int write(ByteArray::ptr ba,size_t length) = 0;$/;"	p	class:JKYi::Stream	access:public	signature:(ByteArray::ptr ba,size_t length)
@@ -10933,13 +11341,19 @@ write_fun	JKYi/hook.h	/^typedef ssize_t (*write_fun)(int fd, const void *buf, si
 writerIndex_	JKYi/reactor/Buffer.h	/^    size_t writerIndex_;            \/\/当前可以写的第一个字节$/;"	m	class:JKYi::net::Buffer	access:private
 writev	JKYi/hook.cc	/^ssize_t writev(int fd, const struct iovec *iov, int iovcnt) {$/;"	f	signature:(int fd, const struct iovec *iov, int iovcnt)
 writev_fun	JKYi/hook.h	/^typedef ssize_t (*writev_fun)(int fd, const struct iovec *iov, int iovcnt);$/;"	t
+writtenBytes	JKYi/reactor/FileUtil.h	/^    off_t writtenBytes()const { return writtenBytes_; }$/;"	f	class:JKYi::net::AppendFile	access:public	signature:() const
+writtenBytes_	JKYi/reactor/FileUtil.h	/^    off_t writtenBytes_;$/;"	m	class:JKYi::net::AppendFile	access:private
 wrlock	JKYi/mutex.h	/^	void wrlock(){$/;"	f	class:JKYi::RWMutex	access:public	signature:()
 xml_sent	JKYi/http/http11_parser.h	/^      int xml_sent;$/;"	m	struct:http_parser	access:public
+zero	JKYi/reactor/LogStream.cc	/^const char* zero = digits + 9;$/;"	m	namespace:JKYi::net::detail	file:
 ~Acceptor	JKYi/reactor/acceptor.cc	/^Acceptor::~Acceptor(){$/;"	f	class:JKYi::net::Acceptor	signature:()
 ~Acceptor	JKYi/reactor/acceptor.h	/^    ~Acceptor();$/;"	p	class:JKYi::net::Acceptor	access:public	signature:()
 ~Address	JKYi/address.h	/^	virtual ~Address(){}$/;"	f	class:JKYi::Address	access:public	signature:()
 ~Answer	sample/protobuf/query.pb.cc	/^Answer::~Answer() {$/;"	f	class:test::Answer	signature:()
 ~AnswerDefaultTypeInternal	sample/protobuf/query.pb.cc	/^  ~AnswerDefaultTypeInternal() {}$/;"	f	struct:test::AnswerDefaultTypeInternal	access:public	signature:()
+~AppendFile	JKYi/reactor/FileUtil.cc	/^AppendFile::~AppendFile(){$/;"	f	class:JKYi::net::AppendFile	signature:()
+~AppendFile	JKYi/reactor/FileUtil.h	/^    ~AppendFile();$/;"	p	class:JKYi::net::AppendFile	access:public	signature:()
+~AsyncLogging	JKYi/reactor/AsyncLogging.h	/^    ~AsyncLogging(){$/;"	f	class:JKYi::net::AsyncLogging	access:public	signature:()
 ~ByteArray	JKYi/bytearray.cc	/^ByteArray::~ByteArray(){$/;"	f	class:JKYi::ByteArray	signature:()
 ~ByteArray	JKYi/bytearray.h	/^    ~ByteArray();$/;"	p	class:JKYi::ByteArray	access:public	signature:()
 ~CASLock	JKYi/mutex.h	/^   ~CASLock(){$/;"	f	class:JKYi::CASLock	access:public	signature:()
@@ -10976,6 +11390,7 @@ xml_sent	JKYi/http/http11_parser.h	/^      int xml_sent;$/;"	m	struct:http_parse
 ~Fiber	JKYi/fiber.h	/^	~Fiber();$/;"	p	class:JKYi::Fiber	access:public	signature:()
 ~FiberSemaphore	JKYi/mutex.cc	/^FiberSemaphore::~FiberSemaphore(){$/;"	f	class:JKYi::FiberSemaphore	signature:()
 ~FiberSemaphore	JKYi/mutex.h	/^    ~FiberSemaphore();$/;"	p	class:JKYi::FiberSemaphore	access:public	signature:()
+~FixedBuffer	JKYi/reactor/LogStream.h	/^    ~FixedBuffer(){$/;"	f	class:JKYi::net::detail::FixedBuffer	access:public	signature:()
 ~FormatItem	JKYi/log.h	/^       virtual ~FormatItem(){}$/;"	f	class:JKYi::LogFormatter::FormatItem	access:public	signature:()
 ~FoxRedis	JKYi/db/redis.cc	/^FoxRedis::~FoxRedis(){$/;"	f	class:JKYi::FoxRedis	signature:()
 ~FoxRedis	JKYi/db/redis.h	/^    ~FoxRedis();$/;"	p	class:JKYi::FoxRedis	access:public	signature:()
@@ -11002,6 +11417,10 @@ xml_sent	JKYi/http/http11_parser.h	/^      int xml_sent;$/;"	m	struct:http_parse
 ~LogAppender	JKYi/log.h	/^    virtual ~LogAppender(){};\/\/由于该类需要作为基类，所以这里的话就析构函数申明为虚函数，避免内存泄漏$/;"	f	class:JKYi::LogAppender	access:public	signature:()
 ~LogEventWrap	JKYi/log.cc	/^LogEventWrap::~LogEventWrap(){$/;"	f	class:JKYi::LogEventWrap	signature:()
 ~LogEventWrap	JKYi/log.h	/^   ~LogEventWrap();$/;"	p	class:JKYi::LogEventWrap	access:public	signature:()
+~LogFile	JKYi/reactor/LogFile.cc	/^LogFile::~LogFile() = default;$/;"	p	class:JKYi::net::LogFile	file:	signature:()
+~LogFile	JKYi/reactor/LogFile.h	/^    ~LogFile();$/;"	p	class:JKYi::net::LogFile	access:public	signature:()
+~Logger	JKYi/reactor/Logging.cc	/^Logger::~Logger(){$/;"	f	class:JKYi::net::Logger	signature:()
+~Logger	JKYi/reactor/Logging.h	/^    ~Logger();$/;"	p	class:JKYi::net::Logger	access:public	signature:()
 ~Message	JKYi/protocol.h	/^    virtual ~Message() {}$/;"	f	class:JKYi::Message	access:public	signature:()
 ~MessageDecoder	JKYi/protocol.h	/^    virtual ~MessageDecoder(){}$/;"	f	class:JKYi::MessageDecoder	access:public	signature:()
 ~Module	JKYi/module.h	/^    virtual ~Module(){}$/;"	f	class:JKYi::Module	access:public	signature:()

@@ -113,6 +113,11 @@ set (LIB_SRC
     JKYi/reactor/http/HttpResponse.cc
     JKYi/reactor/http/HttpServer.cc
     JKYi/reactor/http/HttpContext.cc
+    JKYi/reactor/Logging.cc
+    JKYi/reactor/LogStream.cc
+    JKYi/reactor/AsyncLogging.cc
+    JKYi/reactor/LogFile.cc
+    JKYi/reactor/FileUtil.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)

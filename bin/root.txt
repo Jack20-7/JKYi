@@ -1,4 +1,0 @@
-2022-10-03 14:47:33	4122	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/tests/test_log.cc:16	 this is error
-2022-10-03 14:47:33	4122	UNKNOW	0	[FATAL]	[root]	/home/admin/workSpace/tests/test_log.cc:17	 this is fatal
-2022-10-03 14:47:59	4176	UNKNOW	0	[ERROR]	[root]	/home/admin/workSpace/tests/test_log.cc:16	 this is error
-2022-10-03 14:47:59	4176	UNKNOW	0	[FATAL]	[root]	/home/admin/workSpace/tests/test_log.cc:17	 this is fatal
