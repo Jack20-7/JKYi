@@ -5,6 +5,7 @@
 #include"JKYi/Types.h"
 
 #include<memory>
+#include<sys/types.h>
 
 namespace JKYi{
 namespace net{

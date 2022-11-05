@@ -204,3 +204,9 @@ logger我们在进行setFormatter的时候，不仅会设置自己的fotmatter�
 介绍一下该项目:
 该项目是基于Reactor模式实现的C++网络库，里面实现了定时器功能，Buffer缓存，异步日志，TcpServer等模块，采用的时候在linux系统下进行网络编程最高效的one loop per thread网络编程模型，也就是每一个IO线程中都有一个eventloop，主线程的eventlooop只负责对连接事件进行检测，每当检测到客户端的连接请求并且accpet得到一条TCP连接的时候，都会将它注册到子线程的eventloop中去，之后该TCP连接上所有的读写事件都是由子线程的eventloop来进行处理,通过这种方式，充分的利用了多核CPU的性能
 
+相同条件下，同步可配置日志的输出效率:
+22.895635 seocnds,3001000000 bytes,  43676.45 msg/s,125.00 MiB/s
+异步日志的输出效率:
+3.137617 seocnds,3001000000 bytes, 318713.21 msg/s,912.15 MiB/s
+
+但是同步日志方便的地方在于可以通过修改配置文件的方式进行多种日志输出方式的设置，异步日志优点就是效率高

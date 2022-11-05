@@ -307,7 +307,7 @@ std::string Logger::toYamlString(){
        node["formatter"]=m_formatter->getPattern();
    }
    for(auto &i :m_appenders){
-       node["appender"].push_back(YAML::Load(i->toYamlString()));
+       node["appenders"].push_back(YAML::Load(i->toYamlString()));
    }
    std::stringstream ss;
    ss<<node;
@@ -622,9 +622,9 @@ public:
           }
           //
           //下面就是appender
-          if(node["appender"].IsDefined()){
-              for(size_t i=0;i<node["appender"].size();++i){
-                  auto x = node["appender"][i];
+          if(node["appenders"].IsDefined()){
+              for(size_t i=0;i<node["appenders"].size();++i){
+                  auto x = node["appenders"][i];
                   if(!x["type"].IsDefined()){
                       std::cout<<"log conf error:appender type is null,"<<x
                       <<std::endl;
@@ -697,7 +697,7 @@ public:
              if(!i.formatter.empty()){
                  a["formatter"]=i.formatter;
              }
-             node["appender"].push_back(a);
+             node["appenders"].push_back(a);
          }
          std::stringstream ss;
          ss<<node;

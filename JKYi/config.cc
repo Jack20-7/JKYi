@@ -6,6 +6,7 @@
 #include<sys/types.h>
 #include<sys/stat.h>
 #include<unistd.h>
+#include<iostream>
 namespace JKYi{
 //查找config的map中是否存在name这个名称的
 ConfigVarBase::ptr Config::LookupBase(const std::string&name){

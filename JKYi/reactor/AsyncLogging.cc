@@ -43,7 +43,6 @@ void AsyncLogging::append(const char* logline,int len){
 }
 
 void AsyncLogging::threadFunc(){
-    printf("log thread start\n");
     assert(running_ == true);
     latch_.countDown();
     LogFile output(basename_,rollSize_,false);
@@ -55,7 +54,6 @@ void AsyncLogging::threadFunc(){
     buffersToWrite.reserve(16);
 
     while(running_){
-        printf("into while\n");
         assert(newBuffer1 && newBuffer1->length() == 0);
         assert(newBuffer2 && newBuffer2->length() == 0);
         assert(buffersToWrite.empty());
@@ -85,7 +83,6 @@ void AsyncLogging::threadFunc(){
             buffersToWrite.erase(buffersToWrite.begin() + 2,buffersToWrite.end());
         }
         //依次将Buffer中的数据写入到日志文件里面去
-        printf("buffersToWirte size = %d\n",buffersToWrite.size());
         for(const auto& buffer : buffersToWrite){
             output.append(buffer->data(),buffer->length());
         }
