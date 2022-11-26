@@ -1,6 +1,8 @@
 #ifndef _JKYI_CURRENT_THREAD_H_
 #define _JKYI_CURRENT_THREAD_H_
 
+#include<stdint.h>
+
 namespace JKYi{
 namespace CurrentThread{
 
@@ -29,6 +31,8 @@ inline int tidStringLength(){
 inline const char * name(){
     return t_threadName;
 }
+
+void sleepUsec(int64_t usec);
 
 bool isMainThread();
 

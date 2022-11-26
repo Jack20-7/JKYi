@@ -6,6 +6,7 @@
 #include<netdb.h>
 #include<ifaddrs.h>
 #include<stddef.h>
+#include<iostream>
 
 namespace JKYi{
     
@@ -75,10 +76,10 @@ bool Address::Lookup(std::vector<Address::ptr>&result,const std::string&host,int
        node=host;
    }
    //获取信息
-   int error=getaddrinfo(node.c_str(),service,&hints,&results);
+   int error = getaddrinfo(node.c_str(),service,&hints,&results);
    if(error){
-       JKYI_LOG_ERROR(g_logger)<<"Address::Lookup getaddrinfo("<<host<<","
-                               <<family<<","<<type<<") errno"<<" errnostr="
+       JKYI_LOG_ERROR(g_logger)<<"Address::Lookup getaddrinfo( " << host <<","
+                               << family << "," << type << ") error," <<" errnostr = "
                                <<strerror(errno);
        return false;
    }
@@ -115,6 +116,13 @@ IPAddress::ptr Address::LookupAnyIPAddress(const std::string&host,int family,int
        }
     }
     return nullptr;
+}
+
+std::shared_ptr<IPAddress> Address::LookupAnyIPAddress(const std::string& host,const std::string& port,int family,int type,int protocol){
+    char buf[32];
+    snprintf(buf,sizeof buf,"%s:%s",host.c_str(),port.c_str());
+
+    return LookupAnyIPAddress(std::string(buf),family,type,protocol);
 }
 
 //返回当前计算机中所有网卡的信息

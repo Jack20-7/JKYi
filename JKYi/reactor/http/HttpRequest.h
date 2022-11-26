@@ -42,7 +42,7 @@ public:
     bool setMethod(const char * start,const char * end){
         JKYI_ASSERT(method_ == kInvalid);
         std::string m(start,end);
-        if(m == "Get"){
+        if(m == "GET"){
             method_ = kGet;
         }else if(m == "POST"){
             method_ = kPost;
@@ -88,7 +88,7 @@ public:
     }
 
     void setQuery(const char * start,const char * end){
-        path_.assign(start,end);
+        query_.assign(start,end);
     }
     const std::string& query()const{
         return query_;

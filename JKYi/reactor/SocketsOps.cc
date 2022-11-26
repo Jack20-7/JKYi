@@ -62,12 +62,14 @@ int sockets::createNonBlockingOrDie(sa_family_t  family){
     int sockfd = ::socket(family,SOCK_STREAM,0);
     if(sockfd < 0){
         JKYI_LOG_ERROR(g_logger) << " sockets::createNonBlockingOrDie error";
+        exit(0);
     }
     setNonBlockAndCloseOnExec(sockfd);
 #else
     int sockfd = ::socket(family,SOCK_STREAM | SOCK_NONBLOCK | SOCK_CLOEXEC,0);
     if(sockfd < 0){
         JKYI_LOG_ERROR(g_logger) << " sockets::createNonBlockingOrDie error";
+        exit(0);
     }
 #endif
     return sockfd;
@@ -77,6 +79,7 @@ void sockets::bindOrDie(int sockfd,const struct sockaddr* addr){
     int rt = ::bind(sockfd,addr,static_cast<socklen_t>(sizeof(struct sockaddr_in6)));
     if(rt < 0){
         JKYI_LOG_ERROR(g_logger) << " sockets::bindOrie error";
+        exit(0);
     }
 }
 
@@ -84,6 +87,7 @@ void sockets::listenOrDie(int sockfd){
     int ret = ::listen(sockfd,SOMAXCONN);
     if(ret < 0){
         JKYI_LOG_ERROR(g_logger) << " sockets::listenOrDie error";
+        exit(0);
     }
 }
 
@@ -146,15 +150,16 @@ ssize_t sockets::write(int sockfd, const void *buf, size_t count){
 }
 
 void sockets::close(int sockfd){
-  if (::close(sockfd) < 0)
-  {
+  if (::close(sockfd) < 0){
     JKYI_LOG_ERROR(g_logger) << "sockets::close";
+    exit(0);
   }
 }
 
 void sockets::shutdownWrite(int sockfd){
     if(::shutdown(sockfd,SHUT_WR) < 0){
         JKYI_LOG_ERROR(g_logger) << " sockets::shutdownWrite error";
+        exit(0);
     }
 }
 //根据传入的addr返回对于的IP + PORT并且要是主机字节序

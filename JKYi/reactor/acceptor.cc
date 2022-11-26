@@ -25,6 +25,7 @@ Acceptor::Acceptor(EventLoop* loop,const Address::ptr& address,bool reuseport)
      acceptSocket_.setReusePort(reuseport);
      acceptSocket_.bindAddress(address);
      acceptChannel_.setReadCallback(std::bind(&Acceptor::handleRead,this));
+     JKYI_LOG_DEBUG(g_logger) << " listening socket = " << acceptSocket_.getFd();
 }
 
 Acceptor::~Acceptor(){

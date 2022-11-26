@@ -87,7 +87,7 @@ void TcpConnection::send(Buffer * buf){
     if(state_ == kConnected){
         if(loop_->isInLoopThread()){
             sendInLoop(buf->peek(),buf->readableBytes());
-            buf->retrieveAll();
+            buf->retrieveAll();  //将缓冲区中的数据给释放掉
         }else{
             void (TcpConnection::* fp)(const StringPiece& message) = 
                 &TcpConnection::sendInLoop;
@@ -267,11 +267,11 @@ void TcpConnection::handleRead(Timestamp receiveTime){
 void TcpConnection::handleWrite(){
     loop_->assertInLoopThread();
     if(channel_->isWriting()){
-        ssize_t n = sockets::write(socket_->getFd(),inputBuffer_.peek(),
-                                     inputBuffer_.readableBytes());
+        ssize_t n = sockets::write(socket_->getFd(),outputBuffer_.peek(),
+                                     outputBuffer_.readableBytes());
         if(n > 0){
-          inputBuffer_.retrieve(n);
-          if(inputBuffer_.readableBytes() == 0){
+          outputBuffer_.retrieve(n);
+          if(outputBuffer_.readableBytes() == 0){
               channel_->disableWriting();
               if(writeCompleteCallback_){
                   loop_->queueInLoop(std::bind(writeCompleteCallback_,
@@ -282,7 +282,7 @@ void TcpConnection::handleWrite(){
               }
           }
         }else{
-            JKYI_LOG_ERROR(g_logger) << "TcpConnection::handleWrite";
+            JKYI_LOG_ERROR(g_logger) << "TcpConnection::handleWrite, n = " << n;
         }
     }else{
         JKYI_LOG_ERROR(g_logger) << " connection fd = " << socket_->getFd() 

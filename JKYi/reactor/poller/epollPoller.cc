@@ -142,7 +142,7 @@ void EpollPoller::update(int operation,Channel* channel){
                              << " fd = " << fd << " events = (" 
                              << channel->eventsToString() << " )";
     if(::epoll_ctl(epollfd_,operation,fd,&event) < 0){
-        JKYI_LOG_DEBUG(g_logger) << " epoll_ctl op = " 
+        JKYI_LOG_ERROR(g_logger) << " epoll_ctl op = " 
                                  << operationToString(operation) 
                                  << " fd = "<< fd;
     }

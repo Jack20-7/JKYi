@@ -236,7 +236,7 @@ public:
         const char * d = static_cast<const char * >(data);
         std::copy(d,d + len,begin() + readerIndex_);
     }
-    //
+    //保证有reserve 这么大的写空间
     void shrink(size_t reserve){
         Buffer other;
         other.ensureWritableBytes(readableBytes() + reserve);

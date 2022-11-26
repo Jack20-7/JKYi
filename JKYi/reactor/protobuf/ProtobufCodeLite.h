@@ -84,7 +84,7 @@ public:
     void fillEmptyBuffer(Buffer* buf,const ::google::protobuf::Message& message);
 
     static int32_t checksum(const void * buf,int len);
-    static bool validateChecksum(const void * buf,int len);
+    static bool validateChecksum(const char* buf,int len);
     static int32_t asInt32(const void * buf);
     static void defaultErrorCallback(const TcpConnection::ptr& ,
                                      Buffer* ,

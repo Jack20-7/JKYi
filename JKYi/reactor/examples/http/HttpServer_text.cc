@@ -58,7 +58,7 @@ int main(int argc,char ** argv){
     if(argc > 1){
         numThreads = atoi(argv[1]);
     }
-    Address::ptr serverAddr = Address::LookupAnyIPAddress("127.0.0.1:8000");
+    Address::ptr serverAddr = Address::LookupAnyIPAddress("0.0.0.0:8000");
     EventLoop loop;
     HttpServer server(&loop,serverAddr,"dummy");
     server.setHttpCallback(onRequest);

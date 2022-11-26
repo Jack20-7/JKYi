@@ -40,6 +40,8 @@ public:
 
 	static std::shared_ptr<IPAddress> LookupAnyIPAddress(const std::string&host,int family=AF_INET,int type=0,int protocol=0);
 
+    static std::shared_ptr<IPAddress> LookupAnyIPAddress(const std::string& host,const std::string& port,int family = AF_INET,int type = 0,int protocol = 0);
+
 	//返回当前机器上所有网卡的<网卡名、网卡地址、网卡的子网掩码>
 	static bool GetInterfaceAddress(std::multimap<std::string,std::pair<Address::ptr,uint32_t>>&result,int family=AF_INET);
 

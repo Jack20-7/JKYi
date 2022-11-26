@@ -1,8 +1,11 @@
 #include"JKYi/reactor/Buffer.h"
 #include"JKYi/reactor/http/HttpContext.h"
+#include"JKYi/log.h"
 
 using namespace JKYi;
 using namespace JKYi::net;
+
+static JKYi::Logger::ptr g_logger = JKYI_LOG_NAME("system");
 
 //解析请求行
 bool HttpContext::processRequestLine(const char * begin,const char * end){
@@ -13,6 +16,7 @@ bool HttpContext::processRequestLine(const char * begin,const char * end){
         start = space + 1;
         space = std::find(start,end,' ');
         if(space != end){
+            //GET /?refresh=1 HTTP/1.1
             const char * question = std::find(start,space,'?');
             if(question != space){
                 request_.setPath(start,question);
@@ -21,7 +25,7 @@ bool HttpContext::processRequestLine(const char * begin,const char * end){
                 request_.setPath(start,space);
             }
             start = space + 1;
-            succeed = (end -start == 8) && std::equal(start,end - 1,"HTTP/1.");
+            succeed = (end - start == 8) && std::equal(start,end - 1,"HTTP/1.");
             if(succeed){
                 if(*(end - 1) == '1'){
                     request_.setVersion(HttpRequest::kHttp11);

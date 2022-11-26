@@ -1,16 +1,15 @@
 #include"JKYi/reactor/protobuf/ProtobufCodeLite.h"
-#include"JKYi/log.h"
 #include"JKYi/endian.h"
 #include"JKYi/reactor/TcpConnection.h"
 #include"JKYi/reactor/protorpc/google-inl.h"
 #include"JKYi/macro.h"
 #include"google/protobuf/message.h"
 #include"zlib.h"
+#include"JKYi/reactor/Logging.h"
 
 using namespace JKYi;
 using namespace JKYi::net;
 
-static Logger::ptr g_logger = JKYI_LOG_NAME("system");
 namespace {
     int ProtobufVersionCheck(){
         GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -125,7 +124,7 @@ const std::string& ProtobufCodecLite::errorCodeToString(ErrorCode errorCode){
        XX(kParseError,kParseErrorStr);
 #undef XX
         default:
-            return "kUnknowErrorStr";
+            return kUnknownErrorStr;
     }
 }
 
@@ -133,8 +132,8 @@ void ProtobufCodecLite::defaultErrorCallback(const TcpConnection::ptr& conn,
                                               Buffer* buf,
                                               Timestamp receiveTime,
                                               ErrorCode errorCode){
-    JKYI_LOG_ERROR(g_logger) << " ProtobufCodecLite::defaultErrorCallback - "
-                             << errorCodeToString(errorCode);
+    LOG_INFO << " ProtobufCodecLite::defaultErrorCallback - "
+             << errorCodeToString(errorCode);
     if(conn && conn->connected()){
         conn->shutdown();
     }
@@ -151,7 +150,7 @@ int32_t ProtobufCodecLite::checksum(const void* buf,int len){
             ::adler32(1,static_cast<const Bytef*>(buf),len));
 }
 //用来对校验码进行检测
-bool ProtobufCodecLite::validateChecksum(const void * buf,int len){
+bool ProtobufCodecLite::validateChecksum(const char* buf,int len){
     int32_t expectedCheckSum(asInt32(buf + len - kChecksumLen));
     int32_t checkSum = checksum(buf,len - kChecksumLen);
     return checkSum == expectedCheckSum;

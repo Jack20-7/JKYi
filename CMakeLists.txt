@@ -118,6 +118,9 @@ set (LIB_SRC
     JKYi/reactor/AsyncLogging.cc
     JKYi/reactor/LogFile.cc
     JKYi/reactor/FileUtil.cc
+    JKYi/FileUtil.cc
+    JKYi/ProcessInfo.cc
+    JKYi/reactor/ThreadPool.cc
     )
 
 ragelmaker(JKYi/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/JKYi/http)
@@ -207,6 +210,8 @@ JKYi_add_executable(test_reactor_tcpserver "tests/test_reactor_tcpserver.cc" JKY
 JKYi_add_executable(test_reactor_tcpclient "tests/test_reactor_tcpClient.cc" JKYi "${LIBS}")
 
 JKYi_add_executable(test_log "tests/test_log.cc" JKYi "${LIBS}")
+
+JKYi_add_executable(Singleton_test "tests/Singleton_test.cc" JKYi "${LIBS}")
 
 
 #将生成的目标文件放到bin目录下

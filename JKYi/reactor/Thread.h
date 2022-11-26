@@ -1,3 +1,5 @@
+#ifndef _JKYI_NET_THREAD_H_
+#define _JKYI_NET_THREAD_H_
 #include"JKYi/atomic.h"
 #include"JKYi/CountDownLatch.h"
 
@@ -39,3 +41,4 @@ private:
 };
 }
 }
+#endif
